@@ -2073,3 +2073,91 @@ projects:
       - label: Читать кейс
         url: /showcase/automotive-catalog-photo-collection
         type: product
+  - slug: woocommerce-template-recovery
+    name: Ремонт категорий и меню WooCommerce после обновления
+    year: "06.2025"
+    role: Веб-разработка и автоматизация
+    description: После обновлений две категории перестали открываться, а меню вело
+      себя непредсказуемо. Нужно было восстановить маршруты каталога и понять,
+      почему правки шапки не давали ожидаемого эффекта.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Elementor Pro
+      - Permalinks
+    order: 118
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-template-recovery
+        type: product
+  - slug: prodamus-discount-repair
+    name: Исправление скидки WooCommerce для оплаты Prodamus
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: Кастомная скидка мешала согласованному сценарию оплаты. Нужно было
+      поправить расчёт, сохранив назначение скидки и не распространив её на весь
+      ассортимент.
+    stack:
+      - WooCommerce
+      - Prodamus
+      - Checkout
+    order: 119
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/prodamus-discount-repair
+        type: product
+  - slug: mega-electronics-setup
+    name: Настройка витрины WoodMart Mega Electronics
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: Клиенту нужна была настраиваемая основа магазина электроники с
+      готовой навигацией. Демо требовалось адаптировать, чтобы в карточках не
+      осталось лишних эффектов и элементов.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Elementor
+      - Storefront
+    order: 120
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/mega-electronics-setup
+        type: product
+  - slug: store-theme-reset
+    name: Восстановление магазина после конфликта редакторов
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: После неудачного редактирования понадобилось вернуть рабочую основу
+      магазина. Тема была рассчитана на WPBakery, но страницы пытались менять
+      через Elementor.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WPBakery
+      - Recovery
+    order: 121
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/store-theme-reset
+        type: product
+  - slug: dme-english-service-site
+    name: Англоязычный сайт сервисной компании DME
+    year: "03.2021"
+    role: Веб-разработка и автоматизация
+    description: Сервисной компании нужен был англоязычный сайт, на котором
+      посетитель может разобраться в услугах и найти контакты, не перелистывая
+      длинную презентацию.
+    stack:
+      - Web design
+      - Service website
+      - English content
+    order: 122
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dme-english-service-site
+        type: product

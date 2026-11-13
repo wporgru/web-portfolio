@@ -1,0 +1,28 @@
+title: Configuring a WoodMart Mega Electronics storefront
+tagline: The client needed a configurable electronics storefront with navigation
+  in place. The demo needed adapting so product cards would not retain
+  unnecessary effects and controls.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WoodMart
+  - Elementor
+  - Storefront
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a configurable electronics storefront with navigation in
+      place. The demo needed adapting so product cards would not retain
+      unnecessary effects and controls.
+  - type: text
+    title: How it works
+    body: Installed the selected demo and explained how to edit menus, categories,
+      the footer and the header. Discussed logo requirements, disabled the
+      product-card hover effect and removed controls the client flagged in
+      screenshots.
+  - type: text
+    title: Result and verification
+    body: The client accepted the storefront foundation and could continue editing
+      its blocks. Catalog population, payment processing and delivery
+      integrations were outside the confirmed scope.

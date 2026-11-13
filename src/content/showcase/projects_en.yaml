@@ -2046,3 +2046,90 @@ projects:
       - label: Read case study
         url: /showcase/automotive-catalog-photo-collection/en
         type: product
+  - slug: woocommerce-template-recovery
+    name: Repairing WooCommerce categories and menus after an update
+    year: "06.2025"
+    role: Web development and automation
+    description: After updates, two categories stopped opening and navigation
+      behaved inconsistently. The store needed working catalog routes and an
+      explanation for why header edits were not taking effect.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Elementor Pro
+      - Permalinks
+    order: 118
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-template-recovery/en
+        type: product
+  - slug: prodamus-discount-repair
+    name: Fixing a WooCommerce discount for Prodamus checkout
+    year: "02.2024"
+    role: Web development and automation
+    description: A custom discount interfered with the intended payment flow. The
+      pricing adjustment needed to preserve the discount without applying it to
+      the whole catalog.
+    stack:
+      - WooCommerce
+      - Prodamus
+      - Checkout
+    order: 119
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/prodamus-discount-repair/en
+        type: product
+  - slug: mega-electronics-setup
+    name: Configuring a WoodMart Mega Electronics storefront
+    year: "02.2024"
+    role: Web development and automation
+    description: The client needed a configurable electronics storefront with
+      navigation in place. The demo needed adapting so product cards would not
+      retain unnecessary effects and controls.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Elementor
+      - Storefront
+    order: 120
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/mega-electronics-setup/en
+        type: product
+  - slug: store-theme-reset
+    name: Recovering a store after conflicting page-builder edits
+    year: "02.2024"
+    role: Web development and automation
+    description: Failed edits left the store needing a workable foundation. The
+      theme was built for WPBakery, but editing had been attempted in Elementor.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WPBakery
+      - Recovery
+    order: 121
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/store-theme-reset/en
+        type: product
+  - slug: dme-english-service-site
+    name: An English-language service website for DME
+    year: "03.2021"
+    role: Web development and automation
+    description: The service company needed an English-language website where
+      visitors could browse services and find contact information without
+      reading through a long presentation.
+    stack:
+      - Web design
+      - Service website
+      - English content
+    order: 122
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dme-english-service-site/en
+        type: product

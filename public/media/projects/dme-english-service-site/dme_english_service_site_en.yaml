@@ -1,0 +1,33 @@
+title: An English-language service website for DME
+tagline: The service company needed an English-language website where visitors
+  could browse services and find contact information without reading through a
+  long presentation.
+year: "03.2021"
+role: Web development and automation
+stack:
+  - Web design
+  - Service website
+  - English content
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The service company needed an English-language website where visitors
+      could browse services and find contact information without reading through
+      a long presentation.
+  - type: text
+    title: How it works
+    body: The published work uses a service grid, with company information, the
+      blog, privacy and contact sections in navigation. The homepage has
+      separate partner and news sections. The archived light and dark
+      presentations show the same site structure in two visual variants.
+  - type: text
+    title: Result and verification
+    body: The portfolio entry documents the displayed interface. The light and dark
+      views are variants, not a before-and-after comparison. Forms, payments and
+      current site availability are not assessed here.
+  - type: text
+    title: Original Kwork portfolio entry
+    body: March 2021 is the publication date; the exact delivery date is unknown.
+    links:
+      - label: View the original entry
+        url: https://kwork.ru/portfolio/4093977

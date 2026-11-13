@@ -1,0 +1,29 @@
+title: Repairing WooCommerce categories and menus after an update
+tagline: After updates, two categories stopped opening and navigation behaved
+  inconsistently. The store needed working catalog routes and an explanation for
+  why header edits were not taking effect.
+year: "06.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Elementor Pro
+  - Permalinks
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After updates, two categories stopped opening and navigation behaved
+      inconsistently. The store needed working catalog routes and an explanation
+      for why header edits were not taking effect.
+  - type: text
+    title: How it works
+    body: Corrected the permalink configuration. Updating Elementor Pro did not fix
+      the issue on its own, so I traced the header and footer templates, removed
+      redundant misconfigured versions and reported that navigation was
+      restored. I also removed the In stock label from the product template on
+      request.
+  - type: text
+    title: Result and verification
+    body: Delivered fixes for the affected categories, navigation and product label.
+      This was maintenance of an existing storefront, not a hosting migration or
+      an assertion that every site defect was fixed.

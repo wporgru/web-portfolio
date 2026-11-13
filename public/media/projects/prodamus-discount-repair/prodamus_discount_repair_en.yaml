@@ -1,0 +1,27 @@
+title: Fixing a WooCommerce discount for Prodamus checkout
+tagline: A custom discount interfered with the intended payment flow. The
+  pricing adjustment needed to preserve the discount without applying it to the
+  whole catalog.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Prodamus
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A custom discount interfered with the intended payment flow. The pricing
+      adjustment needed to preserve the discount without applying it to the
+      whole catalog.
+  - type: text
+    title: How it works
+    body: Located the coded discount and explained why simply removing the minus
+      sign would increase the total. The first review showed the discount
+      reaching every product. I revised the setup and handed it back for another
+      check.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the desired behavior and accepted delivery. This
+      fixed the discount calculation; a bank transaction and every product
+      combination were not independently verified.

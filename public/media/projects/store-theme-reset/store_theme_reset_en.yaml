@@ -1,0 +1,25 @@
+title: Recovering a store after conflicting page-builder edits
+tagline: Failed edits left the store needing a workable foundation. The theme
+  was built for WPBakery, but editing had been attempted in Elementor.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WPBakery
+  - Recovery
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Failed edits left the store needing a workable foundation. The theme was
+      built for WPBakery, but editing had been attempted in Elementor.
+  - type: text
+    title: How it works
+    body: Explained the page-builder conflict and checked the hosting recovery
+      option first. With no usable backup available, I agreed on a clean theme
+      reinstall with the owner, who approved the reset because the store had not
+      yet been substantially populated.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage. This was an agreed reset of the store
+      foundation, not recovery of lost content from a backup.
