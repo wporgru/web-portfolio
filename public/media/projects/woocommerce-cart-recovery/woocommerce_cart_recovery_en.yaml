@@ -1,0 +1,26 @@
+title: Restoring the cart and checkout in WooCommerce
+tagline: When the cart and checkout stopped working, the priority was restoring
+  the path to ordering. A visual redesign was discussed separately and was not
+  required for the repair.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Checkout
+  - Troubleshooting
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: When the cart and checkout stopped working, the priority was restoring the
+      path to ordering. A visual redesign was discussed separately and was not
+      required for the repair.
+  - type: text
+    title: How it works
+    body: Reviewed the failing flow, retained the previous code fragments in case
+      they needed to be restored, and handed the repaired functionality back for
+      review. Separated presentation concerns from the functional recovery.
+  - type: text
+    title: Result and verification
+    body: The client placed the order after the fix and accepted the result. This
+      was cart and checkout recovery, not proof of a settled payment, a full
+      backup or a new design.

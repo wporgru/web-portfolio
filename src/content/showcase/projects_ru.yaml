@@ -1692,3 +1692,106 @@ projects:
       - label: Читать кейс
         url: /showcase/osmokot-product-page-repair
         type: product
+  - slug: woodmart-theme-rebuild
+    name: Обновление WoodMart с пересборкой шапки и футера
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: Старая версия WoodMart накопила ошибки, а часть прежних настроек
+      перестала подходить после обновления. Клиенту нужно было вернуть целостный
+      вид витрины, а не только заменить файлы темы.
+    stack:
+      - WordPress
+      - WoodMart
+      - Theme updates
+    order: 96
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woodmart-theme-rebuild
+        type: product
+  - slug: woocommerce-cart-recovery
+    name: Восстановление корзины и чекаута WooCommerce
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: Когда перестали работать корзина и оформление, задачей было вернуть
+      путь к заказу. Обновление дизайна обсуждалось отдельно и не должно было
+      задерживать ремонт.
+    stack:
+      - WooCommerce
+      - Checkout
+      - Troubleshooting
+    order: 97
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-cart-recovery
+        type: product
+  - slug: dpd-woocommerce-setup
+    name: Настройка модуля доставки DPD для WooCommerce
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: Действующему магазину требовалось подключить DPD. Задача была в
+      настройке существующего модуля, а не в разработке собственного API
+      перевозчика.
+    stack:
+      - WooCommerce
+      - DPD
+      - Shipping
+    order: 98
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dpd-woocommerce-setup
+        type: product
+  - slug: paypal-standard-checkout
+    name: Совместимость PayPal и товарный блок в чекауте
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: Кастомный редактор оформления конфликтовал с PayPal. Нужно было
+      восстановить рабочую основу checkout и убрать дублирующие платёжные кнопки
+      с других страниц.
+    stack:
+      - WooCommerce
+      - PayPal
+      - Checkout
+    order: 99
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/paypal-standard-checkout
+        type: product
+  - slug: xlsx-large-catalog
+    name: Массовая загрузка более 15 тысяч позиций из XLSX
+    year: "04.2025"
+    role: Веб-разработка и автоматизация
+    description: Нужно было перенести большой ассортимент и привязать фотографии без
+      ручного заполнения тысяч карточек. Заказчик должен был понимать, как
+      добавлять новые строки и какие поля нельзя произвольно менять.
+    stack:
+      - WooCommerce
+      - XLSX
+      - SKU
+      - Product media
+    order: 100
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/xlsx-large-catalog
+        type: product
+  - slug: tub-store-mobile-layout
+    name: Мобильная вёрстка магазина купелей и правки корзины
+    year: "11.2024"
+    role: Веб-разработка и автоматизация
+    description: Магазину нужно было привести в порядок мобильные страницы и
+      согласованный набор правок корзины. Отдельно после сдачи проявилось
+      смещение строки на информационных страницах и в статьях.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Mobile layout
+    order: 101
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/tub-store-mobile-layout
+        type: product

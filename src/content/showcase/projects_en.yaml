@@ -1674,3 +1674,103 @@ projects:
       - label: Read case study
         url: /showcase/osmokot-product-page-repair/en
         type: product
+  - slug: woodmart-theme-rebuild
+    name: Updating WoodMart and rebuilding the header and footer
+    year: "04.2026"
+    role: Web development and automation
+    description: An old WoodMart version had accumulated errors, and some settings
+      no longer worked after the update. The client needed a coherent
+      storefront, not just newer theme files.
+    stack:
+      - WordPress
+      - WoodMart
+      - Theme updates
+    order: 96
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woodmart-theme-rebuild/en
+        type: product
+  - slug: woocommerce-cart-recovery
+    name: Restoring the cart and checkout in WooCommerce
+    year: "02.2024"
+    role: Web development and automation
+    description: When the cart and checkout stopped working, the priority was
+      restoring the path to ordering. A visual redesign was discussed separately
+      and was not required for the repair.
+    stack:
+      - WooCommerce
+      - Checkout
+      - Troubleshooting
+    order: 97
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-cart-recovery/en
+        type: product
+  - slug: dpd-woocommerce-setup
+    name: Configuring DPD delivery for a WooCommerce store
+    year: "02.2024"
+    role: Web development and automation
+    description: An existing store needed DPD delivery configured. The job concerned
+      an existing module, not building a custom carrier API.
+    stack:
+      - WooCommerce
+      - DPD
+      - Shipping
+    order: 98
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dpd-woocommerce-setup/en
+        type: product
+  - slug: paypal-standard-checkout
+    name: Restoring PayPal compatibility in WooCommerce checkout
+    year: "02.2024"
+    role: Web development and automation
+    description: A custom checkout editor conflicted with PayPal. The priority was a
+      working checkout foundation without redundant payment buttons elsewhere.
+    stack:
+      - WooCommerce
+      - PayPal
+      - Checkout
+    order: 99
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/paypal-standard-checkout/en
+        type: product
+  - slug: xlsx-large-catalog
+    name: Importing more than 15,000 WooCommerce items from XLSX
+    year: "04.2025"
+    role: Web development and automation
+    description: A large assortment needed to be imported with images without
+      manually creating thousands of listings. The client also needed to know
+      how to add rows and which fields had to remain stable.
+    stack:
+      - WooCommerce
+      - XLSX
+      - SKU
+      - Product media
+    order: 100
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/xlsx-large-catalog/en
+        type: product
+  - slug: tub-store-mobile-layout
+    name: Mobile layout and cart refinements for a soaking tub store
+    year: "11.2024"
+    role: Web development and automation
+    description: The store needed mobile page refinements and agreed cart changes.
+      After handoff, a shifted line was reported on information pages and posts.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Mobile layout
+    order: 101
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/tub-store-mobile-layout/en
+        type: product

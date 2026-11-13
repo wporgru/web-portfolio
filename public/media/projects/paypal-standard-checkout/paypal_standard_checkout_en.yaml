@@ -1,0 +1,25 @@
+title: Restoring PayPal compatibility in WooCommerce checkout
+tagline: A custom checkout editor conflicted with PayPal. The priority was a
+  working checkout foundation without redundant payment buttons elsewhere.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - PayPal
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A custom checkout editor conflicted with PayPal. The priority was a
+      working checkout foundation without redundant payment buttons elsewhere.
+  - type: text
+    title: How it works
+    body: Identified the compatibility issue and recommended standard checkout.
+      Disabled the conflicting editor, retained the previous styles for a
+      separate design phase, added a product image and kept payment buttons only
+      in checkout rather than on cart and product pages.
+  - type: text
+    title: Result and verification
+    body: The client accepted the functional stage. The cart icon appeared again in
+      feedback; a live payment and exact conformity to the later mockup are not
+      claimed.

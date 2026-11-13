@@ -1,0 +1,24 @@
+title: Mobile layout and cart refinements for a soaking tub store
+tagline: The store needed mobile page refinements and agreed cart changes. After
+  handoff, a shifted line was reported on information pages and posts.
+year: "11.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Mobile layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store needed mobile page refinements and agreed cart changes. After
+      handoff, a shifted line was reported on information pages and posts.
+  - type: text
+    title: How it works
+    body: Used the client’s supplied banner and delivered a report for the agreed
+      work. After retesting, investigated the shift associated with the sticky
+      header, reported the fix and updated the address copy on request.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the result and accepted the order. The banner was
+      client-supplied; further checkout changes and speed work were a separate
+      order.
