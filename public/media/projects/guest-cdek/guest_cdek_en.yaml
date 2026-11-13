@@ -1,0 +1,22 @@
+title: Restoring CDEK shipping quotes for guest shoppers
+tagline: Shipping quotes were still failing for regular shoppers even though an
+  admin-side check had not exposed the issue at first.
+year: "12.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CDEK
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Shipping quotes were still failing for regular shoppers even though an
+      admin-side check had not exposed the issue at first.
+  - type: text
+    title: How it works
+    body: "Used client screenshots to isolate the anonymous checkout scenario:
+      without an admin session, the shopper encountered a stall. I continued the
+      fix and handed back the guest flow for another check."
+  - type: text
+    title: Result and verification
+    body: The client confirmed the fix and accepted the order. This does not claim a
+      settled payment, an actual shipment or coverage of every destination.

@@ -1,0 +1,24 @@
+title: Scraping and importing an office equipment catalog
+tagline: The client needed a supplier catalog collected and imported into
+  WooCommerce, with exclusions and placeholder images handled explicitly.
+year: 04–05.2026
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Data import
+  - Web scraping
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a supplier catalog collected and imported into
+      WooCommerce, with exclusions and placeholder images handled explicitly.
+  - type: text
+    title: How it works
+    body: Configured collection and agreed how to process the export before running
+      the import. I showed initial listings, reported intermediate progress and
+      separately confirmed completion rather than treating the interim handoff
+      as a finished import.
+  - type: text
+    title: Result and verification
+    body: The first stage was accepted. The 43,316 figure describes source listings,
+      not an independently recounted import total.

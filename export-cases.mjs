@@ -50,6 +50,9 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
     ];
     if(!details.get(slug)?.[lang]) throw Error('Missing localized technical detail: '+slug);
     blocks.push({type:'text',title:ru?'Как решалась задача':'Implementation and scope',body:details.get(slug)[lang]});
+    if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Главная до и после':'Homepage before and after',
+      body:ru?'В старой версии акцент был на слайдере и плотном списке категорий; после редизайна — на крупном первом экране, укрупнённых разделах каталога и блоках доверия, включая отзывы и FAQ.':'The original homepage emphasized a slider and a dense category list. The redesign uses a larger opening section, clearer catalog groupings and trust-building sections such as reviews and FAQs.',
+      links:[{label:ru?'До редизайна':'Before redesign',url:'https://kwork.ru/portfolio/23517585'},{label:ru?'После редизайна':'After redesign',url:'https://kwork.ru/portfolio/23517588'}]});
     if(src) blocks.push({type:'image',title:ru?'Публичный вид сайта':'Public website snapshot',src,alt,
       caption:ru?'Снимок на дату проверки. Он показывает публичную версию сайта, а не обязательно вид на момент сдачи.':'Captured during a later availability check; it may differ from the site at handoff.'});
     const role=ru?'Веб-разработка':'Web development';

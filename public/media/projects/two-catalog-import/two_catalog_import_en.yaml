@@ -1,0 +1,23 @@
+title: Migrating 205 products from two sources
+tagline: The client needed to add products from two sites to an existing store
+  without creating each listing manually.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Data import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed to add products from two sites to an existing store
+      without creating each listing manually.
+  - type: text
+    title: How it works
+    body: Migrated the products into WooCommerce and provided a direct storefront
+      link for review. The handoff report records 205 listings rather than an
+      estimate of the source catalog size.
+  - type: text
+    title: Result and verification
+    body: The client accepted the migration and praised the quality and speed. This
+      was a one-time catalog transfer, not a recurring sync, payment or shipping
+      setup.

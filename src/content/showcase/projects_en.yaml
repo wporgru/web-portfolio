@@ -1,14 +1,15 @@
 projects:
   - slug: 78-dosok
-    name: "78 Dosok: storefront redesign"
-    description: Diagnosed the conflict between Elementor and the theme header,
-      proposed a new homepage layout, revised navigation and added a floating
-      cart.
+    name: "78 Dosok: new theme, redesign and faster storefront"
+    description: Replaced the theme, redesigned and updated the site. Removed
+      outdated and redundant plugins, worked on performance, and improved mobile
+      navigation and access to the cart.
     year: "08.2026"
     role: Web development
     stack:
       - WordPress
       - WooCommerce
+      - Astra
       - Elementor
     order: 1
     featured: true
@@ -464,4 +465,114 @@ projects:
     links:
       - label: Read case study
         url: /showcase/wpgencrm-recovery/en
+        type: product
+  - slug: goodwin-php
+    name: "Goodwin Shop: PHP 8.3 upgrade after a failed attempt"
+    year: "10.2026"
+    role: Web development and automation
+    description: A previous PHP upgrade took the store offline and had to be rolled
+      back. The goal was to upgrade the runtime without leaving the storefront
+      inaccessible.
+    stack:
+      - PHP 8.3
+      - WordPress
+      - WooCommerce
+    order: 24
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/goodwin-php/en
+        type: product
+  - slug: two-catalog-import
+    name: Migrating 205 products from two sources
+    year: "02.2026"
+    role: Web development and automation
+    description: The client needed to add products from two sites to an existing
+      store without creating each listing manually.
+    stack:
+      - WooCommerce
+      - Data import
+    order: 25
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/two-catalog-import/en
+        type: product
+  - slug: office-catalog
+    name: Scraping and importing an office equipment catalog
+    year: 04–05.2026
+    role: Web development and automation
+    description: The client needed a supplier catalog collected and imported into
+      WooCommerce, with exclusions and placeholder images handled explicitly.
+    stack:
+      - WooCommerce
+      - Data import
+      - Web scraping
+    order: 26
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/office-catalog/en
+        type: product
+  - slug: digital-guide-checkout
+    name: Selling a digital guide without a cart step
+    year: "02.2026"
+    role: Web development and automation
+    description: "Shorten the route from offer to delivery: buyers should go
+      straight to checkout and receive a link after purchase."
+    stack:
+      - WooCommerce
+      - Digital products
+    order: 27
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/digital-guide-checkout/en
+        type: product
+  - slug: guest-cdek
+    name: Restoring CDEK shipping quotes for guest shoppers
+    year: "12.2024"
+    role: Web development and automation
+    description: Shipping quotes were still failing for regular shoppers even though
+      an admin-side check had not exposed the issue at first.
+    stack:
+      - WooCommerce
+      - CDEK
+    order: 28
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/guest-cdek/en
+        type: product
+  - slug: electrical-catalog
+    name: Electrical equipment scraping and catalog restructuring
+    year: "02.2026"
+    role: Web development and automation
+    description: Migrate supplier products with inconsistent specifications and
+      identifiers, then organize them into the store’s sales categories.
+    stack:
+      - WooCommerce
+      - Web scraping
+      - Data import
+    order: 29
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/electrical-catalog/en
+        type: product
+  - slug: site-cleanup-recovery
+    name: WordPress cleanup and recovery of site sections
+    year: "04.2026"
+    role: Web development and automation
+    description: After malicious files were discovered, the work needed to go beyond
+      cleanup and restore the sections the client used.
+    stack:
+      - WordPress
+      - PHP
+      - Incident recovery
+    order: 30
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/site-cleanup-recovery/en
         type: product

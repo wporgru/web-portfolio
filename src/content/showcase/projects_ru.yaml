@@ -1,13 +1,15 @@
 projects:
   - slug: 78-dosok
-    name: Редизайн магазина «78 Досок»
-    description: Разобрал конфликт шапки Elementor с шапкой темы, предложил новый
-      вариант главной, доработал меню и добавил плавающую корзину.
+    name: "«78 Досок»: новая тема, редизайн и ускорение магазина"
+    description: Сменил тему, полностью переработал оформление и обновил сайт.
+      Очистил набор расширений от устаревших и дублирующих плагинов, выполнил
+      работы по ускорению и улучшил мобильную навигацию и доступ к корзине.
     year: "08.2026"
     role: Веб-разработка
     stack:
       - WordPress
       - WooCommerce
+      - Astra
       - Elementor
     order: 1
     featured: true
@@ -465,4 +467,115 @@ projects:
     links:
       - label: Читать кейс
         url: /showcase/wpgencrm-recovery
+        type: product
+  - slug: goodwin-php
+    name: "Goodwin Shop: переход на PHP 8.3 после сбоя"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Предыдущая попытка сменить версию PHP привела к остановке магазина
+      и откату. Требовалось обновить среду, не оставив клиента с недоступной
+      витриной.
+    stack:
+      - PHP 8.3
+      - WordPress
+      - WooCommerce
+    order: 24
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/goodwin-php
+        type: product
+  - slug: two-catalog-import
+    name: Перенос 205 товаров из двух источников
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Клиенту требовалось пополнить уже работающий магазин ассортиментом
+      с двух сайтов без ручного создания каждой карточки.
+    stack:
+      - WooCommerce
+      - Data import
+    order: 25
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/two-catalog-import
+        type: product
+  - slug: office-catalog
+    name: Парсинг и импорт каталога офисной техники
+    year: 04–05.2026
+    role: Веб-разработка и автоматизация
+    description: Нужно было собрать ассортимент поставщика и подготовить первую
+      загрузку в WooCommerce с учётом исключений и карточек с
+      изображениями-заглушками.
+    stack:
+      - WooCommerce
+      - Data import
+      - Web scraping
+    order: 26
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/office-catalog
+        type: product
+  - slug: digital-guide-checkout
+    name: Продажа цифрового гайда без шага корзины
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: "Сократить путь от предложения до оплаты и выдачи гайда: покупатель
+      должен сразу попадать на оформление и получить ссылку после покупки."
+    stack:
+      - WooCommerce
+      - Digital products
+    order: 27
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/digital-guide-checkout
+        type: product
+  - slug: guest-cdek
+    name: Восстановление расчёта СДЭК для гостей магазина
+    year: "12.2024"
+    role: Веб-разработка и автоматизация
+    description: Расчёт доставки оставался недоступным для обычного покупателя, хотя
+      административная проверка не сразу выявляла проблему.
+    stack:
+      - WooCommerce
+      - CDEK
+    order: 28
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/guest-cdek
+        type: product
+  - slug: electrical-catalog
+    name: Парсинг электротехники и перестройка каталога
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Перенести товары поставщика с неоднородными характеристиками и
+      артикулами, а затем организовать их по коммерческим разделам магазина.
+    stack:
+      - WooCommerce
+      - Web scraping
+      - Data import
+    order: 29
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/electrical-catalog
+        type: product
+  - slug: site-cleanup-recovery
+    name: Очистка WordPress и восстановление разделов сайта
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: После обнаружения вредоносных файлов требовалось не просто очистить
+      сайт, а вернуть разделы, которыми пользовался заказчик.
+    stack:
+      - WordPress
+      - PHP
+      - Incident recovery
+    order: 30
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/site-cleanup-recovery
         type: product

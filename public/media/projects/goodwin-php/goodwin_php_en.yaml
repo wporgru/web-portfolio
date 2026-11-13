@@ -1,0 +1,26 @@
+title: "Goodwin Shop: PHP 8.3 upgrade after a failed attempt"
+tagline: A previous PHP upgrade took the store offline and had to be rolled
+  back. The goal was to upgrade the runtime without leaving the storefront
+  inaccessible.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - PHP 8.3
+  - WordPress
+  - WooCommerce
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A previous PHP upgrade took the store offline and had to be rolled back.
+      The goal was to upgrade the runtime without leaving the storefront
+      inaccessible.
+  - type: text
+    title: How it works
+    body: Restored working hosting access, upgraded to PHP 8.3 and handed the site
+      back for review. Rather than assuming compatibility with every release, I
+      discussed a separate PHP 8.5 check.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the runtime change and that the site was working,
+      then accepted delivery. Hosting migration, a final switch to 8.5 and
+      testing every purchase flow were outside the verified result.

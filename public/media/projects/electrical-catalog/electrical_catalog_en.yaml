@@ -1,0 +1,24 @@
+title: Electrical equipment scraping and catalog restructuring
+tagline: Migrate supplier products with inconsistent specifications and
+  identifiers, then organize them into the store’s sales categories.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Web scraping
+  - Data import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Migrate supplier products with inconsistent specifications and
+      identifiers, then organize them into the store’s sales categories.
+  - type: text
+    title: How it works
+    body: Delivered the export, agreed SKU rules and resumed the import after server
+      errors. Organized categories under 11 main sections, configured category
+      image selection and fixed a reported mobile issue.
+  - type: text
+    title: Result and verification
+    body: The report records 768 categories, and the client separately confirmed the
+      mobile fix. The technical availability status was not presented as live 1C
+      stock.

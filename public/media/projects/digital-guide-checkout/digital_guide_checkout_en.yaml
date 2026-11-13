@@ -1,0 +1,23 @@
+title: Selling a digital guide without a cart step
+tagline: "Shorten the route from offer to delivery: buyers should go straight to
+  checkout and receive a link after purchase."
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Digital products
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Shorten the route from offer to delivery: buyers should go straight to
+      checkout and receive a link after purchase."
+  - type: text
+    title: How it works
+    body: Connected the digital product, checkout and delivery email. After client
+      feedback, I fixed the quantity increasing on checkout refresh and showed
+      how to manage pricing, emails, download limits and access expiry.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the fix and accepted delivery. Video instructions
+      were provided. The client supplied the final file and URL; fiscal
+      integration was outside scope.

@@ -1,0 +1,24 @@
+title: WordPress cleanup and recovery of site sections
+tagline: After malicious files were discovered, the work needed to go beyond
+  cleanup and restore the sections the client used.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - PHP
+  - Incident recovery
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After malicious files were discovered, the work needed to go beyond
+      cleanup and restore the sections the client used.
+  - type: text
+    title: How it works
+    body: The work report records ten infected files. I cleaned and rechecked the
+      site, then restored the blog and promotions separately so the client could
+      verify each section.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the blog and promotions were working. This is a
+      specific recovery engagement, not a guarantee against future incidents or
+      confirmation of the legacy editor.
