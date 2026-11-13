@@ -1,0 +1,28 @@
+title: "Schmidt Studio: WordPress migration and optimization"
+tagline: Helped move WordPress to a new host. Before switching the domain, found
+  that the first copy lacked plugins and images and could not serve as a
+  production performance baseline.
+year: "11.2018"
+role: Web development and automation
+stack:
+  - WordPress
+  - Hosting migration
+  - DNS
+  - TLS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Helped move WordPress to a new host. Before switching the domain, found
+      that the first copy lacked plugins and images and could not serve as a
+      production performance baseline.
+  - type: text
+    title: How it works
+    body: Set up a test copy, identified missing assets and requested restoration.
+      Tested optimization options and discarded settings that broke pages. After
+      agreement, moved the site to the new host, switched the domain name
+      servers and set up TLS.
+  - type: text
+    title: Result and verification
+    body: The client accepted the migration and the speed achieved. The handoff
+      reports a ten-point test score improvement; the incomplete copy and
+      earlier estimates were not treated as production results.

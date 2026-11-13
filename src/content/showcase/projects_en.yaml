@@ -4311,3 +4311,72 @@ projects:
       - label: Read case study
         url: /showcase/b2b-woocommerce-order-request/en
         type: product
+  - slug: schmidt-studio-migration-performance
+    name: "Schmidt Studio: WordPress migration and optimization"
+    year: "11.2018"
+    role: Web development and automation
+    description: Helped move WordPress to a new host. Before switching the domain,
+      found that the first copy lacked plugins and images and could not serve as
+      a production performance baseline.
+    stack:
+      - WordPress
+      - Hosting migration
+      - DNS
+      - TLS
+    order: 249
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/schmidt-studio-migration-performance/en
+        type: product
+  - slug: woocommerce-excerpt-import-repair
+    name: Restoring short descriptions in a WooCommerce import
+    year: "02.2020"
+    role: Web development and automation
+    description: Repaired a product update where spreadsheet values did not match
+      what shoppers saw. The task required separating import mapping errors from
+      storefront settings.
+    stack:
+      - WooCommerce
+      - Data import
+      - Excerpt
+      - Product attributes
+    order: 250
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-excerpt-import-repair/en
+        type: product
+  - slug: avada-furniture-store-foundation
+    name: Avada foundation for a furniture store
+    year: "02.2020"
+    role: Web development and automation
+    description: Set up a furniture store foundation with a visual editor,
+      WooCommerce and HTTPS on its own domain.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Avada
+      - TLS
+    order: 251
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/avada-furniture-store-foundation/en
+        type: product
+  - slug: woocommerce-draft-products-visibility
+    name: Restoring WooCommerce products hidden as drafts
+    year: "02.2020"
+    role: Web development and automation
+    description: Restored products that editors could see in the admin area but
+      shoppers could not find on the public storefront.
+    stack:
+      - WooCommerce
+      - Product visibility
+      - WordPress
+    order: 252
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-draft-products-visibility/en
+        type: product

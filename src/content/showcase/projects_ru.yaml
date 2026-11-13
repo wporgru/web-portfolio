@@ -4362,3 +4362,72 @@ projects:
       - label: Читать кейс
         url: /showcase/b2b-woocommerce-order-request
         type: product
+  - slug: schmidt-studio-migration-performance
+    name: "Schmidt Studio: переезд и оптимизация WordPress"
+    year: "11.2018"
+    role: Веб-разработка и автоматизация
+    description: Помог перенести WordPress на новый хостинг. Перед переключением
+      домена обнаружил, что первая копия не содержала всех плагинов и фотографий
+      и не годилась для оценки скорости рабочего сайта.
+    stack:
+      - WordPress
+      - Hosting migration
+      - DNS
+      - TLS
+    order: 249
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/schmidt-studio-migration-performance
+        type: product
+  - slug: woocommerce-excerpt-import-repair
+    name: Восстановление кратких описаний при импорте
+    year: "02.2020"
+    role: Веб-разработка и автоматизация
+    description: Исправил обновление карточек, где данные из таблицы не совпадали с
+      результатом на витрине. Нужно было отделить ошибку сопоставления от
+      настроек шаблона.
+    stack:
+      - WooCommerce
+      - Data import
+      - Excerpt
+      - Product attributes
+    order: 250
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-excerpt-import-repair
+        type: product
+  - slug: avada-furniture-store-foundation
+    name: Основа мебельного магазина на Avada
+    year: "02.2020"
+    role: Веб-разработка и автоматизация
+    description: "Развернул основу мебельного магазина: готовая тема с визуальным
+      редактором, WooCommerce и собственный домен с HTTPS."
+    stack:
+      - WordPress
+      - WooCommerce
+      - Avada
+      - TLS
+    order: 251
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/avada-furniture-store-foundation
+        type: product
+  - slug: woocommerce-draft-products-visibility
+    name: Возврат скрытых товаров на витрину WooCommerce
+    year: "02.2020"
+    role: Веб-разработка и автоматизация
+    description: Восстановил показ товаров, которые были доступны редактору в
+      админке, но отсутствовали на публичной витрине.
+    stack:
+      - WooCommerce
+      - Product visibility
+      - WordPress
+    order: 252
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-draft-products-visibility
+        type: product

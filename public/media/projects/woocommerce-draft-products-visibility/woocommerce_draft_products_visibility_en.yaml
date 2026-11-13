@@ -1,0 +1,24 @@
+title: Restoring WooCommerce products hidden as drafts
+tagline: Restored products that editors could see in the admin area but shoppers
+  could not find on the public storefront.
+year: "02.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product visibility
+  - WordPress
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Restored products that editors could see in the admin area but shoppers
+      could not find on the public storefront.
+  - type: text
+    title: How it works
+    body: Checked the listing status, found the products were drafts and restored
+      visibility by publishing them. Explained how product status differs from
+      ordinary post settings and theme layout.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the fix and accepted the work. The number of
+      published listings was not preserved; this was a visibility repair, not a
+      store rebuild.

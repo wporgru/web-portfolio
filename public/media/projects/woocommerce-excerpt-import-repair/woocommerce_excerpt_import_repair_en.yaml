@@ -1,0 +1,32 @@
+title: Restoring short descriptions in a WooCommerce import
+tagline: Repaired a product update where spreadsheet values did not match what
+  shoppers saw. The task required separating import mapping errors from
+  storefront settings.
+year: "02.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Data import
+  - Excerpt
+  - Product attributes
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Repaired a product update where spreadsheet values did not match what
+      shoppers saw. The task required separating import mapping errors from
+      storefront settings.
+  - type: text
+    title: How it works
+    body: Clarified which titles and specifications should come from the client
+      spreadsheet. Proposed using the excerpt for formatted text with headings
+      and lists. Investigated interrupted runs and found that the theme hid the
+      excerpt. Limited the update to titles, attributes and short descriptions.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the result and accepted the work. A row-by-row audit
+      was not performed; filter ordering and the waitlist were follow-up work.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: the waitlist and store emails"
+        url: /showcase/woocommerce-stock-waitlist-localization/en/

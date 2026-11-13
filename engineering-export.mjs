@@ -17,6 +17,8 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'woocommerce-excerpt-import-repair': ['woocommerce-stock-waitlist-localization', 'Следующий этап: лист ожидания и письма магазина', 'Next stage: the waitlist and store emails'],
+  'woocommerce-stock-waitlist-localization': ['woocommerce-excerpt-import-repair', 'Предыдущий этап: импорт атрибутов и описаний', 'Previous stage: importing attributes and descriptions'],
   'woocommerce-admin-email-items': ['woocommerce-native-order-statuses', 'Следующий этап: штатные статусы заказов', 'Next stage: restoring native order statuses'],
   'woocommerce-native-order-statuses': ['woocommerce-admin-email-items', 'Предыдущий этап: состав заказа в письмах', 'Previous stage: order items in admin emails'],
   'fastener-specification-display': ['fastener-catalog-attribute-filters', 'Следующий этап: фильтры каталога по характеристикам', 'Next stage: attribute filters for the catalog'],

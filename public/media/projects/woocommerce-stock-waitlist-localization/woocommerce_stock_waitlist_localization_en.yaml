@@ -23,3 +23,8 @@ blocks:
     title: Result and verification
     body: The client received the control email, confirmed the fixes and accepted
       the work. A bulk notification on a live restock was not tested separately.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Previous stage: importing attributes and descriptions"
+        url: /showcase/woocommerce-excerpt-import-repair/en/
