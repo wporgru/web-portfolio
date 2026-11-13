@@ -1,0 +1,25 @@
+title: SEO metadata for a roofing materials store
+tagline: Prepared search metadata for a separate roofing materials store without
+  conflating it with changes to the company’s main site.
+year: "07.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Technical SEO
+  - XML Sitemap
+  - Metadata
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared search metadata for a separate roofing materials store without
+      conflating it with changes to the company’s main site.
+  - type: text
+    title: How it works
+    body: Documented Title and Description setup for products and categories,
+      delivered the sitemap and showed the contact section. Refined the store
+      theme settings. A plugin switch on the main site, consolidation and
+      redirects were kept outside this delivery.
+  - type: text
+    title: Result and verification
+    body: The client accepted the store setup. Sitemap delivery does not establish
+      indexing, and ranking and sales impact were not measured.

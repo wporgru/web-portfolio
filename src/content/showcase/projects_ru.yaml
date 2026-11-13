@@ -2650,3 +2650,125 @@ projects:
       - label: Читать кейс
         url: /showcase/portuguese-responsive-site
         type: product
+  - slug: arenda-pm-home-performance
+    name: Ускорение мобильной главной Аренда-ПМ
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Оптимизировал главную сайта аренды техники, сохранив десктопный
+      слайдер, выбор категории и существующую аналитику. На мобильном замере
+      PageSpeed вырос с 72 до 96 баллов.
+    stack:
+      - WordPress
+      - PageSpeed Insights
+      - Critical CSS
+      - Playwright
+    order: 151
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/arenda-pm-home-performance
+        type: product
+  - slug: marketplace-photo-batch
+    name: Пакетная подготовка фото для Ozon и Wildberries
+    year: "11.2024"
+    role: Веб-разработка и автоматизация
+    description: Подготовил две версии товарных фотографий, чтобы заказчик мог
+      работать с вертикальными и квадратными материалами отдельно.
+    stack:
+      - Image processing
+      - Marketplace assets
+      - Batch production
+    order: 152
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/marketplace-photo-batch
+        type: product
+  - slug: boxberry-cart-recovery
+    name: Подключение Boxberry и восстановление корзины
+    year: "05.2024"
+    role: Веб-разработка и автоматизация
+    description: "Подключил новый способ доставки и разобрал блокирующую проблему:
+      покупатель не мог добавить товар в корзину, то есть не доходил до выбора
+      перевозчика."
+    stack:
+      - WooCommerce
+      - Boxberry
+      - CDEK
+      - Checkout
+    order: 153
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/boxberry-cart-recovery
+        type: product
+  - slug: roofing-store-seo
+    name: SEO-метаданные магазина кровельных материалов
+    year: "07.2024"
+    role: Веб-разработка и автоматизация
+    description: Подготовил поисковое оформление товаров и категорий отдельного
+      магазина кровельных материалов, не смешивая работу с основным сайтом
+      компании.
+    stack:
+      - WooCommerce
+      - Technical SEO
+      - XML Sitemap
+      - Metadata
+    order: 154
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/roofing-store-seo
+        type: product
+  - slug: prelaunch-wordpress-seo
+    name: SEO-подготовка WordPress перед открытием сайта
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: Подготовил внутреннюю структуру WordPress к запуску, пока сайт ещё
+      не открывали для поисковых систем. Задача включала заголовки, изображения
+      и устранение лишних компонентов.
+    stack:
+      - WordPress
+      - Clearfy
+      - On-page SEO
+      - Accessibility
+    order: 155
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/prelaunch-wordpress-seo
+        type: product
+  - slug: service-page-product-selection
+    name: Товары WooCommerce на страницах услуг
+    year: "06.2024"
+    role: Веб-разработка и автоматизация
+    description: Доработал существующую страницу услуги, чтобы посетитель видел
+      относящиеся к ней товары, а не общий список каталога.
+    stack:
+      - WooCommerce
+      - Elementor
+      - Contextual merchandising
+    order: 156
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/service-page-product-selection
+        type: product
+  - slug: altr-storefront-adaptation
+    name: Адаптация витрины WooCommerce на теме Altr
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: "Адаптировал готовую тему под существующий магазин: сохранил нужные
+      страницы и подвал, собрал навигацию по категориям и доработал мобильное
+      отображение."
+    stack:
+      - WordPress
+      - WooCommerce
+      - Elementor
+      - Altr
+    order: 157
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/altr-storefront-adaptation
+        type: product

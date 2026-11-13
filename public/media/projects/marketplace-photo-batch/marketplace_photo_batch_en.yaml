@@ -1,0 +1,29 @@
+title: Batch image preparation for Ozon and Wildberries
+tagline: Prepared separate portrait and square versions of product images for
+  marketplace listings.
+year: "11.2024"
+role: Web development and automation
+stack:
+  - Image processing
+  - Marketplace assets
+  - Batch production
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared separate portrait and square versions of product images for
+      marketplace listings.
+  - type: text
+    title: How it works
+    body: Agreed a 900 × 1200 portrait format. Changed the square target from 1200 ×
+      1200 to 900 × 900 because some sources were too small. Processed the
+      images in bulk, delivered the sets through cloud storage and flagged
+      zero-byte and unavailable source files.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. The public Kwork card shows a sample, not a
+      verified count of every file or proof of marketplace approval.
+  - type: image
+    src: /media/projects/marketplace-photo-batch/processed-sample.webp
+    alt: Sample of processed product photographs
+    caption: Sample from the public Kwork entry, November 2024. Not the entire
+      archive or a before-and-after comparison.

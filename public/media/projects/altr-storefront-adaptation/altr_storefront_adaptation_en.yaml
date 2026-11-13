@@ -1,0 +1,29 @@
+title: Adapting an existing WooCommerce store to Altr
+tagline: Adapted an off-the-shelf theme to an existing store, retaining key
+  pages and the footer while rebuilding category navigation and refining mobile
+  layout.
+year: "04.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Elementor
+  - Altr
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Adapted an off-the-shelf theme to an existing store, retaining key pages
+      and the footer while rebuilding category navigation and refining mobile
+      layout.
+  - type: text
+    title: How it works
+    body: Set up the sidebar, new and popular product carousels, logo area and
+      buttons. Fixed mobile spacing, filter position, parts of the product
+      display and FAQ and warranty links. Added a load-more control and
+      documented how to restore numbered pagination. Hid unwanted storefront
+      details without deleting catalog data.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the refinements and accepted the work. Provided
+      editing instructions for the homepage, carousels, header and footer so the
+      owner could maintain the layout independently.

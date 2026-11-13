@@ -1,0 +1,24 @@
+title: Relevant WooCommerce products on service pages
+tagline: Refined an existing service page so visitors would see products
+  relevant to the service rather than the entire catalog.
+year: "06.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Elementor
+  - Contextual merchandising
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined an existing service page so visitors would see products relevant
+      to the service rather than the entire catalog.
+  - type: text
+    title: How it works
+    body: Reviewed the custom Elementor layout and changed the product output within
+      the existing design. Handed the page over so the client could verify both
+      presentation and the actual product selection.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the intended products were displayed and accepted the
+      work. This was a targeted display change, not a general recommendation
+      engine.

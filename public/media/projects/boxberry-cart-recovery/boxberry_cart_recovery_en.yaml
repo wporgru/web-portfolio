@@ -1,0 +1,28 @@
+title: Boxberry setup and WooCommerce cart recovery
+tagline: "Set up another shipping option and addressed a blocking issue:
+  shoppers could not add products to the cart, so they never reached shipping
+  selection."
+year: "05.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Boxberry
+  - CDEK
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Set up another shipping option and addressed a blocking issue: shoppers
+      could not add products to the cart, so they never reached shipping
+      selection."
+  - type: text
+    title: How it works
+    body: Handed over the Boxberry setup for review and disabled the conflicting
+      CDEK extension that blocked cart additions. Separated cart recovery from
+      carrier policy and explained which delivery-cost rules the selected
+      Boxberry extension did not provide.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage. Re-enabling CDEK, processing a real
+      shipment and checking every Boxberry route were not part of the verified
+      result.

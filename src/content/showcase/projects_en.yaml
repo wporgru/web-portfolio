@@ -2616,3 +2616,124 @@ projects:
       - label: Read case study
         url: /showcase/portuguese-responsive-site/en
         type: product
+  - slug: arenda-pm-home-performance
+    name: Faster mobile homepage for Arenda-PM
+    year: "10.2026"
+    role: Web development and automation
+    description: Optimized the equipment rental homepage while keeping the desktop
+      carousel, category picker and existing analytics. The mobile PageSpeed lab
+      score rose from 72 to 96.
+    stack:
+      - WordPress
+      - PageSpeed Insights
+      - Critical CSS
+      - Playwright
+    order: 151
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/arenda-pm-home-performance/en
+        type: product
+  - slug: marketplace-photo-batch
+    name: Batch image preparation for Ozon and Wildberries
+    year: "11.2024"
+    role: Web development and automation
+    description: Prepared separate portrait and square versions of product images
+      for marketplace listings.
+    stack:
+      - Image processing
+      - Marketplace assets
+      - Batch production
+    order: 152
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/marketplace-photo-batch/en
+        type: product
+  - slug: boxberry-cart-recovery
+    name: Boxberry setup and WooCommerce cart recovery
+    year: "05.2024"
+    role: Web development and automation
+    description: "Set up another shipping option and addressed a blocking issue:
+      shoppers could not add products to the cart, so they never reached
+      shipping selection."
+    stack:
+      - WooCommerce
+      - Boxberry
+      - CDEK
+      - Checkout
+    order: 153
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/boxberry-cart-recovery/en
+        type: product
+  - slug: roofing-store-seo
+    name: SEO metadata for a roofing materials store
+    year: "07.2024"
+    role: Web development and automation
+    description: Prepared search metadata for a separate roofing materials store
+      without conflating it with changes to the company’s main site.
+    stack:
+      - WooCommerce
+      - Technical SEO
+      - XML Sitemap
+      - Metadata
+    order: 154
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/roofing-store-seo/en
+        type: product
+  - slug: prelaunch-wordpress-seo
+    name: WordPress SEO preparation before launch
+    year: "04.2024"
+    role: Web development and automation
+    description: Prepared the internal structure of a WordPress site before it was
+      opened to search engines, covering headings, images and redundant
+      components.
+    stack:
+      - WordPress
+      - Clearfy
+      - On-page SEO
+      - Accessibility
+    order: 155
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/prelaunch-wordpress-seo/en
+        type: product
+  - slug: service-page-product-selection
+    name: Relevant WooCommerce products on service pages
+    year: "06.2024"
+    role: Web development and automation
+    description: Refined an existing service page so visitors would see products
+      relevant to the service rather than the entire catalog.
+    stack:
+      - WooCommerce
+      - Elementor
+      - Contextual merchandising
+    order: 156
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/service-page-product-selection/en
+        type: product
+  - slug: altr-storefront-adaptation
+    name: Adapting an existing WooCommerce store to Altr
+    year: "04.2024"
+    role: Web development and automation
+    description: Adapted an off-the-shelf theme to an existing store, retaining key
+      pages and the footer while rebuilding category navigation and refining
+      mobile layout.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Elementor
+      - Altr
+    order: 157
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/altr-storefront-adaptation/en
+        type: product

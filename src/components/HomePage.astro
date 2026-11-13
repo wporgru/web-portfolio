@@ -9,7 +9,7 @@ const c = ru ? copy.ru : copy.en;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const catalog = base + '/showcase' + (ru ? '/' : '/en/');
 const projects = (await getEntry('showcase', 'projects_' + lang))?.data.projects ?? [];
-const picks = ['stalex-feed','tara-bergman','seo-dashboard','regional-seo-metadata','medicine-data','wellland-facets','78-dosok'].flatMap(slug => projects.filter(p => p.slug === slug));
+const picks = ['stalex-feed','tara-bergman','seo-dashboard','arenda-pm-home-performance','medicine-data','wellland-facets','78-dosok'].flatMap(slug => projects.filter(p => p.slug === slug));
 const contacts = [
   {label:'Telegram · @wporgru',url:'https://t.me/wporgru'},
   {label:'zakaz@wp.org.ru',url:'mailto:zakaz@wp.org.ru'},
@@ -56,6 +56,7 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
         <ul class="list">
           <li>{ru ? '582 выполненных заказа в собранном архиве Kwork; 371 отзыв сохранён со скриншотом.' : '582 completed orders in the collected Kwork archive; 371 reviews archived with screenshots.'}</li>
           {c.results.map(([title,body])=><li><strong>{title}.</strong> {body}</li>)}
+          <li><a href={base+'/showcase/arenda-pm-home-performance/'+(ru?'':'en/')}><strong>PageSpeed 72 → 96</strong></a> — {ru?'мобильная главная Аренда-ПМ: LCP 6,8 → 2,7 с в лабораторных замерах.':'Arenda-PM mobile homepage: LCP 6.8 → 2.7 s in lab measurements.'}</li>
         </ul>
       </article>
 

@@ -1,0 +1,38 @@
+title: Faster mobile homepage for Arenda-PM
+tagline: Optimized the equipment rental homepage while keeping the desktop
+  carousel, category picker and existing analytics. The mobile PageSpeed lab
+  score rose from 72 to 96.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - PageSpeed Insights
+  - Critical CSS
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Optimized the equipment rental homepage while keeping the desktop
+      carousel, category picker and existing analytics. The mobile PageSpeed lab
+      score rose from 72 to 96.
+  - type: text
+    title: How it works
+    body: "Reworked above-the-fold loading: phones no longer build a carousel or
+      fetch hidden slides, while the desktop carousel remains. Inlined critical
+      CSS and deferred the full styles with fallbacks for failed images and
+      disabled JavaScript. Preserved script dependencies without changing
+      Metrica, UIS or Calltouch code. Corrected the category field dimensions
+      and filter overlap on the banner."
+  - type: text
+    title: Result and verification
+    body: In October 30 lab runs, LCP fell from 6.8 to 2.7 s and FCP from 2.0 to 0.9
+      s; final CLS was 0.001. Checked 390, 767, 768 and 1440 px, navigation,
+      category selection and desktop slides. The form returned the expected
+      required-field error; no live lead was sent. A repeat crawl of 82 URLs
+      found no canonical, metadata or internal link errors. Lab figures do not
+      represent field data.
+  - type: image
+    src: /media/projects/arenda-pm-home-performance/mobile-viewport.png
+    alt: Mobile first screen after optimization
+    caption: Browser verification screenshot at 390 px. This is not a PageSpeed
+      report or a full-page capture.

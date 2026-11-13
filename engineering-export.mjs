@@ -4,6 +4,10 @@ const read=p=>fs.readFileSync(p,'utf8').replace(/^\uFEFF/,'');
 const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
+const caseImages = {
+  'arenda-pm-home-performance': ['mobile-viewport.png', 'Мобильный первый экран после оптимизации', 'Mobile first screen after optimization', 'Снимок браузерной проверки, ширина 390 px. Это не отчёт PageSpeed и не полностраничный снимок.', 'Browser verification screenshot at 390 px. This is not a PageSpeed report or a full-page capture.'],
+  'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
+};
 const projectStages = {
   'taxi-vehicle-booking': ['taxi-mobile-car-cards', 'Следующий этап: карточки автомобилей и мобильная вёрстка', 'Next stage: car cards and mobile layout'],
   'taxi-mobile-car-cards': ['taxi-vehicle-booking', 'Предыдущий этап: форма выбора автомобиля и FAQ', 'Previous stage: vehicle selection form and FAQ'],
@@ -29,6 +33,12 @@ export function addEngineeringCases(projects){
         {type:'text',title:ru?'Как устроено решение':'How it works',body:implementation},
         {type:'text',title:ru?'Результат и проверка':'Result and verification',body:result}
       ];
+      const proof = caseImages[slug];
+      if (proof) {
+        const [file, ruAlt, enAlt, ruCaption, enCaption] = proof;
+        if (!fs.existsSync(dir+'/'+file)) throw Error('Missing case image: '+slug+'/'+file);
+        blocks.push({type:'image',src:'/media/projects/'+slug+'/'+file,alt:ru?ruAlt:enAlt,caption:ru?ruCaption:enCaption});
+      }
       const stage = projectStages[slug];
       if (stage) {
         blocks.push({
