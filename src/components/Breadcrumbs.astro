@@ -1,0 +1,16 @@
+---
+const { items, lang } = Astro.props;
+---
+<nav class="breadcrumbs" data-breadcrumbs aria-label={lang==='ru'?'Хлебные крошки':'Breadcrumb'}>
+  <ol>
+    {items.map(({ name, href })=><li>
+      {href ? <a href={href}>{name}</a> : <span aria-current="page">{name}</span>}
+    </li>)}
+  </ol>
+</nav>
+<style>
+.breadcrumbs{font-size:.9rem;color:var(--muted);margin-block:0 .75rem}
+.breadcrumbs ol{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35rem .6rem;list-style:none;padding:0;margin:0}
+.breadcrumbs li:not(:first-child)::before{content:"/";margin-inline-end:.6rem}
+.breadcrumbs a{text-decoration:underline;text-underline-offset:.18em}
+</style>

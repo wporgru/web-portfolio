@@ -9,6 +9,7 @@ const sitemap = new Set(fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.t
   .flatMap(file=>[...read(path.join(root,file)).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1])));
 const pages = new Map();
 const internalTargets = new Map();
+const breadcrumbTargets = new Map();
 const titles = new Set(), descriptions = new Set();
 for(const file of htmlFiles){
   const html=read(path.join(root,file));
@@ -25,6 +26,18 @@ for(const file of htmlFiles){
   const alternates=new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map(m=>[m[1],m[2]]));
   if(alternates.size!==3||!['ru','en'].includes(lang)||alternates.get(lang)!==canonical||alternates.get('x-default')!==alternates.get('ru')) fail(file,'invalid locale alternates');
   pages.set(canonical,alternates);
+  const trail = html.match(/<nav\b[^>]*\bdata-breadcrumbs(?:\s|>)[\s\S]*?<\/nav>/)?.[0];
+  if (trail) {
+    const structured = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+      .map(([, value]) => JSON.parse(value)).filter(data=>data['@type']==='BreadcrumbList');
+    const items=structured[0]?.itemListElement;
+    if(structured.length!==1||!Array.isArray(items)||items.length<2||items.at(-1)?.item!==canonical||
+      items.some((item,i)=>item['@type']!=='ListItem'||item.position!==i+1||!item.name?.trim()||!sitemap.has(item.item))) fail(file,'invalid BreadcrumbList');
+    const links = [...trail.matchAll(/<a\b[^>]*href="([^"]+)"/g)].map(([, href])=>new URL(href,canonical).href);
+    if(!trail.includes('aria-current="page"')||links.length!==items.length-1||
+      links.some((target,i)=>target!==items[i].item))fail(file,'visible breadcrumbs differ from BreadcrumbList');
+    breadcrumbTargets.set(canonical,items.map(item=>item.item));
+  }
   const links = [...html.matchAll(/<(?:a|img)\b[^>]*\s(?:href|src)="([^"]+)"/gi)]
     .map(([,url])=>url.replaceAll('&amp;','&'))
     .filter(url=>url.startsWith('/')&&!url.startsWith('//'));
@@ -39,6 +52,12 @@ const exists = relative => {
   return [direct,path.join(direct,'index.html')].some(file=>fs.statSync(file,{throwIfNoEntry:false})?.isFile());
 };
 for(const [canonical,alternates] of pages){
+  const isDetail = /\/(?:showcase|services)\/[a-z0-9-]+\/(?:en\/)?$/.test(canonical) && !canonical.endsWith('/showcase/en/');
+  if(isDetail&&!breadcrumbTargets.has(canonical))fail(canonical,'missing visible breadcrumbs');
+  const locale = canonical===alternates.get('ru')?'ru':'en';
+  for(const target of breadcrumbTargets.get(canonical)??[]){
+    if(pages.get(target)?.get(locale)!==target)fail(canonical,'breadcrumb leads to wrong locale: '+target);
+  }
   for(const link of internalTargets.get(canonical)){
     const target = decodeURIComponent(new URL(link,canonical).pathname);
     if(target.startsWith(base)&&!exists(target.slice(base.length))) fail(canonical,'broken local URL '+link);
@@ -48,4 +67,4 @@ for(const [canonical,alternates] of pages){
     if(!peer||[...alternates].some(([lang,href])=>peer.get(lang)!==href)) fail(canonical,'nonreciprocal alternate '+target);
   }
 }
-console.log('SEO checks passed for '+pages.size+' HTML pages.');
+console.log('SEO checks passed for '+pages.size+' HTML pages and '+breadcrumbTargets.size+' breadcrumb trails.');

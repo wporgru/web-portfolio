@@ -13,6 +13,7 @@ import VideoBlock from './blocks/VideoBlock.astro';
 import CodeBlock  from './blocks/CodeBlock.astro';
 import Divider    from './blocks/DividerBlock.astro';
 import { services } from '../content/services.mjs';
+import Breadcrumbs from './Breadcrumbs.astro';
 
 const { data, showcaseHref, langLinks, lang, ogImage, relatedCases = [], slug } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -25,6 +26,11 @@ const blocks = data.blocks ?? [];
 
 
 const projectTitle = data?.title || 'CV Hub';
+const breadcrumbs = [
+  {name:lang==='ru'?'Главная':'Home',href:base+(lang==='ru'?'/':'/en/')},
+  {name:lang==='ru'?'Проекты':'Projects',href:showcaseHref.replace(/\/?$/, '/')},
+  {name:projectTitle},
+];
 const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WPORGRU`;
 ---
 
@@ -36,8 +42,10 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
   section="showcase"
   profile=""
   customLangLinks={langLinks}
+  breadcrumbs={breadcrumbs}
 >
 <div class="project-page container">
+  <Breadcrumbs items={breadcrumbs} lang={lang} />
 
   <!-- Nav: back + share button -->
   <nav class="project-page__nav">

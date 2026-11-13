@@ -27,6 +27,7 @@ const {
   customLangLinks,
   roleLinks,
   personJsonLd,
+  breadcrumbs = [],
   noindex = false,
 } = Astro.props;
 
@@ -141,6 +142,16 @@ const jsonLd = personJsonLd ? {
 // in any string value (e.g. a bio mentioning markup) would otherwise close
 // the tag early. < is invisible to JSON parsers but not to an HTML tokenizer.
 const jsonLdSafe = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : null;
+const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map(({ name, href }, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name,
+    item: href ? new URL(href, siteUrl).href : canonicalUrl,
+  })),
+}).replace(/</g, '\\u003c') : null;
 ---
 
 <!doctype html>
@@ -167,6 +178,7 @@ const jsonLdSafe = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
     {jsonLdSafe && (
       <script type="application/ld+json" set:html={jsonLdSafe} />
     )}
+    {breadcrumbJsonLd && <script type="application/ld+json" set:html={breadcrumbJsonLd} />}
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
