@@ -1378,3 +1378,107 @@ projects:
       - label: Читать кейс
         url: /showcase/gadget-store-mobile-cart
         type: product
+  - slug: promarko-astra-foundation
+    name: Корпоративный сайт Promarko на базе Astra
+    year: "08.2026"
+    role: Веб-разработка и автоматизация
+    description: Нужно было быстро получить основу корпоративного сайта и оставить
+      заказчику возможность самостоятельно подготовить тексты и изображения. Для
+      этого не требовалась индивидуальная тема с нуля.
+    stack:
+      - WordPress
+      - Astra
+      - Site setup
+    order: 78
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/promarko-astra-foundation
+        type: product
+  - slug: diamond-grinding-products
+    name: Подготовка и загрузка алмазных шлифовальных головок
+    year: "08.2026"
+    role: Веб-разработка и автоматизация
+    description: Производителю нужно было пополнить конкретный раздел каталога.
+      Важно было заранее определить, какие поля нужны не только для показа
+      товара, но и для учёта и расчёта доставки.
+    stack:
+      - WooCommerce
+      - Excel
+      - Product data
+    order: 79
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/diamond-grinding-products
+        type: product
+  - slug: mobile-call-button-footer
+    name: Мобильная кнопка звонка и ремонт подвала сайта услуг
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: Клиенту нужен был удобный звонок с телефона и исправленный подвал.
+      На части страниц при этом оставались старые кнопки, которые могли
+      конкурировать с новым виджетом.
+    stack:
+      - WordPress
+      - Mobile layout
+      - Click to call
+    order: 80
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/mobile-call-button-footer
+        type: product
+  - slug: messenger-widget-code-handoff
+    name: Готовый виджет мессенджеров на HTML CSS и JS
+    year: "07.2026"
+    role: Веб-разработка и автоматизация
+    description: Заказчику нужен был готовый контактный блок с WeChat и другими
+      способами связи. Работа заключалась в передаче кода и инструкции, а не во
+      внедрении на неизвестный сайт.
+    stack:
+      - HTML
+      - CSS
+      - JavaScript
+      - Messaging
+    order: 81
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/messenger-widget-code-handoff
+        type: product
+  - slug: woocommerce-attribute-workflow
+    name: Консультация по массовой правке атрибутов WooCommerce
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: После восстановления копии магазина нужно было выбрать безопасный
+      способ свести товарные характеристики. Простая правка таблицы без проверки
+      идентификаторов могла нарушить соответствие записей при обратном импорте.
+    stack:
+      - WooCommerce
+      - WP Sheet Editor
+      - WP All Import
+      - WP All Export
+    order: 82
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-attribute-workflow
+        type: product
+  - slug: wordpress-internal-https
+    name: Исправление внутренних HTTP-ссылок в WordPress
+    year: "09.2020"
+    role: Веб-разработка и автоматизация
+    description: Страницы открывались по HTTPS, но внутренние ссылки вели на
+      HTTP-адреса. Требовалось исправить переходы в существующем сайте, а не
+      заказывать новую витрину или переносить домен.
+    stack:
+      - WordPress
+      - HTTPS
+      - Internal links
+    order: 83
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-internal-https
+        type: product

@@ -1,0 +1,25 @@
+title: Mobile click-to-call and footer repair for a service site
+tagline: The client needed mobile click-to-call and a repaired footer. Some
+  pages still contained older buttons that could compete with the new widget.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Mobile layout
+  - Click to call
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed mobile click-to-call and a repaired footer. Some pages
+      still contained older buttons that could compete with the new widget.
+  - type: text
+    title: How it works
+    body: Repaired the footer and installed a mobile phone widget. After client
+      review, traced the remaining buttons on service and company pages, removed
+      the reported elements and revisited the faucet installation page where the
+      issue persisted.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and explicitly confirmed both the footer and
+      widget in their review. The review covered reported pages rather than
+      every template and tablet layout.

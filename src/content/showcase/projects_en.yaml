@@ -1365,3 +1365,107 @@ projects:
       - label: Read case study
         url: /showcase/gadget-store-mobile-cart/en
         type: product
+  - slug: promarko-astra-foundation
+    name: Building a corporate site foundation for Promarko
+    year: "08.2026"
+    role: Web development and automation
+    description: The client needed a corporate site foundation and wanted to prepare
+      their own copy and imagery. A bespoke theme was not required for this
+      stage.
+    stack:
+      - WordPress
+      - Astra
+      - Site setup
+    order: 78
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/promarko-astra-foundation/en
+        type: product
+  - slug: diamond-grinding-products
+    name: Preparing and importing diamond grinding products
+    year: "08.2026"
+    role: Web development and automation
+    description: A manufacturer needed to expand a specific catalog category. The
+      import needed fields for both product presentation and practical tasks
+      such as inventory and shipping.
+    stack:
+      - WooCommerce
+      - Excel
+      - Product data
+    order: 79
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/diamond-grinding-products/en
+        type: product
+  - slug: mobile-call-button-footer
+    name: Mobile click-to-call and footer repair for a service site
+    year: "04.2026"
+    role: Web development and automation
+    description: The client needed mobile click-to-call and a repaired footer. Some
+      pages still contained older buttons that could compete with the new
+      widget.
+    stack:
+      - WordPress
+      - Mobile layout
+      - Click to call
+    order: 80
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/mobile-call-button-footer/en
+        type: product
+  - slug: messenger-widget-code-handoff
+    name: Delivering an HTML CSS and JavaScript messenger widget
+    year: "07.2026"
+    role: Web development and automation
+    description: The client needed a ready-made contact widget with WeChat and other
+      channels. The engagement covered code and instructions, not installation
+      on an unidentified website.
+    stack:
+      - HTML
+      - CSS
+      - JavaScript
+      - Messaging
+    order: 81
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/messenger-widget-code-handoff/en
+        type: product
+  - slug: woocommerce-attribute-workflow
+    name: Designing a bulk WooCommerce attribute editing workflow
+    year: "02.2024"
+    role: Web development and automation
+    description: After a store restore, the client needed a safe way to consolidate
+      product attributes. Spreadsheet edits without checking identifiers could
+      break record matching on re-import.
+    stack:
+      - WooCommerce
+      - WP Sheet Editor
+      - WP All Import
+      - WP All Export
+    order: 82
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-attribute-workflow/en
+        type: product
+  - slug: wordpress-internal-https
+    name: Fixing internal HTTP links on a WordPress site
+    year: "09.2020"
+    role: Web development and automation
+    description: Pages were served over HTTPS, but internal links pointed to HTTP
+      addresses. The job was to correct navigation on the existing site, not
+      rebuild it or migrate its domain.
+    stack:
+      - WordPress
+      - HTTPS
+      - Internal links
+    order: 83
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-internal-https/en
+        type: product

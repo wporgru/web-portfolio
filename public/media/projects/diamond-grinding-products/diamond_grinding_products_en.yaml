@@ -1,0 +1,28 @@
+title: Preparing and importing diamond grinding products
+tagline: A manufacturer needed to expand a specific catalog category. The import
+  needed fields for both product presentation and practical tasks such as
+  inventory and shipping.
+year: "08.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Excel
+  - Product data
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A manufacturer needed to expand a specific catalog category. The import
+      needed fields for both product presentation and practical tasks such as
+      inventory and shipping.
+  - type: text
+    title: How it works
+    body: Created an Excel example from existing listings, covering title,
+      description, price, SKU, stock and package dimensions. Explained how to
+      add rows and why temporarily unavailable items need not be deleted. The
+      client supplied SKUs and current inventory; after import I shared the
+      direct link to the grinding products category.
+  - type: text
+    title: Result and verification
+    body: The client accepted the catalog update. In addition to the published
+      category, they had a spreadsheet structure for preparing future items. The
+      handoff did not record an exact listing count.

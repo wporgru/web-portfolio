@@ -1,0 +1,26 @@
+title: Building a corporate site foundation for Promarko
+tagline: The client needed a corporate site foundation and wanted to prepare
+  their own copy and imagery. A bespoke theme was not required for this stage.
+year: "08.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Astra
+  - Site setup
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a corporate site foundation and wanted to prepare their
+      own copy and imagery. A bespoke theme was not required for this stage.
+  - type: text
+    title: How it works
+    body: Clarified the site's purpose, available materials and content
+      responsibilities. Suggested Astra templates not marked Premium. After the
+      client chose agency-02, installed it on the domain and changed the accent
+      from purple to green. The site remained closed to indexing at handoff so
+      demo content would not become the search-facing storefront.
+  - type: text
+    title: Result and verification
+    body: The client reviewed and accepted the foundation. They received a site
+      ready for their content on their own domain; later copy, branding and
+      promotion were outside this delivery.

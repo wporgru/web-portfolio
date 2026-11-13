@@ -18,7 +18,7 @@
     "resume:import:all": "node src/scripts/resume-import-json.mjs docs/cv_en.json en && node src/scripts/resume-import-json.mjs docs/cv_ru.json ru",
     "og:generate": "node src/scripts/generate-og-image.mjs --wallpaper=docs/repo-assets/wallpaper-bigsur.jpg",
     "build": "npm run cv:build && astro build",
-    "build:release": "npm run cv:build && npm run resume:generate && npm run resume:pdf && astro build && node src/scripts/check-downloads.mjs",
+    "build:release": "npm run cv:build && npm run resume:generate && npm run resume:pdf && astro build && node src/scripts/check-downloads.mjs && node src/scripts/check-seo.mjs",
     "portfolio:export": "node export-cases.mjs"
   },
   "dependencies": {

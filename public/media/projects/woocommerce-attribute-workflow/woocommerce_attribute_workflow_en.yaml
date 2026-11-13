@@ -1,0 +1,29 @@
+title: Designing a bulk WooCommerce attribute editing workflow
+tagline: After a store restore, the client needed a safe way to consolidate
+  product attributes. Spreadsheet edits without checking identifiers could break
+  record matching on re-import.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WP Sheet Editor
+  - WP All Import
+  - WP All Export
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After a store restore, the client needed a safe way to consolidate product
+      attributes. Spreadsheet edits without checking identifiers could break
+      record matching on re-import.
+  - type: text
+    title: How it works
+    body: Compared editing in WooCommerce with WP Sheet Editor against an export and
+      re-import workflow. For the latter I explained how to reuse the export
+      template and check product IDs. Shared documentation and clarified add-on
+      compatibility so the client could choose based on the scale of the
+      changes.
+  - type: text
+    title: Result and verification
+    body: The client accepted the consultation and received a practical workflow.
+      Bulk migration and a validation import are not presented as work performed
+      on the client’s behalf.

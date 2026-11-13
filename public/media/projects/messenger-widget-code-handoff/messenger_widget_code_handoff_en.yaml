@@ -1,0 +1,28 @@
+title: Delivering an HTML CSS and JavaScript messenger widget
+tagline: The client needed a ready-made contact widget with WeChat and other
+  channels. The engagement covered code and instructions, not installation on an
+  unidentified website.
+year: "07.2026"
+role: Web development and automation
+stack:
+  - HTML
+  - CSS
+  - JavaScript
+  - Messaging
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a ready-made contact widget with WeChat and other
+      channels. The engagement covered code and instructions, not installation
+      on an unidentified website.
+  - type: text
+    title: How it works
+    body: Delivered six code variants, pointed to the WeChat option and explained
+      where to replace contact links in the configuration block. Provided
+      placement instructions for the end of the body. The recovered selected
+      variant includes Telegram, MAX, WeChat, phone, email and SMS.
+  - type: text
+    title: Result and verification
+    body: The client received the variants and a specific option to install. Code
+      delivery is documented; deployment on the client’s website was not
+      verified.

@@ -1,0 +1,26 @@
+title: Fixing internal HTTP links on a WordPress site
+tagline: Pages were served over HTTPS, but internal links pointed to HTTP
+  addresses. The job was to correct navigation on the existing site, not rebuild
+  it or migrate its domain.
+year: "09.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - HTTPS
+  - Internal links
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Pages were served over HTTPS, but internal links pointed to HTTP
+      addresses. The job was to correct navigation on the existing site, not
+      rebuild it or migrate its domain.
+  - type: text
+    title: How it works
+    body: Confirmed the target site and the reported behavior, corrected the
+      internal addresses and handed the fix back for review. The scope was the
+      reported links, not hosting changes, certificate installation or a full
+      site migration.
+  - type: text
+    title: Result and verification
+    body: The client reviewed the fix, accepted the work and praised its quality and
+      speed. The exact replacement method and a full recrawl were not recorded.
