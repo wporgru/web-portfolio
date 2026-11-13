@@ -1,0 +1,26 @@
+title: Compatible accessories and shipping in WooCommerce
+tagline: Equipment pages needed to show compatible accessories, and checkout
+  needed to calculate the available shipping methods correctly.
+year: "10.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - eShopLogistic
+  - Data import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Equipment pages needed to show compatible accessories, and checkout needed
+      to calculate the available shipping methods correctly.
+  - type: text
+    title: How it works
+    body: Built an accessory block driven by categories or tags and presented
+      related products in a carousel. Showed the manager how to maintain
+      compatibility. Fixed a hidden country field in the eShopLogistic flow.
+      After an import identity mismatch, restored the backup, recovered three
+      manager-added listings and corrected the import mapping.
+  - type: text
+    title: Result and verification
+    body: The client confirmed checkout worked after the fix. Filling every
+      compatibility relationship and resolving the separate Yandex Delivery
+      error are not claimed as part of this result.

@@ -1,0 +1,25 @@
+title: Launching a fishing catalog from a supplier price list
+tagline: "The client needed more than a price-list import: shoppers had to be
+  able to reach the relevant categories from the storefront."
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Data import
+  - PHP
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The client needed more than a price-list import: shoppers had to be able
+      to reach the relevant categories from the storefront."
+  - type: text
+    title: How it works
+    body: Prepared the data and resumed the import after 504 errors once the client
+      arranged a temporary hosting upgrade. Adjusted available PHP settings,
+      corrected product image sizing, assigned category images and made the
+      catalog the store homepage.
+  - type: text
+    title: Result and verification
+    body: The client approved the presentation and accepted the work. About 90
+      items, mainly landing nets, were imported without photos because of
+      image-server issues; the catalog was not presented as fully illustrated.

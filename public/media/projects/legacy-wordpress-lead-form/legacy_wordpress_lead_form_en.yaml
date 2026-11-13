@@ -1,0 +1,28 @@
+title: Updating legacy WordPress and restoring a lead form
+tagline: Updates were blocked on a legacy site, and the footer inquiry form
+  needed recovery. The goal was to restore lead capture without reactivating
+  components already known to cause problems.
+year: "06.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - WPBakery
+  - Forms
+  - Maintenance
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Updates were blocked on a legacy site, and the footer inquiry form needed
+      recovery. The goal was to restore lead capture without reactivating
+      components already known to cause problems.
+  - type: text
+    title: How it works
+    body: Checked that automatic backups existed, removed the update blocker and
+      confirmed the site used WPBakery. Updated available components within the
+      agreed scope. Rebuilt the form to send the submitted address to the
+      administrator and clearly identify requests for a quote.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the form and accepted the order. A complete
+      multilingual restoration, WPBakery update and testing every submission
+      channel were outside this stage.

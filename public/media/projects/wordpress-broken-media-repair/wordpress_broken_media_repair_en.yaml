@@ -1,0 +1,26 @@
+title: Fixing broken blog images and redirect issues
+tagline: A previous stage left a queue of broken image URLs and unnecessary
+  redirects. The brief was to fix the known issues, not replace the theme again.
+year: "04.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - HTTP 404
+  - Redirects
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A previous stage left a queue of broken image URLs and unnecessary
+      redirects. The brief was to fix the known issues, not replace the theme
+      again.
+  - type: text
+    title: How it works
+    body: Handled images in batches and reported progress, then completed work on
+      the known 404 and 301 URLs according to the handoff. Kept one redirect for
+      security reasons; video replacement was handled separately.
+  - type: text
+    title: Result and verification
+    body: The client accepted delivery. Interim image counts are not presented as a
+      final inventory, and URL repairs are not presented as verified search
+      traffic growth.

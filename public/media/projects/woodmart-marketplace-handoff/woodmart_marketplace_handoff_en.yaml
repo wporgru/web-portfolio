@@ -1,0 +1,26 @@
+title: Preparing WoodMart Marketplace for client-managed content
+tagline: The client needed a store foundation they could populate with their own
+  products, banners and pages without rebuilding the templates.
+year: "04.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - WPBakery
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a store foundation they could populate with their own
+      products, banners and pages without rebuilding the templates.
+  - type: text
+    title: How it works
+    body: Configured WoodMart Marketplace and localized visible interface elements
+      and page labels. Kept demo content as replaceable examples and showed
+      where to update images, copy, links, company information and contact
+      details.
+  - type: text
+    title: Result and verification
+    body: The client accepted the configured foundation. Populating it, translating
+      all demo material and verifying payments were not presented as part of
+      this delivery.

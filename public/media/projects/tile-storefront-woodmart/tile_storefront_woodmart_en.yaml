@@ -1,0 +1,26 @@
+title: A WoodMart tile storefront with an inquiry form
+tagline: The tile business needed a working first-stage storefront with clear
+  categories, product pages and a way to contact a sales manager.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - Metrica
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The tile business needed a working first-stage storefront with clear
+      categories, product pages and a way to contact a sales manager.
+  - type: text
+    title: How it works
+    body: Prepared the homepage, header, footer, categories and product-page
+      template. Configured the inquiry flow separately from online purchasing.
+      Replaced the problematic Metrica integration with the agreed direct code
+      and identified naming and description fixes that belonged in the 1C source
+      data.
+  - type: text
+    title: Result and verification
+    body: The client accepted phase one. Some commercial pages and full correction
+      of source product records were outside this handoff.

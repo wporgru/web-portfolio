@@ -1,0 +1,27 @@
+title: WordPress component updates and footer recovery
+tagline: Updates on a live site exposed footer and mobile menu problems. The
+  goal was to restore the agreed appearance and identify which components
+  influenced it.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Theme updates
+  - ElementsKit
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Updates on a live site exposed footer and mobile menu problems. The goal
+      was to restore the agreed appearance and identify which components
+      influenced it.
+  - type: text
+    title: How it works
+    body: Updated the available components and reinstalled the updated theme without
+      treating two unofficial Pro plugins as part of the upgrade. After client
+      review, investigated ElementsKit feedback, identified the relevant
+      templates and restored the footer.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the footer was ready and accepted the order. The
+      report does not establish a final mobile menu test or complete ElementsKit
+      recovery.

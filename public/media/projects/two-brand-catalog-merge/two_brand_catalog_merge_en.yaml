@@ -1,0 +1,26 @@
+title: Merging two brand catalogs for WooCommerce
+tagline: Two brands provided data in different spreadsheets. Importing them
+  independently without agreeing a structure could lead to inconsistent product
+  records.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Spreadsheet mapping
+  - Data import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Two brands provided data in different spreadsheets. Importing them
+      independently without agreeing a structure could lead to inconsistent
+      product records.
+  - type: text
+    title: How it works
+    body: Agreed to reconcile the data first and requested the existing page as a
+      content source. Prepared a combined dataset, configured the WooCommerce
+      import and handed over the result for review.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the transfer and accepted the work. A count from one
+      spreadsheet is not treated as the combined total, and ongoing
+      synchronization was outside scope.

@@ -851,3 +851,141 @@ projects:
       - label: Читать кейс
         url: /showcase/form-confirmation-recovery
         type: product
+  - slug: fishing-catalog-launch
+    name: Запуск каталога рыболовных товаров из прайса
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Заказчику нужен был не просто загруженный прайс, а витрина, с
+      которой покупатель сразу может перейти к нужной категории.
+    stack:
+      - WooCommerce
+      - Data import
+      - PHP
+    order: 47
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/fishing-catalog-launch
+        type: product
+  - slug: tile-storefront-woodmart
+    name: Витрина плитки на WoodMart и форма заказа
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: "Магазину плитки требовался первый рабочий этап витрины: понятные
+      категории, карточки и сценарий обращения к менеджеру."
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Metrica
+    order: 48
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/tile-storefront-woodmart
+        type: product
+  - slug: product-accessories-logistics
+    name: Совместимые аксессуары и доставка в WooCommerce
+    year: "10.2025"
+    role: Веб-разработка и автоматизация
+    description: В карточках оборудования нужно было показывать подходящие
+      аксессуары, а при заказе — корректно рассчитывать доступные варианты
+      доставки.
+    stack:
+      - WooCommerce
+      - eShopLogistic
+      - Data import
+    order: 49
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/product-accessories-logistics
+        type: product
+  - slug: wordpress-footer-update
+    name: Обновление компонентов и восстановление футера
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: После обновлений на действующем сайте появились проблемы с подвалом
+      и мобильным меню. Нужно было вернуть согласованный внешний вид и
+      разобраться, какие компоненты влияют на результат.
+    stack:
+      - WordPress
+      - Theme updates
+      - ElementsKit
+    order: 50
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-footer-update
+        type: product
+  - slug: two-brand-catalog-merge
+    name: Объединение каталогов двух брендов для WooCommerce
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Два бренда передали данные в разных таблицах. Если загружать файлы
+      независимо без согласования структуры, поля могут попасть в разные места и
+      усложнить дальнейшую работу с каталогом.
+    stack:
+      - WooCommerce
+      - Spreadsheet mapping
+      - Data import
+    order: 51
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/two-brand-catalog-merge
+        type: product
+  - slug: wordpress-broken-media-repair
+    name: Исправление битых изображений и редиректов блога
+    year: "04.2025"
+    role: Веб-разработка и автоматизация
+    description: "После предыдущего этапа работ оставалась очередь проблемных
+      адресов: недоступные изображения и лишние переадресации. Задача была в
+      исправлении найденных ошибок, а не в очередной смене темы."
+    stack:
+      - WordPress
+      - HTTP 404
+      - Redirects
+      - Technical SEO
+    order: 52
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-broken-media-repair
+        type: product
+  - slug: legacy-wordpress-lead-form
+    name: Обновление старого WordPress и восстановление формы заявок
+    year: "06.2025"
+    role: Веб-разработка и автоматизация
+    description: На старом сайте были заблокированы обновления, а форма в подвале
+      требовала восстановления. Нужно было вернуть канал заявок и не
+      активировать компоненты, которые уже вызывали ошибки.
+    stack:
+      - WordPress
+      - WPBakery
+      - Forms
+      - Maintenance
+    order: 53
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/legacy-wordpress-lead-form
+        type: product
+  - slug: woodmart-marketplace-handoff
+    name: Настройка WoodMart Marketplace под контент клиента
+    year: "04.2025"
+    role: Веб-разработка и автоматизация
+    description: Нужна была готовая основа магазина, которую заказчик сможет
+      наполнить своими товарами, баннерами и страницами без повторной сборки
+      шаблонов.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - WPBakery
+    order: 54
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woodmart-marketplace-handoff
+        type: product

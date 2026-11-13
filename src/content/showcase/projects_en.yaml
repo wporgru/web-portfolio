@@ -843,3 +843,139 @@ projects:
       - label: Read case study
         url: /showcase/form-confirmation-recovery/en
         type: product
+  - slug: fishing-catalog-launch
+    name: Launching a fishing catalog from a supplier price list
+    year: "02.2026"
+    role: Web development and automation
+    description: "The client needed more than a price-list import: shoppers had to
+      be able to reach the relevant categories from the storefront."
+    stack:
+      - WooCommerce
+      - Data import
+      - PHP
+    order: 47
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/fishing-catalog-launch/en
+        type: product
+  - slug: tile-storefront-woodmart
+    name: A WoodMart tile storefront with an inquiry form
+    year: "03.2026"
+    role: Web development and automation
+    description: The tile business needed a working first-stage storefront with
+      clear categories, product pages and a way to contact a sales manager.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Metrica
+    order: 48
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/tile-storefront-woodmart/en
+        type: product
+  - slug: product-accessories-logistics
+    name: Compatible accessories and shipping in WooCommerce
+    year: "10.2025"
+    role: Web development and automation
+    description: Equipment pages needed to show compatible accessories, and checkout
+      needed to calculate the available shipping methods correctly.
+    stack:
+      - WooCommerce
+      - eShopLogistic
+      - Data import
+    order: 49
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/product-accessories-logistics/en
+        type: product
+  - slug: wordpress-footer-update
+    name: WordPress component updates and footer recovery
+    year: "04.2026"
+    role: Web development and automation
+    description: Updates on a live site exposed footer and mobile menu problems. The
+      goal was to restore the agreed appearance and identify which components
+      influenced it.
+    stack:
+      - WordPress
+      - Theme updates
+      - ElementsKit
+    order: 50
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-footer-update/en
+        type: product
+  - slug: two-brand-catalog-merge
+    name: Merging two brand catalogs for WooCommerce
+    year: "02.2026"
+    role: Web development and automation
+    description: Two brands provided data in different spreadsheets. Importing them
+      independently without agreeing a structure could lead to inconsistent
+      product records.
+    stack:
+      - WooCommerce
+      - Spreadsheet mapping
+      - Data import
+    order: 51
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/two-brand-catalog-merge/en
+        type: product
+  - slug: wordpress-broken-media-repair
+    name: Fixing broken blog images and redirect issues
+    year: "04.2025"
+    role: Web development and automation
+    description: A previous stage left a queue of broken image URLs and unnecessary
+      redirects. The brief was to fix the known issues, not replace the theme
+      again.
+    stack:
+      - WordPress
+      - HTTP 404
+      - Redirects
+      - Technical SEO
+    order: 52
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-broken-media-repair/en
+        type: product
+  - slug: legacy-wordpress-lead-form
+    name: Updating legacy WordPress and restoring a lead form
+    year: "06.2025"
+    role: Web development and automation
+    description: Updates were blocked on a legacy site, and the footer inquiry form
+      needed recovery. The goal was to restore lead capture without reactivating
+      components already known to cause problems.
+    stack:
+      - WordPress
+      - WPBakery
+      - Forms
+      - Maintenance
+    order: 53
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/legacy-wordpress-lead-form/en
+        type: product
+  - slug: woodmart-marketplace-handoff
+    name: Preparing WoodMart Marketplace for client-managed content
+    year: "04.2025"
+    role: Web development and automation
+    description: The client needed a store foundation they could populate with their
+      own products, banners and pages without rebuilding the templates.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - WPBakery
+    order: 54
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woodmart-marketplace-handoff/en
+        type: product
