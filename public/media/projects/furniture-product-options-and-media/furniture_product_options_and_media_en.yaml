@@ -1,0 +1,29 @@
+title: "Furniture product pages: options, photos and enquiries"
+tagline: Refined furniture listings where numerous fabric and size combinations
+  made standard variations unwieldy, while preparing part of the catalog for
+  upload.
+year: "08.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product options
+  - Image compression
+  - Catalog data
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined furniture listings where numerous fabric and size combinations
+      made standard variations unwieldy, while preparing part of the catalog for
+      upload.
+  - type: text
+    title: How it works
+    body: Used Carina Nova and Feraha to review color and size options, removed
+      unnecessary card elements and explored alternatives to hundreds of
+      variations. Set up an enquiry button and confirmed it with the client.
+      Prepared a spreadsheet covering 35 products from supplied photo archives,
+      compressed media and demonstrated a gallery.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage. The fabric catalog and full configurator
+      were not completed; 35 products was the spreadsheet scope, not a live
+      listing count.

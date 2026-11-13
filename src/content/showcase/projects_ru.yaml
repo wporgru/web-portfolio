@@ -4501,3 +4501,90 @@ projects:
       - label: Читать кейс
         url: /showcase/ecu-files-table-filter
         type: product
+  - slug: confectionery-woocommerce-foundation
+    name: Настройка кондитерского магазина на WoodMart
+    year: "04.2021"
+    role: Веб-разработка и автоматизация
+    description: Подготовил основу кондитерского магазина и проверил, что заказ
+      доходит до почты. Клиенту был нужен простой сценарий с оплатой при
+      получении, без обязательного эквайринга.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Local delivery
+      - Transactional email
+    order: 257
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/confectionery-woocommerce-foundation
+        type: product
+  - slug: furniture-home-city-selection
+    name: Главная мебельного магазина и выбор города
+    year: "05.2021"
+    role: Веб-разработка и автоматизация
+    description: Доработал главную мебельного магазина и добавил выбор города.
+      Владелец мог наполнить подготовленные разделы позже, не меняя навигацию.
+    stack:
+      - WordPress
+      - WooCommerce
+      - GeoTargeting
+      - Storefront UX
+    order: 258
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/furniture-home-city-selection
+        type: product
+  - slug: furniture-product-options-and-media
+    name: "Карточки мебели: варианты, фотографии и заявки"
+    year: "08.2021"
+    role: Веб-разработка и автоматизация
+    description: Доработал карточки мебели, где число сочетаний тканей и размеров
+      делало обычные вариации неудобными. Параллельно подготовил часть
+      ассортимента к загрузке.
+    stack:
+      - WooCommerce
+      - Product options
+      - Image compression
+      - Catalog data
+    order: 259
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/furniture-product-options-and-media
+        type: product
+  - slug: skyruss-news-site-foundation
+    name: Новостная основа Skyruss на Cream Magazine
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: Установил основу новостного сайта на WordPress, чтобы заказчица
+      могла продолжить публикацию в подходящей для медиа теме.
+    stack:
+      - WordPress
+      - Cream Magazine
+      - News publishing
+    order: 260
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/skyruss-news-site-foundation
+        type: product
+  - slug: volvoparts-woodmart-demo
+    name: Шаблонная витрина автозапчастей Volvoparts
+    year: "07.2022"
+    role: Веб-разработка и автоматизация
+    description: Подготовил основу витрины запчастей на WoodMart Motorcycle.
+      Демонстрационный каталог позволял согласовать структуру магазина до
+      загрузки реального ассортимента.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Hosting
+    order: 261
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/volvoparts-woodmart-demo
+        type: product

@@ -1,0 +1,29 @@
+title: Setting up a confectionery store on WoodMart
+tagline: Prepared a confectionery storefront and checked that orders reached the
+  inbox. The client needed a simple pay-on-delivery workflow rather than
+  mandatory online payments.
+year: "04.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WoodMart
+  - Local delivery
+  - Transactional email
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a confectionery storefront and checked that orders reached the
+      inbox. The client needed a simple pay-on-delivery workflow rather than
+      mandatory online payments.
+  - type: text
+    title: How it works
+    body: Found a critical catalog extension conflict on the first site and disabled
+      it. Agreed on layout and categories for the replacement project and
+      configured the interface and fulfilment options. When the client chose a
+      bank transfer rather than acquiring, excluded online payments from
+      delivery and tested checkout and its email.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the email and accepted the store foundation. Bulk
+      content entry, a live payment and testing every carrier were outside this
+      delivery.

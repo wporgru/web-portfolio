@@ -1,0 +1,28 @@
+title: Volvoparts starter storefront on WoodMart
+tagline: Prepared a parts storefront foundation using WoodMart Motorcycle. The
+  demo catalog gave the client a way to review the structure before loading
+  actual stock.
+year: "07.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - Hosting
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a parts storefront foundation using WoodMart Motorcycle. The demo
+      catalog gave the client a way to review the structure before loading
+      actual stock.
+  - type: text
+    title: How it works
+    body: Waited for hosting support to correct DNS after the HTTPS switch and
+      checked that the site opened again. Installed the theme and demo products,
+      images and blocks. Explained that translating theme settings does not
+      translate demonstration pages.
+  - type: text
+    title: Result and verification
+    body: The client accepted the starter setup. Demo products did not represent
+      actual inventory, and the theme installation did not include a completed
+      store with payment and shipping.

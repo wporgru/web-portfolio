@@ -4448,3 +4448,91 @@ projects:
       - label: Read case study
         url: /showcase/ecu-files-table-filter/en
         type: product
+  - slug: confectionery-woocommerce-foundation
+    name: Setting up a confectionery store on WoodMart
+    year: "04.2021"
+    role: Web development and automation
+    description: Prepared a confectionery storefront and checked that orders reached
+      the inbox. The client needed a simple pay-on-delivery workflow rather than
+      mandatory online payments.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Local delivery
+      - Transactional email
+    order: 257
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/confectionery-woocommerce-foundation/en
+        type: product
+  - slug: furniture-home-city-selection
+    name: Furniture storefront homepage and city selection
+    year: "05.2021"
+    role: Web development and automation
+    description: Refined a furniture storefront homepage and added city selection.
+      The owner could populate the prepared pages later without rebuilding
+      navigation.
+    stack:
+      - WordPress
+      - WooCommerce
+      - GeoTargeting
+      - Storefront UX
+    order: 258
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/furniture-home-city-selection/en
+        type: product
+  - slug: furniture-product-options-and-media
+    name: "Furniture product pages: options, photos and enquiries"
+    year: "08.2021"
+    role: Web development and automation
+    description: Refined furniture listings where numerous fabric and size
+      combinations made standard variations unwieldy, while preparing part of
+      the catalog for upload.
+    stack:
+      - WooCommerce
+      - Product options
+      - Image compression
+      - Catalog data
+    order: 259
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/furniture-product-options-and-media/en
+        type: product
+  - slug: skyruss-news-site-foundation
+    name: Skyruss news site foundation on Cream Magazine
+    year: "12.2022"
+    role: Web development and automation
+    description: Installed a WordPress news site foundation so the owner could
+      continue publishing in a magazine-oriented theme.
+    stack:
+      - WordPress
+      - Cream Magazine
+      - News publishing
+    order: 260
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/skyruss-news-site-foundation/en
+        type: product
+  - slug: volvoparts-woodmart-demo
+    name: Volvoparts starter storefront on WoodMart
+    year: "07.2022"
+    role: Web development and automation
+    description: Prepared a parts storefront foundation using WoodMart Motorcycle.
+      The demo catalog gave the client a way to review the structure before
+      loading actual stock.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Hosting
+    order: 261
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/volvoparts-woodmart-demo/en
+        type: product

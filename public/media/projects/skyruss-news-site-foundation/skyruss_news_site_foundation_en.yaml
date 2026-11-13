@@ -1,0 +1,23 @@
+title: Skyruss news site foundation on Cream Magazine
+tagline: Installed a WordPress news site foundation so the owner could continue
+  publishing in a magazine-oriented theme.
+year: "12.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - Cream Magazine
+  - News publishing
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Installed a WordPress news site foundation so the owner could continue
+      publishing in a magazine-oriented theme.
+  - type: text
+    title: How it works
+    body: Confirmed the CMS and theme, deployed WordPress with Cream Magazine and
+      handed over the result. Installation was a standalone stage, separate from
+      moving existing content or designing an entire editorial workflow.
+  - type: text
+    title: Result and verification
+    body: The owner accepted the installation and left a positive review. Full
+      migration of material from the previous system was not verified.

@@ -1,0 +1,27 @@
+title: Furniture storefront homepage and city selection
+tagline: Refined a furniture storefront homepage and added city selection. The
+  owner could populate the prepared pages later without rebuilding navigation.
+year: "05.2021"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - GeoTargeting
+  - Storefront UX
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined a furniture storefront homepage and added city selection. The
+      owner could populate the prepared pages later without rebuilding
+      navigation.
+  - type: text
+    title: How it works
+    body: Built the navigation and page placeholders and configured headings,
+      spacing and a news strip that showed posts with images. Refined the
+      header, colors and slider offset after feedback. Installed WT
+      GeoTargeting, checked theme compatibility separately and narrowed the city
+      list at the client's request.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage. City selection did not establish verified
+      geolocation, regional pricing or a dealer network.
