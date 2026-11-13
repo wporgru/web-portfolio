@@ -5,6 +5,7 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'garland-catalog-import-training': ['historical-variants.webp', 'Выбор цвета в карточке гирлянды', 'Color selection on a garland product page', 'Исторический фрагмент из портфолио Kwork: виден выбор цвета. Это не тест корзины.', 'Historical Kwork portfolio excerpt showing color selection. It is not a cart test.'],
   'hyperstroy-tool-store': ['historical-storefront.webp', 'Главная магазина «ГиперСтрой»: категории и товары', 'HyperStroy homepage with categories and products', 'Исторический длинный снимок витрины из портфолио Kwork, июнь 2024. Сохранён без обрезки.', 'Historical storefront screenshot from the Kwork portfolio, June 2024. Preserved without cropping.'],
   'arenda-pm-home-performance': ['mobile-viewport.png', 'Мобильный первый экран после оптимизации', 'Mobile first screen after optimization', 'Снимок браузерной проверки, ширина 390 px. Это не отчёт PageSpeed и не полностраничный снимок.', 'Browser verification screenshot at 390 px. This is not a PageSpeed report or a full-page capture.'],
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],

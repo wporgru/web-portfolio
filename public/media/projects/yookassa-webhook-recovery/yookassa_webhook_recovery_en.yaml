@@ -1,0 +1,24 @@
+title: Restoring YooKassa payment notifications
+tagline: Restored an existing YooKassa connection when payment status and email
+  notifications did not behave as expected.
+year: "10.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YooKassa
+  - Webhooks
+  - Transactional email
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Restored an existing YooKassa connection when payment status and email
+      notifications did not behave as expected.
+  - type: text
+    title: How it works
+    body: Corrected a broken settings link and helped escalate the issue. Support
+      identified a missing webhook subscription. After further setup, ran a test
+      payment and asked the client to confirm the email.
+  - type: text
+    title: Result and verification
+    body: The client confirmed receipt and accepted the result. The work restored an
+      existing integration rather than installing a new payment system.

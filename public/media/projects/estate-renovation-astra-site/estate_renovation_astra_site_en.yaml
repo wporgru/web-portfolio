@@ -1,0 +1,26 @@
+title: Astra website for the Pomestye renovation company
+tagline: Prepared a renovation company website on Astra with services, contacts
+  and a form for describing the project.
+year: "10.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - Astra
+  - Responsive design
+  - Lead forms
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a renovation company website on Astra with services, contacts and
+      a form for describing the project.
+  - type: text
+    title: How it works
+    body: Built desktop and mobile layouts and presented the company identity and
+      list of renovation services. Designed the enquiry form around name, phone,
+      approximate scope and a description, then submitted both layouts for
+      approval.
+  - type: text
+    title: Result and verification
+    body: The client approved the layout and accepted the order. The archive
+      documents the form design, not a separate delivery test or the final
+      background tweaks.

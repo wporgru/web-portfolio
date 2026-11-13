@@ -1,0 +1,24 @@
+title: Car buyback website with services and a blog
+tagline: Built a WordPress site for a car buyback business with service pages
+  and a blog the client could maintain independently.
+year: "10.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - Service pages
+  - Blogging
+  - Documentation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a WordPress site for a car buyback business with service pages and a
+      blog the client could maintain independently.
+  - type: text
+    title: How it works
+    body: Demonstrated the site on the project domain, fixed unlinked article titles
+      and aligned the services URL with the agreed structure. Provided two
+      walkthroughs covering the header and footer, and content editing.
+  - type: text
+    title: Result and verification
+    body: The client accepted the site. Enabling indexing and setting up live
+      messenger notifications remained separate launch steps.

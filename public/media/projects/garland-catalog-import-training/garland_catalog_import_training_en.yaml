@@ -1,0 +1,31 @@
+title: Garland catalog import and color variations
+tagline: Fixed a garland spreadsheet import, prepared the assortment for upload
+  and showed the owner how to update the catalog without rebuilding it manually.
+year: "10.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CSV
+  - UTF-8
+  - Product variations
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Fixed a garland spreadsheet import, prepared the assortment for upload and
+      showed the owner how to update the catalog without rebuilding it manually.
+  - type: text
+    title: How it works
+    body: Fixed encoding and spreadsheet structure, including UTF-8, column headers
+      and category paths. Excluded fir and pine products from the expanded
+      assortment by agreement. Configured the catalog and metadata, delivered
+      the working sheet and instructions, and demonstrated color options on
+      sample items.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. The historical screenshot shows color
+      selection but does not verify all variants or stock levels.
+  - type: image
+    src: /media/projects/garland-catalog-import-training/historical-variants.webp
+    alt: Color selection on a garland product page
+    caption: Historical Kwork portfolio excerpt showing color selection. It is not a
+      cart test.

@@ -3095,3 +3095,123 @@ projects:
       - label: Read case study
         url: /showcase/cart-gift-thresholds/en
         type: product
+  - slug: door-catalog-variation-import
+    name: Importing a door catalog with color and size options
+    year: "12.2023"
+    role: Web development and automation
+    description: Moved door categories and products into WooCommerce so shoppers
+      could choose a model’s finish without hunting through duplicate listings.
+    stack:
+      - WooCommerce
+      - YML
+      - Product variations
+      - Taxonomy
+    order: 179
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/door-catalog-variation-import/en
+        type: product
+  - slug: tilda-yml-specifications
+    name: Refining a Tilda YML product feed for Yandex
+    year: "10.2023"
+    role: Web development and automation
+    description: "Prepared a Tilda feed for upload to Yandex: the export contained
+      product specifications, but not in the structure the receiving system
+      expected."
+    stack:
+      - Tilda
+      - YML
+      - XML
+      - Product feeds
+    order: 180
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/tilda-yml-specifications/en
+        type: product
+  - slug: yookassa-webhook-recovery
+    name: Restoring YooKassa payment notifications
+    year: "10.2023"
+    role: Web development and automation
+    description: Restored an existing YooKassa connection when payment status and
+      email notifications did not behave as expected.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Webhooks
+      - Transactional email
+    order: 181
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/yookassa-webhook-recovery/en
+        type: product
+  - slug: garland-catalog-import-training
+    name: Garland catalog import and color variations
+    year: "10.2023"
+    role: Web development and automation
+    description: Fixed a garland spreadsheet import, prepared the assortment for
+      upload and showed the owner how to update the catalog without rebuilding
+      it manually.
+    stack:
+      - WooCommerce
+      - CSV
+      - UTF-8
+      - Product variations
+    order: 182
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/garland-catalog-import-training/en
+        type: product
+  - slug: estate-renovation-astra-site
+    name: Astra website for the Pomestye renovation company
+    year: "10.2023"
+    role: Web development and automation
+    description: Prepared a renovation company website on Astra with services,
+      contacts and a form for describing the project.
+    stack:
+      - WordPress
+      - Astra
+      - Responsive design
+      - Lead forms
+    order: 183
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/estate-renovation-astra-site/en
+        type: product
+  - slug: car-buyback-site-with-blog
+    name: Car buyback website with services and a blog
+    year: "10.2023"
+    role: Web development and automation
+    description: Built a WordPress site for a car buyback business with service
+      pages and a blog the client could maintain independently.
+    stack:
+      - WordPress
+      - Service pages
+      - Blogging
+      - Documentation
+    order: 184
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/car-buyback-site-with-blog/en
+        type: product
+  - slug: related-articles-product-tabs
+    name: Related articles in WooCommerce product tabs
+    year: "12.2023"
+    role: Web development and automation
+    description: Added a way to show useful editorial content directly on product
+      pages while keeping article selection specific to each item.
+    stack:
+      - WooCommerce
+      - Shortcodes
+      - Editorial workflow
+    order: 185
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/related-articles-product-tabs/en
+        type: product

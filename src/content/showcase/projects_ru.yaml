@@ -3132,3 +3132,124 @@ projects:
       - label: Читать кейс
         url: /showcase/cart-gift-thresholds
         type: product
+  - slug: door-catalog-variation-import
+    name: Импорт дверей с выбором цвета и размера
+    year: "12.2023"
+    role: Веб-разработка и автоматизация
+    description: Перенёс категории и ассортимент дверей в WooCommerce. Покупатель
+      должен был выбирать исполнение одной модели, а не искать нужный цвет среди
+      дублирующих карточек.
+    stack:
+      - WooCommerce
+      - YML
+      - Product variations
+      - Taxonomy
+    order: 179
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/door-catalog-variation-import
+        type: product
+  - slug: tilda-yml-specifications
+    name: Доработка YML-фида из Tilda для Яндекса
+    year: "10.2023"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил фид из Tilda для загрузки в Яндекс: товарные
+      характеристики были в выгрузке, но не в той структуре, в которой их ожидал
+      получатель."
+    stack:
+      - Tilda
+      - YML
+      - XML
+      - Product feeds
+    order: 180
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/tilda-yml-specifications
+        type: product
+  - slug: yookassa-webhook-recovery
+    name: Восстановление уведомлений об оплате ЮKassa
+    year: "10.2023"
+    role: Веб-разработка и автоматизация
+    description: Восстановил связь существующего магазина с ЮKassa, когда статус
+      оплаты и почтовое уведомление не отрабатывали как ожидается.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Webhooks
+      - Transactional email
+    order: 181
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/yookassa-webhook-recovery
+        type: product
+  - slug: garland-catalog-import-training
+    name: Импорт гирлянд и настройка выбора цвета
+    year: "10.2023"
+    role: Веб-разработка и автоматизация
+    description: Восстановил импорт таблицы с гирляндами, подготовил ассортимент к
+      загрузке и показал владельцу, как обновлять каталог без повторной ручной
+      сборки.
+    stack:
+      - WooCommerce
+      - CSV
+      - UTF-8
+      - Product variations
+    order: 182
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/garland-catalog-import-training
+        type: product
+  - slug: estate-renovation-astra-site
+    name: Сайт ремонтной компании «Поместье» на Astra
+    year: "10.2023"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил сайт ремонтной компании на Astra: перечень услуг,
+      контакты и форму для заявки с описанием задачи."
+    stack:
+      - WordPress
+      - Astra
+      - Responsive design
+      - Lead forms
+    order: 183
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/estate-renovation-astra-site
+        type: product
+  - slug: car-buyback-site-with-blog
+    name: Сайт выкупа автомобилей с услугами и блогом
+    year: "10.2023"
+    role: Веб-разработка и автоматизация
+    description: Собрал WordPress-сайт выкупа автомобилей с разделом услуг и блогом,
+      который клиент мог редактировать самостоятельно.
+    stack:
+      - WordPress
+      - Service pages
+      - Blogging
+      - Documentation
+    order: 184
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/car-buyback-site-with-blog
+        type: product
+  - slug: related-articles-product-tabs
+    name: Связанные статьи во вкладках товаров WooCommerce
+    year: "12.2023"
+    role: Веб-разработка и автоматизация
+    description: Добавил способ показывать полезные статьи прямо в карточках
+      товаров, сохранив индивидуальный выбор материалов для каждой позиции.
+    stack:
+      - WooCommerce
+      - Shortcodes
+      - Editorial workflow
+    order: 185
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/related-articles-product-tabs
+        type: product

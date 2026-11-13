@@ -1,0 +1,25 @@
+title: Refining a Tilda YML product feed for Yandex
+tagline: "Prepared a Tilda feed for upload to Yandex: the export contained
+  product specifications, but not in the structure the receiving system
+  expected."
+year: "10.2023"
+role: Web development and automation
+stack:
+  - Tilda
+  - YML
+  - XML
+  - Product feeds
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Prepared a Tilda feed for upload to Yandex: the export contained product
+      specifications, but not in the structure the receiving system expected."
+  - type: text
+    title: How it works
+    body: Located specifications in the source export and mapped them to param
+      elements. Hosted the corrected file at a URL and handed it over for
+      upload. Explicitly documented that barcode was not added.
+  - type: text
+    title: Result and verification
+    body: The client confirmed a successful upload and accepted the work. Search
+      appearance and traffic gains were not verified.

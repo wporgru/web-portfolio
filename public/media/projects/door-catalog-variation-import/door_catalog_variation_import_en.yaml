@@ -1,0 +1,27 @@
+title: Importing a door catalog with color and size options
+tagline: Moved door categories and products into WooCommerce so shoppers could
+  choose a model’s finish without hunting through duplicate listings.
+year: "12.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YML
+  - Product variations
+  - Taxonomy
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Moved door categories and products into WooCommerce so shoppers could
+      choose a model’s finish without hunting through duplicate listings.
+  - type: text
+    title: How it works
+    body: After the first import, checked color selection and got approval for a
+      grouped sample. Reran the import with revised image handling after size
+      photos were flagged. Investigated missing specifications and agreed to
+      restore them on the next pass. For arches and portals, displayed
+      variations as individual listings.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. The source contained 3,320 variations
+      according to the project record, not 3,320 parent listings or
+      independently verified live products.

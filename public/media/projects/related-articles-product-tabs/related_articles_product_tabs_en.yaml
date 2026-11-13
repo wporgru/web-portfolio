@@ -1,0 +1,23 @@
+title: Related articles in WooCommerce product tabs
+tagline: Added a way to show useful editorial content directly on product pages
+  while keeping article selection specific to each item.
+year: "12.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Shortcodes
+  - Editorial workflow
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Added a way to show useful editorial content directly on product pages
+      while keeping article selection specific to each item.
+  - type: text
+    title: How it works
+    body: Configured a shortcode-based display in product tabs. Provided annotated
+      examples and a setup video and explained spacing so the embedded block
+      would remain distinct from the text.
+  - type: text
+    title: Result and verification
+    body: The client accepted the result. Automatic article assignment across the
+      entire catalog was outside this stage.
