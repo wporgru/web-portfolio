@@ -1,0 +1,27 @@
+title: Spanish localization for a WordPress portfolio
+tagline: Enabled a second language and gave the site owner a repeatable workflow
+  for translating pages, posts, portfolio entries and widgets without altering
+  the original version.
+year: "06.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Localization
+  - Responsive layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Enabled a second language and gave the site owner a repeatable workflow
+      for translating pages, posts, portfolio entries and widgets without
+      altering the original version.
+  - type: text
+    title: How it works
+    body: Cleaned up the language switcher, removing a duplicate and an extra entry
+      while retaining descriptive labels. Recorded instructions for copying
+      content into a translation, translating widgets and editing the Spanish
+      menu separately. Fixed banners that stacked vertically instead of
+      scrolling horizontally and refined the mobile layout.
+  - type: text
+    title: Result and verification
+    body: The owner checked the fixes and accepted the work. A complete manual
+      translation of every page was not part of this stage.

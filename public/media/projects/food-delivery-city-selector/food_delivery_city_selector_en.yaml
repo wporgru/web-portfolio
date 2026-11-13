@@ -1,0 +1,27 @@
+title: City selector for a food delivery website
+tagline: Set up a city selector for a delivery network so customers could switch
+  to the right region without repeating the choice on every visit.
+year: "11.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Regional subdomains
+  - Cookies
+  - ACF
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Set up a city selector for a delivery network so customers could switch to
+      the right region without repeating the choice on every visit.
+  - type: text
+    title: How it works
+    body: Prepared a spreadsheet for regional data and placed a selector link where
+      visitors expected it. Explained how the cookie remembers a choice and how
+      to check different cities in a private session. After an iPhone layout
+      issue was reported, moved the city name to its own line and checked Kursk
+      and Volgograd.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the mobile improvement and accepted the work. The
+      move to numeric subdomains was cancelled, and automatic location accuracy
+      was not measured for every city.

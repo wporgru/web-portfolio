@@ -1,0 +1,29 @@
+title: Technical SEO for an HVAC equipment store
+tagline: Investigated how broken pagination, redundant archives and filter URLs
+  entered the crawl of an HVAC store. The work focused on URL generation rather
+  than bulk copy changes.
+year: "11.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Yoast SEO
+  - Technical SEO
+  - XML Sitemap
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Investigated how broken pagination, redundant archives and filter URLs
+      entered the crawl of an HVAC store. The work focused on URL generation
+      rather than bulk copy changes.
+  - type: text
+    title: How it works
+    body: Compared the checklist with theme and plugin settings, deactivated
+      overlapping extensions and kept sitemap generation in Yoast. Implemented
+      the agreed canonical and out-of-range archive handling, removed tag and
+      attribute archives from the sitemap and indexing, and added Clean-param
+      rules for theme parameters.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage and received a report with examples and
+      follow-up recommendations. Pagination decisions were specific to this
+      project; traffic and ranking gains were not measured.

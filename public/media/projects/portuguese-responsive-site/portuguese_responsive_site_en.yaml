@@ -1,0 +1,26 @@
+title: Responsive Portuguese-language website from a reference
+tagline: Built a Portuguese-language site on a staging host using a visual
+  reference. The priority was a usable mobile layout, not a single large image
+  of the reference page.
+year: "03.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Responsive layout
+  - Redirects
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a Portuguese-language site on a staging host using a visual
+      reference. The priority was a usable mobile layout, not a single large
+      image of the reference page.
+  - type: text
+    title: How it works
+    body: Rebuilt pages as individual responsive blocks and agreed to simplify some
+      effects and carousels. Set up /go/ redirects and prepared tools for future
+      migration. At handoff, documented visual differences from the reference
+      and included a mobile lab performance report.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and added a bonus. Delivery on staging is
+      documented; deployment to the final domain is not independently confirmed.

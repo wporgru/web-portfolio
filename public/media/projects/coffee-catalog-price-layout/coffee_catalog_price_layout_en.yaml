@@ -1,0 +1,28 @@
+title: WooCommerce coffee cards with pack-size options
+tagline: Refined catalog cards from a design mockup so shoppers could see
+  current prices when changing pack size and use a consistent button across
+  simple products and variations.
+year: "05.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Figma
+  - Product variations
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined catalog cards from a design mockup so shoppers could see current
+      prices when changing pack size and use a consistent button across simple
+      products and variations.
+  - type: text
+    title: How it works
+    body: "Identified a problem with the original layout: the price embedded in the
+      button rendered but did not update when weight or quantity changed. Agreed
+      to display the price separately so the design did not conflict with
+      storefront behaviour. Refined the purchase button after feedback to match
+      both catalog and variant cards."
+  - type: text
+    title: Result and verification
+    body: The client confirmed the improvement and accepted the work. A later
+      request to add items without leaving the catalog was not independently
+      tested.

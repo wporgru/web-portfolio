@@ -2495,3 +2495,124 @@ projects:
       - label: Read case study
         url: /showcase/auto-service-site-handoff/en
         type: product
+  - slug: food-delivery-city-selector
+    name: City selector for a food delivery website
+    year: "11.2024"
+    role: Web development and automation
+    description: Set up a city selector for a delivery network so customers could
+      switch to the right region without repeating the choice on every visit.
+    stack:
+      - WordPress
+      - Regional subdomains
+      - Cookies
+      - ACF
+    order: 144
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/food-delivery-city-selector/en
+        type: product
+  - slug: hvac-store-index-audit
+    name: Technical SEO for an HVAC equipment store
+    year: "11.2024"
+    role: Web development and automation
+    description: Investigated how broken pagination, redundant archives and filter
+      URLs entered the crawl of an HVAC store. The work focused on URL
+      generation rather than bulk copy changes.
+    stack:
+      - WooCommerce
+      - Yoast SEO
+      - Technical SEO
+      - XML Sitemap
+    order: 145
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/hvac-store-index-audit/en
+        type: product
+  - slug: spanish-portfolio-localization
+    name: Spanish localization for a WordPress portfolio
+    year: "06.2024"
+    role: Web development and automation
+    description: Enabled a second language and gave the site owner a repeatable
+      workflow for translating pages, posts, portfolio entries and widgets
+      without altering the original version.
+    stack:
+      - WordPress
+      - Localization
+      - Responsive layout
+    order: 146
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/spanish-portfolio-localization/en
+        type: product
+  - slug: lighting-store-product-specs
+    name: Product specifications and cart for a lighting store
+    year: "05.2024"
+    role: Web development and automation
+    description: Refined product specifications and the cart in a lighting store so
+      shoppers could read technical details and continue to checkout more
+      easily.
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Storefront UI
+    order: 147
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/lighting-store-product-specs/en
+        type: product
+  - slug: coffee-catalog-price-layout
+    name: WooCommerce coffee cards with pack-size options
+    year: "05.2024"
+    role: Web development and automation
+    description: Refined catalog cards from a design mockup so shoppers could see
+      current prices when changing pack size and use a consistent button across
+      simple products and variations.
+    stack:
+      - WooCommerce
+      - Figma
+      - Product variations
+    order: 148
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/coffee-catalog-price-layout/en
+        type: product
+  - slug: plumbing-catalog-data-handoff
+    name: Preparing plumbing catalog data for import
+    year: "04.2024"
+    role: Web development and automation
+    description: Prepared supplier data in an editable spreadsheet so the store
+      could choose products, set prices and review images before importing
+      anything.
+    stack:
+      - Excel
+      - Web scraping
+      - Product data
+      - Taxonomy
+    order: 149
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/plumbing-catalog-data-handoff/en
+        type: product
+  - slug: portuguese-responsive-site
+    name: Responsive Portuguese-language website from a reference
+    year: "03.2024"
+    role: Web development and automation
+    description: Built a Portuguese-language site on a staging host using a visual
+      reference. The priority was a usable mobile layout, not a single large
+      image of the reference page.
+    stack:
+      - WordPress
+      - Responsive layout
+      - Redirects
+    order: 150
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/portuguese-responsive-site/en
+        type: product

@@ -2530,3 +2530,123 @@ projects:
       - label: Читать кейс
         url: /showcase/auto-service-site-handoff
         type: product
+  - slug: food-delivery-city-selector
+    name: Выбор города на сайте доставки еды
+    year: "11.2024"
+    role: Веб-разработка и автоматизация
+    description: Настроил выбор города для сети доставки, чтобы посетитель мог
+      переключиться на нужный регион и не повторять выбор при каждом визите.
+    stack:
+      - WordPress
+      - Regional subdomains
+      - Cookies
+      - ACF
+    order: 144
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/food-delivery-city-selector
+        type: product
+  - slug: hvac-store-index-audit
+    name: Техническое SEO магазина климатической техники
+    year: "11.2024"
+    role: Веб-разработка и автоматизация
+    description: Разобрал, почему в обход магазина попадали ошибочные страницы
+      пагинации, лишние архивы и URL фильтрации. Задача состояла в настройке
+      источников дублей, а не в массовой правке текстов.
+    stack:
+      - WooCommerce
+      - Yoast SEO
+      - Technical SEO
+      - XML Sitemap
+    order: 145
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/hvac-store-index-audit
+        type: product
+  - slug: spanish-portfolio-localization
+    name: Испанская версия WordPress-сайта и портфолио
+    year: "06.2024"
+    role: Веб-разработка и автоматизация
+    description: "Подключил второй язык и подготовил рабочий порядок для владельца
+      сайта: как переводить страницы, записи, портфолио и виджеты, не меняя
+      исходную версию."
+    stack:
+      - WordPress
+      - Localization
+      - Responsive layout
+    order: 146
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/spanish-portfolio-localization
+        type: product
+  - slug: lighting-store-product-specs
+    name: Характеристики и корзина магазина освещения
+    year: "05.2024"
+    role: Веб-разработка и автоматизация
+    description: "Доработал карточку товара и корзину магазина освещения: покупателю
+      должно быть проще читать характеристики и продолжать оформление заказа."
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Storefront UI
+    order: 147
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/lighting-store-product-specs
+        type: product
+  - slug: coffee-catalog-price-layout
+    name: Карточки кофе с выбором фасовки в WooCommerce
+    year: "05.2024"
+    role: Веб-разработка и автоматизация
+    description: "Доработал карточки каталога по макету: покупателю нужно было
+      видеть актуальную цену при выборе фасовки, а кнопка должна была выглядеть
+      одинаково у простых товаров и вариаций."
+    stack:
+      - WooCommerce
+      - Figma
+      - Product variations
+    order: 148
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/coffee-catalog-price-layout
+        type: product
+  - slug: plumbing-catalog-data-handoff
+    name: Подготовка каталога сантехники к импорту
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: Собрал данные поставщика в редактируемую таблицу, чтобы магазин мог
+      отобрать нужные позиции, задать цены и согласовать фотографии до загрузки
+      на сайт.
+    stack:
+      - Excel
+      - Web scraping
+      - Product data
+      - Taxonomy
+    order: 149
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/plumbing-catalog-data-handoff
+        type: product
+  - slug: portuguese-responsive-site
+    name: Адаптивный португалоязычный сайт по образцу
+    year: "03.2024"
+    role: Веб-разработка и автоматизация
+    description: Собрал португалоязычный сайт на временной площадке по визуальному
+      образцу. Приоритетом была рабочая мобильная версия, а не копия экрана
+      одним большим изображением.
+    stack:
+      - WordPress
+      - Responsive layout
+      - Redirects
+    order: 150
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/portuguese-responsive-site
+        type: product

@@ -1,0 +1,26 @@
+title: Preparing plumbing catalog data for import
+tagline: Prepared supplier data in an editable spreadsheet so the store could
+  choose products, set prices and review images before importing anything.
+year: "04.2024"
+role: Web development and automation
+stack:
+  - Excel
+  - Web scraping
+  - Product data
+  - Taxonomy
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared supplier data in an editable spreadsheet so the store could
+      choose products, set prices and review images before importing anything.
+  - type: text
+    title: How it works
+    body: Used the source sitemap to find product pages. Because the supplier did
+      not publish prices, added a column for the store to fill. Sorted products
+      by category, standardized parent and child paths and explained how to use
+      either image URLs or prepared filenames.
+  - type: text
+    title: Result and verification
+    body: The client accepted the spreadsheet and added a bonus. Product selection
+      and import were separate tasks; the donor sitemap count was not a verified
+      number of imported products.

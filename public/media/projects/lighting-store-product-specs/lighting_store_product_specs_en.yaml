@@ -1,0 +1,25 @@
+title: Product specifications and cart for a lighting store
+tagline: Refined product specifications and the cart in a lighting store so
+  shoppers could read technical details and continue to checkout more easily.
+year: "05.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product attributes
+  - Storefront UI
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined product specifications and the cart in a lighting store so
+      shoppers could read technical details and continue to checkout more
+      easily.
+  - type: text
+    title: How it works
+    body: Selected a tool for grouping attributes and demonstrated the layout on an
+      actual product. Repaired the cart. Investigated the hover comparison
+      button separately because differences in theme markup meant the card
+      adjustments could not simply be copied.
+  - type: text
+    title: Result and verification
+    body: The client approved the specification layout and accepted the work.
+      Payment, shipping and CRM integrations were outside this stage.
