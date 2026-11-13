@@ -1,0 +1,26 @@
+title: Restoring product pages in a WoodMart store
+tagline: "Product pages no longer opened: shoppers could browse the assortment
+  but could not reach the item details. The existing storefront needed this path
+  restored."
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Product pages no longer opened: shoppers could browse the assortment but
+      could not reach the item details. The existing storefront needed this path
+      restored."
+  - type: text
+    title: How it works
+    body: Reviewed update status and restored access to product pages. Handed the
+      fix back for a client-side check rather than relying on an administrative
+      status. The exact patch was not preserved in the conversation.
+  - type: text
+    title: Result and verification
+    body: The client confirmed product pages opened and noticed faster loading. That
+      was client feedback, not a measured PageSpeed or Core Web Vitals
+      improvement.

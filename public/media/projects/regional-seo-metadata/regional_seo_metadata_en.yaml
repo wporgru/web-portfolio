@@ -1,0 +1,28 @@
+title: Resolving duplicate metadata across a regional catalog
+tagline: A store with regional subdomains had repeated titles and descriptions.
+  Template problems had to be distinguished from duplicate products and articles
+  so each could be handled appropriately.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Rank Math
+  - Screaming Frog
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A store with regional subdomains had repeated titles and descriptions.
+      Template problems had to be distinguished from duplicate products and
+      articles so each could be handled appropriately.
+  - type: text
+    title: How it works
+    body: Reviewed categories, filter pages, products and posts. Checked when Rank
+      Math templates apply and when individually edited fields take precedence.
+      Recrawled with Screaming Frog and listed remaining matches, separating
+      product copies with a -2 suffix from repeated regional blog posts.
+  - type: text
+    title: Result and verification
+    body: The client reported checking the work. The delivery fixed template
+      duplicates and identified URLs that needed editorial decisions. Removing
+      content copies and achieving higher rankings were not part of this stage.

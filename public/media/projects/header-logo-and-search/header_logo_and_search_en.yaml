@@ -1,0 +1,22 @@
+title: Fixing logo navigation and replacing header search
+tagline: Visitors needed a reliable path back to the homepage and access to
+  header search. This was a targeted two-element fix, not a site redesign.
+year: "05.2026"
+role: Web development and automation
+stack:
+  - Web development
+  - Site navigation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Visitors needed a reliable path back to the homepage and access to header
+      search. This was a targeted two-element fix, not a site redesign.
+  - type: text
+    title: How it works
+    body: Fixed the logo link and replaced search. Before formalizing the order, I
+      asked the client to check both interactions separately so acceptance
+      covered behavior rather than appearance alone.
+  - type: text
+    title: Result and verification
+    body: The client confirmed both interactions and accepted the order. The archive
+      does not identify the exact CSS or JS implementation, so none is inferred.

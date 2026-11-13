@@ -1123,3 +1123,136 @@ projects:
       - label: Читать кейс
         url: /showcase/wordpress-hosting-recovery
         type: product
+  - slug: regional-seo-metadata
+    name: Уникализация метаданных каталога и региональной сети
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: Магазин с региональными поддоменами получал повторяющиеся заголовки
+      и описания. Требовалось отделить сбои шаблонов от дублей самих товаров и
+      статей, чтобы не исправлять разные проблемы одним способом.
+    stack:
+      - WordPress
+      - Rank Math
+      - Screaming Frog
+      - Technical SEO
+    order: 63
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/regional-seo-metadata
+        type: product
+  - slug: tajbazar-store-upgrade
+    name: Обновление магазина Taj Bazar без смены оформления
+    year: "08.2026"
+    role: Веб-разработка и автоматизация
+    description: Обновить техническую основу магазина, разобрать ошибки доставки и
+      уведомлений, но не менять оформление действующей витрины.
+    stack:
+      - WordPress
+      - WooCommerce
+      - PHP
+      - CDEK
+    order: 64
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/tajbazar-store-upgrade
+        type: product
+  - slug: creatium-contact-widget
+    name: Контактный виджет на действующем сайте Creatium
+    year: "01.2026"
+    role: Веб-разработка и автоматизация
+    description: Посетителям нужен был заметный способ начать переписку, при этом
+      заказ не требовал переноса сайта на другую CMS или переработки страниц.
+    stack:
+      - Creatium
+      - Widgets
+    order: 65
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/creatium-contact-widget
+        type: product
+  - slug: vk-widget-metrica
+    name: Подключение ВКонтакте и очистка дублей Метрики
+    year: "09.2026"
+    role: Веб-разработка и автоматизация
+    description: Нужно было показать сообщество ВКонтакте на сайте и обновить ссылку
+      в подвале. При проверке обнаружились несколько способов подключения
+      Метрики, которые нужно было разделить и согласовать с заказчиком.
+    stack:
+      - WordPress
+      - VK
+      - Yandex Metrica
+    order: 66
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/vk-widget-metrica
+        type: product
+  - slug: mobile-product-image-sizing
+    name: Исправление размеров фото товаров в мобильной витрине
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: После основного этапа настройки второго магазина заказчик отдельно
+      заметил проблему с размерами товарных фото на телефоне. Нужно было
+      исправить именно мобильное представление.
+    stack:
+      - WordPress
+      - Mobile layout
+    order: 67
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/mobile-product-image-sizing
+        type: product
+  - slug: blog-tags-and-antispam
+    name: Исправление навигации блога и антиспам для заявок
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: При нажатии тега записи посетителя перебрасывало на главную вместо
+      нужного раздела. Отдельно требовалось настроить защиту формы и сохранить
+      возможность корректировать её по итогам наблюдения.
+    stack:
+      - WordPress
+      - Forms
+      - Spam prevention
+    order: 68
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/blog-tags-and-antispam
+        type: product
+  - slug: header-logo-and-search
+    name: Исправление логотипа и замена поиска в шапке сайта
+    year: "05.2026"
+    role: Веб-разработка и автоматизация
+    description: Посетитель должен быстро возвращаться на главную и пользоваться
+      поиском из шапки. В этом заказе требовалась точечная правка двух
+      элементов, а не новый дизайн всего сайта.
+    stack:
+      - Web development
+      - Site navigation
+    order: 69
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/header-logo-and-search
+        type: product
+  - slug: woodmart-product-page-recovery
+    name: Восстановление карточек товаров на WoodMart
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: "Карточки перестали открываться: каталог мог показывать
+      ассортимент, но посетители не могли перейти к подробностям товара.
+      Требовалось восстановить этот маршрут в действующей витрине."
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+    order: 70
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woodmart-product-page-recovery
+        type: product

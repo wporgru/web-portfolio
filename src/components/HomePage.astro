@@ -8,7 +8,7 @@ const c = ru ? copy.ru : copy.en;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const catalog = base + '/showcase' + (ru ? '/' : '/en/');
 const projects = (await getEntry('showcase', 'projects_' + lang))?.data.projects ?? [];
-const picks = ['stalex-feed','tara-bergman','seo-dashboard','medicine-data','wellland-facets','78-dosok'].flatMap(slug => projects.filter(p => p.slug === slug));
+const picks = ['stalex-feed','tara-bergman','seo-dashboard','regional-seo-metadata','medicine-data','wellland-facets','78-dosok'].flatMap(slug => projects.filter(p => p.slug === slug));
 const contacts = [
   {label:'Telegram · @wporgru',url:'https://t.me/wporgru'},
   {label:'zakaz@wp.org.ru',url:'mailto:zakaz@wp.org.ru'},
@@ -22,10 +22,11 @@ const skillTags = [
   ['PHP','WordPress','WooCommerce','Directus','REST API','InSales','PHP 8'],
   ['Python','Node.js','SQLite','XML','XLSX',ru?'Парсинг':'Web scraping','WP All Import','1С',ru?'Нормализация данных':'Data normalization'],
   ['Codex','Antigravity',ru?'Агентные сценарии':'Agent workflows',ru?'Редактура AI-контента':'AI content editing',ru?'Проверка результатов ИИ':'AI output validation'],
-  ['Yandex Webmaster','Metrica','Google Search Console','IndexNow',ru?'Технический аудит':'Technical audits','GA4','Canonical','Sitemap','301 redirects'],
+  ['Yandex Webmaster','Metrica','Google Search Console','IndexNow',ru?'Технический аудит':'Technical audits','Canonical','Sitemap','301 redirects'],
   ['Git','GitHub Actions','Playwright',ru?'Миграция сайтов':'Site migrations',ru?'Тестовый стенд':'Staging',ru?'План отката':'Rollback planning'],
 ];
 const commerceTags = ['YooKassa','CDEK',ru?'Платёжные сценарии':'Payment flows',ru?'Фильтры каталога':'Catalog filters',ru?'Товарные фиды':'Product feeds',ru?'Партнёрские витрины':'Affiliate storefronts'];
+const seoTags = ['Rank Math','Yoast SEO','Screaming Frog','GA4',ru?'Аудит метаданных':'Metadata audits',ru?'Региональные поддомены':'Regional subdomains'];
 const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
 const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
 ---
@@ -93,6 +94,9 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
         </div>)}<div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Интернет-магазины и интеграции':'Commerce and integrations'}</div>
           <ul class="tags">{commerceTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+        </div><div class="skillsgroup">
+          <div class="skillsgroup__title">{ru?'Поисковый аудит и оптимизация':'Search auditing and optimization'}</div>
+          <ul class="tags">{seoTags.map(tag=><li class="tag">{tag}</li>)}</ul>
         </div></div>
       </article>
     </aside>

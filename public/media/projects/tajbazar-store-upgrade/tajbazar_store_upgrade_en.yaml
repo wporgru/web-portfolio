@@ -1,0 +1,26 @@
+title: Upgrading Taj Bazar while preserving its storefront design
+tagline: Update the store’s technical foundation and address shipping and
+  notification issues without changing its live design.
+year: "08.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - PHP
+  - CDEK
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Update the store’s technical foundation and address shipping and
+      notification issues without changing its live design.
+  - type: text
+    title: How it works
+    body: The handoff records an upgrade to PHP 8.5, plugin updates and automatic
+      updates. I investigated a duplicate CDEK module and kept it disabled. The
+      theme stayed unchanged to preserve the storefront. After an error report,
+      I checked the order email and corrected its sender name and address.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. A MySQL upgrade was requested from the host
+      but not confirmed. Checking one email did not constitute testing all order
+      flows.

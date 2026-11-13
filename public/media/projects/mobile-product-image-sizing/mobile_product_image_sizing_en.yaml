@@ -1,0 +1,24 @@
+title: Correcting mobile product image sizes on a storefront
+tagline: After the main setup stage for a second store, the client reported an
+  issue with product image sizes on phones. This was a mobile presentation fix
+  rather than a storefront rebuild.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Mobile layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After the main setup stage for a second store, the client reported an
+      issue with product image sizes on phones. This was a mobile presentation
+      fix rather than a storefront rebuild.
+  - type: text
+    title: How it works
+    body: Clarified the mobile issue, adjusted product image sizing and handed the
+      fix back for review. Work on the previous store is not attributed to this
+      engagement; the fix concerned the second storefront.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the display and accepted the work. A desktop capture
+      does not constitute a new mobile regression test.

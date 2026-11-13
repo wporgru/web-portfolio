@@ -1112,3 +1112,135 @@ projects:
       - label: Read case study
         url: /showcase/wordpress-hosting-recovery/en
         type: product
+  - slug: regional-seo-metadata
+    name: Resolving duplicate metadata across a regional catalog
+    year: "03.2026"
+    role: Web development and automation
+    description: A store with regional subdomains had repeated titles and
+      descriptions. Template problems had to be distinguished from duplicate
+      products and articles so each could be handled appropriately.
+    stack:
+      - WordPress
+      - Rank Math
+      - Screaming Frog
+      - Technical SEO
+    order: 63
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/regional-seo-metadata/en
+        type: product
+  - slug: tajbazar-store-upgrade
+    name: Upgrading Taj Bazar while preserving its storefront design
+    year: "08.2026"
+    role: Web development and automation
+    description: Update the store’s technical foundation and address shipping and
+      notification issues without changing its live design.
+    stack:
+      - WordPress
+      - WooCommerce
+      - PHP
+      - CDEK
+    order: 64
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/tajbazar-store-upgrade/en
+        type: product
+  - slug: creatium-contact-widget
+    name: Adding a contact widget to an existing Creatium site
+    year: "01.2026"
+    role: Web development and automation
+    description: Visitors needed a visible way to start a conversation, without
+      migrating the site to another CMS or rebuilding its pages.
+    stack:
+      - Creatium
+      - Widgets
+    order: 65
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/creatium-contact-widget/en
+        type: product
+  - slug: vk-widget-metrica
+    name: Embedding VK and removing duplicate Metrica integrations
+    year: "09.2026"
+    role: Web development and automation
+    description: The site needed a VK community widget and an updated footer link.
+      Review exposed several Metrica integration paths that had to be
+      distinguished and discussed with the client.
+    stack:
+      - WordPress
+      - VK
+      - Yandex Metrica
+    order: 66
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/vk-widget-metrica/en
+        type: product
+  - slug: mobile-product-image-sizing
+    name: Correcting mobile product image sizes on a storefront
+    year: "04.2026"
+    role: Web development and automation
+    description: After the main setup stage for a second store, the client reported
+      an issue with product image sizes on phones. This was a mobile
+      presentation fix rather than a storefront rebuild.
+    stack:
+      - WordPress
+      - Mobile layout
+    order: 67
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/mobile-product-image-sizing/en
+        type: product
+  - slug: blog-tags-and-antispam
+    name: Fixing blog tag navigation and reducing form spam
+    year: "04.2026"
+    role: Web development and automation
+    description: Clicking a post tag sent readers to the homepage instead of the
+      intended archive. The inquiry form also needed spam protection that could
+      be adjusted after observation.
+    stack:
+      - WordPress
+      - Forms
+      - Spam prevention
+    order: 68
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/blog-tags-and-antispam/en
+        type: product
+  - slug: header-logo-and-search
+    name: Fixing logo navigation and replacing header search
+    year: "05.2026"
+    role: Web development and automation
+    description: Visitors needed a reliable path back to the homepage and access to
+      header search. This was a targeted two-element fix, not a site redesign.
+    stack:
+      - Web development
+      - Site navigation
+    order: 69
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/header-logo-and-search/en
+        type: product
+  - slug: woodmart-product-page-recovery
+    name: Restoring product pages in a WoodMart store
+    year: "02.2026"
+    role: Web development and automation
+    description: "Product pages no longer opened: shoppers could browse the
+      assortment but could not reach the item details. The existing storefront
+      needed this path restored."
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+    order: 70
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woodmart-product-page-recovery/en
+        type: product

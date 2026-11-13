@@ -1,0 +1,23 @@
+title: Adding a contact widget to an existing Creatium site
+tagline: Visitors needed a visible way to start a conversation, without
+  migrating the site to another CMS or rebuilding its pages.
+year: "01.2026"
+role: Web development and automation
+stack:
+  - Creatium
+  - Widgets
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Visitors needed a visible way to start a conversation, without migrating
+      the site to another CMS or rebuilding its pages.
+  - type: text
+    title: How it works
+    body: Confirmed integration was possible on Creatium, added the widget to the
+      existing site and handed it over for review. I asked the client to check
+      presentation and messaging separately rather than treating a visible
+      button as sufficient.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and left positive feedback. The case does not
+      claim a new website or testing every messenger and device.

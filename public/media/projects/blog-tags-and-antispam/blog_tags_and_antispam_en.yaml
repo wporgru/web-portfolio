@@ -1,0 +1,25 @@
+title: Fixing blog tag navigation and reducing form spam
+tagline: Clicking a post tag sent readers to the homepage instead of the
+  intended archive. The inquiry form also needed spam protection that could be
+  adjusted after observation.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Forms
+  - Spam prevention
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Clicking a post tag sent readers to the homepage instead of the intended
+      archive. The inquiry form also needed spam protection that could be
+      adjusted after observation.
+  - type: text
+    title: How it works
+    body: Fixed tag navigation, reviewed button styling and required fields, and set
+      up spam rules with temporary monitoring so they could be adjusted using
+      actual examples if necessary.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the result and accepted delivery. This was not a
+      long-term spam-rate study or a test of all notification channels.

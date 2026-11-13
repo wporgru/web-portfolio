@@ -1,0 +1,26 @@
+title: Embedding VK and removing duplicate Metrica integrations
+tagline: The site needed a VK community widget and an updated footer link.
+  Review exposed several Metrica integration paths that had to be distinguished
+  and discussed with the client.
+year: "09.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - VK
+  - Yandex Metrica
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The site needed a VK community widget and an updated footer link. Review
+      exposed several Metrica integration paths that had to be distinguished and
+      discussed with the client.
+  - type: text
+    title: How it works
+    body: Separated the widget’s header code from its display block. Confirmed the
+      final community address and updated the link. Identified analytics
+      integrations through plugins and header code, agreed which counter to
+      retain and removed the extra integration.
+  - type: text
+    title: Result and verification
+    body: The client reviewed and accepted the work. Community verification and
+      completeness of later analytics collection are outside the verified scope.
