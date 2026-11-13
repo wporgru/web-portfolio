@@ -1,0 +1,27 @@
+title: Media optimization for an engineering equipment store
+tagline: "Prepared store images for compression without rewriting the entire
+  media library: some files served the site design rather than the product
+  catalog."
+year: "11.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - Image optimization
+  - Media library
+  - Thumbnails
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Prepared store images for compression without rewriting the entire media
+      library: some files served the site design rather than the product
+      catalog."
+  - type: text
+    title: How it works
+    body: Agreed on source-image processing and thumbnail regeneration. Identified
+      the target files in year and month folders and explained why blanket
+      replacement could damage the layout. Handed the result over for review
+      after processing.
+  - type: text
+    title: Result and verification
+    body: The client checked and accepted the work. A complete list of modified
+      files and comparable size or speed measurements were not preserved.

@@ -3618,3 +3618,141 @@ projects:
       - label: Read case study
         url: /showcase/saferoute-shipping-migration/en
         type: product
+  - slug: titanfox-catalog-hosting-migration
+    name: Titanfox catalog navigation and hosting migration
+    year: "03.2023"
+    role: Web development and automation
+    description: Refined a knife store and helped move it to another host. The owner
+      wanted better catalog navigation as well as a solution to slow loading.
+    stack:
+      - WooCommerce
+      - Hosting migration
+      - Product filters
+      - PHP
+    order: 209
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/titanfox-catalog-hosting-migration/en
+        type: product
+  - slug: grundfos-pump-catalog-import
+    name: Configuring a pump catalog import in WooCommerce
+    year: "03.2023"
+    role: Web development and automation
+    description: Defined the data handoff between a third-party collector and
+      WooCommerce, then configured the pump import on a test site.
+    stack:
+      - WooCommerce
+      - WP All Import
+      - CSV
+      - Product taxonomy
+    order: 210
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/grundfos-pump-catalog-import/en
+        type: product
+  - slug: bobst-catalog-accordion
+    name: BOB-ST catalog tiles and accordion navigation
+    year: "12.2022"
+    role: Web development and automation
+    description: Reworked the BOB-ST catalog so visitors could reach sections
+      through homepage tiles or an expandable sidebar menu.
+    stack:
+      - WordPress
+      - Visual Composer
+      - Catalog UX
+      - CSS
+    order: 211
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bobst-catalog-accordion/en
+        type: product
+  - slug: engineering-store-media-regeneration
+    name: Media optimization for an engineering equipment store
+    year: "11.2022"
+    role: Web development and automation
+    description: "Prepared store images for compression without rewriting the entire
+      media library: some files served the site design rather than the product
+      catalog."
+    stack:
+      - WordPress
+      - Image optimization
+      - Media library
+      - Thumbnails
+    order: 212
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/engineering-store-media-regeneration/en
+        type: product
+  - slug: marketlace-woodmart-transition
+    name: Marketlace theme migration from Astra to WoodMart
+    year: "10.2022"
+    role: Web development and automation
+    description: Moved an existing sewing supplies store to WoodMart without
+      commissioning a bespoke redesign. The homepage and catalog needed separate
+      layouts while retaining key storefront functionality.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Astra
+      - WoodMart
+    order: 213
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/marketlace-woodmart-transition/en
+        type: product
+  - slug: belarus-aggregator-yml-feed
+    name: WooCommerce YML feed for Belarusian aggregators
+    year: "09.2022"
+    role: Web development and automation
+    description: Configured a recurring WooCommerce export for product aggregators
+      so the owner would not need to regenerate a file after every product edit.
+    stack:
+      - WooCommerce
+      - YML
+      - XML
+      - Scheduled export
+    order: 214
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/belarus-aggregator-yml-feed/en
+        type: product
+  - slug: textili-header-import-diagnostics
+    name: Textili header update and import diagnostics
+    year: "12.2022"
+    role: Web development and automation
+    description: Improved phone visibility in the header and separately investigated
+      why the supplier file did not produce the expected product attributes.
+    stack:
+      - WooCommerce
+      - WordPress
+      - LibreOffice
+      - Catalog data
+    order: 215
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/textili-header-import-diagnostics/en
+        type: product
+  - slug: zooforsale-sber-launch-stage
+    name: Zooforsale setup and Sber test payments
+    year: "12.2022"
+    role: Web development and automation
+    description: "The engagement covered two separate tasks: a classifieds
+      foundation for Zooforsale and test payments for Balance Group Life."
+    stack:
+      - WordPress
+      - WCFM
+      - Electro
+      - Sber acquiring
+    order: 216
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/zooforsale-sber-launch-stage/en
+        type: product

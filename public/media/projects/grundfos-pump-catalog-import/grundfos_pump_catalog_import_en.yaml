@@ -1,0 +1,26 @@
+title: Configuring a pump catalog import in WooCommerce
+tagline: Defined the data handoff between a third-party collector and
+  WooCommerce, then configured the pump import on a test site.
+year: "03.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WP All Import
+  - CSV
+  - Product taxonomy
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Defined the data handoff between a third-party collector and WooCommerce,
+      then configured the pump import on a test site.
+  - type: text
+    title: How it works
+    body: Specified fields for SKUs, titles, categories, prices, stock,
+      descriptions, photos and selected specifications. Configured WP All Import
+      to create categories with products and added category images manually. A
+      separate specialist collected the supplier data.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and added a bonus. The product count, all
+      additional visual refinements and a production launch were not
+      independently verified.

@@ -1,0 +1,27 @@
+title: Zooforsale setup and Sber test payments
+tagline: "The engagement covered two separate tasks: a classifieds foundation
+  for Zooforsale and test payments for Balance Group Life."
+year: "12.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WCFM
+  - Electro
+  - Sber acquiring
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The engagement covered two separate tasks: a classifieds foundation for
+      Zooforsale and test payments for Balance Group Life."
+  - type: text
+    title: How it works
+    body: Helped set up the Electro and WCFM foundation and demonstrated how to
+      manage product blocks, categories and sections. On the second site,
+      checked a test payment visible in Sber, clarified the handoff settings and
+      added the missing partnership page. Explained the separate production
+      activation step.
+  - type: text
+    title: Result and verification
+    body: The client confirmed and accepted the stage. A sandbox transaction did not
+      establish live sales, and the classifieds setup did not include seller
+      payouts.

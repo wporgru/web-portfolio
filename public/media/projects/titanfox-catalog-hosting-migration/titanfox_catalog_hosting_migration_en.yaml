@@ -1,0 +1,27 @@
+title: Titanfox catalog navigation and hosting migration
+tagline: Refined a knife store and helped move it to another host. The owner
+  wanted better catalog navigation as well as a solution to slow loading.
+year: "03.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Hosting migration
+  - Product filters
+  - PHP
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined a knife store and helped move it to another host. The owner wanted
+      better catalog navigation as well as a solution to slow loading.
+  - type: text
+    title: How it works
+    body: Updated homepage blocks and new arrivals. Reworked categories, sidebar
+      navigation and filters for knives, leather and exclusive items, showing
+      relevant child categories without expanding the whole tree. Explained
+      product maintenance and agreed on a move to Hostiman after reviewing the
+      PHP environment.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and reported noticeably faster loading. No
+      comparable before-and-after benchmark or exhaustive filter test was
+      preserved.

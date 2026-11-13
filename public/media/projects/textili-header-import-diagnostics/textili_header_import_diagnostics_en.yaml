@@ -1,0 +1,25 @@
+title: Textili header update and import diagnostics
+tagline: Improved phone visibility in the header and separately investigated why
+  the supplier file did not produce the expected product attributes.
+year: "12.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WordPress
+  - LibreOffice
+  - Catalog data
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Improved phone visibility in the header and separately investigated why
+      the supplier file did not produce the expected product attributes.
+  - type: text
+    title: How it works
+    body: Moved the phone number, shared a preview and increased its size after
+      feedback. Reviewed the source file, naming and import settings, explained
+      the spreadsheet workflow in LibreOffice and separated store-side
+      adjustments from corrections needed from the supplier.
+  - type: text
+    title: Result and verification
+    body: The client paid for and accepted the update and consultation. A complete
+      import of all specifications was not confirmed.

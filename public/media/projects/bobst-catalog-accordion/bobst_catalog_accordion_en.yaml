@@ -1,0 +1,26 @@
+title: BOB-ST catalog tiles and accordion navigation
+tagline: Reworked the BOB-ST catalog so visitors could reach sections through
+  homepage tiles or an expandable sidebar menu.
+year: "12.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - Visual Composer
+  - Catalog UX
+  - CSS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Reworked the BOB-ST catalog so visitors could reach sections through
+      homepage tiles or an expandable sidebar menu.
+  - type: text
+    title: How it works
+    body: Refined the accordion menu, section ordering and tiles with 300 × 300
+      images. Showed how to clone tiles and walked through adding a category,
+      assigning products and exposing it in both navigation surfaces.
+      Performance work was also reported at handoff.
+  - type: text
+    title: Result and verification
+    body: The owner responded positively to the layout and left a review. The case
+      does not claim a Visual Composer replacement or a quantified performance
+      gain.

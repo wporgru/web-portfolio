@@ -3661,3 +3661,143 @@ projects:
       - label: Читать кейс
         url: /showcase/saferoute-shipping-migration
         type: product
+  - slug: titanfox-catalog-hosting-migration
+    name: "Titanfox: навигация каталога и смена хостинга"
+    year: "03.2023"
+    role: Веб-разработка и автоматизация
+    description: Доработал витрину магазина ножей и помог перевести её на другой
+      хостинг. Владелец хотел одновременно улучшить навигацию и разобраться с
+      медленной загрузкой.
+    stack:
+      - WooCommerce
+      - Hosting migration
+      - Product filters
+      - PHP
+    order: 209
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/titanfox-catalog-hosting-migration
+        type: product
+  - slug: grundfos-pump-catalog-import
+    name: Настройка импорта каталога насосов WooCommerce
+    year: "03.2023"
+    role: Веб-разработка и автоматизация
+    description: Подготовил правила обмена между сторонним сборщиком данных и
+      WooCommerce, затем настроил загрузку насосов на тестовой площадке.
+    stack:
+      - WooCommerce
+      - WP All Import
+      - CSV
+      - Product taxonomy
+    order: 210
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/grundfos-pump-catalog-import
+        type: product
+  - slug: bobst-catalog-accordion
+    name: "BOB-ST: плитки каталога и меню-аккордеон"
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: Переработал каталог BOB-ST так, чтобы разделы были доступны и через
+      плитки на главной, и через раскрывающееся боковое меню.
+    stack:
+      - WordPress
+      - Visual Composer
+      - Catalog UX
+      - CSS
+    order: 211
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bobst-catalog-accordion
+        type: product
+  - slug: engineering-store-media-regeneration
+    name: Оптимизация медиатеки магазина оборудования
+    year: "11.2022"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил изображения магазина к сжатию, не меняя все файлы
+      подряд: в медиатеке часть изображений использовалась не в каталоге, а в
+      оформлении сайта."
+    stack:
+      - WordPress
+      - Image optimization
+      - Media library
+      - Thumbnails
+    order: 212
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/engineering-store-media-regeneration
+        type: product
+  - slug: marketlace-woodmart-transition
+    name: "Marketlace: переход с Astra на WoodMart"
+    year: "10.2022"
+    role: Веб-разработка и автоматизация
+    description: Перевёл действующий магазин швейной фурнитуры на WoodMart без
+      создания отдельного индивидуального дизайна. Главную и каталог нужно было
+      развести, не потеряв ключевые функции магазина.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Astra
+      - WoodMart
+    order: 213
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/marketlace-woodmart-transition
+        type: product
+  - slug: belarus-aggregator-yml-feed
+    name: YML-фид для белорусских товарных агрегаторов
+    year: "09.2022"
+    role: Веб-разработка и автоматизация
+    description: Настроил регулярную выгрузку WooCommerce для товарных агрегаторов,
+      чтобы владельцу не приходилось формировать новый файл после каждой правки
+      карточки.
+    stack:
+      - WooCommerce
+      - YML
+      - XML
+      - Scheduled export
+    order: 214
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/belarus-aggregator-yml-feed
+        type: product
+  - slug: textili-header-import-diagnostics
+    name: "Textili: доработка шапки и диагностика импорта"
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: Поправил заметность телефона в шапке и отдельно разобрал, почему
+      файл поставщика не даёт нужного результата при загрузке характеристик.
+    stack:
+      - WooCommerce
+      - WordPress
+      - LibreOffice
+      - Catalog data
+    order: 215
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/textili-header-import-diagnostics
+        type: product
+  - slug: zooforsale-sber-launch-stage
+    name: Zooforsale и тестовый эквайринг для Balance Group Life
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: "В одном заказе работал над двумя независимыми задачами: основой
+      доски объявлений Zooforsale и тестовой оплатой для Balance Group Life."
+    stack:
+      - WordPress
+      - WCFM
+      - Electro
+      - Sber acquiring
+    order: 216
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/zooforsale-sber-launch-stage
+        type: product
