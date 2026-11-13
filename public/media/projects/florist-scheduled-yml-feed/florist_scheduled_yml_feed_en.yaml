@@ -1,0 +1,26 @@
+title: Automatically refreshed YML feed for a florist
+tagline: Set up a product feed for an existing florist so the export would not
+  need to be rebuilt manually whenever the assortment changed.
+year: "07.2023"
+role: Web development and automation
+stack:
+  - YML
+  - XML
+  - Product feeds
+  - Scheduled updates
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Set up a product feed for an existing florist so the export would not need
+      to be rebuilt manually whenever the assortment changed.
+  - type: text
+    title: How it works
+    body: Created a dedicated YML file and configured a daily refresh plus updates
+      when a product changed. Shared the feed URL and confirmed with the client
+      that images loaded in the receiving system. Kept naming and category
+      recommendations separate from the feed setup.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the feed and image loading. Bouquet composition
+      calculations, Frontpad and separate exports to other platforms were
+      outside this stage.

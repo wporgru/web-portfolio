@@ -1,0 +1,27 @@
+title: CDEK pickup point selection without rate calculation
+tagline: Set up pickup selection for a store without product dimensions. The
+  requirement was to capture the chosen location on the order, not merely
+  display a map.
+year: "08.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CDEK
+  - Pickup points
+  - Order QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Set up pickup selection for a store without product dimensions. The
+      requirement was to capture the chosen location on the order, not merely
+      display a map.
+  - type: text
+    title: How it works
+    body: Chose an integration that did not depend on rate calculations and handed
+      over the shopper flow for testing. The test exposed a separate admin error
+      when opening the order and a similar issue in the product list.
+      Investigated and updated extensions, then asked the client to check again.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the test order and accepted the admin fixes. Rate
+      quotes and a real shipment were outside the scope.

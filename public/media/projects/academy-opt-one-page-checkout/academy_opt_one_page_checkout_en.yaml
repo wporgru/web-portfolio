@@ -1,0 +1,29 @@
+title: One-page course checkout with Tinkoff payment
+tagline: Restored the transition from course checkout to payment and removed the
+  separate cart step so shoppers could review the course, apply a coupon and
+  enter contact details on one page.
+year: "09.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Tinkoff
+  - Checkout
+  - Mobile layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Restored the transition from course checkout to payment and removed the
+      separate cart step so shoppers could review the course, apply a coupon and
+      enter contact details on one page.
+  - type: text
+    title: How it works
+    body: Reviewed terminal settings and checked the transition to test payment.
+      Combined the course, coupon, contacts and payment selection into one flow.
+      Adjusted fields and background, removed the optional account prompt and
+      refined both the top of the form and the payment area for mobile after
+      client feedback.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. The transition to test payment and
+      historical mobile layout are documented; a live charge and fiscal receipt
+      delivery were not verified.

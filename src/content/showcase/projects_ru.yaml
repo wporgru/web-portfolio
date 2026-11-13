@@ -3253,3 +3253,126 @@ projects:
       - label: Читать кейс
         url: /showcase/related-articles-product-tabs
         type: product
+  - slug: metrica-ecommerce-purchase-goals
+    name: Электронная торговля и цели Яндекс Метрики
+    year: "09.2023"
+    role: Веб-разработка и автоматизация
+    description: Настроил аналитику действующего магазина, чтобы отличать интерес к
+      корзине от завершения покупки и видеть суммы заказов в отчётах.
+    stack:
+      - WooCommerce
+      - Yandex Metrica
+      - E-commerce analytics
+    order: 186
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/metrica-ecommerce-purchase-goals
+        type: product
+  - slug: wordpress-webp-image-workflow
+    name: Оптимизация изображений и настройка WebP
+    year: "09.2023"
+    role: Веб-разработка и автоматизация
+    description: Снизил нагрузку от крупных исходных фотографий и настроил порядок
+      подготовки новых изображений, чтобы оптимизация не заканчивалась разовой
+      обработкой медиатеки.
+    stack:
+      - WordPress
+      - WebP
+      - XnView
+      - Image optimization
+    order: 187
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-webp-image-workflow
+        type: product
+  - slug: academy-opt-one-page-checkout
+    name: Одностраничная покупка курса с оплатой Тинькофф
+    year: "09.2023"
+    role: Веб-разработка и автоматизация
+    description: Восстановил переход от оформления курса к оплате и убрал отдельный
+      шаг корзины, чтобы покупатель мог проверить товар, применить купон и
+      заполнить контакты на одной странице.
+    stack:
+      - WooCommerce
+      - Tinkoff
+      - Checkout
+      - Mobile layout
+    order: 188
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/academy-opt-one-page-checkout
+        type: product
+  - slug: cdek-pickup-without-rating
+    name: Выбор пункта СДЭК без расчёта тарифа
+    year: "08.2023"
+    role: Веб-разработка и автоматизация
+    description: Настроил выбор пункта выдачи для магазина, где товарные габариты не
+      были заполнены. Требовалось сохранить выбранный адрес в заказе, а не
+      просто показать карту.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Pickup points
+      - Order QA
+    order: 189
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/cdek-pickup-without-rating
+        type: product
+  - slug: woocommerce-taplink-export
+    name: Выгрузка каталога WooCommerce для Taplink
+    year: "08.2023"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил переносимый табличный комплект товаров: владельцу нужен
+      был исходный каталог с ценами в евро, а не ручное копирование карточек по
+      одной."
+    stack:
+      - WooCommerce
+      - Excel
+      - Catalog export
+      - Taplink
+    order: 190
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-taplink-export
+        type: product
+  - slug: industrial-image-ai-upscale
+    name: Увеличение фотографий мостовых ограждений с ИИ
+    year: "07.2023"
+    role: Веб-разработка и автоматизация
+    description: Подготовил увеличенные фотографии ограждений для сайта завода.
+      Заказчику нужно было различать детали конструкций, а не просто получить
+      файлы с большим разрешением.
+    stack:
+      - AI-assisted image processing
+      - Upscaling
+      - Asset delivery
+    order: 191
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/industrial-image-ai-upscale
+        type: product
+  - slug: florist-scheduled-yml-feed
+    name: Обновляемый YML-фид цветочного магазина
+    year: "07.2023"
+    role: Веб-разработка и автоматизация
+    description: Настроил товарную выгрузку для действующего цветочного магазина,
+      чтобы актуализировать данные без ручной пересборки файла при каждом
+      изменении ассортимента.
+    stack:
+      - YML
+      - XML
+      - Product feeds
+      - Scheduled updates
+    order: 192
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/florist-scheduled-yml-feed
+        type: product

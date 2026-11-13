@@ -1,0 +1,25 @@
+title: Exporting a WooCommerce catalog for Taplink
+tagline: Prepared a portable product spreadsheet with euro prices so the owner
+  could avoid copying product listings one by one.
+year: "08.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Excel
+  - Catalog export
+  - Taplink
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a portable product spreadsheet with euro prices so the owner
+      could avoid copying product listings one by one.
+  - type: text
+    title: How it works
+    body: Exported the existing products to Excel and delivered the file for the
+      next import stage. Kept WooCommerce data extraction separate from loading
+      the destination platform.
+  - type: text
+    title: Result and verification
+    body: The client accepted the spreadsheet. Around 1,100 products was the
+      client’s estimate of the source volume; operation of the new Taplink store
+      was not tested in this engagement.

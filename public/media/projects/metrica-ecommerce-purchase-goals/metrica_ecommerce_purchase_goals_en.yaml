@@ -1,0 +1,25 @@
+title: Yandex Metrica e-commerce and purchase goals
+tagline: Set up analytics for an existing store to distinguish cart interest
+  from completed purchases and report order values.
+year: "09.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Yandex Metrica
+  - E-commerce analytics
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Set up analytics for an existing store to distinguish cart interest from
+      completed purchases and report order values.
+  - type: text
+    title: How it works
+    body: Mapped the path from opening the cart to returning after payment. Enabled
+      e-commerce tracking and explained the difference between automatic goals
+      and the checkout goals added for the store. Asked the owner to check both
+      purchase and order amount rather than merely the presence of an event.
+  - type: text
+    title: Result and verification
+    body: The client confirmed purchase and order-value goals in their review.
+      Duplicate events, revenue accuracy over time and ongoing advertising were
+      not verified.
