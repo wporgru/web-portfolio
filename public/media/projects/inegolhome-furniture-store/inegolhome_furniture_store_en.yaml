@@ -1,0 +1,35 @@
+title: Inegol Home furniture store and catalog import
+tagline: Built a WoodMart furniture storefront and imported the supplier’s
+  assortment. A key challenge was separating distinct products from repeated
+  listings across source categories.
+year: "07.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - Catalog migration
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a WoodMart furniture storefront and imported the supplier’s
+      assortment. A key challenge was separating distinct products from repeated
+      listings across source categories.
+  - type: text
+    title: How it works
+    body: Collected links, names, photographs and categories. Resolved duplicate
+      listings where one item appeared under several URLs. Prepared the
+      spreadsheet, imported the products and demonstrated the storefront.
+      Removed unwanted theme text and payment icons after feedback and showed
+      the owner the admin controls.
+  - type: text
+    title: Result and verification
+    body: The client accepted the store. The handoff report records 673 products
+      from an initial 2,003 links after reviewing duplicates. These are
+      historical delivery counts, not a current database audit. The owner
+      handled Russian product names.
+  - type: image
+    src: /media/projects/inegolhome-furniture-store/historical-storefront.webp
+    alt: Inegol Home furniture cards and banners
+    caption: Historical storefront excerpt from the Kwork portfolio, preserved
+      without editing.

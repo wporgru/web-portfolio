@@ -1,0 +1,27 @@
+title: Importing ANTA preorder variants from three spreadsheets
+tagline: "Configured an ANTA preorder import from three sources: footwear,
+  apparel and accessories, keeping titles, categories and size variants in
+  scope."
+year: "05.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - XLSX
+  - Product variants
+  - Preorders
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Configured an ANTA preorder import from three sources: footwear, apparel
+      and accessories, keeping titles, categories and size variants in scope."
+  - type: text
+    title: How it works
+    body: Removed blank leading rows, found an extra initial sheet in the
+      accessories workbook and reran the import. After client feedback, checked
+      how the mapping affected parent category inclusion and prepared settings
+      for the next run.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage on the test site. Expected batch sizes were
+      not treated as verified listing counts, and the client handled image
+      refinements.

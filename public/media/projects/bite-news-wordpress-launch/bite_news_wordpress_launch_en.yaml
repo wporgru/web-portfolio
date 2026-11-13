@@ -1,0 +1,31 @@
+title: "Bite News: launching a dark news website"
+tagline: Deployed the foundations of a news site after WordPress.com so editors
+  could publish and manage the design on their own hosting.
+year: "05.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - Astra
+  - Gutenberg
+  - Spectra
+  - DNS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Deployed the foundations of a news site after WordPress.com so editors
+      could publish and manage the design on their own hosting.
+  - type: text
+    title: How it works
+    body: Agreed to use Astra, Gutenberg and Spectra instead of Newspaper and
+      TagDiv. Updated domain delegation, set up a dark theme and prepared posts
+      and sample content. Delivered instructions for publishing and editing the
+      header, blog, footer and styles.
+  - type: text
+    title: Result and verification
+    body: The client accepted the site foundation. Sample posts are not a full
+      editorial archive migration; indexing was deferred until content was
+      ready.
+  - type: image
+    src: /media/projects/bite-news-wordpress-launch/historical-first-screen.webp
+    alt: Dark Bite News homepage hero
+    caption: Homepage hero from the historical Kwork entry, not a full-page capture.

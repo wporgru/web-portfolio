@@ -1,0 +1,27 @@
+title: English-language affiliate storefront on WoodMart
+tagline: Prepared an English-language storefront with a blog and outbound
+  partner links. Its role was product discovery, not taking payments on the
+  site.
+year: "05.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - WoodMart
+  - Affiliate links
+  - UTM
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared an English-language storefront with a blog and outbound partner
+      links. Its role was product discovery, not taking payments on the site.
+  - type: text
+    title: How it works
+    body: Agreed on the WoodMart layout, color palette and use of UTM tags for
+      outbound links. Preserved watermarks on source images when transferring
+      listings. Visual changes requested later by the partner were scoped
+      separately.
+  - type: text
+    title: Result and verification
+    body: The client accepted the storefront. Translation completeness, the full
+      product count and actual commission attribution were not independently
+      verified.

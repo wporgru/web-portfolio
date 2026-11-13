@@ -3376,3 +3376,148 @@ projects:
       - label: Читать кейс
         url: /showcase/florist-scheduled-yml-feed
         type: product
+  - slug: inegolhome-furniture-store
+    name: "Inegol Home: магазин и импорт мебельного каталога"
+    year: "07.2023"
+    role: Веб-разработка и автоматизация
+    description: Собрал мебельную витрину на WoodMart и перенёс ассортимент
+      поставщика. Одной из главных задач было отделить реальные товары от
+      повторов в разных разделах источника.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Catalog migration
+    order: 193
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/inegolhome-furniture-store
+        type: product
+  - slug: gauss-image-link-export
+    name: Выгрузка артикулов и фотографий Gauss в Excel
+    year: "06.2023"
+    role: Веб-разработка и автоматизация
+    description: Подготовил таблицу ассортимента Gauss для дальнейшей работы с
+      товарными фотографиями. В одной строке нужны были артикул, название и
+      отдельные ссылки на все изображения карточки.
+    stack:
+      - Excel
+      - Web scraping
+      - Product images
+      - Sitemap
+    order: 194
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/gauss-image-link-export
+        type: product
+  - slug: coffee-machine-yml-model-tag
+    name: Отдельный тег модели в YML-фиде кофемашин
+    year: "06.2023"
+    role: Веб-разработка и автоматизация
+    description: "Исправил структуру выгрузки кофемашин: получателю требовался
+      отдельный элемент model, а не характеристика «Модель» внутри
+      универсального param."
+    stack:
+      - WooCommerce
+      - YML
+      - XML
+      - Product feeds
+    order: 195
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/coffee-machine-yml-model-tag
+        type: product
+  - slug: bite-news-wordpress-launch
+    name: "Bite News: запуск тёмного новостного сайта"
+    year: "05.2023"
+    role: Веб-разработка и автоматизация
+    description: Развернул основу новостного сайта после WordPress.com, чтобы
+      редакция могла публиковать материалы и управлять оформлением на своём
+      хостинге.
+    stack:
+      - WordPress
+      - Astra
+      - Gutenberg
+      - Spectra
+      - DNS
+    order: 196
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bite-news-wordpress-launch
+        type: product
+  - slug: anta-preorder-variant-import
+    name: Импорт предзаказа ANTA из трёх таблиц
+    year: "05.2023"
+    role: Веб-разработка и автоматизация
+    description: "Настроил загрузку предзаказа ANTA из трёх источников: обуви,
+      одежды и аксессуаров. Нужно было сохранить названия, разделы и размерные
+      варианты."
+    stack:
+      - WooCommerce
+      - XLSX
+      - Product variants
+      - Preorders
+    order: 197
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/anta-preorder-variant-import
+        type: product
+  - slug: spare-parts-enquiry-catalog
+    name: Каталог запчастей без онлайн-продажи
+    year: "05.2023"
+    role: Веб-разработка и автоматизация
+    description: "Переработал существующий магазин запчастей в витрину для
+      обращений: покупатель выбирает категорию и связывается с продавцом, а не
+      оформляет заказ через корзину."
+    stack:
+      - WooCommerce
+      - Catalog mode
+      - Lead forms
+      - CSS
+    order: 198
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/spare-parts-enquiry-catalog
+        type: product
+  - slug: watchdivision-home-megamenu
+    name: "WatchDivision: редизайн главной и мегаменю"
+    year: "03.2023"
+    role: Веб-разработка и автоматизация
+    description: Обновил главную и мегаменю действующего магазина часов по
+      клиентским материалам и макету, отдельно проработав элементы мобильной
+      шапки.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Figma
+      - Responsive design
+    order: 199
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/watchdivision-home-megamenu
+        type: product
+  - slug: english-affiliate-storefront
+    name: Англоязычная партнёрская витрина на WoodMart
+    year: "05.2023"
+    role: Веб-разработка и автоматизация
+    description: Подготовил англоязычную витрину с блогом и переходами на сайт
+      партнёра. Сайт должен был помогать выбирать товары, а не принимать оплату
+      у себя.
+    stack:
+      - WordPress
+      - WoodMart
+      - Affiliate links
+      - UTM
+    order: 200
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/english-affiliate-storefront
+        type: product

@@ -3336,3 +3336,147 @@ projects:
       - label: Read case study
         url: /showcase/florist-scheduled-yml-feed/en
         type: product
+  - slug: inegolhome-furniture-store
+    name: Inegol Home furniture store and catalog import
+    year: "07.2023"
+    role: Web development and automation
+    description: Built a WoodMart furniture storefront and imported the supplier’s
+      assortment. A key challenge was separating distinct products from repeated
+      listings across source categories.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Catalog migration
+    order: 193
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/inegolhome-furniture-store/en
+        type: product
+  - slug: gauss-image-link-export
+    name: Exporting Gauss SKUs and photo links to Excel
+    year: "06.2023"
+    role: Web development and automation
+    description: Prepared a Gauss product spreadsheet for further image processing.
+      Each row needed a SKU, title and separate links for all available product
+      images.
+    stack:
+      - Excel
+      - Web scraping
+      - Product images
+      - Sitemap
+    order: 194
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/gauss-image-link-export/en
+        type: product
+  - slug: coffee-machine-yml-model-tag
+    name: Adding a model element to a coffee machine YML feed
+    year: "06.2023"
+    role: Web development and automation
+    description: "Corrected the feed structure: the recipient required a dedicated
+      model element rather than a specification named Model inside a generic
+      param."
+    stack:
+      - WooCommerce
+      - YML
+      - XML
+      - Product feeds
+    order: 195
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/coffee-machine-yml-model-tag/en
+        type: product
+  - slug: bite-news-wordpress-launch
+    name: "Bite News: launching a dark news website"
+    year: "05.2023"
+    role: Web development and automation
+    description: Deployed the foundations of a news site after WordPress.com so
+      editors could publish and manage the design on their own hosting.
+    stack:
+      - WordPress
+      - Astra
+      - Gutenberg
+      - Spectra
+      - DNS
+    order: 196
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bite-news-wordpress-launch/en
+        type: product
+  - slug: anta-preorder-variant-import
+    name: Importing ANTA preorder variants from three spreadsheets
+    year: "05.2023"
+    role: Web development and automation
+    description: "Configured an ANTA preorder import from three sources: footwear,
+      apparel and accessories, keeping titles, categories and size variants in
+      scope."
+    stack:
+      - WooCommerce
+      - XLSX
+      - Product variants
+      - Preorders
+    order: 197
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/anta-preorder-variant-import/en
+        type: product
+  - slug: spare-parts-enquiry-catalog
+    name: Spare parts catalog without online checkout
+    year: "05.2023"
+    role: Web development and automation
+    description: "Converted an existing parts store into an enquiry catalog:
+      shoppers browse categories and contact the seller instead of checking out
+      online."
+    stack:
+      - WooCommerce
+      - Catalog mode
+      - Lead forms
+      - CSS
+    order: 198
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/spare-parts-enquiry-catalog/en
+        type: product
+  - slug: watchdivision-home-megamenu
+    name: WatchDivision homepage and mega menu redesign
+    year: "03.2023"
+    role: Web development and automation
+    description: Updated the homepage and mega menu of an existing watch store using
+      client materials and a design mockup, with separate attention to the
+      mobile header.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Figma
+      - Responsive design
+    order: 199
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/watchdivision-home-megamenu/en
+        type: product
+  - slug: english-affiliate-storefront
+    name: English-language affiliate storefront on WoodMart
+    year: "05.2023"
+    role: Web development and automation
+    description: Prepared an English-language storefront with a blog and outbound
+      partner links. Its role was product discovery, not taking payments on the
+      site.
+    stack:
+      - WordPress
+      - WoodMart
+      - Affiliate links
+      - UTM
+    order: 200
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/english-affiliate-storefront/en
+        type: product

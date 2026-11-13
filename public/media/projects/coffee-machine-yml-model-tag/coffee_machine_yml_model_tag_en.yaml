@@ -1,0 +1,26 @@
+title: Adding a model element to a coffee machine YML feed
+tagline: "Corrected the feed structure: the recipient required a dedicated model
+  element rather than a specification named Model inside a generic param."
+year: "06.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YML
+  - XML
+  - Product feeds
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Corrected the feed structure: the recipient required a dedicated model
+      element rather than a specification named Model inside a generic param."
+  - type: text
+    title: How it works
+    body: The first pass renamed the attribute but retained the previous XML
+      structure. After client feedback, separated WooCommerce’s internal
+      attributes from the feed format. Delivered a revised export with a
+      dedicated model element for each product record.
+  - type: text
+    title: Result and verification
+    body: The client checked the file and accepted the work. The report notes 60
+      products with a model element; downstream listings and marketplace
+      performance were not verified.

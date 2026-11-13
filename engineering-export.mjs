@@ -5,6 +5,8 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'bite-news-wordpress-launch': ['historical-first-screen.webp', 'Тёмный первый экран Bite News', 'Dark Bite News homepage hero', 'Первый экран из исторической карточки Kwork. Это не снимок всего сайта.', 'Homepage hero from the historical Kwork entry, not a full-page capture.'],
+  'inegolhome-furniture-store': ['historical-storefront.webp', 'Мебельные карточки и баннеры Inegol Home', 'Inegol Home furniture cards and banners', 'Фрагмент исторической витрины из портфолио Kwork, сохранён без редактирования.', 'Historical storefront excerpt from the Kwork portfolio, preserved without editing.'],
   'garland-catalog-import-training': ['historical-variants.webp', 'Выбор цвета в карточке гирлянды', 'Color selection on a garland product page', 'Исторический фрагмент из портфолио Kwork: виден выбор цвета. Это не тест корзины.', 'Historical Kwork portfolio excerpt showing color selection. It is not a cart test.'],
   'hyperstroy-tool-store': ['historical-storefront.webp', 'Главная магазина «ГиперСтрой»: категории и товары', 'HyperStroy homepage with categories and products', 'Исторический длинный снимок витрины из портфолио Kwork, июнь 2024. Сохранён без обрезки.', 'Historical storefront screenshot from the Kwork portfolio, June 2024. Preserved without cropping.'],
   'arenda-pm-home-performance': ['mobile-viewport.png', 'Мобильный первый экран после оптимизации', 'Mobile first screen after optimization', 'Снимок браузерной проверки, ширина 390 px. Это не отчёт PageSpeed и не полностраничный снимок.', 'Browser verification screenshot at 390 px. This is not a PageSpeed report or a full-page capture.'],

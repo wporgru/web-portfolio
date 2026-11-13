@@ -1,0 +1,25 @@
+title: Spare parts catalog without online checkout
+tagline: "Converted an existing parts store into an enquiry catalog: shoppers
+  browse categories and contact the seller instead of checking out online."
+year: "05.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Catalog mode
+  - Lead forms
+  - CSS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Converted an existing parts store into an enquiry catalog: shoppers
+      browse categories and contact the seller instead of checking out online."
+  - type: text
+    title: How it works
+    body: Hid prices, counters and the cart. Proposed a contact form instead of
+      forcing an immediate phone call. Fixed the Parts menu link and aligned
+      cards using the client’s chosen approach of increasing card height.
+      Explained how the layout is managed.
+  - type: text
+    title: Result and verification
+    body: The client approved the storefront and accepted the work. A separate
+      mobile button and uniform subcategory images were outside this stage.

@@ -1,0 +1,27 @@
+title: Exporting Gauss SKUs and photo links to Excel
+tagline: Prepared a Gauss product spreadsheet for further image processing. Each
+  row needed a SKU, title and separate links for all available product images.
+year: "06.2023"
+role: Web development and automation
+stack:
+  - Excel
+  - Web scraping
+  - Product images
+  - Sitemap
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a Gauss product spreadsheet for further image processing. Each
+      row needed a SKU, title and separate links for all available product
+      images.
+  - type: text
+    title: How it works
+    body: Started from the sitemap and checked responses because some listed URLs
+      returned 404. Collected available image links into separate columns, up to
+      20 per product. Did not substitute unrelated photos where the source had
+      none.
+  - type: text
+    title: Result and verification
+    body: The client accepted the spreadsheet. The handoff records 1,285 source URLs
+      and output for 1,246 products; these are delivery figures, not a fresh row
+      count.
