@@ -1,0 +1,53 @@
+---
+const {projects,lang,t,eagerIdx}=Astro.props;
+import ProjectCard from './ProjectCard.astro';
+const ru=lang==='ru';
+const tags=[...new Set<string>(projects.flatMap((p:any)=>p.stack ?? []))].sort((a,b)=>a.localeCompare(b,lang));
+---
+<case-catalog>
+  <form class="card case-search" role="search" hidden>
+    <label>{ru?'Поиск по кейсам':'Search case studies'}<input type="search" name="q" placeholder={ru?'Например, импорт или Dokan':'For example, import or Dokan'} /></label>
+    <label>{ru?'Технология':'Technology'}<select name="tech"><option value="">{ru?'Все технологии':'All technologies'}</option>{tags.map(tag=><option value={tag}>{tag}</option>)}</select></label>
+    <output aria-live="polite"></output>
+  </form>
+  <div class="grid">
+    {projects.map((p:any,i:number)=><div data-case data-search={[p.name,p.description,p.year,...(p.stack??[])].join(' ').toLocaleLowerCase(lang)} data-tech={JSON.stringify(p.stack??[])}>
+      <ProjectCard project={p} eager={i===eagerIdx} t={t}/>
+    </div>)}
+  </div>
+</case-catalog>
+<script>
+class CaseCatalog extends HTMLElement {
+  connectedCallback() {
+    const form=this.querySelector('form');
+    const query=form?.querySelector('input');
+    const tech=form?.querySelector('select');
+    const output=form?.querySelector('output');
+    if(!form||!query||!tech||!output)return;
+    const lang=document.documentElement.lang;
+    const cards=[...this.querySelectorAll<HTMLElement>('[data-case]')].map(el=>({el,tags:JSON.parse(el.dataset.tech??'[]') as string[]}));
+    const update=()=>{
+      const words=query.value.trim().toLocaleLowerCase(lang).split(/\s+/).filter(Boolean);
+      let visible=0;
+      for(const {el,tags} of cards){
+        const matches=words.every(word=>el.dataset.search?.includes(word)) && (!tech.value||tags.includes(tech.value));
+        el.hidden=!matches;
+        if(matches)visible++;
+      }
+      output.value=lang==='ru'?`Показано: ${visible} из ${cards.length}`:`Showing ${visible} of ${cards.length}`;
+    };
+    form.addEventListener('input',update);
+    form.addEventListener('submit',event=>{event.preventDefault();update();});
+    form.hidden=false; update();
+  }
+}
+if(!customElements.get('case-catalog'))customElements.define('case-catalog',CaseCatalog);
+</script>
+<style>
+.case-search:not([hidden]){display:flex;align-items:end;flex-wrap:wrap;gap:1rem;margin-bottom:1rem}
+.case-search label{display:grid;gap:.35rem;flex:1 1 210px}
+.case-search input,.case-search select{font:inherit;width:100%;padding:.55rem;color:var(--text);background:var(--card-bg);border:1px solid var(--border);border-radius:8px}
+.case-search option{background:#182438;color:white}
+.case-search output{padding:.55rem 0;color:var(--muted)}
+[data-case][hidden]{display:none}
+</style>

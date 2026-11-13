@@ -12,7 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { getEntry } from 'astro:content';
 import Layout from '../../components/Layout.astro';
-import ProjectCard from '../../components/ProjectCard.astro';
+import CaseCatalog from '../../components/CaseCatalog.astro';
 import { makeT } from '../../scripts/t';
 
 const MEDIA_DIR = path.join(process.cwd(), 'public/media/projects');
@@ -85,20 +85,10 @@ const showcaseLangLinks = allLangs.map(l => ({
 
     {projects.length > 0 && (
       <div class="showcase__section">
-        <div class="grid">
-          {projects.map((p: any, i: number) => (
-            <ProjectCard
-              project={p}
-              eager={i === eagerIdx}
-              t={{
-                platforms: t('showcase.platforms'),
-                stack:     t('showcase.stack'),
-                tags:      t('showcase.tags'),
-                featured:  t('showcase.featured'),
-              }}
-            />
-          ))}
-        </div>
+        <CaseCatalog projects={projects} lang={defaultLang} eagerIdx={eagerIdx} t={{
+          platforms: t('showcase.platforms'), stack: t('showcase.stack'),
+          tags: t('showcase.tags'), featured: t('showcase.featured')
+        }} />
       </div>
     )}
   </section>

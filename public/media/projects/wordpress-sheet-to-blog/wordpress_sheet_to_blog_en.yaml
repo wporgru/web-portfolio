@@ -1,0 +1,25 @@
+title: Migrating Google Sheets content into a WordPress blog
+tagline: Articles had been prepared in a spreadsheet and needed to become posts
+  on an existing website. The client wanted a usable blog section without
+  re-entering the material manually.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - Google Sheets
+  - WordPress
+  - Content migration
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Articles had been prepared in a spreadsheet and needed to become posts on
+      an existing website. The client wanted a usable blog section without
+      re-entering the material manually.
+  - type: text
+    title: How it works
+    body: Used the supplied spreadsheet as the source, moved the material into
+      WordPress posts, and handed over the blog page for review. The migration
+      is distinct from authoring the original copy or creating images.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the migration and accepted the work. The handoff does
+      not record a final post count, so no total is inferred.

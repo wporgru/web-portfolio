@@ -712,3 +712,134 @@ projects:
       - label: Read case study
         url: /showcase/woodmart-category-tools/en
         type: product
+  - slug: dokan-marketplace-recovery
+    name: Restoring product publishing in a Dokan marketplace
+    year: "01.2026"
+    role: Web development and automation
+    description: Sellers could not add products, and some flows ended on a blank
+      screen. New-user registration also needed investigation.
+    stack:
+      - WooCommerce
+      - Dokan
+      - PHP
+    order: 39
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dokan-marketplace-recovery/en
+        type: product
+  - slug: metform-replacement
+    name: Replacing MetForm and verifying inquiry delivery
+    year: "05.2025"
+    role: Web development and automation
+    description: The inquiry form was failing at its core job. The client needed a
+      working lead channel, not just a redesigned button.
+    stack:
+      - WordPress
+      - Contact Form 7
+      - CSS
+    order: 40
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/metform-replacement/en
+        type: product
+  - slug: wordpress-sheet-to-blog
+    name: Migrating Google Sheets content into a WordPress blog
+    year: "03.2026"
+    role: Web development and automation
+    description: Articles had been prepared in a spreadsheet and needed to become
+      posts on an existing website. The client wanted a usable blog section
+      without re-entering the material manually.
+    stack:
+      - Google Sheets
+      - WordPress
+      - Content migration
+    order: 41
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-sheet-to-blog/en
+        type: product
+  - slug: woocommerce-bulk-editor
+    name: Catalog export and bulk product editing in WooCommerce
+    year: "04.2026"
+    role: Web development and automation
+    description: The store owner needed a full catalog export and a way to make
+      repetitive updates without opening each product individually.
+    stack:
+      - WooCommerce
+      - Data export
+      - Bulk editing
+    order: 42
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-bulk-editor/en
+        type: product
+  - slug: catalog-thumbnail-disk
+    name: Managing thumbnail growth in a large WooCommerce catalog
+    year: "02.2026"
+    role: Web development and automation
+    description: After a catalog import, generated copies of product images began
+      filling the hosting account. Storefront work needed to continue without
+      further uncontrolled file growth.
+    stack:
+      - WooCommerce
+      - WordPress
+      - Media
+    order: 43
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/catalog-thumbnail-disk/en
+        type: product
+  - slug: variation-import-template
+    name: SKU-based WooCommerce variation import template
+    year: "10.2025"
+    role: Web development and automation
+    description: The source lacked links between parent products and variations.
+      Repeat imports were also complicated by duplicates and inconsistent size
+      values.
+    stack:
+      - WooCommerce
+      - WP All Import
+      - SKU
+    order: 44
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/variation-import-template/en
+        type: product
+  - slug: woodmart-plural-forms
+    name: Fixing Russian plural forms in a WoodMart catalog
+    year: "03.2025"
+    role: Web development and automation
+    description: Catalog labels were inconsistent across product counts. The fix
+      belonged in localization rather than a theme replacement for one label.
+    stack:
+      - WordPress
+      - WoodMart
+      - Localization
+    order: 45
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woodmart-plural-forms/en
+        type: product
+  - slug: form-confirmation-recovery
+    name: Restoring WordPress form submission feedback
+    year: "09.2025"
+    role: Web development and automation
+    description: After a plugin update, the success message disappeared. A visitor
+      could submit a form without knowing whether the action had worked.
+    stack:
+      - WordPress
+      - JavaScript
+      - Forms
+    order: 46
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/form-confirmation-recovery/en
+        type: product

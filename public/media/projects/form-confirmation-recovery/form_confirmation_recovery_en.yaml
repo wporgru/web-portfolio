@@ -1,0 +1,25 @@
+title: Restoring WordPress form submission feedback
+tagline: After a plugin update, the success message disappeared. A visitor could
+  submit a form without knowing whether the action had worked.
+year: "09.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - JavaScript
+  - Forms
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After a plugin update, the success message disappeared. A visitor could
+      submit a form without knowing whether the action had worked.
+  - type: text
+    title: How it works
+    body: Located the forms and reviewed a shared manual script inclusion. Corrected
+      the inclusion after the update and tested the success message on one form.
+      Suggested a separate analytics check rather than including it in the
+      interface fix.
+  - type: text
+    title: Result and verification
+    body: The client retested the first form, confirmed the result and accepted
+      delivery. The engagement did not include a complete audit of all forms,
+      mail channels or analytics goals.

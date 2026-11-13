@@ -1,0 +1,26 @@
+title: SKU-based WooCommerce variation import template
+tagline: The source lacked links between parent products and variations. Repeat
+  imports were also complicated by duplicates and inconsistent size values.
+year: "10.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WP All Import
+  - SKU
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The source lacked links between parent products and variations. Repeat
+      imports were also complicated by duplicates and inconsistent size values.
+  - type: text
+    title: How it works
+    body: Ran a trial import, identified missing variation and parent SKUs, provided
+      a sample file structure and saved a WP All Import template. Explained the
+      difference between the source identifier used for updates and the
+      WordPress record ID. Tested how resaving one product affected filter
+      visibility.
+  - type: text
+    title: Result and verification
+    body: The client received a reusable template and instructions. One run stopped
+      at 99% and one color label remained unresolved; this does not claim a full
+      database import or repair of every filter.

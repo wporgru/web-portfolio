@@ -21,7 +21,7 @@ import path from 'node:path';
 import { parse } from 'yaml';
 import { getEntry } from 'astro:content';
 import Layout from '../../components/Layout.astro';
-import ProjectCard from '../../components/ProjectCard.astro';
+import CaseCatalog from '../../components/CaseCatalog.astro';
 import ProjectPage from '../../components/ProjectPage.astro';
 import { makeT } from '../../scripts/t';
 
@@ -203,20 +203,10 @@ const langLinks = kind === 'project'
         <article class="card"><p class="muted">{t('showcase.empty')}</p></article>
       )}
 
-      <div class="grid">
-        {projects.map((p: any, i: number) => (
-          <ProjectCard
-            project={p}
-            eager={i === eagerIdx}
-            t={{
-              platforms: t('showcase.platforms'),
-              stack:     t('showcase.stack'),
-              tags:      t('showcase.tags'),
-              featured:  t('showcase.featured'),
-            }}
-          />
-        ))}
-      </div>
+      <CaseCatalog projects={projects} lang={lang} eagerIdx={eagerIdx} t={{
+          platforms: t('showcase.platforms'), stack: t('showcase.stack'),
+          tags: t('showcase.tags'), featured: t('showcase.featured')
+        }} />
     </section>
   </Layout>
 ) : (

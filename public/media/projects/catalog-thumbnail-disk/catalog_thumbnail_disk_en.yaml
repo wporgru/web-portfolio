@@ -1,0 +1,26 @@
+title: Managing thumbnail growth in a large WooCommerce catalog
+tagline: After a catalog import, generated copies of product images began
+  filling the hosting account. Storefront work needed to continue without
+  further uncontrolled file growth.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WordPress
+  - Media
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After a catalog import, generated copies of product images began filling
+      the hosting account. Storefront work needed to continue without further
+      uncontrolled file growth.
+  - type: text
+    title: How it works
+    body: Traced disk use to multiple generated thumbnail sizes per image and
+      explained why storage ran out. The client increased capacity; I disabled
+      unnecessary sizes and started regeneration before continuing the work.
+  - type: text
+    title: Result and verification
+    body: The order was delivered and accepted automatically. Image generation rules
+      changed, but no independent measurement of disk savings or itemized
+      redesign report was retained.

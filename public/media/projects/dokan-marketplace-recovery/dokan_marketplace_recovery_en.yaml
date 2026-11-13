@@ -1,0 +1,25 @@
+title: Restoring product publishing in a Dokan marketplace
+tagline: Sellers could not add products, and some flows ended on a blank screen.
+  New-user registration also needed investigation.
+year: "01.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Dokan
+  - PHP
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Sellers could not add products, and some flows ended on a blank screen.
+      New-user registration also needed investigation.
+  - type: text
+    title: How it works
+    body: Diagnostics found a request to a missing table in the Dokan Pro returns
+      module. The affected component was temporarily disabled. I tested
+      registration with two email addresses, adjusted the theme’s AJAX form
+      setting for this site, and turned off visible debug output after the work.
+  - type: text
+    title: Result and verification
+    body: The report records restored product publishing and registration. The
+      returns module was not presented as repaired; re-enabling it required a
+      separate check of the updated component.

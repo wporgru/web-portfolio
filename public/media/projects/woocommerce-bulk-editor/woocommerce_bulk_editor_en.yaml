@@ -1,0 +1,25 @@
+title: Catalog export and bulk product editing in WooCommerce
+tagline: The store owner needed a full catalog export and a way to make
+  repetitive updates without opening each product individually.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Data export
+  - Bulk editing
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store owner needed a full catalog export and a way to make repetitive
+      updates without opening each product individually.
+  - type: text
+    title: How it works
+    body: Exported all records and provided the file link. For subsets, I explained
+      how to filter out zero-stock and hidden items in the spreadsheet. On
+      request, I configured a spreadsheet-style editor and reported recording
+      guidance for both tools.
+  - type: text
+    title: Result and verification
+    body: The client accepted the order and confirmed receipt of the export. An
+      in-stock-only feed and recurring synchronization were outside the verified
+      scope.

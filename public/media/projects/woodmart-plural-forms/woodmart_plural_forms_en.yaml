@@ -1,0 +1,24 @@
+title: Fixing Russian plural forms in a WoodMart catalog
+tagline: Catalog labels were inconsistent across product counts. The fix
+  belonged in localization rather than a theme replacement for one label.
+year: "03.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - WoodMart
+  - Localization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Catalog labels were inconsistent across product counts. The fix belonged
+      in localization rather than a theme replacement for one label.
+  - type: text
+    title: How it works
+    body: Checked the theme settings and translation. When the first change did not
+      cover all cases, I compared the labels for 21, 22 and 25. One form existed
+      while others were missing, so I supplied the relevant forms.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the corrected display and accepted the order. The
+      work covered the specific label and plural forms discussed, not a full
+      WoodMart translation.

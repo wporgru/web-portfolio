@@ -1,0 +1,24 @@
+title: Replacing MetForm and verifying inquiry delivery
+tagline: The inquiry form was failing at its core job. The client needed a
+  working lead channel, not just a redesigned button.
+year: "05.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - Contact Form 7
+  - CSS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The inquiry form was failing at its core job. The client needed a working
+      lead channel, not just a redesigned button.
+  - type: text
+    title: How it works
+    body: Replaced the failing MetForm setup with Contact Form 7 and reused the same
+      form where requirements matched. I sent a test inquiry, then adjusted the
+      button color, alignment and corner radius after the initial review.
+  - type: text
+    title: Result and verification
+    body: The client confirmed receipt of the test email and approved the visual
+      changes. The work covered inquiry delivery and presentation, not legal
+      review.

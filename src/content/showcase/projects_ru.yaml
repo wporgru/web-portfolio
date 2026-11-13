@@ -717,3 +717,137 @@ projects:
       - label: Читать кейс
         url: /showcase/woodmart-category-tools
         type: product
+  - slug: dokan-marketplace-recovery
+    name: Восстановление публикации товаров в маркетплейсе Dokan
+    year: "01.2026"
+    role: Веб-разработка и автоматизация
+    description: Продавцы не могли добавлять товары, а на части сценариев сайт
+      показывал белый экран. Параллельно требовалось разобраться с регистрацией
+      нового пользователя.
+    stack:
+      - WooCommerce
+      - Dokan
+      - PHP
+    order: 39
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dokan-marketplace-recovery
+        type: product
+  - slug: metform-replacement
+    name: Замена MetForm и проверка доставки заявок
+    year: "05.2025"
+    role: Веб-разработка и автоматизация
+    description: "Форма заявки не выполняла основную задачу: клиенту требовался
+      рабочий канал, а не только обновлённое оформление кнопки."
+    stack:
+      - WordPress
+      - Contact Form 7
+      - CSS
+    order: 40
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/metform-replacement
+        type: product
+  - slug: wordpress-sheet-to-blog
+    name: Перенос материалов из Google Таблиц в блог WordPress
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: Статьи были подготовлены в таблице, а нужны были как записи на
+      действующем сайте. Заказчику требовалось получить готовый раздел блога, не
+      заводя материалы заново вручную.
+    stack:
+      - Google Sheets
+      - WordPress
+      - Content migration
+    order: 41
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-sheet-to-blog
+        type: product
+  - slug: woocommerce-bulk-editor
+    name: Выгрузка каталога и массовое редактирование товаров
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: Владельцу требовался полный экспорт каталога и более удобный способ
+      вносить повторяющиеся правки, не открывая каждую карточку отдельно.
+    stack:
+      - WooCommerce
+      - Data export
+      - Bulk editing
+    order: 42
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-bulk-editor
+        type: product
+  - slug: catalog-thumbnail-disk
+    name: Управление миниатюрами большого каталога WooCommerce
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: После импорта каталога хостинг стал заполняться дополнительными
+      копиями товарных изображений. Доработку витрины нужно было продолжить,
+      устранив причину дальнейшего роста числа файлов.
+    stack:
+      - WooCommerce
+      - WordPress
+      - Media
+    order: 43
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/catalog-thumbnail-disk
+        type: product
+  - slug: variation-import-template
+    name: Шаблон импорта вариаций WooCommerce по SKU
+    year: "10.2025"
+    role: Веб-разработка и автоматизация
+    description: В файле не хватало связей между родительскими товарами и
+      вариациями. Повторные загрузки также осложнялись дублями и неоднородными
+      значениями размеров.
+    stack:
+      - WooCommerce
+      - WP All Import
+      - SKU
+    order: 44
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/variation-import-template
+        type: product
+  - slug: woodmart-plural-forms
+    name: Русские формы числительных в каталоге WoodMart
+    year: "03.2025"
+    role: Веб-разработка и автоматизация
+    description: При разных количествах товаров подпись в каталоге отображалась
+      непоследовательно. Нужно было исправить перевод, а не менять тему ради
+      одной строки.
+    stack:
+      - WordPress
+      - WoodMart
+      - Localization
+    order: 45
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woodmart-plural-forms
+        type: product
+  - slug: form-confirmation-recovery
+    name: Восстановление подтверждения отправки форм WordPress
+    year: "09.2025"
+    role: Веб-разработка и автоматизация
+    description: После обновления плагина у клиента пропало сообщение об успешной
+      отправке. Пользователь мог отправить заявку, но не понимал, сработало ли
+      действие.
+    stack:
+      - WordPress
+      - JavaScript
+      - Forms
+    order: 46
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/form-confirmation-recovery
+        type: product
