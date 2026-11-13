@@ -1,0 +1,27 @@
+title: Postcode delivery and pickup for Aravia
+tagline: Reworked checkout for local delivery in Perm. The store needed to
+  account for district and order value while keeping pickup easy to select.
+year: "04.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Postal codes
+  - Local delivery
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Reworked checkout for local delivery in Perm. The store needed to account
+      for district and order value while keeping pickup easy to select.
+  - type: text
+    title: How it works
+    body: Prepared a district table and configured rules by postcode and order
+      value. Restored the postcode field after feedback, added a delivery-cost
+      link and reinstated coupons. Switched the pickup plugin and refined
+      checkout labels, spacing, fields and guidance before asking the client to
+      check notifications.
+  - type: text
+    title: Result and verification
+    body: The client confirmed pickup and receipt of two emails, then accepted the
+      work. Online payments and stock by pickup location were outside scope;
+      every tariff boundary was not independently verified.

@@ -4225,3 +4225,89 @@ projects:
       - label: Read case study
         url: /showcase/lab-order-dashboard-css/en
         type: product
+  - slug: aravia-postcode-delivery-checkout
+    name: Postcode delivery and pickup for Aravia
+    year: "04.2021"
+    role: Web development and automation
+    description: Reworked checkout for local delivery in Perm. The store needed to
+      account for district and order value while keeping pickup easy to select.
+    stack:
+      - WooCommerce
+      - Postal codes
+      - Local delivery
+      - Checkout
+    order: 244
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/aravia-postcode-delivery-checkout/en
+        type: product
+  - slug: dependent-category-filters-repair
+    name: Repairing dependent WooCommerce catalog filters
+    year: "04.2021"
+    role: Web development and automation
+    description: Repaired dependent filters where identical subcategory names in
+      separate branches led to incorrect options and counts.
+    stack:
+      - WooCommerce
+      - Taxonomy
+      - Dependent filters
+      - Mobile QA
+    order: 245
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dependent-category-filters-repair/en
+        type: product
+  - slug: electronics-catalog-price-list-assets
+    name: Building an electronics catalog from a price list
+    year: "09.2020"
+    role: Web development and automation
+    description: Prepared electronics listings from a price list so buyers could
+      identify the configuration without seeing internal supplier notes in the
+      title.
+    stack:
+      - WooCommerce
+      - Product data
+      - SKU
+      - Image matching
+    order: 246
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/electronics-catalog-price-list-assets/en
+        type: product
+  - slug: kontel-woocommerce-breadcrumbs
+    name: Adding WooCommerce breadcrumbs to site templates
+    year: "03.2020"
+    role: Web development and automation
+    description: Added breadcrumb navigation to internal pages while retaining the
+      main menu and leaving the homepage uncluttered.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Yoast SEO
+      - Templates
+    order: 247
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/kontel-woocommerce-breadcrumbs/en
+        type: product
+  - slug: b2b-woocommerce-order-request
+    name: WooCommerce B2B checkout for order enquiries
+    year: "01.2020"
+    role: Web development and automation
+    description: Simplified checkout for individuals and businesses. Instead of
+      mandatory online payment, the order went to a manager for follow-up.
+    stack:
+      - WooCommerce
+      - B2B checkout
+      - Shipping
+      - Form fields
+    order: 248
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/b2b-woocommerce-order-request/en
+        type: product

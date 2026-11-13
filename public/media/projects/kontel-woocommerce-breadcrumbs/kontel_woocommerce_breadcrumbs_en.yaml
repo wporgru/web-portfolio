@@ -1,0 +1,24 @@
+title: Adding WooCommerce breadcrumbs to site templates
+tagline: Added breadcrumb navigation to internal pages while retaining the main
+  menu and leaving the homepage uncluttered.
+year: "03.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Yoast SEO
+  - Templates
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Added breadcrumb navigation to internal pages while retaining the main
+      menu and leaving the homepage uncluttered.
+  - type: text
+    title: How it works
+    body: Integrated Yoast SEO breadcrumbs into templates above the H1. Disabled
+      redundant Breadcrumb NavXT rather than retaining two breadcrumb systems.
+      Refined placement after client review and reduced excess spacing by 30 px.
+  - type: text
+    title: Result and verification
+    body: The client accepted the setup. The current site is not used to infer
+      breadcrumb placement in every historical template.

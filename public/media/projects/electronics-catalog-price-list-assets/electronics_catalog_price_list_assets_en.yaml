@@ -1,0 +1,27 @@
+title: Building an electronics catalog from a price list
+tagline: Prepared electronics listings from a price list so buyers could
+  identify the configuration without seeing internal supplier notes in the
+  title.
+year: "09.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product data
+  - SKU
+  - Image matching
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared electronics listings from a price list so buyers could identify
+      the configuration without seeing internal supplier notes in the title.
+  - type: text
+    title: How it works
+    body: Agreed on a title format covering model, capacity, color and SKU.
+      Automated image collection from agreed sources and demonstrated a sample
+      listing. Flagged missing images and possible color mismatches. Left
+      currency conversion to the client’s existing code.
+  - type: text
+    title: Result and verification
+    body: The order closed after the review period and the client later added a
+      bonus. The final listing count and image match rate were not independently
+      measured.

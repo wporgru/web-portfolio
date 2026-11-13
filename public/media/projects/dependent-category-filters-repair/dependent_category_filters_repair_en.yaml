@@ -1,0 +1,26 @@
+title: Repairing dependent WooCommerce catalog filters
+tagline: Repaired dependent filters where identical subcategory names in
+  separate branches led to incorrect options and counts.
+year: "04.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Taxonomy
+  - Dependent filters
+  - Mobile QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Repaired dependent filters where identical subcategory names in separate
+      branches led to incorrect options and counts.
+  - type: text
+    title: How it works
+    body: Compared choosing a child category alone with choosing it under its
+      parent. Updated the extension, restored automatic filter application and
+      refined the option lists using client examples. Restored the mobile footer
+      separately.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the selections they tested and the footer on a phone,
+      accepted the work and added a bonus. The review did not cover every
+      catalog combination.

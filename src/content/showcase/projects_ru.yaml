@@ -4275,3 +4275,90 @@ projects:
       - label: Читать кейс
         url: /showcase/lab-order-dashboard-css
         type: product
+  - slug: aravia-postcode-delivery-checkout
+    name: Доставка по индексам и самовывоз для Aravia
+    year: "04.2021"
+    role: Веб-разработка и автоматизация
+    description: Перенастроил оформление заказа для локальной доставки в Перми.
+      Нужно было учитывать район и сумму заказа и при этом оставить понятный
+      выбор самовывоза.
+    stack:
+      - WooCommerce
+      - Postal codes
+      - Local delivery
+      - Checkout
+    order: 244
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/aravia-postcode-delivery-checkout
+        type: product
+  - slug: dependent-category-filters-repair
+    name: Восстановление зависимых фильтров WooCommerce
+    year: "04.2021"
+    role: Веб-разработка и автоматизация
+    description: "Исправил сбой зависимых фильтров: одинаковые названия подкатегорий
+      в разных ветках приводили к неверным спискам и счётчикам."
+    stack:
+      - WooCommerce
+      - Taxonomy
+      - Dependent filters
+      - Mobile QA
+    order: 245
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dependent-category-filters-repair
+        type: product
+  - slug: electronics-catalog-price-list-assets
+    name: Наполнение каталога электроники по прайсу
+    year: "09.2020"
+    role: Веб-разработка и автоматизация
+    description: Подготовил карточки электроники по прайсу. Покупатель должен был
+      видеть конкретную комплектацию, а внутренние пометки поставщика не должны
+      были попадать в названия.
+    stack:
+      - WooCommerce
+      - Product data
+      - SKU
+      - Image matching
+    order: 246
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/electronics-catalog-price-list-assets
+        type: product
+  - slug: kontel-woocommerce-breadcrumbs
+    name: Хлебные крошки WooCommerce в шаблонах сайта
+    year: "03.2020"
+    role: Веб-разработка и автоматизация
+    description: Добавил навигационный путь на внутренние страницы сайта, сохранив
+      основное меню и не выводя лишнюю навигацию на главной.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Yoast SEO
+      - Templates
+    order: 247
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/kontel-woocommerce-breadcrumbs
+        type: product
+  - slug: b2b-woocommerce-order-request
+    name: Оформление B2B-заявок через корзину WooCommerce
+    year: "01.2020"
+    role: Веб-разработка и автоматизация
+    description: Упростил оформление для частных и корпоративных покупателей. Вместо
+      обязательной онлайн-оплаты заказ передавался менеджеру на согласование.
+    stack:
+      - WooCommerce
+      - B2B checkout
+      - Shipping
+      - Form fields
+    order: 248
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/b2b-woocommerce-order-request
+        type: product

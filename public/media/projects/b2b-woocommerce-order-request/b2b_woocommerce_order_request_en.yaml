@@ -1,0 +1,27 @@
+title: WooCommerce B2B checkout for order enquiries
+tagline: Simplified checkout for individuals and businesses. Instead of
+  mandatory online payment, the order went to a manager for follow-up.
+year: "01.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - B2B checkout
+  - Shipping
+  - Form fields
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Simplified checkout for individuals and businesses. Instead of mandatory
+      online payment, the order went to a manager for follow-up.
+  - type: text
+    title: How it works
+    body: Moved the cart from a post to a dedicated page, configured delivery and
+      checked a test order. Shortened labels, aligned name and tax ID fields and
+      added country selection for geolocated shipping. Checked mobile and
+      desktop layouts and kept a WordPress upgrade outside scope because of the
+      server PHP version.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the layout and accepted the work. The test order was
+      not a live payment or shipment; automated invoicing and 1C integration
+      were not implemented.
