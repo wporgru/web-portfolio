@@ -1,0 +1,27 @@
+title: Importing a welding equipment catalog into WooCommerce
+tagline: An existing storefront needed to publish a new welding equipment range
+  from supplied files. The client also needed to understand why catalog
+  categories and editable menu links are managed separately.
+year: "10.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Catalog import
+  - Navigation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: An existing storefront needed to publish a new welding equipment range
+      from supplied files. The client also needed to understand why catalog
+      categories and editable menu links are managed separately.
+  - type: text
+    title: How it works
+    body: Agreed which supplied files to use and explained the difference between
+      category widgets and manually managed menus. Imported the range into the
+      existing WooCommerce store and shared storefront links so the client could
+      review the outcome beyond the importer status.
+  - type: text
+    title: Result and verification
+    body: The client accepted delivery after an internal review. This was catalog
+      work on an existing store, not a full website build, supplier site
+      scraping or recurring synchronization.

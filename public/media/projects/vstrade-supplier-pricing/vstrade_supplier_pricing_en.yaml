@@ -1,0 +1,27 @@
+title: Importing VsTrade products and syncing prices and stock
+tagline: The store needed to import a supplier assortment, convert wholesale
+  prices to retail prices and handle offers appearing or disappearing during
+  refreshes.
+year: "07.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Supplier feed
+  - Pricing rules
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store needed to import a supplier assortment, convert wholesale prices
+      to retail prices and handle offers appearing or disappearing during
+      refreshes.
+  - type: text
+    title: How it works
+    body: Ran the first import and handed the storefront over for review. Replaced
+      the initial 20% markup with the approved spreadsheet rules after the
+      client clarified that the source prices were wholesale. Reprocessed the
+      catalog, configured automatic updates and ran a control pass.
+  - type: text
+    title: Result and verification
+    body: One report records 20 new products and 21 items switched to out of stock.
+      These are changes from a specific run, not the total store size. Exact
+      markup thresholds are not disclosed.

@@ -1,0 +1,27 @@
+title: Restoring Elementor after a critical WordPress error
+tagline: A critical WordPress error prevented editing in Elementor. The priority
+  was to restore the editor without conflating the fix with a PHP upgrade or
+  page rebuild.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Elementor
+  - Troubleshooting
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A critical WordPress error prevented editing in Elementor. The priority
+      was to restore the editor without conflating the fix with a PHP upgrade or
+      page rebuild.
+  - type: text
+    title: How it works
+    body: Requested the complete error notification rather than inferring the cause
+      from a generic error message. Restored the editor and handed it back to
+      the client. Additional changes were supplied in a separate file, so
+      unverified items from it are not included in the repair scope.
+  - type: text
+    title: Result and verification
+    body: The client thanked me for restoring the editor and accepted the order. The
+      exact patch was not preserved; the case documents recovery, not a
+      particular plugin replacement or PHP upgrade.

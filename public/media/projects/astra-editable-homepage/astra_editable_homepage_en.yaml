@@ -1,0 +1,28 @@
+title: Building an editable Astra homepage from a client design
+tagline: The client needed a selected design implemented in WordPress while
+  retaining control over the header, menu and homepage content. Site-wide
+  elements had to be kept distinct from page-specific blocks.
+year: "10.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - Astra
+  - Responsive layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a selected design implemented in WordPress while
+      retaining control over the header, menu and homepage content. Site-wide
+      elements had to be kept distinct from page-specific blocks.
+  - type: text
+    title: How it works
+    body: Built intermediate versions and clarified where the shared header ends and
+      the homepage hero begins. After feedback about extra links, assigned the
+      main menu to the mobile off-canvas area and aligned it with footer
+      navigation. Showed the client where to edit the header, footer and mobile
+      menu in Astra and WordPress.
+  - type: text
+    title: Result and verification
+    body: The client accepted the implementation and confirmed it matched the
+      selected layout. The result was an editable homepage and template, not a
+      full store build or checkout test.

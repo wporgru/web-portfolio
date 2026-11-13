@@ -1469,3 +1469,107 @@ projects:
       - label: Read case study
         url: /showcase/wordpress-internal-https/en
         type: product
+  - slug: breez-api-catalog
+    name: Importing 2,744 Breez products via API into WooCommerce
+    year: "09.2025"
+    role: Web development and automation
+    description: The store needed to import the Breez assortment and give the owner
+      a practical way to refresh it after the initial load. Routine product
+      updates needed to stay separate from rebuilding the category structure.
+    stack:
+      - WooCommerce
+      - REST API
+      - Cron
+      - CyrLitera
+    order: 84
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/breez-api-catalog/en
+        type: product
+  - slug: aurora-xml-price-stock
+    name: Mapping bundle prices and stock from the Aurora XML feed
+    year: "09.2025"
+    role: Web development and automation
+    description: The supplier feed carried multiple prices and its own availability
+      labels. The task was to choose the agreed bundle price and refresh
+      inventory without replacing existing editorial copy or images.
+    stack:
+      - WooCommerce
+      - XML
+      - PHP
+      - Cron
+    order: 85
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/aurora-xml-price-stock/en
+        type: product
+  - slug: vstrade-supplier-pricing
+    name: Importing VsTrade products and syncing prices and stock
+    year: "07.2025"
+    role: Web development and automation
+    description: The store needed to import a supplier assortment, convert wholesale
+      prices to retail prices and handle offers appearing or disappearing during
+      refreshes.
+    stack:
+      - WooCommerce
+      - Supplier feed
+      - Pricing rules
+    order: 86
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/vstrade-supplier-pricing/en
+        type: product
+  - slug: astra-editable-homepage
+    name: Building an editable Astra homepage from a client design
+    year: "10.2025"
+    role: Web development and automation
+    description: The client needed a selected design implemented in WordPress while
+      retaining control over the header, menu and homepage content. Site-wide
+      elements had to be kept distinct from page-specific blocks.
+    stack:
+      - WordPress
+      - Astra
+      - Responsive layout
+    order: 87
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/astra-editable-homepage/en
+        type: product
+  - slug: welding-supplier-import
+    name: Importing a welding equipment catalog into WooCommerce
+    year: "10.2025"
+    role: Web development and automation
+    description: An existing storefront needed to publish a new welding equipment
+      range from supplied files. The client also needed to understand why
+      catalog categories and editable menu links are managed separately.
+    stack:
+      - WooCommerce
+      - Catalog import
+      - Navigation
+    order: 88
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/welding-supplier-import/en
+        type: product
+  - slug: elementor-editor-recovery
+    name: Restoring Elementor after a critical WordPress error
+    year: "04.2026"
+    role: Web development and automation
+    description: A critical WordPress error prevented editing in Elementor. The
+      priority was to restore the editor without conflating the fix with a PHP
+      upgrade or page rebuild.
+    stack:
+      - WordPress
+      - Elementor
+      - Troubleshooting
+    order: 89
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/elementor-editor-recovery/en
+        type: product

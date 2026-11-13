@@ -1,0 +1,30 @@
+title: Importing 2,744 Breez products via API into WooCommerce
+tagline: The store needed to import the Breez assortment and give the owner a
+  practical way to refresh it after the initial load. Routine product updates
+  needed to stay separate from rebuilding the category structure.
+year: "09.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - REST API
+  - Cron
+  - CyrLitera
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store needed to import the Breez assortment and give the owner a
+      practical way to refresh it after the initial load. Routine product
+      updates needed to stay separate from rebuilding the category structure.
+  - type: text
+    title: How it works
+    body: Configured the API import and separated the one-time category load from
+      product updates. Replaced Rustolat with CyrLitera because the former did
+      not transliterate URLs during import, and aligned product thumbnails.
+      Documented the manual update flow and why the page should remain open
+      until completion, then supplied two cron commands with instructions.
+  - type: text
+    title: Result and verification
+    body: The delivery report records 2,744 imported products. The client received a
+      manual refresh workflow and commands for automation. Installation and
+      successful execution of the server schedule were not independently
+      confirmed.

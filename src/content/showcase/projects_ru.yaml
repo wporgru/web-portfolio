@@ -1482,3 +1482,109 @@ projects:
       - label: Читать кейс
         url: /showcase/wordpress-internal-https
         type: product
+  - slug: breez-api-catalog
+    name: Импорт 2 744 товаров Breez по API в WooCommerce
+    year: "09.2025"
+    role: Веб-разработка и автоматизация
+    description: Магазину требовалось перенести ассортимент Breez и оставить
+      владельцу понятный способ обновлять его после первой загрузки. При этом
+      повторное обновление товаров не должно было заново запускать импорт
+      структуры каталога.
+    stack:
+      - WooCommerce
+      - REST API
+      - Cron
+      - CyrLitera
+    order: 84
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/breez-api-catalog
+        type: product
+  - slug: aurora-xml-price-stock
+    name: Цены комплектов и остатки из XML-фида Aurora
+    year: "09.2025"
+    role: Веб-разработка и автоматизация
+    description: Фид поставщика передавал несколько цен и собственные статусы
+      наличия. Требовалось выбрать согласованную цену комплекта и обновлять
+      остатки, не заменяя уже подготовленные описания и фотографии.
+    stack:
+      - WooCommerce
+      - XML
+      - PHP
+      - Cron
+    order: 85
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/aurora-xml-price-stock
+        type: product
+  - slug: vstrade-supplier-pricing
+    name: Импорт «ВсТрейд» и обновление цен и остатков
+    year: "07.2025"
+    role: Веб-разработка и автоматизация
+    description: Требовалось загрузить ассортимент поставщика, превратить закупочные
+      цены в розничные и при следующих обновлениях учитывать появление и
+      исчезновение предложений.
+    stack:
+      - WooCommerce
+      - Supplier feed
+      - Pricing rules
+    order: 86
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/vstrade-supplier-pricing
+        type: product
+  - slug: astra-editable-homepage
+    name: Редактируемая главная WordPress по макету на Astra
+    year: "10.2025"
+    role: Веб-разработка и автоматизация
+    description: Клиенту требовалось перенести выбранный дизайн на WordPress, но
+      сохранить возможность самостоятельно обновлять шапку, меню и содержание
+      главной. Важно было отделить сквозные элементы сайта от блоков конкретной
+      страницы.
+    stack:
+      - WordPress
+      - Astra
+      - Responsive layout
+    order: 87
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/astra-editable-homepage
+        type: product
+  - slug: welding-supplier-import
+    name: Загрузка каталога сварочного оборудования в WooCommerce
+    year: "10.2025"
+    role: Веб-разработка и автоматизация
+    description: На действующей витрине требовалось разместить новую линейку
+      сварочного оборудования из готовых файлов. Клиенту важно было понимать,
+      почему раздел в каталоге и пункт меню управляются по-разному.
+    stack:
+      - WooCommerce
+      - Catalog import
+      - Navigation
+    order: 88
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/welding-supplier-import
+        type: product
+  - slug: elementor-editor-recovery
+    name: Восстановление редактора Elementor после ошибки
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: Критическая ошибка WordPress мешала редактировать сайт через
+      Elementor. Нужно было вернуть рабочий редактор, не смешивая ремонт с
+      отдельным обновлением PHP или переделкой страниц.
+    stack:
+      - WordPress
+      - Elementor
+      - Troubleshooting
+    order: 89
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/elementor-editor-recovery
+        type: product

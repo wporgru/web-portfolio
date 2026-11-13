@@ -1,0 +1,29 @@
+title: Mapping bundle prices and stock from the Aurora XML feed
+tagline: The supplier feed carried multiple prices and its own availability
+  labels. The task was to choose the agreed bundle price and refresh inventory
+  without replacing existing editorial copy or images.
+year: "09.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - XML
+  - PHP
+  - Cron
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The supplier feed carried multiple prices and its own availability labels.
+      The task was to choose the agreed bundle price and refresh inventory
+      without replacing existing editorial copy or images.
+  - type: text
+    title: How it works
+    body: Added logic to choose the highest price from the supplied values without
+      changing the XML source. Mapped in-stock and in-transit values to instock,
+      and made-to-order to onbackorder. Agreed hourly runs between 09:00 and
+      21:00 and new-product creation without overwriting existing copy or
+      images. Flagged cron and notifications for hosting-side verification.
+  - type: text
+    title: Result and verification
+    body: The client accepted the fix. Price selection and stock mapping were
+      explicit; continuous schedule operation and a later storefront status
+      display are outside the verified result.
