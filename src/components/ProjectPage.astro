@@ -132,7 +132,10 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
   <aside class="card" style="margin-top: 2rem">
     <h2>{lang === 'ru' ? 'Нужна похожая работа?' : 'Need something similar?'}</h2>
     <p>{lang === 'ru' ? 'Пришлите ссылку на проект и опишите, что должно измениться.' : 'Send a project link and tell me what you need to change.'}</p>
-    <a class="btn" href="https://t.me/wporgru">{lang === 'ru' ? 'Обсудить задачу' : 'Discuss your project'}</a>
+    <div class="btnrow">
+      <a class="btn" href="https://t.me/wporgru">{lang === 'ru' ? 'Обсудить задачу' : 'Discuss your project'}</a>
+      <a class="btn btn--ghost" href={'mailto:zakaz@wp.org.ru?subject='+encodeURIComponent((lang==='ru'?'Задача по примеру: ':'Project enquiry: ')+projectTitle)}>{lang==='ru'?'Написать на почту':'Send an email'}</a>
+    </div>
     {linkedServices.length > 0 && <ul class="list">
       {linkedServices.map(service => <li><a href={base+'/services/'+service.slug+(lang==='ru'?'/':'/en/')}>{service[lang==='ru'?'ru':'en'][0]}</a></li>)}
     </ul>}

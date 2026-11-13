@@ -1,0 +1,29 @@
+title: Langformula digital product cart flow
+tagline: Made the cart transition clearer for a digital product bought one copy
+  at a time. A separate quantity field added unnecessary friction to that
+  workflow.
+year: "08.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Astra
+  - Elementor
+  - PHP
+  - CSS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Made the cart transition clearer for a digital product bought one copy at
+      a time. A separate quantity field added unnecessary friction to that
+      workflow.
+  - type: text
+    title: How it works
+    body: Helped correct breadcrumbs and ruble symbol placement. Put button behavior
+      in a separate PHP plugin; an early version briefly blocked access, so the
+      client removed the file and setup continued with a corrected version.
+      Verified the cart transition after enabling single-quantity sales and hid
+      the quantity field with CSS.
+  - type: text
+    title: Result and verification
+    body: After clearing the cache, the client confirmed the display and accepted
+      the work with a bonus. Payments and file delivery were outside this stage.

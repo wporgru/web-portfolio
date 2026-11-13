@@ -4588,3 +4588,74 @@ projects:
       - label: Читать кейс
         url: /showcase/volvoparts-woodmart-demo
         type: product
+  - slug: wordpress-menu-editor-recovery
+    name: Восстановление редактора меню WordPress
+    year: "05.2022"
+    role: Веб-разработка и автоматизация
+    description: Исправил зависание при редактировании главного меню через
+      «Настроить». Пока этот экран не отвечал, владельцу требовался рабочий
+      способ менять навигацию без ожидания ремонта.
+    stack:
+      - WordPress
+      - Navigation
+      - Admin troubleshooting
+    order: 262
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-menu-editor-recovery
+        type: product
+  - slug: langformula-digital-cart-flow
+    name: Покупка цифровых материалов Langformula
+    year: "08.2022"
+    role: Веб-разработка и автоматизация
+    description: Настроил понятный переход в корзину для цифрового товара, который
+      покупатель приобретает в одном экземпляре. Отдельное поле количества
+      только усложняло этот сценарий.
+    stack:
+      - WooCommerce
+      - Astra
+      - Elementor
+      - PHP
+      - CSS
+    order: 263
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/langformula-digital-cart-flow
+        type: product
+  - slug: evrosumka-checkout-footer
+    name: Упрощение оформления заказа в Evrosumka
+    year: "10.2022"
+    role: Веб-разработка и автоматизация
+    description: Сократил оформление до данных, нужных менеджеру, и доработал
+      витрину и подвал существующего магазина.
+    stack:
+      - WooCommerce
+      - Checkout
+      - Quick view
+      - Flamp
+    order: 264
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/evrosumka-checkout-footer
+        type: product
+  - slug: medcors-joomla-transition-design
+    name: "Medcors: оформление WordPress-версии сайта"
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: Подготовил оформление установленного WordPress для проекта, который
+      планировал перейти с Joomla. Новую версию собирали отдельно от основного
+      сайта.
+    stack:
+      - WordPress
+      - Astra
+      - Elementor
+      - CMS migration preparation
+    order: 265
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/medcors-joomla-transition-design
+        type: product

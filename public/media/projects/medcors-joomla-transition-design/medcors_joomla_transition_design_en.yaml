@@ -1,0 +1,27 @@
+title: Medcors website design ahead of a CMS migration
+tagline: Prepared the design for an existing WordPress installation ahead of a
+  planned move from Joomla. The new version was built separately from the main
+  site.
+year: "12.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - Astra
+  - Elementor
+  - CMS migration preparation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared the design for an existing WordPress installation ahead of a
+      planned move from Joomla. The new version was built separately from the
+      main site.
+  - type: text
+    title: How it works
+    body: Used Astra and Elementor to build the homepage, header, footer and section
+      structure. Kept the ambulance image on the homepage after feedback and
+      agreed on another background for internal pages. Refined the lower block
+      and header hover states.
+  - type: text
+    title: Result and verification
+    body: The client accepted the design. A complete Joomla migration, keyword
+      research and publication at the domain root were not verified.

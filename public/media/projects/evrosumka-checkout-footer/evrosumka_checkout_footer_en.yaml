@@ -1,0 +1,26 @@
+title: Simplifying checkout for the Evrosumka store
+tagline: Reduced checkout to the information staff needed and refined the
+  storefront and footer of an existing shop.
+year: "10.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Checkout
+  - Quick view
+  - Flamp
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Reduced checkout to the information staff needed and refined the
+      storefront and footer of an existing shop.
+  - type: text
+    title: How it works
+    body: When the one-click plugin proved incompatible, retained standard
+      WooCommerce checkout and reduced the form to name, phone, email and
+      comments. Added hover quick view and refined the copy and footer.
+      Requested the complete Flamp embed file after the code in chat was
+      truncated.
+  - type: text
+    title: Result and verification
+    body: The handoff documents a shorter form and widget setup, not a one-click
+      purchase implementation or a measured conversion gain.

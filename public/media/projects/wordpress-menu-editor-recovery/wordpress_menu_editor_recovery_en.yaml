@@ -1,0 +1,25 @@
+title: Restoring the WordPress menu editor
+tagline: Fixed a freeze when editing the main navigation in the Customizer.
+  While that screen was unresponsive, the owner needed a way to update
+  navigation without waiting for the repair.
+year: "05.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - Navigation
+  - Admin troubleshooting
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Fixed a freeze when editing the main navigation in the Customizer. While
+      that screen was unresponsive, the owner needed a way to update navigation
+      without waiting for the repair.
+  - type: text
+    title: How it works
+    body: First showed the alternative admin route so current edits could continue.
+      Then restored editing through the Customizer and asked the client to test
+      the exact route that had previously caused the browser to hang.
+  - type: text
+    title: Result and verification
+    body: The client repeated the check and confirmed the editor worked. The root
+      cause and exact patch were not preserved.

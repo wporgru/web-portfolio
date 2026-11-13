@@ -4536,3 +4536,74 @@ projects:
       - label: Read case study
         url: /showcase/volvoparts-woodmart-demo/en
         type: product
+  - slug: wordpress-menu-editor-recovery
+    name: Restoring the WordPress menu editor
+    year: "05.2022"
+    role: Web development and automation
+    description: Fixed a freeze when editing the main navigation in the Customizer.
+      While that screen was unresponsive, the owner needed a way to update
+      navigation without waiting for the repair.
+    stack:
+      - WordPress
+      - Navigation
+      - Admin troubleshooting
+    order: 262
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-menu-editor-recovery/en
+        type: product
+  - slug: langformula-digital-cart-flow
+    name: Langformula digital product cart flow
+    year: "08.2022"
+    role: Web development and automation
+    description: Made the cart transition clearer for a digital product bought one
+      copy at a time. A separate quantity field added unnecessary friction to
+      that workflow.
+    stack:
+      - WooCommerce
+      - Astra
+      - Elementor
+      - PHP
+      - CSS
+    order: 263
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/langformula-digital-cart-flow/en
+        type: product
+  - slug: evrosumka-checkout-footer
+    name: Simplifying checkout for the Evrosumka store
+    year: "10.2022"
+    role: Web development and automation
+    description: Reduced checkout to the information staff needed and refined the
+      storefront and footer of an existing shop.
+    stack:
+      - WooCommerce
+      - Checkout
+      - Quick view
+      - Flamp
+    order: 264
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/evrosumka-checkout-footer/en
+        type: product
+  - slug: medcors-joomla-transition-design
+    name: Medcors website design ahead of a CMS migration
+    year: "12.2022"
+    role: Web development and automation
+    description: Prepared the design for an existing WordPress installation ahead of
+      a planned move from Joomla. The new version was built separately from the
+      main site.
+    stack:
+      - WordPress
+      - Astra
+      - Elementor
+      - CMS migration preparation
+    order: 265
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/medcors-joomla-transition-design/en
+        type: product
