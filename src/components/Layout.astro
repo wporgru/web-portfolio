@@ -286,12 +286,12 @@ const jsonLdSafe = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
     <footer class="footer">
       <div class="container footer__inner">
         <span><a href={authorGitHubPage} target="_blank" rel="noopener" class="footer__link">
-          Alexander Gusarov
+          WPORGRU
         </a> © {currentYear}</span>
         <span class="footer__links">
           {showFooterCredit && (
             <a href={upstreamGit} target="_blank" rel="noopener" class="footer__link">
-              Made with CV Hub
+              {lang === 'ru' ? 'На базе CV Hub' : 'Built with CV Hub'}
             </a>
           )}
           <a href={authorGit} target="_blank" rel="noopener" class="footer__link">
