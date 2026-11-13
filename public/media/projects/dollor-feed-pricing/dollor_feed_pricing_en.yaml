@@ -1,0 +1,26 @@
+title: "DOLLOR: importing equipment and updating prices"
+tagline: Store and feed names differed, and some SKUs were absent. Matching
+  solely by name could update the wrong model’s price.
+year: "06.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Supplier feed
+  - SKU mapping
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Store and feed names differed, and some SKUs were absent. Matching solely
+      by name could update the wrong model’s price.
+  - type: text
+    title: How it works
+    body: After the client supplied SKUs, I configured matching by supplier code. I
+      found one code shared by different models and a record without a code,
+      then agreed temporary behavior for both exceptions. The handoff records a
+      daily 01:00 schedule and distinguishes availability inferred from the feed
+      from actual inventory.
+  - type: text
+    title: Result and verification
+    body: The report records 32 new products and price updates on 63 products; the
+      client accepted the stage. Supplier correction of the duplicate code and
+      verification of successive nightly runs remained separate matters.

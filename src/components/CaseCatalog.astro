@@ -2,8 +2,19 @@
 const {projects,lang,t,eagerIdx}=Astro.props;
 import ProjectCard from './ProjectCard.astro';
 const ru=lang==='ru';
+const base=import.meta.env.BASE_URL.replace(/\/$/, '');
+const starters=[
+  ['Импорт и товарные фиды','Catalog imports and feeds','construction-catalog-variants'],
+  ['Редизайн магазина','Store redesign','78-dosok'],
+  ['Чекаут и оплата','Checkout and payments','yookassa-test-order'],
+  ['Техническое SEO','Technical SEO','regional-seo-metadata'],
+].filter(([, , slug])=>projects.some((p:any)=>p.slug===slug));
 const tags=[...new Set<string>(projects.flatMap((p:any)=>p.stack ?? []))].sort((a,b)=>a.localeCompare(b,lang));
 ---
+<nav class="card case-paths" aria-label={ru?'Примеры по задачам':'Examples by need'}>
+  <p>{ru?'Посмотрите, как я решал похожие задачи':'See how I approached similar projects'}</p>
+  <ul class="tags">{starters.map(([labelRu,labelEn,slug])=><li><a class="pill" href={base+'/showcase/'+slug+(ru?'/':'/en/')}>{ru?labelRu:labelEn}</a></li>)}</ul>
+</nav>
 <case-catalog>
   <form class="card case-search" role="search" hidden>
     <label>{ru?'Поиск по кейсам':'Search case studies'}<input type="search" name="q" placeholder={ru?'Например, импорт или Dokan':'For example, import or Dokan'} /></label>
@@ -44,6 +55,8 @@ class CaseCatalog extends HTMLElement {
 if(!customElements.get('case-catalog'))customElements.define('case-catalog',CaseCatalog);
 </script>
 <style>
+.case-paths{margin-bottom:1rem}
+.case-paths p{margin:0 0 .65rem;font-weight:650}
 .case-search:not([hidden]){display:flex;align-items:end;flex-wrap:wrap;gap:1rem;margin-bottom:1rem}
 .case-search label{display:grid;gap:.35rem;flex:1 1 210px}
 .case-search input,.case-search select{font:inherit;width:100%;padding:.55rem;color:var(--text);background:var(--card-bg);border:1px solid var(--border);border-radius:8px}

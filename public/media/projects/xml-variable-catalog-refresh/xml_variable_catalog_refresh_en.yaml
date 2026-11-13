@@ -1,0 +1,26 @@
+title: XML import of variable products with markup rules
+tagline: A variable-product assortment needed importing, with repeat pricing
+  updates and fewer unnecessary copies of product images.
+year: "12.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - XML
+  - Pricing
+  - Product variants
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A variable-product assortment needed importing, with repeat pricing
+      updates and fewer unnecessary copies of product images.
+  - type: text
+    title: How it works
+    body: Configured the XML import and monitored the long run. The handoff records
+      that unnecessary thumbnail sizes were disabled. For the next run I applied
+      the agreed 25% markup, addressed reports of missing names and duplicate
+      SKUs, and checked startup before scheduling a ten-day interval.
+  - type: text
+    title: Result and verification
+    body: The client confirmed completion of a specific run and accepted the work. A
+      successful automatic run ten days later and compression of the entire
+      media library were not established.

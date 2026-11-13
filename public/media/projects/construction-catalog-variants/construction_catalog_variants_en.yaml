@@ -1,0 +1,31 @@
+title: Building supply catalog with variants, filters and search
+tagline: A selected supplier assortment needed to become a usable storefront.
+  Equivalent sizes belonged in variants without losing the specifications buyers
+  use to choose materials.
+year: "06.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Excel
+  - Filters
+  - Product variants
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A selected supplier assortment needed to become a usable storefront.
+      Equivalent sizes belonged in variants without losing the specifications
+      buyers use to choose materials.
+  - type: text
+    title: How it works
+    body: Processed the selected list, normalized attributes and grouped sizes.
+      After feedback about mismatched specifications, corrected spreadsheet
+      sorting and reran the import. Configured concrete-group filters, refined
+      polycarbonate and anchor listings, added items under the extra scope and
+      replaced the search plugin. Separated the mobile filter and menu controls
+      to avoid overlap.
+  - type: text
+    title: Result and verification
+    body: The collection report recorded 1,963 listings and up to 26 attributes. The
+      client accepted delivery. Parent listings were not recounted after
+      grouping, and the mobile adjustment was a workaround rather than a theme
+      repair.

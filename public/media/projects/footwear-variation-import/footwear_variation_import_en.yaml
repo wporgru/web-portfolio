@@ -1,0 +1,28 @@
+title: Reusable import template for footwear variations
+tagline: The client wanted repeat CSV imports of shoe variants without remapping
+  the fields every time. They also needed to understand why equally sized
+  thumbnails looked different.
+year: "11.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WP All Import
+  - CSV
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client wanted repeat CSV imports of shoe variants without remapping
+      the fields every time. They also needed to understand why equally sized
+      thumbnails looked different.
+  - type: text
+    title: How it works
+    body: Investigated the unavailable WooCommerce fields, configured the agreed
+      import and saved a reusable template. Documented the manual flow from a
+      new import and CSV upload through template selection, field review and
+      completion. Compared thumbnail dimensions and traced the apparent scale
+      difference to source framing.
+  - type: text
+    title: Result and verification
+    body: The client acknowledged the instructions and accepted delivery. Automated
+      scheduling, bulk image editing and final warehouse-attribute behavior are
+      not claimed.

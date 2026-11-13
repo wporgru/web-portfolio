@@ -50,6 +50,16 @@ blocks:
       - Fewer overlapping extensions to maintain and check after updates.
       - A more prominent homepage catalog and easier access to the cart on
         mobile.
+  - type: text
+    title: How to scope your own store redesign
+    body: If updates keep breaking the header, menu or cart, start by mapping the
+      templates and extensions behind them. For an estimate, send the store URL,
+      two or three problem pages and a list of features that must be retained.
+      This helps define what to redesign, what to test on mobile and what
+      performance measurements to capture before and after.
+    links:
+      - label: Discuss a store redesign
+        url: https://wp.org.ru/contacts/
   - type: image
     title: Public website snapshot
     src: /media/projects/78-dosok/site.png

@@ -1900,3 +1900,106 @@ projects:
       - label: Читать кейс
         url: /showcase/tub-store-guest-checkout
         type: product
+  - slug: circa-outlet-catalog
+    name: "Circa Outlet: импорт 9 645 товаров и вывод размеров"
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Магазину одежды нужен был рабочий каталог, в котором покупатель
+      видит доступные размеры, а не только название и фотографию модели.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Product import
+    order: 108
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/circa-outlet-catalog
+        type: product
+  - slug: torin-fashion-import
+    name: "Torin Fashion: перенос ассортимента одежды"
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: Для нового магазина нужно было собрать ассортимент выбранного
+      каталога и загрузить его на целевой сайт. Работа зависела не только от
+      качества данных, но и от ресурсов хостинга.
+    stack:
+      - WordPress
+      - Web scraping
+      - Catalog import
+    order: 109
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/torin-fashion-import
+        type: product
+  - slug: dollor-feed-pricing
+    name: "DOLLOR: импорт оборудования и обновление цен"
+    year: "06.2026"
+    role: Веб-разработка и автоматизация
+    description: Названия в магазине и выгрузке не совпадали, а артикулы были
+      заполнены не везде. Сопоставление по одному названию рисковало обновить
+      цену не той модели.
+    stack:
+      - WooCommerce
+      - Supplier feed
+      - SKU mapping
+    order: 110
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dollor-feed-pricing
+        type: product
+  - slug: footwear-variation-import
+    name: Шаблон повторного импорта вариаций обуви
+    year: "11.2024"
+    role: Веб-разработка и автоматизация
+    description: Заказчик хотел повторно загружать CSV с вариантами обуви, не
+      собирая сопоставление полей при каждом запуске. Отдельно требовалось
+      разобраться, почему одинаковые миниатюры выглядят неодинаково.
+    stack:
+      - WooCommerce
+      - WP All Import
+      - CSV
+    order: 111
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/footwear-variation-import
+        type: product
+  - slug: construction-catalog-variants
+    name: "Строительный каталог: вариации, фильтры и поиск"
+    year: "06.2024"
+    role: Веб-разработка и автоматизация
+    description: Из выбранного ассортимента поставщика нужно было собрать удобную
+      витрину. Однотипные размеры следовало объединять в вариации, сохранив
+      характеристики, по которым покупатель подбирает материал.
+    stack:
+      - WooCommerce
+      - Excel
+      - Filters
+      - Product variants
+    order: 112
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/construction-catalog-variants
+        type: product
+  - slug: xml-variable-catalog-refresh
+    name: XML-импорт вариативных товаров с наценкой
+    year: "12.2023"
+    role: Веб-разработка и автоматизация
+    description: Требовалось загрузить вариативный ассортимент, предусмотреть
+      повторное обновление цен и не расходовать место на лишние копии товарных
+      изображений.
+    stack:
+      - WooCommerce
+      - XML
+      - Pricing
+      - Product variants
+    order: 113
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/xml-variable-catalog-refresh
+        type: product

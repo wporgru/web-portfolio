@@ -1,0 +1,26 @@
+title: "Torin Fashion: migrating a clothing assortment"
+tagline: The new store needed a selected clothing assortment collected and
+  loaded onto the destination site. Delivery depended on both the source data
+  and available hosting resources.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Web scraping
+  - Catalog import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The new store needed a selected clothing assortment collected and loaded
+      onto the destination site. Delivery depended on both the source data and
+      available hosting resources.
+  - type: text
+    title: How it works
+    body: Set up collection from the selected catalog and began the transfer. When
+      the import stopped roughly halfway, I separated the stalled run from the
+      estimated catalog size. After the client upgraded hosting, I resumed the
+      import and submitted the completed work for review.
+  - type: text
+    title: Result and verification
+    body: The client accepted the order the day after completion was reported.
+      Roughly 5,500 items was a source estimate, not a verified import total.

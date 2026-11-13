@@ -1,0 +1,26 @@
+title: "Circa Outlet: importing 9,645 products and displaying sizes"
+tagline: The clothing store needed a usable catalog where shoppers could see
+  sizes, not just a model name and photo.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Product import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The clothing store needed a usable catalog where shoppers could see sizes,
+      not just a model name and photo.
+  - type: text
+    title: How it works
+    body: Prepared the store environment and theme, ran the catalog import and
+      configured size display as a separate step. After the import, I asked the
+      client to check this product-page detail rather than relying on the
+      appearance of new admin records.
+  - type: text
+    title: Result and verification
+    body: The handoff records 9,645 imported products. The client explicitly
+      approved the size display and accepted the work. Separate men’s and
+      women’s sections, navigation and the homepage were discussed as the next
+      stage.

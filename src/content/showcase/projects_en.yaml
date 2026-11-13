@@ -1877,3 +1877,104 @@ projects:
       - label: Read case study
         url: /showcase/tub-store-guest-checkout/en
         type: product
+  - slug: circa-outlet-catalog
+    name: "Circa Outlet: importing 9,645 products and displaying sizes"
+    year: "02.2026"
+    role: Web development and automation
+    description: The clothing store needed a usable catalog where shoppers could see
+      sizes, not just a model name and photo.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Product import
+    order: 108
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/circa-outlet-catalog/en
+        type: product
+  - slug: torin-fashion-import
+    name: "Torin Fashion: migrating a clothing assortment"
+    year: "03.2026"
+    role: Web development and automation
+    description: The new store needed a selected clothing assortment collected and
+      loaded onto the destination site. Delivery depended on both the source
+      data and available hosting resources.
+    stack:
+      - WordPress
+      - Web scraping
+      - Catalog import
+    order: 109
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/torin-fashion-import/en
+        type: product
+  - slug: dollor-feed-pricing
+    name: "DOLLOR: importing equipment and updating prices"
+    year: "06.2026"
+    role: Web development and automation
+    description: Store and feed names differed, and some SKUs were absent. Matching
+      solely by name could update the wrong model’s price.
+    stack:
+      - WooCommerce
+      - Supplier feed
+      - SKU mapping
+    order: 110
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dollor-feed-pricing/en
+        type: product
+  - slug: footwear-variation-import
+    name: Reusable import template for footwear variations
+    year: "11.2024"
+    role: Web development and automation
+    description: The client wanted repeat CSV imports of shoe variants without
+      remapping the fields every time. They also needed to understand why
+      equally sized thumbnails looked different.
+    stack:
+      - WooCommerce
+      - WP All Import
+      - CSV
+    order: 111
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/footwear-variation-import/en
+        type: product
+  - slug: construction-catalog-variants
+    name: Building supply catalog with variants, filters and search
+    year: "06.2024"
+    role: Web development and automation
+    description: A selected supplier assortment needed to become a usable
+      storefront. Equivalent sizes belonged in variants without losing the
+      specifications buyers use to choose materials.
+    stack:
+      - WooCommerce
+      - Excel
+      - Filters
+      - Product variants
+    order: 112
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/construction-catalog-variants/en
+        type: product
+  - slug: xml-variable-catalog-refresh
+    name: XML import of variable products with markup rules
+    year: "12.2023"
+    role: Web development and automation
+    description: A variable-product assortment needed importing, with repeat pricing
+      updates and fewer unnecessary copies of product images.
+    stack:
+      - WooCommerce
+      - XML
+      - Pricing
+      - Product variants
+    order: 113
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/xml-variable-catalog-refresh/en
+        type: product
