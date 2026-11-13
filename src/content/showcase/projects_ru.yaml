@@ -989,3 +989,137 @@ projects:
       - label: Читать кейс
         url: /showcase/woodmart-marketplace-handoff
         type: product
+  - slug: bowling-stock-notices
+    name: Уведомления о поступлении и WhatsApp в BowlingStore
+    year: "02.2025"
+    role: Веб-разработка и автоматизация
+    description: Покупателю нужно было оставить заявку на отсутствующий товар или
+      быстро связаться с магазином. Письмо подписки при этом должно было
+      выглядеть как сообщение от магазина, а не как стандартный шаблон плагина.
+    stack:
+      - WooCommerce
+      - Joinchat
+      - Localization
+    order: 55
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bowling-stock-notices
+        type: product
+  - slug: ghibli-import-attributes
+    name: Импорт Ghibli & Wirbel и восстановление характеристик
+    year: "05.2025"
+    role: Веб-разработка и автоматизация
+    description: Из CSV требовалось перенести каталог уборочной техники. После
+      первой загрузки товары появились, но клиент заметил неполные
+      характеристики — для технического ассортимента это мешает сравнивать
+      модели.
+    stack:
+      - WooCommerce
+      - CSV
+      - Product attributes
+    order: 56
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/ghibli-import-attributes
+        type: product
+  - slug: multilingual-consent-forms
+    name: Согласие и ссылки на политику в многоязычных формах
+    year: "03.2024"
+    role: Веб-разработка и автоматизация
+    description: Для трёх языковых версий требовалось встроить согласованные тексты
+      и ссылки в формы так, чтобы посетитель видел их рядом с отправкой заявки.
+    stack:
+      - WordPress
+      - Localization
+      - Forms
+    order: 57
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/multilingual-consent-forms
+        type: product
+  - slug: osmokot-cdek-checkout
+    name: Доставка СДЭК и упрощение оформления в Осмокот
+    year: 03–04.2024
+    role: Веб-разработка и автоматизация
+    description: В форме покупки требовалось убрать лишние поля и при этом сохранить
+      данные, нужные для расчёта доставки и выбора пункта выдачи. Отдельной
+      задачей была видимость формы обратной связи.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Checkout
+    order: 58
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/osmokot-cdek-checkout
+        type: product
+  - slug: cargoterra-service-pages
+    name: "CargoTerra: структура сайта грузоперевозок"
+    year: "12.2021"
+    role: Веб-разработка и автоматизация
+    description: Грузоперевозчику нужна была понятная структура услуг, в которой
+      посетитель может перейти от общего предложения к своему виду перевозки.
+    stack:
+      - Web development
+      - Service pages
+      - Information architecture
+    order: 59
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/cargoterra-service-pages
+        type: product
+  - slug: ramayoga-storefront
+    name: Восстановление настроек и навигации магазина RamaYoga
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Магазину нужна была готовая структура витрины с коллекциями и
+      категориями, но часть настроек темы не срабатывала.
+    stack:
+      - WooCommerce
+      - Storefront
+      - Plugin troubleshooting
+    order: 60
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/ramayoga-storefront
+        type: product
+  - slug: wordpress-db-rollback
+    name: Восстановление страниц WordPress из резервной копии
+    year: "01.2026"
+    role: Веб-разработка и автоматизация
+    description: После изменений на сайте и попытки отката страницы продолжали
+      отображаться некорректно. Нужно было отделить проблему данных от
+      закэшированного состояния.
+    stack:
+      - WordPress
+      - Database recovery
+      - RabbitLoader
+    order: 61
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-db-rollback
+        type: product
+  - slug: wordpress-hosting-recovery
+    name: Восстановление WordPress после заражения сайта
+    year: "07.2026"
+    role: Веб-разработка и автоматизация
+    description: Помимо очистки требовалось вернуть доступ к админке и объяснить
+      хостингу, какие меры уже приняты. Ограничения провайдера нельзя было снять
+      правками внутри WordPress.
+    stack:
+      - WordPress
+      - MySQL
+      - Incident recovery
+    order: 62
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-hosting-recovery
+        type: product

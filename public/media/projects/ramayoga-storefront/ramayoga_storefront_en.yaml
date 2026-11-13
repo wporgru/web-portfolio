@@ -1,0 +1,25 @@
+title: Restoring theme settings and navigation in RamaYoga
+tagline: The store needed a usable collection and category structure, but parts
+  of the theme configuration were not taking effect.
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Storefront
+  - Plugin troubleshooting
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store needed a usable collection and category structure, but parts of
+      the theme configuration were not taking effect.
+  - type: text
+    title: How it works
+    body: Imported the demo storefront and adapted navigation to the existing pages,
+      collections, mats and accessories. Showed how to update banners and
+      product groups, hide empty categories and change their order. Investigated
+      the settings conflict and disabled unnecessary plugins, after which theme
+      settings worked again.
+  - type: text
+    title: Result and verification
+    body: The client confirmed that theme settings worked again. Replacing the logo
+      and rebuilding the complete assortment were outside the result.

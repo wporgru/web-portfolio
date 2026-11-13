@@ -1,0 +1,26 @@
+title: Back-in-stock notifications and WhatsApp in BowlingStore
+tagline: Shoppers needed a way to register interest in unavailable products or
+  contact the store quickly. The notification email also needed to look like a
+  store message rather than a default plugin template.
+year: "02.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Joinchat
+  - Localization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Shoppers needed a way to register interest in unavailable products or
+      contact the store quickly. The notification email also needed to look like
+      a store message rather than a default plugin template.
+  - type: text
+    title: How it works
+    body: Localized the subscription interface, updated email colors and added the
+      store logo. Translated a remaining string after client review. Installed
+      Joinchat and verified test messages so the client could see the WhatsApp
+      contact flow.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the chat and accepted the order. This does not claim
+      testing every stock notification or removing the previous widget.

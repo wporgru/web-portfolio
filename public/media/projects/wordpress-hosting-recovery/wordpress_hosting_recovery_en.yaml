@@ -1,0 +1,27 @@
+title: Recovering a WordPress site after a malware incident
+tagline: In addition to cleanup, the job required restoring admin access and
+  documenting the work for the hosting provider. Provider restrictions could not
+  be removed through WordPress changes.
+year: "07.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - MySQL
+  - Incident recovery
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: In addition to cleanup, the job required restoring admin access and
+      documenting the work for the hosting provider. Provider restrictions could
+      not be removed through WordPress changes.
+  - type: text
+    title: How it works
+    body: The report records recovery from a clean copy, updates to WordPress and
+      vulnerable components, removal of malicious files and a hidden plugin. I
+      reported upgrading MySQL to version 8 and prepared the provider request
+      for unblocking.
+  - type: text
+    title: Result and verification
+    body: Admin access was reported restored. The order closed automatically, but
+      outbound connection limits remained at the last recorded update; email and
+      automatic updates are not presented as restored.

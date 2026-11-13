@@ -979,3 +979,136 @@ projects:
       - label: Read case study
         url: /showcase/woodmart-marketplace-handoff/en
         type: product
+  - slug: bowling-stock-notices
+    name: Back-in-stock notifications and WhatsApp in BowlingStore
+    year: "02.2025"
+    role: Web development and automation
+    description: Shoppers needed a way to register interest in unavailable products
+      or contact the store quickly. The notification email also needed to look
+      like a store message rather than a default plugin template.
+    stack:
+      - WooCommerce
+      - Joinchat
+      - Localization
+    order: 55
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bowling-stock-notices/en
+        type: product
+  - slug: ghibli-import-attributes
+    name: Importing Ghibli & Wirbel and fixing missing specifications
+    year: "05.2025"
+    role: Web development and automation
+    description: A CSV needed to become a cleaning equipment catalog. Products
+      appeared after the first import, but the client found incomplete
+      specifications, making technical models harder to compare.
+    stack:
+      - WooCommerce
+      - CSV
+      - Product attributes
+    order: 56
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/ghibli-import-attributes/en
+        type: product
+  - slug: multilingual-consent-forms
+    name: Consent and policy links in multilingual forms
+    year: "03.2024"
+    role: Web development and automation
+    description: Three language versions needed approved consent text and policy
+      links placed next to the inquiry submission flow.
+    stack:
+      - WordPress
+      - Localization
+      - Forms
+    order: 57
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/multilingual-consent-forms/en
+        type: product
+  - slug: osmokot-cdek-checkout
+    name: CDEK delivery and simpler checkout for Osmokot
+    year: 03–04.2024
+    role: Web development and automation
+    description: Checkout needed fewer unnecessary fields without losing the data
+      required for delivery quotes and pickup points. Making the contact form
+      visible was a separate requirement.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Checkout
+    order: 58
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/osmokot-cdek-checkout/en
+        type: product
+  - slug: cargoterra-service-pages
+    name: "CargoTerra: structuring a freight services website"
+    year: "12.2021"
+    role: Web development and automation
+    description: The freight company needed a service structure that took visitors
+      from the general offer to the relevant type of shipping.
+    stack:
+      - Web development
+      - Service pages
+      - Information architecture
+    order: 59
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/cargoterra-service-pages/en
+        type: product
+  - slug: ramayoga-storefront
+    name: Restoring theme settings and navigation in RamaYoga
+    year: "01.2024"
+    role: Web development and automation
+    description: The store needed a usable collection and category structure, but
+      parts of the theme configuration were not taking effect.
+    stack:
+      - WooCommerce
+      - Storefront
+      - Plugin troubleshooting
+    order: 60
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/ramayoga-storefront/en
+        type: product
+  - slug: wordpress-db-rollback
+    name: Recovering WordPress pages from a database backup
+    year: "01.2026"
+    role: Web development and automation
+    description: Pages still displayed incorrectly after site changes and an
+      attempted rollback. The task was to separate database state from cached
+      output.
+    stack:
+      - WordPress
+      - Database recovery
+      - RabbitLoader
+    order: 61
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-db-rollback/en
+        type: product
+  - slug: wordpress-hosting-recovery
+    name: Recovering a WordPress site after a malware incident
+    year: "07.2026"
+    role: Web development and automation
+    description: In addition to cleanup, the job required restoring admin access and
+      documenting the work for the hosting provider. Provider restrictions could
+      not be removed through WordPress changes.
+    stack:
+      - WordPress
+      - MySQL
+      - Incident recovery
+    order: 62
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-hosting-recovery/en
+        type: product

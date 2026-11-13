@@ -1,0 +1,24 @@
+title: Recovering WordPress pages from a database backup
+tagline: Pages still displayed incorrectly after site changes and an attempted
+  rollback. The task was to separate database state from cached output.
+year: "01.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Database recovery
+  - RabbitLoader
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Pages still displayed incorrectly after site changes and an attempted
+      rollback. The task was to separate database state from cached output.
+  - type: text
+    title: How it works
+    body: Reviewed the previous rollback and proposed restoring an earlier database
+      snapshot. After restoration I cleared RabbitLoader cache in admin so the
+      check would not show stale output.
+  - type: text
+    title: Result and verification
+    body: The client confirmed pages displayed correctly and accepted the work. This
+      does not claim full file recovery or a conclusive diagnosis of the initial
+      trigger.

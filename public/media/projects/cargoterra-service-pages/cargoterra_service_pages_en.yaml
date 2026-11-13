@@ -1,0 +1,24 @@
+title: "CargoTerra: structuring a freight services website"
+tagline: The freight company needed a service structure that took visitors from
+  the general offer to the relevant type of shipping.
+year: "12.2021"
+role: Web development and automation
+stack:
+  - Web development
+  - Service pages
+  - Information architecture
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The freight company needed a service structure that took visitors from the
+      general offer to the relevant type of shipping.
+  - type: text
+    title: How it works
+    body: Prepared the site structure and homepage, then built a dedicated sea and
+      container freight page. Showed both together so the client could review
+      the opening page and the path into individual services.
+  - type: text
+    title: Result and verification
+    body: The client approved the presented structure and accepted delivery. The
+      handoff does not establish later content completeness or commercial
+      metrics.

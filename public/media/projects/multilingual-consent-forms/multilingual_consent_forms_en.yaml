@@ -1,0 +1,24 @@
+title: Consent and policy links in multilingual forms
+tagline: Three language versions needed approved consent text and policy links
+  placed next to the inquiry submission flow.
+year: "03.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Localization
+  - Forms
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Three language versions needed approved consent text and policy links
+      placed next to the inquiry submission flow.
+  - type: text
+    title: How it works
+    body: Aligned the supplied copy, links and visual treatment. Reviewed the forms
+      in admin, separated forms whose public placement could not be established,
+      and handed the work back for client review.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the result and accepted the order. This was interface
+      implementation using supplied copy, not legal review or an audit of
+      consent storage.
