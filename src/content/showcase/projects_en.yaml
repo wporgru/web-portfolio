@@ -1978,3 +1978,71 @@ projects:
       - label: Read case study
         url: /showcase/xml-variable-catalog-refresh/en
         type: product
+  - slug: zipal-listings-schedule
+    name: Refreshing Zipal property listings every six hours
+    year: "11.2018"
+    role: Web development and automation
+    description: The agency needed more frequent listing refreshes so new properties
+      would not wait for a daily import. Changing the schedule alone could not
+      fix errors in the source data.
+    stack:
+      - XML
+      - Scheduled imports
+      - Real estate
+    order: 114
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/zipal-listings-schedule/en
+        type: product
+  - slug: generator-storefront-rebuild
+    name: Restoring a generator storefront and its product pages
+    year: "04.2026"
+    role: Web development and automation
+    description: The store needed its catalog page restored and a usable interface
+      for choosing equipment. Empty categories and listings without images made
+      the assortment harder to navigate.
+    stack:
+      - WooCommerce
+      - Catalog filters
+      - Storefront design
+    order: 115
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/generator-storefront-rebuild/en
+        type: product
+  - slug: megamarket-store-foundation
+    name: Preparing a WoodMart Megamarket store with SSL
+    year: "09.2025"
+    role: Web development and automation
+    description: The client needed a store foundation on their own domain that could
+      be reviewed before a full launch and commerce integrations.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - DNS
+      - SSL
+    order: 116
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/megamarket-store-foundation/en
+        type: product
+  - slug: automotive-catalog-photo-collection
+    name: Automated photo collection from an automotive catalog
+    year: "05.2025"
+    role: Web development and automation
+    description: The client needed reusable product images. A flat archive would
+      have made it harder to find photos for a particular vehicle and product.
+    stack:
+      - Catalog extraction
+      - Product media
+      - Data organization
+    order: 117
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/automotive-catalog-photo-collection/en
+        type: product

@@ -1,0 +1,29 @@
+title: Restoring a generator storefront and its product pages
+tagline: The store needed its catalog page restored and a usable interface for
+  choosing equipment. Empty categories and listings without images made the
+  assortment harder to navigate.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Catalog filters
+  - Storefront design
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store needed its catalog page restored and a usable interface for
+      choosing equipment. Empty categories and listings without images made the
+      assortment harder to navigate.
+  - type: text
+    title: How it works
+    body: Restored the shop page, removed unnecessary empty categories and hid spare
+      parts without prepared images. Fixed photo display, added a sidebar and
+      filters, and refined the header, navigation and typography. Updated the
+      product template and palette, and configured a sticky purchase button that
+      remained available while scrolling.
+  - type: text
+    title: Result and verification
+    body: The client accepted delivery. Model and specification discrepancies were
+      discussed separately as a source-data limitation. Temporary indexing
+      restrictions during development do not establish a completed public
+      launch.

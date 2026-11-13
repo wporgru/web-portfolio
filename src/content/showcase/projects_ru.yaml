@@ -2003,3 +2003,73 @@ projects:
       - label: Читать кейс
         url: /showcase/xml-variable-catalog-refresh
         type: product
+  - slug: zipal-listings-schedule
+    name: Обновление объявлений недвижимости из Zipal каждые 6 часов
+    year: "11.2018"
+    role: Веб-разработка и автоматизация
+    description: Агентству нужно было чаще обновлять объявления на сайте, чтобы
+      новые объекты не ждали следующей суточной загрузки. Ошибки исходных данных
+      при этом нельзя было исправить одной сменой расписания.
+    stack:
+      - XML
+      - Scheduled imports
+      - Real estate
+    order: 114
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/zipal-listings-schedule
+        type: product
+  - slug: generator-storefront-rebuild
+    name: Восстановление витрины генераторов и карточек товаров
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: Магазину требовалось вернуть страницу каталога и привести интерфейс
+      в состояние, пригодное для выбора оборудования. Пустые категории и позиции
+      без изображений мешали навигации по ассортименту.
+    stack:
+      - WooCommerce
+      - Catalog filters
+      - Storefront design
+    order: 115
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/generator-storefront-rebuild
+        type: product
+  - slug: megamarket-store-foundation
+    name: Подготовка магазина на WoodMart Megamarket с SSL
+    year: "09.2025"
+    role: Веб-разработка и автоматизация
+    description: Клиенту нужна была основа магазина на собственном домене, которую
+      можно показать на согласовании до полноценного запуска и подключения
+      коммерческих функций.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - DNS
+      - SSL
+    order: 116
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/megamarket-store-foundation
+        type: product
+  - slug: automotive-catalog-photo-collection
+    name: Автоматический сбор фотографий каталога автотоваров
+    year: "05.2025"
+    role: Веб-разработка и автоматизация
+    description: Заказчику нужен был набор товарных фотографий, пригодный для
+      повторного использования. Плоский архив затруднил бы поиск изображений
+      конкретного автомобиля и позиции.
+    stack:
+      - Catalog extraction
+      - Product media
+      - Data organization
+    order: 117
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/automotive-catalog-photo-collection
+        type: product

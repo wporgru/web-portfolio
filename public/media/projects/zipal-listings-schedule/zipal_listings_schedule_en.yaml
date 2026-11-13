@@ -1,0 +1,27 @@
+title: Refreshing Zipal property listings every six hours
+tagline: The agency needed more frequent listing refreshes so new properties
+  would not wait for a daily import. Changing the schedule alone could not fix
+  errors in the source data.
+year: "11.2018"
+role: Web development and automation
+stack:
+  - XML
+  - Scheduled imports
+  - Real estate
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The agency needed more frequent listing refreshes so new properties would
+      not wait for a daily import. Changing the schedule alone could not fix
+      errors in the source data.
+  - type: text
+    title: How it works
+    body: Changed the Yandex Realty XML feed import to four runs per day. Checked
+      the first run and confirmed subsequent executions at 06:00 and 12:00. When
+      a listing showed an incorrect room count, checked the rooms field in the
+      source XML and showed the client where to correct it for the next refresh.
+  - type: text
+    title: Result and verification
+    body: The first checked run took 1 minute 36 seconds, updated 38 listings and
+      added seven. The client confirmed the workflow and accepted the work.
+      These figures describe one historical run.

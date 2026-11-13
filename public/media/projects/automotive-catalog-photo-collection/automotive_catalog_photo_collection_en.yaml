@@ -1,0 +1,24 @@
+title: Automated photo collection from an automotive catalog
+tagline: The client needed reusable product images. A flat archive would have
+  made it harder to find photos for a particular vehicle and product.
+year: "05.2025"
+role: Web development and automation
+stack:
+  - Catalog extraction
+  - Product media
+  - Data organization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed reusable product images. A flat archive would have made
+      it harder to find photos for a particular vehicle and product.
+  - type: text
+    title: How it works
+    body: Automated image collection and organized files by make, model and product.
+      Delivered the archive through a cloud folder, prepared a revised delivery
+      after feedback, and shared the link again on request.
+  - type: text
+    title: Result and verification
+    body: The final delivery was accepted under a separate order. File count and
+      current cloud availability are not established; this was image collection
+      and organization, not photography.

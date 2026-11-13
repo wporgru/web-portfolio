@@ -1,0 +1,27 @@
+title: Preparing a WoodMart Megamarket store with SSL
+tagline: The client needed a store foundation on their own domain that could be
+  reviewed before a full launch and commerce integrations.
+year: "09.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - DNS
+  - SSL
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a store foundation on their own domain that could be
+      reviewed before a full launch and commerce integrations.
+  - type: text
+    title: How it works
+    body: Started the DNS change and installed WordPress and WoodMart. Replaced the
+      originally discussed Marketplace demo with Megamarket after client
+      approval. Set up a maintenance page with an agreed way to preview the
+      working version and reported the SSL setup.
+  - type: text
+    title: Result and verification
+    body: The client reviewed and accepted the foundation. It was ready for further
+      store development; payment tests, subscriptions, LMS and shipment tracking
+      were outside the confirmed scope.

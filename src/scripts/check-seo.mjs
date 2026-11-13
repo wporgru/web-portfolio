@@ -8,6 +8,7 @@ const htmlFiles = fs.readdirSync(root, {recursive:true}).filter(file => path.bas
 const sitemap = new Set(fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.test(file))
   .flatMap(file=>[...read(path.join(root,file)).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1])));
 const pages = new Map();
+const internalTargets = new Map();
 const titles = new Set(), descriptions = new Set();
 for(const file of htmlFiles){
   const html=read(path.join(root,file));
@@ -24,9 +25,24 @@ for(const file of htmlFiles){
   const alternates=new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map(m=>[m[1],m[2]]));
   if(alternates.size!==3||!['ru','en'].includes(lang)||alternates.get(lang)!==canonical||alternates.get('x-default')!==alternates.get('ru')) fail(file,'invalid locale alternates');
   pages.set(canonical,alternates);
+  const links = [...html.matchAll(/<(?:a|img)\b[^>]*\s(?:href|src)="([^"]+)"/gi)]
+    .map(([,url])=>url.replaceAll('&amp;','&'))
+    .filter(url=>url.startsWith('/')&&!url.startsWith('//'));
+  internalTargets.set(canonical,links);
 }
 if(!pages.size||sitemap.size!==pages.size) fail(root,'sitemap and HTML counts differ');
+const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcase/'));
+if(!home) fail(root,'Russian catalog missing');
+const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
+const exists = relative => {
+  const direct = path.join(root,relative);
+  return [direct,path.join(direct,'index.html')].some(file=>fs.statSync(file,{throwIfNoEntry:false})?.isFile());
+};
 for(const [canonical,alternates] of pages){
+  for(const link of internalTargets.get(canonical)){
+    const target = decodeURIComponent(new URL(link,canonical).pathname);
+    if(target.startsWith(base)&&!exists(target.slice(base.length))) fail(canonical,'broken local URL '+link);
+  }
   for(const target of alternates.values()){
     const peer=pages.get(target);
     if(!peer||[...alternates].some(([lang,href])=>peer.get(lang)!==href)) fail(canonical,'nonreciprocal alternate '+target);
