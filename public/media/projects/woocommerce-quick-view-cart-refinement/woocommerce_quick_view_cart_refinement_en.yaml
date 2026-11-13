@@ -1,0 +1,26 @@
+title: WooCommerce product page, quick view and cart refinements
+tagline: "Refined several shopping steps: product pages and quick view, the
+  wishlist and cart total updates when quantity changes."
+year: "04.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Quick view
+  - Wishlist
+  - Cart UX
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Refined several shopping steps: product pages and quick view, the
+      wishlist and cart total updates when quantity changes."
+  - type: text
+    title: How it works
+    body: Added an editable package-contents tab and refined comparison and layout.
+      Removed broken quantity controls from quick view and misplaced wishlist
+      buttons by agreement. Restored quantity changes and automatic total
+      updates in the cart and demonstrated them in a video.
+  - type: text
+    title: Result and verification
+    body: The client confirmed cart operation, accepted the work and added a bonus.
+      Site cleanup, a complete redesign and filling every product bundle were
+      outside this stage.

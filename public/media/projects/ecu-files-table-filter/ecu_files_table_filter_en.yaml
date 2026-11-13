@@ -1,0 +1,27 @@
+title: ECU file catalog with a horizontal filter
+tagline: Prepared a table-based digital catalog so buyers could compare rows and
+  narrow results without an overloaded product page.
+year: "06.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Digital products
+  - Excel
+  - Catalog filters
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a table-based digital catalog so buyers could compare rows and
+      narrow results without an overloaded product page.
+  - type: text
+    title: How it works
+    body: Provided an Excel template for categories, specifications and prices, then
+      imported the supplied data. Configured a horizontal filter and removed
+      unnecessary counts, sorting and columns after mobile review. Explained
+      that disabling engine selection until a model was chosen required separate
+      development.
+  - type: text
+    title: Result and verification
+    body: The client accepted the catalog. The planned volume was not a verified
+      count of uploaded files, and payment and domain migration were outside
+      this stage.

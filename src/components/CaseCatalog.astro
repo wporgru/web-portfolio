@@ -8,6 +8,8 @@ const starters=[
   ['Редизайн магазина','Store redesign','78-dosok'],
   ['Чекаут и оплата','Checkout and payments','yookassa-test-order'],
   ['Техническое SEO','Technical SEO','regional-seo-metadata'],
+  ['Переезд и скорость','Migration and performance','schmidt-studio-migration-performance'],
+  ['Автоматизация и данные','Automation and data','medicine-data'],
 ].filter(([, , slug])=>projects.some((p:any)=>p.slug===slug));
 const tags=[...new Set<string>(projects.flatMap((p:any)=>p.stack ?? []))].sort((a,b)=>a.localeCompare(b,lang));
 ---

@@ -1,0 +1,25 @@
+title: Course pricing updates and a business price list
+tagline: Updated course prices and prepared a separate price list for business
+  customers instead of mixing corporate terms into the main page.
+year: "02.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - Content operations
+  - Price list
+  - B2B
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Updated course prices and prepared a separate price list for business
+      customers instead of mixing corporate terms into the main page.
+  - type: text
+    title: How it works
+    body: Checked course names and durations against the source and marked reviewed
+      rows separately from courses that could not be found. When edits did not
+      persist in the original tab, created a separate price list page and added
+      it to the submenu.
+  - type: text
+    title: Result and verification
+    body: The client approved the page and accepted the work. Creating missing
+      courses and revising regional links were outside this stage.

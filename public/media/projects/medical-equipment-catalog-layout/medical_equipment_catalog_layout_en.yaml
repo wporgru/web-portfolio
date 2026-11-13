@@ -1,0 +1,26 @@
+title: Medical equipment catalog layout and dimensions
+tagline: Refined a medical equipment catalog so buyers could scan the
+  assortment, see dimensions and search within the catalog.
+year: "09.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Catalog UX
+  - Product dimensions
+  - Search
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined a medical equipment catalog so buyers could scan the assortment,
+      see dimensions and search within the catalog.
+  - type: text
+    title: How it works
+    body: Removed unnecessary hover effects, added catalog search, moved the result
+      counter next to sorting and refined spacing and contacts. Configured
+      WooCommerce dimension display and checked the search template using actual
+      results. The client confirmed the six-column layout on a laptop.
+  - type: text
+    title: Result and verification
+    body: The client left a positive review after closure. Remaining search issues
+      were identified for separate investigation rather than presented as
+      resolved.

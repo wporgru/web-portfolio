@@ -4380,3 +4380,71 @@ projects:
       - label: Read case study
         url: /showcase/woocommerce-draft-products-visibility/en
         type: product
+  - slug: medical-equipment-catalog-layout
+    name: Medical equipment catalog layout and dimensions
+    year: "09.2020"
+    role: Web development and automation
+    description: Refined a medical equipment catalog so buyers could scan the
+      assortment, see dimensions and search within the catalog.
+    stack:
+      - WooCommerce
+      - Catalog UX
+      - Product dimensions
+      - Search
+    order: 253
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/medical-equipment-catalog-layout/en
+        type: product
+  - slug: woocommerce-quick-view-cart-refinement
+    name: WooCommerce product page, quick view and cart refinements
+    year: "04.2021"
+    role: Web development and automation
+    description: "Refined several shopping steps: product pages and quick view, the
+      wishlist and cart total updates when quantity changes."
+    stack:
+      - WooCommerce
+      - Quick view
+      - Wishlist
+      - Cart UX
+    order: 254
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-quick-view-cart-refinement/en
+        type: product
+  - slug: course-price-list-for-business
+    name: Course pricing updates and a business price list
+    year: "02.2020"
+    role: Web development and automation
+    description: Updated course prices and prepared a separate price list for
+      business customers instead of mixing corporate terms into the main page.
+    stack:
+      - WordPress
+      - Content operations
+      - Price list
+      - B2B
+    order: 255
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/course-price-list-for-business/en
+        type: product
+  - slug: ecu-files-table-filter
+    name: ECU file catalog with a horizontal filter
+    year: "06.2020"
+    role: Web development and automation
+    description: Prepared a table-based digital catalog so buyers could compare rows
+      and narrow results without an overloaded product page.
+    stack:
+      - WooCommerce
+      - Digital products
+      - Excel
+      - Catalog filters
+    order: 256
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/ecu-files-table-filter/en
+        type: product

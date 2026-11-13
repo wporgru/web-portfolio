@@ -4431,3 +4431,73 @@ projects:
       - label: Читать кейс
         url: /showcase/woocommerce-draft-products-visibility
         type: product
+  - slug: medical-equipment-catalog-layout
+    name: Сетка и габариты каталога медоборудования
+    year: "09.2020"
+    role: Веб-разработка и автоматизация
+    description: Переработал каталог медоборудования так, чтобы покупатель мог
+      быстрее просматривать ассортимент, видеть размеры и искать нужный товар
+      внутри каталога.
+    stack:
+      - WooCommerce
+      - Catalog UX
+      - Product dimensions
+      - Search
+    order: 253
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/medical-equipment-catalog-layout
+        type: product
+  - slug: woocommerce-quick-view-cart-refinement
+    name: Карточка, быстрый просмотр и корзина WooCommerce
+    year: "04.2021"
+    role: Веб-разработка и автоматизация
+    description: "Доработал несколько шагов покупки: карточку и быстрый просмотр,
+      список желаний и пересчёт суммы при изменении количества в корзине."
+    stack:
+      - WooCommerce
+      - Quick view
+      - Wishlist
+      - Cart UX
+    order: 254
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-quick-view-cart-refinement
+        type: product
+  - slug: course-price-list-for-business
+    name: Обновление цен курсов и прайс для организаций
+    year: "02.2020"
+    role: Веб-разработка и автоматизация
+    description: Обновил стоимость курсов и подготовил отдельный прайс для
+      организаций, чтобы корпоративные условия не смешивались с основной
+      страницей.
+    stack:
+      - WordPress
+      - Content operations
+      - Price list
+      - B2B
+    order: 255
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/course-price-list-for-business
+        type: product
+  - slug: ecu-files-table-filter
+    name: Таблица файлов прошивок с горизонтальным фильтром
+    year: "06.2020"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил табличную витрину цифровых файлов: покупателю нужно
+      было сравнивать строки и быстро сужать выдачу без перегруженной карточки."
+    stack:
+      - WooCommerce
+      - Digital products
+      - Excel
+      - Catalog filters
+    order: 256
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/ecu-files-table-filter
+        type: product
