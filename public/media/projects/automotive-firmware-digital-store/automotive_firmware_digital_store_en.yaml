@@ -1,0 +1,29 @@
+title: Automotive firmware store with YooKassa payments
+tagline: Built a firmware storefront covering catalog, payment and file delivery
+  after purchase. The owner would attach their own files to the remaining
+  products.
+year: "07.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YooKassa
+  - Digital downloads
+  - Catalog import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a firmware storefront covering catalog, payment and file delivery
+      after purchase. The owner would attach their own files to the remaining
+      products.
+  - type: text
+    title: How it works
+    body: Imported the assortment with primary categories, retained agreed prices
+      and prepared store information pages. Attached one sample firmware file,
+      demonstrated the download email and recorded instructions. Documented a
+      test payment after connecting YooKassa and refined vehicle-brand category
+      images.
+  - type: text
+    title: Result and verification
+    body: The client checked and accepted the work. The archive records a historical
+      payment test and a sample download demonstration, not a verified file for
+      every product.

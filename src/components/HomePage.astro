@@ -33,7 +33,7 @@ const orderTags = [ru?'Транзакционные письма':'Transactional
 const mediaTags = ['WebP','XnView',ru?'Оптимизация медиатеки WordPress':'WordPress media optimization',ru?'ИИ-увеличение изображений':'AI image upscaling'];
 const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
 const roleServices = ['website-redesign','catalog-automation','data-and-ai','technical-seo'].map(slug=>services.find(service=>service.slug===slug)!);
-const migrationService = services.find(service=>service.slug==='hosting-migration')!;
+const extraServices = services.filter(service=>['hosting-migration','checkout-payments'].includes(service.slug));
 const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
 ---
 <Layout title={c.title} description={c.description} lang={lang} profile={profile} section="main" personJsonLd={person} roleLinks={roleLinks}>
@@ -84,11 +84,11 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
           <p class="muted">{body}</p>
           <a class="pill" href={base+'/services/'+roleServices[i].slug+(ru?'/':'/en/')}>{roleServices[i][ru?'ru':'en'][0]}</a>
         </article>)}</div>
-        <article class="card item" style="margin-top: 14px">
-          <h3 class="h2">{ru?'Переезд сайта без потери контроля':'Website and hosting migrations'}</h3>
-          <p class="muted">{ru?'Подготовлю копию, проверю сайт до смены DNS и помогу переключить домен. После переезда проверю сертификат, ключевые страницы и рабочие сценарии.':'Prepare a copy, test it before the DNS switch and coordinate the cutover. Then verify the certificate, key pages and essential workflows.'}</p>
-          <a class="pill" href={base+'/services/'+migrationService.slug+(ru?'/':'/en/')}>{migrationService[ru?'ru':'en'][0]}</a>
-        </article>
+        {extraServices.map(service=><article class="card item" style="margin-top: 14px">
+          <h3 class="h2">{service[ru?'ru':'en'][0]}</h3>
+          <p class="muted">{service[ru?'ru':'en'][1]}</p>
+          <a class="pill" href={base+'/services/'+service.slug+(ru?'/':'/en/')}>{ru?'Что входит в работу':'What the work covers'}</a>
+        </article>)}
       </section>
 
       <section class="section cv-extra">

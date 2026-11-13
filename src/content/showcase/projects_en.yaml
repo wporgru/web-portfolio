@@ -3756,3 +3756,143 @@ projects:
       - label: Read case study
         url: /showcase/zooforsale-sber-launch-stage/en
         type: product
+  - slug: osama-market-store-launch
+    name: Osama Market storefront launch and catalog import
+    year: "08.2022"
+    role: Web development and automation
+    description: Built a WordPress store and prepared the catalog for launch. The
+      client changed the storefront design and supplied a product export during
+      the project.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - CSV
+    order: 217
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/osama-market-store-launch/en
+        type: product
+  - slug: grandkrovlya-import-slugs
+    name: "Grandkrovlya: restoring imports and product URLs"
+    year: "08.2022"
+    role: Web development and automation
+    description: Investigated why WooCommerce URL transliteration was not applied
+      when importing products again.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Import
+      - URL transliteration
+    order: 218
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/grandkrovlya-import-slugs/en
+        type: product
+  - slug: astola-guest-cache-layout
+    name: "Astola: repairing the logged-out layout"
+    year: "07.2022"
+    role: Web development and automation
+    description: Fixed a layout problem visible to ordinary visitors. Checking from
+      the admin session was insufficient because logged-in users could receive a
+      different page version.
+    stack:
+      - WordPress
+      - WP Rocket
+      - Guest QA
+      - Technical SEO
+    order: 219
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/astola-guest-cache-layout/en
+        type: product
+  - slug: dommebeli-instoria-catalog-rebrand
+    name: Furniture catalog updates and rebranding imagery
+    year: "07.2022"
+    role: Web development and automation
+    description: Updated part of a furniture catalog and prepared imagery for the
+      future INSTORIA rebrand, working with prices, descriptions, model
+      differences and client-supplied material.
+    stack:
+      - WooCommerce
+      - WebP
+      - Image processing
+      - Catalog content
+    order: 220
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dommebeli-instoria-catalog-rebrand/en
+        type: product
+  - slug: pariscoiff-mobile-onpage-seo
+    name: Pariscoiff on-page SEO and mobile refinements
+    year: "07.2022"
+    role: Web development and automation
+    description: Refined storefront page structure and search settings and corrected
+      heading layout on mobile screens.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Google Search Console
+      - Technical SEO
+    order: 221
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/pariscoiff-mobile-onpage-seo/en
+        type: product
+  - slug: automotive-firmware-digital-store
+    name: Automotive firmware store with YooKassa payments
+    year: "07.2022"
+    role: Web development and automation
+    description: Built a firmware storefront covering catalog, payment and file
+      delivery after purchase. The owner would attach their own files to the
+      remaining products.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Digital downloads
+      - Catalog import
+    order: 222
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/automotive-firmware-digital-store/en
+        type: product
+  - slug: sushi-panda-payment-recovery
+    name: Sushi Panda website and payment recovery
+    year: "05.2022"
+    role: Web development and automation
+    description: Restored the delivery store and its cart-to-payment flow so the
+      client could verify purchasing again.
+    stack:
+      - WordPress
+      - WooCommerce
+      - YooKassa
+      - Incident recovery
+    order: 223
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/sushi-panda-payment-recovery/en
+        type: product
+  - slug: wordpress-editable-profile-directory
+    name: Editable WordPress profile directory
+    year: "05.2022"
+    role: Web development and automation
+    description: Built a WordPress profile directory that the owner could maintain
+      and visitors could search and browse on mobile.
+    stack:
+      - WordPress
+      - Directory
+      - Mobile search
+      - Editorial workflow
+    order: 224
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-editable-profile-directory/en
+        type: product

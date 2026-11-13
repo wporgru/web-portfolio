@@ -1,0 +1,27 @@
+title: "Astola: repairing the logged-out layout"
+tagline: Fixed a layout problem visible to ordinary visitors. Checking from the
+  admin session was insufficient because logged-in users could receive a
+  different page version.
+year: "07.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WP Rocket
+  - Guest QA
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Fixed a layout problem visible to ordinary visitors. Checking from the
+      admin session was insufficient because logged-in users could receive a
+      different page version.
+  - type: text
+    title: How it works
+    body: Traced the symptom to WP Rocket settings, switched the plugin to safe mode
+      and checked the page in another browser while logged out. Reviewed basic
+      SEO settings separately from the layout fix and future copy and metadata
+      work.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage. Duplicate H1 investigation and manual
+      editing of all titles and descriptions were not completed deliverables.

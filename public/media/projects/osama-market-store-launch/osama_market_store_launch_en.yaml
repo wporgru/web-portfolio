@@ -1,0 +1,27 @@
+title: Osama Market storefront launch and catalog import
+tagline: Built a WordPress store and prepared the catalog for launch. The client
+  changed the storefront design and supplied a product export during the
+  project.
+year: "08.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - CSV
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a WordPress store and prepared the catalog for launch. The client
+      changed the storefront design and supplied a product export during the
+      project.
+  - type: text
+    title: How it works
+    body: Switched to the agreed Electronics demo, dropped the trial source with
+      limited inventory and imported the client’s CSV. Added the logo, removed
+      the extra top bar and handed over the storefront and its administration.
+  - type: text
+    title: Result and verification
+    body: The client accepted the storefront. The trial selection was not the final
+      product count, and individual catalog fields were not independently
+      audited.

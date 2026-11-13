@@ -1,0 +1,25 @@
+title: Editable WordPress profile directory
+tagline: Built a WordPress profile directory that the owner could maintain and
+  visitors could search and browse on mobile.
+year: "05.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - Directory
+  - Mobile search
+  - Editorial workflow
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a WordPress profile directory that the owner could maintain and
+      visitors could search and browse on mobile.
+  - type: text
+    title: How it works
+    body: Prepared four sample profiles, demonstrated mobile search and configured
+      the homepage to show the latest 16 records. Added entry duplication for
+      editors, explained gallery and recommendation settings and recorded a 420
+      × 600 image preparation guide.
+  - type: text
+    title: Result and verification
+    body: The client tested and accepted the directory. Self-registration, payments,
+      CRM and geolocation search were outside the verified scope.

@@ -1,0 +1,26 @@
+title: Pariscoiff on-page SEO and mobile refinements
+tagline: Refined storefront page structure and search settings and corrected
+  heading layout on mobile screens.
+year: "07.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Google Search Console
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined storefront page structure and search settings and corrected
+      heading layout on mobile screens.
+  - type: text
+    title: How it works
+    body: Refined WooCommerce URLs, metadata templates and exclusions from the
+      existing sitemap. Submitted it to Search Console and added missing alt
+      text. Iterated on line breaks, colors and mobile H1 styling, restored the
+      prior photo size and fixed an incorrectly active anchor menu state in
+      Chrome.
+  - type: text
+    title: Result and verification
+    body: The client checked and accepted the changes. Sitemap submission and UI
+      fixes do not establish search visibility gains.

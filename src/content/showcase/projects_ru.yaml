@@ -3801,3 +3801,143 @@ projects:
       - label: Читать кейс
         url: /showcase/zooforsale-sber-launch-stage
         type: product
+  - slug: osama-market-store-launch
+    name: "Osama Market: запуск витрины и импорт каталога"
+    year: "08.2022"
+    role: Веб-разработка и автоматизация
+    description: Собрал магазин на WordPress и подготовил каталог к запуску. В ходе
+      работы клиент сменил оформление и предоставил собственную товарную
+      выгрузку.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - CSV
+    order: 217
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/osama-market-store-launch
+        type: product
+  - slug: grandkrovlya-import-slugs
+    name: "Grandkrovlya: восстановление импорта и адресов"
+    year: "08.2022"
+    role: Веб-разработка и автоматизация
+    description: Разобрал, почему при повторной загрузке товаров не срабатывала
+      транслитерация адресов WooCommerce.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Import
+      - URL transliteration
+    order: 218
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/grandkrovlya-import-slugs
+        type: product
+  - slug: astola-guest-cache-layout
+    name: "Astola: исправление вёрстки для посетителей"
+    year: "07.2022"
+    role: Веб-разработка и автоматизация
+    description: "Исправил дефект оформления, который проявлялся у обычных
+      посетителей. Проверки внутри админки было недостаточно: залогиненный
+      пользователь мог получать другую версию страницы."
+    stack:
+      - WordPress
+      - WP Rocket
+      - Guest QA
+      - Technical SEO
+    order: 219
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/astola-guest-cache-layout
+        type: product
+  - slug: dommebeli-instoria-catalog-rebrand
+    name: Мебельный каталог и подготовка фото к ребрендингу
+    year: "07.2022"
+    role: Веб-разработка и автоматизация
+    description: Обновил часть мебельного каталога и подготовил изображения для
+      будущего ребрендинга INSTORIA. Работал с ценами, описаниями, различиями
+      моделей и материалами от заказчика.
+    stack:
+      - WooCommerce
+      - WebP
+      - Image processing
+      - Catalog content
+    order: 220
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dommebeli-instoria-catalog-rebrand
+        type: product
+  - slug: pariscoiff-mobile-onpage-seo
+    name: "Pariscoiff: внутренняя SEO-настройка и мобильные правки"
+    year: "07.2022"
+    role: Веб-разработка и автоматизация
+    description: Доработал структуру страниц и поисковые настройки магазина и
+      исправил отображение заголовков на телефонах.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Google Search Console
+      - Technical SEO
+    order: 221
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/pariscoiff-mobile-onpage-seo
+        type: product
+  - slug: automotive-firmware-digital-store
+    name: Магазин автомобильных прошивок с ЮKassa
+    year: "07.2022"
+    role: Веб-разработка и автоматизация
+    description: "Собрал витрину цифровых прошивок: каталог, оплата и получение
+      файла после покупки. Владелец должен был самостоятельно привязывать
+      собственные файлы к остальным товарам."
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Digital downloads
+      - Catalog import
+    order: 222
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/automotive-firmware-digital-store
+        type: product
+  - slug: sushi-panda-payment-recovery
+    name: "Sushi Panda: восстановление сайта и онлайн-оплаты"
+    year: "05.2022"
+    role: Веб-разработка и автоматизация
+    description: Вернул работу магазина доставки и восстановил путь от корзины до
+      оплаты, чтобы клиент мог снова проверить покупку на сайте.
+    stack:
+      - WordPress
+      - WooCommerce
+      - YooKassa
+      - Incident recovery
+    order: 223
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/sushi-panda-payment-recovery
+        type: product
+  - slug: wordpress-editable-profile-directory
+    name: Каталог анкет с самостоятельным наполнением
+    year: "05.2022"
+    role: Веб-разработка и автоматизация
+    description: Собрал WordPress-каталог анкет так, чтобы владелец мог пополнять
+      его сам, а посетитель — искать записи и открывать галереи с телефона.
+    stack:
+      - WordPress
+      - Directory
+      - Mobile search
+      - Editorial workflow
+    order: 224
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-editable-profile-directory
+        type: product

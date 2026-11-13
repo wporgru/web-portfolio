@@ -1,0 +1,26 @@
+title: Sushi Panda website and payment recovery
+tagline: Restored the delivery store and its cart-to-payment flow so the client
+  could verify purchasing again.
+year: "05.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - YooKassa
+  - Incident recovery
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Restored the delivery store and its cart-to-payment flow so the client
+      could verify purchasing again.
+  - type: text
+    title: How it works
+    body: Traced the site loading issue to the one-click purchase feature and found
+      an outdated payment module. After agreeing the configuration, restored
+      payment and ran a control purchase. The client saw the result and checked
+      payment independently.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. This was a historical payment test, not
+      verification of all delivery options or the entire one-click purchase
+      flow.
