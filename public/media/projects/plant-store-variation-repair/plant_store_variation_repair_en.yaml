@@ -1,0 +1,28 @@
+title: Repairing product variations and signup in a plant store
+tagline: A plant store could no longer reliably edit product variations. The
+  client also reported signup bots and an outbound email restriction at the
+  hosting provider.
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - PHP
+  - CAPTCHA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A plant store could no longer reliably edit product variations. The client
+      also reported signup bots and an outbound email restriction at the hosting
+      provider.
+  - type: text
+    title: How it works
+    body: Investigated environment compatibility and confirmed backup arrangements
+      before updates. Demonstrated a price change for a specific variation and
+      showed the installed logo. Added a CAPTCHA to the signup flow after the
+      client requested registration protection.
+  - type: text
+    title: Result and verification
+    body: The client confirmed editing worked and accepted the registration
+      protection. Restoration of outbound mail and CAPTCHA performance under
+      load were not independently verified.

@@ -2407,3 +2407,126 @@ projects:
       - label: Читать кейс
         url: /showcase/child-theme-store-training
         type: product
+  - slug: taxi-vehicle-booking
+    name: Форма выбора автомобиля для Silver Park Taxi
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: "Уточнил сценарий заявки на сайте трансфера: компания должна
+      понимать, какой автомобиль выбрал посетитель. Параллельно исправил FAQ и
+      добавил карту организации."
+    stack:
+      - WordPress
+      - Elementor
+      - Yandex Maps
+    order: 137
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/taxi-vehicle-booking
+        type: product
+  - slug: taxi-mobile-car-cards
+    name: Мобильные карточки автомобилей Silver Park Taxi
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: "Доработал карточки машин и контактный блок сайта трансфера:
+      характеристики и отступы должны были читаться одинаково от карточки к
+      карточке, особенно на телефоне."
+    stack:
+      - WordPress
+      - Elementor
+      - CSS
+      - Yandex Maps
+    order: 138
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/taxi-mobile-car-cards
+        type: product
+  - slug: woodmart-equipment-store
+    name: Адаптация WoodMart для магазина техники
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Подготовил оформление магазина техники на WoodMart, когда
+      стандартный импорт прерывался, а демоблоки и навигация не подходили
+      ассортименту.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - PHP
+    order: 139
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woodmart-equipment-store
+        type: product
+  - slug: plant-store-variation-repair
+    name: Ремонт вариаций и регистрации магазина растений
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: В магазине растений перестало нормально работать редактирование
+      вариативных товаров. Отдельно клиент столкнулся с ботами при регистрации и
+      ограничением исходящей почты на хостинге.
+    stack:
+      - WordPress
+      - WooCommerce
+      - PHP
+      - CAPTCHA
+    order: 140
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/plant-store-variation-repair
+        type: product
+  - slug: furniture-catalog-csv-migration
+    name: Перенос мебельного каталога в WooCommerce
+    year: "01.2019"
+    role: Веб-разработка и автоматизация
+    description: Разобрал перенос товаров мебельного поставщика в существующий
+      WooCommerce-каталог, где требовалось сохранить связь между карточками,
+      фотографиями, категориями и атрибутами.
+    stack:
+      - WooCommerce
+      - CSV
+      - XML
+      - Catalog Migration
+    order: 141
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/furniture-catalog-csv-migration
+        type: product
+  - slug: woocommerce-layout-bulk-edit-advice
+    name: Консультация по шаблонам и каталогу WooCommerce
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: Помог владельцу магазина отделить настройки витрины от
+      редактирования товаров и найти причину узкой главной страницы с лишним
+      сайдбаром после изменений в Elementor.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Elementor
+      - Consulting
+    order: 142
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-layout-bulk-edit-advice
+        type: product
+  - slug: auto-service-site-handoff
+    name: Передача сайта автосервиса для самостоятельного запуска
+    year: "07.2026"
+    role: Веб-разработка и автоматизация
+    description: Клиенту был нужен готовый комплект сайта автосервиса и понятный
+      способ разместить его на своём хостинге, без заказа установки у
+      исполнителя.
+    stack:
+      - Web Deployment
+      - Documentation
+    order: 143
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/auto-service-site-handoff
+        type: product

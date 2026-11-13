@@ -2374,3 +2374,124 @@ projects:
       - label: Read case study
         url: /showcase/child-theme-store-training/en
         type: product
+  - slug: taxi-vehicle-booking
+    name: Vehicle selection form for Silver Park Taxi
+    year: "02.2024"
+    role: Web development and automation
+    description: Improved the transfer enquiry so the team could tell which car the
+      visitor selected, fixed FAQ interactions and added the business map.
+    stack:
+      - WordPress
+      - Elementor
+      - Yandex Maps
+    order: 137
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/taxi-vehicle-booking/en
+        type: product
+  - slug: taxi-mobile-car-cards
+    name: Mobile car cards for Silver Park Taxi
+    year: "02.2024"
+    role: Web development and automation
+    description: Refined the transfer site's car cards and contact block so
+      specifications and spacing would remain consistent from one card to the
+      next, especially on phones.
+    stack:
+      - WordPress
+      - Elementor
+      - CSS
+      - Yandex Maps
+    order: 138
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/taxi-mobile-car-cards/en
+        type: product
+  - slug: woodmart-equipment-store
+    name: Adapting WoodMart for an equipment store
+    year: "01.2024"
+    role: Web development and automation
+    description: Adapted a WoodMart storefront for equipment after its demo import
+      stalled and the stock navigation and content did not fit the catalog.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - PHP
+    order: 139
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woodmart-equipment-store/en
+        type: product
+  - slug: plant-store-variation-repair
+    name: Repairing product variations and signup in a plant store
+    year: "01.2024"
+    role: Web development and automation
+    description: A plant store could no longer reliably edit product variations. The
+      client also reported signup bots and an outbound email restriction at the
+      hosting provider.
+    stack:
+      - WordPress
+      - WooCommerce
+      - PHP
+      - CAPTCHA
+    order: 140
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/plant-store-variation-repair/en
+        type: product
+  - slug: furniture-catalog-csv-migration
+    name: Migrating a furniture catalog to WooCommerce
+    year: "01.2019"
+    role: Web development and automation
+    description: Migrated supplier products into an existing furniture catalog where
+      product cards, images, categories and attributes needed to remain
+      connected.
+    stack:
+      - WooCommerce
+      - CSV
+      - XML
+      - Catalog Migration
+    order: 141
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/furniture-catalog-csv-migration/en
+        type: product
+  - slug: woocommerce-layout-bulk-edit-advice
+    name: WooCommerce layout and catalog editing consultation
+    year: "04.2024"
+    role: Web development and automation
+    description: Helped a store owner distinguish storefront controls from product
+      editing and investigate a homepage that had become narrow with an unwanted
+      sidebar after Elementor edits.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Elementor
+      - Consulting
+    order: 142
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-layout-bulk-edit-advice/en
+        type: product
+  - slug: auto-service-site-handoff
+    name: Auto repair website package for self-hosted setup
+    year: "07.2026"
+    role: Web development and automation
+    description: The client needed a ready-to-use auto repair site package and
+      instructions for setting it up on their own hosting without hiring the
+      developer to install it.
+    stack:
+      - Web Deployment
+      - Documentation
+    order: 143
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/auto-service-site-handoff/en
+        type: product

@@ -21,11 +21,11 @@ const skillTags = [
   ['JavaScript','React','Astro','HTML','CSS',ru?'Адаптивная вёрстка':'Responsive design', 'Elementor', 'WoodMart'],
   ['PHP','WordPress','WooCommerce','Directus','REST API','InSales','PHP 8'],
   ['Python','Node.js','SQLite','XML','XLSX',ru?'Парсинг':'Web scraping','WP All Import','1С',ru?'Нормализация данных':'Data normalization'],
-  ['Codex','Antigravity',ru?'Агентные сценарии':'Agent workflows',ru?'Редактура AI-контента':'AI content editing',ru?'Проверка результатов ИИ':'AI output validation'],
+  ['Codex','Antigravity',ru?'Агентные сценарии':'Agent workflows',ru?'Постановка задач агентам':'Agent task design',ru?'Ограничение действий агента':'Agent action boundaries',ru?'Разбор кода и данных с ИИ':'AI-assisted code and data analysis',ru?'Редактура AI-контента':'AI content editing',ru?'Проверка результатов ИИ':'AI output validation'],
   ['Yandex Webmaster','Metrica','Google Search Console','IndexNow',ru?'Технический аудит':'Technical audits','Canonical','Sitemap','301 redirects'],
-  ['Git','GitHub Actions','Playwright',ru?'Миграция сайтов':'Site migrations',ru?'Тестовый стенд':'Staging',ru?'План отката':'Rollback planning'],
+  ['Git','GitHub Actions','Playwright',ru?'Миграция сайтов':'Site migrations',ru?'Тестовый стенд':'Staging',ru?'Диагностика PHP и плагинов':'PHP and plugin diagnostics',ru?'Браузерные регрессии':'Browser regression testing',ru?'План отката':'Rollback planning'],
 ];
-const commerceTags = ['YooKassa','CDEK',ru?'Платёжные сценарии':'Payment flows',ru?'Фильтры каталога':'Catalog filters',ru?'Товарные фиды':'Product feeds',ru?'Партнёрские витрины':'Affiliate storefronts'];
+const commerceTags = ['YooKassa','CDEK',ru?'Платёжные сценарии':'Payment flows',ru?'Фильтры каталога':'Catalog filters',ru?'Глобальные атрибуты':'Global product attributes',ru?'Вариативные товары':'Product variations',ru?'Проверка остатков из 1С':'1C stock validation',ru?'Товарные фиды':'Product feeds',ru?'Партнёрские витрины':'Affiliate storefronts'];
 const seoTags = ['Rank Math','Yoast SEO','Screaming Frog','GA4',ru?'Аудит метаданных':'Metadata audits',ru?'Региональные поддомены':'Regional subdomains'];
 const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
 const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};

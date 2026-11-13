@@ -1,0 +1,33 @@
+title: Mobile car cards for Silver Park Taxi
+tagline: Refined the transfer site's car cards and contact block so
+  specifications and spacing would remain consistent from one card to the next,
+  especially on phones.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Elementor
+  - CSS
+  - Yandex Maps
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined the transfer site's car cards and contact block so specifications
+      and spacing would remain consistent from one card to the next, especially
+      on phones.
+  - type: text
+    title: How it works
+    body: "Fixed the map buttons and explained the limits of an external iframe: the
+      host page can resize the container but cannot control the map's internal
+      layout. Proposed a different block height for phones, aligned mobile
+      spacing across cards and corrected the heading offset missed on the second
+      card."
+  - type: text
+    title: Result and verification
+    body: Sent a verification video and the client accepted the work. This stage
+      covered card and map layout; the enquiry form was handled separately.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Previous stage: vehicle selection form and FAQ"
+        url: /showcase/taxi-vehicle-booking/en/

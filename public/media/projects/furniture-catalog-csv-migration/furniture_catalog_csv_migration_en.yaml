@@ -1,0 +1,27 @@
+title: Migrating a furniture catalog to WooCommerce
+tagline: Migrated supplier products into an existing furniture catalog where
+  product cards, images, categories and attributes needed to remain connected.
+year: "01.2019"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CSV
+  - XML
+  - Catalog Migration
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Migrated supplier products into an existing furniture catalog where
+      product cards, images, categories and attributes needed to remain
+      connected.
+  - type: text
+    title: How it works
+    body: When the initial XML approach did not handle images and attributes as
+      expected, switched to extracting data from the catalog and importing it
+      via CSV. Demonstrated the imported cards again and reported rolling back a
+      category URL base change after client feedback.
+  - type: text
+    title: Result and verification
+    body: The client accepted the import but noted blank attributes and missing
+      landing groups. The case documents the change in migration approach, not
+      full completion of every requirement or verified preservation of rankings.

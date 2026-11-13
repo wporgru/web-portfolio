@@ -1,0 +1,26 @@
+title: Auto repair website package for self-hosted setup
+tagline: The client needed a ready-to-use auto repair site package and
+  instructions for setting it up on their own hosting without hiring the
+  developer to install it.
+year: "07.2026"
+role: Web development and automation
+stack:
+  - Web Deployment
+  - Documentation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a ready-to-use auto repair site package and instructions
+      for setting it up on their own hosting without hiring the developer to
+      install it.
+  - type: text
+    title: How it works
+    body: "Delivered the website package through a download link along with
+      installation instructions. Kept the handoff separate from deployment: the
+      files and instructions were included, server access and publication by the
+      developer were not."
+  - type: text
+    title: Result and verification
+    body: The client explicitly accepted the package. The record confirms delivery
+      but does not establish the archive contents or a launch on a specific
+      domain.

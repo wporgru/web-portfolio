@@ -1,0 +1,29 @@
+title: Vehicle selection form for Silver Park Taxi
+tagline: Improved the transfer enquiry so the team could tell which car the
+  visitor selected, fixed FAQ interactions and added the business map.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Elementor
+  - Yandex Maps
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Improved the transfer enquiry so the team could tell which car the visitor
+      selected, fixed FAQ interactions and added the business map.
+  - type: text
+    title: How it works
+    body: Made the selected vehicle part of the enquiry so the team would not have
+      to ask for it again. Fixed two FAQ blocks that were responding to the same
+      interaction. Added a Yandex map using the listing specified by the client.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. The archive records completion of all three
+      items, though it does not contain a separate email delivery test. Mobile
+      layout and car cards were improved in a follow-up stage.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: car cards and mobile layout"
+        url: /showcase/taxi-mobile-car-cards/en/
