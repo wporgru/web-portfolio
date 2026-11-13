@@ -1,0 +1,27 @@
+title: Setting up an Avangard Plus store on WoodMart
+tagline: The client needed a working storefront foundation ready for its own
+  assortment, without distracting demo elements in guest mode and with an agreed
+  mobile layout.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed a working storefront foundation ready for its own
+      assortment, without distracting demo elements in guest mode and with an
+      agreed mobile layout.
+  - type: text
+    title: How it works
+    body: Installed the selected WoodMart demo. On request, kept a minimal extension
+      set, disabled a guest popup and aligned header and mobile panel elements.
+      PHP switching was handled with hosting support rather than presented as a
+      server migration.
+  - type: text
+    title: Result and verification
+    body: The client received a foundation for further catalog work. The live
+      assortment, payment processing and current server configuration are not
+      established by this engagement.

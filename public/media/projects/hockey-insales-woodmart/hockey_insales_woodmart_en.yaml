@@ -1,0 +1,34 @@
+title: Migrating a hockey catalog from InSales to WoodMart
+tagline: "The platform migration needed to preserve the attributes buyers use to
+  choose hockey sticks: brand, handedness, curve, color, flex and size.
+  Importing product names alone would not solve that problem."
+year: "02.2024"
+role: Web development and automation
+stack:
+  - InSales
+  - WooCommerce
+  - WoodMart
+  - Product variants
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The platform migration needed to preserve the attributes buyers use to
+      choose hockey sticks: brand, handedness, curve, color, flex and size.
+      Importing product names alone would not solve that problem."
+  - type: text
+    title: How it works
+    body: Set up the domain and theme, prepared the spreadsheet and imported the
+      catalog. Revised field mappings and reran the import after feedback and
+      server errors. Brand, handedness, curve, color and flex were linked; sizes
+      were created but not linked automatically. I demonstrated the manual
+      procedure for the client’s staff.
+  - type: text
+    title: Result and verification
+    body: The client accepted this stage and moved on to storefront refinements.
+      Their employee took over the remaining size assignments. Payments, SEO and
+      fully automated variation mapping were outside this stage.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: product cards and mobile storefront"
+        url: /showcase/hockey-storefront-ux/en/

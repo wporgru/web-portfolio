@@ -1,0 +1,26 @@
+title: Refreshing prices and assortment from a new price list
+tagline: "The supplier price list changed: new items needed adding, existing
+  prices needed updating, and missing items had to leave the storefront without
+  being permanently deleted."
+year: "08.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Supplier price list
+  - Catalog visibility
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The supplier price list changed: new items needed adding, existing prices
+      needed updating, and missing items had to leave the storefront without
+      being permanently deleted."
+  - type: text
+    title: How it works
+    body: "Prepared the price list and handled three outcomes separately: new
+      listings, updated prices and drafts for missing items. Retaining drafts
+      kept the records available if the supplier listed those products again."
+  - type: text
+    title: Result and verification
+    body: The handoff recorded 1,013 published products and 144 drafts. The client
+      accepted the stage; these figures describe the delivery, not current
+      catalog totals.

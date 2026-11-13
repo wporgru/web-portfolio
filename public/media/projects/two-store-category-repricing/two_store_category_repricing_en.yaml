@@ -1,0 +1,24 @@
+title: Repricing selected categories across two online stores
+tagline: The client needed price changes in selected groups across two live
+  stores. The adjustment was not intended for the entire assortment.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Bulk pricing
+  - Catalog operations
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed price changes in selected groups across two live stores.
+      The adjustment was not intended for the entire assortment.
+  - type: text
+    title: How it works
+    body: Confirmed the direction of the change and which categories were in scope.
+      Recommended making a backup if the host did not provide daily snapshots.
+      Repriced each store separately and reported their readiness independently.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. Product totals, rounding rules and a full
+      before-and-after price sheet were not recorded; building the stores was
+      not part of the engagement.

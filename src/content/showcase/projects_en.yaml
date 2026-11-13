@@ -2133,3 +2133,89 @@ projects:
       - label: Read case study
         url: /showcase/dme-english-service-site/en
         type: product
+  - slug: hockey-insales-woodmart
+    name: Migrating a hockey catalog from InSales to WoodMart
+    year: "02.2024"
+    role: Web development and automation
+    description: "The platform migration needed to preserve the attributes buyers
+      use to choose hockey sticks: brand, handedness, curve, color, flex and
+      size. Importing product names alone would not solve that problem."
+    stack:
+      - InSales
+      - WooCommerce
+      - WoodMart
+      - Product variants
+    order: 123
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/hockey-insales-woodmart/en
+        type: product
+  - slug: hockey-storefront-ux
+    name: Redesigning product cards and the mobile storefront
+    year: "02.2024"
+    role: Web development and automation
+    description: After the catalog migration, the store needed easier variation
+      selection, less clutter and clearer availability. The work spanned catalog
+      cards, product pages and mobile components.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Mobile layout
+      - Product variants
+    order: 124
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/hockey-storefront-ux/en
+        type: product
+  - slug: supplier-price-list-refresh
+    name: Refreshing prices and assortment from a new price list
+    year: "08.2026"
+    role: Web development and automation
+    description: "The supplier price list changed: new items needed adding, existing
+      prices needed updating, and missing items had to leave the storefront
+      without being permanently deleted."
+    stack:
+      - WooCommerce
+      - Supplier price list
+      - Catalog visibility
+    order: 125
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/supplier-price-list-refresh/en
+        type: product
+  - slug: two-store-category-repricing
+    name: Repricing selected categories across two online stores
+    year: "02.2024"
+    role: Web development and automation
+    description: The client needed price changes in selected groups across two live
+      stores. The adjustment was not intended for the entire assortment.
+    stack:
+      - WooCommerce
+      - Bulk pricing
+      - Catalog operations
+    order: 126
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/two-store-category-repricing/en
+        type: product
+  - slug: avangard-woodmart-foundation
+    name: Setting up an Avangard Plus store on WoodMart
+    year: "02.2024"
+    role: Web development and automation
+    description: The client needed a working storefront foundation ready for its own
+      assortment, without distracting demo elements in guest mode and with an
+      agreed mobile layout.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+    order: 127
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/avangard-woodmart-foundation/en
+        type: product

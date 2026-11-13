@@ -4,6 +4,10 @@ const read=p=>fs.readFileSync(p,'utf8').replace(/^\uFEFF/,'');
 const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
+const projectStages = {
+  'hockey-insales-woodmart': ['hockey-storefront-ux', 'Следующий этап: карточки и мобильная витрина', 'Next stage: product cards and mobile storefront'],
+  'hockey-storefront-ux': ['hockey-insales-woodmart', 'Предыдущий этап: перенос каталога из InSales', 'Previous stage: catalog migration from InSales'],
+};
 export function addEngineeringCases(projects){
   for(const line of read('engineering-cases.psv').trim().split(/\r?\n/)){
     const fields=line.split('|');
@@ -21,6 +25,13 @@ export function addEngineeringCases(projects){
         {type:'text',title:ru?'Как устроено решение':'How it works',body:implementation},
         {type:'text',title:ru?'Результат и проверка':'Result and verification',body:result}
       ];
+      const stage = projectStages[slug];
+      if (stage) {
+        blocks.push({
+          type:'text', title:ru?'Другой этап этого проекта':'Another stage of this project',
+          links:[{label:stage[ru?1:2],url:'/showcase/'+stage[0]+(ru?'/':'/en/')}],
+        });
+      }
       if (publicSources[slug]) {
         blocks.push({
           type:'text', title:ru?'Проект в портфолио Kwork':'Original Kwork portfolio entry',

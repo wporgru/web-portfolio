@@ -2161,3 +2161,90 @@ projects:
       - label: Читать кейс
         url: /showcase/dme-english-service-site
         type: product
+  - slug: hockey-insales-woodmart
+    name: Перенос хоккейного каталога из InSales на WoodMart
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: "При смене платформы важно было сохранить параметры, по которым
+      покупатель выбирает клюшку: бренд, хват, загиб, цвет, флекс и размер. Одна
+      загрузка товаров без этих связей не решала задачу."
+    stack:
+      - InSales
+      - WooCommerce
+      - WoodMart
+      - Product variants
+    order: 123
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/hockey-insales-woodmart
+        type: product
+  - slug: hockey-storefront-ux
+    name: Редизайн карточек и мобильной витрины магазина
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: После переноса каталога нужно было облегчить выбор вариации,
+      разгрузить карточки и сделать доступность товара понятнее. Задача
+      затрагивала каталог, страницу товара и мобильные блоки.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Mobile layout
+      - Product variants
+    order: 124
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/hockey-storefront-ux
+        type: product
+  - slug: supplier-price-list-refresh
+    name: Обновление цен и ассортимента по новому прайсу
+    year: "08.2026"
+    role: Веб-разработка и автоматизация
+    description: "Прайс поставщика изменился: новые позиции нужно было добавить,
+      существующие — переоценить, а исчезнувшие — убрать с витрины без
+      физического удаления карточек."
+    stack:
+      - WooCommerce
+      - Supplier price list
+      - Catalog visibility
+    order: 125
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/supplier-price-list-refresh
+        type: product
+  - slug: two-store-category-repricing
+    name: Переоценка выбранных категорий двух магазинов
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: Клиенту требовалось изменить цены только у выбранных групп на двух
+      действующих витринах. Нельзя было применять изменение ко всему
+      ассортименту.
+    stack:
+      - WooCommerce
+      - Bulk pricing
+      - Catalog operations
+    order: 126
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/two-store-category-repricing
+        type: product
+  - slug: avangard-woodmart-foundation
+    name: Стартовая настройка магазина Avangard Plus на WoodMart
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: Заказчику нужна была рабочая стартовая витрина, в которую можно
+      добавлять собственный ассортимент. При этом следовало убрать мешающие
+      гостям демо-элементы и согласовать мобильное оформление.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+    order: 127
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/avangard-woodmart-foundation
+        type: product

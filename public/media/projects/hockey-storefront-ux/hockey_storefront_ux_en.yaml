@@ -1,0 +1,34 @@
+title: Redesigning product cards and the mobile storefront
+tagline: After the catalog migration, the store needed easier variation
+  selection, less clutter and clearer availability. The work spanned catalog
+  cards, product pages and mobile components.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WoodMart
+  - Mobile layout
+  - Product variants
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After the catalog migration, the store needed easier variation selection,
+      less clutter and clearer availability. The work spanned catalog cards,
+      product pages and mobile components.
+  - type: text
+    title: How it works
+    body: Removed the purchase button from catalog tiles, replaced the variation
+      dropdown with buttons and added a carousel of review images. Moved
+      out-of-stock items to the end of the list. On mobile, removed a redundant
+      bottom bar, expanded the product description and adjusted the delivery and
+      pickup block.
+  - type: text
+    title: Result and verification
+    body: The client’s team reviewed and accepted the result. The administrator
+      email change was confirmed; Telegram notification delivery was not
+      completed.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Previous stage: catalog migration from InSales"
+        url: /showcase/hockey-insales-woodmart/en/
