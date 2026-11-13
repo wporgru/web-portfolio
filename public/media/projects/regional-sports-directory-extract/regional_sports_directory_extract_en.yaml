@@ -1,0 +1,24 @@
+title: Extracting a regional sports organization directory
+tagline: Collected sports organization data for Moscow and available cities in
+  the surrounding region for the client’s directory workflow.
+year: "11.2018"
+role: Web development and automation
+stack:
+  - Web scraping
+  - Data extraction
+  - Regional directories
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Collected sports organization data for Moscow and available cities in the
+      surrounding region for the client’s directory workflow.
+  - type: text
+    title: How it works
+    body: Collected URLs, configured extraction and delivered a sample for review.
+      Supplied the Moscow data separately. For the region, used the available
+      source list rather than substituting unrelated data for missing cities.
+      Delivered the combined archive afterward.
+  - type: text
+    title: Result and verification
+    body: The client accepted the archive and left a positive review. Coverage of
+      every requested city and the exact organization count were not verified.

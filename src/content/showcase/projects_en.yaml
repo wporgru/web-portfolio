@@ -4140,3 +4140,88 @@ projects:
       - label: Read case study
         url: /showcase/cosmetics-catalog-localization-data/en
         type: product
+  - slug: ibike-scooter-rental-website
+    name: iBike rental website with a mobile enquiry form
+    year: "01.2020"
+    role: Web development and automation
+    description: Built a rental website with prices, rules, delivery information and
+      an enquiry form. Visitors could specify dates and accessories on a phone
+      rather than listing everything in a message.
+    stack:
+      - WordPress
+      - Rental enquiry
+      - Responsive forms
+    order: 239
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/ibike-scooter-rental-website/en
+        type: product
+  - slug: video-surveillance-catalog-migration
+    name: Migrating a video surveillance equipment catalog
+    year: "11.2018"
+    role: Web development and automation
+    description: Moved equipment categories and specifications into WooCommerce.
+      Beyond importing listings, the task required structured properties and
+      readable thumbnails.
+    stack:
+      - WooCommerce
+      - Product taxonomy
+      - Data import
+      - Product media
+    order: 240
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/video-surveillance-catalog-migration/en
+        type: product
+  - slug: woocommerce-stock-waitlist-localization
+    name: WooCommerce waitlist and Russian email localization
+    year: "02.2020"
+    role: Web development and automation
+    description: Configured out-of-stock subscriptions and refined store emails so
+      shoppers could understand what happened after signing up.
+    stack:
+      - WooCommerce
+      - Product variations
+      - Waitlist
+      - Localization
+    order: 241
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-stock-waitlist-localization/en
+        type: product
+  - slug: regional-sports-directory-extract
+    name: Extracting a regional sports organization directory
+    year: "11.2018"
+    role: Web development and automation
+    description: Collected sports organization data for Moscow and available cities
+      in the surrounding region for the client’s directory workflow.
+    stack:
+      - Web scraping
+      - Data extraction
+      - Regional directories
+    order: 242
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/regional-sports-directory-extract/en
+        type: product
+  - slug: lab-order-dashboard-css
+    name: Interface styling for a lab order dashboard
+    year: "12.2019"
+    role: Web development and automation
+    description: Refined an existing dashboard so staff could distinguish button
+      states and locate the order creation action on working screens.
+    stack:
+      - WordPress
+      - CSS
+      - Admin interface
+      - Workflow design
+    order: 243
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/lab-order-dashboard-css/en
+        type: product

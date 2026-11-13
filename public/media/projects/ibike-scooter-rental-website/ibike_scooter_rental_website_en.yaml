@@ -1,0 +1,32 @@
+title: iBike rental website with a mobile enquiry form
+tagline: Built a rental website with prices, rules, delivery information and an
+  enquiry form. Visitors could specify dates and accessories on a phone rather
+  than listing everything in a message.
+year: "01.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - Rental enquiry
+  - Responsive forms
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a rental website with prices, rules, delivery information and an
+      enquiry form. Visitors could specify dates and accessories on a phone
+      rather than listing everything in a message.
+  - type: text
+    title: How it works
+    body: Organized the content into sections and added an FAQ accordion and
+      shortcuts for calls, messaging and email. Separated start and end dates
+      and moved accessories to checkboxes. Widened the form after overlapping
+      date pickers were reported and sent it for another review.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the mobile fix and accepted the site with a bonus.
+      The form collected enquiries; it did not manage fleet inventory, book
+      automatically or take payments.
+  - type: image
+    src: /media/projects/ibike-scooter-rental-website/historical-rental.webp
+    alt: Archived iBike rental website screen
+    caption: Image from the historical Kwork listing; not a test of form delivery or
+      current site availability.

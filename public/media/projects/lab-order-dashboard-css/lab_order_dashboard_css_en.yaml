@@ -1,0 +1,26 @@
+title: Interface styling for a lab order dashboard
+tagline: Refined an existing dashboard so staff could distinguish button states
+  and locate the order creation action on working screens.
+year: "12.2019"
+role: Web development and automation
+stack:
+  - WordPress
+  - CSS
+  - Admin interface
+  - Workflow design
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined an existing dashboard so staff could distinguish button states and
+      locate the order creation action on working screens.
+  - type: text
+    title: How it works
+    body: Separated shared style changes from the header template and disabled the
+      second banner reversibly. Refined the new-order button and active states.
+      Identified the sent and unsent order screens and requested test records
+      for the empty list so controls could be checked when populated.
+  - type: text
+    title: Result and verification
+    body: The client accepted both styling stages. The empty section did not allow
+      testing its order controls. CRM development and automatic patient lookup
+      were outside the verified scope.

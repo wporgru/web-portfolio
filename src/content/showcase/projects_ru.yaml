@@ -4189,3 +4189,89 @@ projects:
       - label: Читать кейс
         url: /showcase/cosmetics-catalog-localization-data
         type: product
+  - slug: ibike-scooter-rental-website
+    name: "iBike: сайт проката с заявкой на аренду"
+    year: "01.2020"
+    role: Веб-разработка и автоматизация
+    description: Собрал сайт проката с тарифами, правилами, доставкой и формой
+      заявки. Пользователь мог указать даты и аксессуары с телефона, не уточняя
+      весь набор по переписке.
+    stack:
+      - WordPress
+      - Rental enquiry
+      - Responsive forms
+    order: 239
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/ibike-scooter-rental-website
+        type: product
+  - slug: video-surveillance-catalog-migration
+    name: Перенос каталога оборудования видеонаблюдения
+    year: "11.2018"
+    role: Веб-разработка и автоматизация
+    description: "Перенёс категории и характеристики оборудования в WooCommerce.
+      Задача заключалась не только в загрузке карточек: свойства должны были
+      попадать в понятную структуру, а изображения корректно отображаться в
+      каталоге."
+    stack:
+      - WooCommerce
+      - Product taxonomy
+      - Data import
+      - Product media
+    order: 240
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/video-surveillance-catalog-migration
+        type: product
+  - slug: woocommerce-stock-waitlist-localization
+    name: Лист ожидания и русификация писем WooCommerce
+    year: "02.2020"
+    role: Веб-разработка и автоматизация
+    description: Настроил подписку на отсутствующий товар и доработал письма
+      магазина, чтобы покупатель понимал, что произошло после подписки.
+    stack:
+      - WooCommerce
+      - Product variations
+      - Waitlist
+      - Localization
+    order: 241
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-stock-waitlist-localization
+        type: product
+  - slug: regional-sports-directory-extract
+    name: Сбор справочника спортивных организаций
+    year: "11.2018"
+    role: Веб-разработка и автоматизация
+    description: Собрал данные о спортивных организациях Москвы и доступных городов
+      Московской области для дальнейшей работы заказчика со справочником.
+    stack:
+      - Web scraping
+      - Data extraction
+      - Regional directories
+    order: 242
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/regional-sports-directory-extract
+        type: product
+  - slug: lab-order-dashboard-css
+    name: Оформление кабинета лабораторных заказов
+    year: "12.2019"
+    role: Веб-разработка и автоматизация
+    description: "Доработал существующий кабинет: сотрудникам нужно было различать
+      состояния кнопок и находить создание заказа на рабочих экранах."
+    stack:
+      - WordPress
+      - CSS
+      - Admin interface
+      - Workflow design
+    order: 243
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/lab-order-dashboard-css
+        type: product

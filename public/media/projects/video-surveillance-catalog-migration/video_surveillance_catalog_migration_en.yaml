@@ -1,0 +1,28 @@
+title: Migrating a video surveillance equipment catalog
+tagline: Moved equipment categories and specifications into WooCommerce. Beyond
+  importing listings, the task required structured properties and readable
+  thumbnails.
+year: "11.2018"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product taxonomy
+  - Data import
+  - Product media
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Moved equipment categories and specifications into WooCommerce. Beyond
+      importing listings, the task required structured properties and readable
+      thumbnails.
+  - type: text
+    title: How it works
+    body: Rebuilt the import by category after feedback and manually sorted
+      specifications. Mapped 45 name–value field pairs. On the second import,
+      worked on black thumbnail backgrounds, which the project discussion
+      attributed to PNG processing.
+  - type: text
+    title: Result and verification
+    body: The client accepted the migration and noted time savings, although some
+      data still needed manual cleanup. The listing count was not independently
+      verified.

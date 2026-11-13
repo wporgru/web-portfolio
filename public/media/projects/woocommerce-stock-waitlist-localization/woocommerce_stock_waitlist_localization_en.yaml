@@ -1,0 +1,25 @@
+title: WooCommerce waitlist and Russian email localization
+tagline: Configured out-of-stock subscriptions and refined store emails so
+  shoppers could understand what happened after signing up.
+year: "02.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product variations
+  - Waitlist
+  - Localization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Configured out-of-stock subscriptions and refined store emails so shoppers
+      could understand what happened after signing up.
+  - type: text
+    title: How it works
+    body: Checked behavior with stock values of 3, 2 and 0, explained color
+      selection and removed the forced cart redirect. Localized the signup email
+      and confirmation link after feedback. Then removed the extra confirmation
+      step as agreed and refined the restock message and email footer.
+  - type: text
+    title: Result and verification
+    body: The client received the control email, confirmed the fixes and accepted
+      the work. A bulk notification on a live restock was not tested separately.
