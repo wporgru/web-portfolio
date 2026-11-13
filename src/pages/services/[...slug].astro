@@ -15,7 +15,12 @@ const { service, lang } = Astro.props;
 const ru = lang === 'ru';
 const [title, intro, first, second, outcome] = service[ru ? 'ru' : 'en'];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const breadcrumbs = [{name:ru?'Главная':'Home',href:base+(ru?'/':'/en/')},{name:title}];
+const localeSuffix = ru ? '/' : '/en/';
+const breadcrumbs = [
+  {name:ru?'Главная':'Home',href:base+localeSuffix},
+  {name:ru?'Услуги':'Services',href:base+'/services'+localeSuffix},
+  {name:title},
+];
 const alternate = ['ru','en'].map(id => ({ id, label:id.toUpperCase(), href:base+'/services/'+service.slug+(id==='ru'?'/':'/en/'), active:id===lang }));
 const projects = (await getEntry('showcase', 'projects_'+lang))?.data.projects ?? [];
 const examples = service.cases.map(slug => {

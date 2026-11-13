@@ -141,6 +141,9 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
 <style>
 .cv-home{padding-block:16px 32px}
 .cv-grid :global([id^="role-"]){scroll-margin-top:85px}
+@media(max-width:480px){
+  .cv-grid :global([id^="role-"]){scroll-margin-top:120px}
+}
 @media(min-width:960px){
   .cv-sidebar{grid-column:1;grid-row:1}
   .cv-main{grid-column:2;grid-row:1;min-width:0}

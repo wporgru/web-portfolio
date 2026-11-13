@@ -269,6 +269,23 @@ a:hover { text-decoration: underline; }
   }
 }
 
+@media (max-width: 480px) {
+  .header__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    row-gap: 3px;
+  }
+  .header__row > .lang {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .header__row > .nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    flex-wrap: wrap;
+  }
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    DROPDOWN
    ───────────────────────────────────────────────────────────────────────────── */

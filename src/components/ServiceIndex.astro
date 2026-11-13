@@ -1,0 +1,47 @@
+---
+import Layout from './Layout.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import { services } from '../content/services.mjs';
+
+const { lang } = Astro.props;
+const ru = lang === 'ru';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const localeSuffix = ru ? '/' : '/en/';
+const title = ru ? 'Услуги веб-разработчика Олега Тишина' : 'Web development services by Oleg Tishin';
+const intro = ru
+  ? 'Запускаю, обновляю и восстанавливаю сайты. Помогаю интернет-магазинам с каталогом, оплатой и доставкой, а бизнесу — с переездом, техническим SEO и автоматизацией.'
+  : 'I launch, improve and repair websites. I help stores with catalogs, payments and shipping, and businesses with hosting migrations, technical SEO and automation.';
+const alternates = ['ru','en'].map(id=>({id,label:id.toUpperCase(),href:base+'/services'+(id==='ru'?'/':'/en/'),active:id===lang}));
+const breadcrumbs = [{name:ru?'Главная':'Home',href:base+localeSuffix},{name:ru?'Услуги':'Services'}];
+---
+<Layout title={title} description={intro} lang={lang} section="services" customLangLinks={alternates} roleLinks={[]} breadcrumbs={breadcrumbs}>
+  <div class="container stack service-index">
+    <Breadcrumbs items={breadcrumbs} lang={lang}/>
+    <article class="card hero">
+      <h1 class="hero__name">{title}</h1>
+      <p class="hero__summary">{intro}</p>
+      <div class="btnrow">
+        <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить задачу':'Discuss your project'}</a>
+        <a class="btn btn--ghost" href={base+'/showcase'+localeSuffix}>{ru?'Посмотреть выполненные работы':'See completed work'}</a>
+      </div>
+    </article>
+    <div class="grid">
+      {services.map(service=>{
+        const [name,summary] = service[lang];
+        return <article class="card">
+          <h2 class="h2"><a href={base+'/services/'+service.slug+localeSuffix}>{name}</a></h2>
+          <p>{summary}</p>
+        </article>;
+      })}
+    </div>
+    <section class="card">
+      <h2 class="h2">{ru?'Не знаете, с чего начать?':'Not sure where to start?'}</h2>
+      <p>{ru?'Пришлите ссылку, опишите проблему и укажите, что важно сохранить. Предложу первый этап и объясню, по каким признакам можно принять результат.':'Send the site URL, describe the problem and tell me what must stay intact. I will suggest a first stage and explain how we can verify the result.'}</p>
+      <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить задачу':'Discuss your project'}</a>
+    </section>
+  </div>
+</Layout>
+<style>
+.service-index{padding-block:16px 32px}
+.service-index h2 a{text-decoration:underline;text-underline-offset:.18em}
+</style>

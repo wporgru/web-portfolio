@@ -241,6 +241,7 @@ const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
           )}
 
           <a href={showcaseHref}>{t('nav.showcase')}</a>
+          <a href={base+'/services'+(lang===defaultLang?'/':'/'+lang+'/')}>{lang==='ru'?'Услуги':'Services'}</a>
         </nav>
 
         <div class="lang">

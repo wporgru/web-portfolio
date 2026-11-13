@@ -52,7 +52,8 @@ const exists = relative => {
   return [direct,path.join(direct,'index.html')].some(file=>fs.statSync(file,{throwIfNoEntry:false})?.isFile());
 };
 for(const [canonical,alternates] of pages){
-  const isDetail = /\/(?:showcase|services)\/[a-z0-9-]+\/(?:en\/)?$/.test(canonical) && !canonical.endsWith('/showcase/en/');
+  const relative = new URL(canonical).pathname.slice(base.length);
+  const isDetail = /^services\//.test(relative) || /^showcase\/(?!en\/$)[a-z0-9-]+\/(?:en\/)?$/.test(relative);
   if(isDetail&&!breadcrumbTargets.has(canonical))fail(canonical,'missing visible breadcrumbs');
   const locale = canonical===alternates.get('ru')?'ru':'en';
   for(const target of breadcrumbTargets.get(canonical)??[]){
