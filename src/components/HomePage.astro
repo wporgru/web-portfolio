@@ -2,7 +2,7 @@
 import Layout from './Layout.astro';
 import { getEntry } from 'astro:content';
 import copy from '../content/portfolio-home.json';
-const { lang='ru', profile='' } = Astro.props;
+const { lang='ru', profile='', downloadUrls } = Astro.props;
 const ru = lang === 'ru';
 const c = ru ? copy.ru : copy.en;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -83,8 +83,17 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
 
     <aside class="sidebar cv-sidebar">
       <article class="card card--downloads">
-        <h2 class="h2">{ru ? 'Проекты и связь' : 'Projects and contact'}</h2>
-        <div class="btnrow"><a class="btn" href={catalog}>{ru ? 'Проекты' : 'Projects'}</a><a class="btn btn--ghost" href="https://t.me/wporgru">Telegram</a></div>
+        <h2 class="h2">{ru ? 'Скачать' : 'Download'}</h2>
+        <div class="skillsgroup__title">{ru ? 'Людям' : 'For people'}</div>
+        <div class="btnrow">
+          <a class="btn" href={downloadUrls.pdf} download aria-label={ru ? 'Скачать резюме PDF' : 'Download resume PDF'}>PDF</a>
+          <a class="btn btn--ghost" href={downloadUrls.docx} download aria-label={ru ? 'Скачать резюме DOCX' : 'Download resume DOCX'}>DOCX</a>
+        </div>
+        <div class="skillsgroup__title">{ru ? 'Для ATS' : 'For ATS'}</div>
+        <div class="btnrow">
+          <a class="btn btn--ghost" href={downloadUrls.pdfAts} download aria-label={ru ? 'Скачать одноколоночное резюме PDF для ATS' : 'Download single-column ATS resume PDF'}>PDF</a>
+          <a class="btn btn--ghost" href={downloadUrls.txt} download aria-label={ru ? 'Скачать текстовое резюме TXT' : 'Download plain text resume'}>TXT</a>
+        </div>
       </article>
       <article class="card card--skills">
         <h2 class="h2">{ru ? 'Навыки' : 'Skills'}</h2>

@@ -69,14 +69,7 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
 addEngineeringCases(projects);
 for(const lang of languages) {
   save('src/content/showcase/projects_'+lang+'.yaml',{projects:projects[lang]});
-  const ru=lang==='ru';
-  save('src/content/cv/'+lang+'.yaml',{
-    name:ru?'Олег':'Oleg', title:ru?'Веб-разработчик · WordPress и WooCommerce':'Web Developer · WordPress and WooCommerce',
-    summary:ru?'Дорабатываю интернет-магазины, автоматизирую загрузку каталогов и переношу сайты. В проектах показываю, что было заказано и что удалось сделать.':'I improve online stores, automate catalog imports and migrate websites. My case studies explain what each client needed and what I delivered.',
-    contacts:[{label:ru?'Обсудить проект на Kwork':'Discuss a project on Kwork',url:'https://kwork.ru/user/wporgru'},{label:'GitHub',url:'https://github.com/wporgru'}],
-    skills:[{group:ru?'Платформы':'Platforms',items:['WordPress','WooCommerce','InSales']},{group:ru?'Данные и интеграции':'Data and integrations',items:['XML','XLSX','1C','YooKassa']}],
-    experience:[{company:ru?'Клиентские проекты':'Client projects',role:ru?'Веб-разработка и сопровождение':'Web development and maintenance',period:'2018–2026',description:ru?['Импорт и обновление каталогов, настройка фильтров и оплаты.','Миграция сайтов, доработка шаблонов и диагностика конфликтов.']:['Catalog imports and updates, product filters and payment setup.','Website migrations, theme customization and troubleshooting.']}]
-  });
+
 }
 save('src/content/languages/languages.yml',{default:'ru',languages:[{id:'ru',label:'Русский'},{id:'en',label:'English'}]});
 save('src/content/profiles/profiles.yml',{profiles:[{id:'default',label:'Portfolio',slug:'',spec:null}]});

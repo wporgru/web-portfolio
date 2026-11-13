@@ -1,28 +1,31 @@
-name: Oleg
-title: Web Developer · WordPress and WooCommerce
-summary: I improve online stores, automate catalog imports and migrate websites.
-  My case studies explain what each client needed and what I delivered.
+name: Oleg Tishin
+title: Full-stack Web Developer · E-commerce · Automation and AI
+summary: Over 15 years in web development. I build and improve websites, online stores and business tools, with a focus on integrations, product data, technical SEO and automation.
 contacts:
-  - label: Discuss a project on Kwork
-    url: https://kwork.ru/user/wporgru
-  - label: GitHub
-    url: https://github.com/wporgru
+  - {label: zakaz@wp.org.ru, url: 'mailto:zakaz@wp.org.ru'}
+  - {label: "@wporgru", url: 'https://t.me/wporgru'}
+  - {label: WP.ORG.RU, url: 'https://wp.org.ru/contacts/'}
+  - {label: Portfolio, url: 'https://wporgru.github.io/web-portfolio/showcase/en/'}
+location: Nizhny Novgorod
+achievements:
+  - Imported 719 STALEX products from a nonstandard feed and configured stock mapping.
+  - Verified 198 products across 33 Wellland categories after a global attribute migration.
+  - Paused 1,892 outdated affiliate offers through a reversible rule without rewriting product records.
 skills:
-  - group: Platforms
-    items:
-      - WordPress
-      - WooCommerce
-      - InSales
-  - group: Data and integrations
-    items:
-      - XML
-      - XLSX
-      - 1C
-      - YooKassa
+  - {group: Web and CMS, items: [PHP, JavaScript, React, Astro, WordPress, WooCommerce, InSales]}
+  - {group: Data and integrations, items: [Python, Node.js, SQLite, Directus, REST API, XML, XLSX, 1C, CDEK, YooKassa]}
+  - {group: Search and QA, items: [Screaming Frog, Rank Math, Google Search Console, Yandex Webmaster, Playwright]}
+  - {group: Automation and AI, items: [GitHub Actions, Codex, Antigravity, AI output validation]}
 experience:
-  - company: Client projects
-    role: Web development and maintenance
+  - company: Client web projects
+    role: Independent web developer
     period: 2018–2026
     description:
-      - Catalog imports and updates, product filters and payment setup.
-      - Website migrations, theme customization and troubleshooting.
+      - Store launches and redesigns, site migrations, catalogs, inquiry forms and checkout.
+      - Payment and shipping integrations, conflict diagnosis, site recovery and technical audits.
+  - company: Independent web products
+    role: Development and automation
+    period: '2026'
+    description:
+      - Affiliate storefronts, feed refresh workflows and a local search analytics dashboard.
+      - Reference data normalization in Directus and import validation tools.

@@ -1,28 +1,31 @@
-name: Олег
-title: Веб-разработчик · WordPress и WooCommerce
-summary: Дорабатываю интернет-магазины, автоматизирую загрузку каталогов и
-  переношу сайты. В проектах показываю, что было заказано и что удалось сделать.
+name: Олег Тишин
+title: Full-stack веб-разработчик · E-commerce · Автоматизация и ИИ
+summary: Более 15 лет в веб-разработке. Создаю и дорабатываю сайты, интернет-магазины и инструменты для бизнеса. Работаю с интеграциями, товарными данными, техническим SEO и автоматизацией.
 contacts:
-  - label: Обсудить проект на Kwork
-    url: https://kwork.ru/user/wporgru
-  - label: GitHub
-    url: https://github.com/wporgru
+  - {label: zakaz@wp.org.ru, url: 'mailto:zakaz@wp.org.ru'}
+  - {label: "@wporgru", url: 'https://t.me/wporgru'}
+  - {label: WP.ORG.RU, url: 'https://wp.org.ru/contacts/'}
+  - {label: Портфолио, url: 'https://wporgru.github.io/web-portfolio/showcase/'}
+location: Нижний Новгород
+achievements:
+  - Импорт 719 позиций STALEX из нестандартного фида с настройкой сопоставления остатков.
+  - Проверка 198 товаров в 33 категориях Wellland после перехода на глобальные атрибуты.
+  - Обратимое отключение 1 892 неактуальных партнёрских предложений без перезаписи карточек.
 skills:
-  - group: Платформы
-    items:
-      - WordPress
-      - WooCommerce
-      - InSales
-  - group: Данные и интеграции
-    items:
-      - XML
-      - XLSX
-      - 1C
-      - YooKassa
+  - {group: Веб и CMS, items: [PHP, JavaScript, React, Astro, WordPress, WooCommerce, InSales]}
+  - {group: Данные и интеграции, items: [Python, Node.js, SQLite, Directus, REST API, XML, XLSX, 1С, СДЭК, ЮKassa]}
+  - {group: SEO и проверка, items: [Screaming Frog, Rank Math, Google Search Console, Яндекс Вебмастер, Playwright]}
+  - {group: Автоматизация и ИИ, items: [GitHub Actions, Codex, Antigravity, проверка результатов ИИ]}
 experience:
-  - company: Клиентские проекты
-    role: Веб-разработка и сопровождение
+  - company: Клиентская веб-разработка
+    role: Независимый разработчик
     period: 2018–2026
     description:
-      - Импорт и обновление каталогов, настройка фильтров и оплаты.
-      - Миграция сайтов, доработка шаблонов и диагностика конфликтов.
+      - Запуск и редизайн магазинов, миграции, каталоги, формы заявок и оформление заказа.
+      - Настройка оплаты и доставки, диагностика конфликтов, восстановление сайтов и технический аудит.
+  - company: Собственные веб-продукты
+    role: Разработка и автоматизация
+    period: '2026'
+    description:
+      - Партнёрские витрины, обновление фидов и локальный дашборд поисковой аналитики.
+      - Нормализация справочных данных в Directus и инструменты проверки импорта.

@@ -44,3 +44,4 @@ AUDIT.md
 /docs/repo-assets/cover.pxd
 
 /.playwright-cli/
+/public/downloads/
