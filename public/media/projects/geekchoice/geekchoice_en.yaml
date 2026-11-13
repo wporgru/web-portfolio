@@ -1,0 +1,24 @@
+title: "GeekChoice: electronics filters and comparison"
+tagline: Make it easier to filter devices by specifications, read prices and
+  compare products.
+role: Web development
+year: "09.2025"
+stack:
+  - WooCommerce
+  - Blocksy
+blocks:
+  - type: text
+    title: Brief
+    body: Make it easier to filter devices by specifications, read prices and
+      compare products.
+  - type: text
+    title: Work delivered
+    body: Configured numeric filters for memory, battery, cameras, charging and
+      screen size. Refined product cards and the comparison view, including
+      typography, specifications and spacing.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/geekchoice/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

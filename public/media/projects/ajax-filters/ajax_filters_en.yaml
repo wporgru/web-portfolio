@@ -1,0 +1,25 @@
+title: Category-specific AJAX filters for eight attributes
+tagline: Make products easier to find by technical specifications and let the
+  owner configure new filters.
+role: Web development
+year: "11.2025"
+stack:
+  - WooCommerce
+  - Filter Everything PRO
+  - AJAX
+blocks:
+  - type: text
+    title: Brief
+    body: Make products easier to find by technical specifications and let the owner
+      configure new filters.
+  - type: text
+    title: Work delivered
+    body: Configured eight attributes, enabled AJAX results and recorded setup
+      instructions. After resolving a URL-prefix conflict, the client created a
+      new filter independently.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/ajax-filters/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

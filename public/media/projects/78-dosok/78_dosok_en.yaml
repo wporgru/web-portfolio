@@ -1,0 +1,22 @@
+title: "78 Dosok: storefront redesign"
+tagline: Refresh a working timber store without rebuilding its catalog from scratch.
+role: Web development
+year: "08.2026"
+stack:
+  - WordPress
+  - WooCommerce
+  - Elementor
+blocks:
+  - type: text
+    title: Brief
+    body: Refresh a working timber store without rebuilding its catalog from scratch.
+  - type: text
+    title: Work delivered
+    body: Diagnosed the conflict between Elementor and the theme header, proposed a
+      new homepage layout, revised navigation and added a floating cart.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/78-dosok/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

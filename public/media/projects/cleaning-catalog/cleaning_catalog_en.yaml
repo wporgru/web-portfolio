@@ -1,0 +1,25 @@
+title: Cleaning equipment catalog import
+tagline: Prepare products for an inquiry catalog and normalize their attributes
+  in WooCommerce.
+role: Web development
+year: "11.2025"
+stack:
+  - WooCommerce
+  - XLSX
+  - WP Sheet Editor
+blocks:
+  - type: text
+    title: Brief
+    body: Prepare products for an inquiry catalog and normalize their attributes in
+      WooCommerce.
+  - type: text
+    title: Work delivered
+    body: Switched from a watermarked source to an agreed alternative, prepared an
+      XLSX export, imported the catalog, converted specifications to global
+      attributes and moved brands into a dedicated taxonomy.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/cleaning-catalog/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

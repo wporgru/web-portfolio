@@ -1,0 +1,25 @@
+title: "STALEX: automated import of 719 products"
+tagline: Import a nonstandard product feed without losing specifications or
+  stock status.
+role: Web development
+year: "06.2026"
+stack:
+  - WooCommerce
+  - XML
+  - Data import
+blocks:
+  - type: text
+    title: Brief
+    body: Import a nonstandard product feed without losing specifications or stock
+      status.
+  - type: text
+    title: Work delivered
+    body: Configured product and category imports, separated structured attributes
+      from free-text specifications and corrected stock mapping. The initial
+      import report recorded 719 items.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/stalex-feed/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

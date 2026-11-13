@@ -1,0 +1,137 @@
+# CV Hub — Case Study YAML example
+#
+# Файл кейс стади живёт по пути:
+#   public/media/projects/{slug}/{slug_underscored}_{lang}.yaml
+#
+# Пример: public/media/projects/my-project/my_project_ru.yaml
+#         public/media/projects/my-project/my_project_en.yaml
+#
+# Страница генерируется автоматически при наличии файла.
+# URL: /showcase/{slug}          ← дефолтный язык
+#      /showcase/{slug}/en       ← остальные языки
+
+title: "My Project"
+role: "Lead Developer"          # Отображается под заголовком (опционально)
+year: "2024"                    # Год (опционально)
+tagline: "Короткое описание под заголовком на странице кейса."
+shareable: true                 # Показывать ли ссылку на копирование (опционально)
+
+platforms: [iOS, Android]
+stack: [Unity, C#, Photon, Node.js]
+
+links:
+  - label: App Store
+    url: https://apps.apple.com/...
+  - label: Play Store
+    url: https://play.google.com/...
+  - label: GitHub
+    url: https://github.com/...
+
+blocks:
+
+  # ── Картинка без текста ─────────────────────────────────────────────────
+  - type: image
+    src: /media/projects/my-project/cover.png
+    alt: "Скриншот главного экрана"
+
+  # ── Картинка с подписью ─────────────────────────────────────────────────
+  - type: image
+    src: /media/projects/my-project/screenshot.jpg
+    alt: "Геймплей"
+    caption: "Основной игровой экран"
+
+  # ── Картинка с заголовком и текстом сверху ──────────────────────────────
+  - type: image
+    title: "Архитектура системы"
+    subtitle: "Схема взаимодействия сервисов"
+    src: /media/projects/my-project/architecture.png
+    alt: "Архитектурная схема"
+    body: |
+      Дополнительный текст над картинкой. Поддерживает переносы строк.
+
+  # ── Видео: встраивание YouTube ───────────────────────────────────────────
+  # src распознаётся автоматически: youtube.com/watch?v=..., youtu.be/...
+  # или youtube.com/embed/... — рендерится адаптивный iframe 16:9.
+  - type: video
+    title: "Trailer"
+    src: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    caption: "Официальный трейлер проекта"
+
+  # ── Видео: локальный/захостенный файл, тихий автоплей в цикле ────────────
+  # Любой src, не похожий на YouTube-ссылку, рендерится как <video>.
+  # loop: true  → autoplay + muted + loop, без controls (короткие клипы)
+  - type: video
+    src: /media/projects/my-project/boss-fight.mp4
+    loop: true
+    alt: "Финальный босс"
+
+  # ── Видео: локальный файл с controls (длинный клип) ─────────────────────
+  # loop не указан / false → controls + опциональный poster, без autoplay
+  - type: video
+    title: "Gameplay walkthrough"
+    src: /media/projects/my-project/gameplay.mp4
+    poster: /media/projects/my-project/gameplay-poster.jpg
+    caption: "Полное прохождение уровня 1"
+
+  # ── Код: моноширинный блок для команд/сниппетов ──────────────────────────
+  # body рендерится дословно (для копирования), без инлайн-кода.
+  # title/subtitle/caption — обычная проза, поддерживают `бэктики`.
+  - type: code
+    title: "Клонирование"
+    body: |
+      git clone https://github.com/YOUR_ACCOUNT/my-project.git
+      cd my-project
+    caption: "Дальше — `npm install && npm run dev`"
+
+  # ── Разделитель ─────────────────────────────────────────────────────────
+  - type: divider
+
+  # ── Текст: только заголовок и параграф ──────────────────────────────────
+  - type: text
+    title: "Overview"
+    body: |
+      Многострочный текст пишется сюда.
+      Поддерживает переносы строк.
+
+      Инлайн-код в тексте: `бэктики` рендерятся как стилизованный код,
+      а не буквальными кавычками — работает в title, subtitle, body и
+      в каждом элементе bullets, для любого блока (text/image/video/code).
+
+  # ── Текст с якорем — для прямых ссылок вида /showcase/{slug}#some-id ────
+  # anchor доступен на любом блоке кроме divider.
+  - type: text
+    title: "Quickstart"
+    anchor: "quickstart"
+    body: |
+      На этот раздел можно сослаться напрямую: .../showcase/my-project#quickstart
+
+  # ── Текст: заголовок + подзаголовок + буллеты ───────────────────────────
+  - type: text
+    title: "What I did"
+    subtitle: "Ключевые задачи на проекте"
+    bullets:
+      - Разработал серверную архитектуру
+      - Внедрил CI/CD пайплайн
+      - Оптимизировал рендер, +45% FPS
+
+  # ── Текст: только буллеты без заголовка ─────────────────────────────────
+  - type: text
+    bullets:
+      - Первый пункт
+      - Второй пункт
+
+  # ── Текст со ссылками внизу блока ───────────────────────────────────────
+  - type: text
+    title: "Resources"
+    body: "Полезные материалы по проекту."
+    links:
+      - label: Документация
+        url: https://docs.example.com
+      - label: Статья на Medium
+        url: https://medium.com/...
+
+  # ── Текст: только параграф без заголовка ────────────────────────────────
+  - type: text
+    body: |
+      Просто текст без заголовка.
+      Можно использовать как подпись или вводный абзац.

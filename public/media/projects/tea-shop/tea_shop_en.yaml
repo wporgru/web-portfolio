@@ -1,0 +1,25 @@
+title: Tea store rebuild with two product catalogs
+tagline: Bring products from a legacy WooCommerce store and a supplier into a
+  new storefront.
+role: Web development
+year: "10.2025"
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+blocks:
+  - type: text
+    title: Brief
+    body: Bring products from a legacy WooCommerce store and a supplier into a new
+      storefront.
+  - type: text
+    title: Work delivered
+    body: Used compatible export tools, imported both catalogs and investigated
+      duplicate categories. Delivered redirect rules for old URLs; activation on
+      the legacy host was not independently confirmed.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/tea-shop/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

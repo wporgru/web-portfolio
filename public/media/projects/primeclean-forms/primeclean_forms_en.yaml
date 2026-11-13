@@ -1,0 +1,16 @@
+title: Spam protection for WordPress forms
+tagline: Reduce unwanted submissions through the company’s forms.
+role: Web development
+year: "05.2026"
+stack:
+  - WordPress
+  - Contact Form 7
+blocks:
+  - type: text
+    title: Brief
+    body: Reduce unwanted submissions through the company’s forms.
+  - type: text
+    title: Work delivered
+    body: Reviewed spam examples and configured protection. After the initial
+      change, the client reported no spam over the weekend; this was a short
+      observation, not long-term monitoring.

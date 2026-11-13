@@ -1,0 +1,21 @@
+title: Contact widget for an InSales store
+tagline: Add an easy-to-find contact option to an existing flower store.
+role: Web development
+year: "05.2026"
+stack:
+  - InSales
+  - CSS
+blocks:
+  - type: text
+    title: Brief
+    body: Add an easy-to-find contact option to an existing flower store.
+  - type: text
+    title: Work delivered
+    body: Built a contact widget with animated icons. The client approved mobile
+      placement and received instructions for adjusting desktop offsets.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/cvetnik-widget/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

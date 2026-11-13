@@ -1,0 +1,17 @@
+title: Photography website migration to WordPress
+tagline: Move a Firebase/Webpack site to a CMS without a complete source archive.
+role: Web development
+year: "05.2026"
+stack:
+  - WordPress
+  - Firebase
+  - Webpack
+blocks:
+  - type: text
+    title: Brief
+    body: Move a Firebase/Webpack site to a CMS without a complete source archive.
+  - type: text
+    title: Work delivered
+    body: Reconstructed pages from the published site on staging, reviewed desktop
+      and mobile placement of awards, and prepared separate workshop URLs for
+      three languages.

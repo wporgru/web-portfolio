@@ -1,0 +1,24 @@
+title: WooCommerce and YooKassa payments for services
+tagline: Enable online payment for services without listing internal products in
+  the public catalog.
+role: Web development
+year: "04.2026"
+stack:
+  - WordPress
+  - WooCommerce
+  - YooKassa
+blocks:
+  - type: text
+    title: Brief
+    body: Enable online payment for services without listing internal products in
+      the public catalog.
+  - type: text
+    title: Work delivered
+    body: Configured checkout and hidden service products, aligned pricing and
+      removed a no-prepayment notice that conflicted with the new payment flow.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/service-checkout/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

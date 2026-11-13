@@ -1,0 +1,44 @@
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/
+*.docx
+*.pdf
+*.txt
+/public/cv
+# Regenerated every build by src/scripts/generate-og-image.mjs — a build
+# output like sitemap.xml, not a source file.
+/public/media/og-image-*.png
+# Mechanical copy of src/styles/themes/*.css (astro.config.mjs `copy-themes`
+# vite plugin, runs on every dev/build) — the source of truth is src/, not
+# this one.
+/public/themes
+# npm run init — local safety marker + backup of whatever it overwrote
+.cv-hub-initialized
+.cv-hub-backup-*
+
+# Claude local working files (behaviour file CLAUDE.md stays committed)
+.claude/
+# Working audit — single whole file at root, not committed
+AUDIT.md
+/docs/repo-assets/cover.pxd

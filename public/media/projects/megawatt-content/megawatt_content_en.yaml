@@ -1,0 +1,25 @@
+title: Migrating service pages and configuring redirects
+tagline: Move content out of WordPress theme modules into posts and categories
+  while preserving access from old URLs.
+role: Web development
+year: "02.2026"
+stack:
+  - WordPress
+  - Redirects
+  - SEO
+blocks:
+  - type: text
+    title: Brief
+    body: Move content out of WordPress theme modules into posts and categories
+      while preserving access from old URLs.
+  - type: text
+    title: Work delivered
+    body: Migrated the agreed content, aligned the category structure and configured
+      regular-expression redirects. The project report records checks on five
+      old URL patterns.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/megawatt-content/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

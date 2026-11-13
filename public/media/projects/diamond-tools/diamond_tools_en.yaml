@@ -1,0 +1,24 @@
+title: "Diamond tools store: storefront improvements"
+tagline: Implement actionable audit recommendations and make the manufacturer’s
+  offer clearer to customers.
+role: Web development
+year: "07.2026"
+stack:
+  - WordPress
+  - WooCommerce
+  - SEO
+blocks:
+  - type: text
+    title: Brief
+    body: Implement actionable audit recommendations and make the manufacturer’s
+      offer clearer to customers.
+  - type: text
+    title: Work delivered
+    body: Clarified manufacturer details, rewrote the homepage headline and
+      documented which audit recommendations were implemented or deferred.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/diamond-tools/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

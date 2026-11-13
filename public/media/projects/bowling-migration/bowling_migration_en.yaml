@@ -1,0 +1,24 @@
+title: WooCommerce hosting migration and product-page repair
+tagline: Move the store to Beget and troubleshoot product pages that no longer opened.
+role: Web development
+year: "12.2025"
+stack:
+  - WordPress
+  - WooCommerce
+  - Beget
+blocks:
+  - type: text
+    title: Brief
+    body: Move the store to Beget and troubleshoot product pages that no longer
+      opened.
+  - type: text
+    title: Work delivered
+    body: Migrated the store and repaired several problematic single-variation
+      product pages. Kept the variable product structure where buyers needed a
+      choice of sizes or weights.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/bowling-migration/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

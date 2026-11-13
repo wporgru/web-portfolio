@@ -1,0 +1,24 @@
+title: "Tile catalog: 1C sync and fractional stock"
+tagline: Troubleshoot catalog synchronization and display accurate availability
+  for fractional tile stock.
+role: Web development
+year: "03.2026"
+stack:
+  - WooCommerce
+  - 1C
+blocks:
+  - type: text
+    title: Brief
+    body: Troubleshoot catalog synchronization and display accurate availability for
+      fractional tile stock.
+  - type: text
+    title: Work delivered
+    body: Checked synchronization on test products and traced discrepancies to
+      source data. In a separate order, configured quantities below one as
+      available to order and quantities of one or more as in stock.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/tile-catalog/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

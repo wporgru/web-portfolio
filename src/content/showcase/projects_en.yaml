@@ -1,0 +1,332 @@
+projects:
+  - slug: 78-dosok
+    name: "78 Dosok: storefront redesign"
+    description: Diagnosed the conflict between Elementor and the theme header,
+      proposed a new homepage layout, revised navigation and added a floating
+      cart.
+    year: "08.2026"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - Elementor
+    order: 1
+    featured: true
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/78-dosok/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/78-dosok/en
+        type: product
+  - slug: diamond-tools
+    name: "Diamond tools store: storefront improvements"
+    description: Clarified manufacturer details, rewrote the homepage headline and
+      documented which audit recommendations were implemented or deferred.
+    year: "07.2026"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - SEO
+    order: 2
+    featured: true
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/diamond-tools/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/diamond-tools/en
+        type: product
+  - slug: stalex-feed
+    name: "STALEX: automated import of 719 products"
+    description: Configured product and category imports, separated structured
+      attributes from free-text specifications and corrected stock mapping. The
+      initial import report recorded 719 items.
+    year: "06.2026"
+    role: Web development
+    stack:
+      - WooCommerce
+      - XML
+      - Data import
+    order: 3
+    featured: true
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/stalex-feed/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/stalex-feed/en
+        type: product
+  - slug: tara-bergman
+    name: Photography website migration to WordPress
+    description: Reconstructed pages from the published site on staging, reviewed
+      desktop and mobile placement of awards, and prepared separate workshop
+      URLs for three languages.
+    year: "05.2026"
+    role: Web development
+    stack:
+      - WordPress
+      - Firebase
+      - Webpack
+    order: 4
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/tara-bergman/en
+        type: product
+  - slug: primeclean-forms
+    name: Spam protection for WordPress forms
+    description: Reviewed spam examples and configured protection. After the initial
+      change, the client reported no spam over the weekend; this was a short
+      observation, not long-term monitoring.
+    year: "05.2026"
+    role: Web development
+    stack:
+      - WordPress
+      - Contact Form 7
+    order: 5
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/primeclean-forms/en
+        type: product
+  - slug: cvetnik-widget
+    name: Contact widget for an InSales store
+    description: Built a contact widget with animated icons. The client approved
+      mobile placement and received instructions for adjusting desktop offsets.
+    year: "05.2026"
+    role: Web development
+    stack:
+      - InSales
+      - CSS
+    order: 6
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/cvetnik-widget/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/cvetnik-widget/en
+        type: product
+  - slug: service-checkout
+    name: WooCommerce and YooKassa payments for services
+    description: Configured checkout and hidden service products, aligned pricing
+      and removed a no-prepayment notice that conflicted with the new payment
+      flow.
+    year: "04.2026"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - YooKassa
+    order: 7
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/service-checkout/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/service-checkout/en
+        type: product
+  - slug: tile-catalog
+    name: "Tile catalog: 1C sync and fractional stock"
+    description: Checked synchronization on test products and traced discrepancies
+      to source data. In a separate order, configured quantities below one as
+      available to order and quantities of one or more as in stock.
+    year: "03.2026"
+    role: Web development
+    stack:
+      - WooCommerce
+      - 1C
+    order: 8
+    featured: false
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/tile-catalog/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/tile-catalog/en
+        type: product
+  - slug: megawatt-content
+    name: Migrating service pages and configuring redirects
+    description: Migrated the agreed content, aligned the category structure and
+      configured regular-expression redirects. The project report records checks
+      on five old URL patterns.
+    year: "02.2026"
+    role: Web development
+    stack:
+      - WordPress
+      - Redirects
+      - SEO
+    order: 9
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/megawatt-content/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/megawatt-content/en
+        type: product
+  - slug: cleaning-catalog
+    name: Cleaning equipment catalog import
+    description: Switched from a watermarked source to an agreed alternative,
+      prepared an XLSX export, imported the catalog, converted specifications to
+      global attributes and moved brands into a dedicated taxonomy.
+    year: "11.2025"
+    role: Web development
+    stack:
+      - WooCommerce
+      - XLSX
+      - WP Sheet Editor
+    order: 10
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/cleaning-catalog/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/cleaning-catalog/en
+        type: product
+  - slug: ajax-filters
+    name: Category-specific AJAX filters for eight attributes
+    description: Configured eight attributes, enabled AJAX results and recorded
+      setup instructions. After resolving a URL-prefix conflict, the client
+      created a new filter independently.
+    year: "11.2025"
+    role: Web development
+    stack:
+      - WooCommerce
+      - Filter Everything PRO
+      - AJAX
+    order: 11
+    featured: false
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/ajax-filters/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/ajax-filters/en
+        type: product
+  - slug: sovo-sova
+    name: "Sovo Sova: WooCommerce redesign on WoodMart"
+    description: Built a new homepage on staging, added articles and translated
+      visible interface strings. The handoff reported that URLs were retained;
+      the final domain switch was outside the confirmed stage.
+    year: "10.2025"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+    order: 12
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/sovo-sova/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/sovo-sova/en
+        type: product
+  - slug: tea-shop
+    name: Tea store rebuild with two product catalogs
+    description: Used compatible export tools, imported both catalogs and
+      investigated duplicate categories. Delivered redirect rules for old URLs;
+      activation on the legacy host was not independently confirmed.
+    year: "10.2025"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+    order: 13
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/tea-shop/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/tea-shop/en
+        type: product
+  - slug: geekchoice
+    name: "GeekChoice: electronics filters and comparison"
+    description: Configured numeric filters for memory, battery, cameras, charging
+      and screen size. Refined product cards and the comparison view, including
+      typography, specifications and spacing.
+    year: "09.2025"
+    role: Web development
+    stack:
+      - WooCommerce
+      - Blocksy
+    order: 14
+    featured: false
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/geekchoice/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/geekchoice/en
+        type: product
+  - slug: bowling-migration
+    name: WooCommerce hosting migration and product-page repair
+    description: Migrated the store and repaired several problematic
+      single-variation product pages. Kept the variable product structure where
+      buyers needed a choice of sizes or weights.
+    year: "12.2025"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - Beget
+    order: 15
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/bowling-migration/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/bowling-migration/en
+        type: product

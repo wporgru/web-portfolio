@@ -1,0 +1,23 @@
+title: "Sovo Sova: WooCommerce redesign on WoodMart"
+tagline: Refresh the storefront while retaining existing URLs.
+role: Web development
+year: "10.2025"
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+blocks:
+  - type: text
+    title: Brief
+    body: Refresh the storefront while retaining existing URLs.
+  - type: text
+    title: Work delivered
+    body: Built a new homepage on staging, added articles and translated visible
+      interface strings. The handoff reported that URLs were retained; the final
+      domain switch was outside the confirmed stage.
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/sovo-sova/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

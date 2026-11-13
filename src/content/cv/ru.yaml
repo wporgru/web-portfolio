@@ -1,0 +1,28 @@
+name: Олег
+title: Веб-разработчик · WordPress и WooCommerce
+summary: Дорабатываю интернет-магазины, автоматизирую загрузку каталогов и
+  переношу сайты. В проектах показываю, что было заказано и что удалось сделать.
+contacts:
+  - label: Обсудить проект на Kwork
+    url: https://kwork.ru/user/wporgru
+  - label: GitHub
+    url: https://github.com/wporgru
+skills:
+  - group: Платформы
+    items:
+      - WordPress
+      - WooCommerce
+      - InSales
+  - group: Данные и интеграции
+    items:
+      - XML
+      - XLSX
+      - 1C
+      - YooKassa
+experience:
+  - company: Клиентские проекты
+    role: Веб-разработка и сопровождение
+    period: 2018–2026
+    description:
+      - Импорт и обновление каталогов, настройка фильтров и оплаты.
+      - Миграция сайтов, доработка шаблонов и диагностика конфликтов.

@@ -1,0 +1,5 @@
+profiles:
+  - id: default
+    label: Portfolio
+    slug: ""
+    spec: null

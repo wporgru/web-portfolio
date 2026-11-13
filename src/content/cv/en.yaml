@@ -1,0 +1,28 @@
+name: Oleg
+title: Web Developer · WordPress and WooCommerce
+summary: I improve online stores, automate catalog imports and migrate websites.
+  My case studies explain what each client needed and what I delivered.
+contacts:
+  - label: Discuss a project on Kwork
+    url: https://kwork.ru/user/wporgru
+  - label: GitHub
+    url: https://github.com/wporgru
+skills:
+  - group: Platforms
+    items:
+      - WordPress
+      - WooCommerce
+      - InSales
+  - group: Data and integrations
+    items:
+      - XML
+      - XLSX
+      - 1C
+      - YooKassa
+experience:
+  - company: Client projects
+    role: Web development and maintenance
+    period: 2018–2026
+    description:
+      - Catalog imports and updates, product filters and payment setup.
+      - Website migrations, theme customization and troubleshooting.

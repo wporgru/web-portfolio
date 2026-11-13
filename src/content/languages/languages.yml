@@ -1,0 +1,6 @@
+default: ru
+languages:
+  - id: ru
+    label: Русский
+  - id: en
+    label: English

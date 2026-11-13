@@ -1,0 +1,332 @@
+projects:
+  - slug: 78-dosok
+    name: Редизайн магазина «78 Досок»
+    description: Разобрал конфликт шапки Elementor с шапкой темы, предложил новый
+      вариант главной, доработал меню и добавил плавающую корзину.
+    year: "08.2026"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - Elementor
+    order: 1
+    featured: true
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/78-dosok/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/78-dosok
+        type: product
+  - slug: diamond-tools
+    name: "Магазин алмазного инструмента: коммерческие доработки"
+    description: Уточнил сведения о производителе, переработал формулировку первого
+      экрана и зафиксировал внедрённые и отложенные пункты аудита в отчёте.
+    year: "07.2026"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - SEO
+    order: 2
+    featured: true
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/diamond-tools/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/diamond-tools
+        type: product
+  - slug: stalex-feed
+    name: Автоимпорт 719 товаров STALEX
+    description: Настроил категории и товары, разделил структурированные атрибуты и
+      текстовые характеристики, исправил сопоставление наличия. В отчёте первой
+      загрузки — 719 позиций.
+    year: "06.2026"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - XML
+      - Data import
+    order: 3
+    featured: true
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/stalex-feed/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/stalex-feed
+        type: product
+  - slug: tara-bergman
+    name: Перенос сайта фотографа на WordPress
+    description: Восстановил страницы по опубликованной версии на отдельном стенде,
+      согласовал размещение наград на разных экранах и подготовил отдельные
+      адреса воркшопа для трёх языков.
+    year: "05.2026"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - Firebase
+      - Webpack
+    order: 4
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/tara-bergman
+        type: product
+  - slug: primeclean-forms
+    name: Антиспам для форм WordPress
+    description: Разобрал примеры спама и настроил защиту. После первичной правки
+      клиент сообщил, что за выходные новых спам-заявок не было; это наблюдение,
+      не результат длительного мониторинга.
+    year: "05.2026"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - Contact Form 7
+    order: 5
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/primeclean-forms
+        type: product
+  - slug: cvetnik-widget
+    name: Контактный виджет для магазина InSales
+    description: Подготовил контактный виджет с анимированными иконками. Клиент
+      подтвердил размещение на мобильном экране, а для десктопа получил
+      инструкцию по настройке отступов.
+    year: "05.2026"
+    role: Веб-разработка
+    stack:
+      - InSales
+      - CSS
+    order: 6
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/cvetnik-widget/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/cvetnik-widget
+        type: product
+  - slug: service-checkout
+    name: Оплата услуг через WooCommerce и ЮKassa
+    description: Настроил страницу оформления и скрытые товары-услуги, согласовал
+      цены и убрал сообщение об отсутствии предоплаты, которое противоречило
+      новому сценарию.
+    year: "04.2026"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - YooKassa
+    order: 7
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/service-checkout/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/service-checkout
+        type: product
+  - slug: tile-catalog
+    name: "Каталог плитки: обмен с 1С и дробные остатки"
+    description: "Проверил обмен на тестовых карточках и разобрал различия в
+      исходных данных. В отдельном заказе настроил правило: меньше одной единицы
+      — «Под заказ», от одной — «В наличии»."
+    year: "03.2026"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - 1C
+    order: 8
+    featured: false
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/tile-catalog/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/tile-catalog
+        type: product
+  - slug: megawatt-content
+    name: Перенос страниц услуг и настройка редиректов
+    description: Перенёс согласованный набор материалов, согласовал структуру рубрик
+      и настроил правила переадресации на основе регулярных выражений. В отчёте
+      указана проверка пяти типов старых адресов.
+    year: "02.2026"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - Redirects
+      - SEO
+    order: 9
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/megawatt-content/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/megawatt-content
+        type: product
+  - slug: cleaning-catalog
+    name: Импорт каталога уборочной техники
+    description: Заменил источник с водяными знаками на согласованный, подготовил
+      выгрузку XLSX, импортировал каталог, перевёл характеристики в глобальные
+      атрибуты и перенёс бренды в отдельную таксономию.
+    year: "11.2025"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - XLSX
+      - WP Sheet Editor
+    order: 10
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/cleaning-catalog/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/cleaning-catalog
+        type: product
+  - slug: ajax-filters
+    name: Категорийные AJAX-фильтры по восьми параметрам
+    description: Настроил восемь параметров, перевёл обновление результатов на AJAX
+      и записал инструкции. После разбора конфликта URL-префиксов клиент
+      самостоятельно создал новый фильтр.
+    year: "11.2025"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - Filter Everything PRO
+      - AJAX
+    order: 11
+    featured: false
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/ajax-filters/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/ajax-filters
+        type: product
+  - slug: sovo-sova
+    name: "«Сово Сова»: редизайн на WoodMart"
+    description: Подготовил новую главную на технической копии, добавил статьи и
+      перевёл видимые фразы интерфейса. При сдаче сообщил о сохранении адресов;
+      окончательное переключение домена не входило в подтверждённый этап.
+    year: "10.2025"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+    order: 12
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/sovo-sova/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/sovo-sova
+        type: product
+  - slug: tea-shop
+    name: Новая витрина чайного магазина с объединением каталогов
+    description: Подобрал совместимые средства экспорта, загрузил оба ассортимента и
+      разобрал дубли категорий. Передал правила редиректов для старых адресов;
+      их включение на старом хостинге отдельно не подтверждено.
+    year: "10.2025"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+    order: 13
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/tea-shop/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/tea-shop
+        type: product
+  - slug: geekchoice
+    name: "GeekChoice: фильтры и сравнение электроники"
+    description: Настроил числовые фильтры для памяти, аккумулятора, камер, зарядки
+      и диагонали. Доработал карточки и экран сравнения, включая типографику,
+      характеристики и отступы.
+    year: "09.2025"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - Blocksy
+    order: 14
+    featured: false
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/geekchoice/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/geekchoice
+        type: product
+  - slug: bowling-migration
+    name: Переезд WooCommerce-магазина и восстановление карточек
+    description: Перенёс магазин на новый хостинг и исправил несколько проблемных
+      карточек с одной вариацией. Для товаров с полноценным выбором размеров и
+      весов сохранил вариативную структуру.
+    year: "12.2025"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - Beget
+    order: 15
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/bowling-migration/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/bowling-migration
+        type: product
