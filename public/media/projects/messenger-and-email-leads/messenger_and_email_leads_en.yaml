@@ -1,0 +1,26 @@
+title: Replacing a contact widget and restoring an inquiry form
+tagline: "The site needed updated contact options and a working inquiry form.
+  These were two separate routes: messaging and email form delivery."
+year: "05.2026"
+role: Web development and automation
+stack:
+  - Web widgets
+  - Telegram
+  - MAX
+  - VK
+  - Forms
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The site needed updated contact options and a working inquiry form. These
+      were two separate routes: messaging and email form delivery."
+  - type: text
+    title: How it works
+    body: Agreed to replace the old widget rather than edit its unknown
+      implementation, and confirmed links for MAX, Telegram and VK. Installed
+      the replacement and handed it over for review. Fixed the form separately
+      and asked the client to check for an email submission.
+  - type: text
+    title: Result and verification
+    body: The client accepted delivery. The archive does not separately confirm
+      receipt of a test email; this was not a Telegram Bot API integration.

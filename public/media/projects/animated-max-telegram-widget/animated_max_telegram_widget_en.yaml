@@ -1,0 +1,26 @@
+title: An animated MAX and Telegram contact widget
+tagline: The site needed to make two contact channels visible on mobile without
+  taking up space with two persistent floating buttons.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - Web widgets
+  - MAX
+  - Telegram
+  - Mobile QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The site needed to make two contact channels visible on mobile without
+      taking up space with two persistent floating buttons.
+  - type: text
+    title: How it works
+    body: Installed the widget and checked the mobile presentation. When the client
+      requested two visible icons, explained how simultaneous display differed
+      from the agreed rotation. Reduced the switching interval from three
+      seconds to two, then to one after feedback.
+  - type: text
+    title: Result and verification
+    body: The client approved the result and accepted the order. The delivered
+      widget alternates the icons rather than showing two flashing buttons at
+      the same time.

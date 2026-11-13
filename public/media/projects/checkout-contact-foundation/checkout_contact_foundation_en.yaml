@@ -1,0 +1,27 @@
+title: Improving WooCommerce checkout and contact flows
+tagline: An existing store needed a clearer checkout, a usable contact page and
+  predictable behavior for delivery and pickup.
+year: "03.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Contact Form 7
+  - Shipping
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: An existing store needed a clearer checkout, a usable contact page and
+      predictable behavior for delivery and pickup.
+  - type: text
+    title: How it works
+    body: Prepared checkout and contact pages, explained how to place Contact Form 7
+      with a shortcode and showed the standard customer account page. Restored
+      catalog pricing after feedback, configured flat-rate delivery and
+      demonstrated how fields differed for delivery and pickup. An update
+      exposed a homepage dependency on the parent theme; the client restored it
+      from backup.
+  - type: text
+    title: Result and verification
+    body: The client explicitly approved checkout and the contact page. Moving all
+      changes to the child theme, integrating a carrier API and verifying bank
+      settlement were outside the confirmed result.

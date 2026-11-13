@@ -1,0 +1,27 @@
+title: Upgrading WordPress to PHP 8 and repairing layout
+tagline: The client needed to upgrade the runtime without losing a working
+  catalog. Before switching, layout defects had to be separated from the
+  behavior of manually populated tag pages.
+year: "06.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - PHP 8
+  - Responsive layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed to upgrade the runtime without losing a working catalog.
+      Before switching, layout defects had to be separated from the behavior of
+      manually populated tag pages.
+  - type: text
+    title: How it works
+    body: Reviewed the catalog and distinguished live filters from manually
+      maintained landing pages. Agreed to use an existing hosting snapshot as
+      the rollback point. After moving to PHP 8, fixed layout issues and
+      rechecked the key areas described in the handoff.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the site was working and accepted the order. The
+      exact PHP minor version and a complete catalog regression test were not
+      recorded.

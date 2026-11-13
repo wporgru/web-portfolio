@@ -1,0 +1,27 @@
+title: Displaying availability and lead times on the Aurora storefront
+tagline: After feed setup, shoppers needed to distinguish items available now
+  from those with a lead time. Repeated messages were cluttering the product
+  list.
+year: "09.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - W3 Total Cache
+  - Product labels
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After feed setup, shoppers needed to distinguish items available now from
+      those with a lead time. Repeated messages were cluttering the product
+      list.
+  - type: text
+    title: How it works
+    body: Implemented the agreed lead-time display and reviewed it with the client.
+      Removed a redundant message beneath the product-list button while
+      preserving the badge. Separately investigated a price discrepancy that
+      disappeared after clearing W3 Total Cache.
+  - type: text
+    title: Result and verification
+    body: The client approved the presentation and paid for this stage separately
+      from feed integration. Historical lead times are not current delivery
+      terms, and a full cache audit was outside scope.

@@ -1588,3 +1588,107 @@ projects:
       - label: Читать кейс
         url: /showcase/elementor-editor-recovery
         type: product
+  - slug: php8-layout-repair
+    name: Переход на PHP 8 с ремонтом вёрстки сайта
+    year: "06.2026"
+    role: Веб-разработка и автоматизация
+    description: Заказчику нужно было обновить серверную среду, не потеряв рабочий
+      каталог. Перед обновлением требовалось отделить дефекты интерфейса от
+      особенностей вручную заполненных страниц меток.
+    stack:
+      - WordPress
+      - PHP 8
+      - Responsive layout
+    order: 90
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/php8-layout-repair
+        type: product
+  - slug: aurora-storefront-availability
+    name: Статусы наличия и сроки поставки на витрине Aurora
+    year: "09.2025"
+    role: Веб-разработка и автоматизация
+    description: После настройки фида покупателю нужно было показать, какие товары
+      можно получить сразу, а какие придётся ждать. Повторяющиеся подписи в
+      списке перегружали карточки.
+    stack:
+      - WooCommerce
+      - W3 Total Cache
+      - Product labels
+    order: 91
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/aurora-storefront-availability
+        type: product
+  - slug: checkout-contact-foundation
+    name: Доработка оформления заказа и контактов WooCommerce
+    year: "03.2025"
+    role: Веб-разработка и автоматизация
+    description: Действующему магазину требовались более понятное оформление
+      покупки, рабочая контактная страница и предсказуемое поведение при
+      доставке и самовывозе.
+    stack:
+      - WooCommerce
+      - Contact Form 7
+      - Shipping
+    order: 92
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/checkout-contact-foundation
+        type: product
+  - slug: animated-max-telegram-widget
+    name: Анимированный контактный виджет MAX и Telegram
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: На сайте нужно было сделать два канала связи заметными на
+      мобильном, не занимая место двумя постоянными плавающими кнопками.
+    stack:
+      - Web widgets
+      - MAX
+      - Telegram
+      - Mobile QA
+    order: 93
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/animated-max-telegram-widget
+        type: product
+  - slug: messenger-and-email-leads
+    name: Новый виджет связи и восстановление формы заявки
+    year: "05.2026"
+    role: Веб-разработка и автоматизация
+    description: "На сайте нужно было обновить способы связи и вернуть
+      работоспособность формы заявки. Это два разных пути: переписка в
+      мессенджере и отправка обращения на почту."
+    stack:
+      - Web widgets
+      - Telegram
+      - MAX
+      - VK
+      - Forms
+    order: 94
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/messenger-and-email-leads
+        type: product
+  - slug: osmokot-product-page-repair
+    name: Ремонт карточки товара и шаблона магазина «Осмокот»
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: На карточке товара возникала ошибка, а в шаблоне отображался лишний
+      блок меню. Задача заключалась в восстановлении товарной страницы без
+      переделки всего магазина.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Yandex Metrica
+    order: 95
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/osmokot-product-page-repair
+        type: product

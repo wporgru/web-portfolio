@@ -1,0 +1,25 @@
+title: Repairing an Osmokot product page and its template
+tagline: A product page failed and its template displayed an unnecessary menu
+  block. The task was to restore the page without rebuilding the store.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Yandex Metrica
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A product page failed and its template displayed an unnecessary menu
+      block. The task was to restore the page without rebuilding the store.
+  - type: text
+    title: How it works
+    body: Fixed the error and linked it to the Metrica plugin in the handoff.
+      Removed the redundant menu from the template and separately tested
+      submitting a review. Suggested direct tracking code as a recommendation,
+      not as an integration already delivered.
+  - type: text
+    title: Result and verification
+    body: The client accepted the repair and left feedback. Metrica setup, WebP
+      conversion and performance optimization were discussed separately and are
+      not part of this result.

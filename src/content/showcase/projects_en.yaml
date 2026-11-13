@@ -1573,3 +1573,104 @@ projects:
       - label: Read case study
         url: /showcase/elementor-editor-recovery/en
         type: product
+  - slug: php8-layout-repair
+    name: Upgrading WordPress to PHP 8 and repairing layout
+    year: "06.2026"
+    role: Web development and automation
+    description: The client needed to upgrade the runtime without losing a working
+      catalog. Before switching, layout defects had to be separated from the
+      behavior of manually populated tag pages.
+    stack:
+      - WordPress
+      - PHP 8
+      - Responsive layout
+    order: 90
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/php8-layout-repair/en
+        type: product
+  - slug: aurora-storefront-availability
+    name: Displaying availability and lead times on the Aurora storefront
+    year: "09.2025"
+    role: Web development and automation
+    description: After feed setup, shoppers needed to distinguish items available
+      now from those with a lead time. Repeated messages were cluttering the
+      product list.
+    stack:
+      - WooCommerce
+      - W3 Total Cache
+      - Product labels
+    order: 91
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/aurora-storefront-availability/en
+        type: product
+  - slug: checkout-contact-foundation
+    name: Improving WooCommerce checkout and contact flows
+    year: "03.2025"
+    role: Web development and automation
+    description: An existing store needed a clearer checkout, a usable contact page
+      and predictable behavior for delivery and pickup.
+    stack:
+      - WooCommerce
+      - Contact Form 7
+      - Shipping
+    order: 92
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/checkout-contact-foundation/en
+        type: product
+  - slug: animated-max-telegram-widget
+    name: An animated MAX and Telegram contact widget
+    year: "02.2026"
+    role: Web development and automation
+    description: The site needed to make two contact channels visible on mobile
+      without taking up space with two persistent floating buttons.
+    stack:
+      - Web widgets
+      - MAX
+      - Telegram
+      - Mobile QA
+    order: 93
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/animated-max-telegram-widget/en
+        type: product
+  - slug: messenger-and-email-leads
+    name: Replacing a contact widget and restoring an inquiry form
+    year: "05.2026"
+    role: Web development and automation
+    description: "The site needed updated contact options and a working inquiry
+      form. These were two separate routes: messaging and email form delivery."
+    stack:
+      - Web widgets
+      - Telegram
+      - MAX
+      - VK
+      - Forms
+    order: 94
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/messenger-and-email-leads/en
+        type: product
+  - slug: osmokot-product-page-repair
+    name: Repairing an Osmokot product page and its template
+    year: "02.2024"
+    role: Web development and automation
+    description: A product page failed and its template displayed an unnecessary
+      menu block. The task was to restore the page without rebuilding the store.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Yandex Metrica
+    order: 95
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/osmokot-product-page-repair/en
+        type: product
