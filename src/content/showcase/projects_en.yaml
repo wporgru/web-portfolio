@@ -1774,3 +1774,106 @@ projects:
       - label: Read case study
         url: /showcase/tub-store-mobile-layout/en
         type: product
+  - slug: cosmetics-woodmart-migration
+    name: Migrating a cosmetics store to WoodMart using staging
+    year: "09.2025"
+    role: Web development and automation
+    description: The live store needed to stay intact until the replacement was
+      approved. The brief was to build on a copy, compare pages and only then
+      switch the live storefront.
+    stack:
+      - WordPress
+      - WoodMart
+      - Elementor
+      - Staging
+    order: 102
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/cosmetics-woodmart-migration/en
+        type: product
+  - slug: daichi-two-stage-catalog
+    name: Importing the Daichi catalog through a two-part API
+    year: "04.2025"
+    role: Web development and automation
+    description: An HVAC storefront needed products and prices alongside
+      specifications and imagery. The supplier exposed these separately, and
+      categories had to fit the store’s own structure.
+    stack:
+      - WordPress
+      - API integration
+      - Product data
+    order: 103
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/daichi-two-stage-catalog/en
+        type: product
+  - slug: champs-catalog-structure
+    name: Catalog structure, filters and URLs for the Champs store
+    year: "10.2023"
+    role: Web development and automation
+    description: Demo pages and navigation issues remained after theme setup. The
+      store needed a cleaner catalog without losing agreed tags and information
+      pages.
+    stack:
+      - WooCommerce
+      - Filter Everything Pro
+      - Technical SEO
+    order: 104
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/champs-catalog-structure/en
+        type: product
+  - slug: paypal-checkout-presentation
+    name: Simplifying the checkout form after PayPal setup
+    year: "02.2024"
+    role: Web development and automation
+    description: After functional repairs, checkout needed fewer distractions and an
+      agreed presentation. Reconnecting the payment account was not part of this
+      phase.
+    stack:
+      - WooCommerce
+      - PayPal
+      - Checkout design
+    order: 105
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/paypal-checkout-presentation/en
+        type: product
+  - slug: cleaning-messenger-buttons
+    name: WhatsApp and Telegram contact buttons for a cleaning website
+    year: "06.2025"
+    role: Web development and automation
+    description: The cleaning company wanted visitors to contact it directly through
+      messaging apps for services including event cleaning.
+    stack:
+      - WordPress
+      - WhatsApp
+      - Telegram
+    order: 106
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/cleaning-messenger-buttons/en
+        type: product
+  - slug: tub-store-guest-checkout
+    name: Performance work and guest checkout for a soaking tub store
+    year: "11.2024"
+    role: Web development and automation
+    description: After the mobile layout work, the client requested a separate phase
+      to review speed and remove unnecessary registration from the purchase
+      flow, including on phones.
+    stack:
+      - WordPress
+      - WooCommerce
+      - PageSpeed
+      - Checkout
+    order: 107
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/tub-store-guest-checkout/en
+        type: product

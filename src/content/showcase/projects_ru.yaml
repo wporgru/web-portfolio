@@ -1795,3 +1795,108 @@ projects:
       - label: Читать кейс
         url: /showcase/tub-store-mobile-layout
         type: product
+  - slug: cosmetics-woodmart-migration
+    name: Переезд косметического магазина на WoodMart через стенд
+    year: "09.2025"
+    role: Веб-разработка и автоматизация
+    description: Действующий магазин нельзя было менять до согласования новой
+      версии. Нужно было перенести оформление на отдельную копию, сверить
+      страницы и только потом заменить основную витрину.
+    stack:
+      - WordPress
+      - WoodMart
+      - Elementor
+      - Staging
+    order: 102
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/cosmetics-woodmart-migration
+        type: product
+  - slug: daichi-two-stage-catalog
+    name: Импорт ассортимента Daichi через двухчастный API
+    year: "04.2025"
+    role: Веб-разработка и автоматизация
+    description: Для магазина климатического оборудования требовались не только
+      товары и цены, но и характеристики с изображениями. Поставщик отдавал эти
+      данные раздельно, а категории нужно было согласовать со структурой
+      магазина.
+    stack:
+      - WordPress
+      - API integration
+      - Product data
+    order: 103
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/daichi-two-stage-catalog
+        type: product
+  - slug: champs-catalog-structure
+    name: Структура каталога, фильтры и адреса магазина Champs
+    year: "10.2023"
+    role: Веб-разработка и автоматизация
+    description: После установки темы оставались демонстрационные страницы и вопросы
+      к навигации. Нужно было привести каталог в порядок, сохранив согласованные
+      метки и информационные разделы.
+    stack:
+      - WooCommerce
+      - Filter Everything Pro
+      - Technical SEO
+    order: 104
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/champs-catalog-structure
+        type: product
+  - slug: paypal-checkout-presentation
+    name: Упрощение формы чекаута после настройки PayPal
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: После функционального ремонта требовалось убрать лишние элементы
+      формы и согласовать её внешний вид. Платёжный аккаунт повторно подключать
+      не нужно было.
+    stack:
+      - WooCommerce
+      - PayPal
+      - Checkout design
+    order: 105
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/paypal-checkout-presentation
+        type: product
+  - slug: cleaning-messenger-buttons
+    name: Кнопки WhatsApp и Telegram для клинингового сайта
+    year: "06.2025"
+    role: Веб-разработка и автоматизация
+    description: На существующем сайте клининговой компании клиент хотел добавить
+      прямой переход в мессенджеры для обращений по уборке, в том числе после
+      мероприятий.
+    stack:
+      - WordPress
+      - WhatsApp
+      - Telegram
+    order: 106
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/cleaning-messenger-buttons
+        type: product
+  - slug: tub-store-guest-checkout
+    name: Оптимизация магазина купелей и гостевого чекаута
+    year: "11.2024"
+    role: Веб-разработка и автоматизация
+    description: "После этапа мобильной вёрстки клиент вернулся с отдельной задачей:
+      проверить скорость и убрать лишнюю регистрацию на пути к заказу, в том
+      числе с телефона."
+    stack:
+      - WordPress
+      - WooCommerce
+      - PageSpeed
+      - Checkout
+    order: 107
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/tub-store-guest-checkout
+        type: product

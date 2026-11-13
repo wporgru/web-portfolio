@@ -1,0 +1,23 @@
+title: WhatsApp and Telegram contact buttons for a cleaning website
+tagline: The cleaning company wanted visitors to contact it directly through
+  messaging apps for services including event cleaning.
+year: "06.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - WhatsApp
+  - Telegram
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The cleaning company wanted visitors to contact it directly through
+      messaging apps for services including event cleaning.
+  - type: text
+    title: How it works
+    body: Installed WhatsApp and Telegram contact buttons on the existing WordPress
+      site and handed them over. The channels were added to the existing
+      storefront without a platform migration or page rebuild.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and confirmed it was working in a review. CRM
+      integration, removal of other widgets and lead growth are not claimed.

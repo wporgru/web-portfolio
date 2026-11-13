@@ -1,0 +1,28 @@
+title: Migrating a cosmetics store to WoodMart using staging
+tagline: The live store needed to stay intact until the replacement was
+  approved. The brief was to build on a copy, compare pages and only then switch
+  the live storefront.
+year: "09.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - WoodMart
+  - Elementor
+  - Staging
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The live store needed to stay intact until the replacement was approved.
+      The brief was to build on a copy, compare pages and only then switch the
+      live storefront.
+  - type: text
+    title: How it works
+    body: Set up a copy, installed WoodMart and showed where to edit blocks, colors
+      and the mobile banner. Compared both versions in separate Excel exports
+      and flagged a missing sale page. Revised the homepage and proceeded with
+      the replacement after client approval.
+  - type: text
+    title: Result and verification
+    body: The client accepted the result. The staging address was part of the same
+      project. A full SEO field audit and restoration of the sale page were not
+      confirmed.

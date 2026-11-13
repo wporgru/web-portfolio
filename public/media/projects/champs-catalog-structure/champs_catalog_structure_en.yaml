@@ -1,0 +1,27 @@
+title: Catalog structure, filters and URLs for the Champs store
+tagline: Demo pages and navigation issues remained after theme setup. The store
+  needed a cleaner catalog without losing agreed tags and information pages.
+year: "10.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Filter Everything Pro
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Demo pages and navigation issues remained after theme setup. The store
+      needed a cleaner catalog without losing agreed tags and information pages.
+  - type: text
+    title: How it works
+    body: Removed redundant demo pages and configured URL transliteration. In
+      response to feedback, removed the sidebar, created separate mat delivery
+      and review pages, and filled blog metadata. Adjusted filter font sizing
+      and addressed conflicting heading capitalization, explaining the
+      difference between WooCommerce attribute archives and Filter Everything
+      Pro pages.
+  - type: text
+    title: Result and verification
+    body: The order closed automatically. Individual improvements were documented,
+      while concerns about long URLs and collapsible filters were not confirmed
+      resolved.

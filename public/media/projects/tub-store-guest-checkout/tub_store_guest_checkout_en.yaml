@@ -1,0 +1,28 @@
+title: Performance work and guest checkout for a soaking tub store
+tagline: After the mobile layout work, the client requested a separate phase to
+  review speed and remove unnecessary registration from the purchase flow,
+  including on phones.
+year: "11.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - PageSpeed
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After the mobile layout work, the client requested a separate phase to
+      review speed and remove unnecessary registration from the purchase flow,
+      including on phones.
+  - type: text
+    title: How it works
+    body: Shared PageSpeed checks and screenshots. When registration appeared on
+      mobile, distinguished signed-in from guest behavior and reported disabling
+      registration. Cart labels and links were documented separately, but that
+      document does not verify every requested change.
+  - type: text
+    title: Result and verification
+    body: The client confirmed improvements and accepted the stage. The final
+      PageSpeed score and a complete guest-flow test matrix were not recovered,
+      so no percentage speed gain is claimed.

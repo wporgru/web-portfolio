@@ -1,0 +1,27 @@
+title: Importing the Daichi catalog through a two-part API
+tagline: An HVAC storefront needed products and prices alongside specifications
+  and imagery. The supplier exposed these separately, and categories had to fit
+  the store’s own structure.
+year: "04.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - API integration
+  - Product data
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: An HVAC storefront needed products and prices alongside specifications and
+      imagery. The supplier exposed these separately, and categories had to fit
+      the store’s own structure.
+  - type: text
+    title: How it works
+    body: "Identified a usable API and mapped the workflow: products and prices
+      first, then specifications and images from the second part, including
+      paginated data. Agreed to use API images instead of the client’s prepared
+      assets and handed the work over for review."
+  - type: text
+    title: Result and verification
+    body: The client reviewed the result, asked about editing subcategories and
+      accepted the work. Exact import totals, full API page coverage and
+      recurring updates were not confirmed.

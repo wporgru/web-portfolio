@@ -1,0 +1,26 @@
+title: Simplifying the checkout form after PayPal setup
+tagline: After functional repairs, checkout needed fewer distractions and an
+  agreed presentation. Reconnecting the payment account was not part of this
+  phase.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - PayPal
+  - Checkout design
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After functional repairs, checkout needed fewer distractions and an agreed
+      presentation. Reconnecting the payment account was not part of this phase.
+  - type: text
+    title: How it works
+    body: Reviewed form width, font weight and the blocks shown at checkout. Hid
+      order notes and the agreed elements. Left PayPal in place after the client
+      withdrew the request to move it, and the client handled the final label
+      change.
+  - type: text
+    title: Result and verification
+    body: The client accepted the presentation as a separate order. This was
+      interface work, not a new payment integration or a test across every
+      device.
