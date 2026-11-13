@@ -1,0 +1,30 @@
+title: Reworking service pages for a construction company
+tagline: The construction company needed to remove demo projects and give
+  visitors a clear route from an overview of the company to the relevant service
+  and an inquiry.
+year: "01.2018"
+role: Web development and automation
+stack:
+  - WordPress
+  - Service pages
+  - Navigation
+  - On-page SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The construction company needed to remove demo projects and give visitors
+      a clear route from an overview of the company to the relevant service and
+      an inquiry.
+  - type: text
+    title: How it works
+    body: Hid demo projects and renamed the homepage section to Popular Projects.
+      Revised service icons and prepared the client’s PDF certificates for
+      online viewing. Used the old site as a reference for service pages and
+      navigation, and reported updating metadata and image alt text. Added a
+      policy link to the form and a back-to-top button.
+  - type: text
+    title: Result and verification
+    body: The client gained a structure for adding real projects instead of demo
+      content. The order closed automatically and later received positive
+      feedback. Full form, mobile-device and search-index verification was not
+      recorded.

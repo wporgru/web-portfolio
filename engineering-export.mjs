@@ -5,6 +5,8 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const projectStages = {
+  'fashion-data-preparation': ['circa-outlet-catalog', 'Следующий этап: загрузка каталога и вывод размеров', 'Next stage: catalog import and size display'],
+  'circa-outlet-catalog': ['fashion-data-preparation', 'Предыдущий этап: сбор и проверка товарных данных', 'Previous stage: collecting and validating product data'],
   'hockey-insales-woodmart': ['hockey-storefront-ux', 'Следующий этап: карточки и мобильная витрина', 'Next stage: product cards and mobile storefront'],
   'hockey-storefront-ux': ['hockey-insales-woodmart', 'Предыдущий этап: перенос каталога из InSales', 'Previous stage: catalog migration from InSales'],
 };

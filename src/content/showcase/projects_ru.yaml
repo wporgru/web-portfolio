@@ -2337,3 +2337,73 @@ projects:
       - label: Читать кейс
         url: /showcase/bowling-woodmart-launch
         type: product
+  - slug: fashion-data-preparation
+    name: Парсинг каталога одежды и подготовка данных к импорту
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Нужно было получить не копию всего каталога поставщика, а таблицу,
+      с которой можно начать настройку импорта. В выборку требовалось включить
+      позиции, обозначенные как доступные, и разложить характеристики по
+      отдельным полям.
+    stack:
+      - Web scraping
+      - XLSX
+      - Data validation
+    order: 133
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/fashion-data-preparation
+        type: product
+  - slug: construction-services-site
+    name: Перестройка раздела услуг строительной компании
+    year: "01.2018"
+    role: Веб-разработка и автоматизация
+    description: Строительной компании требовалось убрать из витрины шаблонные
+      проекты и помочь посетителям перейти от общего знакомства с компанией к
+      нужной услуге и заявке.
+    stack:
+      - WordPress
+      - Service pages
+      - Navigation
+      - On-page SEO
+    order: 134
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/construction-services-site
+        type: product
+  - slug: wordpress-editor-map-recovery
+    name: Восстановление сохранения правок в редакторе WordPress
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: Нужно было вернуть возможность сохранять правки. Для клиента было
+      важно отличить ошибку редактора от ситуации, когда изменения уже
+      сохранены, но публичная страница показывает старую версию из кэша.
+    stack:
+      - WordPress
+      - WP Rocket
+      - Visual editor
+    order: 135
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-editor-map-recovery
+        type: product
+  - slug: child-theme-store-training
+    name: Ремонт темы и обучение владельца магазина
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: Владельцу нужно было восстановить действующую тему и получить
+      понятный способ самостоятельно добавлять товары и редактировать магазин.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Child theme
+      - Training
+    order: 136
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/child-theme-store-training
+        type: product

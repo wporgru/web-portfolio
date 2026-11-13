@@ -24,3 +24,8 @@ blocks:
       approved the size display and accepted the work. Separate men’s and
       women’s sections, navigation and the homepage were discussed as the next
       stage.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Previous stage: collecting and validating product data"
+        url: /showcase/fashion-data-preparation/en/

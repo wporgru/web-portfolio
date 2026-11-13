@@ -1,0 +1,34 @@
+title: Collecting a fashion catalog and preparing import data
+tagline: "The client needed more than a raw copy of the supplier catalog: the
+  spreadsheet had to be ready for import mapping, retain the selected available
+  items and expose specifications in separate fields."
+year: "02.2026"
+role: Web development and automation
+stack:
+  - Web scraping
+  - XLSX
+  - Data validation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The client needed more than a raw copy of the supplier catalog: the
+      spreadsheet had to be ready for import mapping, retain the selected
+      available items and expose specifications in separate fields."
+  - type: text
+    title: How it works
+    body: Checked source availability, configured the collector and ran a long
+      extraction. Delivered a full workbook and a separate import selection. The
+      prepared file had 22 columns instead of the original nine, making
+      attributes easier to map individually. A later check of the original
+      workbooks found every selected URL in the full export.
+  - type: text
+    title: Result and verification
+    body: "The client accepted the workbooks. The full export contained 28,664
+      nonempty rows; the prepared selection held 9,683 rows and 9,645 unique
+      URLs. These are data counts, not published products: store setup and
+      loading were separate tasks."
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: catalog import and size display"
+        url: /showcase/circa-outlet-catalog/en/

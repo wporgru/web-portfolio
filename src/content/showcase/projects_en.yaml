@@ -2306,3 +2306,71 @@ projects:
       - label: Read case study
         url: /showcase/bowling-woodmart-launch/en
         type: product
+  - slug: fashion-data-preparation
+    name: Collecting a fashion catalog and preparing import data
+    year: "02.2026"
+    role: Web development and automation
+    description: "The client needed more than a raw copy of the supplier catalog:
+      the spreadsheet had to be ready for import mapping, retain the selected
+      available items and expose specifications in separate fields."
+    stack:
+      - Web scraping
+      - XLSX
+      - Data validation
+    order: 133
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/fashion-data-preparation/en
+        type: product
+  - slug: construction-services-site
+    name: Reworking service pages for a construction company
+    year: "01.2018"
+    role: Web development and automation
+    description: The construction company needed to remove demo projects and give
+      visitors a clear route from an overview of the company to the relevant
+      service and an inquiry.
+    stack:
+      - WordPress
+      - Service pages
+      - Navigation
+      - On-page SEO
+    order: 134
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/construction-services-site/en
+        type: product
+  - slug: wordpress-editor-map-recovery
+    name: Restoring edit saving in the WordPress editor
+    year: "04.2026"
+    role: Web development and automation
+    description: The client needed to save edits again and distinguish a broken
+      editor from saved changes hidden behind a cached public page.
+    stack:
+      - WordPress
+      - WP Rocket
+      - Visual editor
+    order: 135
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-editor-map-recovery/en
+        type: product
+  - slug: child-theme-store-training
+    name: Repairing a store theme and training its owner
+    year: "02.2024"
+    role: Web development and automation
+    description: The owner needed the existing theme repaired and a clear way to add
+      products and edit the store independently.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Child theme
+      - Training
+    order: 136
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/child-theme-store-training/en
+        type: product

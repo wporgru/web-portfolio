@@ -1,0 +1,26 @@
+title: Restoring edit saving in the WordPress editor
+tagline: The client needed to save edits again and distinguish a broken editor
+  from saved changes hidden behind a cached public page.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - WP Rocket
+  - Visual editor
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client needed to save edits again and distinguish a broken editor from
+      saved changes hidden behind a cached public page.
+  - type: text
+    title: How it works
+    body: After resolving access, checked that the editor saved changes and
+      suggested clearing WP Rocket cache to review the public output. Delivered
+      two screenshots showing the editable map with layers and its public
+      appearance with roads and parking. Asked the client to check the blog and
+      other sections separately.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. The handoff records working edit saves and
+      shows the specific map scenario. This is not a full page regression or
+      security audit.

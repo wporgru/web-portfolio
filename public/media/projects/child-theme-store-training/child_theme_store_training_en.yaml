@@ -1,0 +1,26 @@
+title: Repairing a store theme and training its owner
+tagline: The owner needed the existing theme repaired and a clear way to add
+  products and edit the store independently.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Child theme
+  - Training
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The owner needed the existing theme repaired and a clear way to add
+      products and edit the store independently.
+  - type: text
+    title: How it works
+    body: Repaired the parent theme and checked child-theme installation. Explained
+      how to prepare and upload the theme archive. Used one mattress listing as
+      a worked example and supplied editing materials so the owner could repeat
+      the workflow for their own products.
+  - type: text
+    title: Result and verification
+    body: The client accepted the repair and consultation. The sample shows the
+      editing workflow rather than a bulk catalog import. Payments, delivery and
+      speed work were discussed but were not part of the delivery.
