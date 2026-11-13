@@ -1,0 +1,27 @@
+title: Importing a training course catalog from Excel
+tagline: The training provider needed to move its prepared course catalog into
+  website categories. The source was a large client spreadsheet, not an existing
+  LMS database.
+year: "05.2025"
+role: Web development and automation
+stack:
+  - Excel
+  - WordPress
+  - Content import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The training provider needed to move its prepared course catalog into
+      website categories. The source was a large client spreadsheet, not an
+      existing LMS database.
+  - type: text
+    title: How it works
+    body: Worked with a main spreadsheet of roughly 54 MB and a smaller test file.
+      Prepared the WordPress import and incorporated price and TITLE changes
+      during review. The client received the catalog in its new structure for
+      acceptance.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and highlighted responsiveness to changes and
+      early delivery. Course totals were not independently recounted, and
+      payments or lesson access were not part of the scope.

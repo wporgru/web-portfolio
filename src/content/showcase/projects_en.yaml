@@ -576,3 +576,139 @@ projects:
       - label: Read case study
         url: /showcase/site-cleanup-recovery/en
         type: product
+  - slug: legacy-php-compatibility
+    name: Updating RT-Theme 19 and its extension for PHP 8.5
+    year: "07.2026"
+    role: Web development and automation
+    description: After a PHP upgrade, an RT-Theme 19 site showed errors on both the
+      public site and in admin. The brief was to keep the existing design while
+      restoring the affected screens.
+    stack:
+      - PHP
+      - WordPress
+      - Legacy code
+    order: 31
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/legacy-php-compatibility/en
+        type: product
+  - slug: catalog-relaunch-cleanup
+    name: Preparing a WooCommerce store for a catalog relaunch
+    year: "02.2026"
+    role: Web development and automation
+    description: The store was moving to a new supplier catalog. Before importing
+      it, the old taxonomy and accumulated extensions needed to be cleaned up.
+    stack:
+      - WooCommerce
+      - WordPress
+      - Database cleanup
+    order: 32
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/catalog-relaunch-cleanup/en
+        type: product
+  - slug: blog-rebuild-astra
+    name: Migrating a WordPress blog to a clean Astra setup
+    year: "03.2025"
+    role: Web development and automation
+    description: Move a legacy blog and its images, restore article presentation and
+      prepare the new installation for launch on the original domain.
+    stack:
+      - WordPress
+      - Astra
+      - Technical SEO
+    order: 33
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/blog-rebuild-astra/en
+        type: product
+  - slug: checkout-tax-breakdown
+    name: Separating product and shipping VAT in WooCommerce
+    year: "01.2026"
+    role: Web development and automation
+    description: The customer needed product and shipping charges to be split into
+      the appropriate tax rates at checkout and on handoff to the payment
+      provider.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - CDEK
+    order: 34
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/checkout-tax-breakdown/en
+        type: product
+  - slug: yookassa-test-order
+    name: Integrating YooKassa and testing payment and receipt
+    year: "03.2026"
+    role: Web development and automation
+    description: Add an online payment flow to an existing service store. Handoff
+      needed evidence of a completed payment, not just a redirect to the payment
+      screen.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Payment QA
+    order: 35
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/yookassa-test-order/en
+        type: product
+  - slug: course-catalog-excel
+    name: Importing a training course catalog from Excel
+    year: "05.2025"
+    role: Web development and automation
+    description: The training provider needed to move its prepared course catalog
+      into website categories. The source was a large client spreadsheet, not an
+      existing LMS database.
+    stack:
+      - Excel
+      - WordPress
+      - Content import
+    order: 36
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/course-catalog-excel/en
+        type: product
+  - slug: pool-sites-forms
+    name: Refining inquiry forms across a group of pool websites
+    year: "06.2025"
+    role: Web development and automation
+    description: Several related sites needed improvements to inquiry forms, headers
+      and notifications without rewriting the client's editorial or legal
+      material.
+    stack:
+      - WordPress
+      - HTML
+      - CSS
+      - Forms
+    order: 37
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/pool-sites-forms/en
+        type: product
+  - slug: woodmart-category-tools
+    name: Configuring a tool store and automating its categories
+    year: "02.2024"
+    role: Web development and automation
+    description: "A prepared product export needed a usable tool-store storefront:
+      configure pages, remove unnecessary controls and make categories easier to
+      recognize."
+    stack:
+      - WooCommerce
+      - WoodMart
+      - PHP
+      - ChatGPT
+    order: 38
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woodmart-category-tools/en
+        type: product

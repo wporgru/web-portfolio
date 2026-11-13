@@ -1,0 +1,27 @@
+title: Integrating YooKassa and testing payment and receipt
+tagline: Add an online payment flow to an existing service store. Handoff needed
+  evidence of a completed payment, not just a redirect to the payment screen.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YooKassa
+  - Payment QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Add an online payment flow to an existing service store. Handoff needed
+      evidence of a completed payment, not just a redirect to the payment
+      screen.
+  - type: text
+    title: How it works
+    body: Confirmed company details and service type, connected YooKassa and created
+      a 10-ruble test product. The work thread records a successful payment and
+      order email. At the client's request, the old T-Bank option was taken out
+      of the flow rather than treated as a repair included in the new
+      integration.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the receipt, ran a separate check and accepted
+      delivery. The historical transaction does not replace a current payment
+      test, and full email translation was outside the confirmed scope.

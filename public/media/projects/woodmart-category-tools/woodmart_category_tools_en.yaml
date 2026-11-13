@@ -1,0 +1,29 @@
+title: Configuring a tool store and automating its categories
+tagline: "A prepared product export needed a usable tool-store storefront:
+  configure pages, remove unnecessary controls and make categories easier to
+  recognize."
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WoodMart
+  - PHP
+  - ChatGPT
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "A prepared product export needed a usable tool-store storefront:
+      configure pages, remove unnecessary controls and make categories easier to
+      recognize."
+  - type: text
+    title: How it works
+    body: Installed WoodMart, agreed a wordmark with an icon and removed
+      registration, profile and sharing controls on desktop and mobile.
+      Configured filters based on available attributes. Assigned category images
+      in bulk using a helper plugin I had previously written with ChatGPT
+      assistance.
+  - type: text
+    title: Result and verification
+    body: The client received a configured storefront and an explanation of why
+      filters depend on each category's data. The helper plugin was a delivery
+      tool, not a separate product handed over to the client.

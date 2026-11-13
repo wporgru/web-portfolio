@@ -1,0 +1,26 @@
+title: Preparing a WooCommerce store for a catalog relaunch
+tagline: The store was moving to a new supplier catalog. Before importing it,
+  the old taxonomy and accumulated extensions needed to be cleaned up.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WordPress
+  - Database cleanup
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store was moving to a new supplier catalog. Before importing it, the
+      old taxonomy and accumulated extensions needed to be cleaned up.
+  - type: text
+    title: How it works
+    body: Removed the previous products, categories, tags and attributes within the
+      agreed scope. Updated extensions, removed unused components and cleaned
+      residual plugin records from the database. Added protection and
+      temporarily restricted public access and indexing while the storefront was
+      empty.
+  - type: text
+    title: Result and verification
+    body: The handoff reported a reduction from more than 55 plugins to 35. The
+      client reviewed and accepted this stage. The next task was loading the new
+      assortment, which is outside this case.

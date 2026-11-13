@@ -1,0 +1,26 @@
+title: Separating product and shipping VAT in WooCommerce
+tagline: The customer needed product and shipping charges to be split into the
+  appropriate tax rates at checkout and on handoff to the payment provider.
+year: "01.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YooKassa
+  - CDEK
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The customer needed product and shipping charges to be split into the
+      appropriate tax rates at checkout and on handoff to the payment provider.
+  - type: text
+    title: How it works
+    body: Checked the product tax classes and reconfigured store-wide calculations.
+      Separated product and delivery taxes, applied the agreed rate to paid CDEK
+      options and excluded free methods. Updated the shipping module after a
+      checkout failure and restored the YooKassa handoff. Removed the
+      problematic shipping method from the active flow.
+  - type: text
+    title: Result and verification
+    body: The client reported a successful receipt and refund and accepted the work.
+      That confirms a specific flow, not an independent audit of the fiscal
+      provider or every cart combination.

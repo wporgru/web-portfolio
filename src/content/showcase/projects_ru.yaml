@@ -579,3 +579,141 @@ projects:
       - label: Читать кейс
         url: /showcase/site-cleanup-recovery
         type: product
+  - slug: legacy-php-compatibility
+    name: Адаптация RT-Theme 19 и её расширения к PHP 8.5
+    year: "07.2026"
+    role: Веб-разработка и автоматизация
+    description: После смены версии PHP у сайта на RT-Theme 19 возникли ошибки не
+      только на витрине, но и в админке. Задача — сохранить действующий дизайн и
+      восстановить рабочие экраны, не затевая смену темы.
+    stack:
+      - PHP
+      - WordPress
+      - Legacy code
+    order: 31
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/legacy-php-compatibility
+        type: product
+  - slug: catalog-relaunch-cleanup
+    name: Подготовка WooCommerce к перезапуску каталога
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Магазин предстояло наполнить ассортиментом новых поставщиков. До
+      импорта нужно было освободить каталог от прежней структуры и разобраться с
+      накопившимися расширениями.
+    stack:
+      - WooCommerce
+      - WordPress
+      - Database cleanup
+    order: 32
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/catalog-relaunch-cleanup
+        type: product
+  - slug: blog-rebuild-astra
+    name: Переезд WordPress-блога на чистую установку Astra
+    year: "03.2025"
+    role: Веб-разработка и автоматизация
+    description: Перенести старый блог вместе с изображениями, восстановить
+      нормальное отображение материалов и подготовить новый сайт к запуску на
+      прежнем домене.
+    stack:
+      - WordPress
+      - Astra
+      - Technical SEO
+    order: 33
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/blog-rebuild-astra
+        type: product
+  - slug: checkout-tax-breakdown
+    name: Разные ставки НДС для товаров и доставки WooCommerce
+    year: "01.2026"
+    role: Веб-разработка и автоматизация
+    description: Заказчику требовалось, чтобы стоимость товара и доставки правильно
+      раскладывалась по налоговым ставкам при оформлении и передаче в платёжный
+      сервис.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - CDEK
+    order: 34
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/checkout-tax-breakdown
+        type: product
+  - slug: yookassa-test-order
+    name: Подключение ЮKassa с проверкой оплаты и чека
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: Подключить рабочий сценарий онлайн-оплаты к существующему магазину
+      услуг. На сдаче требовалось убедиться, что покупатель не просто доходит до
+      платёжного экрана, а может завершить оплату.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Payment QA
+    order: 35
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/yookassa-test-order
+        type: product
+  - slug: course-catalog-excel
+    name: Импорт каталога курсов учебного центра из Excel
+    year: "05.2025"
+    role: Веб-разработка и автоматизация
+    description: Учебному центру нужно было перенести подготовленный каталог в
+      категории сайта. Источником служила большая клиентская таблица, а не
+      готовая база LMS.
+    stack:
+      - Excel
+      - WordPress
+      - Content import
+    order: 36
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/course-catalog-excel
+        type: product
+  - slug: pool-sites-forms
+    name: Доработка форм и интерфейса сети бассейновых сайтов
+    year: "06.2025"
+    role: Веб-разработка и автоматизация
+    description: На нескольких связанных сайтах требовалось привести в порядок
+      заявки, шапку и уведомления, не меняя редакционные и юридические материалы
+      клиента.
+    stack:
+      - WordPress
+      - HTML
+      - CSS
+      - Forms
+    order: 37
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/pool-sites-forms
+        type: product
+  - slug: woodmart-category-tools
+    name: Настройка магазина инструментов и автоматизация категорий
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: "На готовой товарной выгрузке нужно было собрать удобную витрину
+      магазина инструментов: настроить страницы, убрать лишние элементы
+      интерфейса и сделать категории визуально понятными."
+    stack:
+      - WooCommerce
+      - WoodMart
+      - PHP
+      - ChatGPT
+    order: 38
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woodmart-category-tools
+        type: product

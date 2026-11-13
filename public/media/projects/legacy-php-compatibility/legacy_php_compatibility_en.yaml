@@ -1,0 +1,27 @@
+title: Updating RT-Theme 19 and its extension for PHP 8.5
+tagline: After a PHP upgrade, an RT-Theme 19 site showed errors on both the
+  public site and in admin. The brief was to keep the existing design while
+  restoring the affected screens.
+year: "07.2026"
+role: Web development and automation
+stack:
+  - PHP
+  - WordPress
+  - Legacy code
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After a PHP upgrade, an RT-Theme 19 site showed errors on both the public
+      site and in admin. The brief was to keep the existing design while
+      restoring the affected screens.
+  - type: text
+    title: How it works
+    body: Diagnosed compatibility issues across two connected components and patched
+      five theme files and three extension files. The changes covered theme
+      functions, styles, metaboxes, shortcodes and review rendering. I then
+      revisited the homepage, reviews, editor and appearance customizer.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the site looked right and accepted the work. The
+      handoff records fixes for critical errors on the checked screens and lists
+      remaining noncritical legacy warnings separately.

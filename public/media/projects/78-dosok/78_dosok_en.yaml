@@ -42,6 +42,14 @@ blocks:
         url: https://kwork.ru/portfolio/23517585
       - label: After redesign
         url: https://kwork.ru/portfolio/23517588
+  - type: text
+    title: What the store gained
+    bullets:
+      - A new theme and a redesigned storefront instead of isolated patches to
+        the old template.
+      - Fewer overlapping extensions to maintain and check after updates.
+      - A more prominent homepage catalog and easier access to the cart on
+        mobile.
   - type: image
     title: Public website snapshot
     src: /media/projects/78-dosok/site.png

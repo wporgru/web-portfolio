@@ -1,0 +1,26 @@
+title: Migrating a WordPress blog to a clean Astra setup
+tagline: Move a legacy blog and its images, restore article presentation and
+  prepare the new installation for launch on the original domain.
+year: "03.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - Astra
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Move a legacy blog and its images, restore article presentation and
+      prepare the new installation for launch on the original domain.
+  - type: text
+    title: How it works
+    body: Moved the articles to a clean WordPress installation and agreed on Astra.
+      Fixed portrait image proportions, configured breadcrumbs, related posts,
+      footer, Metrica and ad tags. Supported the nameserver switch and delivered
+      an audit covering double-slash URLs, missing images and problematic
+      YouTube embeds.
+  - type: text
+    title: Result and verification
+    body: The handoff records 636 transferred articles with images. The client
+      confirmed the launch and SSL. Bulk repairs to old images and redirects
+      were a separate engagement; ad revenue was not measured.

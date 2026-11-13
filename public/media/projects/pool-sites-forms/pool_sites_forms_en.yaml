@@ -1,0 +1,26 @@
+title: Refining inquiry forms across a group of pool websites
+tagline: Several related sites needed improvements to inquiry forms, headers and
+  notifications without rewriting the client's editorial or legal material.
+year: "06.2025"
+role: Web development and automation
+stack:
+  - WordPress
+  - HTML
+  - CSS
+  - Forms
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Several related sites needed improvements to inquiry forms, headers and
+      notifications without rewriting the client's editorial or legal material.
+  - type: text
+    title: How it works
+    body: Traced a styling issue to unclosed markup in a header widget. Reworked
+      forms, added a form to one homepage and continued debugging after reports
+      of missing submissions and hidden fields. Configured notifications and
+      disabled comments where agreed.
+  - type: text
+    title: Result and verification
+    body: The client confirmed after retesting that submissions arrived and fields
+      looked right. Drafting legal copy and independently testing every form
+      across the network were outside the result.
