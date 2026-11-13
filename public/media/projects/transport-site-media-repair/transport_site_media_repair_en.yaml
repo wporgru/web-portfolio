@@ -1,0 +1,24 @@
+title: Responsive video and navigation on a transport website
+tagline: Repaired a live transport site’s video layout, service and fleet icons
+  and broken links.
+year: "04.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Responsive video
+  - Navigation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Repaired a live transport site’s video layout, service and fleet icons and
+      broken links.
+  - type: text
+    title: How it works
+    body: Confirmed the hosting target and checked backup availability. Adjusted
+      video sizing and sent it for review. Restored icons without redundant
+      labels in the service and fleet sections, refined vehicle pages and fixed
+      a broken link on the homepage and service pages.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the improvement and accepted the work. A backup
+      restore and a complete cross-browser check were not documented.

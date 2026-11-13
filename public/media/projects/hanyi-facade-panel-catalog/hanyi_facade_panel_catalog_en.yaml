@@ -1,0 +1,24 @@
+title: Building out the Hanyi facade panel catalog
+tagline: Built out the facade panel and accessories section on a supplier’s
+  existing site, using its dry-mix section as a layout reference.
+year: "11.2024"
+role: Web development and automation
+stack:
+  - Catalog content
+  - XLSX
+  - Product photography
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built out the facade panel and accessories section on a supplier’s
+      existing site, using its dry-mix section as a layout reference.
+  - type: text
+    title: How it works
+    body: "Clarified where product names, prices and descriptions should come from:
+      price and copy were supplied in separate spreadsheets, with images and a
+      banner from the client. The agreed scope was one banner and 16 listings.
+      Shared the finished section for review."
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. This was catalog preparation from multiple
+      inputs, not automated price synchronization or a new website build.

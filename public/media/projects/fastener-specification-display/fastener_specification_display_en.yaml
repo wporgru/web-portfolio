@@ -1,0 +1,33 @@
+title: Restoring fastener specifications in WooCommerce
+tagline: Specifications were already present in the store admin but missing from
+  the international standards block on product pages. The work focused on
+  restoring display, not taking credit for the original import.
+year: "06.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - ACF
+  - WP All Import
+  - Product attributes
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Specifications were already present in the store admin but missing from
+      the international standards block on product pages. The work focused on
+      restoring display, not taking credit for the original import.
+  - type: text
+    title: How it works
+    body: Distinguished standard WooCommerce attributes from the ACF fields read by
+      the template. Checked the issue on an actual bolt listing rather than a
+      test product. Identified the import extension needed for custom fields and
+      agreed on the setup with the client.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the intended display and commissioned product filters
+      as a follow-up. The complete reimport procedure and an independent product
+      count were not preserved.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: attribute filters for the catalog"
+        url: /showcase/fastener-catalog-attribute-filters/en/

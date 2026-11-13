@@ -2858,3 +2858,123 @@ projects:
       - label: Read case study
         url: /showcase/acf-homepage-update-recovery/en
         type: product
+  - slug: hanyi-facade-panel-catalog
+    name: Building out the Hanyi facade panel catalog
+    year: "11.2024"
+    role: Web development and automation
+    description: Built out the facade panel and accessories section on a supplier’s
+      existing site, using its dry-mix section as a layout reference.
+    stack:
+      - Catalog content
+      - XLSX
+      - Product photography
+    order: 165
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/hanyi-facade-panel-catalog/en
+        type: product
+  - slug: yandex-crawl-parameter-cleanup
+    name: Cleaning up redundant URLs in Yandex Webmaster
+    year: "04.2024"
+    role: Web development and automation
+    description: Refined a store’s search configuration to address parameter URLs
+      and a redundant sitemap while improving description templates for
+      categories and products.
+    stack:
+      - WordPress
+      - Yandex Webmaster
+      - Clean-param
+      - Metadata
+    order: 166
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/yandex-crawl-parameter-cleanup/en
+        type: product
+  - slug: lighting-catalog-staged-import
+    name: Staged import of a large lighting catalog
+    year: "04.2024"
+    role: Web development and automation
+    description: Prepared a large lighting catalog for a staged import. The main
+      constraint was not data extraction itself but long-running jobs stopping
+      on the host.
+    stack:
+      - WooCommerce
+      - Web scraping
+      - Cron
+      - Hosting
+    order: 167
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/lighting-catalog-staged-import/en
+        type: product
+  - slug: lighting-catalog-navigation
+    name: Navigation and filters for a large lighting catalog
+    year: "05.2024"
+    role: Web development and automation
+    description: Configured sidebar categories, section filters and readable styles
+      for a large WooCommerce catalog without cloning the reference storefront.
+    stack:
+      - WooCommerce
+      - CSS
+      - Taxonomy
+      - Catalog filters
+    order: 168
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/lighting-catalog-navigation/en
+        type: product
+  - slug: fastener-specification-display
+    name: Restoring fastener specifications in WooCommerce
+    year: "06.2024"
+    role: Web development and automation
+    description: Specifications were already present in the store admin but missing
+      from the international standards block on product pages. The work focused
+      on restoring display, not taking credit for the original import.
+    stack:
+      - WooCommerce
+      - ACF
+      - WP All Import
+      - Product attributes
+    order: 169
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/fastener-specification-display/en
+        type: product
+  - slug: fastener-catalog-attribute-filters
+    name: Attribute filters for a fastener catalog
+    year: "06.2024"
+    role: Web development and automation
+    description: After restoring specification display, set up filters to help
+      shoppers narrow the assortment without crowding category pages with
+      irrelevant options.
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Catalog filters
+    order: 170
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/fastener-catalog-attribute-filters/en
+        type: product
+  - slug: transport-site-media-repair
+    name: Responsive video and navigation on a transport website
+    year: "04.2024"
+    role: Web development and automation
+    description: Repaired a live transport site’s video layout, service and fleet
+      icons and broken links.
+    stack:
+      - WordPress
+      - Responsive video
+      - Navigation
+    order: 171
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/transport-site-media-repair/en
+        type: product

@@ -1,0 +1,27 @@
+title: Cleaning up redundant URLs in Yandex Webmaster
+tagline: Refined a store’s search configuration to address parameter URLs and a
+  redundant sitemap while improving description templates for categories and
+  products.
+year: "04.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Yandex Webmaster
+  - Clean-param
+  - Metadata
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined a store’s search configuration to address parameter URLs and a
+      redundant sitemap while improving description templates for categories and
+      products.
+  - type: text
+    title: How it works
+    body: Added a Clean-Param rule for etext, disabled a redundant sitemap,
+      corrected category descriptions and provided a fallback product
+      description template. Also refined viewport and theme settings. The
+      handoff report records 180 URLs submitted for recrawl in Yandex Webmaster.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage. Recrawl requests were tracked separately;
+      they do not establish indexing or ranking changes.

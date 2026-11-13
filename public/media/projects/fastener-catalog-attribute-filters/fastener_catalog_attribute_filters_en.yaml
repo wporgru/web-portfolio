@@ -1,0 +1,30 @@
+title: Attribute filters for a fastener catalog
+tagline: After restoring specification display, set up filters to help shoppers
+  narrow the assortment without crowding category pages with irrelevant options.
+year: "06.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product attributes
+  - Catalog filters
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After restoring specification display, set up filters to help shoppers
+      narrow the assortment without crowding category pages with irrelevant
+      options.
+  - type: text
+    title: How it works
+    body: Built filters for meaningful attributes, excluding empty or administrative
+      values. Explained how the full catalog shows the broader set while
+      categories expose only relevant attributes. Proposed separating the real
+      category hierarchy from the sidebar menu.
+  - type: text
+    title: Result and verification
+    body: The client accepted the setup. A complete taxonomy redesign remained a
+      recommendation; speed and every filter combination were not measured.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Previous stage: restoring specification display"
+        url: /showcase/fastener-specification-display/en/

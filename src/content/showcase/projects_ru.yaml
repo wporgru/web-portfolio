@@ -2894,3 +2894,124 @@ projects:
       - label: Читать кейс
         url: /showcase/acf-homepage-update-recovery
         type: product
+  - slug: hanyi-facade-panel-catalog
+    name: Наполнение раздела фасадных панелей Ханьи
+    year: "11.2024"
+    role: Веб-разработка и автоматизация
+    description: Подготовил раздел фасадных панелей и комплектующих на действующем
+      сайте поставщика по образцу уже оформленного раздела сухих смесей.
+    stack:
+      - Catalog content
+      - XLSX
+      - Product photography
+    order: 165
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/hanyi-facade-panel-catalog
+        type: product
+  - slug: yandex-crawl-parameter-cleanup
+    name: Устранение лишних URL в Яндекс Вебмастере
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: Доработал поисковые настройки магазина, чтобы параметрические
+      адреса и лишняя карта сайта не мешали обходу, а категории и товары
+      получали осмысленные описания.
+    stack:
+      - WordPress
+      - Yandex Webmaster
+      - Clean-param
+      - Metadata
+    order: 166
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/yandex-crawl-parameter-cleanup
+        type: product
+  - slug: lighting-catalog-staged-import
+    name: Поэтапный импорт большого каталога освещения
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: Подготовил каталог освещения к загрузке по частям. Главным
+      ограничением было не извлечение данных само по себе, а прерывание
+      длительных задач на хостинге.
+    stack:
+      - WooCommerce
+      - Web scraping
+      - Cron
+      - Hosting
+    order: 167
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/lighting-catalog-staged-import
+        type: product
+  - slug: lighting-catalog-navigation
+    name: Навигация и фильтры большого каталога освещения
+    year: "05.2024"
+    role: Веб-разработка и автоматизация
+    description: "Настроил навигацию для большого WooCommerce-каталога: категории в
+      боковой колонке, фильтры в разделах и читаемые стили без копирования чужой
+      витрины целиком."
+    stack:
+      - WooCommerce
+      - CSS
+      - Taxonomy
+      - Catalog filters
+    order: 168
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/lighting-catalog-navigation
+        type: product
+  - slug: fastener-specification-display
+    name: Восстановление характеристик крепежа в WooCommerce
+    year: "06.2024"
+    role: Веб-разработка и автоматизация
+    description: Характеристики уже были в административной части магазина, но
+      покупатели не видели их в блоке зарубежных стандартов. Задача —
+      восстановить вывод, не приписывая себе исходный импорт.
+    stack:
+      - WooCommerce
+      - ACF
+      - WP All Import
+      - Product attributes
+    order: 169
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/fastener-specification-display
+        type: product
+  - slug: fastener-catalog-attribute-filters
+    name: Фильтры каталога крепежа по характеристикам
+    year: "06.2024"
+    role: Веб-разработка и автоматизация
+    description: После восстановления вывода характеристик настроил фильтры, которые
+      помогают сужать ассортимент и не перегружают страницы нерелевантными
+      параметрами.
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Catalog filters
+    order: 170
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/fastener-catalog-attribute-filters
+        type: product
+  - slug: transport-site-media-repair
+    name: Адаптивное видео и навигация сайта перевозок
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: "Восстановил элементы действующего сайта перевозок: видео, иконки
+      на страницах услуг и автопарка, а также неработающие переходы."
+    stack:
+      - WordPress
+      - Responsive video
+      - Navigation
+    order: 171
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/transport-site-media-repair
+        type: product

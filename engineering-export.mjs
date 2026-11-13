@@ -10,6 +10,10 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'fastener-specification-display': ['fastener-catalog-attribute-filters', 'Следующий этап: фильтры каталога по характеристикам', 'Next stage: attribute filters for the catalog'],
+  'fastener-catalog-attribute-filters': ['fastener-specification-display', 'Предыдущий этап: восстановление вывода характеристик', 'Previous stage: restoring specification display'],
+  'lighting-catalog-staged-import': ['lighting-catalog-navigation', 'Связанный этап: навигация и фильтры витрины', 'Related stage: storefront navigation and filters'],
+  'lighting-catalog-navigation': ['lighting-catalog-staged-import', 'Связанный этап: сбор и поэтапный импорт', 'Related stage: data collection and staged import'],
   'taxi-vehicle-booking': ['taxi-mobile-car-cards', 'Следующий этап: карточки автомобилей и мобильная вёрстка', 'Next stage: car cards and mobile layout'],
   'taxi-mobile-car-cards': ['taxi-vehicle-booking', 'Предыдущий этап: форма выбора автомобиля и FAQ', 'Previous stage: vehicle selection form and FAQ'],
   'fashion-data-preparation': ['circa-outlet-catalog', 'Следующий этап: загрузка каталога и вывод размеров', 'Next stage: catalog import and size display'],

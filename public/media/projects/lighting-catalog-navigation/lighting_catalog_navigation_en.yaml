@@ -1,0 +1,31 @@
+title: Navigation and filters for a large lighting catalog
+tagline: Configured sidebar categories, section filters and readable styles for
+  a large WooCommerce catalog without cloning the reference storefront.
+year: "05.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CSS
+  - Taxonomy
+  - Catalog filters
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Configured sidebar categories, section filters and readable styles for a
+      large WooCommerce catalog without cloning the reference storefront.
+  - type: text
+    title: How it works
+    body: Configured category and subcategory display and styled the filters with
+      CSS. After client review, hid irrelevant sections and attributes from the
+      storefront without treating that as data deletion. Explained how to
+      reorder categories in the admin area.
+  - type: text
+    title: Result and verification
+    body: The client accepted the layout. Completion of the parallel import and
+      faster filters were not verified separately; this stage covered
+      navigation, not benchmarking.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: data collection and staged import"
+        url: /showcase/lighting-catalog-staged-import/en/
