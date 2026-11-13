@@ -1,0 +1,27 @@
+title: Recovering the Streamlit dashboard for WPGenCRM
+tagline: An internal dashboard combined search API configuration with working
+  connections. Editing fields caused conflicts with widget state and could crash
+  the interface.
+year: "2026"
+role: Web development and automation
+stack:
+  - Python
+  - Streamlit
+  - REST API
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: An internal dashboard combined search API configuration with working
+      connections. Editing fields caused conflicts with widget state and could
+      crash the interface.
+  - type: text
+    title: How it works
+    body: Recovered the dashboard module and separated editable parameter state from
+      the widget lifecycle. Preserved configuration flows for search services
+      and connection checks. The source is a completed-work report in
+      Antigravity, not an implementation plan.
+  - type: text
+    title: Result and verification
+    body: The report records successful syntax validation and 13 passing tests. This
+      was local tool recovery; configuration, settings screens and credentials
+      are not published.

@@ -17,6 +17,13 @@ blocks:
     body: Migrated the agreed content, aligned the category structure and configured
       regular-expression redirects. The project report records checks on five
       old URL patterns.
+  - type: text
+    title: Implementation and scope
+    body: Service pages had been tied to theme-specific modules. Moving them to
+      posts required an agreed category structure and redirect rules for
+      different legacy URL patterns. The client removed duplicates and I
+      configured redirects. The report records five URL patterns tested; it does
+      not claim a full crawl or indexing verification.
   - type: image
     title: Public website snapshot
     src: /media/projects/megawatt-content/site.png

@@ -19,7 +19,7 @@ const { data, showcaseHref, langLinks, lang, ogImage } = Astro.props;
 // title — load it eagerly instead of the lazy default every other image
 // block uses (same reasoning as ProjectCard's eager showcase-cover).
 const blocks = data.blocks ?? [];
-const firstImageIdx = blocks.findIndex((b: any) => b.type === 'image');
+
 
 const projectTitle = data?.title || 'CV Hub';
 const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WPORGRU`;
@@ -38,7 +38,7 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
 
   <!-- Nav: back + share button -->
   <nav class="project-page__nav">
-    <a class="btn btn--ghost" href={showcaseHref}>← Showcase</a>
+    <a class="btn btn--ghost" href={showcaseHref}>{lang === "ru" ? "← Все проекты" : "← All projects"}</a>
     
     {data.shareable === true && (
       <button 
@@ -77,7 +77,7 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
       <div class="project-page__tags-row">
         {data.platforms?.length > 0 && (
           <div class="row">
-            <div class="row__title">Platforms</div>
+            <div class="row__title">{lang === "ru" ? "Платформы" : "Platforms"}</div>
             <ul class="tags">
               {data.platforms.map((p: string) => <li class="tag">{p}</li>)}
             </ul>
@@ -85,7 +85,7 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
         )}
         {data.stack?.length > 0 && (
           <div class="row">
-            <div class="row__title">Stack</div>
+            <div class="row__title">{lang === "ru" ? "Технологии" : "Stack"}</div>
             <ul class="tags">
               {data.stack.map((s: string) => <li class="tag">{s}</li>)}
             </ul>
@@ -104,14 +104,19 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
   </header>
 
   <!-- Blocks -->
-  {blocks.map((block: any, i: number) => {
+  {blocks.map((block: any) => {
     if (block.type === 'divider') return <Divider />;
     if (block.type === 'text')    return <TextBlock  {...block} />;
-    if (block.type === 'image')   return <ImageBlock {...block} eager={i === firstImageIdx} />;
+    if (block.type === 'image')   return <ImageBlock lang={lang} {...block} eager={false} />;
     if (block.type === 'video')   return <VideoBlock {...block} />;
     if (block.type === 'code')    return <CodeBlock   {...block} />;
     return null;
   })}
+  <aside class="card" style="margin-top: 2rem">
+    <h2>{lang === 'ru' ? 'Нужна похожая работа?' : 'Need something similar?'}</h2>
+    <p>{lang === 'ru' ? 'Пришлите ссылку на проект и опишите, что должно измениться.' : 'Send a project link and tell me what you need to change.'}</p>
+    <a class="btn" href="https://t.me/wporgru">{lang === 'ru' ? 'Обсудить задачу' : 'Discuss your project'}</a>
+  </aside>
 
 </div>
 

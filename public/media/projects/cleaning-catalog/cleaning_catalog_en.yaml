@@ -17,6 +17,13 @@ blocks:
     body: Switched from a watermarked source to an agreed alternative, prepared an
       XLSX export, imported the catalog, converted specifications to global
       attributes and moved brands into a dedicated taxonomy.
+  - type: text
+    title: Implementation and scope
+    body: The inquiry catalog did not need invented prices or SKUs; the client
+      approved importing records with those fields absent. After changing the
+      source, I delivered an XLSX export and checked the transfer. Brands
+      previously scattered across attributes were moved into their own taxonomy
+      for independent management. A complete final feed was not verified.
   - type: image
     title: Public website snapshot
     src: /media/projects/cleaning-catalog/site.png

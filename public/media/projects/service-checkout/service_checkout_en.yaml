@@ -16,6 +16,13 @@ blocks:
     title: Work delivered
     body: Configured checkout and hidden service products, aligned pricing and
       removed a no-prepayment notice that conflicted with the new payment flow.
+  - type: text
+    title: Implementation and scope
+    body: Service records were not meant to look like ordinary store products. I
+      checked the relationship between each service page and its hidden product,
+      aligned pricing in both places and explained future updates. The handoff
+      reported a flow test. The site screenshot does not prove payment or the
+      current gateway configuration.
   - type: image
     title: Public website snapshot
     src: /media/projects/service-checkout/site.png

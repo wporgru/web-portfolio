@@ -17,6 +17,14 @@ blocks:
     body: Used compatible export tools, imported both catalogs and investigated
       duplicate categories. Delivered redirect rules for old URLs; activation on
       the legacy host was not independently confirmed.
+  - type: text
+    title: Implementation and scope
+    body: The legacy WooCommerce installation limited export options, so I used
+      compatible tools instead of updating the source site. The combined
+      catalogs contained categories with the same names but different data.
+      After importing, I removed the /shop/ path segment and traced
+      missing-looking descriptions to the layout rather than the import. The
+      client retained responsibility for replacing brand assets.
   - type: image
     title: Public website snapshot
     src: /media/projects/tea-shop/site.png

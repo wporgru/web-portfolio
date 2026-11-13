@@ -330,3 +330,138 @@ projects:
       - label: Read case study
         url: /showcase/bowling-migration/en
         type: product
+  - slug: seo-dashboard
+    name: SEO dashboard for analytics and indexing history
+    year: "2026"
+    role: Web development and automation
+    description: Traffic, search visibility, content revisions and recrawl requests
+      lived in separate services. The goal was a local tool for comparing
+      periods and diagnosing drops without writing to the CMS.
+    stack:
+      - Python
+      - SQLite
+      - REST API
+    order: 16
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/seo-dashboard/en
+        type: product
+  - slug: medicine-data
+    name: Medical reference data and normalization in Directus
+    year: "2026"
+    role: Web development and automation
+    description: One medicine may appear under different labels in registries and
+      catalogs. The data model needs to distinguish active ingredients,
+      registered products and retail packs.
+    stack:
+      - Directus
+      - SQLite
+      - Python
+      - ETL
+    order: 17
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/medicine-data/en
+        type: product
+  - slug: medimarket-catalog
+    name: "MediMarket24: catalog builds from affiliate feeds"
+    year: "2026"
+    role: Web development and automation
+    description: Refresh offers and prices without losing editorial content,
+      category structure or product URLs between builds.
+    stack:
+      - Astro
+      - Node.js
+      - Python
+      - GitHub Actions
+    order: 18
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/medimarket-catalog/en
+        type: product
+  - slug: sport-affiliate
+    name: "Sport-man: handling expired affiliate offers"
+    year: "10.2026"
+    role: Web development and automation
+    description: An affiliate campaign no longer had a confirmed replacement. The
+      task was to remove stale click-outs without substituting a similar but
+      different product.
+    stack:
+      - PHP
+      - WooCommerce
+      - Admitad
+    order: 19
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/sport-affiliate/en
+        type: product
+  - slug: wellland-facets
+    name: "Wellland: global attributes and product filters"
+    year: "10.2026"
+    role: Web development and automation
+    description: Local attributes appeared on product pages but did not power native
+      filters. Migration had to preserve values, categories and visibility
+      without merging incompatible units.
+    stack:
+      - WooCommerce
+      - PHP
+      - Data migration
+    order: 20
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wellland-facets/en
+        type: product
+  - slug: autopartner-import
+    name: "Autopartner: catalog update package"
+    year: "10.2026"
+    role: Web development and automation
+    description: Prepare new product records and images as a handoff that can be
+      imported independently of the supplier’s source files.
+    stack:
+      - WooCommerce
+      - CSV
+      - WebP
+    order: 21
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/autopartner-import/en
+        type: product
+  - slug: wp-studio
+    name: "WP.ORG.RU: independent web studio site"
+    year: "2026"
+    role: Web development and automation
+    description: Shorten the path from service information to work samples and
+      contact, without making every landing page identical.
+    stack:
+      - WordPress
+      - PHP
+      - CSS
+    order: 22
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wp-studio/en
+        type: product
+  - slug: wpgencrm-recovery
+    name: Recovering the Streamlit dashboard for WPGenCRM
+    year: "2026"
+    role: Web development and automation
+    description: An internal dashboard combined search API configuration with
+      working connections. Editing fields caused conflicts with widget state and
+      could crash the interface.
+    stack:
+      - Python
+      - Streamlit
+      - REST API
+    order: 23
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wpgencrm-recovery/en
+        type: product

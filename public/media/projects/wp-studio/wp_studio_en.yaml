@@ -1,0 +1,23 @@
+title: "WP.ORG.RU: independent web studio site"
+tagline: Shorten the path from service information to work samples and contact,
+  without making every landing page identical.
+year: "2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - PHP
+  - CSS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Shorten the path from service information to work samples and contact,
+      without making every landing page identical.
+  - type: text
+    title: How it works
+    body: The public site separates services, portfolio, knowledge base and contact.
+      Antigravity working artifacts cover service and portfolio templates,
+      alignment of hero sections and navigation between them.
+  - type: text
+    title: Result and verification
+    body: The public site lets visitors browse services and contact the developer.
+      Internal plans are not presented as deployed work and are not published.

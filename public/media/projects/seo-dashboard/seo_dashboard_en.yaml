@@ -1,0 +1,27 @@
+title: SEO dashboard for analytics and indexing history
+tagline: Traffic, search visibility, content revisions and recrawl requests
+  lived in separate services. The goal was a local tool for comparing periods
+  and diagnosing drops without writing to the CMS.
+year: "2026"
+role: Web development and automation
+stack:
+  - Python
+  - SQLite
+  - REST API
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Traffic, search visibility, content revisions and recrawl requests lived
+      in separate services. The goal was a local tool for comparing periods and
+      diagnosing drops without writing to the CMS.
+  - type: text
+    title: How it works
+    body: Integrated Yandex Webmaster, Metrica, Google Search Console and GA4.
+      Stored snapshots and revisions in SQLite, with separate views for queries,
+      URLs and exclusion reasons. Matched rewrite dates from a spreadsheet to
+      before-and-after observation windows.
+  - type: text
+    title: Result and verification
+    body: Scheduled collection does not modify the site or submit URLs. Submission
+      is explicit and each service response is recorded. Failed refreshes
+      preserve previous values and incomplete exports are flagged.

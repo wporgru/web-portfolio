@@ -1,0 +1,22 @@
+title: "Autopartner: catalog update package"
+tagline: Prepare new product records and images as a handoff that can be
+  imported independently of the supplier’s source files.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CSV
+  - WebP
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepare new product records and images as a handoff that can be imported
+      independently of the supplier’s source files.
+  - type: text
+    title: How it works
+    body: Assembled a CSV with 32 product rows and 73 columns, prepared 220 WebP
+      files and documented data and media constraints.
+  - type: text
+    title: Result and verification
+    body: The result is an import-ready package, not a claim of production
+      deployment.

@@ -14,6 +14,13 @@ blocks:
     title: Work delivered
     body: Diagnosed the conflict between Elementor and the theme header, proposed a
       new homepage layout, revised navigation and added a floating cart.
+  - type: text
+    title: Implementation and scope
+    body: "The issue went beyond appearance: Elementor overrode the theme header,
+      while parts of the mobile interface lived in the old child theme. I traced
+      which template controlled each element before proposing a homepage
+      redesign. The client approved the direction before further changes. The
+      screenshot shows a later public storefront, not the handoff mockup."
   - type: image
     title: Public website snapshot
     src: /media/projects/78-dosok/site.png

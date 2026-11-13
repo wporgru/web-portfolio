@@ -17,6 +17,13 @@ blocks:
     body: Configured eight attributes, enabled AJAX results and recorded setup
       instructions. After resolving a URL-prefix conflict, the client created a
       new filter independently.
+  - type: text
+    title: Implementation and scope
+    body: I started with pole count and added the remaining attributes. After
+      feedback about the page jumping, I switched from full reloads to AJAX. The
+      instructions covered shortcodes, layout, filter sets, category assignment
+      and labels. I also resolved a URL-prefix conflict for insulators, after
+      which the client created a filter independently.
   - type: image
     title: Public website snapshot
     src: /media/projects/ajax-filters/site.png

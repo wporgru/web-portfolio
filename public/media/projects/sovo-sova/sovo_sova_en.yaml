@@ -15,6 +15,13 @@ blocks:
     body: Built a new homepage on staging, added articles and translated visible
       interface strings. The handoff reported that URLs were retained; the final
       domain switch was outside the confirmed stage.
+  - type: text
+    title: Implementation and scope
+    body: I used a staging copy to avoid changing the live storefront before
+      approval. I added articles to the homepage, reviewed their ordering and
+      replaced the icon with a text wordmark. The SEO plugin stayed in place
+      pending a separate configuration decision. The client accepted phase one;
+      the case does not claim a domain switch or SEO settings migration.
   - type: image
     title: Public website snapshot
     src: /media/projects/sovo-sova/site.png

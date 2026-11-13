@@ -72,7 +72,8 @@ const metaImage = ogImage
       ? ogImage
       : `${siteUrl}${base}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`)
   : `${siteUrl}${base}/media/portfolio-cover.svg`;
-const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
+const slash = (p: string) => p.endsWith('/') ? p : p + '/';
+const canonicalUrl = `${siteUrl}${slash(Astro.url.pathname)}`;
 
 // --- Navigation ---
 function buildHref(profileSlug: string, langId: string): string {
@@ -156,9 +157,9 @@ const jsonLdSafe = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
     {showHreflang && (
       <>
         {langLinks.map((l) => (
-          <link rel="alternate" hreflang={l.id} href={`${siteUrl}${l.href}`} />
+          <link rel="alternate" hreflang={l.id} href={`${siteUrl}${slash(l.href)}`} />
         ))}
-        <link rel="alternate" hreflang="x-default" href={`${siteUrl}${langLinks.find((l) => l.id === defaultLang)?.href ?? langLinks[0].href}`} />
+        <link rel="alternate" hreflang="x-default" href={`${siteUrl}${slash(langLinks.find((l) => l.id === defaultLang)?.href ?? langLinks[0].href)}`} />
       </>
     )}
 

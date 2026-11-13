@@ -330,3 +330,139 @@ projects:
       - label: Читать кейс
         url: /showcase/bowling-migration
         type: product
+  - slug: seo-dashboard
+    name: "SEO-дашборд: аналитика и история индексации"
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: Показатели трафика, выдачи, рерайтов и отправки на переобход
+      хранились в разных сервисах. Нужен был локальный инструмент для сравнения
+      периодов и диагностики просадок без записи в CMS.
+    stack:
+      - Python
+      - SQLite
+      - REST API
+    order: 16
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/seo-dashboard
+        type: product
+  - slug: medicine-data
+    name: Медицинские справочники и нормализация в Directus
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: Один препарат может встречаться в реестрах и каталогах под разными
+      обозначениями. Нужна структура, которая различает действующее вещество,
+      зарегистрированный препарат и товарную упаковку.
+    stack:
+      - Directus
+      - SQLite
+      - Python
+      - ETL
+    order: 17
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/medicine-data
+        type: product
+  - slug: medimarket-catalog
+    name: "MediMarket24: сборка каталога из партнёрских фидов"
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: Обновлять предложения и цены, не теряя редакционные данные,
+      структуру категорий и ссылки на карточки при очередной сборке.
+    stack:
+      - Astro
+      - Node.js
+      - Python
+      - GitHub Actions
+    order: 18
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/medimarket-catalog
+        type: product
+  - slug: sport-affiliate
+    name: "Sport-man: управление неактуальными предложениями"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Партнёрская кампания перестала давать подходящую замену. Нужно было
+      убрать недействующие переходы, не подставляя покупателю похожий товар
+      другой модели.
+    stack:
+      - PHP
+      - WooCommerce
+      - Admitad
+    order: 19
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/sport-affiliate
+        type: product
+  - slug: wellland-facets
+    name: "Wellland: глобальные атрибуты и фильтры каталога"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Локальные свойства отображались на карточках, но не участвовали в
+      штатных фильтрах. При переносе нужно было сохранить исходные
+      характеристики, категории и видимость, не объединяя разные единицы.
+    stack:
+      - WooCommerce
+      - PHP
+      - Data migration
+    order: 20
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wellland-facets
+        type: product
+  - slug: autopartner-import
+    name: "Автопартнёр: пакет обновления каталога"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Подготовить клиенту новые карточки и изображения так, чтобы
+      выгрузка и медиа могли быть переданы на импорт независимо от исходных
+      файлов поставщика.
+    stack:
+      - WooCommerce
+      - CSV
+      - WebP
+    order: 21
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/autopartner-import
+        type: product
+  - slug: wp-studio
+    name: "WP.ORG.RU: сайт веб-мастерской"
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: Сделать путь от описания услуги к кейсам и контакту короче, не
+      превращая сайт в каталог одинаковых посадочных страниц.
+    stack:
+      - WordPress
+      - PHP
+      - CSS
+    order: 22
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wp-studio
+        type: product
+  - slug: wpgencrm-recovery
+    name: Восстановление панели WPGenCRM на Streamlit
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: Внутренняя панель объединяла настройки поисковых API и рабочих
+      подключений. При редактировании полей значения конфликтовали с состоянием
+      виджетов, из-за чего интерфейс падал.
+    stack:
+      - Python
+      - Streamlit
+      - REST API
+    order: 23
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wpgencrm-recovery
+        type: product

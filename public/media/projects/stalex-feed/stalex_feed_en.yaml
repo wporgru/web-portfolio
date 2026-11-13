@@ -17,6 +17,13 @@ blocks:
     body: Configured product and category imports, separated structured attributes
       from free-text specifications and corrected stock mapping. The initial
       import report recorded 719 items.
+  - type: text
+    title: Implementation and scope
+    body: The feed included structured fields and separate specification text. I
+      mapped the former to WooCommerce attributes and kept the latter in product
+      descriptions so useful data was not lost. After the first run, I corrected
+      the availability rule and reran the import. The client confirmed the fix
+      and acknowledged more than 700 imported items.
   - type: image
     title: Public website snapshot
     src: /media/projects/stalex-feed/site.png

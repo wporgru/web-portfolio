@@ -16,6 +16,13 @@ blocks:
     body: Migrated the store and repaired several problematic single-variation
       product pages. Kept the variable product structure where buyers needed a
       choice of sizes or weights.
+  - type: text
+    title: Implementation and scope
+    body: Before migrating, I reviewed cache preloading and suspicious traffic, but
+      stalls returned and no single cause was established. After migration I
+      repaired several single-variation product pages. Where buyers needed
+      different ball weights or shoe sizes, I retained variants and stock
+      indicators instead of simplifying the entire catalog.
   - type: image
     title: Public website snapshot
     src: /media/projects/bowling-migration/site.png

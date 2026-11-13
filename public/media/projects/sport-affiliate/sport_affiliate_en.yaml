@@ -1,0 +1,26 @@
+title: "Sport-man: handling expired affiliate offers"
+tagline: An affiliate campaign no longer had a confirmed replacement. The task
+  was to remove stale click-outs without substituting a similar but different
+  product.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - PHP
+  - WooCommerce
+  - Admitad
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: An affiliate campaign no longer had a confirmed replacement. The task was
+      to remove stale click-outs without substituting a similar but different
+      product.
+  - type: text
+    title: How it works
+    body: Checked variants, models and identifiers and found no verified
+      replacement. Added a reversible MU-plugin rule that disables click-outs
+      and purchasing for the affected group without rewriting product records.
+  - type: text
+    title: Result and verification
+    body: Verification counted 1,892 affected listings and confirmed the control
+      product retained its action. Other suspicious clicks were investigated
+      separately without assuming an unverified referrer.

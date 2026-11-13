@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { stringify } from 'yaml';
+import { addEngineeringCases } from './engineering-export.mjs';
 
 const root = path.resolve(process.argv[2] ?? '..');
 const read = p => fs.readFileSync(p,'utf8').replace(/^\uFEFF/, '');
@@ -10,6 +11,9 @@ const index = new Map(JSON.parse(read(path.join(root,'orders/index.json'))).map(
 const languages = ['ru','en'];
 const projects = {ru:[],en:[]};
 const slugs = new Set();
+const details = new Map(read('case-details.psv').trim().split(/\r?\n/).map(line=>{
+  const [slug,ru,en]=line.split('|'); return [slug,{ru,en}];
+}));
 for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries()) {
   const fields = line.split('|');
   if(fields.length !== 9 || fields.some(x=>!x.trim())) throw Error('Malformed case on line '+(n+1));
@@ -44,6 +48,8 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
       {type:'text', title:ru?'Задача':'Brief', body:task},
       {type:'text', title:ru?'Что сделано':'Work delivered', body:result},
     ];
+    if(!details.get(slug)?.[lang]) throw Error('Missing localized technical detail: '+slug);
+    blocks.push({type:'text',title:ru?'Как решалась задача':'Implementation and scope',body:details.get(slug)[lang]});
     if(src) blocks.push({type:'image',title:ru?'Публичный вид сайта':'Public website snapshot',src,alt,
       caption:ru?'Снимок на дату проверки. Он показывает публичную версию сайта, а не обязательно вид на момент сдачи.':'Captured during a later availability check; it may differ from the site at handoff.'});
     const role=ru?'Веб-разработка':'Web development';
@@ -54,6 +60,7 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
       links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'':'/en'),type:'product'}]});
   }
 }
+addEngineeringCases(projects);
 for(const lang of languages) {
   save('src/content/showcase/projects_'+lang+'.yaml',{projects:projects[lang]});
   const ru=lang==='ru';
@@ -68,4 +75,4 @@ for(const lang of languages) {
 save('src/content/languages/languages.yml',{default:'ru',languages:[{id:'ru',label:'Русский'},{id:'en',label:'English'}]});
 save('src/content/profiles/profiles.yml',{profiles:[{id:'default',label:'Portfolio',slug:'',spec:null}]});
 save('src/content/site/site.yml',{downloads:[],footerCredit:true});
-console.log(slugs.size+' cases exported in both languages');
+console.log(projects.ru.length+' cases exported in both languages');

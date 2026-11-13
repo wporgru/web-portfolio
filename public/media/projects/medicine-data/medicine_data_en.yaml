@@ -1,0 +1,28 @@
+title: Medical reference data and normalization in Directus
+tagline: One medicine may appear under different labels in registries and
+  catalogs. The data model needs to distinguish active ingredients, registered
+  products and retail packs.
+year: "2026"
+role: Web development and automation
+stack:
+  - Directus
+  - SQLite
+  - Python
+  - ETL
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: One medicine may appear under different labels in registries and catalogs.
+      The data model needs to distinguish active ingredients, registered
+      products and retail packs.
+  - type: text
+    title: How it works
+    body: Designed data layers and relationships, prepared reference imports and
+      implemented matching checks. Separated ingredient, ATC, medicine and SKU
+      records, with room for per-field provenance and separate review of
+      ambiguous matches.
+  - type: text
+    title: Result and verification
+    body: The workspace contains a Directus schema, import scripts and checks. This
+      is data infrastructure and validation work, not a launched medical service
+      or complete OCR coverage of leaflets.

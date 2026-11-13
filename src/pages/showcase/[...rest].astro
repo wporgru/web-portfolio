@@ -194,10 +194,10 @@ const langLinks = kind === 'project'
 ---
 
 {kind === 'list' ? (
-  <Layout title={t('showcase.page_title')} lang={lang} section="showcase" profile="" customLangLinks={showcaseLangLinks}>
+  <Layout title={lang === 'ru' ? 'Кейсы веб-разработки и автоматизации — Олег Тишин' : 'Web Development and Automation Case Studies — Oleg Tishin'} description={lang === 'ru' ? 'Избранные проекты Олега Тишина: магазины, миграции, каталоги, техническое SEO, автоматизация и обработка данных.' : 'Selected projects by Oleg Tishin: online stores, migrations, product catalogs, technical SEO, automation and data engineering.'} lang={lang} section="showcase" profile="" customLangLinks={showcaseLangLinks}>
     <section class="container">
       <header class="showcase__header">
-        <h1>{t('showcase.title')}</h1>
+        <h1>{lang === 'ru' ? 'Кейсы веб-разработки и автоматизации' : 'Web development and automation case studies'}</h1>
       </header>
       {projects.length === 0 && (
         <article class="card"><p class="muted">{t('showcase.empty')}</p></article>

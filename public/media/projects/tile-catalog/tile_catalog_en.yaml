@@ -16,6 +16,13 @@ blocks:
     body: Checked synchronization on test products and traced discrepancies to
       source data. In a separate order, configured quantities below one as
       available to order and quantities of one or more as in stock.
+  - type: text
+    title: Implementation and scope
+    body: "This involved two distinct jobs. On test records I verified updates to
+      names, URLs and descriptions, and traced incorrect names and missing stock
+      to source data. I then introduced fractional-stock rules: the report shows
+      0 and 0.01 as available to order, and 1.01 as in stock. This does not
+      constitute testing of every product type."
   - type: image
     title: Public website snapshot
     src: /media/projects/tile-catalog/site.png

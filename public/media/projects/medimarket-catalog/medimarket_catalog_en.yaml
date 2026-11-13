@@ -1,0 +1,25 @@
+title: "MediMarket24: catalog builds from affiliate feeds"
+tagline: Refresh offers and prices without losing editorial content, category
+  structure or product URLs between builds.
+year: "2026"
+role: Web development and automation
+stack:
+  - Astro
+  - Node.js
+  - Python
+  - GitHub Actions
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refresh offers and prices without losing editorial content, category
+      structure or product URLs between builds.
+  - type: text
+    title: How it works
+    body: Separated feed fetching, normalization, category mapping and editorial
+      merges. Added content-coverage checks, image preparation, sitemap
+      generation and automated deployment.
+  - type: text
+    title: Result and verification
+    body: Recrawl service availability is not treated as proof of deployment or
+      indexing. Yandex, IndexNow and Google are tracked independently so an
+      external failure cannot obscure the build status.

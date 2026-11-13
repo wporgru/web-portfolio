@@ -42,3 +42,5 @@ pnpm-debug.log*
 # Working audit — single whole file at root, not committed
 AUDIT.md
 /docs/repo-assets/cover.pxd
+
+/.playwright-cli/

@@ -13,6 +13,12 @@ blocks:
     title: Work delivered
     body: Built a contact widget with animated icons. The client approved mobile
       placement and received instructions for adjusting desktop offsets.
+  - type: text
+    title: Implementation and scope
+    body: The job was to enhance an existing store, not replace its platform or
+      theme. We approved the widget and its mobile placement first. For desktop,
+      I explained how bottom and right control the offsets. The client chose to
+      make the final desktop adjustment independently.
   - type: image
     title: Public website snapshot
     src: /media/projects/cvetnik-widget/site.png

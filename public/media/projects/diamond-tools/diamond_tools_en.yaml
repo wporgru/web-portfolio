@@ -16,6 +16,13 @@ blocks:
     title: Work delivered
     body: Clarified manufacturer details, rewrote the homepage headline and
       documented which audit recommendations were implemented or deferred.
+  - type: text
+    title: Implementation and scope
+    body: The priority was making it clear what the company sold and why a buyer
+      should choose it. I requested actual manufacturing, contact and product
+      information before rewriting the opening section. The report distinguished
+      implemented recommendations from items blocked by missing information.
+      Traffic or conversion gains were not measured in this engagement.
   - type: image
     title: Public website snapshot
     src: /media/projects/diamond-tools/site.png

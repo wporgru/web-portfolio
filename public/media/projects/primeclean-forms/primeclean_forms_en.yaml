@@ -14,3 +14,10 @@ blocks:
     body: Reviewed spam examples and configured protection. After the initial
       change, the client reported no spam over the weekend; this was a short
       observation, not long-term monitoring.
+  - type: text
+    title: Implementation and scope
+    body: I began by reviewing unwanted submissions and identifying the affected
+      forms. These were existing sites, so the work was not a form rebuild or a
+      site redesign. The archived conversation does not reliably identify the
+      specific anti-spam mechanism, so the case does not claim CAPTCHA or
+      another unverified tool.

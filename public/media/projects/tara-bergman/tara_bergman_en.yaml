@@ -15,3 +15,10 @@ blocks:
     body: Reconstructed pages from the published site on staging, reviewed desktop
       and mobile placement of awards, and prepared separate workshop URLs for
       three languages.
+  - type: text
+    title: Implementation and scope
+    body: Rather than attempting to recover a missing Webpack project, I
+      reconstructed the site from available public pages. I showed the homepage
+      on staging first and then reviewed how to integrate the photographer's
+      awards without crowding mobile layouts. I prepared separate EN, RU and ES
+      workshop URLs; this does not mean the entire site was translated.

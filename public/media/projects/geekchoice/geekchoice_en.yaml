@@ -16,6 +16,13 @@ blocks:
     body: Configured numeric filters for memory, battery, cameras, charging and
       screen size. Refined product cards and the comparison view, including
       typography, specifications and spacing.
+  - type: text
+    title: Implementation and scope
+    body: Electronics specifications called for ranges rather than long lists of
+      individual values. I added sliders styled like the price filter and
+      refined pricing and payment information. The comparison view was updated
+      iteratively for two devices, typography and spacing. I told the client
+      that removing the upper price was not possible within the agreed stage.
   - type: image
     title: Public website snapshot
     src: /media/projects/geekchoice/site.png

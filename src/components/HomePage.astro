@@ -1,231 +1,48 @@
 ---
-//
-//  HomePage.astro
-//  CV Hub
-//
-//  Created by Alexander Gusarov on 03.03.2026.
-//  @spartan121
-//
 import Layout from './Layout.astro';
 import { getEntry } from 'astro:content';
-import { makeT } from '../scripts/t';
-
-const {
-  lang = 'en',
-  data = {},
-  downloadUrls = {},
-  t: tProp = {},
-  profile = ""
-} = Astro.props;
-
-const t = {
-  nameFallback: tProp.nameFallback ?? 'Unnamed',
-  contacts:     tProp.contacts     ?? 'Contacts',
-  skills:       tProp.skills       ?? 'Skills',
-  experience:   tProp.experience   ?? 'Experience',
-  achievements: tProp.achievements ?? 'Achievements',
-  downloads:    tProp.downloads    ?? 'Download',
-  company:      tProp.company      ?? 'Company',
-  empty_skills:      tProp.empty_skills      ?? 'Add skills to YAML — tags will appear here.',
-  empty_experience:  tProp.empty_experience  ?? 'Add experience to YAML — your timeline will appear here.',
-};
-
-// Download buttons: which formats show, and in what order/grouping —
-// site.yml (defaults to the flat [pdf, docx], the pair a visitor actually
-// recognizes; see src/content/site/site.yml for the full reasoning).
-//
-// Two formats can render the *same* one-word label on purpose (pdf and
-// pdfAts both say "PDF" — the qualifier belongs on the group heading, not
-// the button, see docs/INFO_en.md §17) — so distinct aria-labels are required
-// wherever that happens, or a screen reader announces two identical items.
-let siteConfig = null;
-try { siteConfig = await getEntry('site', 'site'); } catch {}
-const rawDownloads = siteConfig?.data?.downloads ?? ['pdf', 'docx'];
-
-// Flat array of format keys → one implicit, unlabeled group. Array of
-// {group, items} → each entry is its own labeled section. Not a per-element
-// normalizer (like skills' bare-string-or-group entries) — these are two
-// mutually exclusive shapes for the whole field, since "flat" specifically
-// means "one group, no heading needed".
-const downloadGroups = rawDownloads.length === 0
-  ? []
-  : typeof rawDownloads[0] === 'string'
-    ? [{ group: null, items: rawDownloads }]
-    : rawDownloads.map((g) => ({ group: g.group ?? null, items: g.items ?? [] }));
-
-let translations = null;
-try { translations = await getEntry('i18n', 'translations'); } catch {}
-const t2 = makeT(translations?.data ?? {}, lang);
-const groupLabel = (group) => {
-  if (!group) return null;
-  const key = `cv.downloads_${group}`;
-  const resolved = t2(key);
-  return resolved === key ? group : resolved; // no translation → literal key, not the dotted path
-};
-
-const downloadMeta = {
-  pdf:    { label: 'PDF',  ariaLabel: 'Resume PDF',        solid: true },
-  pdfAts: { label: 'PDF',  ariaLabel: 'ATS-optimized PDF', solid: false, hint: 'ATS-optimized, single-column version — for pasting into a job-portal upload form' },
-  docx:   { label: 'DOCX', ariaLabel: 'Resume DOCX',       solid: false },
-  txt:    { label: 'TXT',  ariaLabel: 'Resume plain text', solid: false },
-};
-
-const downloads = downloadGroups
-  .map((g) => ({
-    label: groupLabel(g.group),
-    items: g.items
-      .map((key) => ({ key, url: downloadUrls[key], ...downloadMeta[key] }))
-      .filter((d) => d.url && d.label),
-  }))
-  .filter((g) => g.items.length > 0);
-
-const pageTitle = `${data?.name ?? t.nameFallback} — WPORGRU`;
-
-const contacts     = Array.isArray(data?.contacts)    ? data.contacts    : [];
-const rawSkills    = Array.isArray(data?.skills)      ? data.skills      : [];
-const experience   = Array.isArray(data?.experience)  ? data.experience  : [];
-const achievements = Array.isArray(data?.achievements)? data.achievements: [];
-
-const normalizeBullet = (v) => {
-  if (typeof v === 'string') return v;
-  if (v && typeof v === 'object') {
-    if (typeof v.text === 'string') return v.text;
-    if (typeof v.label === 'string' && typeof v.value === 'string') return `${v.label}: ${v.value}`;
-    return Object.entries(v).map(([k, val]) => `${k}: ${String(val)}`).join(' · ');
-  }
-  return String(v);
-};
-
-const skillGroups = rawSkills
-  .map((s) =>
-    typeof s === 'string'
-      ? { group: null, items: [s] }
-      : { group: s?.group ?? null, items: Array.isArray(s?.items) ? s.items : [] }
-  )
-  .filter((g) => g.items.length > 0);
-
-// schema.org/Person — url/image get filled in by Layout itself; this only
-// supplies the person-specific fields. sameAs wants profile URLs (GitHub,
-// LinkedIn, ...), not a mailto: link, so email is split out separately.
-const emailContact = contacts.find((c) => /^mailto:/i.test(c?.url ?? ''));
-const profileContacts = contacts.filter((c) => /^https?:\/\//i.test(c?.url ?? ''));
-const personJsonLd = data?.name ? {
-  name: data.name,
-  jobTitle: data?.title || undefined,
-  description: data?.summary || undefined,
-  email: emailContact ? emailContact.url.replace(/^mailto:/i, '') : undefined,
-  sameAs: profileContacts.map((c) => c.url),
-  knowsAbout: skillGroups.flatMap((g) => g.items),
-} : undefined;
+import copy from '../content/portfolio-home.json';
+const { lang='ru', profile='' } = Astro.props;
+const ru = lang === 'ru';
+const c = ru ? copy.ru : copy.en;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const catalog = base + '/showcase' + (ru ? '/' : '/en/');
+const projects = (await getEntry('showcase', 'projects_' + lang))?.data.projects ?? [];
+const picks = ['stalex-feed','tara-bergman','seo-dashboard','medicine-data','wellland-facets','78-dosok'].flatMap(slug => projects.filter(p => p.slug === slug));
+const contacts = [
+  {label:'Telegram · @wporgru',url:'https://t.me/wporgru'},
+  {label:'zakaz@wp.org.ru',url:'mailto:zakaz@wp.org.ru'},
+  {label:'+7 (831) 291-36-31',url:'tel:+78312913631'},
+  {label:'Kwork',url:'https://kwork.ru/user/wporgru'},
+  {label:'GitHub',url:'https://github.com/wporgru'},
+  {label:'WP.ORG.RU',url:'https://wp.org.ru/contacts/'},
+];
+const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
 ---
-
-<Layout title={pageTitle} description={data?.summary || undefined} personJsonLd={personJsonLd} lang={lang} section="main" profile={profile}>
-  <section class="container">
-    <div class="page-grid">
-
-      {/* ── SIDEBAR ── */}
-      <aside class="sidebar">
-
-        {/* 2. Skills */}
-        <article class="card card--skills">
-          <h2 class="h2">{t.skills}</h2>
-          {skillGroups.length > 0 ? (
-            <div class="skillsgrid">
-              {skillGroups.map((g) => (
-                <div class="skillsgroup">
-                  {g.group && <div class="skillsgroup__title">{g.group}</div>}
-                  <ul class="tags">
-                    {g.items.map((s) => <li class="tag">{s}</li>)}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p class="muted">
-              {t.empty_skills}
-            </p>
-          )}
-        </article>
-
-      </aside>
-
-      {/* ── MAIN CONTENT ── */}
-      <main class="main-content">
-
-        {/* 1. Hero */}
-        <div class="card hero">
-          <div class="hero__top">
-            <div>
-              <h1 class="hero__name">{data?.name ?? t.nameFallback}</h1>
-              {data?.title   && <p class="hero__title">{data.title}</p>}
-              {data?.summary && <p class="hero__summary">{data.summary}</p>}
-            </div>
-          </div>
-
-          <p><a class="btn" href={import.meta.env.BASE_URL.replace(/\/$/, '') + (lang === 'ru' ? '/showcase/' : '/showcase/en/')}>
-            {lang === 'ru' ? 'Смотреть проекты' : 'Explore projects'}
-          </a></p>
-
-          {contacts.length > 0 && (
-            <div class="hero__contacts">
-              <div class="section__title">{t.contacts}</div>
-              <div class="pillrow">
-                {contacts.map((c) => (
-                  <a
-                    class="pill"
-                    href={c.url}
-                    target={c.url?.startsWith('mailto:') ? undefined : '_blank'}
-                    rel={c.url?.startsWith('mailto:')    ? undefined : 'noopener'}
-                  >
-                    {c.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* 2. Achievements */}
-        {achievements.length > 0 && (
-          <article class="card card--achievements">
-            <h2 class="h2">{t.achievements}</h2>
-            <ul class="list">
-              {achievements.map((a) => <li>{a}</li>)}
-            </ul>
-          </article>
-        )}
-
-        {/* 3. Experience */}
-        <section class="section section--experience">
-          <h2 class="h2">{t.experience}</h2>
-
-          {experience.length > 0 ? (
-            <div class="stack">
-              {experience.map((e) => (
-                <article class="card item">
-                  <div class="item__top">
-                    <strong>{e.company ?? t.company}</strong>
-                    <span class="muted">{e.period ?? ''}</span>
-                  </div>
-                  {e.role && <div class="muted">{e.role}</div>}
-                  {Array.isArray(e.description) && e.description.length > 0 && (
-                    <ul class="list">
-                      {e.description.map((d) => <li>{normalizeBullet(d)}</li>)}
-                    </ul>
-                  )}
-                </article>
-              ))}
-            </div>
-          ) : (
-            <article class="card">
-              <p class="muted">
-                {t.empty_experience}
-              </p>
-            </article>
-          )}
-        </section>
-
-      </main>
-    </div>
+<Layout title={c.title} description={c.description} lang={lang} profile={profile} section="main" personJsonLd={person}>
+<div class="container portfolio">
+  <section class="intro">
+    <p class="kicker">WP.ORG.RU / {c.label}</p>
+    <h1>{c.h1}</h1>
+    <p class="identity">{person.name} <span>·</span> {c.identity}</p>
+    <p class="lede">{c.description}</p>
+    <div class="actions"><a class="btn" href="https://t.me/wporgru">{c.cta}</a><a class="btn btn--ghost" href={catalog}>{c.all}</a></div>
+    <dl class="proof">{c.stats.map(([number,label])=><div><dt>{number}</dt><dd>{label}</dd></div>)}</dl>
   </section>
+
+  <section id="roles"><h2>{c.rolesTitle}</h2><div class="tiles">
+    {c.roles.map(([title,body])=><article><h3>{title}</h3><p>{body}</p></article>)}
+  </div></section>
+  <section id="work"><h2>{c.workTitle}</h2><div class="tiles">
+    {picks.map(p => <article><small>{p.stack.slice(0,3).join(' / ')}</small><h3><a href={base+'/showcase/'+p.slug+(ru?'/':'/en/')}>{p.name}</a></h3><p>{p.description}</p></article>)}
+  </div><p><a class="btn btn--ghost" href={catalog}>{c.all} →</a></p></section>
+  <section id="results"><h2>{c.resultsTitle}</h2><ul class="timeline">{c.results.map(([title,body])=><li><strong>{title}</strong><p>{body}</p></li>)}</ul></section>
+  <section id="experience"><h2>{c.experienceTitle}</h2><div class="tiles">{c.experience.map(([title,body])=><article><h3>{title}</h3><p>{body}</p></article>)}</div></section>
+  <section id="skills"><h2>{c.skillsTitle}</h2><div class="tiles">{c.skills.map(([title,body])=><article><h3>{title}</h3><p>{body}</p></article>)}</div></section>
+  <section id="contact" class="contact"><h2>{c.contactTitle}</h2><p>{c.contactText}</p><p>{c.hours}</p><div class="actions">{contacts.map(x=><a class="btn btn--ghost" href={x.url}>{x.label}</a>)}</div></section>
+</div>
 </Layout>
+<style>
+.portfolio{padding-block:clamp(36px,7vw,90px);max-width:1120px}.portfolio section+section{margin-top:clamp(42px,7vw,82px)}
+.kicker,small{color:#a6dafa;letter-spacing:.08em;font-weight:650}.intro h1{font-size:clamp(2.15rem,6vw,4.8rem);line-height:1.05;max-width:21ch;margin:.25em 0}.identity{font-size:clamp(1.08rem,2vw,1.45rem);font-weight:650}.identity span{color:#83c8f1}.lede{font-size:clamp(1.05rem,2.2vw,1.35rem);max-width:58ch}.actions{display:flex;flex-wrap:wrap;gap:.65rem;margin-block:1.25rem}.proof,.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}.proof div,article,.contact{border:1px solid var(--border);background:var(--card,rgba(255,255,255,.055));border-radius:16px;padding:1.2rem}.proof dt{font-size:1.65rem;font-weight:750}.proof dd{margin:.3rem 0 0;color:var(--muted)}h2{font-size:clamp(1.6rem,4vw,2.5rem);margin:0 0 1rem}h3{font-size:1.12rem;margin:.4rem 0 .6rem}article p,.timeline p,.contact p{margin:.35rem 0;color:var(--muted);line-height:1.6}.timeline{padding-left:1.3rem}.timeline li+li{margin-top:1rem}a:focus-visible{outline:2px solid #9de5ff;outline-offset:4px}
+</style>

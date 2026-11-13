@@ -1,0 +1,27 @@
+title: "Wellland: global attributes and product filters"
+tagline: Local attributes appeared on product pages but did not power native
+  filters. Migration had to preserve values, categories and visibility without
+  merging incompatible units.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - PHP
+  - Data migration
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Local attributes appeared on product pages but did not power native
+      filters. Migration had to preserve values, categories and visibility
+      without merging incompatible units.
+  - type: text
+    title: How it works
+    body: Reviewed 198 published products across 33 categories, migrated 192 to
+      global attributes and configured 18 filters. Added a compatibility layer
+      for existing templates. Clean and dirty water capacity and different
+      weight measures remain separate.
+  - type: text
+    title: Result and verification
+    body: Independently checked 1,583 facet counts and tested selection, reset and
+      combinations in the browser. Compared data with the backup and checked
+      320px and 390px mobile widths.

@@ -18,7 +18,7 @@
 
 import InlineText from './InlineText.astro';
 
-const { src, alt, caption, title, subtitle, body, anchor, eager = false } = Astro.props;
+const { src, alt, caption, title, subtitle, body, anchor, lang, eager = false } = Astro.props;
 
 const hasText = title || subtitle || body || caption;
 const hasSrc  = !!src;
@@ -41,6 +41,7 @@ const withBase = (p = '') => {
 
   {hasSrc && (
     <figure class="image-block__figure">
+      <a href={withBase(src)} target="_blank" rel="noopener" aria-label={lang === "en" ? "Open original image" : "Открыть оригинал снимка"}>
       <img
         src={withBase(src)}
         alt={alt ?? title ?? ''}
@@ -49,6 +50,7 @@ const withBase = (p = '') => {
         class="image-block__img"
         onerror="this.closest('figure')?.remove();"
       />
+      </a>
       {caption && (
         <figcaption class="image-block__caption"><InlineText text={caption} /></figcaption>
       )}
@@ -91,18 +93,13 @@ const withBase = (p = '') => {
     border-radius: var(--r-lg);
     overflow: hidden;
     border: 1px solid var(--border);
-    /* Reserve space before the image loads — avoids layout shift. Actual
-       images vary, but 16:9 is the closest single guess (matches the
-       VideoBlock convention) and object-fit: cover below crops gracefully
-       either way. */
-    aspect-ratio: 16 / 9;
   }
 
+  .image-block__figure a { display: block; }
   .image-block__img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
-    object-fit: cover;
   }
 
   .image-block__caption {

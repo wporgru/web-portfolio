@@ -1,0 +1,36 @@
+{
+"ru":{
+"title":"Олег Тишин — веб-разработка, e-commerce и автоматизация",
+"h1":"Веб-разработка, e-commerce и автоматизация",
+"label":"ЧАСТНАЯ ВЕБ-МАСТЕРСКАЯ",
+"identity":"Частный full-stack разработчик",
+"description":"Создаю и развиваю сайты, магазины и инструменты для бизнеса. Подключаю оплату и доставку, переношу каталоги, настраиваю обмен данными и автоматизирую работу с контентом и SEO.",
+"cta":"Обсудить задачу в Telegram","all":"Смотреть проекты",
+"stats":[["15+ лет","в веб-разработке"],["582","выполненных заказа в собранном архиве Kwork"],["371","отзыв Kwork с сохранённым скриншотом"]],
+"rolesTitle":"С какими задачами я помогаю",
+"roles":[["Full-stack разработчик","Корпоративные сайты, лендинги, каталоги и сервисы. Работаю с PHP, JavaScript, React и Astro; CMS выбираю под задачу, а не наоборот."],["Инженер e-commerce","Платёжные сценарии, доставка, фильтры и загрузка больших каталогов. Настраиваю сопоставление полей, чтобы цены, остатки и характеристики не расходились."],["Автоматизация и прикладной ИИ","Собираю пайплайны на Python и Node.js, подключаю API и использую Codex и Antigravity для разбора кода, подготовки контента и проверок. Итог сверяю по данным и в браузере."],["Техническое SEO и сопровождение","Диагностирую индексацию, ошибки шаблонов и миграций. Разделяю техническую отправку URL и фактическое появление страниц в поиске."]],
+"workTitle":"Избранные кейсы","resultsTitle":"Достижения и измеримые результаты",
+"results":[["719 товаров STALEX","Настроил импорт из нестандартного фида, раздельную обработку характеристик и исправил сопоставление наличия."],["198 товаров в 33 категориях Wellland","Проверил каталог после перевода характеристик в глобальные атрибуты, чтобы они работали в фильтрах WooCommerce."],["1 892 позиции в партнёрском каталоге","Подготовил обратимое отключение неактуальных предложений Sport-man без перезаписи карточек товаров."]],
+"experienceTitle":"Опыт: от разработки до эксплуатации",
+"experience":[["Клиентская разработка и поддержка · 2018–2026","В сохранённом архиве — запуск магазинов, восстановление сайтов после конфликтов, переносы с других платформ, редизайн и настройка интеграций. Это не весь профессиональный стаж."],["Собственные веб-продукты и автоматизация · 2026","Партнёрские витрины, обновление фидов, SEO-аналитика, локальный дашборд и инструменты подготовки товарных данных."],["Данные и прикладной ИИ · 2026","Работа с медицинскими справочниками и нормализацией данных в Directus, исследование источников, автоматизация проверок и редакционных задач."]],
+"skillsTitle":"Навыки и технологии",
+"skills":[["Интерфейсы и веб","JavaScript, React, Astro, HTML, CSS, адаптивная вёрстка."],["Сервер и CMS","PHP, WordPress, WooCommerce, Directus, REST API."],["Данные и автоматизация","Python, Node.js, SQLite, XML, XLSX, импорт, парсинг и проверка качества."],["ИИ и агентные инструменты","Codex, Antigravity, постановка задач агентам, проверяемые сценарии, подготовка и редактура AI-контента."],["Поиск и аналитика","Яндекс Вебмастер, Метрика, Google Search Console, IndexNow, технический аудит и редиректы."],["Развёртывание и проверка","Git, GitHub Actions, Playwright, переносы между хостингами, тестовый стенд и план отката."]],
+"contactTitle":"Контакты и оценка проекта","contactText":"Пришлите ссылку на сайт, задачу и желаемый срок. Скажу, что нужно проверить до оценки, какие работы можно выделить в первый этап и что будет на выходе.","hours":"Работаю удалённо из Нижнего Новгорода. Будни, 10:00–19:00 МСК."
+},
+"en":{
+"title":"Oleg Tishin — Web Development, E-commerce & Automation",
+"h1":"Web development, e-commerce and automation",
+"label":"INDEPENDENT WEB ENGINEERING","identity":"Independent full-stack developer",
+"description":"I build and improve websites, online stores and business tools. I integrate payments and shipping, migrate catalogs, connect data sources and automate content and SEO workflows.",
+"cta":"Discuss a project on Telegram","all":"Explore case studies",
+"stats":[["15+ years","in web development"],["582","completed orders in the collected Kwork archive"],["371","Kwork reviews with archived screenshots"]],
+"rolesTitle":"What I can help with",
+"roles":[["Full-stack development","Business websites, landing pages, catalogs and tools. I work with PHP, JavaScript, React and Astro and choose the CMS to fit the project."],["E-commerce engineering","Payments, shipping, filters and large catalog imports. I map incoming fields so prices, stock and specifications remain consistent."],["Automation and applied AI","I build Python and Node.js workflows, connect APIs and use Codex and Antigravity for code analysis, content preparation and checks. I validate the output against data and in the browser."],["Technical SEO and maintenance","I diagnose indexing, template and migration issues. A URL submission and its appearance in search are tracked separately."]],
+"workTitle":"Selected case studies","resultsTitle":"Achievements and measurable results",
+"results":[["719 STALEX products","Set up a nonstandard feed import, handled specifications separately and corrected stock mapping."],["198 products across 33 Wellland categories","Verified the catalog after migrating specifications to global attributes for WooCommerce filters."],["1,892 listings in an affiliate catalog","Prepared a reversible pause for outdated Sport-man offers without overwriting product records."]],
+"experienceTitle":"Experience from development to operations",
+"experience":[["Client development and support · 2018–2026","The available order archive covers store launches, recovery after conflicts, platform migrations, redesigns and integrations. It does not represent my entire career."],["Independent web products and automation · 2026","Affiliate storefronts, feed updates, search analytics, a local dashboard and product-data preparation tools."],["Data engineering and applied AI · 2026","Medical reference data, normalization in Directus, source research, automated checks and editorial workflows."]],
+"skillsTitle":"Skills and technologies",
+"skills":[["Frontend","JavaScript, React, Astro, HTML, CSS and responsive layouts."],["Backend and CMS","PHP, WordPress, WooCommerce, Directus and REST APIs."],["Data and automation","Python, Node.js, SQLite, XML, XLSX, imports, scraping and data validation."],["AI and agent workflows","Codex, Antigravity, agent task design, verifiable workflows, AI-assisted content and editorial review."],["Search and analytics","Yandex Webmaster, Metrica, Google Search Console, IndexNow, technical audits and redirects."],["Deployment and QA","Git, GitHub Actions, Playwright, hosting migrations, staging and rollback planning."]],
+"contactTitle":"Contact and project estimates","contactText":"Send a link, a short description and your preferred timeline. I will explain what needs checking before an estimate and what the first deliverable can be.","hours":"Remote from Nizhny Novgorod, Russia. Weekdays, 10:00–19:00 Moscow time."
+}}
