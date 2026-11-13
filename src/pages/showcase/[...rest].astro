@@ -224,6 +224,7 @@ const langLinks = kind === 'project'
   </Layout>
 ) : (
   <ProjectPage
+    slug={slug}
     lang={lang}
     data={projectData}
     ogImage={slug === 'cv-hub' ? '/media/og-cover.png' : undefined}

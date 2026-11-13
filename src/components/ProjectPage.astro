@@ -12,8 +12,11 @@ import ImageBlock from './blocks/ImageBlock.astro';
 import VideoBlock from './blocks/VideoBlock.astro';
 import CodeBlock  from './blocks/CodeBlock.astro';
 import Divider    from './blocks/DividerBlock.astro';
+import { services } from '../content/services.mjs';
 
-const { data, showcaseHref, langLinks, lang, ogImage, relatedCases = [] } = Astro.props;
+const { data, showcaseHref, langLinks, lang, ogImage, relatedCases = [], slug } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const linkedServices = services.filter(service => service.cases.includes(slug));
 
 // LCP: the first image block is very likely the hero shot right under the
 // title — load it eagerly instead of the lazy default every other image
@@ -122,6 +125,9 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
     <h2>{lang === 'ru' ? 'Нужна похожая работа?' : 'Need something similar?'}</h2>
     <p>{lang === 'ru' ? 'Пришлите ссылку на проект и опишите, что должно измениться.' : 'Send a project link and tell me what you need to change.'}</p>
     <a class="btn" href="https://t.me/wporgru">{lang === 'ru' ? 'Обсудить задачу' : 'Discuss your project'}</a>
+    {linkedServices.length > 0 && <ul class="list">
+      {linkedServices.map(service => <li><a href={base+'/services/'+service.slug+(lang==='ru'?'/':'/en/')}>{service[lang==='ru'?'ru':'en'][0]}</a></li>)}
+    </ul>}
   </aside>
 
 </div>

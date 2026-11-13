@@ -2,6 +2,7 @@
 import Layout from './Layout.astro';
 import { getEntry } from 'astro:content';
 import copy from '../content/portfolio-home.json';
+import { services } from '../content/services.mjs';
 const { lang='ru', profile='', downloadUrls } = Astro.props;
 const ru = lang === 'ru';
 const c = ru ? copy.ru : copy.en;
@@ -28,6 +29,7 @@ const skillTags = [
 const commerceTags = ['YooKassa','CDEK',ru?'Платёжные сценарии':'Payment flows',ru?'Фильтры каталога':'Catalog filters',ru?'Глобальные атрибуты':'Global product attributes',ru?'Вариативные товары':'Product variations',ru?'Проверка остатков из 1С':'1C stock validation',ru?'Товарные фиды':'Product feeds',ru?'Партнёрские витрины':'Affiliate storefronts'];
 const seoTags = ['Rank Math','Yoast SEO','Screaming Frog','GA4',ru?'Аудит метаданных':'Metadata audits',ru?'Региональные поддомены':'Regional subdomains'];
 const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
+const roleServices = ['website-redesign','catalog-automation','data-and-ai','technical-seo'].map(slug=>services.find(service=>service.slug===slug)!);
 const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
 ---
 <Layout title={c.title} description={c.description} lang={lang} profile={profile} section="main" personJsonLd={person} roleLinks={roleLinks}>
@@ -71,7 +73,11 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
 
       <section class="section cv-extra">
         <h2 class="h2">{c.rolesTitle}</h2>
-        <div class="stack">{c.roles.map(([title,body],i)=><article class="card item" id={'role-'+(i+1)}><h3 class="h2">{title}</h3><p class="muted">{body}</p></article>)}</div>
+        <div class="stack">{c.roles.map(([title,body],i)=><article class="card item" id={'role-'+(i+1)}>
+          <h3 class="h2">{title}</h3>
+          <p class="muted">{body}</p>
+          <a class="pill" href={base+'/services/'+roleServices[i].slug+(ru?'/':'/en/')}>{roleServices[i][ru?'ru':'en'][0]}</a>
+        </article>)}</div>
       </section>
 
       <section class="section cv-extra">

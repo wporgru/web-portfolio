@@ -1,0 +1,59 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getEntry } from 'astro:content';
+import { services } from '../../content/services.mjs';
+
+export function getStaticPaths() {
+  return services.flatMap(service => ['ru','en'].map(lang => ({
+    params: { slug: service.slug + (lang === 'en' ? '/en' : '') },
+    props: { service, lang },
+  })));
+}
+
+const { service, lang } = Astro.props;
+const ru = lang === 'ru';
+const [title, intro, first, second, outcome] = service[ru ? 'ru' : 'en'];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const alternate = ['ru','en'].map(id => ({ id, label:id.toUpperCase(), href:base+'/services/'+service.slug+(id==='ru'?'/':'/en/'), active:id===lang }));
+const projects = (await getEntry('showcase', 'projects_'+lang))?.data.projects ?? [];
+const examples = service.cases.map(slug => {
+  const p = projects.find(p => p.slug === slug);
+  if (!p) throw Error('Missing service case: '+slug+' ('+lang+')');
+  return p;
+});
+---
+<Layout title={title+' — '+(ru?'Олег Тишин':'Oleg Tishin')} description={intro} lang={lang} section="services" customLangLinks={alternate} roleLinks={[]}>
+  <div class="container service">
+    <article class="card hero">
+      <h1 class="hero__name">{title}</h1>
+      <p class="hero__summary">{intro}</p>
+      <div class="btnrow">
+        <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить задачу':'Discuss your project'}</a>
+        <a class="btn btn--ghost" href="mailto:zakaz@wp.org.ru">{ru?'Написать на почту':'Send an email'}</a>
+      </div>
+    </article>
+    <section class="card">
+      <h2 class="h2">{ru?'Что входит в работу':'What the work covers'}</h2>
+      <ul class="list"><li>{first}</li><li>{second}</li></ul>
+    </section>
+    <section>
+      <h2 class="h2">{ru?'Примеры выполненных работ':'Relevant case studies'}</h2>
+      <div class="grid">
+        {examples.map(p => <article class="card">
+          <h3 class="h2"><a href={base+'/showcase/'+p.slug+(ru?'/':'/en/')}>{p.name}</a></h3>
+          <p class="muted">{p.description}</p>
+        </article>)}
+      </div>
+    </section>
+    <section class="card">
+      <h2 class="h2">{ru?'С чего начнём':'How to get started'}</h2>
+      <p>{outcome}</p>
+      <a class="btn" href="https://t.me/wporgru">{ru?'Прислать задачу в Telegram':'Send your brief on Telegram'}</a>
+    </section>
+  </div>
+</Layout>
+<style>
+.service{display:grid;gap:16px;padding-block:16px 32px;max-width:960px}
+.service .hero__summary{margin-bottom:1rem}
+.service section>h2{margin-bottom:.75rem}
+</style>
