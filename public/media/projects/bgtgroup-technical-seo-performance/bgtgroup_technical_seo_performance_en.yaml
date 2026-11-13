@@ -1,0 +1,30 @@
+title: "BGT Group: technical SEO and site performance"
+tagline: Repaired internal links and the sitemap for BGT Group and worked on
+  homepage performance. Archived PageSpeed reports show 37 to 86 on mobile and
+  63 to 92 on desktop.
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Screaming Frog
+  - PageSpeed Insights
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Repaired internal links and the sitemap for BGT Group and worked on
+      homepage performance. Archived PageSpeed reports show 37 to 86 on mobile
+      and 63 to 92 on desktop.
+  - type: text
+    title: How it works
+    body: Moved the site to the current sitemap index, investigated invalid URLs in
+      the old sitemap and replaced internal links through redirects with direct
+      destinations. Checked responses in Screaming Frog. Added text alternatives
+      for linked images and retained the existing accessible labels on footer
+      icons.
+  - type: text
+    title: Result and verification
+    body: The client reviewed and accepted the work. Archived lab reports from
+      February 7–8 show final LCP of 3.5 seconds on mobile and 1.4 seconds on
+      desktop. These historical reports are neither current field data nor
+      evidence of ranking gains.

@@ -1,0 +1,25 @@
+title: Individual WooCommerce product page templates
+tagline: Showed how to give selected products custom content blocks without
+  changing the default template across the catalog.
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Shortcodes
+  - Product templates
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Showed how to give selected products custom content blocks without
+      changing the default template across the catalog.
+  - type: text
+    title: How it works
+    body: Used a 1C:ERP listing to demonstrate visual editing, shortcode blocks and
+      template assignment to an individual product. Disabled the editor when it
+      disrupted the existing workflow and documented how to re-enable it.
+      Separated template setup from building future landing pages.
+  - type: text
+    title: Result and verification
+    body: The client accepted the consultation. A series of finished landing pages
+      and CRM implementation were not part of this delivery.

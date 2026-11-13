@@ -29,6 +29,7 @@ const skillTags = [
 const commerceTags = ['YooKassa','CDEK',ru?'Платёжные сценарии':'Payment flows',ru?'Фильтры каталога':'Catalog filters',ru?'Глобальные атрибуты':'Global product attributes',ru?'Вариативные товары':'Product variations',ru?'Проверка остатков из 1С':'1C stock validation',ru?'Товарные фиды':'Product feeds',ru?'Партнёрские витрины':'Affiliate storefronts'];
 const seoTags = ['Rank Math','Yoast SEO','Screaming Frog','GA4',ru?'Аудит метаданных':'Metadata audits',ru?'Региональные поддомены':'Regional subdomains'];
 const localizationTags = [ru?'Испанская локализация':'Spanish localization',ru?'Португалоязычные сайты':'Portuguese-language websites',ru?'Мультиязычные меню':'Multilingual navigation',ru?'Выбор города':'City selection',ru?'Сохранение региона в cookie':'Cookie-based region preferences'];
+const orderTags = [ru?'Транзакционные письма':'Transactional email',ru?'Статусы заказов':'Order statuses',ru?'Подарки по сумме корзины':'Cart-based gift rules',ru?'Тестирование форм бронирования':'Booking form testing'];
 const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
 const roleServices = ['website-redesign','catalog-automation','data-and-ai','technical-seo'].map(slug=>services.find(service=>service.slug===slug)!);
 const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
@@ -57,6 +58,7 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
           <li>{ru ? '582 выполненных заказа в собранном архиве Kwork; 371 отзыв сохранён со скриншотом.' : '582 completed orders in the collected Kwork archive; 371 reviews archived with screenshots.'}</li>
           {c.results.map(([title,body])=><li><strong>{title}.</strong> {body}</li>)}
           <li><a href={base+'/showcase/arenda-pm-home-performance/'+(ru?'':'en/')}><strong>PageSpeed 72 → 96</strong></a> — {ru?'мобильная главная Аренда-ПМ: LCP 6,8 → 2,7 с в лабораторных замерах.':'Arenda-PM mobile homepage: LCP 6.8 → 2.7 s in lab measurements.'}</li>
+          <li><a href={base+'/showcase/bgtgroup-technical-seo-performance/'+(ru?'':'en/')}><strong>BGT Group: PageSpeed 37 → 86</strong></a> — {ru?'мобильный лабораторный замер; на компьютере 63 → 92.':'mobile lab measurement; desktop 63 → 92.'}</li>
         </ul>
       </article>
 
@@ -117,6 +119,9 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Локализация и региональные сайты':'Localization and regional websites'}</div>
           <ul class="tags">{localizationTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+        </div><div class="skillsgroup">
+          <div class="skillsgroup__title">{ru?'Заказы, уведомления и акции':'Orders, notifications and promotions'}</div>
+          <ul class="tags">{orderTags.map(tag=><li class="tag">{tag}</li>)}</ul>
         </div></div>
       </article>
     </aside>

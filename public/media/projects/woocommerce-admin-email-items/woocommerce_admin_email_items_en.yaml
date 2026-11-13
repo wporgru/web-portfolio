@@ -1,0 +1,30 @@
+title: Restoring order items in WooCommerce admin emails
+tagline: Restored order details in the admin notification so the store manager
+  could see what the customer had purchased.
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Transactional email
+  - Order management
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Restored order details in the admin notification so the store manager
+      could see what the customer had purchased.
+  - type: text
+    title: How it works
+    body: Demonstrated the revised notification and asked the client to check the
+      admin inbox. When another message was reported missing details, used a
+      separate test recipient on a new order and showed the complete email. This
+      distinguished the verified notification from other messages sent by the
+      store.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. SMTP setup and verification of every email
+      type were outside this stage.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: restoring native order statuses"
+        url: /showcase/woocommerce-native-order-statuses/en/

@@ -2978,3 +2978,120 @@ projects:
       - label: Read case study
         url: /showcase/transport-site-media-repair/en
         type: product
+  - slug: bgtgroup-technical-seo-performance
+    name: "BGT Group: technical SEO and site performance"
+    year: "02.2024"
+    role: Web development and automation
+    description: Repaired internal links and the sitemap for BGT Group and worked on
+      homepage performance. Archived PageSpeed reports show 37 to 86 on mobile
+      and 63 to 92 on desktop.
+    stack:
+      - WordPress
+      - Screaming Frog
+      - PageSpeed Insights
+      - Technical SEO
+    order: 172
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bgtgroup-technical-seo-performance/en
+        type: product
+  - slug: edible-bouquet-catalog-data
+    name: Preparing edible bouquet products for WooCommerce
+    year: "01.2024"
+    role: Web development and automation
+    description: Collected edible bouquet listings and images so the client could
+      complete the data and approve its structure before loading the store.
+    stack:
+      - Web scraping
+      - Spreadsheets
+      - WooCommerce
+      - Product data
+    order: 173
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/edible-bouquet-catalog-data/en
+        type: product
+  - slug: woocommerce-product-template-training
+    name: Individual WooCommerce product page templates
+    year: "01.2024"
+    role: Web development and automation
+    description: Showed how to give selected products custom content blocks without
+      changing the default template across the catalog.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Shortcodes
+      - Product templates
+    order: 174
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-product-template-training/en
+        type: product
+  - slug: woocommerce-native-order-statuses
+    name: Restoring native WooCommerce order statuses
+    year: "01.2024"
+    role: Web development and automation
+    description: Simplified order handling for managers by restoring native statuses
+      and separating order state from payment confirmation.
+    stack:
+      - WooCommerce
+      - Order management
+      - Payment workflows
+    order: 175
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-native-order-statuses/en
+        type: product
+  - slug: woocommerce-admin-email-items
+    name: Restoring order items in WooCommerce admin emails
+    year: "01.2024"
+    role: Web development and automation
+    description: Restored order details in the admin notification so the store
+      manager could see what the customer had purchased.
+    stack:
+      - WooCommerce
+      - Transactional email
+      - Order management
+    order: 176
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-admin-email-items/en
+        type: product
+  - slug: booking-form-email-recovery
+    name: Restoring email from website booking forms
+    year: "01.2024"
+    role: Web development and automation
+    description: Restored booking enquiries and verified delivery with several
+      distinguishable submissions rather than one test message.
+    stack:
+      - WordPress
+      - Booking forms
+      - Email notifications
+      - QA
+    order: 177
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/booking-form-email-recovery/en
+        type: product
+  - slug: cart-gift-thresholds
+    name: Updating gift thresholds in a delivery store cart
+    year: "01.2024"
+    role: Web development and automation
+    description: Updated an existing delivery-store promotion so gifts followed the
+      new rules without rebuilding the entire cart.
+    stack:
+      - WooCommerce
+      - Cart rules
+      - Promotions
+    order: 178
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/cart-gift-thresholds/en
+        type: product

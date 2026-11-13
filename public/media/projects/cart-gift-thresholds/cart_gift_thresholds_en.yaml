@@ -1,0 +1,25 @@
+title: Updating gift thresholds in a delivery store cart
+tagline: Updated an existing delivery-store promotion so gifts followed the new
+  rules without rebuilding the entire cart.
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Cart rules
+  - Promotions
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Updated an existing delivery-store promotion so gifts followed the new
+      rules without rebuilding the entire cart.
+  - type: text
+    title: How it works
+    body: Located two separate conditions in the existing logic. Updated the general
+      promotion threshold and the automatic addition rule for a specific
+      eight-piece set. Kept the established mechanism intact and limited the
+      changes to the agreed rules.
+  - type: text
+    title: Result and verification
+    body: The client confirmed it worked. The archive does not contain tests for
+      every boundary amount, so the work is not presented as exhaustive
+      validation of the gift system.

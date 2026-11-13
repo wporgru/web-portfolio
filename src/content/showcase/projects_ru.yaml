@@ -3015,3 +3015,120 @@ projects:
       - label: Читать кейс
         url: /showcase/transport-site-media-repair
         type: product
+  - slug: bgtgroup-technical-seo-performance
+    name: "BGT Group: техническое SEO и скорость сайта"
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: "Исправил внутренние ссылки и карту сайта BGT Group и провёл работы
+      по производительности главной. В сохранённых отчётах PageSpeed: 37 → 86 на
+      телефоне и 63 → 92 на компьютере."
+    stack:
+      - WordPress
+      - Screaming Frog
+      - PageSpeed Insights
+      - Technical SEO
+    order: 172
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bgtgroup-technical-seo-performance
+        type: product
+  - slug: edible-bouquet-catalog-data
+    name: Подготовка каталога съедобных букетов к импорту
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Собрал карточки съедобных букетов и фотографии, чтобы клиент мог
+      дополнить данные и согласовать структуру до загрузки магазина.
+    stack:
+      - Web scraping
+      - Spreadsheets
+      - WooCommerce
+      - Product data
+    order: 173
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/edible-bouquet-catalog-data
+        type: product
+  - slug: woocommerce-product-template-training
+    name: Индивидуальные шаблоны товаров WooCommerce
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Показал, как оформлять отдельные товарные страницы с собственными
+      блоками, не меняя общий шаблон всего каталога.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Shortcodes
+      - Product templates
+    order: 174
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-product-template-training
+        type: product
+  - slug: woocommerce-native-order-statuses
+    name: Возврат штатных статусов заказов WooCommerce
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Упростил работу менеджеров с заказами, вернув штатные статусы и
+      отделив состояние заказа от подтверждения поступления денег.
+    stack:
+      - WooCommerce
+      - Order management
+      - Payment workflows
+    order: 175
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-native-order-statuses
+        type: product
+  - slug: woocommerce-admin-email-items
+    name: Состав заказа в письмах менеджеру WooCommerce
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Восстановил подробности заказа в административном уведомлении,
+      чтобы менеджер мог увидеть, что именно купил клиент.
+    stack:
+      - WooCommerce
+      - Transactional email
+      - Order management
+    order: 176
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-admin-email-items
+        type: product
+  - slug: booking-form-email-recovery
+    name: Восстановление писем из форм бронирования
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Восстановил получение заявок из форм бронирования и проверил
+      результат несколькими различимыми отправками, а не одним тестовым письмом.
+    stack:
+      - WordPress
+      - Booking forms
+      - Email notifications
+      - QA
+    order: 177
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/booking-form-email-recovery
+        type: product
+  - slug: cart-gift-thresholds
+    name: Настройка порогов подарка в корзине доставки
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: "Обновил действующую акцию магазина доставки: подарок должен
+      добавляться по новым условиям без переделки всей корзины."
+    stack:
+      - WooCommerce
+      - Cart rules
+      - Promotions
+    order: 178
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/cart-gift-thresholds
+        type: product
