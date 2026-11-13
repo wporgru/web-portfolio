@@ -1,0 +1,31 @@
+title: Replacing a store theme and restoring checkout
+tagline: The aging theme needed replacing without losing the familiar storefront
+  layout. At the same time, the pickup-point selector was freezing in checkout
+  and needed recovery.
+year: "06.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Gutenberg
+  - Spectra
+  - WooCommerce
+  - CDEK
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The aging theme needed replacing without losing the familiar storefront
+      layout. At the same time, the pickup-point selector was freezing in
+      checkout and needed recovery.
+  - type: text
+    title: How it works
+    body: Rebuilt the homepage in Gutenberg and Spectra on staging, keeping the
+      existing content and a similar visual layout. Refined the header, business
+      hours and category order. Replaced custom menu URLs with category links to
+      remove old-domain references. Agreed on a CDEK module replacement and
+      refined checkout address fields.
+  - type: text
+    title: Result and verification
+    body: The client confirmed pickup-point selection worked. With approval, I moved
+      the refreshed version to production and reported visually checking the
+      storefront and pickup maps. The final field and plugin inventory was not
+      preserved.

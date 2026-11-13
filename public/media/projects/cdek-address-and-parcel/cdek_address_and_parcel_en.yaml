@@ -1,0 +1,27 @@
+title: CDEK shipping quotes and address suggestions in checkout
+tagline: Shipping quotes required parcel dimensions, but not every product had
+  them. Checkout also needed usable address entry.
+year: "04.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CDEK
+  - Address autocomplete
+  - Shipping
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Shipping quotes required parcel dimensions, but not every product had
+      them. Checkout also needed usable address entry.
+  - type: text
+    title: How it works
+    body: Configured product dimensions where available and agreed temporary
+      defaults for missing values. Reviewed address suggestions after restoring
+      the previous field structure. Investigated Yandex Delivery with support
+      and agreed on a temporary tariff-based option instead of presenting an
+      unverified automatic integration as finished.
+  - type: text
+    title: Result and verification
+    body: The client confirmed postcode autofill but noted that suggestions
+      disappeared quickly on mobile. Automated Yandex Delivery quotes and
+      complete product dimensions were not confirmed in this stage.

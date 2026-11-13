@@ -50,6 +50,18 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
     ];
     if(!details.get(slug)?.[lang]) throw Error('Missing localized technical detail: '+slug);
     blocks.push({type:'text',title:ru?'Как решалась задача':'Implementation and scope',body:details.get(slug)[lang]});
+    if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Что вошло в комплексное обновление':'What the overhaul covered',
+      bullets:ru?[
+        'Смена темы и полный редизайн: сохранил узнаваемый зелёный цвет, но изменил первый экран, структуру каталога и навигацию.',
+        'Обновление и очистка: убрал устаревшие и дублирующие расширения вместо того, чтобы переносить весь старый набор плагинов в новую витрину.',
+        'Мобильный сценарий покупки: переработал меню и добавил плавающую корзину, чтобы к заказу можно было вернуться при прокрутке.',
+        'Работы по ускорению вошли в технический этап. Сопоставимых замеров до и после нет, поэтому точный прирост не указываю.',
+      ]:[
+        'Theme replacement and a full redesign: kept the recognizable green palette while changing the hero, catalog structure and navigation.',
+        'Updates and cleanup: removed obsolete and redundant extensions rather than carrying the entire legacy plugin stack into the new storefront.',
+        'Mobile shopping: revised navigation and added a floating cart so shoppers could return to their order while scrolling.',
+        'Performance work was part of the technical overhaul. Comparable before-and-after measurements are not available.',
+      ]});
     if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Главная до и после':'Homepage before and after',
       body:ru?'В старой версии акцент был на слайдере и плотном списке категорий; после редизайна — на крупном первом экране, укрупнённых разделах каталога и блоках доверия, включая отзывы и FAQ.':'The original homepage emphasized a slider and a dense category list. The redesign uses a larger opening section, clearer catalog groupings and trust-building sections such as reviews and FAQs.',
       links:[{label:ru?'До редизайна':'Before redesign',url:'https://kwork.ru/portfolio/23517585'},{label:ru?'После редизайна':'After redesign',url:'https://kwork.ru/portfolio/23517588'}]});

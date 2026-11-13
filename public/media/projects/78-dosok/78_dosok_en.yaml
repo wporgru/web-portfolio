@@ -33,6 +33,17 @@ blocks:
       image below was captured later. The scope does not include measured
       PageSpeed gains, sales growth or a rebuild of product filters."
   - type: text
+    title: What the overhaul covered
+    bullets:
+      - "Theme replacement and a full redesign: kept the recognizable green
+        palette while changing the hero, catalog structure and navigation."
+      - "Updates and cleanup: removed obsolete and redundant extensions rather
+        than carrying the entire legacy plugin stack into the new storefront."
+      - "Mobile shopping: revised navigation and added a floating cart so
+        shoppers could return to their order while scrolling."
+      - Performance work was part of the technical overhaul. Comparable
+        before-and-after measurements are not available.
+  - type: text
     title: Homepage before and after
     body: The original homepage emphasized a slider and a dense category list. The
       redesign uses a larger opening section, clearer catalog groupings and

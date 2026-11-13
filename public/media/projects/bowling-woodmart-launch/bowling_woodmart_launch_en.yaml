@@ -1,0 +1,26 @@
+title: Building the foundation for a bowling equipment store
+tagline: The owner needed a WordPress store foundation ready for their own
+  products and brands without rebuilding navigation from scratch.
+year: "04.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - Localization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The owner needed a WordPress store foundation ready for their own products
+      and brands without rebuilding navigation from scratch.
+  - type: text
+    title: How it works
+    body: Installed WordPress and WoodMart, configured and localized the interface,
+      and showed how to add product categories to menus and replace demo posts
+      and brands. Demo products and categories were left untranslated because
+      they were intended to be removed.
+  - type: text
+    title: Result and verification
+    body: The client accepted the initial stage. This was a foundation for content
+      and catalog work, not proof of a complete assortment, payment processing
+      or open indexing.

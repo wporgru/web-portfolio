@@ -2219,3 +2219,90 @@ projects:
       - label: Read case study
         url: /showcase/avangard-woodmart-foundation/en
         type: product
+  - slug: gutenberg-store-migration
+    name: Replacing a store theme and restoring checkout
+    year: "06.2026"
+    role: Web development and automation
+    description: The aging theme needed replacing without losing the familiar
+      storefront layout. At the same time, the pickup-point selector was
+      freezing in checkout and needed recovery.
+    stack:
+      - WordPress
+      - Gutenberg
+      - Spectra
+      - WooCommerce
+      - CDEK
+    order: 128
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/gutenberg-store-migration/en
+        type: product
+  - slug: cdek-address-and-parcel
+    name: CDEK shipping quotes and address suggestions in checkout
+    year: "04.2026"
+    role: Web development and automation
+    description: Shipping quotes required parcel dimensions, but not every product
+      had them. Checkout also needed usable address entry.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Address autocomplete
+      - Shipping
+    order: 129
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/cdek-address-and-parcel/en
+        type: product
+  - slug: xml-sewing-equipment-catalog
+    name: Importing sewing equipment from a supplier XML feed
+    year: "03.2026"
+    role: Web development and automation
+    description: The existing storefront needed a supplier XML assortment added.
+      After the import, the client wanted specific items removed rather than a
+      complete catalog rebuild.
+    stack:
+      - WooCommerce
+      - XML
+      - Supplier catalog
+    order: 130
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/xml-sewing-equipment-catalog/en
+        type: product
+  - slug: yandex-mail-signature-kit
+    name: Six corporate HTML signatures for Yandex Mail
+    year: "03.2026"
+    role: Web development and automation
+    description: The team needed personalized signatures with a consistent visual
+      style. The initial version was too large, and icon spacing differed across
+      devices.
+    stack:
+      - HTML email
+      - Table layout
+      - Yandex Mail
+    order: 131
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/yandex-mail-signature-kit/en
+        type: product
+  - slug: bowling-woodmart-launch
+    name: Building the foundation for a bowling equipment store
+    year: "04.2024"
+    role: Web development and automation
+    description: The owner needed a WordPress store foundation ready for their own
+      products and brands without rebuilding navigation from scratch.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Localization
+    order: 132
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bowling-woodmart-launch/en
+        type: product

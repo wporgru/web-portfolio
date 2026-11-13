@@ -2248,3 +2248,92 @@ projects:
       - label: Читать кейс
         url: /showcase/avangard-woodmart-foundation
         type: product
+  - slug: gutenberg-store-migration
+    name: Замена темы магазина с восстановлением чекаута
+    year: "06.2026"
+    role: Веб-разработка и автоматизация
+    description: Устаревшую тему требовалось заменить без потери знакомого
+      покупателям оформления. Одновременно нужно было вернуть работающий выбор
+      пункта выдачи, который зависал в чекауте.
+    stack:
+      - WordPress
+      - Gutenberg
+      - Spectra
+      - WooCommerce
+      - CDEK
+    order: 128
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/gutenberg-store-migration
+        type: product
+  - slug: cdek-address-and-parcel
+    name: Расчёт СДЭК и адресные подсказки в чекауте
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: Для расчёта доставки нужны параметры посылки, но вес и габариты
+      были заполнены не у всех товаров. Также нужно было сохранить удобный ввод
+      адреса.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Address autocomplete
+      - Shipping
+    order: 129
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/cdek-address-and-parcel
+        type: product
+  - slug: xml-sewing-equipment-catalog
+    name: Импорт швейного оборудования из XML поставщика
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: Действующую витрину требовалось дополнить ассортиментом из XML.
+      После загрузки клиенту нужно было исключить конкретные товары, а не
+      перестраивать каталог целиком.
+    stack:
+      - WooCommerce
+      - XML
+      - Supplier catalog
+    order: 130
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/xml-sewing-equipment-catalog
+        type: product
+  - slug: yandex-mail-signature-kit
+    name: Шесть корпоративных HTML-подписей для Яндекс Почты
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: Команде нужны были персональные подписи в едином стиле. Первый
+      вариант требовал уменьшения, а иконки и промежутки на разных устройствах
+      выглядели неодинаково.
+    stack:
+      - HTML email
+      - Table layout
+      - Yandex Mail
+    order: 131
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/yandex-mail-signature-kit
+        type: product
+  - slug: bowling-woodmart-launch
+    name: Запуск основы магазина товаров для боулинга
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: Владельцу требовалась рабочая основа каталога на WordPress, которую
+      он сможет наполнить своими товарами и брендами, не переделывая навигацию с
+      нуля.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Localization
+    order: 132
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bowling-woodmart-launch
+        type: product

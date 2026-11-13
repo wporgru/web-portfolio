@@ -1,0 +1,27 @@
+title: Importing sewing equipment from a supplier XML feed
+tagline: The existing storefront needed a supplier XML assortment added. After
+  the import, the client wanted specific items removed rather than a complete
+  catalog rebuild.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - XML
+  - Supplier catalog
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The existing storefront needed a supplier XML assortment added. After the
+      import, the client wanted specific items removed rather than a complete
+      catalog rebuild.
+  - type: text
+    title: How it works
+    body: Received the XML export, ran the import and handed over the result after
+      completion. Removed two products on request. Discussed the future schedule
+      separately so the one-time transfer was not confused with recurring
+      synchronization.
+  - type: text
+    title: Result and verification
+    body: The client accepted delivery. Listing totals and complete attribute
+      coverage were not independently counted, and automated updates were not
+      part of the verified result.

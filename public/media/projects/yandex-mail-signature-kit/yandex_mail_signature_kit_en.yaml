@@ -1,0 +1,26 @@
+title: Six corporate HTML signatures for Yandex Mail
+tagline: The team needed personalized signatures with a consistent visual style.
+  The initial version was too large, and icon spacing differed across devices.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - HTML email
+  - Table layout
+  - Yandex Mail
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The team needed personalized signatures with a consistent visual style.
+      The initial version was too large, and icon spacing differed across
+      devices.
+  - type: text
+    title: How it works
+    body: Reduced the signature size and refined icons and spacing through
+      successive samples. Requested employee details and ordinary Telegram links
+      instead of QR codes. Delivered six table-based HTML files with remotely
+      hosted HTTPS images after approval.
+  - type: text
+    title: Result and verification
+    body: Six recovered originals confirm the handoff. Personal contact details are
+      not published, and identical rendering across all email clients is not
+      claimed.
