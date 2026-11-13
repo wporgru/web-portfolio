@@ -25,6 +25,7 @@ const {
   description,
   ogImage,
   customLangLinks,
+  roleLinks,
   personJsonLd,
   noindex = false,
 } = Astro.props;
@@ -97,7 +98,7 @@ const langLinks = customLangLinks ?? allLangs.map(l => ({
   active: l.id === lang,
 }));
 
-const profileLinks = allProfiles.map(p => ({
+const profileLinks = roleLinks ?? allProfiles.map(p => ({
   id:     p.id,
   label:  p.label,
   href:   buildHref(p.slug, lang),

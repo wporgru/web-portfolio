@@ -17,32 +17,93 @@ const contacts = [
   {label:'GitHub',url:'https://github.com/wporgru'},
   {label:'WP.ORG.RU',url:'https://wp.org.ru/contacts/'},
 ];
+const skillTags = [
+  ['JavaScript','React','Astro','HTML','CSS',ru?'Адаптивная вёрстка':'Responsive design'],
+  ['PHP','WordPress','WooCommerce','Directus','REST API'],
+  ['Python','Node.js','SQLite','XML','XLSX',ru?'Парсинг':'Web scraping'],
+  ['Codex','Antigravity',ru?'Агентные сценарии':'Agent workflows',ru?'Редактура AI-контента':'AI content editing'],
+  ['Yandex Webmaster','Metrica','Google Search Console','IndexNow',ru?'Технический аудит':'Technical audits'],
+  ['Git','GitHub Actions','Playwright',ru?'Миграция сайтов':'Site migrations',ru?'Тестовый стенд':'Staging'],
+];
+const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
 const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
 ---
-<Layout title={c.title} description={c.description} lang={lang} profile={profile} section="main" personJsonLd={person}>
-<div class="container portfolio">
-  <section class="intro">
-    <p class="kicker">WP.ORG.RU / {c.label}</p>
-    <h1>{c.h1}</h1>
-    <p class="identity">{person.name} <span>·</span> {c.identity}</p>
-    <p class="lede">{c.description}</p>
-    <div class="actions"><a class="btn" href="https://t.me/wporgru">{c.cta}</a><a class="btn btn--ghost" href={catalog}>{c.all}</a></div>
-    <dl class="proof">{c.stats.map(([number,label])=><div><dt>{number}</dt><dd>{label}</dd></div>)}</dl>
-  </section>
+<Layout title={c.title} description={c.description} lang={lang} profile={profile} section="main" personJsonLd={person} roleLinks={roleLinks}>
+<section class="container cv-home">
+  <div class="page-grid cv-grid">
+    <div class="main-content cv-main">
+      <article class="card hero">
+        <div class="hero__top">
+          <div>
+            <h1 class="hero__name">{person.name} — {ru ? 'веб-разработчик' : 'web developer'}</h1>
+            <p class="hero__title">{ru ? 'Full-stack · E-commerce · Автоматизация и ИИ' : 'Full-stack · E-commerce · Automation and AI'}</p>
+            <p class="hero__summary">{c.description} {ru ? 'Более 15 лет в веб-разработке.' : 'Over 15 years in web development.'}</p>
+          </div>
+        </div>
+        <div class="hero__contacts">
+          <div class="section__title">{ru ? 'Контакты' : 'Contacts'}</div>
+          <div class="pillrow">{contacts.map(x=><a class="pill" href={x.url}>{x.label}</a>)}</div>
+        </div>
+      </article>
 
-  <section id="roles"><h2>{c.rolesTitle}</h2><div class="tiles">
-    {c.roles.map(([title,body])=><article><h3>{title}</h3><p>{body}</p></article>)}
-  </div></section>
-  <section id="work"><h2>{c.workTitle}</h2><div class="tiles">
-    {picks.map(p => <article><small>{p.stack.slice(0,3).join(' / ')}</small><h3><a href={base+'/showcase/'+p.slug+(ru?'/':'/en/')}>{p.name}</a></h3><p>{p.description}</p></article>)}
-  </div><p><a class="btn btn--ghost" href={catalog}>{c.all} →</a></p></section>
-  <section id="results"><h2>{c.resultsTitle}</h2><ul class="timeline">{c.results.map(([title,body])=><li><strong>{title}</strong><p>{body}</p></li>)}</ul></section>
-  <section id="experience"><h2>{c.experienceTitle}</h2><div class="tiles">{c.experience.map(([title,body])=><article><h3>{title}</h3><p>{body}</p></article>)}</div></section>
-  <section id="skills"><h2>{c.skillsTitle}</h2><div class="tiles">{c.skills.map(([title,body])=><article><h3>{title}</h3><p>{body}</p></article>)}</div></section>
-  <section id="contact" class="contact"><h2>{c.contactTitle}</h2><p>{c.contactText}</p><p>{c.hours}</p><div class="actions">{contacts.map(x=><a class="btn btn--ghost" href={x.url}>{x.label}</a>)}</div></section>
-</div>
+      <article class="card card--achievements">
+        <h2 class="h2">{ru ? 'Достижения' : 'Achievements'}</h2>
+        <ul class="list">
+          <li>{ru ? '582 выполненных заказа в собранном архиве Kwork; 371 отзыв сохранён со скриншотом.' : '582 completed orders in the collected Kwork archive; 371 reviews archived with screenshots.'}</li>
+          {c.results.map(([title,body])=><li><strong>{title}.</strong> {body}</li>)}
+        </ul>
+      </article>
+
+      <section class="section section--experience">
+        <h2 class="h2">{ru ? 'Опыт' : 'Experience'}</h2>
+        <div class="stack">
+          {c.experience.map(([title,body])=>{
+            const [name,period]=title.split(' · ');
+            return <article class="card item">
+              <div class="item__top"><strong>{name}</strong><span class="muted">{period}</span></div>
+              <ul class="list"><li>{body}</li></ul>
+            </article>;
+          })}
+        </div>
+      </section>
+
+      <section class="section cv-extra">
+        <h2 class="h2">{c.rolesTitle}</h2>
+        <div class="stack">{c.roles.map(([title,body],i)=><article class="card item" id={'role-'+(i+1)}><h3 class="h2">{title}</h3><p class="muted">{body}</p></article>)}</div>
+      </section>
+
+      <section class="section cv-extra">
+        <h2 class="h2">{c.workTitle}</h2>
+        <div class="stack">{picks.map(p=><article class="card item"><h3 class="h2"><a href={base+'/showcase/'+p.slug+(ru?'/':'/en/')}>{p.name}</a></h3><p class="muted">{p.description}</p></article>)}</div>
+        <p><a class="btn btn--ghost" href={catalog}>{c.all} →</a></p>
+      </section>
+    </div>
+
+    <aside class="sidebar cv-sidebar">
+      <article class="card card--downloads">
+        <h2 class="h2">{ru ? 'Проекты и связь' : 'Projects and contact'}</h2>
+        <div class="btnrow"><a class="btn" href={catalog}>{ru ? 'Проекты' : 'Projects'}</a><a class="btn btn--ghost" href="https://t.me/wporgru">Telegram</a></div>
+      </article>
+      <article class="card card--skills">
+        <h2 class="h2">{ru ? 'Навыки' : 'Skills'}</h2>
+        <div class="skillsgrid">{c.skills.map(([group],i)=><div class="skillsgroup">
+          <div class="skillsgroup__title">{group}</div>
+          <ul class="tags">{skillTags[i].map(tag=><li class="tag">{tag}</li>)}</ul>
+        </div>)}</div>
+      </article>
+    </aside>
+  </div>
+</section>
 </Layout>
 <style>
-.portfolio{padding-block:clamp(36px,7vw,90px);max-width:1120px}.portfolio section+section{margin-top:clamp(42px,7vw,82px)}
-.kicker,small{color:#a6dafa;letter-spacing:.08em;font-weight:650}.intro h1{font-size:clamp(2.15rem,6vw,4.8rem);line-height:1.05;max-width:21ch;margin:.25em 0}.identity{font-size:clamp(1.08rem,2vw,1.45rem);font-weight:650}.identity span{color:#83c8f1}.lede{font-size:clamp(1.05rem,2.2vw,1.35rem);max-width:58ch}.actions{display:flex;flex-wrap:wrap;gap:.65rem;margin-block:1.25rem}.proof,.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}.proof div,article,.contact{border:1px solid var(--border);background:var(--card,rgba(255,255,255,.055));border-radius:16px;padding:1.2rem}.proof dt{font-size:1.65rem;font-weight:750}.proof dd{margin:.3rem 0 0;color:var(--muted)}h2{font-size:clamp(1.6rem,4vw,2.5rem);margin:0 0 1rem}h3{font-size:1.12rem;margin:.4rem 0 .6rem}article p,.timeline p,.contact p{margin:.35rem 0;color:var(--muted);line-height:1.6}.timeline{padding-left:1.3rem}.timeline li+li{margin-top:1rem}a:focus-visible{outline:2px solid #9de5ff;outline-offset:4px}
+.cv-home{padding-block:16px 32px}
+.cv-grid :global([id^="role-"]){scroll-margin-top:85px}
+@media(min-width:960px){
+  .cv-sidebar{grid-column:1;grid-row:1}
+  .cv-main{grid-column:2;grid-row:1;min-width:0}
+}
+@media(max-width:959px){
+  .cv-grid .hero{order:0}
+  .cv-grid .cv-extra{order:6}
+}
 </style>
