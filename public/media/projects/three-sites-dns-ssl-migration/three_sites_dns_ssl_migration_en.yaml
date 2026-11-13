@@ -1,0 +1,28 @@
+title: Coordinating a three-site migration, DNS and TLS
+tagline: Helped move three sites from Hostland to Hostiman. Hosting support
+  copied the files; my role was coordination, DNS troubleshooting and
+  certificate setup.
+year: "10.2022"
+role: Web development and automation
+stack:
+  - DNS
+  - TLS
+  - Hosting migration
+  - WordPress
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Helped move three sites from Hostland to Hostiman. Hosting support copied
+      the files; my role was coordination, DNS troubleshooting and certificate
+      setup.
+  - type: text
+    title: How it works
+    body: Requested the transfer from support and traced one domain issue to
+      inconsistent responses from the registrar’s two DNS servers. Sent the
+      registrar the diagnostic results. Once corrected, confirmed the domain
+      opened and issued certificates for the other two sites.
+  - type: text
+    title: Result and verification
+    body: The client accepted the combined stage. A trial search was removed at
+      their request; live search and all menu levels were not migration
+      deliverables.

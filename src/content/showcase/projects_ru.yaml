@@ -3521,3 +3521,143 @@ projects:
       - label: Читать кейс
         url: /showcase/english-affiliate-storefront
         type: product
+  - slug: industrial-builder-landing
+    name: Сайт-визитка предприятия «Нефтехимик-Н»
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: "Собрал и опубликовал компактную визитку производственного
+      предприятия: название, промышленная фотография и текстовый блок без
+      сложной CMS."
+    stack:
+      - REG Website Builder
+      - Landing page
+      - Content editing
+    order: 201
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/industrial-builder-landing
+        type: product
+  - slug: lingfast-language-site-foundation
+    name: "Lingfast: основа сайта языкового проекта"
+    year: "11.2022"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил шаблонную основу для языкового проекта: лендинг, блог и
+      редактор, в котором владелец мог заменить демонстрационные материалы
+      своими."
+    stack:
+      - WordPress
+      - WoodMart
+      - Elementor
+      - Hosting
+    order: 202
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/lingfast-language-site-foundation
+        type: product
+  - slug: blinds-conditional-enquiry-fields
+    name: Зависимые поля формы заявки для сайта жалюзи
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: Настроил форму, в которой доступные материалы зависят от выбранного
+      типа жалюзи. Это позволяет не показывать клиенту заведомо несовместимые
+      варианты.
+    stack:
+      - WordPress
+      - Elementor
+      - Conditional forms
+      - Lead capture
+    order: 203
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/blinds-conditional-enquiry-fields
+        type: product
+  - slug: creatium-to-elementor-header
+    name: Перенос шапки из Creatium в WordPress
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: Перенёс прототип первого экрана из Creatium в WordPress, чтобы
+      продолжить развивать интерфейс в Elementor, не перенося весь каталог за
+      один этап.
+    stack:
+      - Creatium
+      - WordPress
+      - Elementor
+      - Responsive design
+    order: 204
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/creatium-to-elementor-header
+        type: product
+  - slug: three-sites-dns-ssl-migration
+    name: "Координация переезда трёх сайтов: DNS и SSL"
+    year: "10.2022"
+    role: Веб-разработка и автоматизация
+    description: Помог перенести три сайта с Hostland на Hostiman. Файлы переносила
+      поддержка хостинга; моя зона ответственности — координация, диагностика
+      DNS и выпуск сертификатов.
+    stack:
+      - DNS
+      - TLS
+      - Hosting migration
+      - WordPress
+    order: 205
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/three-sites-dns-ssl-migration
+        type: product
+  - slug: per-product-quantity-discounts
+    name: Количественные скидки по каждому товару
+    year: "03.2023"
+    role: Веб-разработка и автоматизация
+    description: Настроил скидки по количеству единиц конкретного товара, чтобы
+      покупка разных наименований не давала скидку по общему числу позиций в
+      корзине.
+    stack:
+      - WooCommerce
+      - Quantity discounts
+      - Cart rules
+    order: 206
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/per-product-quantity-discounts
+        type: product
+  - slug: generatepress-editorial-blog
+    name: Блог на GeneratePress с оглавлением статей
+    year: "01.2023"
+    role: Веб-разработка и автоматизация
+    description: Настроил основу блога на GeneratePress, чтобы редактор мог
+      публиковать структурированные статьи и получать оглавление из заголовков.
+    stack:
+      - WordPress
+      - GeneratePress
+      - LuckyWP
+      - Editorial workflow
+    order: 207
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/generatepress-editorial-blog
+        type: product
+  - slug: saferoute-shipping-migration
+    name: Замена Shiptor на SafeRoute в WooCommerce
+    year: "01.2023"
+    role: Веб-разработка и автоматизация
+    description: Перенастроил доставку существующего магазина на SafeRoute, чтобы
+      покупатель снова мог выбрать способ получения в виджете оформления.
+    stack:
+      - WooCommerce
+      - Shiptor
+      - SafeRoute
+      - Shipping
+    order: 208
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/saferoute-shipping-migration
+        type: product

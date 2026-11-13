@@ -1,0 +1,26 @@
+title: Replacing Shiptor with SafeRoute in WooCommerce
+tagline: Moved an existing store’s shipping workflow to SafeRoute so shoppers
+  could select delivery in the checkout widget.
+year: "01.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Shiptor
+  - SafeRoute
+  - Shipping
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Moved an existing store’s shipping workflow to SafeRoute so shoppers could
+      select delivery in the checkout widget.
+  - type: text
+    title: How it works
+    body: Restored site operation after an issue and checked that the shipping
+      widget appeared. Removed an unwanted row and refined the block after
+      feedback. Worked separately on free shipping rules based on order value
+      and a fixed zero-cost option.
+  - type: text
+    title: Result and verification
+    body: The client accepted the widget setup. A final successful free-shipping
+      test, contract completion and a live shipment are not confirmed in the
+      archive.

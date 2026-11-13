@@ -1,0 +1,25 @@
+title: GeneratePress blog with article contents
+tagline: Set up a GeneratePress blog so editors could publish structured
+  articles with a table of contents generated from headings.
+year: "01.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - GeneratePress
+  - LuckyWP
+  - Editorial workflow
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Set up a GeneratePress blog so editors could publish structured articles
+      with a table of contents generated from headings.
+  - type: text
+    title: How it works
+    body: Configured the theme and prepared a sample post with an image and several
+      headings. Included LuckyWP Table of Contents in the agreed setup and
+      demonstrated it on the sample article.
+  - type: text
+    title: Result and verification
+    body: The client accepted the blog foundation. The sample article did not
+      represent a completed content library, and no comparative speed benchmark
+      was made.

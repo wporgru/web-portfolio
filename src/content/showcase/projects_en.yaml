@@ -3480,3 +3480,141 @@ projects:
       - label: Read case study
         url: /showcase/english-affiliate-storefront/en
         type: product
+  - slug: industrial-builder-landing
+    name: One-page website for Neftekhimik-N
+    year: "12.2022"
+    role: Web development and automation
+    description: Built and published a compact manufacturing company website with a
+      company heading, industrial photograph and text block, without a complex
+      CMS.
+    stack:
+      - REG Website Builder
+      - Landing page
+      - Content editing
+    order: 201
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/industrial-builder-landing/en
+        type: product
+  - slug: lingfast-language-site-foundation
+    name: "Lingfast: website foundation for a language project"
+    year: "11.2022"
+    role: Web development and automation
+    description: "Prepared a template-based foundation for a language project: a
+      landing page, a blog and an editor for replacing demo content with the
+      owner’s material."
+    stack:
+      - WordPress
+      - WoodMart
+      - Elementor
+      - Hosting
+    order: 202
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/lingfast-language-site-foundation/en
+        type: product
+  - slug: blinds-conditional-enquiry-fields
+    name: Conditional enquiry fields for a blinds website
+    year: "12.2022"
+    role: Web development and automation
+    description: Configured a form where available materials depend on the type of
+      blinds selected, so customers do not see incompatible options.
+    stack:
+      - WordPress
+      - Elementor
+      - Conditional forms
+      - Lead capture
+    order: 203
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/blinds-conditional-enquiry-fields/en
+        type: product
+  - slug: creatium-to-elementor-header
+    name: Rebuilding a Creatium header in WordPress
+    year: "12.2022"
+    role: Web development and automation
+    description: Rebuilt a Creatium first-screen prototype in WordPress so the
+      interface could be maintained in Elementor without migrating the entire
+      catalog at once.
+    stack:
+      - Creatium
+      - WordPress
+      - Elementor
+      - Responsive design
+    order: 204
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/creatium-to-elementor-header/en
+        type: product
+  - slug: three-sites-dns-ssl-migration
+    name: Coordinating a three-site migration, DNS and TLS
+    year: "10.2022"
+    role: Web development and automation
+    description: Helped move three sites from Hostland to Hostiman. Hosting support
+      copied the files; my role was coordination, DNS troubleshooting and
+      certificate setup.
+    stack:
+      - DNS
+      - TLS
+      - Hosting migration
+      - WordPress
+    order: 205
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/three-sites-dns-ssl-migration/en
+        type: product
+  - slug: per-product-quantity-discounts
+    name: Per-product quantity discounts in WooCommerce
+    year: "03.2023"
+    role: Web development and automation
+    description: Configured quantity discounts per product so unrelated items would
+      not combine to reach a cart-wide threshold.
+    stack:
+      - WooCommerce
+      - Quantity discounts
+      - Cart rules
+    order: 206
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/per-product-quantity-discounts/en
+        type: product
+  - slug: generatepress-editorial-blog
+    name: GeneratePress blog with article contents
+    year: "01.2023"
+    role: Web development and automation
+    description: Set up a GeneratePress blog so editors could publish structured
+      articles with a table of contents generated from headings.
+    stack:
+      - WordPress
+      - GeneratePress
+      - LuckyWP
+      - Editorial workflow
+    order: 207
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/generatepress-editorial-blog/en
+        type: product
+  - slug: saferoute-shipping-migration
+    name: Replacing Shiptor with SafeRoute in WooCommerce
+    year: "01.2023"
+    role: Web development and automation
+    description: Moved an existing store’s shipping workflow to SafeRoute so
+      shoppers could select delivery in the checkout widget.
+    stack:
+      - WooCommerce
+      - Shiptor
+      - SafeRoute
+      - Shipping
+    order: 208
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/saferoute-shipping-migration/en
+        type: product

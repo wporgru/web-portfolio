@@ -1,0 +1,28 @@
+title: One-page website for Neftekhimik-N
+tagline: Built and published a compact manufacturing company website with a
+  company heading, industrial photograph and text block, without a complex CMS.
+year: "12.2022"
+role: Web development and automation
+stack:
+  - REG Website Builder
+  - Landing page
+  - Content editing
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built and published a compact manufacturing company website with a company
+      heading, industrial photograph and text block, without a complex CMS.
+  - type: text
+    title: How it works
+    body: Used REG Website Builder rather than WordPress. Moved the text to the
+      upper left after feedback and updated the heading to the company’s full
+      name. Showed the owner how to edit the page independently.
+  - type: text
+    title: Result and verification
+    body: The client accepted the site. The archived portfolio card shows the agreed
+      layout and builder mark, not the domain’s current appearance.
+  - type: image
+    src: /media/projects/industrial-builder-landing/historical-landing.webp
+    alt: Industrial photograph and heading on the Neftekhimik-N website
+    caption: Historical Kwork portfolio image showing the approved layout and the
+      REG Website Builder mark.

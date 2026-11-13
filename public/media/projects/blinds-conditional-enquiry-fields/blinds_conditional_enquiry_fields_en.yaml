@@ -1,0 +1,25 @@
+title: Conditional enquiry fields for a blinds website
+tagline: Configured a form where available materials depend on the type of
+  blinds selected, so customers do not see incompatible options.
+year: "12.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - Elementor
+  - Conditional forms
+  - Lead capture
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Configured a form where available materials depend on the type of blinds
+      selected, so customers do not see incompatible options.
+  - type: text
+    title: How it works
+    body: First explained how to attach existing popups to buttons and phone links
+      and how Elementor page templates differ from header templates. For the
+      paid stage, agreed on type-to-material mappings and confirmed backup
+      availability, then configured conditional fields and handed over the work.
+  - type: text
+    title: Result and verification
+    body: The client paid for and accepted the setup. The archive does not establish
+      the exact module or a test of every combination and email delivery.

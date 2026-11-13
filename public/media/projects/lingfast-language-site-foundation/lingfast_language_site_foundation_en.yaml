@@ -1,0 +1,28 @@
+title: "Lingfast: website foundation for a language project"
+tagline: "Prepared a template-based foundation for a language project: a landing
+  page, a blog and an editor for replacing demo content with the owner’s
+  material."
+year: "11.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WoodMart
+  - Elementor
+  - Hosting
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Prepared a template-based foundation for a language project: a landing
+      page, a blog and an editor for replacing demo content with the owner’s
+      material."
+  - type: text
+    title: How it works
+    body: Agreed to switch from the initial Astra setup to the WoodMart Mobile App
+      demo and Elementor. Identified PHP limits blocking the demo import and
+      continued once the client adjusted them. Pointed out the sitemap and
+      demonstrated how to connect Google Analytics and prepare future
+      translations with Polylang.
+  - type: text
+    title: Result and verification
+    body: The client accepted the foundation. Completed translations, live analytics
+      and final content were not verified deliverables.

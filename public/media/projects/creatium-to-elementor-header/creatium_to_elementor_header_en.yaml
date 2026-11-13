@@ -1,0 +1,25 @@
+title: Rebuilding a Creatium header in WordPress
+tagline: Rebuilt a Creatium first-screen prototype in WordPress so the interface
+  could be maintained in Elementor without migrating the entire catalog at once.
+year: "12.2022"
+role: Web development and automation
+stack:
+  - Creatium
+  - WordPress
+  - Elementor
+  - Responsive design
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Rebuilt a Creatium first-screen prototype in WordPress so the interface
+      could be maintained in Elementor without migrating the entire catalog at
+      once.
+  - type: text
+    title: How it works
+    body: "Agreed on the scope: header, navigation, first screen and page container.
+      Kept product card changes separate so the client could approve the main
+      layout without waiting for catalog work."
+  - type: text
+    title: Result and verification
+    body: The client checked the changes and accepted the stage. This was an
+      interface rebuild, not a verified migration of every page and product.

@@ -1,0 +1,24 @@
+title: Per-product quantity discounts in WooCommerce
+tagline: Configured quantity discounts per product so unrelated items would not
+  combine to reach a cart-wide threshold.
+year: "03.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Quantity discounts
+  - Cart rules
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Configured quantity discounts per product so unrelated items would not
+      combine to reach a cart-wide threshold.
+  - type: text
+    title: How it works
+    body: The first setup used the overall cart count and did not work for mixed
+      orders. Clarified that percentages do not stack and that discounts are
+      calculated per line item. Revised the rules and sent the result for client
+      review.
+  - type: text
+    title: Result and verification
+    body: The client accepted the setup. The full set of test carts and extension
+      settings was not preserved.

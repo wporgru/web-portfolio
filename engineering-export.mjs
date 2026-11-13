@@ -5,6 +5,7 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'industrial-builder-landing': ['historical-landing.webp', 'Промышленная фотография и заголовок сайта «Нефтехимик-Н»', 'Industrial photograph and heading on the Neftekhimik-N website', 'Историческая карточка портфолио Kwork: видны согласованная композиция и отметка REG Website Builder.', 'Historical Kwork portfolio image showing the approved layout and the REG Website Builder mark.'],
   'bite-news-wordpress-launch': ['historical-first-screen.webp', 'Тёмный первый экран Bite News', 'Dark Bite News homepage hero', 'Первый экран из исторической карточки Kwork. Это не снимок всего сайта.', 'Homepage hero from the historical Kwork entry, not a full-page capture.'],
   'inegolhome-furniture-store': ['historical-storefront.webp', 'Мебельные карточки и баннеры Inegol Home', 'Inegol Home furniture cards and banners', 'Фрагмент исторической витрины из портфолио Kwork, сохранён без редактирования.', 'Historical storefront excerpt from the Kwork portfolio, preserved without editing.'],
   'garland-catalog-import-training': ['historical-variants.webp', 'Выбор цвета в карточке гирлянды', 'Color selection on a garland product page', 'Исторический фрагмент из портфолио Kwork: виден выбор цвета. Это не тест корзины.', 'Historical Kwork portfolio excerpt showing color selection. It is not a cart test.'],
