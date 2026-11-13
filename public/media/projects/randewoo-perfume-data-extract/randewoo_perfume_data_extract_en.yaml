@@ -1,0 +1,24 @@
+title: Randewoo perfume catalog data extraction
+tagline: Prepared a large catalog for the client’s team. Perfume needed its own
+  file with distinctions between volumes and variant prices preserved.
+year: "05.2021"
+role: Web development and automation
+stack:
+  - Web scraping
+  - Product variants
+  - Catalog data
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a large catalog for the client’s team. Perfume needed its own
+      file with distinctions between volumes and variant prices preserved.
+  - type: text
+    title: How it works
+    body: "Set up extraction and documented inconsistent fields: variant prices,
+      missing prices on unavailable products and extra breadcrumb segments.
+      Delivered the full assortment and perfume separately. Kept subsequent
+      spreadsheet restructuring and import outside data collection."
+  - type: text
+    title: Result and verification
+    body: The client accepted the files. The scraper queue size was not a final
+      product count or an import result.

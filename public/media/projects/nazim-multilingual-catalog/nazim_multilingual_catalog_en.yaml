@@ -1,0 +1,27 @@
+title: "Nazim 1001: a three-language WooCommerce catalog"
+tagline: Built a catalog foundation for Azerbaijani, English and Russian. Orders
+  used payment by arrangement rather than an online charge.
+year: "12.2021"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WPBakery
+  - Localization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a catalog foundation for Azerbaijani, English and Russian. Orders
+      used payment by arrangement rather than an online charge.
+  - type: text
+    title: How it works
+    body: Configured products, cart and checkout, published the required pages and
+      demonstrated confirmation. Restored banners, reordered sections and
+      displayed testimonials in a slider. Prepared three language versions,
+      refined the switcher and showed the owner how to edit copy and styles in
+      WPBakery.
+  - type: text
+    title: Result and verification
+    body: The client reviewed the flow and accepted the work. Translation and
+      content remained with the owner, and deployment to the final domain was
+      not verified.

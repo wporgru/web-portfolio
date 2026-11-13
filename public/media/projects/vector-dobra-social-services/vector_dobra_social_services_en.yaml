@@ -1,0 +1,30 @@
+title: Vector Dobra website for social services
+tagline: Built the foundation for a social services organization’s website so
+  visitors could find available services and contact the team.
+year: "11.2021"
+role: Web development and automation
+stack:
+  - WordPress
+  - Elementor
+  - Yoast SEO
+  - Service pages
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built the foundation for a social services organization’s website so
+      visitors could find available services and contact the team.
+  - type: text
+    title: How it works
+    body: Built Elementor service pages and submenus. Refined the logo, favicon,
+      contact header, footer and callback button. Made phone and email
+      clickable, configured expandable search and moved the WordPress address to
+      HTTPS. The client arranged the server redirect with support.
+  - type: text
+    title: Result and verification
+    body: The client accepted the site. The archived image shows the agreed header
+      and first screen, not verified enquiry delivery or complete content.
+  - type: image
+    src: /media/projects/vector-dobra-social-services/historical-first-screen.webp
+    alt: Header and first screen of the Vector Dobra website
+    caption: Historical Kwork portfolio excerpt showing the contact header,
+      navigation and services block.

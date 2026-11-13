@@ -1,0 +1,27 @@
+title: Fireknife knife catalog migration and filter data
+tagline: Moved selected knives to WooCommerce. Model specifications differed, so
+  a direct import would not produce consistent listings or a blade-length
+  filter.
+year: "11.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product attributes
+  - Catalog migration
+  - CSV
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Moved selected knives to WooCommerce. Model specifications differed, so a
+      direct import would not produce consistent listings or a blade-length
+      filter.
+  - type: text
+    title: How it works
+    body: Reconfirmed models and categories, prepared the spreadsheet manually and
+      updated import and transliteration tools. Converted blade length from a
+      local field to a global attribute on ten test products. Ran the main
+      import after configuring structure and breadcrumbs.
+  - type: text
+    title: Result and verification
+    body: The client reviewed the catalog and accepted the work. Ten products was
+      the test batch, not the final number of imported listings.

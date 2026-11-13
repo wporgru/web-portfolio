@@ -1,0 +1,25 @@
+title: Metakredits domain setup and WordPress recovery
+tagline: "Recovered an existing WordPress site while connecting a new domain: it
+  used the wrong database and redirected visitors to an older address."
+year: "12.2021"
+role: Web development and automation
+stack:
+  - WordPress
+  - Domain binding
+  - MySQL
+  - Redirect diagnostics
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Recovered an existing WordPress site while connecting a new domain: it
+      used the wrong database and redirected visitors to an older address."
+  - type: text
+    title: How it works
+    body: Connected the domain to hosting after registration, investigated the
+      redirect and identified the correct database. Located the existing
+      WordPress database and restored page access. Flagged image URLs that still
+      needed attention.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage. Rewriting every image URL, publishing new
+      articles and indexing were not verified.

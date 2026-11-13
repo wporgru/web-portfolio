@@ -1,0 +1,26 @@
+title: Sugarlips supplier catalog import and updates
+tagline: Set up a supplier CSV import with an agreed markup and scheduled
+  updates for the store.
+year: "12.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CSV
+  - Scheduled imports
+  - Pricing rules
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Set up a supplier CSV import with an agreed markup and scheduled updates
+      for the store.
+  - type: text
+    title: How it works
+    body: Mapped fields, categories and tags and configured the markup rule and
+      scheduler. When a hosting limit interrupted the job, separated the server
+      issue from data mapping and warned that scheduled runs could hit the same
+      limit. The client upgraded the plan.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. The handoff reports 5,900 imported products;
+      no independent count or complete scheduled cycle after the upgrade was
+      verified.

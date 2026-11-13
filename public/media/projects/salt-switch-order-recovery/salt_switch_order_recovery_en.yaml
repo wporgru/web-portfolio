@@ -1,0 +1,25 @@
+title: SALT SWITCH order and email recovery
+tagline: "Investigated two separate store failures: missing notifications and
+  incomplete orders. Added a direct contact channel for the manager."
+year: "11.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Checkout
+  - Transactional email
+  - WhatsApp
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Investigated two separate store failures: missing notifications and
+      incomplete orders. Added a direct contact channel for the manager."
+  - type: text
+    title: How it works
+    body: Corrected the sender domain and checked an email through a temporary
+      cash-on-delivery flow. Distinguished expired unpaid orders from email
+      failures. Applied a separate provider identifier to the correct domain and
+      installed the WhatsApp widget.
+  - type: text
+    title: Result and verification
+    body: The client confirmed new orders and the widget, then accepted the work. A
+      bank record of a successful charge was not preserved.

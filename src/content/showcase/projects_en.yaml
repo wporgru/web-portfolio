@@ -3896,3 +3896,140 @@ projects:
       - label: Read case study
         url: /showcase/wordpress-editable-profile-directory/en
         type: product
+  - slug: vector-dobra-social-services
+    name: Vector Dobra website for social services
+    year: "11.2021"
+    role: Web development and automation
+    description: Built the foundation for a social services organization’s website
+      so visitors could find available services and contact the team.
+    stack:
+      - WordPress
+      - Elementor
+      - Yoast SEO
+      - Service pages
+    order: 225
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/vector-dobra-social-services/en
+        type: product
+  - slug: nazim-multilingual-catalog
+    name: "Nazim 1001: a three-language WooCommerce catalog"
+    year: "12.2021"
+    role: Web development and automation
+    description: Built a catalog foundation for Azerbaijani, English and Russian.
+      Orders used payment by arrangement rather than an online charge.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WPBakery
+      - Localization
+    order: 226
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/nazim-multilingual-catalog/en
+        type: product
+  - slug: sugarlips-supplier-csv-import
+    name: Sugarlips supplier catalog import and updates
+    year: "12.2021"
+    role: Web development and automation
+    description: Set up a supplier CSV import with an agreed markup and scheduled
+      updates for the store.
+    stack:
+      - WooCommerce
+      - CSV
+      - Scheduled imports
+      - Pricing rules
+    order: 227
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/sugarlips-supplier-csv-import/en
+        type: product
+  - slug: salt-switch-order-recovery
+    name: SALT SWITCH order and email recovery
+    year: "11.2021"
+    role: Web development and automation
+    description: "Investigated two separate store failures: missing notifications
+      and incomplete orders. Added a direct contact channel for the manager."
+    stack:
+      - WooCommerce
+      - Checkout
+      - Transactional email
+      - WhatsApp
+    order: 228
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/salt-switch-order-recovery/en
+        type: product
+  - slug: salt-switch-editorial-blog
+    name: SALT SWITCH blog and article layouts
+    year: "12.2021"
+    role: Web development and automation
+    description: Refined the existing site’s blog for English content so readers
+      could find both individual articles and the publication listing.
+    stack:
+      - WordPress
+      - Editorial workflow
+      - Navigation
+      - Metadata
+    order: 229
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/salt-switch-editorial-blog/en
+        type: product
+  - slug: fireknife-catalog-facets-import
+    name: Fireknife knife catalog migration and filter data
+    year: "11.2021"
+    role: Web development and automation
+    description: Moved selected knives to WooCommerce. Model specifications
+      differed, so a direct import would not produce consistent listings or a
+      blade-length filter.
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Catalog migration
+      - CSV
+    order: 230
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/fireknife-catalog-facets-import/en
+        type: product
+  - slug: randewoo-perfume-data-extract
+    name: Randewoo perfume catalog data extraction
+    year: "05.2021"
+    role: Web development and automation
+    description: Prepared a large catalog for the client’s team. Perfume needed its
+      own file with distinctions between volumes and variant prices preserved.
+    stack:
+      - Web scraping
+      - Product variants
+      - Catalog data
+    order: 231
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/randewoo-perfume-data-extract/en
+        type: product
+  - slug: metakredits-wordpress-domain-recovery
+    name: Metakredits domain setup and WordPress recovery
+    year: "12.2021"
+    role: Web development and automation
+    description: "Recovered an existing WordPress site while connecting a new
+      domain: it used the wrong database and redirected visitors to an older
+      address."
+    stack:
+      - WordPress
+      - Domain binding
+      - MySQL
+      - Redirect diagnostics
+    order: 232
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/metakredits-wordpress-domain-recovery/en
+        type: product
