@@ -4082,3 +4082,110 @@ projects:
       - label: Читать кейс
         url: /showcase/metakredits-wordpress-domain-recovery
         type: product
+  - slug: foodsfact-equipment-catalog
+    name: "FoodsFact: англоязычный каталог оборудования"
+    year: "09.2020"
+    role: Веб-разработка и автоматизация
+    description: Собрал англоязычную витрину пищевого оборудования для клиентов,
+      которым важны технические характеристики, условия поставки и возможность
+      задать вопрос до заказа.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WP All Import
+      - Product UX
+    order: 233
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/foodsfact-equipment-catalog
+        type: product
+  - slug: murmansk-culture-palace-site
+    name: Сайт Мурманского областного дворца культуры
+    year: "03.2020"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил сайт учреждения культуры: афиши, коллективы и новости
+      должны были быть доступны с главной, а отзывы публиковаться только после
+      проверки."
+    stack:
+      - WordPress
+      - Event listings
+      - Content moderation
+      - Site handoff
+    order: 234
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/murmansk-culture-palace-site
+        type: product
+  - slug: vyvoz24-service-site-technical-seo
+    name: "«Вывоз24»: техническое SEO сайта услуг"
+    year: "03.2020"
+    role: Веб-разработка и автоматизация
+    description: "Доработал сайт услуг по техническому отчёту: от заголовков и
+      метаданных до навигации, карты сайта и загрузки ресурсов."
+    stack:
+      - WordPress
+      - Yoast SEO
+      - Structured data
+      - Technical SEO
+    order: 235
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/vyvoz24-service-site-technical-seo
+        type: product
+  - slug: antique-store-media-regression
+    name: Оптимизация изображений антикварного магазина
+    year: "07.2020"
+    role: Веб-разработка и автоматизация
+    description: Доработал тяжёлые изображения и проблемные элементы витрины. Важно
+      было не выиграть баллы ценой неработающих форм или подвала.
+    stack:
+      - WordPress
+      - WebP
+      - Autoptimize
+      - Yandex Metrica
+      - SiteAnalyzer
+    order: 236
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/antique-store-media-regression
+        type: product
+  - slug: wordpress-posts-to-woocommerce-catalog
+    name: Перенос каталога из записей WordPress в WooCommerce
+    year: "03.2020"
+    role: Веб-разработка и автоматизация
+    description: Перенёс каталог с обычных записей WordPress на товарную структуру
+      WooCommerce на рабочей копии. Доработал витрину, чтобы новый каталог был
+      удобен и покупателю, и владельцу.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Catalog migration
+      - Notifications
+    order: 237
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-posts-to-woocommerce-catalog
+        type: product
+  - slug: cosmetics-catalog-localization-data
+    name: Таблица косметики для итальянской локализации
+    year: "02.2020"
+    role: Веб-разработка и автоматизация
+    description: Подготовил таблицу для перевода каталога косметики. Заказчику нужен
+      был редактируемый файл с исходными ссылками, названиями и описаниями, а не
+      перевод внутри магазина.
+    stack:
+      - Excel
+      - Web scraping
+      - Localization
+      - Product data
+    order: 238
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/cosmetics-catalog-localization-data
+        type: product

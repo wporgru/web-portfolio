@@ -4033,3 +4033,110 @@ projects:
       - label: Read case study
         url: /showcase/metakredits-wordpress-domain-recovery/en
         type: product
+  - slug: foodsfact-equipment-catalog
+    name: "FoodsFact: English-language equipment catalog"
+    year: "09.2020"
+    role: Web development and automation
+    description: Built an English-language food equipment catalog for buyers who
+      need technical specifications, shipping information and a way to ask
+      questions before ordering.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WP All Import
+      - Product UX
+    order: 233
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/foodsfact-equipment-catalog/en
+        type: product
+  - slug: murmansk-culture-palace-site
+    name: Murmansk regional palace of culture website
+    year: "03.2020"
+    role: Web development and automation
+    description: Prepared a cultural institution website with events, performing
+      groups and news accessible from the homepage and reviews held for
+      approval.
+    stack:
+      - WordPress
+      - Event listings
+      - Content moderation
+      - Site handoff
+    order: 234
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/murmansk-culture-palace-site/en
+        type: product
+  - slug: vyvoz24-service-site-technical-seo
+    name: "Vyvoz24: technical SEO for a service website"
+    year: "03.2020"
+    role: Web development and automation
+    description: Implemented a technical SEO brief covering headings and metadata,
+      navigation, sitemaps and resource loading on a service website.
+    stack:
+      - WordPress
+      - Yoast SEO
+      - Structured data
+      - Technical SEO
+    order: 235
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/vyvoz24-service-site-technical-seo/en
+        type: product
+  - slug: antique-store-media-regression
+    name: Media optimization for an antiques store
+    year: "07.2020"
+    role: Web development and automation
+    description: Improved oversized images and problematic storefront elements
+      without sacrificing forms or footer functionality for a performance score.
+    stack:
+      - WordPress
+      - WebP
+      - Autoptimize
+      - Yandex Metrica
+      - SiteAnalyzer
+    order: 236
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/antique-store-media-regression/en
+        type: product
+  - slug: wordpress-posts-to-woocommerce-catalog
+    name: Moving a WordPress post catalog to WooCommerce
+    year: "03.2020"
+    role: Web development and automation
+    description: Moved a catalog from ordinary WordPress posts to WooCommerce
+      products on a working copy and adapted the storefront for shoppers and
+      store staff.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Catalog migration
+      - Notifications
+    order: 237
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-posts-to-woocommerce-catalog/en
+        type: product
+  - slug: cosmetics-catalog-localization-data
+    name: Cosmetics catalog spreadsheet for Italian localization
+    year: "02.2020"
+    role: Web development and automation
+    description: Prepared an editable cosmetics catalog for translation, with
+      original URLs, product names and descriptions rather than in-store
+      translation changes.
+    stack:
+      - Excel
+      - Web scraping
+      - Localization
+      - Product data
+    order: 238
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/cosmetics-catalog-localization-data/en
+        type: product

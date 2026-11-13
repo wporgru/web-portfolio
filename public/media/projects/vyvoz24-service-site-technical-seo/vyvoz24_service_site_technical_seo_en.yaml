@@ -1,0 +1,26 @@
+title: "Vyvoz24: technical SEO for a service website"
+tagline: Implemented a technical SEO brief covering headings and metadata,
+  navigation, sitemaps and resource loading on a service website.
+year: "03.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - Yoast SEO
+  - Structured data
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Implemented a technical SEO brief covering headings and metadata,
+      navigation, sitemaps and resource loading on a service website.
+  - type: text
+    title: How it works
+    body: Corrected H1s and redundant sitewide subheadings and configured Yoast
+      templates. Prepared robots.txt, the XML sitemap and an HTML sitemap page.
+      Documented structured data for service lists, offers and breadcrumbs.
+      Enabled review moderation and browser caching and refined the footer, logo
+      and favicon.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and left a positive review. No comparable
+      performance benchmark or search ranking gains were established.

@@ -1,0 +1,27 @@
+title: Cosmetics catalog spreadsheet for Italian localization
+tagline: Prepared an editable cosmetics catalog for translation, with original
+  URLs, product names and descriptions rather than in-store translation changes.
+year: "02.2020"
+role: Web development and automation
+stack:
+  - Excel
+  - Web scraping
+  - Localization
+  - Product data
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared an editable cosmetics catalog for translation, with original
+      URLs, product names and descriptions rather than in-store translation
+      changes.
+  - type: text
+    title: How it works
+    body: Collected product and image URLs, headings and descriptions in Excel. Kept
+      category assignment separate because the source did not reliably identify
+      categories for each item. Explained how to retain the original links and
+      match Italian category names to the destination catalog.
+  - type: text
+    title: Result and verification
+    body: The spreadsheet was delivered and accepted when the review period ended.
+      Manual translation, WooCommerce import and exhaustive image verification
+      were not documented deliverables.

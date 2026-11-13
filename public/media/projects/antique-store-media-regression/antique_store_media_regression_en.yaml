@@ -1,0 +1,27 @@
+title: Media optimization for an antiques store
+tagline: Improved oversized images and problematic storefront elements without
+  sacrificing forms or footer functionality for a performance score.
+year: "07.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - WebP
+  - Autoptimize
+  - Yandex Metrica
+  - SiteAnalyzer
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Improved oversized images and problematic storefront elements without
+      sacrificing forms or footer functionality for a performance score.
+  - type: text
+    title: How it works
+    body: Reduced image sizes, restored banners and repaired broken category images
+      identified by SiteAnalyzer. Rolled back settings that broke forms and
+      social widgets. Resolved a Clearfy footer conflict, moved Metrica and
+      removed a duplicate counter. Replaced the mobile logo separately.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the mobile update and accepted the work. The handoff
+      mentions desktop PageSpeed 77, but there is no comparable test series or
+      mobile result.

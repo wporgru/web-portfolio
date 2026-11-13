@@ -1,0 +1,27 @@
+title: Moving a WordPress post catalog to WooCommerce
+tagline: Moved a catalog from ordinary WordPress posts to WooCommerce products
+  on a working copy and adapted the storefront for shoppers and store staff.
+year: "03.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Catalog migration
+  - Notifications
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Moved a catalog from ordinary WordPress posts to WooCommerce products on a
+      working copy and adapted the storefront for shoppers and store staff.
+  - type: text
+    title: How it works
+    body: Installed WooCommerce, migrated entries and checked notifications with the
+      client. Removed the forced cart redirect, set up manually selected
+      bestsellers and automatically listed recent products. Investigated
+      combined category values and corrected individual cases, layout and
+      breadcrumbs.
+  - type: text
+    title: Result and verification
+    body: The client confirmed an enquiry arrived and accepted the migration.
+      Production deployment, MoySklad synchronization and the exact final
+      product count were not verified.

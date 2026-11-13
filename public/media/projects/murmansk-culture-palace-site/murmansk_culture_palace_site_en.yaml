@@ -1,0 +1,27 @@
+title: Murmansk regional palace of culture website
+tagline: Prepared a cultural institution website with events, performing groups
+  and news accessible from the homepage and reviews held for approval.
+year: "03.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - Event listings
+  - Content moderation
+  - Site handoff
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a cultural institution website with events, performing groups and
+      news accessible from the homepage and reviews held for approval.
+  - type: text
+    title: How it works
+    body: Deployed a working version on a temporary host. Agreed on branding and
+      colors and replaced the building photo with event posters. Refined the
+      presentation of performing groups and the header. Confirmed with the
+      client that a test review stayed unpublished pending approval. Delivered a
+      site archive with the database.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and left a review. The archive handoff is
+      documented, but installation on the final domain and ticketing are not
+      verified.

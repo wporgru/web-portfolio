@@ -1,0 +1,35 @@
+title: "FoodsFact: English-language equipment catalog"
+tagline: Built an English-language food equipment catalog for buyers who need
+  technical specifications, shipping information and a way to ask questions
+  before ordering.
+year: "09.2020"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WP All Import
+  - Product UX
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built an English-language food equipment catalog for buyers who need
+      technical specifications, shipping information and a way to ask questions
+      before ordering.
+  - type: text
+    title: How it works
+    body: Shared a spreadsheet for reviewing English product names and prices.
+      Reworked product pages with larger images, an Equipment specs area, agreed
+      button styles, contact and chat controls and a shipping link. Added a
+      classifieds section with a submission page and delivered an export and WP
+      All Import instructions.
+  - type: text
+    title: Result and verification
+    body: The client considered the catalog ready to start and left a positive
+      review. The handoff reports 130 products without an independent count.
+      Live payments, classifieds moderation and every shipping rule were not
+      verified.
+  - type: image
+    src: /media/projects/foodsfact-equipment-catalog/historical-storefront.webp
+    alt: Homepage of the English-language FoodsFact catalog
+    caption: Historical Kwork portfolio image showing equipment categories, Bulletin
+      board navigation and contact elements. Capture date unknown.
