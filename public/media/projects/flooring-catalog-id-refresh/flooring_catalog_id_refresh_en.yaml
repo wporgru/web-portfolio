@@ -1,0 +1,26 @@
+title: Updating a flooring catalog by product ID
+tagline: Updated the catalog by product ID so changes applied to existing
+  listings while new items were added separately.
+year: "03.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Data import
+  - Catalog maintenance
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Updated the catalog by product ID so changes applied to existing listings
+      while new items were added separately.
+  - type: text
+    title: How it works
+    body: Agreed on a temporary hosting plan upgrade when import runs overloaded the
+      server. Matched rows to product IDs, applied updates and added new items.
+      The source did not include photos, so no substitute images were used and
+      the client agreed to supply their own. Also installed a client-provided
+      external snippet.
+  - type: text
+    title: Result and verification
+    body: The client reviewed and accepted the work. An end-of-run error meant
+      removal of every item absent from the source sheet was not independently
+      verified.

@@ -1,0 +1,27 @@
+title: Repairing the import of property listings and photos
+tagline: Repaired the WP All Import mapping so imported entries rendered as
+  property listings rather than incomplete records without photos.
+year: "11.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WP All Import
+  - Custom post types
+  - Product data
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Repaired the WP All Import mapping so imported entries rendered as
+      property listings rather than incomplete records without photos.
+  - type: text
+    title: How it works
+    body: Checked the post type and sample data and agreed on removal of failed
+      imports. Separated source export, file preparation and mapping problems,
+      then delivered the corrected mapping. When server runs still stopped,
+      explained how to review hosting limits and complete publication of the
+      remaining records.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the listing layout and image loading, accepted the
+      work and added a bonus. A complete batch run was not verified because
+      server interruptions remained a separate issue.

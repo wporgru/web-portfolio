@@ -2772,3 +2772,125 @@ projects:
       - label: Читать кейс
         url: /showcase/altr-storefront-adaptation
         type: product
+  - slug: hyperstroy-tool-store
+    name: "ГиперСтрой: запуск магазина инструментов"
+    year: "06.2024"
+    role: Веб-разработка и автоматизация
+    description: Собрал витрину инструментов на WoodMart и загрузил согласованную
+      выборку товаров. Клиенту нужно было запустить магазин на готовой выгрузке
+      и затем самостоятельно поддерживать оформление.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Data import
+    order: 158
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/hyperstroy-tool-store
+        type: product
+  - slug: real-estate-photo-import-repair
+    name: Исправление импорта объектов недвижимости и фото
+    year: "11.2024"
+    role: Веб-разработка и автоматизация
+    description: Наладил сопоставление данных в WP All Import, чтобы импортированная
+      запись выглядела как карточка недвижимости, а не как набор неполных полей
+      без фотографий.
+    stack:
+      - WordPress
+      - WP All Import
+      - Custom post types
+      - Product data
+    order: 159
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/real-estate-photo-import-repair
+        type: product
+  - slug: yandex-delivery-pickup-setup
+    name: Настройка Яндекс Доставки и ПВЗ в WooCommerce
+    year: "08.2024"
+    role: Веб-разработка и автоматизация
+    description: "Подключил сторонний модуль доставки и помог разобрать два разных
+      сбоя: отсутствие выбора пункта выдачи и неожиданный расчёт стоимости
+      нескольких товаров."
+    stack:
+      - WooCommerce
+      - Yandex Delivery
+      - Pickup points
+      - Checkout
+    order: 160
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/yandex-delivery-pickup-setup
+        type: product
+  - slug: product-consultation-and-filters
+    name: Форма консультации и фильтры магазина WooCommerce
+    year: "08.2024"
+    role: Веб-разработка и автоматизация
+    description: Доработал карточку товара для консультаций и восстановил навигацию
+      по ассортименту, не меняя тему магазина целиком.
+    stack:
+      - WooCommerce
+      - WordPress
+      - WP Rocket
+      - Product UX
+    order: 161
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/product-consultation-and-filters
+        type: product
+  - slug: hvac-category-filter-templates
+    name: Шаблоны фильтров для категорий климатической техники
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: Настроил отдельный фильтр для категории бризеров, чтобы витрина
+      использовала характеристики именно этого раздела, а не случайный набор
+      фильтров от другого оборудования.
+    stack:
+      - WooCommerce
+      - Elementor
+      - Theme Builder
+      - Product filters
+    order: 162
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/hvac-category-filter-templates
+        type: product
+  - slug: flooring-catalog-id-refresh
+    name: Переимпорт каталога напольных покрытий по ID
+    year: "03.2024"
+    role: Веб-разработка и автоматизация
+    description: Обновил каталог по идентификаторам, чтобы изменения применялись к
+      существующим карточкам, а новые позиции добавлялись отдельно.
+    stack:
+      - WooCommerce
+      - Data import
+      - Catalog maintenance
+    order: 163
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/flooring-catalog-id-refresh
+        type: product
+  - slug: acf-homepage-update-recovery
+    name: Восстановление главной WordPress с контентом ACF
+    year: "04.2024"
+    role: Веб-разработка и автоматизация
+    description: Восстановил содержимое главной после обновления и помог вернуть
+      доступ в админку, не пересобирая страницу с нуля.
+    stack:
+      - WordPress
+      - ACF
+      - Hosting
+      - Incident recovery
+    order: 164
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/acf-homepage-update-recovery
+        type: product

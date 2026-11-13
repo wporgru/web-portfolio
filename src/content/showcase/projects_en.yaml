@@ -2737,3 +2737,124 @@ projects:
       - label: Read case study
         url: /showcase/altr-storefront-adaptation/en
         type: product
+  - slug: hyperstroy-tool-store
+    name: "HyperStroy: launching a tools and equipment store"
+    year: "06.2024"
+    role: Web development and automation
+    description: Built a WoodMart tools storefront and imported the agreed product
+      selection so the client could launch using an existing export and maintain
+      the layout independently.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Data import
+    order: 158
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/hyperstroy-tool-store/en
+        type: product
+  - slug: real-estate-photo-import-repair
+    name: Repairing the import of property listings and photos
+    year: "11.2024"
+    role: Web development and automation
+    description: Repaired the WP All Import mapping so imported entries rendered as
+      property listings rather than incomplete records without photos.
+    stack:
+      - WordPress
+      - WP All Import
+      - Custom post types
+      - Product data
+    order: 159
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/real-estate-photo-import-repair/en
+        type: product
+  - slug: yandex-delivery-pickup-setup
+    name: Setting up Yandex Delivery pickup in WooCommerce
+    year: "08.2024"
+    role: Web development and automation
+    description: "Connected a third-party shipping extension and investigated two
+      separate issues: missing pickup selection and unexpected pricing for
+      multi-item orders."
+    stack:
+      - WooCommerce
+      - Yandex Delivery
+      - Pickup points
+      - Checkout
+    order: 160
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/yandex-delivery-pickup-setup/en
+        type: product
+  - slug: product-consultation-and-filters
+    name: Product consultation form and filters in WooCommerce
+    year: "08.2024"
+    role: Web development and automation
+    description: Refined the product page for consultation requests and restored
+      catalog navigation without replacing the whole store theme.
+    stack:
+      - WooCommerce
+      - WordPress
+      - WP Rocket
+      - Product UX
+    order: 161
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/product-consultation-and-filters/en
+        type: product
+  - slug: hvac-category-filter-templates
+    name: Filter templates for HVAC product categories
+    year: "04.2024"
+    role: Web development and automation
+    description: Set up a dedicated filter for the ventilation category so the
+      storefront used relevant specifications rather than filters copied blindly
+      from other equipment.
+    stack:
+      - WooCommerce
+      - Elementor
+      - Theme Builder
+      - Product filters
+    order: 162
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/hvac-category-filter-templates/en
+        type: product
+  - slug: flooring-catalog-id-refresh
+    name: Updating a flooring catalog by product ID
+    year: "03.2024"
+    role: Web development and automation
+    description: Updated the catalog by product ID so changes applied to existing
+      listings while new items were added separately.
+    stack:
+      - WooCommerce
+      - Data import
+      - Catalog maintenance
+    order: 163
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/flooring-catalog-id-refresh/en
+        type: product
+  - slug: acf-homepage-update-recovery
+    name: Restoring a WordPress homepage backed by ACF
+    year: "04.2024"
+    role: Web development and automation
+    description: Restored homepage content after an update and helped recover admin
+      access without rebuilding the page from scratch.
+    stack:
+      - WordPress
+      - ACF
+      - Hosting
+      - Incident recovery
+    order: 164
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/acf-homepage-update-recovery/en
+        type: product

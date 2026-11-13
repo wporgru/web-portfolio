@@ -1,0 +1,26 @@
+title: Product consultation form and filters in WooCommerce
+tagline: Refined the product page for consultation requests and restored catalog
+  navigation without replacing the whole store theme.
+year: "08.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WordPress
+  - WP Rocket
+  - Product UX
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined the product page for consultation requests and restored catalog
+      navigation without replacing the whole store theme.
+  - type: text
+    title: How it works
+    body: When the form failed in the current theme, compared behaviour with another
+      theme and adapted the implementation. Restored missing filters and
+      corrected category display separately. Cleared WP Rocket cache so the
+      client could review the new layout rather than a cached copy.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the revised product page was usable and accepted the
+      stage. Bulk unit changes and a new catalog import were outside this
+      delivery.

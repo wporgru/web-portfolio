@@ -1,0 +1,28 @@
+title: Filter templates for HVAC product categories
+tagline: Set up a dedicated filter for the ventilation category so the
+  storefront used relevant specifications rather than filters copied blindly
+  from other equipment.
+year: "04.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Elementor
+  - Theme Builder
+  - Product filters
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Set up a dedicated filter for the ventilation category so the storefront
+      used relevant specifications rather than filters copied blindly from other
+      equipment.
+  - type: text
+    title: How it works
+    body: Duplicated the existing ventilation-unit template in Elementor Theme
+      Builder. Built a version for Ballu and Tion units, selecting the relevant
+      attribute and restricting the display rule to that category. Showed the
+      owner how to repeat the setup and why products without a manufacturer
+      value do not appear in the filter.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and highlighted the clear explanation. Bulk
+      attribute population and a custom filter engine were not part of the job.

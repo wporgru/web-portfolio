@@ -1,0 +1,27 @@
+title: Setting up Yandex Delivery pickup in WooCommerce
+tagline: "Connected a third-party shipping extension and investigated two
+  separate issues: missing pickup selection and unexpected pricing for
+  multi-item orders."
+year: "08.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Yandex Delivery
+  - Pickup points
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Connected a third-party shipping extension and investigated two separate
+      issues: missing pickup selection and unexpected pricing for multi-item
+      orders."
+  - type: text
+    title: How it works
+    body: Configured authentication and shipping methods. After a failed first test,
+      verified pickup selection with the VPN disabled. Worked with the client
+      and support to identify how payment and cash-on-delivery settings affect
+      pricing and why courier quotes need a full address.
+  - type: text
+    title: Result and verification
+    body: The client accepted the setup. Pickup selection was confirmed, not a live
+      shipment or every courier rate.

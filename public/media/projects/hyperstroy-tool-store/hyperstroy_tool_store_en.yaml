@@ -1,0 +1,34 @@
+title: "HyperStroy: launching a tools and equipment store"
+tagline: Built a WoodMart tools storefront and imported the agreed product
+  selection so the client could launch using an existing export and maintain the
+  layout independently.
+year: "06.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - Data import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a WoodMart tools storefront and imported the agreed product
+      selection so the client could launch using an existing export and maintain
+      the layout independently.
+  - type: text
+    title: How it works
+    body: Clarified the selection cutoff and used the agreed data export. Direct
+      scraping returned invalid data behind the supplier's protection, so it was
+      kept out of the working dataset. Refined grid density and image sizing,
+      removed unnecessary product actions, added a callback button and showed
+      the client how to edit slides and footer widgets.
+  - type: text
+    title: Result and verification
+    body: The client accepted the storefront. The handoff report lists 4,554
+      eligible items; the historical portfolio screenshot shows the storefront
+      but is not a count of published listings or a payment test.
+  - type: image
+    src: /media/projects/hyperstroy-tool-store/historical-storefront.webp
+    alt: HyperStroy homepage with categories and products
+    caption: Historical storefront screenshot from the Kwork portfolio, June 2024.
+      Preserved without cropping.
