@@ -1,0 +1,27 @@
+title: Importing products from 1C-Bitrix into WooCommerce staging
+tagline: A catalog migration must not expose products hidden in the source
+  system. The client supplied a CSV and a separate staging WordPress
+  installation for review.
+year: "05.2025"
+role: Web development and automation
+stack:
+  - 1C-Bitrix
+  - WooCommerce
+  - CSV
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A catalog migration must not expose products hidden in the source system.
+      The client supplied a CSV and a separate staging WordPress installation
+      for review.
+  - type: text
+    title: How it works
+    body: "Reviewed the fields in the roughly 13 MB export and imported products
+      after staging was ready. Mapped activity flags so N became draft and Y
+      became published. Explained why draft status does not mean zero stock:
+      visibility and inventory are separate rules."
+  - type: text
+    title: Result and verification
+    body: The client received the staging link and accepted the import. This was a
+      staging data transfer, not a production cutover, URL migration or redirect
+      setup.

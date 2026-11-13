@@ -1244,3 +1244,124 @@ projects:
       - label: Read case study
         url: /showcase/woodmart-product-page-recovery/en
         type: product
+  - slug: generator-catalog-variants
+    name: Generator catalog from multiple supplier exports
+    year: "03.2026"
+    role: Web development and automation
+    description: Similar generators from different suppliers varied by automatic
+      transfer switch and enclosure. The catalog needed to expose these options
+      instead of making shoppers choose between almost identical listings.
+    stack:
+      - WooCommerce
+      - Data import
+      - Product variants
+    order: 71
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/generator-catalog-variants/en
+        type: product
+  - slug: plumbing-catalog-selection
+    name: Selecting and importing a large plumbing catalog
+    year: "05.2025"
+    role: Web development and automation
+    description: The store needed a selected assortment, not a copy of the entire
+      supplier catalog. Brand and price criteria had to be agreed before import,
+      and the client needed tools to manage categories afterward.
+    stack:
+      - WooCommerce
+      - Excel
+      - Web scraping
+      - Taxonomy
+    order: 72
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/plumbing-catalog-selection/en
+        type: product
+  - slug: bitrix-staging-import
+    name: Importing products from 1C-Bitrix into WooCommerce staging
+    year: "05.2025"
+    role: Web development and automation
+    description: A catalog migration must not expose products hidden in the source
+      system. The client supplied a CSV and a separate staging WordPress
+      installation for review.
+    stack:
+      - 1C-Bitrix
+      - WooCommerce
+      - CSV
+    order: 73
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bitrix-staging-import/en
+        type: product
+  - slug: filament-savoy-storefront
+    name: "Filament Store: restoring storefront and SEO templates"
+    year: "03.2025"
+    role: Web development and automation
+    description: Following an update, catalog, header and navigation elements
+      shifted. The goal was to recover mobile presentation and restore text
+      visibility without rebuilding the store.
+    stack:
+      - WooCommerce
+      - Savoy
+      - Yoast SEO
+      - CSS
+    order: 74
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/filament-savoy-storefront/en
+        type: product
+  - slug: ozon-pet-catalog
+    name: From Ozon exports to a pet product catalog
+    year: "11.2025"
+    role: Web development and automation
+    description: Several Ozon exports needed to become one import dataset. Product
+      names varied in length and brand/model order and contained redundant
+      spaces or characters.
+    stack:
+      - Excel
+      - Ozon
+      - WooCommerce
+      - Data normalization
+    order: 75
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/ozon-pet-catalog/en
+        type: product
+  - slug: batch-watermark-images
+    name: Batch watermarking of 914 product photographs
+    year: "02.2026"
+    role: Web development and automation
+    description: The brief was to watermark existing automotive parts images while
+      preserving their composition and background. The same mark had different
+      contrast on purple and neutral areas.
+    stack:
+      - Image processing
+      - JPEG
+      - Product media
+    order: 76
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/batch-watermark-images/en
+        type: product
+  - slug: gadget-store-mobile-cart
+    name: Mobile navigation and cart for a gadget store
+    year: "07.2025"
+    role: Web development and automation
+    description: The store needed clearer product groupings in navigation and the
+      footer, plus less wasted space and working cart access on phones.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Mobile layout
+    order: 77
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/gadget-store-mobile-cart/en
+        type: product

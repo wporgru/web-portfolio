@@ -1,0 +1,29 @@
+title: "Filament Store: restoring storefront and SEO templates"
+tagline: Following an update, catalog, header and navigation elements shifted.
+  The goal was to recover mobile presentation and restore text visibility
+  without rebuilding the store.
+year: "03.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Savoy
+  - Yoast SEO
+  - CSS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Following an update, catalog, header and navigation elements shifted. The
+      goal was to recover mobile presentation and restore text visibility
+      without rebuilding the store.
+  - type: text
+    title: How it works
+    body: Worked through feedback on the footer, contact and hours header, mobile
+      logo, prices and buttons. Removed a duplicate category block, adjusted
+      filter spacing and traced hidden descriptions to a custom script.
+      Configured Yoast title and description templates and the tag sitemap,
+      explaining where tag archives appear.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the header, footer and display on another phone, and
+      later confirmed the descriptions were visible. The client filled in some
+      category and tag content; search traffic growth was not measured.

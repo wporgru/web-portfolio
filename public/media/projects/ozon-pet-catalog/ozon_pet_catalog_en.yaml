@@ -1,0 +1,27 @@
+title: From Ozon exports to a pet product catalog
+tagline: Several Ozon exports needed to become one import dataset. Product names
+  varied in length and brand/model order and contained redundant spaces or
+  characters.
+year: "11.2025"
+role: Web development and automation
+stack:
+  - Excel
+  - Ozon
+  - WooCommerce
+  - Data normalization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Several Ozon exports needed to become one import dataset. Product names
+      varied in length and brand/model order and contained redundant spaces or
+      characters.
+  - type: text
+    title: How it works
+    body: Reviewed naming formats, agreed on a single brand and combined the files
+      into an Excel workbook. Sent it for review before loading, incorporated
+      the client’s name and price changes and imported the approved version.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the products appeared and accepted the work.
+      Discussed color grouping is not presented as implemented; images and
+      payments were separate tasks.

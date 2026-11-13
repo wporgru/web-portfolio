@@ -1,0 +1,25 @@
+title: Mobile navigation and cart for a gadget store
+tagline: The store needed clearer product groupings in navigation and the
+  footer, plus less wasted space and working cart access on phones.
+year: "07.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WoodMart
+  - Mobile layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store needed clearer product groupings in navigation and the footer,
+      plus less wasted space and working cart access on phones.
+  - type: text
+    title: How it works
+    body: Reorganized the header and grouped footer links by device range. After
+      clarification I revised the correct area, rebuilt a graphic and requested
+      SVGs for icons that remained blurry. A later iteration fixed mobile
+      spacing, navigation and the cart before addressing the sticky header.
+  - type: text
+    title: Result and verification
+    body: The client confirmed readiness and accepted delivery. Full checkout
+      regression testing and replacement of every raster icon without source
+      files were outside this result.

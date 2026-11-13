@@ -1256,3 +1256,125 @@ projects:
       - label: Читать кейс
         url: /showcase/woodmart-product-page-recovery
         type: product
+  - slug: generator-catalog-variants
+    name: Каталог генераторов из нескольких выгрузок поставщиков
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: У разных поставщиков похожие генераторы отличались наличием АВР и
+      исполнением корпуса. Требовалось перенести ассортимент так, чтобы
+      покупатель мог различить эти варианты, а не выбирать среди почти
+      одинаковых карточек.
+    stack:
+      - WooCommerce
+      - Data import
+      - Product variants
+    order: 71
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/generator-catalog-variants
+        type: product
+  - slug: plumbing-catalog-selection
+    name: Отбор и импорт большого каталога сантехники
+    year: "05.2025"
+    role: Веб-разработка и автоматизация
+    description: В магазине нужен был выбранный ассортимент, а не копия всего
+      каталога поставщика. До загрузки требовалось согласовать бренды и ценовой
+      отбор, а после — дать клиенту инструменты управления категориями.
+    stack:
+      - WooCommerce
+      - Excel
+      - Web scraping
+      - Taxonomy
+    order: 72
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/plumbing-catalog-selection
+        type: product
+  - slug: bitrix-staging-import
+    name: Перенос товаров из 1С-Битрикс в тестовый WooCommerce
+    year: "05.2025"
+    role: Веб-разработка и автоматизация
+    description: При переносе каталога важно не открыть покупателям товары, скрытые
+      в исходной системе. Заказчик предоставил CSV и отдельный тестовый
+      WordPress для проверки.
+    stack:
+      - 1C-Bitrix
+      - WooCommerce
+      - CSV
+    order: 73
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bitrix-staging-import
+        type: product
+  - slug: filament-savoy-storefront
+    name: "Filament Store: восстановление витрины и SEO-шаблонов"
+    year: "03.2025"
+    role: Веб-разработка и автоматизация
+    description: После обновления магазина сместились элементы каталога, шапки и
+      навигации. Нужно было вернуть рабочую подачу на телефонах и восстановить
+      видимость текстов, не пересоздавая магазин.
+    stack:
+      - WooCommerce
+      - Savoy
+      - Yoast SEO
+      - CSS
+    order: 74
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/filament-savoy-storefront
+        type: product
+  - slug: ozon-pet-catalog
+    name: Из выгрузок Ozon в каталог товаров для животных
+    year: "11.2025"
+    role: Веб-разработка и автоматизация
+    description: Несколько файлов Ozon нужно было превратить в единый импорт. В
+      названиях различались длина, порядок бренда и модели, попадались повторные
+      пробелы и лишние символы.
+    stack:
+      - Excel
+      - Ozon
+      - WooCommerce
+      - Data normalization
+    order: 75
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/ozon-pet-catalog
+        type: product
+  - slug: batch-watermark-images
+    name: Пакетная обработка 914 товарных фотографий
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Нужно было нанести логотип на готовые фотографии автозапчастей,
+      сохранив исходную композицию и фон. Один и тот же знак по-разному читался
+      на контрастных и сиреневых участках.
+    stack:
+      - Image processing
+      - JPEG
+      - Product media
+    order: 76
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/batch-watermark-images
+        type: product
+  - slug: gadget-store-mobile-cart
+    name: Мобильное меню и корзина магазина гаджетов
+    year: "07.2025"
+    role: Веб-разработка и автоматизация
+    description: Магазину требовалось развести товарные группы в меню и подвале, а
+      на телефонах убрать лишний отступ и вернуть удобный доступ к корзине.
+    stack:
+      - WooCommerce
+      - WoodMart
+      - Mobile layout
+    order: 77
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/gadget-store-mobile-cart
+        type: product

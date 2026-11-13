@@ -1,0 +1,26 @@
+title: Batch watermarking of 914 product photographs
+tagline: The brief was to watermark existing automotive parts images while
+  preserving their composition and background. The same mark had different
+  contrast on purple and neutral areas.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - Image processing
+  - JPEG
+  - Product media
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The brief was to watermark existing automotive parts images while
+      preserving their composition and background. The same mark had different
+      contrast on purple and neutral areas.
+  - type: text
+    title: How it works
+    body: Prepared samples with a centered translucent logo and pointed out areas
+      with lower contrast. After approval I processed the batch, delivered
+      samples in the order and provided the complete set via cloud link.
+  - type: text
+    title: Result and verification
+    body: The handoff records 914 files and client acceptance. Ten original samples
+      were later recovered and checked at 810 × 1080 each. That verifies a
+      sample, not a recount of the entire archive.

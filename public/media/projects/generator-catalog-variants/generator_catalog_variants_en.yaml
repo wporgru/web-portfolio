@@ -1,0 +1,27 @@
+title: Generator catalog from multiple supplier exports
+tagline: Similar generators from different suppliers varied by automatic
+  transfer switch and enclosure. The catalog needed to expose these options
+  instead of making shoppers choose between almost identical listings.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Data import
+  - Product variants
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Similar generators from different suppliers varied by automatic transfer
+      switch and enclosure. The catalog needed to expose these options instead
+      of making shoppers choose between almost identical listings.
+  - type: text
+    title: How it works
+    body: Configured sequential imports and agreed on variable products with the
+      client. Mapped enclosure and automation options separately, adapted the
+      presentation to the client’s palette and reran an incorrect intermediate
+      import before handoff.
+  - type: text
+    title: Result and verification
+    body: The handoff recorded 1,545 published products and 70 drafts without source
+      images. The client accepted the work. These are historical import figures,
+      not a current recount of products and variations.

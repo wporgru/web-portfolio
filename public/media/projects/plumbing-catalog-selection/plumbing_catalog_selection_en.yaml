@@ -1,0 +1,30 @@
+title: Selecting and importing a large plumbing catalog
+tagline: The store needed a selected assortment, not a copy of the entire
+  supplier catalog. Brand and price criteria had to be agreed before import, and
+  the client needed tools to manage categories afterward.
+year: "05.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Excel
+  - Web scraping
+  - Taxonomy
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store needed a selected assortment, not a copy of the entire supplier
+      catalog. Brand and price criteria had to be agreed before import, and the
+      client needed tools to manage categories afterward.
+  - type: text
+    title: How it works
+    body: The first scraping report recorded 176,828 listings. I provided an Excel
+      export and a selection walkthrough; the client narrowed the working set to
+      roughly 45,000. I resumed the import after a hosting upgrade, explained
+      the difference between real attributes and a text tab, and delivered Term
+      Management Tools with a walkthrough for merging and reparenting
+      categories.
+  - type: text
+    title: Result and verification
+    body: The client confirmed that categories displayed correctly and accepted the
+      work. Items without downloaded photos remained drafts. The counts describe
+      preparation stages, not a verified live product total.
