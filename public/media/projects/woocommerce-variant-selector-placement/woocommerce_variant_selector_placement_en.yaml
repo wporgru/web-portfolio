@@ -1,0 +1,27 @@
+title: Placing the WooCommerce variant selector below the price
+tagline: Reordered product-page elements so the variant selector appeared
+  directly below the price, with a template-level change rather than manual
+  edits to individual products.
+year: "04.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - PHP
+  - Product templates
+  - Child themes
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Reordered product-page elements so the variant selector appeared directly
+      below the price, with a template-level change rather than manual edits to
+      individual products.
+  - type: text
+    title: How it works
+    body: "Moved the selector and delivered the modified functions.php. Explained
+      how to retain the change after a theme update: use a child theme or
+      reapply it if the code remains in the parent theme."
+  - type: text
+    title: Result and verification
+    body: The client accepted the change. Child theme installation, exhaustive
+      alternate-template testing and future compatibility were not verified
+      separately.

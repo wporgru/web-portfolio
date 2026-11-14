@@ -23,3 +23,8 @@ blocks:
     title: Result and verification
     body: The client confirmed new orders and the widget, then accepted the work. A
       bank record of a successful charge was not preserved.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: international shipping and invoices"
+        url: /showcase/salt-switch-cross-border-checkout/en/

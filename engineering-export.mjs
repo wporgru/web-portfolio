@@ -17,6 +17,8 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'salt-switch-cross-border-checkout': ['salt-switch-order-recovery', 'Связанный этап: восстановление заказов и писем', 'Related stage: restoring orders and email'],
+  'salt-switch-order-recovery': ['salt-switch-cross-border-checkout', 'Связанный этап: международная доставка и счета', 'Related stage: international shipping and invoices'],
   'aravia-mobile-catalog-bulk-editor': ['aravia-postcode-delivery-checkout', 'Предыдущий этап: доставка по индексам и самовывоз', 'Previous stage: postcode delivery and pickup'],
   'aravia-postcode-delivery-checkout': ['aravia-mobile-catalog-bulk-editor', 'Следующий этап: мобильный каталог и пакетное редактирование', 'Next stage: mobile catalog and bulk editing'],
   'goa-tours-interface-copy': ['goa-tours-stripe-setup', 'Другой этап Goa Tours: настройка Stripe', 'Another Goa Tours stage: Stripe setup'],

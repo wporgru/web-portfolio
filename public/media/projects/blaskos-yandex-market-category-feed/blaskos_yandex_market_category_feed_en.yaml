@@ -1,0 +1,25 @@
+title: Exporting selected categories to Yandex Market
+tagline: Configured an existing store export for Yandex Market. The owner needed
+  to control included categories without editing XML by hand.
+year: "11.2018"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YML
+  - Yandex Market
+  - Product feeds
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Configured an existing store export for Yandex Market. The owner needed to
+      control included categories without editing XML by hand.
+  - type: text
+    title: How it works
+    body: Configured the existing plugin, shared the YML URL and showed where to
+      change category selection. Kept store-side export management separate from
+      offer processing by the destination platform.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and reported in a historical review that a
+      product appeared in Market. Current moderation, offer counts and sales
+      were not verified.

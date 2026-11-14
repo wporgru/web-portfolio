@@ -5084,3 +5084,56 @@ projects:
       - label: Read case study
         url: /showcase/goa-tours-interface-copy/en
         type: product
+  - slug: salt-switch-cross-border-checkout
+    name: SALT SWITCH shipping and invoices across two stores
+    year: "11.2021"
+    role: Web development and automation
+    description: Configured notifications, invoices and shipping for two existing
+      SALT SWITCH stores. Email and calculation checks were kept separate from a
+      failed transaction and invoice generation.
+    stack:
+      - WooCommerce
+      - Shipping zones
+      - Invoices
+      - Transactional email
+    order: 293
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/salt-switch-cross-border-checkout/en
+        type: product
+  - slug: blaskos-yandex-market-category-feed
+    name: Exporting selected categories to Yandex Market
+    year: "11.2018"
+    role: Web development and automation
+    description: Configured an existing store export for Yandex Market. The owner
+      needed to control included categories without editing XML by hand.
+    stack:
+      - WooCommerce
+      - YML
+      - Yandex Market
+      - Product feeds
+    order: 294
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/blaskos-yandex-market-category-feed/en
+        type: product
+  - slug: woocommerce-variant-selector-placement
+    name: Placing the WooCommerce variant selector below the price
+    year: "04.2023"
+    role: Web development and automation
+    description: Reordered product-page elements so the variant selector appeared
+      directly below the price, with a template-level change rather than manual
+      edits to individual products.
+    stack:
+      - WooCommerce
+      - PHP
+      - Product templates
+      - Child themes
+    order: 295
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-variant-selector-placement/en
+        type: product

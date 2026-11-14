@@ -5140,3 +5140,57 @@ projects:
       - label: Читать кейс
         url: /showcase/goa-tours-interface-copy
         type: product
+  - slug: salt-switch-cross-border-checkout
+    name: "SALT SWITCH: доставка и счета для двух магазинов"
+    year: "11.2021"
+    role: Веб-разработка и автоматизация
+    description: Настроил уведомления, счета и доставку для двух действующих витрин
+      SALT SWITCH. Нужно было раздельно проверить письма и расчёты, не принимая
+      неудачную транзакцию за сбой генерации счёта.
+    stack:
+      - WooCommerce
+      - Shipping zones
+      - Invoices
+      - Transactional email
+    order: 293
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/salt-switch-cross-border-checkout
+        type: product
+  - slug: blaskos-yandex-market-category-feed
+    name: Выгрузка выбранных категорий в Яндекс Маркет
+    year: "11.2018"
+    role: Веб-разработка и автоматизация
+    description: Настроил выгрузку действующего магазина для подключения к Маркету.
+      Владелец хотел управлять тем, какие категории попадают в файл, не правя
+      XML вручную.
+    stack:
+      - WooCommerce
+      - YML
+      - Yandex Market
+      - Product feeds
+    order: 294
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/blaskos-yandex-market-category-feed
+        type: product
+  - slug: woocommerce-variant-selector-placement
+    name: Выбор вариаций под ценой в WooCommerce
+    year: "04.2023"
+    role: Веб-разработка и автоматизация
+    description: "Перестроил порядок элементов карточки: выбор исполнения должен был
+      находиться сразу под ценой и применяться на уровне шаблона, а не правиться
+      вручную в каждом товаре."
+    stack:
+      - WooCommerce
+      - PHP
+      - Product templates
+      - Child themes
+    order: 295
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-variant-selector-placement
+        type: product

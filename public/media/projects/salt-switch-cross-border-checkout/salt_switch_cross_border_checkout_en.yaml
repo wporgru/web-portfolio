@@ -1,0 +1,34 @@
+title: SALT SWITCH shipping and invoices across two stores
+tagline: Configured notifications, invoices and shipping for two existing SALT
+  SWITCH stores. Email and calculation checks were kept separate from a failed
+  transaction and invoice generation.
+year: "11.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Shipping zones
+  - Invoices
+  - Transactional email
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Configured notifications, invoices and shipping for two existing SALT
+      SWITCH stores. Email and calculation checks were kept separate from a
+      failed transaction and invoice generation.
+  - type: text
+    title: How it works
+    body: Disabled PayPal as requested, checked a notification from the French
+      storefront and temporarily used cheque payment to verify the invoice on
+      the second. The client confirmed two emails after the correction.
+      Configured three shipping zones for France, the rest of Europe and other
+      destinations, along with the agreed display of inclusive tax.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the calculation and accepted the work. The archive
+      does not show a successful Viva Wallet charge, and the historical tax
+      configuration was not an audit of every market.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: restoring orders and email"
+        url: /showcase/salt-switch-order-recovery/en/
