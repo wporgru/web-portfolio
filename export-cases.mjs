@@ -25,8 +25,8 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
   const order = orders[0];
   const dir = 'public/media/projects/'+slug;
   const assets = '/media/projects/'+slug;
-  // Never read transcripts, credentials or attachments. Only copy a hash-checked
-  // public-site capture for the exact order and its confirmed project domain.
+  // Only copy public-site captures and explicitly allowlisted public portfolio
+  // images. Never publish transcripts, credentials or private attachments.
   const shot = [...order.site_screenshots].reverse().find(x=>x.full_page_capture && x.visual_inspection_complete && x.sha256 &&
     order.domains.some(d=>d.domain===x.domain && d.status==='available'));
   let src;
@@ -40,6 +40,16 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
     fs.writeFileSync(dir+'/'+name,bytes);
     src=assets+'/'+name;
   }
+  const redesignShots = slug==='78-dosok' ? [
+    ['23517585','before-redesign.webp','628b8c891ee5c03e82e830f74feb94b4668c0d60591f87b59b81ed7e98126da0'],
+    ['23517588','after-redesign.webp','bee1f21bfb1bc612103fdd4ffe8bd69dfcd06b57d06b8f7bb9d2e0c3601c4a55'],
+  ].map(([id,name,sha])=>{
+    const bytes=fs.readFileSync(path.join(root,'orders',order.order_id,'historical-portfolio-'+id+'.webp'));
+    if(createHash('sha256').update(bytes).digest('hex')!==sha)throw Error('Historical portfolio image hash mismatch: '+id);
+    fs.mkdirSync(dir,{recursive:true});
+    fs.writeFileSync(dir+'/'+name,bytes);
+    return assets+'/'+name;
+  }) : [];
   for(const lang of languages) {
     const ru=lang==='ru', title=ru?tRu:tEn, task=ru?qRu:qEn, result=ru?aRu:aEn;
     const tags=stack.split(', ');
@@ -65,6 +75,12 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
     if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Главная до и после':'Homepage before and after',
       body:ru?'В старой версии акцент был на слайдере и плотном списке категорий; после редизайна — на крупном первом экране, укрупнённых разделах каталога и блоках доверия, включая отзывы и FAQ.':'The original homepage emphasized a slider and a dense category list. The redesign uses a larger opening section, clearer catalog groupings and trust-building sections such as reviews and FAQs.',
       links:[{label:ru?'До редизайна':'Before redesign',url:'https://kwork.ru/portfolio/23517585'},{label:ru?'После редизайна':'After redesign',url:'https://kwork.ru/portfolio/23517588'}]});
+    if(redesignShots.length) blocks.push(
+      {type:'image',src:redesignShots[0],title:ru?'Прежняя главная':'Original homepage',alt:ru?'Старая главная магазина 78 Досок со слайдером и списком категорий':'Original 78 Dosok homepage with slider and category list',
+        caption:ru?'Исторический снимок до смены темы. Оригинал из портфолио Kwork без обрезки.':'Historical capture before the theme replacement. Uncropped original from Kwork.'},
+      {type:'image',src:redesignShots[1],title:ru?'Главная после смены темы':'Homepage after the theme replacement',alt:ru?'Новая главная 78 Досок: крупный первый экран, каталог, отзывы и FAQ':'Redesigned 78 Dosok homepage with a larger hero, catalog, reviews and FAQ',
+        caption:ru?'Исторический снимок после редизайна. Верхняя панель WordPress сохранена как на оригинале.':'Historical capture after the redesign. The WordPress toolbar is retained as in the original.'},
+    );
     if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Что получил магазин':'What the store gained',
       bullets:ru?['Новая тема и обновлённая витрина вместо точечных правок старого шаблона.','Меньше дублирующих расширений, которые приходится поддерживать и проверять после обновлений.','Более заметный каталог на главной и быстрый доступ к корзине на мобильном.']:
       ['A new theme and a redesigned storefront instead of isolated patches to the old template.','Fewer overlapping extensions to maintain and check after updates.','A more prominent homepage catalog and easier access to the cart on mobile.']});

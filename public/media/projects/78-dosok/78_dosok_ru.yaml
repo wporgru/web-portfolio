@@ -55,6 +55,17 @@ blocks:
         url: https://kwork.ru/portfolio/23517585
       - label: После редизайна
         url: https://kwork.ru/portfolio/23517588
+  - type: image
+    src: /media/projects/78-dosok/before-redesign.webp
+    title: Прежняя главная
+    alt: Старая главная магазина 78 Досок со слайдером и списком категорий
+    caption: Исторический снимок до смены темы. Оригинал из портфолио Kwork без обрезки.
+  - type: image
+    src: /media/projects/78-dosok/after-redesign.webp
+    title: Главная после смены темы
+    alt: "Новая главная 78 Досок: крупный первый экран, каталог, отзывы и FAQ"
+    caption: Исторический снимок после редизайна. Верхняя панель WordPress сохранена
+      как на оригинале.
   - type: text
     title: Что получил магазин
     bullets:

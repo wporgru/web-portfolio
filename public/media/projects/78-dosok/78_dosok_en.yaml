@@ -53,6 +53,18 @@ blocks:
         url: https://kwork.ru/portfolio/23517585
       - label: After redesign
         url: https://kwork.ru/portfolio/23517588
+  - type: image
+    src: /media/projects/78-dosok/before-redesign.webp
+    title: Original homepage
+    alt: Original 78 Dosok homepage with slider and category list
+    caption: Historical capture before the theme replacement. Uncropped original
+      from Kwork.
+  - type: image
+    src: /media/projects/78-dosok/after-redesign.webp
+    title: Homepage after the theme replacement
+    alt: Redesigned 78 Dosok homepage with a larger hero, catalog, reviews and FAQ
+    caption: Historical capture after the redesign. The WordPress toolbar is
+      retained as in the original.
   - type: text
     title: What the store gained
     bullets:
