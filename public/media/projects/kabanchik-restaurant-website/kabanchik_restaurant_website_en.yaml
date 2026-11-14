@@ -1,0 +1,43 @@
+title: "Kabanchik: a restaurant site for menus and banquets"
+tagline: Delivered the first stage of a Georgian restaurant website. Guests
+  needed a clear starting point to learn about the restaurant, find menus and
+  banquet rooms, and locate booking or delivery information. The first review
+  was for the site and its design, not an online store.
+year: "06.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Blocksy
+  - Responsive design
+  - Restaurant website
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Delivered the first stage of a Georgian restaurant website. Guests needed
+      a clear starting point to learn about the restaurant, find menus and
+      banquet rooms, and locate booking or delivery information. The first
+      review was for the site and its design, not an online store.
+  - type: text
+    title: How it works
+    body: Used the client's photography and chef materials. Handed over the first
+      stage for review on June 15 and collected feedback on the version shown.
+      Split feedback into design revisions and new functionality, implemented
+      first-stage changes in a separate pass, and kept a working cart, food
+      sales and payment out of that stage. The delivery page remained a visual
+      placeholder at that point.
+  - type: text
+    title: Result and verification
+    body: The client responded positively to the overall appearance and sent a
+      separate revision list. On June 16 I sent the revised version and marked
+      the completed items in that document. The screenshot below shows a later
+      site version, not the first-stage handover.
+  - type: image
+    src: /media/projects/kabanchik-restaurant-website/homepage-20261102.webp
+    alt: Full-page screenshot of the Kabanchik restaurant website
+    caption: Uncropped homepage captured November 2, 2026. It shows a later version,
+      not the June first-stage handover.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: delivery catalog and cart"
+        url: /showcase/kabanchik-delivery-catalog/en/

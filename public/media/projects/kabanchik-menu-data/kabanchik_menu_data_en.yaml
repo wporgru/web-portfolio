@@ -1,0 +1,37 @@
+title: "Kabanchik: 212 menu items extracted from DOCX and TXT"
+tagline: Turned separate kitchen and bar documents into one spreadsheet-ready
+  register that restaurant staff can review and correct without access to the
+  website.
+year: "06.2026"
+role: Web development and automation
+stack:
+  - Python
+  - DOCX
+  - TXT
+  - CSV
+  - Data normalization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Turned separate kitchen and bar documents into one spreadsheet-ready
+      register that restaurant staff can review and correct without access to
+      the website.
+  - type: text
+    title: How it works
+    body: Wrote a parser for DOCX and TXT. Grouped food and drinks by menu type and
+      section, and split names, portions, prices and descriptions into separate
+      fields. Preserved each entry's source document and flagged ambiguities in
+      the comments. Exported semicolon-separated CSV with a UTF-8 BOM for
+      Russian-language Excel. Left WooCommerce-specific fields out because this
+      was a review document, not a publication package.
+  - type: text
+    title: Result and verification
+    body: "The exported CSV contains 212 entries: 147 dishes and 65 bar items, in 22
+      sections when grouped by menu type and section. Seven entries have
+      comments. These counts describe the register, not products published on
+      the website."
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: delivery storefront"
+        url: /showcase/kabanchik-delivery-catalog/en/

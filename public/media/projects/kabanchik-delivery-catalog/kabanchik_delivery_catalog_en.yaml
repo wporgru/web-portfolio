@@ -1,0 +1,44 @@
+title: "Kabanchik: a food delivery catalog and cart"
+tagline: Replaced the delivery mockup with a catalog connected to the
+  WooCommerce cart. Guests needed to see portions, prices and order contents,
+  while restaurant staff needed to manage the assortment through the standard
+  store admin.
+year: 06–07.2026
+role: Web development and automation
+stack:
+  - WooCommerce
+  - PHP
+  - AJAX
+  - Blocksy
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Replaced the delivery mockup with a catalog connected to the WooCommerce
+      cart. Guests needed to see portions, prices and order contents, while
+      restaurant staff needed to manage the assortment through the standard
+      store admin.
+  - type: text
+    title: How it works
+    body: Built a catalog shortcode in the Blocksy child theme. It queries published
+      WooCommerce products and renders the menu sections. Kept the displayed
+      portion separate from the product's shipping weight. Added quantity
+      controls to product cards and AJAX updates for cart contents, item counts
+      and totals. Desktop keeps the cart beside the menu, while mobile uses a
+      bottom bar. The catalog fit the existing header, promotions and FAQ.
+  - type: text
+    title: Result and verification
+    body: Full-page browser captures of the delivery version and source code with
+      automated catalog and cart structure checks are available. This
+      establishes the storefront work, not payment processing, delivery-zone
+      validation or fulfillment of real orders.
+  - type: image
+    src: /media/projects/kabanchik-delivery-catalog/delivery-desktop.webp
+    alt: Kabanchik delivery catalog with dishes and a cart on the right
+    caption: Uncropped archival desktop capture of the delivery page. It shows the
+      storefront, not payment processing or delivery operations.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: preparing the menu register"
+        url: /showcase/kabanchik-menu-data/en/

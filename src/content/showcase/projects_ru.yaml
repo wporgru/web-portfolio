@@ -5303,3 +5303,60 @@ projects:
       - label: Читать кейс
         url: /showcase/woocommerce-checkout-in-stock-recommendations
         type: product
+  - slug: kabanchik-restaurant-website
+    name: "«Кабанчик»: сайт ресторана с меню и банкетами"
+    year: "06.2026"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил первый этап сайта грузинского ресторана. Гостю нужна
+      была понятная стартовая точка: узнать о ресторане, найти меню и банкетные
+      залы, перейти к бронированию или узнать о доставке. На этом этапе владелец
+      принимал сайт и оформление, а не интернет-магазин."
+    stack:
+      - WordPress
+      - Blocksy
+      - Responsive design
+      - Restaurant website
+    order: 302
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/kabanchik-restaurant-website
+        type: product
+  - slug: kabanchik-menu-data
+    name: "«Кабанчик»: 212 позиций меню из DOCX и TXT"
+    year: "06.2026"
+    role: Веб-разработка и автоматизация
+    description: Преобразовал разрозненные документы кухни и бара в одну ведомость,
+      которую администратор ресторана может открыть в таблице, проверить и
+      исправить без доступа к сайту.
+    stack:
+      - Python
+      - DOCX
+      - TXT
+      - CSV
+      - Data normalization
+    order: 303
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/kabanchik-menu-data
+        type: product
+  - slug: kabanchik-delivery-catalog
+    name: "«Кабанчик»: каталог доставки и корзина блюд"
+    year: 06–07.2026
+    role: Веб-разработка и автоматизация
+    description: Заменил демонстрационный блок доставки на каталог, связанный с
+      корзиной WooCommerce. Гость должен видеть порцию, цену и состав заказа, а
+      ресторан — редактировать ассортимент в обычном интерфейсе магазина.
+    stack:
+      - WooCommerce
+      - PHP
+      - AJAX
+      - Blocksy
+      - Playwright
+    order: 304
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/kabanchik-delivery-catalog
+        type: product

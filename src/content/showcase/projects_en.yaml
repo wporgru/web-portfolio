@@ -5245,3 +5245,61 @@ projects:
       - label: Read case study
         url: /showcase/woocommerce-checkout-in-stock-recommendations/en
         type: product
+  - slug: kabanchik-restaurant-website
+    name: "Kabanchik: a restaurant site for menus and banquets"
+    year: "06.2026"
+    role: Web development and automation
+    description: Delivered the first stage of a Georgian restaurant website. Guests
+      needed a clear starting point to learn about the restaurant, find menus
+      and banquet rooms, and locate booking or delivery information. The first
+      review was for the site and its design, not an online store.
+    stack:
+      - WordPress
+      - Blocksy
+      - Responsive design
+      - Restaurant website
+    order: 302
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/kabanchik-restaurant-website/en
+        type: product
+  - slug: kabanchik-menu-data
+    name: "Kabanchik: 212 menu items extracted from DOCX and TXT"
+    year: "06.2026"
+    role: Web development and automation
+    description: Turned separate kitchen and bar documents into one
+      spreadsheet-ready register that restaurant staff can review and correct
+      without access to the website.
+    stack:
+      - Python
+      - DOCX
+      - TXT
+      - CSV
+      - Data normalization
+    order: 303
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/kabanchik-menu-data/en
+        type: product
+  - slug: kabanchik-delivery-catalog
+    name: "Kabanchik: a food delivery catalog and cart"
+    year: 06–07.2026
+    role: Web development and automation
+    description: Replaced the delivery mockup with a catalog connected to the
+      WooCommerce cart. Guests needed to see portions, prices and order
+      contents, while restaurant staff needed to manage the assortment through
+      the standard store admin.
+    stack:
+      - WooCommerce
+      - PHP
+      - AJAX
+      - Blocksy
+      - Playwright
+    order: 304
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/kabanchik-delivery-catalog/en
+        type: product

@@ -5,6 +5,8 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'kabanchik-restaurant-website': ['homepage-20261102.webp', 'Полностраничный снимок сайта ресторана «Кабанчик»', 'Full-page screenshot of the Kabanchik restaurant website', 'Главная без обрезки, захват 2 ноября 2026 года. На снимке более поздняя версия, не сдача первого этапа в июне.', 'Uncropped homepage captured November 2, 2026. It shows a later version, not the June first-stage handover.'],
+  'kabanchik-delivery-catalog': ['delivery-desktop.webp', 'Каталог доставки «Кабанчика» с блюдами и корзиной справа', 'Kabanchik delivery catalog with dishes and a cart on the right', 'Архивный полностраничный снимок доставки на десктопе, без обрезки. Снимок показывает интерфейс, но не подтверждает оплату или работу службы доставки.', 'Uncropped archival desktop capture of the delivery page. It shows the storefront, not payment processing or delivery operations.'],
   'ibike-scooter-rental-website': ['historical-rental.webp', 'Исторический экран сайта проката iBike', 'Archived iBike rental website screen', 'Снимок из исторической карточки Kwork; не проверка отправки формы или доступности сайта сегодня.', 'Image from the historical Kwork listing; not a test of form delivery or current site availability.'],
   'foodsfact-equipment-catalog': ['historical-storefront.webp', 'Главная англоязычного каталога FoodsFact', 'Homepage of the English-language FoodsFact catalog', 'Исторический снимок из портфолио Kwork: категории оборудования, объявление раздела Bulletin board и контактные элементы. Дата съёмки не установлена.', 'Historical Kwork portfolio image showing equipment categories, Bulletin board navigation and contact elements. Capture date unknown.'],
   'vector-dobra-social-services': ['historical-first-screen.webp', 'Шапка и первый экран сайта «Вектор Добра»', 'Header and first screen of the Vector Dobra website', 'Исторический фрагмент из портфолио Kwork: контактная шапка, навигация и блок услуг.', 'Historical Kwork portfolio excerpt showing the contact header, navigation and services block.'],
@@ -17,6 +19,9 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'kabanchik-restaurant-website': ['kabanchik-delivery-catalog', 'Следующий этап: каталог доставки и корзина', 'Next stage: delivery catalog and cart'],
+  'kabanchik-menu-data': ['kabanchik-delivery-catalog', 'Связанная работа: интерфейс доставки', 'Related work: delivery storefront'],
+  'kabanchik-delivery-catalog': ['kabanchik-menu-data', 'Связанная работа: подготовка ведомости меню', 'Related work: preparing the menu register'],
   'salt-switch-cross-border-checkout': ['salt-switch-order-recovery', 'Связанный этап: восстановление заказов и писем', 'Related stage: restoring orders and email'],
   'salt-switch-order-recovery': ['salt-switch-cross-border-checkout', 'Связанный этап: международная доставка и счета', 'Related stage: international shipping and invoices'],
   'aravia-mobile-catalog-bulk-editor': ['aravia-postcode-delivery-checkout', 'Предыдущий этап: доставка по индексам и самовывоз', 'Previous stage: postcode delivery and pickup'],
