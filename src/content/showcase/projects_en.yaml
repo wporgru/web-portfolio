@@ -4871,3 +4871,56 @@ projects:
       - label: Read case study
         url: /showcase/sugarlips-category-navigation/en
         type: product
+  - slug: bgtgroup-pl-multilingual-redirects
+    name: Redirects and broken links on a three-language site
+    year: "01.2024"
+    role: Web development and automation
+    description: Refined search-facing navigation across the Polish, English and
+      Russian versions of BGT Group. The goal was not to eliminate every 301 but
+      to distinguish faulty links from useful URL normalization.
+    stack:
+      - WordPress
+      - Technical SEO
+      - Redirects
+      - Localization
+    order: 281
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bgtgroup-pl-multilingual-redirects/en
+        type: product
+  - slug: eclect-furniture-attribute-cleanup
+    name: Eclect furniture import and attribute cleanup
+    year: "02.2019"
+    role: Web development and automation
+    description: Prepared a furniture catalog for import. Identical names made items
+      hard to distinguish, and specifications needed cleanup after loading.
+    stack:
+      - WooCommerce
+      - Catalog import
+      - Taxonomy
+      - Product attributes
+    order: 282
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/eclect-furniture-attribute-cleanup/en
+        type: product
+  - slug: troubleshooter-wordpress-business-card
+    name: Troubleshooter business website on WordPress
+    year: "04.2023"
+    role: Web development and automation
+    description: Built a compact website with a simple first screen and three
+      information sections. The client needed a foundation they could populate
+      with their own material.
+    stack:
+      - WordPress
+      - Business website
+      - Navigation
+      - Content layout
+    order: 283
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/troubleshooter-wordpress-business-card/en
+        type: product

@@ -28,3 +28,8 @@ blocks:
       February 7–8 show final LCP of 3.5 seconds on mobile and 1.4 seconds on
       desktop. These historical reports are neither current field data nor
       evidence of ranking gains.
+  - type: text
+    title: Related project
+    links:
+      - label: "Another BGT Group website: links and language redirects"
+        url: /showcase/bgtgroup-pl-multilingual-redirects/en/

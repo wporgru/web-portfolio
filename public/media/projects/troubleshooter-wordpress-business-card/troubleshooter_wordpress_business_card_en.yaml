@@ -1,0 +1,27 @@
+title: Troubleshooter business website on WordPress
+tagline: Built a compact website with a simple first screen and three
+  information sections. The client needed a foundation they could populate with
+  their own material.
+year: "04.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - Business website
+  - Navigation
+  - Content layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a compact website with a simple first screen and three information
+      sections. The client needed a foundation they could populate with their
+      own material.
+  - type: text
+    title: How it works
+    body: Installed and configured WordPress with the agreed template. Prepared the
+      homepage hero and three-item navigation, then shared the site for review.
+      After clarification, demonstrated how buttons reveal descriptions and
+      requested the page materials.
+  - type: text
+    title: Result and verification
+    body: The client accepted the website. A catalog, portal, shop and final
+      automatic slider were outside the verified delivery.

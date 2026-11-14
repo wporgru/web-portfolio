@@ -4926,3 +4926,57 @@ projects:
       - label: Читать кейс
         url: /showcase/sugarlips-category-navigation
         type: product
+  - slug: bgtgroup-pl-multilingual-redirects
+    name: Редиректы и битые ссылки трёх языковых версий
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Доработал поисковую навигацию польской, английской и русской версий
+      BGT Group. Задача была не убрать все ответы 301, а отличить ошибочные
+      переходы от нужной нормализации адресов.
+    stack:
+      - WordPress
+      - Technical SEO
+      - Redirects
+      - Localization
+    order: 281
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bgtgroup-pl-multilingual-redirects
+        type: product
+  - slug: eclect-furniture-attribute-cleanup
+    name: Импорт мебели и очистка атрибутов Eclect
+    year: "02.2019"
+    role: Веб-разработка и автоматизация
+    description: Подготовил мебельный каталог к импорту. Одинаковые названия
+      затрудняли различение позиций, а после загрузки требовалось привести
+      характеристики к единому виду.
+    stack:
+      - WooCommerce
+      - Catalog import
+      - Taxonomy
+      - Product attributes
+    order: 282
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/eclect-furniture-attribute-cleanup
+        type: product
+  - slug: troubleshooter-wordpress-business-card
+    name: Сайт-визитка Troubleshooter на WordPress
+    year: "04.2023"
+    role: Веб-разработка и автоматизация
+    description: Собрал небольшую визитку с простым первым экраном и тремя
+      информационными разделами. Клиенту была нужна основа, которую можно
+      наполнить своими материалами.
+    stack:
+      - WordPress
+      - Business website
+      - Navigation
+      - Content layout
+    order: 283
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/troubleshooter-wordpress-business-card
+        type: product

@@ -1,0 +1,25 @@
+title: Eclect furniture import and attribute cleanup
+tagline: Prepared a furniture catalog for import. Identical names made items
+  hard to distinguish, and specifications needed cleanup after loading.
+year: "02.2019"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Catalog import
+  - Taxonomy
+  - Product attributes
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a furniture catalog for import. Identical names made items hard
+      to distinguish, and specifications needed cleanup after loading.
+  - type: text
+    title: How it works
+    body: Prepared the spreadsheet and distinguished benches with identical names
+      using brand and SKU. After import, addressed client feedback on duplicate
+      collection and country terms and missing frame colors. Kept the possible
+      collection URL change separate because its resolution was not confirmed.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. This case documents an import and data
+      cleanup, not an exhaustive verification of every attribute and URL.

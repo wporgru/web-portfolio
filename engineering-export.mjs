@@ -17,6 +17,8 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'bgtgroup-pl-multilingual-redirects': ['bgtgroup-technical-seo-performance', 'Другой сайт BGT Group: техническое SEO и скорость', 'Another BGT Group website: technical SEO and performance'],
+  'bgtgroup-technical-seo-performance': ['bgtgroup-pl-multilingual-redirects', 'Другой сайт BGT Group: ссылки и языковые редиректы', 'Another BGT Group website: links and language redirects'],
   'sugarlips-supplier-csv-import': ['sugarlips-category-navigation', 'Следующий этап: навигация по категориям', 'Next stage: category navigation'],
   'sugarlips-category-navigation': ['sugarlips-supplier-csv-import', 'Предыдущий этап: импорт CSV поставщика', 'Previous stage: supplier CSV import'],
   'sugarlips-boxberry-city-mapping': ['sugarlips-supplier-csv-import', 'Другой этап Sugarlips: обновление каталога', 'Another Sugarlips stage: catalog updates'],
@@ -63,7 +65,7 @@ export function addEngineeringCases(projects){
       const stage = projectStages[slug];
       if (stage) {
         blocks.push({
-          type:'text', title:ru?'Другой этап этого проекта':'Another stage of this project',
+          type:'text', title:slug.startsWith('bgtgroup-') ? (ru?'Связанный проект':'Related project') : (ru?'Другой этап этого проекта':'Another stage of this project'),
           links:[{label:stage[ru?1:2],url:'/showcase/'+stage[0]+(ru?'/':'/en/')}],
         });
       }
