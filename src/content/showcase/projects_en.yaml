@@ -4766,3 +4766,56 @@ projects:
       - label: Read case study
         url: /showcase/woocommerce-document-pack-product-page/en
         type: product
+  - slug: delovye-linii-classic-cart
+    name: Delovye Linii shipping and WooCommerce cart diagnosis
+    year: "08.2022"
+    role: Web development and automation
+    description: Investigated why an installed carrier did not work in the expected
+      purchase flow. The problem involved both carrier settings and how the
+      store rendered its cart.
+    stack:
+      - WooCommerce
+      - Shipping
+      - Checkout
+      - Plugin compatibility
+    order: 275
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/delovye-linii-classic-cart/en
+        type: product
+  - slug: wordpress-guest-comments-recovery
+    name: Restoring WordPress comments for logged-out visitors
+    year: "01.2024"
+    role: Web development and automation
+    description: Restored the comments section for logged-out readers. The issue
+      first looked mobile-specific but also affected desktop visitors who were
+      not signed in.
+    stack:
+      - WordPress
+      - Comments
+      - Guest QA
+      - Mobile QA
+    order: 276
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-guest-comments-recovery/en
+        type: product
+  - slug: presnya-tea-captcha-cdek
+    name: "Presnya Tea: CAPTCHA and delivery setup"
+    year: "05.2022"
+    role: Web development and automation
+    description: Refined an existing tea storefront, extending protection beyond an
+      already protected form and configuring the available CDEK delivery option.
+    stack:
+      - WordPress
+      - WooCommerce
+      - CAPTCHA
+      - CDEK
+    order: 277
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/presnya-tea-captcha-cdek/en
+        type: product

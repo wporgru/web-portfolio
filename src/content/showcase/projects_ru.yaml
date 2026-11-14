@@ -4820,3 +4820,56 @@ projects:
       - label: Читать кейс
         url: /showcase/woocommerce-document-pack-product-page
         type: product
+  - slug: delovye-linii-classic-cart
+    name: "Деловые Линии: диагностика доставки и корзины"
+    year: "08.2022"
+    role: Веб-разработка и автоматизация
+    description: Разобрал, почему подключённая доставка не работала в привычном
+      сценарии покупки. Проблему нужно было искать не только в тарифах, но и в
+      том, как магазин выводил корзину.
+    stack:
+      - WooCommerce
+      - Shipping
+      - Checkout
+      - Plugin compatibility
+    order: 275
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/delovye-linii-classic-cart
+        type: product
+  - slug: wordpress-guest-comments-recovery
+    name: Возврат комментариев для гостей WordPress
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Восстановил блок комментариев для незарегистрированных читателей.
+      Сначала сбой выглядел как мобильный, но без авторизации проявлялся и на
+      компьютере.
+    stack:
+      - WordPress
+      - Comments
+      - Guest QA
+      - Mobile QA
+    order: 276
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-guest-comments-recovery
+        type: product
+  - slug: presnya-tea-captcha-cdek
+    name: "Presnya Tea: защита форм и настройка доставки"
+    year: "05.2022"
+    role: Веб-разработка и автоматизация
+    description: "Доработал действующий чайный магазин: расширил защиту за пределы
+      существующей формы и настроил доступный вариант доставки СДЭК."
+    stack:
+      - WordPress
+      - WooCommerce
+      - CAPTCHA
+      - CDEK
+    order: 277
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/presnya-tea-captcha-cdek
+        type: product

@@ -1,0 +1,28 @@
+title: Delovye Linii shipping and WooCommerce cart diagnosis
+tagline: Investigated why an installed carrier did not work in the expected
+  purchase flow. The problem involved both carrier settings and how the store
+  rendered its cart.
+year: "08.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Shipping
+  - Checkout
+  - Plugin compatibility
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Investigated why an installed carrier did not work in the expected
+      purchase flow. The problem involved both carrier settings and how the
+      store rendered its cart.
+  - type: text
+    title: How it works
+    body: Identified a conflict with the block-based cart and switched the store to
+      the classic WooCommerce cart. The client confirmed the revised display.
+      Separately reviewed address errors, the dispatch terminal in Saint
+      Petersburg and the need for local shipping methods on some orders.
+  - type: text
+    title: Result and verification
+    body: The client accepted the diagnostic and configuration stage. A full
+      checkout retest did not take place after later changes, and the client
+      handled bank payment setup separately.

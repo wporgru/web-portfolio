@@ -1,0 +1,27 @@
+title: "Presnya Tea: CAPTCHA and delivery setup"
+tagline: Refined an existing tea storefront, extending protection beyond an
+  already protected form and configuring the available CDEK delivery option.
+year: "05.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - CAPTCHA
+  - CDEK
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined an existing tea storefront, extending protection beyond an already
+      protected form and configuring the available CDEK delivery option.
+  - type: text
+    title: How it works
+    body: Added CAPTCHA to login, registration and comments without replacing the
+      protection already on the form. Configured warehouse-to-door shipping.
+      When pickup and warehouse-to-warehouse options remained unavailable
+      because the module license had expired, agreed on a limited setup. Also
+      adjusted presentation and spacing after mobile feedback.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage with the available delivery option. A
+      license renewal, pickup integration and a measured reduction in spam were
+      not verified.
