@@ -106,8 +106,8 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
     </div>
 
     <aside class="sidebar cv-sidebar">
-      <article class="card card--downloads">
-        <h2 class="h2">{ru ? 'Скачать' : 'Download'}</h2>
+      <article class="card card--downloads" id="resume" tabindex="-1" aria-labelledby="resume-heading">
+        <h2 class="h2" id="resume-heading">{ru ? 'Скачать' : 'Download'}</h2>
         <div class="skillsgroup__title">{ru ? 'Людям' : 'For people'}</div>
         <div class="btnrow">
           <a class="btn" href={downloadUrls.pdf} download aria-label={ru ? 'Скачать резюме PDF' : 'Download resume PDF'}>PDF</a>
@@ -150,8 +150,10 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
 </Layout>
 <style>
 .cv-home{padding-block:16px 32px}
+#resume{scroll-margin-top:85px}
 .cv-grid :global([id^="role-"]){scroll-margin-top:85px}
 @media(max-width:480px){
+  #resume{scroll-margin-top:136px}
   .cv-grid :global([id^="role-"]){scroll-margin-top:120px}
 }
 @media(min-width:960px){
