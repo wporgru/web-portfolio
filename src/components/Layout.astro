@@ -24,6 +24,7 @@ const {
   profile = '',
   description,
   ogImage,
+  ogImageAlt,
   customLangLinks,
   roleLinks,
   personJsonLd,
@@ -73,7 +74,8 @@ const metaImage = ogImage
   ? (/^https?:\/\//.test(ogImage)
       ? ogImage
       : `${siteUrl}${base}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`)
-  : `${siteUrl}${base}/media/portfolio-cover.svg`;
+  : `${siteUrl}${base}/media/sharing/portfolio-${lang==='ru'?'ru':'en'}.png`;
+const metaImageAlt = ogImageAlt ?? (lang==='ru'?'Олег Тишин — веб-разработка для бизнеса':'Oleg Tishin — web development for businesses');
 const slash = (p: string) => p.endsWith('/') ? p : p + '/';
 const canonicalUrl = `${siteUrl}${slash(Astro.url.pathname)}`;
 
@@ -186,6 +188,11 @@ const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
     <meta property="og:title" content={title} />
     <meta property="og:description" content={metaDescription} />
     <meta property="og:image" content={metaImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={metaImageAlt} />
+    <meta property="og:site_name" content="WPORGRU" />
     <meta property="og:locale" content={t('meta.locale')} />
 
     <!-- Twitter Card -->
@@ -193,6 +200,7 @@ const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={metaImage} />
+    <meta name="twitter:image:alt" content={metaImageAlt} />
 
     <script is:inline>
       const params = new URLSearchParams(window.location.search);

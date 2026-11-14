@@ -10,6 +10,7 @@ const sitemap = new Set(fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.t
 const pages = new Map();
 const internalTargets = new Map();
 const breadcrumbTargets = new Map();
+const sharingCards = new Map();
 const titles = new Set(), descriptions = new Set();
 for(const file of htmlFiles){
   const html=read(path.join(root,file));
@@ -31,6 +32,13 @@ for(const file of htmlFiles){
   const alternates=new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map(m=>[m[1],m[2]]));
   if(alternates.size!==3||!['ru','en'].includes(lang)||alternates.get(lang)!==canonical||alternates.get('x-default')!==alternates.get('ru')) fail(file,'invalid locale alternates');
   pages.set(canonical,alternates);
+  const social = (attribute, key) => html.match(new RegExp('<meta '+attribute+'="'+key+'" content="([^"]+)"'))?.[1];
+  const image = social('property','og:image');
+  if(!image||social('name','twitter:image')!==image||
+    !social('property','og:image:alt')||social('property','og:image:alt')!==social('name','twitter:image:alt')||
+    social('property','og:url')!==canonical||social('property','og:image:type')!=='image/png'||
+    social('property','og:image:width')!=='1200'||social('property','og:image:height')!=='630')fail(file,'invalid sharing metadata');
+  sharingCards.set(canonical,image);
   const trail = html.match(/<nav\b[^>]*\bdata-breadcrumbs(?:\s|>)[\s\S]*?<\/nav>/)?.[0];
   if (trail) {
     const structured = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
@@ -61,6 +69,9 @@ for(const [canonical,alternates] of pages){
   const isDetail = /^services\//.test(relative) || /^showcase\/(?!en\/$)[a-z0-9-]+\/(?:en\/)?$/.test(relative);
   if(isDetail&&!breadcrumbTargets.has(canonical))fail(canonical,'missing visible breadcrumbs');
   const locale = canonical===alternates.get('ru')?'ru':'en';
+  const sharingUrl=new URL(sharingCards.get(canonical));
+  const expectedCard=relative.startsWith('showcase/78-dosok/')?'78-dosok':'portfolio';
+  if(sharingUrl.origin!==new URL(canonical).origin||sharingUrl.pathname!==base+'media/sharing/'+expectedCard+'-'+locale+'.png')fail(canonical,'sharing image locale or route mismatch');
   for(const target of breadcrumbTargets.get(canonical)??[]){
     if(pages.get(target)?.get(locale)!==target)fail(canonical,'breadcrumb leads to wrong locale: '+target);
   }
@@ -72,5 +83,9 @@ for(const [canonical,alternates] of pages){
     const peer=pages.get(target);
     if(!peer||[...alternates].some(([lang,href])=>peer.get(lang)!==href)) fail(canonical,'nonreciprocal alternate '+target);
   }
+}
+for (const url of new Set(sharingCards.values())) {
+  const bytes=fs.readFileSync(path.join(root,new URL(url).pathname.slice(base.length)));
+  if(bytes.subarray(0,8).toString('hex')!=='89504e470d0a1a0a'||bytes.readUInt32BE(16)!==1200||bytes.readUInt32BE(20)!==630)fail(url,'sharing image must be a 1200×630 PNG');
 }
 console.log('SEO checks passed for '+pages.size+' HTML pages and '+breadcrumbTargets.size+' breadcrumb trails.');

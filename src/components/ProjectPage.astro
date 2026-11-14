@@ -15,7 +15,9 @@ import Divider    from './blocks/DividerBlock.astro';
 import { services } from '../content/services.mjs';
 import Breadcrumbs from './Breadcrumbs.astro';
 
-const { data, showcaseHref, langLinks, lang, ogImage, relatedCases = [], slug } = Astro.props;
+const { data, showcaseHref, langLinks, lang, relatedCases = [], slug } = Astro.props;
+const ogImage = slug === '78-dosok' ? '/media/sharing/78-dosok-'+lang+'.png' : undefined;
+const ogImageAlt = ogImage ? (lang==='ru'?'78 Досок — полный редизайн интернет-магазина':'78 Dosok — full online store redesign') : undefined;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const linkedServices = services.filter(service => service.cases.includes(slug));
 
@@ -38,6 +40,7 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
   title={pageTitle}
   description={data?.tagline || undefined}
   ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
   lang={lang}
   section="showcase"
   profile=""
