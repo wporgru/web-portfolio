@@ -17,8 +17,10 @@
 //
 
 import InlineText from './InlineText.astro';
+import { projectImage } from '../../scripts/project-images';
 
 const { src, alt, caption, title, subtitle, body, anchor, lang, eager = false } = Astro.props;
+const image = projectImage(src);
 
 const hasText = title || subtitle || body || caption;
 const hasSrc  = !!src;
@@ -32,6 +34,9 @@ const withBase = (p = '') => {
   const base = String(import.meta.env.BASE_URL || '/');
   return (base.endsWith('/') ? base : base + '/') + clean;
 };
+const srcset = image?.variants.length
+  ? [...image.variants, {url:src,width:image.width}].map(v=>withBase(v.url)+' '+v.width+'w').join(', ')
+  : undefined;
 ---
 
 <div class="image-block" id={anchor || undefined}>
@@ -44,6 +49,11 @@ const withBase = (p = '') => {
       <a href={withBase(src)} target="_blank" rel="noopener" aria-label={lang === "en" ? "Open original image" : "Открыть оригинал снимка"}>
       <img
         src={withBase(src)}
+        width={image?.width}
+        height={image?.height}
+        srcset={srcset}
+        sizes={srcset ? '(max-width: 768px) calc(100vw - 26px), (max-width: 984px) calc(100vw - 42px), 940px' : undefined}
+        decoding="async"
         alt={alt ?? title ?? ''}
         loading={eager ? 'eager' : 'lazy'}
         fetchpriority={eager ? 'high' : undefined}

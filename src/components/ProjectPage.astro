@@ -202,9 +202,14 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
       lbImg.removeAttribute('src');
     };
 
-    document.querySelectorAll('.project-page .image-block__img').forEach((node) => {
-      const img = node as HTMLImageElement;
-      img.addEventListener('click', () => open(img.currentSrc || img.src, img.alt));
+    document.querySelectorAll<HTMLAnchorElement>('.project-page .image-block__figure > a').forEach((link) => {
+      const img = link.querySelector('img');
+      if (!img) return;
+      link.addEventListener('click', event => {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        open(link.href, img.alt);
+      });
     });
 
     // Click anywhere in the lightbox (backdrop, image or close button) closes it

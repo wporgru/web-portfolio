@@ -62,6 +62,25 @@ if(!pages.size||sitemap.size!==pages.size) fail(root,'sitemap and HTML counts di
 const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcase/'));
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
+const imageManifest = JSON.parse(read('.astro/project-images.json'));
+for (const [src, image] of Object.entries(imageManifest)) {
+  const original = fs.statSync(path.join(root,src)).size;
+  const cover = fs.statSync(path.join(root,image.cover)).size;
+  if (cover > 160_000) fail(src,'catalog cover exceeds 160 KB');
+  for (const variant of image.variants) {
+    if (variant.width>=image.width || fs.statSync(path.join(root,variant.url)).size>=original) fail(src,'responsive variant is not smaller');
+  }
+}
+for (const suffix of ['', 'en/']) {
+  const catalog = read(path.join(root,'showcase',suffix,'index.html'));
+  if (!catalog.includes('/media/previews/') || /class="media__el" src="[^"]*\/media\/projects\/[^"]+\.(?:png|jpe?g|webp)"/i.test(catalog)) fail('showcase/'+suffix,'catalog must use compact covers');
+  const detail = read(path.join(root,'showcase','78-dosok',suffix,'index.html'));
+  for (const name of ['before-redesign.webp','after-redesign.webp','site.png']) {
+    const src = '/media/projects/78-dosok/'+name;
+    const image = imageManifest[src];
+    if (!image || !detail.includes(`href="${base.slice(0,-1)}${src}"`) || !detail.includes(`width="${image.width}" height="${image.height}"`)) fail(src,'missing original link or reserved image dimensions');
+  }
+}
 for (const service of services) {
   for (const suffix of ['', 'en/']) {
     const route = `services/${service.slug}/${suffix}`;

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "init": "node src/scripts/init.mjs",
-    "dev": "astro dev",
+    "dev": "npm run images:build && astro dev",
     "preview": "astro preview",
     "astro": "astro",
     "cv:build": "node src/scripts/merge.mjs",
@@ -17,8 +17,9 @@
     "resume:linkedin": "node src/scripts/resume-import-linkedin.mjs",
     "resume:import:all": "node src/scripts/resume-import-json.mjs docs/cv_en.json en && node src/scripts/resume-import-json.mjs docs/cv_ru.json ru",
     "og:generate": "node src/scripts/generate-og-image.mjs --wallpaper=docs/repo-assets/wallpaper-bigsur.jpg",
-    "build": "npm run cv:build && astro build",
-    "build:release": "npm run cv:build && npm run resume:generate && npm run resume:pdf && astro build && node src/scripts/check-downloads.mjs && node src/scripts/check-seo.mjs",
+    "images:build": "node src/scripts/build-project-images.mjs",
+    "build": "npm run cv:build && npm run images:build && astro build",
+    "build:release": "npm run cv:build && npm run resume:generate && npm run resume:pdf && npm run images:build && astro build && node src/scripts/check-downloads.mjs && node src/scripts/check-seo.mjs",
     "portfolio:export": "node export-cases.mjs"
   },
   "dependencies": {
@@ -31,6 +32,7 @@
     "yaml": "^2.9.0"
   },
   "devDependencies": {
-    "playwright": "^1.63.0"
+    "playwright": "^1.63.0",
+    "sharp": "^0.35.4"
   }
 }
