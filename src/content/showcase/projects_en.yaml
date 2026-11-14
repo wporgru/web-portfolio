@@ -4924,3 +4924,57 @@ projects:
       - label: Read case study
         url: /showcase/troubleshooter-wordpress-business-card/en
         type: product
+  - slug: woocommerce-cart-cdek-pickup-recovery
+    name: WooCommerce cart recovery and CDEK pickup setup
+    year: "12.2022"
+    role: Web development and automation
+    description: "Restored shopping in an existing store: adding a product had to
+      work reliably, and shoppers needed a pickup location and a shipping
+      quote."
+    stack:
+      - WooCommerce
+      - CDEK
+      - Pickup points
+      - Transactional email
+    order: 284
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-cart-cdek-pickup-recovery/en
+        type: product
+  - slug: woocommerce-pdf-invoice-branding
+    name: Refining a WooCommerce PDF invoice for B2B
+    year: "05.2023"
+    role: Web development and automation
+    description: Refined an automatically generated invoice using the client’s
+      reference. The goal was a familiar document for business customers, not a
+      pixel-perfect copy of the 1C print form.
+    stack:
+      - WooCommerce
+      - PDF invoices
+      - B2B
+      - Document templates
+    order: 285
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-pdf-invoice-branding/en
+        type: product
+  - slug: rpm9000-site-content-ssl-check
+    name: 9000 RPM website updates and TLS verification
+    year: "11.2022"
+    role: Web development and automation
+    description: Updated an auto service website and investigated a certificate
+      renewal request by checking what was already active before recommending a
+      purchase.
+    stack:
+      - Website maintenance
+      - Let’s Encrypt
+      - TLS
+      - Hosting
+    order: 286
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/rpm9000-site-content-ssl-check/en
+        type: product

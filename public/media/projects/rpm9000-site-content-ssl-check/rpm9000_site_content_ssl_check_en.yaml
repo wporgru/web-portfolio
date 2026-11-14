@@ -1,0 +1,26 @@
+title: 9000 RPM website updates and TLS verification
+tagline: Updated an auto service website and investigated a certificate renewal
+  request by checking what was already active before recommending a purchase.
+year: "11.2022"
+role: Web development and automation
+stack:
+  - Website maintenance
+  - Let’s Encrypt
+  - TLS
+  - Hosting
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Updated an auto service website and investigated a certificate renewal
+      request by checking what was already active before recommending a
+      purchase.
+  - type: text
+    title: How it works
+    body: Checked HTTPS and found an active Let’s Encrypt certificate. Explained why
+      an additional certificate was unnecessary and addressed a separate hosting
+      notice on backups. Handed over the content updates for review.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and noted avoiding an unnecessary certificate
+      purchase. Delivery of a callback form email was not independently
+      confirmed.

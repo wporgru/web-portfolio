@@ -1,0 +1,25 @@
+title: WooCommerce cart recovery and CDEK pickup setup
+tagline: "Restored shopping in an existing store: adding a product had to work
+  reliably, and shoppers needed a pickup location and a shipping quote."
+year: "12.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CDEK
+  - Pickup points
+  - Transactional email
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Restored shopping in an existing store: adding a product had to work
+      reliably, and shoppers needed a pickup location and a shipping quote."
+  - type: text
+    title: How it works
+    body: Fixed the add-to-cart crash, refined the cart popup and retained the
+      existing controls. Adjusted desktop button width and spacing, added CDEK
+      quotes and pickup selection and corrected the privacy policy link. Checked
+      that an order went through and its email reached a temporary address.
+  - type: text
+    title: Result and verification
+    body: The client checked and accepted the result. The test covered order
+      submission and its email, not a live shipment or every tariff.

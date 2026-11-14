@@ -4980,3 +4980,57 @@ projects:
       - label: Читать кейс
         url: /showcase/troubleshooter-wordpress-business-card
         type: product
+  - slug: woocommerce-cart-cdek-pickup-recovery
+    name: Ремонт корзины WooCommerce и подключение ПВЗ
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: "Восстановил покупку в действующем магазине: корзина не должна
+      падать при добавлении товара, а покупателю нужен выбор пункта выдачи с
+      расчётом доставки."
+    stack:
+      - WooCommerce
+      - CDEK
+      - Pickup points
+      - Transactional email
+    order: 284
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-cart-cdek-pickup-recovery
+        type: product
+  - slug: woocommerce-pdf-invoice-branding
+    name: Доработка PDF-счёта WooCommerce для B2B
+    year: "05.2023"
+    role: Веб-разработка и автоматизация
+    description: Доработал автоматически формируемый счёт по образцу клиента. Задача
+      — сделать документ привычнее для работы с организациями, а не
+      воспроизвести печатную форму 1С один в один.
+    stack:
+      - WooCommerce
+      - PDF invoices
+      - B2B
+      - Document templates
+    order: 285
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-pdf-invoice-branding
+        type: product
+  - slug: rpm9000-site-content-ssl-check
+    name: "9000 RPM: обновление сайта и проверка SSL"
+    year: "11.2022"
+    role: Веб-разработка и автоматизация
+    description: "Обновил информацию на сайте автосервиса и разобрал запрос на
+      продление сертификата: прежде чем покупать новый, нужно было проверить,
+      что уже настроено на хостинге."
+    stack:
+      - Website maintenance
+      - Let’s Encrypt
+      - TLS
+      - Hosting
+    order: 286
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/rpm9000-site-content-ssl-check
+        type: product

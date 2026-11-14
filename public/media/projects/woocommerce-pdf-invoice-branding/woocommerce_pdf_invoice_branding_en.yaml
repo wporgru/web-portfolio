@@ -1,0 +1,28 @@
+title: Refining a WooCommerce PDF invoice for B2B
+tagline: Refined an automatically generated invoice using the client’s
+  reference. The goal was a familiar document for business customers, not a
+  pixel-perfect copy of the 1C print form.
+year: "05.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - PDF invoices
+  - B2B
+  - Document templates
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined an automatically generated invoice using the client’s reference.
+      The goal was a familiar document for business customers, not a
+      pixel-perfect copy of the 1C print form.
+  - type: text
+    title: How it works
+    body: "Added the stamp and signature to the template. Addressed feedback on
+      units and packaging and shared the revised PDF. Documented the scope: VAT
+      and amounts in words were excluded, and quantity placement differed from
+      the reference."
+  - type: text
+    title: Result and verification
+    body: The client confirmed the stamp and signature and accepted the result. QR
+      behavior was not verified separately, and the client’s invoice and
+      personal data are not reproduced.
