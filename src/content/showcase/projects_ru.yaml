@@ -5401,3 +5401,43 @@ projects:
       - label: Читать кейс
         url: /showcase/ramprices-memory-offer-normalization
         type: product
+  - slug: klimat-profi-server-storage
+    name: "Климат Профи: освобождение места на сервере"
+    year: "11.2026"
+    role: Веб-разработка и автоматизация
+    description: На VPS магазина оставалось 8,3 ГБ свободного места. Нужно было
+      вернуть запас для резервных копий и обслуживания магазина, при этом не
+      удаляя изображения, которые используются в каталоге, шаблонах и на
+      страницах услуг.
+    stack:
+      - Linux
+      - WooCommerce
+      - Python
+      - Media optimization
+      - VPS
+    order: 307
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/klimat-profi-server-storage
+        type: product
+  - slug: klimat-profi-backup-automation
+    name: "Климат Профи: автоматические копии сайта и базы"
+    year: "11.2026"
+    role: Веб-разработка и автоматизация
+    description: "Магазину нужны были резервные копии без ручного запуска и
+      накопления тяжёлых архивов. Полную копию и отдельный дамп базы требовалось
+      хранить по разным правилам: у файлов и данных разные объёмы и сценарии
+      восстановления."
+    stack:
+      - Linux
+      - Bash
+      - MySQL
+      - cron
+      - Backup automation
+    order: 308
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/klimat-profi-backup-automation
+        type: product

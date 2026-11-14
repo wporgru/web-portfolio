@@ -33,6 +33,7 @@ const localizationTags = [ru?'Испанская локализация':'Spanis
 const orderTags = [ru?'Транзакционные письма':'Transactional email',ru?'Статусы заказов':'Order statuses',ru?'Подарки по сумме корзины':'Cart-based gift rules',ru?'Тестирование форм бронирования':'Booking form testing'];
 const mediaTags = ['WebP','XnView',ru?'Оптимизация медиатеки WordPress':'WordPress media optimization',ru?'Исправление миниатюр каталога':'Catalog thumbnail repair',ru?'ИИ-увеличение изображений':'AI image upscaling'];
 const recoveryTags = ['ACF','MySQL','RabbitLoader','WP Rocket',ru?'Откат базы из резервной копии':'Database rollback from backup',ru?'Диагностика сбоев после обновления':'Post-update troubleshooting',ru?'Восстановление доступа в wp-admin':'WordPress admin access recovery'];
+const opsTags = ['Linux','Bash','cron','pigz',ru?'Обслуживание VPS':'VPS maintenance',ru?'Автоматизация резервных копий':'Backup automation',ru?'Проверка архивов и ротация':'Archive validation and retention',ru?'Аудит зависимостей медиатеки':'Media dependency auditing'];
 const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
 const roleServices = ['website-redesign','catalog-automation','data-and-ai','technical-seo'].map(slug=>services.find(service=>service.slug===slug)!);
 const roleServiceSlugs = new Set(roleServices.map(service=>service.slug));
@@ -69,6 +70,7 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
           {c.results.map(([title,body])=><li><strong>{title}.</strong> {body}</li>)}
           <li><a href={base+'/showcase/arenda-pm-home-performance/'+(ru?'':'en/')}><strong>PageSpeed 72 → 96</strong></a> — {ru?'мобильная главная Аренда-ПМ: LCP 6,8 → 2,7 с в лабораторных замерах.':'Arenda-PM mobile homepage: LCP 6.8 → 2.7 s in lab measurements.'}</li>
           <li><a href={base+'/showcase/bgtgroup-technical-seo-performance/'+(ru?'':'en/')}><strong>BGT Group: PageSpeed 37 → 86</strong></a> — {ru?'мобильный лабораторный замер; на компьютере 63 → 92.':'mobile lab measurement; desktop 63 → 92.'}</li>
+          <li><a href={base+'/showcase/klimat-profi-server-storage/'+(ru?'':'en/')}><strong>{ru?'Климат Профи: 8,3 → 83 ГБ свободного места':'Klimat Profi: 8.3 → 83 GB free server space'}</strong></a> — {ru?'по отчёту первого этапа расчистки VPS магазина.':'as recorded in the first-stage store VPS cleanup report.'}</li>
         </ul>
       </article>
 
@@ -146,6 +148,9 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Ремонт и восстановление сайтов':'Website repair and recovery'}</div>
           <ul class="tags">{recoveryTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+        </div><div class="skillsgroup">
+          <div class="skillsgroup__title">{ru?'Серверы и эксплуатация':'Servers and operations'}</div>
+          <ul class="tags">{opsTags.map(tag=><li class="tag">{tag}</li>)}</ul>
         </div></div>
       </article>
     </aside>

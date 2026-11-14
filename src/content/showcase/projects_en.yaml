@@ -5344,3 +5344,41 @@ projects:
       - label: Read case study
         url: /showcase/ramprices-memory-offer-normalization/en
         type: product
+  - slug: klimat-profi-server-storage
+    name: "Klimat Profi: recovering server storage capacity"
+    year: "11.2026"
+    role: Web development and automation
+    description: The store VPS had only 8.3 GB free. It needed enough room for
+      backups and maintenance without losing images used by products, templates
+      or service pages.
+    stack:
+      - Linux
+      - WooCommerce
+      - Python
+      - Media optimization
+      - VPS
+    order: 307
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/klimat-profi-server-storage/en
+        type: product
+  - slug: klimat-profi-backup-automation
+    name: "Klimat Profi: automated website and database backups"
+    year: "11.2026"
+    role: Web development and automation
+    description: The store needed unattended backups without filling the disk with
+      large archives. Full snapshots and standalone SQL dumps needed different
+      retention rules to reflect their sizes and recovery uses.
+    stack:
+      - Linux
+      - Bash
+      - MySQL
+      - cron
+      - Backup automation
+    order: 308
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/klimat-profi-backup-automation/en
+        type: product

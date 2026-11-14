@@ -1,0 +1,39 @@
+title: "Klimat Profi: recovering server storage capacity"
+tagline: The store VPS had only 8.3 GB free. It needed enough room for backups
+  and maintenance without losing images used by products, templates or service
+  pages.
+year: "11.2026"
+role: Web development and automation
+stack:
+  - Linux
+  - WooCommerce
+  - Python
+  - Media optimization
+  - VPS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store VPS had only 8.3 GB free. It needed enough room for backups and
+      maintenance without losing images used by products, templates or service
+      pages.
+  - type: text
+    title: How it works
+    body: Split the work into stages. First cleared logs, old archives and temporary
+      import XML files, then processed oversized original images with a
+      dedicated script. After configuring backups, audited media dependencies,
+      including system directories, logos, icons and page builder assets. The
+      report records cleanup of unreferenced files and attachment records,
+      optimization of affected tables, and follow-up checks of public pages and
+      media.
+  - type: text
+    title: Result and verification
+    body: The first-stage report records free space increasing from 8.3 GB to 83 GB.
+      After a separate media cleanup, 17 pages and 882 media files returned HTTP
+      200, and the server still had 79 GB free with a full backup present. These
+      are storage and availability checks, not PageSpeed measurements or a
+      visual audit of every product page.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: backup automation"
+        url: /showcase/klimat-profi-backup-automation/en/

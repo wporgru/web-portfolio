@@ -1,0 +1,37 @@
+title: "Klimat Profi: automated website and database backups"
+tagline: The store needed unattended backups without filling the disk with large
+  archives. Full snapshots and standalone SQL dumps needed different retention
+  rules to reflect their sizes and recovery uses.
+year: "11.2026"
+role: Web development and automation
+stack:
+  - Linux
+  - Bash
+  - MySQL
+  - cron
+  - Backup automation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store needed unattended backups without filling the disk with large
+      archives. Full snapshots and standalone SQL dumps needed different
+      retention rules to reflect their sizes and recovery uses.
+  - type: text
+    title: How it works
+    body: "Built a Bash script and cron schedule: a daily site-and-database archive
+      and a separate cycle for standalone SQL dumps. Used pigz for compression
+      and lowered CPU and disk priority for background jobs. The script writes
+      to a temporary file and checks the result before publishing and rotating
+      archives. Set up transfer of a database dump to a separate computer so the
+      copy would not live only on the VPS."
+  - type: text
+    title: Result and verification
+    body: "The project report records a full archive of about 20 GB and a separate
+      compressed SQL dump. For this case I also read the saved gzip end to end:
+      it decompresses to about 364 MB of SQL. That verifies dump readability,
+      not a full restore drill or continuous cron success."
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: storage recovery and media audit"
+        url: /showcase/klimat-profi-server-storage/en/
