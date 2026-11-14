@@ -1,4 +1,20 @@
 export const serviceDetails = {
+  'wordpress-repair': {
+    ru: ['После обновления сайт открывается, но часть функций пропала', 'Работающая главная не означает, что всё в порядке: редактор может перестать сохранять правки, а кэш — показывать старые страницы. Проверю, где именно расходится поведение, и предложу точечный ремонт или восстановление из копии. Если ограничение выставил хостинг, отделю работу на сайте от действий, которые может выполнить только провайдер.', 'Вы получите список изменений, результаты повторной проверки по проблемным сценариям и описание оставшихся ограничений. Если для исправления нужен откат, до запуска согласуем, какие данные могут измениться и как сохранить свежие записи.'],
+    en: ['The site loads after an update, but some features are gone', 'A working homepage does not mean everything is healthy: the editor may no longer save changes, or the cache may still serve old pages. I isolate where behavior diverges and recommend a targeted fix or recovery from backup. If the host imposed a restriction, I separate the site work from actions only the provider can take.', 'Get a change list, the results of retesting the affected flows, and a record of anything still unresolved. If rollback is necessary, we agree upfront which data may change and how recent records will be preserved.'],
+    questions: {
+      ru: [
+        ['Можно восстановить сайт без полного отката?', 'Иногда достаточно исправить один конфликт, вернуть настройки компонента или восстановить отдельные данные. Полный откат рассматриваю, когда точечное восстановление ненадёжно или занимает больше времени.'],
+        ['Что делать, если не открывается wp-admin?', 'Для диагностики может понадобиться доступ к панели хостинга, файлам или базе. По тексту ошибки и журналам определю, какой доступ нужен и можно ли сначала проверить копию сайта.'],
+        ['Потеряются ли заказы WooCommerce при восстановлении?', 'При откате всей базы новые заказы действительно могут пропасть. До отката сверю дату копии с заказами и согласую способ их сохранения. Если можно восстановить только проблемную часть, сначала оценю этот вариант.'],
+      ],
+      en: [
+        ['Can you recover the site without a full rollback?', 'A single conflict fix, settings repair or partial data restore may be enough. I consider a full rollback when targeted recovery is unreliable or would take longer.'],
+        ['What if wp-admin does not open?', 'Diagnosis may require hosting panel, filesystem or database access. The error and logs help determine which access is needed and whether testing on a copy is possible first.'],
+        ['Will recovery remove recent WooCommerce orders?', 'A full database rollback can remove recent orders. Before rolling back, I compare the backup timestamp with order history and agree on how to preserve newer orders. If only the affected data can be restored, I assess that option first.'],
+      ],
+    },
+  },
   'website-redesign': {
     ru: ['Оформление устарело, но каталог и заказы уже работают', 'Договоримся, что сохраняем: адреса страниц, категории, привычный способ заказа и интеграции. Отдельно выделим, где можно менять структуру, а где достаточно переделать шаблон.', 'План обновления, согласованные экраны и список сценариев для приёмки. Сравним старую и новую витрины на одних и тех же страницах, а не только на главной.'],
     en: ['The design looks dated, but the store already takes orders', 'Agree on what stays: page URLs, categories, ordering flows and integrations. Decide where a structural change is worthwhile and where a template update is enough.', 'A redesign plan, agreed screens and an acceptance checklist. Compare the old and new storefront on the same pages, not just the homepage.'],

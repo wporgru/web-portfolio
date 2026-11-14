@@ -32,6 +32,7 @@ const performanceTags = ['PageSpeed Insights','LCP','Critical CSS',ru?'Опти�
 const localizationTags = [ru?'Испанская локализация':'Spanish localization',ru?'Португалоязычные сайты':'Portuguese-language websites',ru?'Мультиязычные меню':'Multilingual navigation',ru?'Выбор города':'City selection',ru?'Сохранение региона в cookie':'Cookie-based region preferences'];
 const orderTags = [ru?'Транзакционные письма':'Transactional email',ru?'Статусы заказов':'Order statuses',ru?'Подарки по сумме корзины':'Cart-based gift rules',ru?'Тестирование форм бронирования':'Booking form testing'];
 const mediaTags = ['WebP','XnView',ru?'Оптимизация медиатеки WordPress':'WordPress media optimization',ru?'Исправление миниатюр каталога':'Catalog thumbnail repair',ru?'ИИ-увеличение изображений':'AI image upscaling'];
+const recoveryTags = ['ACF','MySQL','RabbitLoader','WP Rocket',ru?'Откат базы из резервной копии':'Database rollback from backup',ru?'Диагностика сбоев после обновления':'Post-update troubleshooting',ru?'Восстановление доступа в wp-admin':'WordPress admin access recovery'];
 const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
 const roleServices = ['website-redesign','catalog-automation','data-and-ai','technical-seo'].map(slug=>services.find(service=>service.slug===slug)!);
 const roleServiceSlugs = new Set(roleServices.map(service=>service.slug));
@@ -142,6 +143,9 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Обработка изображений':'Image processing'}</div>
           <ul class="tags">{mediaTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+        </div><div class="skillsgroup">
+          <div class="skillsgroup__title">{ru?'Ремонт и восстановление сайтов':'Website repair and recovery'}</div>
+          <ul class="tags">{recoveryTags.map(tag=><li class="tag">{tag}</li>)}</ul>
         </div></div>
       </article>
     </aside>

@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { services } from '../content/services.mjs';
+import { serviceDetails } from '../content/service-details.mjs';
 
 const root = 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
@@ -60,6 +62,22 @@ if(!pages.size||sitemap.size!==pages.size) fail(root,'sitemap and HTML counts di
 const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcase/'));
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
+for (const service of services) {
+  for (const suffix of ['', 'en/']) {
+    const route = `services/${service.slug}/${suffix}`;
+    const detail = read(path.join(root,route,'index.html'));
+    const index = read(path.join(root,'services',suffix,'index.html'));
+    const homepage = read(path.join(root,suffix,'index.html'));
+    if (![index,homepage].every(html => html.includes(`href="${base}${route}"`))) fail(route,'service is not linked from the homepage and services index');
+    const questions = serviceDetails[service.slug].questions?.[suffix ? 'en' : 'ru'];
+    if (questions?.length && !detail.includes('data-service-questions')) fail(route,'missing service questions');
+    for (const slug of service.cases) {
+      const caseRoute = `showcase/${slug}/${suffix}`;
+      const casePage = read(path.join(root,caseRoute,'index.html'));
+      if (!detail.includes(`href="${base}${caseRoute}"`) || !casePage.includes(`href="${base}${route}"`)) fail(route,'missing reciprocal service and case links: '+caseRoute);
+    }
+  }
+}
 const exists = relative => {
   const direct = path.join(root,relative);
   return [direct,path.join(direct,'index.html')].some(file=>fs.statSync(file,{throwIfNoEntry:false})?.isFile());

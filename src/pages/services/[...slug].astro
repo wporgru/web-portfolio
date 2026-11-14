@@ -16,6 +16,7 @@ const { service, lang } = Astro.props;
 const ru = lang === 'ru';
 const [title, intro, first, second, outcome] = service[ru ? 'ru' : 'en'];
 const [scenario, approach, deliverables] = serviceDetails[service.slug][ru ? 'ru' : 'en'];
+const questions = serviceDetails[service.slug].questions?.[ru ? 'ru' : 'en'] ?? [];
 const emailHref = 'mailto:zakaz@wp.org.ru?subject='+encodeURIComponent(title);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const localeSuffix = ru ? '/' : '/en/';
@@ -64,6 +65,12 @@ const examples = service.cases.map(slug => {
         </article>)}
       </div>
     </section>
+    {questions.length > 0 && <section class="card" data-service-questions>
+      <h2 class="h2">{ru?'Вопросы перед началом работы':'Common questions before we start'}</h2>
+      <dl class="service-questions">
+        {questions.map(([question, answer]) => <div><dt>{question}</dt><dd>{answer}</dd></div>)}
+      </dl>
+    </section>}
     <section class="card">
       <h2 class="h2">{ru?'С чего начнём':'How to get started'}</h2>
       <p>{outcome}</p>
@@ -75,4 +82,7 @@ const examples = service.cases.map(slug => {
 .service{display:grid;gap:16px;padding-block:16px 32px;max-width:960px}
 .service .hero__summary{margin-bottom:1rem}
 .service section>h2{margin-bottom:.75rem}
+.service-questions{display:grid;gap:1rem;margin:0}
+.service-questions dt{font-weight:700}
+.service-questions dd{margin:.25rem 0 0}
 </style>
