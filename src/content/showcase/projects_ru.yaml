@@ -5462,3 +5462,24 @@ projects:
       - label: Читать кейс
         url: /showcase/codex-marketing-skills-workflow
         type: product
+  - slug: apteka-optika-price-comparison
+    name: "Аптека & Оптика: витрина сравнения цен на Node.js"
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: "Собрал отдельную публичную витрину для аптечного каталога.
+      Пользователю нужен один экран со сравнимыми предложениями, а поиску —
+      стабильные страницы категорий и товаров. Задача не сводилась к выводу
+      фида: одну позицию нужно было связать с вариантами и предложениями разных
+      продавцов, не показывая непроверенные записи."
+    stack:
+      - Node.js
+      - Express
+      - SQLite
+      - Server-side rendering
+      - Technical SEO
+    order: 310
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/apteka-optika-price-comparison
+        type: product

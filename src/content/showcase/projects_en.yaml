@@ -5403,3 +5403,24 @@ projects:
       - label: Read case study
         url: /showcase/codex-marketing-skills-workflow/en
         type: product
+  - slug: apteka-optika-price-comparison
+    name: "Apteka & Optika: Node.js price comparison storefront"
+    year: "2026"
+    role: Web development and automation
+    description: "Built a standalone public storefront for a pharmacy catalog.
+      Visitors needed one place to compare offers, and search engines needed
+      stable category and product pages. This was more than displaying a feed:
+      each product needed to connect to variants and merchant offers without
+      exposing unreviewed records."
+    stack:
+      - Node.js
+      - Express
+      - SQLite
+      - Server-side rendering
+      - Technical SEO
+    order: 310
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/apteka-optika-price-comparison/en
+        type: product

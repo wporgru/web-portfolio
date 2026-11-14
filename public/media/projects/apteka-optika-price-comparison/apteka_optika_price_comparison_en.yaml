@@ -1,0 +1,47 @@
+title: "Apteka & Optika: Node.js price comparison storefront"
+tagline: "Built a standalone public storefront for a pharmacy catalog. Visitors
+  needed one place to compare offers, and search engines needed stable category
+  and product pages. This was more than displaying a feed: each product needed
+  to connect to variants and merchant offers without exposing unreviewed
+  records."
+year: "2026"
+role: Web development and automation
+stack:
+  - Node.js
+  - Express
+  - SQLite
+  - Server-side rendering
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Built a standalone public storefront for a pharmacy catalog. Visitors
+      needed one place to compare offers, and search engines needed stable
+      category and product pages. This was more than displaying a feed: each
+      product needed to connect to variants and merchant offers without exposing
+      unreviewed records."
+  - type: text
+    title: How it works
+    body: Separated data preparation from public delivery. The Express storefront
+      reads SQLite in read-only mode and renders categories, search and product
+      pages server-side. Publication checks include review status, description
+      availability and prescription exclusions. A product page groups variants
+      and offers, and a separate route handles merchant click-outs. Added 301
+      redirects for legacy URLs and canonical URLs and a sitemap for the new
+      templates.
+  - type: text
+    title: Result and verification
+    body: Verified the public homepage and the redirect from the old catalog path in
+      a browser. Included an uncropped screenshot of the live storefront. The
+      case documents the interface and data architecture, not price coverage,
+      medical accuracy or organic traffic growth.
+  - type: image
+    src: /media/projects/apteka-optika-price-comparison/homepage-full.webp
+    alt: Full-page screenshot of the Apteka & Optika storefront
+    caption: Uncropped browser capture of the current live homepage at 1440 px
+      width. This is not an archival launch screenshot.
+  - type: text
+    title: Live website
+    links:
+      - label: Open storefront
+        url: https://apteka-optika.ru/
