@@ -4607,3 +4607,55 @@ projects:
       - label: Read case study
         url: /showcase/medcors-joomla-transition-design/en
         type: product
+  - slug: goa-tours-stripe-setup
+    name: Stripe setup for the Goa Tours storefront
+    year: "12.2021"
+    role: Web development and automation
+    description: Configured the payment extension for an existing WooCommerce store.
+      The setup separated storefront configuration from steps the owner needed
+      to complete in their own Stripe account.
+    stack:
+      - WooCommerce
+      - Stripe
+      - Payment setup
+    order: 266
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/goa-tours-stripe-setup/en
+        type: product
+  - slug: woocommerce-alongside-digiseller
+    name: Setting up WooCommerce alongside Digiseller
+    year: "11.2018"
+    role: Web development and automation
+    description: Set up a separate store within an existing WordPress site without
+      replacing its Digiseller storefront. The owner wanted to try the new order
+      flow on one product first.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Digiseller
+      - Transactional email
+    order: 267
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-alongside-digiseller/en
+        type: product
+  - slug: pelicula-staging-demo-handoff
+    name: Pelicula staging setup and website archive handoff
+    year: "12.2021"
+    role: Web development and automation
+    description: Prepared a WordPress demo copy for handoff. Hosting limits
+      interrupted the import, so setup continued on a staging host.
+    stack:
+      - WordPress
+      - Pelicula
+      - Staging
+      - Backup handoff
+    order: 268
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/pelicula-staging-demo-handoff/en
+        type: product

@@ -4659,3 +4659,56 @@ projects:
       - label: Читать кейс
         url: /showcase/medcors-joomla-transition-design
         type: product
+  - slug: goa-tours-stripe-setup
+    name: Настройка Stripe для магазина Goa Tours
+    year: "12.2021"
+    role: Веб-разработка и автоматизация
+    description: Подключил платёжный модуль к действующему WooCommerce. Для запуска
+      требовалось развести настройки магазина и действия, которые владелец
+      выполняет в собственном аккаунте Stripe.
+    stack:
+      - WooCommerce
+      - Stripe
+      - Payment setup
+    order: 266
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/goa-tours-stripe-setup
+        type: product
+  - slug: woocommerce-alongside-digiseller
+    name: WooCommerce рядом с витриной Digiseller
+    year: "11.2018"
+    role: Веб-разработка и автоматизация
+    description: Подготовил отдельный магазин внутри существующего WordPress, не
+      заменяя действующую витрину Digiseller. Владелец хотел сначала проверить
+      новый путь заказа на одном товаре.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Digiseller
+      - Transactional email
+    order: 267
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-alongside-digiseller
+        type: product
+  - slug: pelicula-staging-demo-handoff
+    name: Развёртывание Pelicula и передача архива сайта
+    year: "12.2021"
+    role: Веб-разработка и автоматизация
+    description: Подготовил демонстрационную копию WordPress для передачи владельцу.
+      На исходном хостинге импорт упирался в ограничения, поэтому работу
+      продолжил на промежуточной площадке.
+    stack:
+      - WordPress
+      - Pelicula
+      - Staging
+      - Backup handoff
+    order: 268
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/pelicula-staging-demo-handoff
+        type: product

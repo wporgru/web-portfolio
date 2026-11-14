@@ -1,0 +1,25 @@
+title: Pelicula staging setup and website archive handoff
+tagline: Prepared a WordPress demo copy for handoff. Hosting limits interrupted
+  the import, so setup continued on a staging host.
+year: "12.2021"
+role: Web development and automation
+stack:
+  - WordPress
+  - Pelicula
+  - Staging
+  - Backup handoff
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared a WordPress demo copy for handoff. Hosting limits interrupted the
+      import, so setup continued on a staging host.
+  - type: text
+    title: How it works
+    body: Confirmed a backup, deployed Pelicula on staging and checked what appeared
+      after the import stopped. Documented that navigation was present but the
+      homepage import was incomplete. Delivered the deployed site archive and
+      child theme for further work.
+  - type: text
+    title: Result and verification
+    body: The client accepted the package for self-managed migration and cleanup.
+      Final deployment and a complete demo import were not verified.

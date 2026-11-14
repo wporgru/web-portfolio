@@ -1,0 +1,26 @@
+title: Stripe setup for the Goa Tours storefront
+tagline: Configured the payment extension for an existing WooCommerce store. The
+  setup separated storefront configuration from steps the owner needed to
+  complete in their own Stripe account.
+year: "12.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Stripe
+  - Payment setup
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Configured the payment extension for an existing WooCommerce store. The
+      setup separated storefront configuration from steps the owner needed to
+      complete in their own Stripe account.
+  - type: text
+    title: How it works
+    body: Explained which keys the store needed and why the owner had to complete
+      account and phone verification. Configured the extension, demonstrated the
+      settings and handed it over for review.
+  - type: text
+    title: Result and verification
+    body: The client accepted the setup. No successful bank charge is recorded, so
+      the case demonstrates configuration rather than verified live payment
+      processing.
