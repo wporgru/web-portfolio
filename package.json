@@ -28,7 +28,7 @@
     "ajv-formats": "^3.0.1",
     "astro": "^7.3.2",
     "docx": "^9.7.1",
-    "unpdf": "^1.8.1",
+    "unpdf": "^2.1.0",
     "yaml": "^2.9.0"
   },
   "devDependencies": {
