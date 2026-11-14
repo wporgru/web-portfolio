@@ -17,6 +17,9 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'sugarlips-supplier-csv-import': ['sugarlips-category-navigation', 'Следующий этап: навигация по категориям', 'Next stage: category navigation'],
+  'sugarlips-category-navigation': ['sugarlips-supplier-csv-import', 'Предыдущий этап: импорт CSV поставщика', 'Previous stage: supplier CSV import'],
+  'sugarlips-boxberry-city-mapping': ['sugarlips-supplier-csv-import', 'Другой этап Sugarlips: обновление каталога', 'Another Sugarlips stage: catalog updates'],
   'woocommerce-document-pack-product-page': ['metrica-ecommerce-purchase-goals', 'Связанный этап: электронная торговля и цели покупки', 'Related stage: e-commerce tracking and purchase goals'],
   'metrica-ecommerce-purchase-goals': ['woocommerce-document-pack-product-page', 'Связанный этап: оформление карточки пакета документов', 'Related stage: document bundle product page'],
   'woocommerce-excerpt-import-repair': ['woocommerce-stock-waitlist-localization', 'Следующий этап: лист ожидания и письма магазина', 'Next stage: the waitlist and store emails'],

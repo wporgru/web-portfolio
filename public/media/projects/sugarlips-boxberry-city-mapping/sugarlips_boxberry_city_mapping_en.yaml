@@ -1,0 +1,33 @@
+title: "Sugarlips: restoring Boxberry at checkout"
+tagline: Restored shipping options in a store where none appeared after entering
+  an address. Investigated why a visible city field did not mean the delivery
+  extension received it.
+year: "11.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Boxberry
+  - Checkout
+  - Elementor
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Restored shipping options in a store where none appeared after entering an
+      address. Investigated why a visible city field did not mean the delivery
+      extension received it.
+  - type: text
+    title: How it works
+    body: Reviewed the setup with carrier support. Found that the required city
+      field differed from billing_city and the expected value was missing.
+      Removed redundant components with the client's permission, configured
+      delivery and proposed a new order and email check. Flagged the older
+      components separately.
+  - type: text
+    title: Result and verification
+    body: The client accepted the setup. A live shipment, pickup map and Russian
+      Post setup are not documented.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Another Sugarlips stage: catalog updates"
+        url: /showcase/sugarlips-supplier-csv-import/en/

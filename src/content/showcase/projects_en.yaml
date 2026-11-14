@@ -4819,3 +4819,55 @@ projects:
       - label: Read case study
         url: /showcase/presnya-tea-captcha-cdek/en
         type: product
+  - slug: airmania-selective-product-feed
+    name: Airmania selective product feed and model field
+    year: "08.2022"
+    role: Web development and automation
+    description: Prepared an export for an agreed marketing selection rather than
+      the entire catalog or only products physically in stock.
+    stack:
+      - WooCommerce
+      - YML
+      - Product feeds
+      - Merchandising
+    order: 278
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/airmania-selective-product-feed/en
+        type: product
+  - slug: sugarlips-boxberry-city-mapping
+    name: "Sugarlips: restoring Boxberry at checkout"
+    year: "11.2021"
+    role: Web development and automation
+    description: Restored shipping options in a store where none appeared after
+      entering an address. Investigated why a visible city field did not mean
+      the delivery extension received it.
+    stack:
+      - WooCommerce
+      - Boxberry
+      - Checkout
+      - Elementor
+    order: 279
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/sugarlips-boxberry-city-mapping/en
+        type: product
+  - slug: sugarlips-category-navigation
+    name: Sugarlips navigation using real product categories
+    year: "12.2021"
+    role: Web development and automation
+    description: After the catalog import, updated navigation so menu items opened
+      product categories rather than ordinary pages with matching names.
+    stack:
+      - WooCommerce
+      - WordPress
+      - Product taxonomy
+      - Navigation
+    order: 280
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/sugarlips-category-navigation/en
+        type: product

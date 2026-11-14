@@ -24,3 +24,8 @@ blocks:
     body: The client accepted the work. The handoff reports 5,900 imported products;
       no independent count or complete scheduled cycle after the upgrade was
       verified.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: category navigation"
+        url: /showcase/sugarlips-category-navigation/en/

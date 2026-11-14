@@ -1,0 +1,30 @@
+title: Sugarlips navigation using real product categories
+tagline: After the catalog import, updated navigation so menu items opened
+  product categories rather than ordinary pages with matching names.
+year: "12.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WordPress
+  - Product taxonomy
+  - Navigation
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After the catalog import, updated navigation so menu items opened product
+      categories rather than ordinary pages with matching names.
+  - type: text
+    title: How it works
+    body: "Explained the difference between a WordPress page and a WooCommerce
+      category archive. Directed navigation to the existing product sections and
+      sent it for review. Kept this task separate from catalog updates: it
+      changed how shoppers reached products, not the data source."
+  - type: text
+    title: Result and verification
+    body: The client checked the navigation and accepted it. This stage did not
+      modify product imports or the update schedule.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Previous stage: supplier CSV import"
+        url: /showcase/sugarlips-supplier-csv-import/en/

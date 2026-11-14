@@ -4873,3 +4873,56 @@ projects:
       - label: Читать кейс
         url: /showcase/presnya-tea-captcha-cdek
         type: product
+  - slug: airmania-selective-product-feed
+    name: "Airmania: выборочная выгрузка и поле модели"
+    year: "08.2022"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил выгрузку по согласованному списку: в неё должны были
+      попадать позиции, выбранные для продвижения, а не весь каталог или только
+      физически доступный остаток."
+    stack:
+      - WooCommerce
+      - YML
+      - Product feeds
+      - Merchandising
+    order: 278
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/airmania-selective-product-feed
+        type: product
+  - slug: sugarlips-boxberry-city-mapping
+    name: "Sugarlips: восстановление доставки Boxberry"
+    year: "11.2021"
+    role: Веб-разработка и автоматизация
+    description: Восстановил доставку в магазине, где варианты не появлялись после
+      ввода адреса. Разобрал, почему наличие города в форме ещё не означает, что
+      его получает модуль доставки.
+    stack:
+      - WooCommerce
+      - Boxberry
+      - Checkout
+      - Elementor
+    order: 279
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/sugarlips-boxberry-city-mapping
+        type: product
+  - slug: sugarlips-category-navigation
+    name: "Sugarlips: меню на основе товарных категорий"
+    year: "12.2021"
+    role: Веб-разработка и автоматизация
+    description: После импорта ассортимента настроил меню так, чтобы пункты
+      открывали товарные разделы, а не обычные страницы с теми же названиями.
+    stack:
+      - WooCommerce
+      - WordPress
+      - Product taxonomy
+      - Navigation
+    order: 280
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/sugarlips-category-navigation
+        type: product

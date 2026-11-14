@@ -1,0 +1,26 @@
+title: Airmania selective product feed and model field
+tagline: Prepared an export for an agreed marketing selection rather than the
+  entire catalog or only products physically in stock.
+year: "08.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YML
+  - Product feeds
+  - Merchandising
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared an export for an agreed marketing selection rather than the
+      entire catalog or only products physically in stock.
+  - type: text
+    title: How it works
+    body: Defined the selection rules, generated the YML file and shared its URL.
+      During format review, separated the model from the Russian device type and
+      looked at accessory edge cases. The model field adjustment was scoped
+      separately from the initial export.
+  - type: text
+    title: Result and verification
+    body: The client accepted the handoff. The archive does not verify the final
+      offer count or XML validation, and the marketing selection flag did not
+      represent inventory.
