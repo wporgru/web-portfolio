@@ -5034,3 +5034,56 @@ projects:
       - label: Читать кейс
         url: /showcase/rpm9000-site-content-ssl-check
         type: product
+  - slug: fabric-catalog-webp-compression
+    name: Подготовка WebP для каталога тканей и кожи
+    year: "01.2023"
+    role: Веб-разработка и автоматизация
+    description: Подготовил квадратные изображения коллекций для каталога. Заказчику
+      нужны были компактные файлы, но фактуру материала нельзя было терять ради
+      одинакового веса каждого изображения.
+    stack:
+      - WebP
+      - MODX
+      - Image optimization
+      - Catalog media
+    order: 287
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/fabric-catalog-webp-compression
+        type: product
+  - slug: woocommerce-mobile-grid-regression
+    name: Ремонт мобильной сетки товаров и категорий
+    year: "01.2023"
+    role: Веб-разработка и автоматизация
+    description: Вернул нормальную сетку товаров и категорий после предыдущих
+      изменений. На мобильном отдельно проверил описание товара и элементы,
+      которые могли выходить за пределы экрана.
+    stack:
+      - WooCommerce
+      - Responsive design
+      - WP Rocket
+      - Browser QA
+    order: 288
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-mobile-grid-regression
+        type: product
+  - slug: farkop-service-catalog-facets
+    name: "Farkop Service: каталог и фильтр по марке авто"
+    year: "02.2023"
+    role: Веб-разработка и автоматизация
+    description: "Доработал витрину фаркопов: сделал подкатегории компактнее,
+      поправил карточки и ограничил фильтрацию одной маркой автомобиля за раз."
+    stack:
+      - WooCommerce
+      - CSS
+      - Catalog filters
+      - WPBakery
+    order: 289
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/farkop-service-catalog-facets
+        type: product

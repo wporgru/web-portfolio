@@ -1,0 +1,26 @@
+title: Repairing a WooCommerce mobile catalog grid
+tagline: Restored the product and category grid after earlier changes. Checked
+  mobile descriptions and elements that could overflow the viewport separately.
+year: "01.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Responsive design
+  - WP Rocket
+  - Browser QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Restored the product and category grid after earlier changes. Checked
+      mobile descriptions and elements that could overflow the viewport
+      separately.
+  - type: text
+    title: How it works
+    body: Identified an add-on that disrupted the grid and disabled it. Enabled WP
+      Rocket safe mode for the mobile description issue. Treated the width
+      limitation of the VK widget on a narrow iPhone as a separate issue.
+  - type: text
+    title: Result and verification
+    body: The client confirmed and accepted the fixes. The remaining widget
+      limitation and changes in browsing depth were not presented as resolved or
+      measured outcomes.

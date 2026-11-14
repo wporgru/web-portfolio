@@ -1,0 +1,26 @@
+title: Farkop Service catalog and vehicle-brand filter
+tagline: Refined a towbar storefront by compacting subcategories, adjusting
+  listings and limiting selection to one vehicle brand at a time.
+year: "02.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CSS
+  - Catalog filters
+  - WPBakery
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined a towbar storefront by compacting subcategories, adjusting
+      listings and limiting selection to one vehicle brand at a time.
+  - type: text
+    title: How it works
+    body: Reduced subcategory images, rearranged prices and buttons and tightened
+      spacing. Hid system categories from the filter. When updating WPBakery did
+      not restore the header editor, hid the unwanted phone link with CSS and
+      asked the client to verify the display.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the filter behavior and accepted the result. A
+      separate two-column layout was deferred. Migration work on another site is
+      not included in this case.

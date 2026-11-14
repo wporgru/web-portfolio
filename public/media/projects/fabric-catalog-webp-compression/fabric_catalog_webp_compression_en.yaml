@@ -1,0 +1,28 @@
+title: WebP image preparation for fabric and leather catalogs
+tagline: Prepared square collection images for a catalog. The client needed
+  small files without sacrificing material texture just to hit the same size on
+  every image.
+year: "01.2023"
+role: Web development and automation
+stack:
+  - WebP
+  - MODX
+  - Image optimization
+  - Catalog media
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared square collection images for a catalog. The client needed small
+      files without sacrificing material texture just to hit the same size on
+      every image.
+  - type: text
+    title: How it works
+    body: "Confirmed the collection list from a spreadsheet, proposed WebP and had
+      the client check support on their MODX site. Prepared 500 × 500 assets and
+      grouped files by source. Compared compression on detailed textures: some
+      images showed visible artifacts below roughly 39 KB."
+  - type: text
+    title: Result and verification
+    body: The client accepted the archives and received instructions for viewing
+      WebP and extracting the files. Not every image met the 25 KB target, and
+      the exact count was not preserved.

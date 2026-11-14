@@ -4978,3 +4978,56 @@ projects:
       - label: Read case study
         url: /showcase/rpm9000-site-content-ssl-check/en
         type: product
+  - slug: fabric-catalog-webp-compression
+    name: WebP image preparation for fabric and leather catalogs
+    year: "01.2023"
+    role: Web development and automation
+    description: Prepared square collection images for a catalog. The client needed
+      small files without sacrificing material texture just to hit the same size
+      on every image.
+    stack:
+      - WebP
+      - MODX
+      - Image optimization
+      - Catalog media
+    order: 287
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/fabric-catalog-webp-compression/en
+        type: product
+  - slug: woocommerce-mobile-grid-regression
+    name: Repairing a WooCommerce mobile catalog grid
+    year: "01.2023"
+    role: Web development and automation
+    description: Restored the product and category grid after earlier changes.
+      Checked mobile descriptions and elements that could overflow the viewport
+      separately.
+    stack:
+      - WooCommerce
+      - Responsive design
+      - WP Rocket
+      - Browser QA
+    order: 288
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-mobile-grid-regression/en
+        type: product
+  - slug: farkop-service-catalog-facets
+    name: Farkop Service catalog and vehicle-brand filter
+    year: "02.2023"
+    role: Web development and automation
+    description: Refined a towbar storefront by compacting subcategories, adjusting
+      listings and limiting selection to one vehicle brand at a time.
+    stack:
+      - WooCommerce
+      - CSS
+      - Catalog filters
+      - WPBakery
+    order: 289
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/farkop-service-catalog-facets/en
+        type: product
