@@ -5360,3 +5360,44 @@ projects:
       - label: Читать кейс
         url: /showcase/kabanchik-delivery-catalog
         type: product
+  - slug: diskprices-comparison-platform
+    name: "DiskPrices: сравнение цен и история стоимости"
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: Разработал витрину накопителей на Laravel. Вместо отдельных
+      карточек из разных магазинов покупатель должен видеть сопоставимые
+      предложения одной модели, а владелец проекта — понимать, какие фиды
+      загрузились и по каким товарам были переходы.
+    stack:
+      - Laravel
+      - PHP
+      - SQLite
+      - XML
+      - YML
+      - Affiliate tracking
+    order: 305
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/diskprices-comparison-platform
+        type: product
+  - slug: ramprices-memory-offer-normalization
+    name: "RamPrices: каталог и сопоставление модулей памяти"
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: Адаптировал ядро проекта сравнения цен под оперативную память.
+      Здесь совпадение марки и объёма ещё не означает, что товары
+      взаимозаменяемы. Ошибка в разборе фида может отправить предложение в
+      другую категорию или объединить несопоставимые позиции.
+    stack:
+      - Laravel
+      - PHP
+      - YML
+      - Data normalization
+      - Product feeds
+    order: 306
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/ramprices-memory-offer-normalization
+        type: product

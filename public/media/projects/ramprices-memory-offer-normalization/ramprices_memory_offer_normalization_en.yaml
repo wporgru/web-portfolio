@@ -1,0 +1,37 @@
+title: "RamPrices: memory catalog and offer matching"
+tagline: Adapted the price-comparison platform to memory products. A matching
+  brand and capacity does not make two items interchangeable. Wrong feed parsing
+  can send an offer to the wrong category or group unrelated listings together.
+year: "2026"
+role: Web development and automation
+stack:
+  - Laravel
+  - PHP
+  - YML
+  - Data normalization
+  - Product feeds
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Adapted the price-comparison platform to memory products. A matching brand
+      and capacity does not make two items interchangeable. Wrong feed parsing
+      can send an offer to the wrong category or group unrelated listings
+      together.
+  - type: text
+    title: How it works
+    body: Kept raw feeds and public variants separate. Added DDR5 classification,
+      routing for managed feeds and repeat sync rules. If an updated source
+      entry no longer qualifies for the catalog, its previously published
+      variant is removed. Separate tests cover grouping comparable offers across
+      merchants without combining two listings from the same seller.
+  - type: text
+    title: Result and verification
+    body: Sync and matching scenarios are captured in the project tests. Unlike
+      DiskPrices, this case covers adaptation to a different product type and
+      its data-quality rules, not building the whole platform from scratch. It
+      does not claim complete assortment coverage at publication.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Project foundation: the DiskPrices comparison platform"
+        url: /showcase/diskprices-comparison-platform/en/

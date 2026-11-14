@@ -19,6 +19,8 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'diskprices-comparison-platform': ['ramprices-memory-offer-normalization', 'Продолжение: адаптация ядра под оперативную память', 'Follow-up: adapting the catalog to memory products'],
+  'ramprices-memory-offer-normalization': ['diskprices-comparison-platform', 'Основа проекта: платформа сравнения цен DiskPrices', 'Project foundation: the DiskPrices comparison platform'],
   'kabanchik-restaurant-website': ['kabanchik-delivery-catalog', 'Следующий этап: каталог доставки и корзина', 'Next stage: delivery catalog and cart'],
   'kabanchik-menu-data': ['kabanchik-delivery-catalog', 'Связанная работа: интерфейс доставки', 'Related work: delivery storefront'],
   'kabanchik-delivery-catalog': ['kabanchik-menu-data', 'Связанная работа: подготовка ведомости меню', 'Related work: preparing the menu register'],

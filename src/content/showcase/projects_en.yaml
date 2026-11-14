@@ -5303,3 +5303,44 @@ projects:
       - label: Read case study
         url: /showcase/kabanchik-delivery-catalog/en
         type: product
+  - slug: diskprices-comparison-platform
+    name: "DiskPrices: price comparison and price history"
+    year: "2026"
+    role: Web development and automation
+    description: Built a Laravel storefront for storage devices. Shoppers needed
+      comparable offers for the same model rather than isolated merchant
+      listings; the operator needed to see which feeds imported and which
+      products generated outbound clicks.
+    stack:
+      - Laravel
+      - PHP
+      - SQLite
+      - XML
+      - YML
+      - Affiliate tracking
+    order: 305
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/diskprices-comparison-platform/en
+        type: product
+  - slug: ramprices-memory-offer-normalization
+    name: "RamPrices: memory catalog and offer matching"
+    year: "2026"
+    role: Web development and automation
+    description: Adapted the price-comparison platform to memory products. A
+      matching brand and capacity does not make two items interchangeable. Wrong
+      feed parsing can send an offer to the wrong category or group unrelated
+      listings together.
+    stack:
+      - Laravel
+      - PHP
+      - YML
+      - Data normalization
+      - Product feeds
+    order: 306
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/ramprices-memory-offer-normalization/en
+        type: product

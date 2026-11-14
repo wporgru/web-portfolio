@@ -1,0 +1,39 @@
+title: "DiskPrices: price comparison and price history"
+tagline: Built a Laravel storefront for storage devices. Shoppers needed
+  comparable offers for the same model rather than isolated merchant listings;
+  the operator needed to see which feeds imported and which products generated
+  outbound clicks.
+year: "2026"
+role: Web development and automation
+stack:
+  - Laravel
+  - PHP
+  - SQLite
+  - XML
+  - YML
+  - Affiliate tracking
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Built a Laravel storefront for storage devices. Shoppers needed comparable
+      offers for the same model rather than isolated merchant listings; the
+      operator needed to see which feeds imported and which products generated
+      outbound clicks.
+  - type: text
+    title: How it works
+    body: "Separated XML and YML ingestion, raw offer storage and public catalog
+      generation. Matching uses more than titles and brands: capacity and drive
+      type are extracted separately, and model numbers must not be mistaken for
+      capacity. Built category filters, comparison pages and price history, plus
+      an import admin and an outbound merchant redirect that records the click."
+  - type: text
+    title: Result and verification
+    body: The project includes checks for repeat imports, matching across merchants,
+      decimal capacities and unrelated feed items. This case describes
+      implemented architecture and scenarios covered in code, not market
+      coverage or affiliate revenue growth.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Follow-up: adapting the catalog to memory products"
+        url: /showcase/ramprices-memory-offer-normalization/en/

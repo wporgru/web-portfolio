@@ -9,7 +9,7 @@ const c = ru ? copy.ru : copy.en;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const catalog = base + '/showcase' + (ru ? '/' : '/en/');
 const projects = (await getEntry('showcase', 'projects_' + lang))?.data.projects ?? [];
-const picks = ['stalex-feed','tara-bergman','seo-dashboard','arenda-pm-home-performance','medicine-data','wellland-facets','78-dosok'].flatMap(slug => projects.filter(p => p.slug === slug));
+const picks = ['stalex-feed','diskprices-comparison-platform','tara-bergman','seo-dashboard','arenda-pm-home-performance','medicine-data','wellland-facets','78-dosok'].flatMap(slug => projects.filter(p => p.slug === slug));
 const contacts = [
   {label:'Telegram · @wporgru',url:'https://t.me/wporgru'},
   {label:'zakaz@wp.org.ru',url:'mailto:zakaz@wp.org.ru'},
@@ -20,7 +20,7 @@ const contacts = [
 ];
 const skillTags = [
   ['JavaScript','React','Astro','HTML','CSS',ru?'Адаптивная вёрстка':'Responsive design', 'Elementor', 'WoodMart'],
-  ['PHP','WordPress','WooCommerce','Directus','REST API','InSales','PHP 8'],
+  ['PHP','Laravel','PHPUnit','WordPress','WooCommerce','Directus','REST API','InSales','PHP 8'],
   ['Python','Node.js','SQLite','XML','XLSX',ru?'Парсинг':'Web scraping','WP All Import','1С',ru?'Нормализация данных':'Data normalization'],
   ['Codex','Antigravity',ru?'Агентные сценарии':'Agent workflows',ru?'Постановка задач агентам':'Agent task design',ru?'Ограничение действий агента':'Agent action boundaries',ru?'Разбор кода и данных с ИИ':'AI-assisted code and data analysis',ru?'Редактура AI-контента':'AI content editing',ru?'Проверка результатов ИИ':'AI output validation'],
   ['Yandex Webmaster','Metrica','Google Search Console','IndexNow',ru?'Технический аудит':'Technical audits','Canonical','Sitemap','301 redirects'],
