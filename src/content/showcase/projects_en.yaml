@@ -4659,3 +4659,57 @@ projects:
       - label: Read case study
         url: /showcase/pelicula-staging-demo-handoff/en
         type: product
+  - slug: woocommerce-invoice-approval
+    name: Automatic WooCommerce invoices and order approval
+    year: "11.2023"
+    role: Web development and automation
+    description: "Set up WooCommerce invoicing and explained the next step to
+      customers: an order still needed manager approval rather than being
+      treated as paid."
+    stack:
+      - WooCommerce
+      - PDF invoices
+      - QR
+      - Transactional email
+    order: 269
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-invoice-approval/en
+        type: product
+  - slug: cdek-express-checkout-notifications
+    name: CDEK express shipping and checkout notifications
+    year: "06.2023"
+    role: Web development and automation
+    description: Configured shipping quotes at checkout and restored email delivery.
+      The client needed shoppers to see available methods and staff to receive
+      new order information.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Express shipping
+      - Transactional email
+    order: 270
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/cdek-express-checkout-notifications/en
+        type: product
+  - slug: keytering-domain-cutover
+    name: Keytering domain move and homepage update
+    year: "05.2022"
+    role: Web development and automation
+    description: Helped move an existing site to a shorter address after an HTTPS
+      issue on a deeper subdomain. Refined the homepage headline as part of the
+      same stage.
+    stack:
+      - WordPress
+      - Domain migration
+      - TLS
+      - Homepage layout
+    order: 271
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/keytering-domain-cutover/en
+        type: product

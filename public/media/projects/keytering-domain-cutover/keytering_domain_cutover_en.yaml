@@ -1,0 +1,26 @@
+title: Keytering domain move and homepage update
+tagline: Helped move an existing site to a shorter address after an HTTPS issue
+  on a deeper subdomain. Refined the homepage headline as part of the same
+  stage.
+year: "05.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - Domain migration
+  - TLS
+  - Homepage layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Helped move an existing site to a shorter address after an HTTPS issue on
+      a deeper subdomain. Refined the homepage headline as part of the same
+      stage.
+  - type: text
+    title: How it works
+    body: Shared the new address for review. Reduced the homepage heading size from
+      35 to 20 so it occupied less space. Later requests to make it smaller
+      again and move the phone were not treated as verified work.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage. The record does not verify old-domain
+      redirects, certificate chains or search engine domain consolidation.

@@ -1,0 +1,27 @@
+title: CDEK express shipping and checkout notifications
+tagline: Configured shipping quotes at checkout and restored email delivery. The
+  client needed shoppers to see available methods and staff to receive new order
+  information.
+year: "06.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CDEK
+  - Express shipping
+  - Transactional email
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Configured shipping quotes at checkout and restored email delivery. The
+      client needed shoppers to see available methods and staff to receive new
+      order information.
+  - type: text
+    title: How it works
+    body: Configured pickup-to-pickup and pickup-to-door options before adding
+      express methods. Refined the WooCommerce checkout and updated navigation
+      to the buying instructions. Checked email receipt with the client without
+      treating a suspected hosting block as the confirmed cause.
+  - type: text
+    title: Result and verification
+    body: The client observed automatic quotes, confirmed receipt of emails and
+      accepted the work. Not every tariff boundary or real shipment was tested.

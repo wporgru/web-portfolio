@@ -4712,3 +4712,57 @@ projects:
       - label: Читать кейс
         url: /showcase/pelicula-staging-demo-handoff
         type: product
+  - slug: woocommerce-invoice-approval
+    name: Автоматический счёт и согласование заказа
+    year: "11.2023"
+    role: Веб-разработка и автоматизация
+    description: "Настроил выставление счёта из WooCommerce и пояснения для
+      покупателя: после оформления заказ нужно согласовать с менеджером, а не
+      считать оплаченным."
+    stack:
+      - WooCommerce
+      - PDF invoices
+      - QR
+      - Transactional email
+    order: 269
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-invoice-approval
+        type: product
+  - slug: cdek-express-checkout-notifications
+    name: Экспресс-доставка СДЭК и письма заказа
+    year: "06.2023"
+    role: Веб-разработка и автоматизация
+    description: Настроил расчёт доставки в оформлении WooCommerce и восстановил
+      получение писем. Клиенту важно было видеть доступные способы и не терять
+      сведения о новом заказе.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Express shipping
+      - Transactional email
+    order: 270
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/cdek-express-checkout-notifications
+        type: product
+  - slug: keytering-domain-cutover
+    name: "Keytering: смена домена и правка первого экрана"
+    year: "05.2022"
+    role: Веб-разработка и автоматизация
+    description: Помог перевести действующий сайт на более короткий адрес после
+      сложности с HTTPS на вложенном поддомене. Вместе с переездом поправил
+      подачу текста на главной.
+    stack:
+      - WordPress
+      - Domain migration
+      - TLS
+      - Homepage layout
+    order: 271
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/keytering-domain-cutover
+        type: product
