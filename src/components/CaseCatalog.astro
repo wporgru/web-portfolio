@@ -12,6 +12,10 @@ const starters=[
   ['Автоматизация и данные','Automation and data','medicine-data'],
 ].filter(([, , slug])=>projects.some((p:any)=>p.slug===slug));
 const tags=[...new Set<string>(projects.flatMap((p:any)=>p.stack ?? []))].sort((a,b)=>a.localeCompare(b,lang));
+const dateKey=(value:unknown)=>{
+  const match=String(value??'').match(/^(?:(?:\d{2}[–-])?(\d{2})\.)?(\d{4})$/);
+  return match ? Number(match[2])*100+Number(match[1]??0) : 0;
+};
 ---
 <nav class="card case-paths" aria-label={ru?'Примеры по задачам':'Examples by need'}>
   <p>{ru?'Посмотрите, как я решал похожие задачи':'See how I approached similar projects'}</p>
@@ -21,10 +25,13 @@ const tags=[...new Set<string>(projects.flatMap((p:any)=>p.stack ?? []))].sort((
   <form class="card case-search" role="search" hidden>
     <label>{ru?'Поиск по кейсам':'Search case studies'}<input type="search" name="q" placeholder={ru?'Например, импорт или Dokan':'For example, import or Dokan'} /></label>
     <label>{ru?'Технология':'Technology'}<select name="tech"><option value="">{ru?'Все технологии':'All technologies'}</option>{tags.map(tag=><option value={tag}>{tag}</option>)}</select></label>
+    <label>{ru?'Порядок':'Sort by'}<select name="order"><option value="featured">{ru?'Подборка':'Portfolio order'}</option><option value="recent">{ru?'Сначала новые':'Newest first'}</option><option value="oldest">{ru?'Сначала ранние':'Oldest first'}</option></select></label>
+    <button class="btn btn--ghost" type="reset">{ru?'Сбросить':'Reset'}</button>
     <output aria-live="polite"></output>
   </form>
-  <div class="grid">
-    {projects.map((p:any,i:number)=><div data-case data-search={[p.name,p.description,p.year,...(p.stack??[])].join(' ').toLocaleLowerCase(lang)} data-tech={JSON.stringify(p.stack??[])}>
+  <p class="card" data-case-empty hidden>{ru?'Ничего не найдено. Попробуйте другое слово или сбросьте фильтры.':'No cases found. Try a different keyword or reset the filters.'}</p>
+  <div class="grid" data-case-grid>
+    {projects.map((p:any,i:number)=><div data-case data-date={dateKey(p.year)} data-search={[p.name,p.description,p.year,...(p.stack??[])].join(' ').toLocaleLowerCase(lang)} data-tech={JSON.stringify(p.stack??[])}>
       <ProjectCard project={p} eager={i===eagerIdx} t={t}/>
     </div>)}
   </div>
@@ -34,23 +41,38 @@ class CaseCatalog extends HTMLElement {
   connectedCallback() {
     const form=this.querySelector('form');
     const query=form?.querySelector('input');
-    const tech=form?.querySelector('select');
+    const tech=form?.querySelector<HTMLSelectElement>('select[name="tech"]');
+    const order=form?.querySelector<HTMLSelectElement>('select[name="order"]');
     const output=form?.querySelector('output');
-    if(!form||!query||!tech||!output)return;
+    const grid=this.querySelector('[data-case-grid]');
+    const empty=this.querySelector<HTMLElement>('[data-case-empty]');
+    if(!form||!query||!tech||!order||!output||!grid||!empty)return;
     const lang=document.documentElement.lang;
-    const cards=[...this.querySelectorAll<HTMLElement>('[data-case]')].map(el=>({el,tags:JSON.parse(el.dataset.tech??'[]') as string[]}));
+    const normalize=(value:string)=>value.toLocaleLowerCase(lang).replace(/ё/g,'е');
+    const cards=[...grid.querySelectorAll<HTMLElement>('[data-case]')].map(el=>({el,tags:JSON.parse(el.dataset.tech??'[]') as string[],text:normalize(el.dataset.search??''),date:Number(el.dataset.date)}));
+    let currentOrder='featured';
     const update=()=>{
-      const words=query.value.trim().toLocaleLowerCase(lang).split(/\s+/).filter(Boolean);
+      if(order.value!==currentOrder){
+        currentOrder=order.value;
+        const sorted=currentOrder==='featured'?cards:[...cards].sort((a,b)=>{
+          if(!a.date||!b.date)return Number(!a.date)-Number(!b.date);
+          return currentOrder==='recent'?b.date-a.date:a.date-b.date;
+        });
+        grid.append(...sorted.map(card=>card.el));
+      }
+      const words=normalize(query.value.trim()).split(/\s+/).filter(Boolean);
       let visible=0;
-      for(const {el,tags} of cards){
-        const matches=words.every(word=>el.dataset.search?.includes(word)) && (!tech.value||tags.includes(tech.value));
+      for(const {el,tags,text} of cards){
+        const matches=words.every(word=>text.includes(word)) && (!tech.value||tags.includes(tech.value));
         el.hidden=!matches;
         if(matches)visible++;
       }
+      empty.hidden=visible>0;
       output.value=lang==='ru'?`Показано: ${visible} из ${cards.length}`:`Showing ${visible} of ${cards.length}`;
     };
     form.addEventListener('input',update);
     form.addEventListener('submit',event=>{event.preventDefault();update();});
+    form.addEventListener('reset',()=>queueMicrotask(update));
     form.hidden=false; update();
   }
 }
@@ -64,5 +86,5 @@ if(!customElements.get('case-catalog'))customElements.define('case-catalog',Case
 .case-search input,.case-search select{font:inherit;width:100%;padding:.55rem;color:var(--text);background:var(--card-bg);border:1px solid var(--border);border-radius:8px}
 .case-search option{background:#182438;color:white}
 .case-search output{padding:.55rem 0;color:var(--muted)}
-[data-case][hidden]{display:none}
+[data-case][hidden],[data-case-empty][hidden]{display:none}
 </style>
