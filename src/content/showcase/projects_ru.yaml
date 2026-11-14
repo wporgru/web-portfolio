@@ -5441,3 +5441,24 @@ projects:
       - label: Читать кейс
         url: /showcase/klimat-profi-backup-automation
         type: product
+  - slug: codex-marketing-skills-workflow
+    name: Маркетинговые ИИ-навыки в локальном Codex
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: "Подготовил для редакционной работы три повторяемых сценария:
+      собрать позиционирование и аргументы для продажи, провести брейншторм и
+      спланировать Telegram-канал. Требовалось не просто установить готовые
+      промпты, а понять, какие правила они навязывают и что агент будет считать
+      допустимым результатом."
+    stack:
+      - Codex
+      - Agent workflows
+      - Prompt engineering
+      - JSON
+      - YAML
+    order: 309
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/codex-marketing-skills-workflow
+        type: product

@@ -5382,3 +5382,24 @@ projects:
       - label: Read case study
         url: /showcase/klimat-profi-backup-automation/en
         type: product
+  - slug: codex-marketing-skills-workflow
+    name: Local Codex skills for marketing workflows
+    year: "10.2026"
+    role: Web development and automation
+    description: "Prepared three repeatable editorial workflows: develop positioning
+      and sales arguments, run a brainstorm, and plan a Telegram channel. The
+      task was more than installing prompts: it required understanding the
+      embedded rules and deciding what outputs the agent should treat as
+      acceptable."
+    stack:
+      - Codex
+      - Agent workflows
+      - Prompt engineering
+      - JSON
+      - YAML
+    order: 309
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/codex-marketing-skills-workflow/en
+        type: product
