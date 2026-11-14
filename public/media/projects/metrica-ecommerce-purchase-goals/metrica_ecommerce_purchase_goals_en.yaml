@@ -23,3 +23,8 @@ blocks:
     body: The client confirmed purchase and order-value goals in their review.
       Duplicate events, revenue accuracy over time and ongoing advertising were
       not verified.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: document bundle product page"
+        url: /showcase/woocommerce-document-pack-product-page/en/

@@ -1,0 +1,27 @@
+title: Interactive Outlook signature replacing a static image
+tagline: Replaced a static business-card image with an editable HTML signature
+  so recipients could open the website, send an email or use a messenger
+  directly.
+year: 08–09.2023
+role: Web development and automation
+stack:
+  - HTML
+  - Outlook
+  - Email design
+  - Brand assets
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Replaced a static business-card image with an editable HTML signature so
+      recipients could open the website, send an email or use a messenger
+      directly.
+  - type: text
+    title: How it works
+    body: Prepared several layouts using the company’s assets, including its logo
+      and a divider. Corrected the file after an installation issue. In a
+      follow-up stage, agreed on a rectangular layout, refined its proportions
+      and handed over the new version.
+  - type: text
+    title: Result and verification
+    body: The client accepted both stages. The work covered signature design, not
+      brand identity development or testing every Outlook version.

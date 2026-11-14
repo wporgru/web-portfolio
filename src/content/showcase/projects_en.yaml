@@ -4713,3 +4713,56 @@ projects:
       - label: Read case study
         url: /showcase/keytering-domain-cutover/en
         type: product
+  - slug: outlook-interactive-signature-redesign
+    name: Interactive Outlook signature replacing a static image
+    year: 08–09.2023
+    role: Web development and automation
+    description: Replaced a static business-card image with an editable HTML
+      signature so recipients could open the website, send an email or use a
+      messenger directly.
+    stack:
+      - HTML
+      - Outlook
+      - Email design
+      - Brand assets
+    order: 272
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/outlook-interactive-signature-redesign/en
+        type: product
+  - slug: digital-database-stores-checkout
+    name: Digital database storefront and payment setup
+    year: "09.2023"
+    role: Web development and automation
+    description: Improved an existing digital goods store by restoring menu and
+      homepage links so buyers could reach checkout and staff could receive
+      order notifications.
+    stack:
+      - WooCommerce
+      - Digital products
+      - YooKassa
+      - Checkout
+    order: 273
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/digital-database-stores-checkout/en
+        type: product
+  - slug: woocommerce-document-pack-product-page
+    name: WooCommerce product page for a document bundle
+    year: "09.2023"
+    role: Web development and automation
+    description: Refined a digital bundle page so long descriptions were easier to
+      read with consistent typography, spacing and no redundant section label.
+    stack:
+      - WooCommerce
+      - Typography
+      - Product UX
+      - Editorial layout
+    order: 274
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-document-pack-product-page/en
+        type: product

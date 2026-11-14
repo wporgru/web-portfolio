@@ -4766,3 +4766,57 @@ projects:
       - label: Читать кейс
         url: /showcase/keytering-domain-cutover
         type: product
+  - slug: outlook-interactive-signature-redesign
+    name: Интерактивная подпись Outlook вместо картинки
+    year: 08–09.2023
+    role: Веб-разработка и автоматизация
+    description: "Заменил картинку-визитку на редактируемую HTML-подпись: получатель
+      мог открыть сайт, написать письмо или перейти в мессенджер прямо из
+      подписи."
+    stack:
+      - HTML
+      - Outlook
+      - Email design
+      - Brand assets
+    order: 272
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/outlook-interactive-signature-redesign
+        type: product
+  - slug: digital-database-stores-checkout
+    name: Витрина цифровых баз и настройка оплаты
+    year: "09.2023"
+    role: Веб-разработка и автоматизация
+    description: "Доработал существующий магазин цифровых материалов: восстановил
+      переходы из меню и с главной, чтобы покупатель мог дойти до оформления, а
+      менеджер — получить уведомление."
+    stack:
+      - WooCommerce
+      - Digital products
+      - YooKassa
+      - Checkout
+    order: 273
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/digital-database-stores-checkout
+        type: product
+  - slug: woocommerce-document-pack-product-page
+    name: Карточка пакета документов для WooCommerce
+    year: "09.2023"
+    role: Веб-разработка и автоматизация
+    description: "Доработал карточку цифрового пакета: длинное содержание было
+      удобнее читать с одним шрифтом, согласованными отступами и без дублирующей
+      подписи раздела."
+    stack:
+      - WooCommerce
+      - Typography
+      - Product UX
+      - Editorial layout
+    order: 274
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-document-pack-product-page
+        type: product

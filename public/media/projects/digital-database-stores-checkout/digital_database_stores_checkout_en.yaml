@@ -1,0 +1,28 @@
+title: Digital database storefront and payment setup
+tagline: Improved an existing digital goods store by restoring menu and homepage
+  links so buyers could reach checkout and staff could receive order
+  notifications.
+year: "09.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Digital products
+  - YooKassa
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Improved an existing digital goods store by restoring menu and homepage
+      links so buyers could reach checkout and staff could receive order
+      notifications.
+  - type: text
+    title: How it works
+    body: Fixed the header, footer and broken links, configured products and orders
+      and demonstrated a sample product and category. Directed homepage buttons
+      to checkout by agreement. In a separate stage, set up YooKassa and showed
+      how an unpaid order could be paid again.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the order notification and accepted both stages. No
+      separate test verified a live charge, fiscal receipt delivery or download
+      protection.

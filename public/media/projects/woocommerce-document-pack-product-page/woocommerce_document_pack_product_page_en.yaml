@@ -1,0 +1,29 @@
+title: WooCommerce product page for a document bundle
+tagline: Refined a digital bundle page so long descriptions were easier to read
+  with consistent typography, spacing and no redundant section label.
+year: "09.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Typography
+  - Product UX
+  - Editorial layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined a digital bundle page so long descriptions were easier to read
+      with consistent typography, spacing and no redundant section label.
+  - type: text
+    title: How it works
+    body: Configured additional content areas, standardized PT Sans and line spacing
+      and removed the Description heading. Separately changed the date display
+      next to the offer from a monthly to a daily update.
+  - type: text
+    title: Result and verification
+    body: The client confirmed and accepted the result. Changing the displayed date
+      was a UI adjustment, not proof of a real deadline or price change.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: e-commerce tracking and purchase goals"
+        url: /showcase/metrica-ecommerce-purchase-goals/en/
