@@ -25,3 +25,8 @@ blocks:
     body: The client confirmed pickup and receipt of two emails, then accepted the
       work. Online payments and stock by pickup location were outside scope;
       every tariff boundary was not independently verified.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: mobile catalog and bulk editing"
+        url: /showcase/aravia-mobile-catalog-bulk-editor/en/

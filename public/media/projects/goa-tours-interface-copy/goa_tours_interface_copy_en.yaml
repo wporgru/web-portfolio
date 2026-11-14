@@ -1,0 +1,31 @@
+title: Goa Tours search and empty cart copy
+tagline: Adapted storefront copy for excursions. Default WooCommerce strings
+  referred to products, and a generic category control distracted from tour
+  search.
+year: "07.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - UX writing
+  - Localization
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Adapted storefront copy for excursions. Default WooCommerce strings
+      referred to products, and a generic category control distracted from tour
+      search.
+  - type: text
+    title: How it works
+    body: Replaced the search placeholder with Goa Tours copy and removed the
+      redundant generic category row. Rewrote the empty-cart message to refer to
+      tours and supplied verification images at handoff.
+  - type: text
+    title: Result and verification
+    body: The client accepted the copy changes. This was a separate interface task,
+      not a booking system or payment implementation.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Another Goa Tours stage: Stripe setup"
+        url: /showcase/goa-tours-stripe-setup/en/

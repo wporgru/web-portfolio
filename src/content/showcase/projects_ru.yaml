@@ -5087,3 +5087,56 @@ projects:
       - label: Читать кейс
         url: /showcase/farkop-service-catalog-facets
         type: product
+  - slug: aravia-mobile-catalog-bulk-editor
+    name: "Aravia: мобильный каталог и пакетное редактирование"
+    year: "05.2021"
+    role: Веб-разработка и автоматизация
+    description: Развил существующую витрину после настройки доставки. Задача
+      затронула мобильный поиск товаров, видимость остатков, корзину и
+      редактирование ассортимента из админки.
+    stack:
+      - WooCommerce
+      - BEAR
+      - Mobile UX
+      - Stock visibility
+    order: 290
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/aravia-mobile-catalog-bulk-editor
+        type: product
+  - slug: yookassa-merchant-checkout-handoff
+    name: Подключение ЮKassa и проверка перехода к оплате
+    year: "06.2023"
+    role: Веб-разработка и автоматизация
+    description: Подключил модуль оплаты к существующему WooCommerce, когда владелец
+      завершал согласование со стороны платёжного сервиса.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Checkout
+      - Payment QA
+    order: 291
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/yookassa-merchant-checkout-handoff
+        type: product
+  - slug: goa-tours-interface-copy
+    name: "Goa Tours: тексты поиска и пустой корзины"
+    year: "07.2022"
+    role: Веб-разработка и автоматизация
+    description: "Адаптировал интерфейс магазина под экскурсии: стандартные тексты
+      WooCommerce называли предложения товарами, а общий список категорий
+      отвлекал от поиска тура."
+    stack:
+      - WordPress
+      - WooCommerce
+      - UX writing
+      - Localization
+    order: 292
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/goa-tours-interface-copy
+        type: product

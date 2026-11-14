@@ -17,6 +17,10 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'aravia-mobile-catalog-bulk-editor': ['aravia-postcode-delivery-checkout', 'Предыдущий этап: доставка по индексам и самовывоз', 'Previous stage: postcode delivery and pickup'],
+  'aravia-postcode-delivery-checkout': ['aravia-mobile-catalog-bulk-editor', 'Следующий этап: мобильный каталог и пакетное редактирование', 'Next stage: mobile catalog and bulk editing'],
+  'goa-tours-interface-copy': ['goa-tours-stripe-setup', 'Другой этап Goa Tours: настройка Stripe', 'Another Goa Tours stage: Stripe setup'],
+  'goa-tours-stripe-setup': ['goa-tours-interface-copy', 'Другой этап Goa Tours: тексты интерфейса', 'Another Goa Tours stage: storefront copy'],
   'bgtgroup-pl-multilingual-redirects': ['bgtgroup-technical-seo-performance', 'Другой сайт BGT Group: техническое SEO и скорость', 'Another BGT Group website: technical SEO and performance'],
   'bgtgroup-technical-seo-performance': ['bgtgroup-pl-multilingual-redirects', 'Другой сайт BGT Group: ссылки и языковые редиректы', 'Another BGT Group website: links and language redirects'],
   'sugarlips-supplier-csv-import': ['sugarlips-category-navigation', 'Следующий этап: навигация по категориям', 'Next stage: category navigation'],

@@ -24,3 +24,8 @@ blocks:
     body: The client accepted the setup. No successful bank charge is recorded, so
       the case demonstrates configuration rather than verified live payment
       processing.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Another Goa Tours stage: storefront copy"
+        url: /showcase/goa-tours-interface-copy/en/

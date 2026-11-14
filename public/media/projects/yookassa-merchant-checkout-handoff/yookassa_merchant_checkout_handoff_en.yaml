@@ -1,0 +1,26 @@
+title: Connecting YooKassa and checking the payment handoff
+tagline: Connected payment to an existing WooCommerce store while the owner
+  handled approval with the payment provider.
+year: "06.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YooKassa
+  - Checkout
+  - Payment QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Connected payment to an existing WooCommerce store while the owner handled
+      approval with the payment provider.
+  - type: text
+    title: How it works
+    body: Configured the extension and demonstrated the handoff from WooCommerce
+      checkout to payment. Reviewed buyer information and receipt settings with
+      the owner, keeping automatic receipt delivery outside scope until the
+      client chose it.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and confirmed the joint payment setup review
+      in a testimonial. The test amount, completed refund and automatic fiscal
+      receipt flow were not verified separately.

@@ -5031,3 +5031,56 @@ projects:
       - label: Read case study
         url: /showcase/farkop-service-catalog-facets/en
         type: product
+  - slug: aravia-mobile-catalog-bulk-editor
+    name: Aravia mobile catalog and bulk product editing
+    year: "05.2021"
+    role: Web development and automation
+    description: Improved an existing storefront after delivery setup, covering
+      mobile product discovery, stock visibility, cart controls and back-office
+      editing.
+    stack:
+      - WooCommerce
+      - BEAR
+      - Mobile UX
+      - Stock visibility
+    order: 290
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/aravia-mobile-catalog-bulk-editor/en
+        type: product
+  - slug: yookassa-merchant-checkout-handoff
+    name: Connecting YooKassa and checking the payment handoff
+    year: "06.2023"
+    role: Web development and automation
+    description: Connected payment to an existing WooCommerce store while the owner
+      handled approval with the payment provider.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Checkout
+      - Payment QA
+    order: 291
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/yookassa-merchant-checkout-handoff/en
+        type: product
+  - slug: goa-tours-interface-copy
+    name: Goa Tours search and empty cart copy
+    year: "07.2022"
+    role: Web development and automation
+    description: Adapted storefront copy for excursions. Default WooCommerce strings
+      referred to products, and a generic category control distracted from tour
+      search.
+    stack:
+      - WordPress
+      - WooCommerce
+      - UX writing
+      - Localization
+    order: 292
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/goa-tours-interface-copy/en
+        type: product

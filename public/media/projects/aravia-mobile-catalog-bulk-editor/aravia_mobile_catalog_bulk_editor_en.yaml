@@ -1,0 +1,33 @@
+title: Aravia mobile catalog and bulk product editing
+tagline: Improved an existing storefront after delivery setup, covering mobile
+  product discovery, stock visibility, cart controls and back-office editing.
+year: "05.2021"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - BEAR
+  - Mobile UX
+  - Stock visibility
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Improved an existing storefront after delivery setup, covering mobile
+      product discovery, stock visibility, cart controls and back-office
+      editing.
+  - type: text
+    title: How it works
+    body: Refined mobile accessory blocks, moved news below the catalog, set up a
+      filter icon and hid sorting only on phones. Prioritized overall
+      availability and removed an experimental filter that did not work.
+      Addressed cart quantity controls, installed BEAR and explained profiles,
+      categories and bulk pricing. Restored the postcode field and delivery cost
+      after checkout feedback.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and added a bonus. Per-location stock, bulk
+      recommendations and a live payment were not verified deliverables.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Previous stage: postcode delivery and pickup"
+        url: /showcase/aravia-postcode-delivery-checkout/en/
