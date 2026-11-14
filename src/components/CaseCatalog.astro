@@ -72,7 +72,13 @@ class CaseCatalog extends HTMLElement {
     };
     form.addEventListener('input',update);
     form.addEventListener('submit',event=>{event.preventDefault();update();});
-    form.addEventListener('reset',()=>queueMicrotask(update));
+    form.addEventListener('reset',event=>{
+      event.preventDefault();
+      query.value=query.defaultValue;
+      tech.value='';
+      order.value='featured';
+      update();
+    });
     form.hidden=false; update();
   }
 }
