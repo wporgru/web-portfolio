@@ -23,6 +23,11 @@ for(const file of htmlFiles){
   if(headings[0]?.[1]!=='1'||headings.filter(m=>m[1]==='1').length!==1||!(length>=20&&length<=70)) fail(file,'expected a single first H1 of 20–70 characters');
   const canonical=html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
   if(!canonical||pages.has(canonical)||!sitemap.has(canonical)||/<meta name="robots" content="[^"]*noindex/i.test(html)) fail(file,'indexable canonical missing from sitemap or duplicated');
+  if (/^services[\\/](?!en[\\/])[^\\/]+[\\/](?:en[\\/])?index\.html$/.test(file)) {
+    for (const marker of ['data-service-scenario','data-service-deliverables','mailto:zakaz@wp.org.ru?subject=']) {
+      if (!html.includes(marker)) fail(file,'missing service content: '+marker);
+    }
+  }
   const alternates=new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map(m=>[m[1],m[2]]));
   if(alternates.size!==3||!['ru','en'].includes(lang)||alternates.get(lang)!==canonical||alternates.get('x-default')!==alternates.get('ru')) fail(file,'invalid locale alternates');
   pages.set(canonical,alternates);

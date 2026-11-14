@@ -3,6 +3,7 @@ import Layout from '../../components/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getEntry } from 'astro:content';
 import { services } from '../../content/services.mjs';
+import { serviceDetails } from '../../content/service-details.mjs';
 
 export function getStaticPaths() {
   return services.flatMap(service => ['ru','en'].map(lang => ({
@@ -14,6 +15,8 @@ export function getStaticPaths() {
 const { service, lang } = Astro.props;
 const ru = lang === 'ru';
 const [title, intro, first, second, outcome] = service[ru ? 'ru' : 'en'];
+const [scenario, approach, deliverables] = serviceDetails[service.slug][ru ? 'ru' : 'en'];
+const emailHref = 'mailto:zakaz@wp.org.ru?subject='+encodeURIComponent(title);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const localeSuffix = ru ? '/' : '/en/';
 const breadcrumbs = [
@@ -37,12 +40,20 @@ const examples = service.cases.map(slug => {
       <p class="hero__summary">{intro}</p>
       <div class="btnrow">
         <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить задачу':'Discuss your project'}</a>
-        <a class="btn btn--ghost" href="mailto:zakaz@wp.org.ru">{ru?'Написать на почту':'Send an email'}</a>
+        <a class="btn btn--ghost" href={emailHref}>{ru?'Написать на почту':'Send an email'}</a>
       </div>
     </article>
+    <section class="card" data-service-scenario>
+      <h2 class="h2">{scenario}</h2>
+      <p>{approach}</p>
+    </section>
     <section class="card">
       <h2 class="h2">{ru?'Что входит в работу':'What the work covers'}</h2>
       <ul class="list"><li>{first}</li><li>{second}</li></ul>
+    </section>
+    <section class="card" data-service-deliverables>
+      <h2 class="h2">{ru?'Что получите на выходе':'What you will get'}</h2>
+      <p>{deliverables}</p>
     </section>
     <section>
       <h2 class="h2">{ru?'Примеры выполненных работ':'Relevant case studies'}</h2>
