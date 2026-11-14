@@ -48,6 +48,10 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
             <h1 class="hero__name">{person.name} — {ru ? 'веб-разработчик' : 'web developer'}</h1>
             <p class="hero__title">{ru ? 'Full-stack · E-commerce · Автоматизация и ИИ' : 'Full-stack · E-commerce · Automation and AI'}</p>
             <p class="hero__summary">{c.description} {ru ? 'Более 15 лет в веб-разработке.' : 'Over 15 years in web development.'}</p>
+            <div class="btnrow">
+              <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить проект':'Discuss a project'}</a>
+              <a class="btn btn--ghost" href={base+'/services'+(ru?'/':'/en/')}>{ru?'Выбрать услугу':'Explore services'}</a>
+            </div>
           </div>
         </div>
         <div class="hero__contacts">
