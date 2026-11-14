@@ -1,0 +1,28 @@
+title: Le Fontan multivendor store foundation
+tagline: Prepared the first stage of a store intended to let third-party sellers
+  add products alongside administrators. The goal was a foundation for seller
+  review, not a marketplace already taking orders.
+year: "12.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Multivendor
+  - Seller onboarding
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepared the first stage of a store intended to let third-party sellers
+      add products alongside administrators. The goal was a foundation for
+      seller review, not a marketplace already taking orders.
+  - type: text
+    title: How it works
+    body: Confirmed the hosting and domain, deployed the store and handed it over
+      for review. When the client raised the multivendor requirement, explained
+      how sellers register and list products so the owner could evaluate that
+      workflow rather than the storefront appearance alone.
+  - type: text
+    title: Result and verification
+    body: The first stage closed at the end of the review period. No separate seller
+      test is documented, and full Spanish localization, payment processing and
+      seller payouts were not verified.

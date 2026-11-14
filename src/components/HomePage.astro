@@ -63,6 +63,7 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
       <article class="card card--achievements">
         <h2 class="h2">{ru ? 'Достижения' : 'Achievements'}</h2>
         <ul class="list">
+          <li><a href={catalog}><strong>{projects.length} {ru?'кейсов в портфолио':'portfolio case studies'}</strong></a> — {ru?'с задачами, решениями и результатами на русском и английском.':'with briefs, solutions and outcomes in Russian and English.'}</li>
           <li>{ru ? '582 выполненных заказа в собранном архиве Kwork; 371 отзыв сохранён со скриншотом.' : '582 completed orders in the collected Kwork archive; 371 reviews archived with screenshots.'}</li>
           {c.results.map(([title,body])=><li><strong>{title}.</strong> {body}</li>)}
           <li><a href={base+'/showcase/arenda-pm-home-performance/'+(ru?'':'en/')}><strong>PageSpeed 72 → 96</strong></a> — {ru?'мобильная главная Аренда-ПМ: LCP 6,8 → 2,7 с в лабораторных замерах.':'Arenda-PM mobile homepage: LCP 6.8 → 2.7 s in lab measurements.'}</li>

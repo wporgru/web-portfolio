@@ -1,0 +1,28 @@
+title: Simpler checkout and in-stock product recommendations
+tagline: "Improved two related store flows: placing an order without
+  postcode-based quoting and showing only available items in the recommendations
+  block."
+year: "05.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Checkout
+  - Stock visibility
+  - Telegram
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Improved two related store flows: placing an order without postcode-based
+      quoting and showing only available items in the recommendations block."
+  - type: text
+    title: How it works
+    body: Disabled postcode quoting and adjusted checkout fields after agreement.
+      Sent a control order and asked the owner to confirm receipt. Restricted
+      related products to available stock, added Telegram and refined the footer
+      icon. Unresolved custom-template changes were handed to a developer by
+      agreement.
+  - type: text
+    title: Result and verification
+    body: The client confirmed receipt of the test order and accepted the agreed
+      scope. Minimum order validation, social login and MoySklad synchronization
+      were not verified deliverables.

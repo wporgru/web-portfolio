@@ -1,0 +1,27 @@
+title: Diagnosing missing delivery options in WooCommerce
+tagline: Shipping disappeared while the checkout form was being simplified.
+  Investigated which fields could be hidden and which the store needed for
+  shipping and validation.
+year: "03.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Checkout fields
+  - Local shipping
+  - Pickup
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Shipping disappeared while the checkout form was being simplified.
+      Investigated which fields could be hidden and which the store needed for
+      shipping and validation.
+  - type: text
+    title: How it works
+    body: Identified the conflict with hidden fields, replaced the extension and
+      reconfigured checkout with delivery and pickup. Made the phone mandatory
+      and found a separate email requirement in a follow-up check. This
+      separated shipping calculations from contact validation.
+  - type: text
+    title: Result and verification
+    body: The order closed after the review period. The archive does not verify
+      phone delivery in email or a final run across all shipping options.

@@ -5248,3 +5248,58 @@ projects:
       - label: Читать кейс
         url: /showcase/woocommerce-compact-cart-cross-sells
         type: product
+  - slug: le-fontan-multivendor-foundation
+    name: Основа мультвендорного магазина Le Fontan
+    year: "12.2022"
+    role: Веб-разработка и автоматизация
+    description: Подготовил первый этап магазина, в котором ассортимент должны
+      пополнять не только администраторы, но и сторонние продавцы. На этом этапе
+      требовалась основа для дальнейшей проверки продавцами, а не готовая
+      площадка с продажами.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Multivendor
+      - Seller onboarding
+    order: 299
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/le-fontan-multivendor-foundation
+        type: product
+  - slug: woocommerce-delivery-hidden-fields-conflict
+    name: Диагностика пропавшей доставки в WooCommerce
+    year: "03.2023"
+    role: Веб-разработка и автоматизация
+    description: При упрощении формы заказа пропала доставка. Разобрал, какие поля
+      можно скрыть для покупателя, а какие нужны магазину для расчёта и проверки
+      заказа.
+    stack:
+      - WooCommerce
+      - Checkout fields
+      - Local shipping
+      - Pickup
+    order: 300
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-delivery-hidden-fields-conflict
+        type: product
+  - slug: woocommerce-checkout-in-stock-recommendations
+    name: Упрощение чекаута и подборок товаров в наличии
+    year: "05.2022"
+    role: Веб-разработка и автоматизация
+    description: "Доработал магазин по двум связанным сценариям: как оформить заказ
+      без расчёта по индексу и как предложить покупателю только доступные товары
+      в блоке рекомендаций."
+    stack:
+      - WooCommerce
+      - Checkout
+      - Stock visibility
+      - Telegram
+    order: 301
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-checkout-in-stock-recommendations
+        type: product

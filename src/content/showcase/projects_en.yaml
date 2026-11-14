@@ -5191,3 +5191,57 @@ projects:
       - label: Read case study
         url: /showcase/woocommerce-compact-cart-cross-sells/en
         type: product
+  - slug: le-fontan-multivendor-foundation
+    name: Le Fontan multivendor store foundation
+    year: "12.2022"
+    role: Web development and automation
+    description: Prepared the first stage of a store intended to let third-party
+      sellers add products alongside administrators. The goal was a foundation
+      for seller review, not a marketplace already taking orders.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Multivendor
+      - Seller onboarding
+    order: 299
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/le-fontan-multivendor-foundation/en
+        type: product
+  - slug: woocommerce-delivery-hidden-fields-conflict
+    name: Diagnosing missing delivery options in WooCommerce
+    year: "03.2023"
+    role: Web development and automation
+    description: Shipping disappeared while the checkout form was being simplified.
+      Investigated which fields could be hidden and which the store needed for
+      shipping and validation.
+    stack:
+      - WooCommerce
+      - Checkout fields
+      - Local shipping
+      - Pickup
+    order: 300
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-delivery-hidden-fields-conflict/en
+        type: product
+  - slug: woocommerce-checkout-in-stock-recommendations
+    name: Simpler checkout and in-stock product recommendations
+    year: "05.2022"
+    role: Web development and automation
+    description: "Improved two related store flows: placing an order without
+      postcode-based quoting and showing only available items in the
+      recommendations block."
+    stack:
+      - WooCommerce
+      - Checkout
+      - Stock visibility
+      - Telegram
+    order: 301
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-checkout-in-stock-recommendations/en
+        type: product
