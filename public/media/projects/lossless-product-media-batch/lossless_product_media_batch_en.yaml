@@ -1,0 +1,29 @@
+title: Lossless batch optimization of catalog images
+tagline: Processed a large product-image archive while preserving filenames and
+  formats. The client needed to put the files back into the existing structure
+  without changing references.
+year: "11.2022"
+role: Web development and automation
+stack:
+  - JPEG
+  - WebP
+  - Lossless optimization
+  - Catalog media
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Processed a large product-image archive while preserving filenames and
+      formats. The client needed to put the files back into the existing
+      structure without changing references.
+  - type: text
+    title: How it works
+    body: Reviewed the input archive, which contained JPEG and WebP files and was
+      reported at about 3.57 GB. Ran batch processing without resizing and
+      delivered the output through cloud storage. Explained why already
+      compressed images offered little further reduction without resizing or
+      lossy re-encoding.
+  - type: text
+    title: Result and verification
+    body: The client received the link and accepted the work. An independent file
+      count and exact savings are not preserved, and no large reduction is
+      claimed.

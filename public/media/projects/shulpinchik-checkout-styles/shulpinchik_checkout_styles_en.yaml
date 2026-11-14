@@ -1,0 +1,28 @@
+title: Styling WooCommerce cart and checkout controls
+tagline: Refined checkout fields and buttons using the client’s chosen design.
+  The client had already fixed the payment issue, so this stage addressed the
+  interface.
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CSS
+  - Checkout UX
+  - Guest QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Refined checkout fields and buttons using the client’s chosen design. The
+      client had already fixed the payment issue, so this stage addressed the
+      interface.
+  - type: text
+    title: How it works
+    body: Enlarged fields and adjusted top spacing and button radii. When the styles
+      stopped appearing, restored the CSS in custom styles and checked checkout
+      while logged out in another browser. Continued with cart and delivery
+      refinements after feedback and shared a video.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the checkout appearance and accepted the stage after
+      follow-up changes. Payment provider repair and a live charge were outside
+      the verification.

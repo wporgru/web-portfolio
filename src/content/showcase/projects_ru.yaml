@@ -5194,3 +5194,57 @@ projects:
       - label: Читать кейс
         url: /showcase/woocommerce-variant-selector-placement
         type: product
+  - slug: lossless-product-media-batch
+    name: Пакетное сжатие каталожных изображений без потерь
+    year: "11.2022"
+    role: Веб-разработка и автоматизация
+    description: Обработал крупный архив товарных изображений, сохранив исходные
+      имена и форматы. Для клиента было важно вернуть файлы в существующую
+      структуру без переназначения ссылок.
+    stack:
+      - JPEG
+      - WebP
+      - Lossless optimization
+      - Catalog media
+    order: 296
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/lossless-product-media-batch
+        type: product
+  - slug: shulpinchik-checkout-styles
+    name: Оформление полей и кнопок корзины WooCommerce
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: Доработал поля и кнопки оформления по выбранному клиентом варианту.
+      Изначальную проблему платёжного модуля клиент уже решил самостоятельно;
+      здесь задача была в интерфейсе.
+    stack:
+      - WooCommerce
+      - CSS
+      - Checkout UX
+      - Guest QA
+    order: 297
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/shulpinchik-checkout-styles
+        type: product
+  - slug: woocommerce-compact-cart-cross-sells
+    name: Компактная корзина и связанные товары WooCommerce
+    year: "05.2022"
+    role: Веб-разработка и автоматизация
+    description: Сделал корзину и подборки товаров компактнее. Длинные названия и
+      служебные уточнения мешали выравниванию кнопок и занимали место, нужное
+      для самой покупки.
+    stack:
+      - WooCommerce
+      - Cart UX
+      - Cross-sells
+      - Storefront layout
+    order: 298
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-compact-cart-cross-sells
+        type: product

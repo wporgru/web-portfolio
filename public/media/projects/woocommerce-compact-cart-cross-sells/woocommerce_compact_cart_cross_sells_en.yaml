@@ -1,0 +1,28 @@
+title: Compact WooCommerce cart and related product layouts
+tagline: Made the cart and related product areas more compact. Long names and
+  secondary details made button alignment harder and occupied space needed for
+  buying controls.
+year: "05.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Cart UX
+  - Cross-sells
+  - Storefront layout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Made the cart and related product areas more compact. Long names and
+      secondary details made button alignment harder and occupied space needed
+      for buying controls.
+  - type: text
+    title: How it works
+    body: Demonstrated updates to the cart, product page and header mini-cart. For
+      product rows, suggested fewer columns or more consistent name lengths and
+      moving packaging and gift notes into short descriptions. Kept these
+      recommendations distinct from completed changes.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and retained control of product titles.
+      Forced alignment of every button, bulk copy editing and a full redesign
+      were not deliverables.

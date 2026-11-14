@@ -5137,3 +5137,57 @@ projects:
       - label: Read case study
         url: /showcase/woocommerce-variant-selector-placement/en
         type: product
+  - slug: lossless-product-media-batch
+    name: Lossless batch optimization of catalog images
+    year: "11.2022"
+    role: Web development and automation
+    description: Processed a large product-image archive while preserving filenames
+      and formats. The client needed to put the files back into the existing
+      structure without changing references.
+    stack:
+      - JPEG
+      - WebP
+      - Lossless optimization
+      - Catalog media
+    order: 296
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/lossless-product-media-batch/en
+        type: product
+  - slug: shulpinchik-checkout-styles
+    name: Styling WooCommerce cart and checkout controls
+    year: "01.2024"
+    role: Web development and automation
+    description: Refined checkout fields and buttons using the client’s chosen
+      design. The client had already fixed the payment issue, so this stage
+      addressed the interface.
+    stack:
+      - WooCommerce
+      - CSS
+      - Checkout UX
+      - Guest QA
+    order: 297
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/shulpinchik-checkout-styles/en
+        type: product
+  - slug: woocommerce-compact-cart-cross-sells
+    name: Compact WooCommerce cart and related product layouts
+    year: "05.2022"
+    role: Web development and automation
+    description: Made the cart and related product areas more compact. Long names
+      and secondary details made button alignment harder and occupied space
+      needed for buying controls.
+    stack:
+      - WooCommerce
+      - Cart UX
+      - Cross-sells
+      - Storefront layout
+    order: 298
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-compact-cart-cross-sells/en
+        type: product
