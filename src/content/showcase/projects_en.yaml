@@ -5903,3 +5903,43 @@ projects:
       - label: Read case study
         url: /showcase/affiliate-feed-readiness-audit/en/
         type: product
+  - slug: medimarket-ci-recrawl-resilience
+    name: "MediMarket24: keeping releases running through API outages"
+    year: "10.2026"
+    role: Web development and automation
+    description: A daily catalog update in GitHub Actions appeared to fail even
+      though the site had already built and deployed. The failure came from an
+      optional recrawl request encountering a network outage. The workflow
+      needed to preserve diagnostics without conflating external notification
+      failure with release failure.
+    stack:
+      - GitHub Actions
+      - Python
+      - Astro
+      - Yandex Webmaster
+      - CI/CD
+    order: 330
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/medimarket-ci-recrawl-resilience/en/
+        type: product
+  - slug: medimarket-source-content-validation
+    name: "MediMarket24: restoring source data for 140 listings"
+    year: "10.2026"
+    role: Web development and automation
+    description: Some product listings were missing reference sections. The goal was
+      to recover source data for the exact item instead of padding text to an
+      arbitrary length or borrowing information from a similar product.
+    stack:
+      - Astro
+      - JavaScript
+      - Data provenance
+      - Catalog QA
+      - Node.js
+    order: 331
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/medimarket-source-content-validation/en/
+        type: product

@@ -34,5 +34,5 @@ blocks:
   - type: text
     title: Another stage of this project
     links:
-      - label: "Project foundation: storefront built from affiliate feeds"
-        url: /showcase/medimarket-catalog/en/
+      - label: "Related work: resilient daily deployments"
+        url: /showcase/medimarket-ci-recrawl-resilience/en/

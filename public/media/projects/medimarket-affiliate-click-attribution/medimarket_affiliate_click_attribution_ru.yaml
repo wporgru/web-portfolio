@@ -33,5 +33,5 @@ blocks:
   - type: text
     title: Другой этап этого проекта
     links:
-      - label: "Основа проекта: каталог из партнёрских фидов"
-        url: /showcase/medimarket-catalog/
+      - label: "Связанная работа: устойчивость ежедневных релизов"
+        url: /showcase/medimarket-ci-recrawl-resilience/

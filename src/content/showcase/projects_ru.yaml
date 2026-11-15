@@ -5965,3 +5965,42 @@ projects:
       - label: Читать кейс
         url: /showcase/affiliate-feed-readiness-audit/
         type: product
+  - slug: medimarket-ci-recrawl-resilience
+    name: "MediMarket24: релизы без блокировки при сбое API"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Ежедневное обновление каталога на GitHub Actions показывало ошибку,
+      хотя сайт был уже собран и опубликован. Причиной оказался сетевой сбой в
+      дополнительном шаге отправки URL на переобход. Нужно было сохранить
+      диагноз и не путать сбой внешней системы со сбоем самого релиза.
+    stack:
+      - GitHub Actions
+      - Python
+      - Astro
+      - Yandex Webmaster
+      - CI/CD
+    order: 330
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/medimarket-ci-recrawl-resilience/
+        type: product
+  - slug: medimarket-source-content-validation
+    name: "MediMarket24: восстановление данных 140 карточек"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: У части карточек не хватало справочных разделов. Требовалось
+      восстановить исходные данные для точной позиции, а не дописывать текст до
+      условной нормы или брать описание похожего товара.
+    stack:
+      - Astro
+      - JavaScript
+      - Data provenance
+      - Catalog QA
+      - Node.js
+    order: 331
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/medimarket-source-content-validation/
+        type: product

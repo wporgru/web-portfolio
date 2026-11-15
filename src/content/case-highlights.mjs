@@ -1,6 +1,14 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'medimarket-ci-recrawl-resilience': {
+    ru: 'Разделил публикацию и переобход в GitHub Actions. Каталог обновляется, а временная недоступность API Яндекса отмечается в журнале.',
+    en: 'Separated publishing and recrawl status in GitHub Actions. The catalog can still deploy while a temporary Yandex API outage is recorded.',
+  },
+  'medimarket-source-content-validation': {
+    ru: 'Восстановил справочные данные для 140 карточек из 144. Сверял источник и упаковку, а четыре позиции без материала оставил без подмены.',
+    en: 'Recovered reference data for 140 of 144 listings. Checked source and packaging, leaving four items without usable data unchanged.',
+  },
   '78-dosok': {
     ru: 'Полный редизайн WooCommerce-магазина: смена темы, обновление, ускорение и очистка плагинов. Исторические снимки до и после.',
     en: 'Full WooCommerce store redesign: theme replacement, updates, performance work and plugin cleanup, with archival before-and-after screenshots.',

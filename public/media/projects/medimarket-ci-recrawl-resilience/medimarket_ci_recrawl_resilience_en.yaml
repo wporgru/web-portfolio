@@ -1,0 +1,40 @@
+title: "MediMarket24: keeping releases running through API outages"
+tagline: A daily catalog update in GitHub Actions appeared to fail even though
+  the site had already built and deployed. The failure came from an optional
+  recrawl request encountering a network outage. The workflow needed to preserve
+  diagnostics without conflating external notification failure with release
+  failure.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - GitHub Actions
+  - Python
+  - Astro
+  - Yandex Webmaster
+  - CI/CD
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A daily catalog update in GitHub Actions appeared to fail even though the
+      site had already built and deployed. The failure came from an optional
+      recrawl request encountering a network outage. The workflow needed to
+      preserve diagnostics without conflating external notification failure with
+      release failure.
+  - type: text
+    title: How it works
+    body: Traced the failed run step by step and separated required HTML checks and
+      publishing from the external notification. Updated the Python handler to
+      catch transient network failures and record a distinct reason in the
+      ledger. Retained strict mode for manual runs that must fail when Yandex is
+      unavailable. Other errors were not automatically treated as success.
+  - type: text
+    title: Result and verification
+    body: "The next Daily Feed Deploy completed successfully: the site built,
+      deployed and committed refreshed data. The recrawl ledger separately
+      recorded zero submitted URLs because Yandex remained unavailable. A
+      successful workflow does not mean recrawling succeeded."
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Project foundation: building the catalog from feeds"
+        url: /showcase/medimarket-catalog/en/

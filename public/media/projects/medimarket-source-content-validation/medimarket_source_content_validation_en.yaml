@@ -1,0 +1,36 @@
+title: "MediMarket24: restoring source data for 140 listings"
+tagline: Some product listings were missing reference sections. The goal was to
+  recover source data for the exact item instead of padding text to an arbitrary
+  length or borrowing information from a similar product.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - Astro
+  - JavaScript
+  - Data provenance
+  - Catalog QA
+  - Node.js
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Some product listings were missing reference sections. The goal was to
+      recover source data for the exact item instead of padding text to an
+      arbitrary length or borrowing information from a similar product.
+  - type: text
+    title: How it works
+    body: Queued 144 items and separated verified matches from missing material.
+      Recorded source URLs, retrieval times and SHA-256 hashes, then checked
+      product identity and packaging. The build restores verified sections.
+      Tests reject packaging mismatches and prevent unsupported answers from
+      being generated to fill a quota.
+  - type: text
+    title: Result and verification
+    body: The run recorded 140 applied source records and four items without usable
+      material. Generated HTML checks covered 744 listings; five sampled
+      production URLs returned HTTP 200. This verifies ingestion, provenance and
+      rendering, not the clinical accuracy of the content.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: restoring catalog images"
+        url: /showcase/medimarket-image-fallback-recovery/en/
