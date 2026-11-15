@@ -43,5 +43,5 @@ blocks:
   - type: text
     title: Live website
     links:
-      - label: Open storefront
+      - label: Open the project page
         url: https://apteka-optika.ru/

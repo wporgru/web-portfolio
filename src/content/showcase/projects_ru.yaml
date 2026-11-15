@@ -5597,3 +5597,53 @@ projects:
       - label: Читать кейс
         url: /showcase/faeton-blog-tag-archive-recovery
         type: product
+  - slug: artred-woocommerce-migration-readiness
+    name: "ARTRED: подготовка WooCommerce к смене сайта"
+    year: 08–09.2026
+    role: Веб-разработка и автоматизация
+    description: "Подготовил обновлённую версию сайта производителя поломоечных
+      машин к переключению домена. Нужно было перенести не только оформление:
+      сохранить доступность каталога и статей, не потерять видео и ссылки и не
+      открыть тестовую копию для индексации раньше времени."
+    stack:
+      - WordPress
+      - WooCommerce
+      - GeneratePress
+      - Bash
+      - SEO migration
+    order: 313
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/artred-woocommerce-migration-readiness/archive-viewport.webp
+        alt: Главная ARTRED после переключения, архивный вид в браузере
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/artred-woocommerce-migration-readiness
+        type: product
+  - slug: artred-b2b-equipment-catalog
+    name: "ARTRED: B2B-каталог техники и заявки с карточек"
+    year: "08.2026"
+    role: Веб-разработка и автоматизация
+    description: Переделал товарные страницы для сценария, в котором покупатель
+      сначала обсуждает задачу и оборудование с менеджером, а не сразу покупает
+      дорогую машину через корзину. При этом карточки должны были остаться
+      пригодными для сравнения моделей по характеристикам.
+    stack:
+      - WooCommerce
+      - GeneratePress
+      - PHP
+      - SVG
+      - Contact Form 7
+    order: 314
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/artred-b2b-equipment-catalog/archive-viewport.webp
+        alt: Карточка техники ARTRED с характеристиками и кнопкой консультации
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/artred-b2b-equipment-catalog
+        type: product

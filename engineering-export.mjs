@@ -8,6 +8,8 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'artred-woocommerce-migration-readiness': ['archive-viewport.webp', 'Главная ARTRED после переключения, архивный вид в браузере', 'ARTRED homepage after cutover, archived browser view', 'Сохранённый десктопный вид главной на основном домене от 7 сентября 2026 года. Снимок области окна 1440 × 1000, не всей страницы.', 'Archived desktop homepage on the production domain, September 7, 2026. The 1440 × 1000 browser viewport is not a full-page capture.'],
+  'artred-b2b-equipment-catalog': ['archive-viewport.webp', 'Карточка техники ARTRED с характеристиками и кнопкой консультации', 'ARTRED equipment page with specifications and a consultation button', 'Десктопный снимок проверки 28 августа 2026 года: область окна 1440 × 1100. Не подтверждает отправку формы или текущий вид сайта.', 'Desktop QA capture from August 28, 2026: 1440 × 1100 browser viewport. It does not verify form delivery or the current site.'],
   'faeton-rental-catalog-recovery': ['public-full.webp', 'Полная страница аренды машин «Фаэтон» с карточками техники', 'Full Faeton equipment rental page with product cards', 'Публичная страница целиком, снимок без обрезки от 15 ноября 2026 года. Это вид после работ, а не тест отправки заявки.', 'Uncropped public page captured November 15, 2026. It shows the later interface, not a submission test.'],
   'faeton-blog-tag-archive-recovery': ['public-full.webp', 'Блог «Фаэтон» со списком статей, рубриками и пагинацией', 'Faeton blog with posts, categories and pagination', 'Публичный блог целиком, снимок без обрезки от 15 ноября 2026 года. Статистика архивов относится к отдельной проверке в октябре.', 'Uncropped public blog captured November 15, 2026. Archive counts are from the separate October verification.'],
   'apteka-optika-price-comparison': ['homepage-full.webp', 'Полностраничный снимок витрины «Аптека & Оптика»', 'Full-page screenshot of the Apteka & Optika storefront', 'Полностраничный снимок действующей главной в браузере, ширина 1440 px, без обрезки. Это текущий вид, а не исторический снимок запуска.', 'Uncropped browser capture of the current live homepage at 1440 px width. This is not an archival launch screenshot.'],
@@ -25,6 +27,8 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'artred-woocommerce-migration-readiness': ['artred-b2b-equipment-catalog', 'Связанная работа: каталог техники и консультации', 'Related work: equipment catalog and consultations'],
+  'artred-b2b-equipment-catalog': ['artred-woocommerce-migration-readiness', 'Связанная работа: подготовка сайта к переключению', 'Related work: preparing the site cutover'],
   'klimat-profi-server-storage': ['klimat-profi-backup-automation', 'Связанная работа: автоматизация резервных копий', 'Related work: backup automation'],
   'klimat-profi-backup-automation': ['klimat-profi-server-storage', 'Связанная работа: освобождение места и аудит медиа', 'Related work: storage recovery and media audit'],
   'diskprices-comparison-platform': ['ramprices-memory-offer-normalization', 'Продолжение: адаптация ядра под оперативную память', 'Follow-up: adapting the catalog to memory products'],

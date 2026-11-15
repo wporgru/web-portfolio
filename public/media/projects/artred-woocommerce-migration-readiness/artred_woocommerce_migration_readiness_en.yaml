@@ -1,0 +1,46 @@
+title: "ARTRED: preparing a WooCommerce site replacement"
+tagline: "Prepared a replacement website for a scrubber-dryer manufacturer. The
+  migration had to preserve more than the design: catalog and article access,
+  embedded videos and links, and protection against premature indexing of the
+  staging site."
+year: 08–09.2026
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - GeneratePress
+  - Bash
+  - SEO migration
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Prepared a replacement website for a scrubber-dryer manufacturer. The
+      migration had to preserve more than the design: catalog and article
+      access, embedded videos and links, and protection against premature
+      indexing of the staging site."
+  - type: text
+    title: How it works
+    body: Compared sitemap paths and internal links, checked legacy product category
+      routes and compared the structure of 43 articles. Scoped WooCommerce
+      script loading to storefront flows rather than the homepage and
+      informational pages. Prepared a cutover procedure with environment checks,
+      explicit confirmation and rollback. In two negative tests the script
+      refused to continue without confirmation or while the domain still pointed
+      to the old directory.
+  - type: text
+    title: Result and verification
+    body: The August 25 run compared 107 URLs on each version; the 43-article
+      structure check found no lost headings, links or videos. Later template
+      findings were tracked separately from the earlier run. A separate
+      post-release desktop and mobile check covered production. These checks do
+      not establish retention of search rankings.
+  - type: image
+    src: /media/projects/artred-woocommerce-migration-readiness/archive-viewport.webp
+    alt: ARTRED homepage after cutover, archived browser view
+    caption: Archived desktop homepage on the production domain, September 7, 2026.
+      The 1440 × 1000 browser viewport is not a full-page capture.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: equipment catalog and consultations"
+        url: /showcase/artred-b2b-equipment-catalog/en/

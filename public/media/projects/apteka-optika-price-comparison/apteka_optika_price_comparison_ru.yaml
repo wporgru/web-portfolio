@@ -43,5 +43,5 @@ blocks:
   - type: text
     title: Действующий сайт
     links:
-      - label: Открыть витрину
+      - label: Открыть страницу проекта
         url: https://apteka-optika.ru/

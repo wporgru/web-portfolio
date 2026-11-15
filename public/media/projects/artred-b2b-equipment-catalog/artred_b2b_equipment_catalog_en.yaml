@@ -1,0 +1,43 @@
+title: "ARTRED: B2B equipment catalog and product enquiries"
+tagline: Adapted product pages for buyers who discuss requirements and equipment
+  with a sales specialist before ordering. Product cards still needed to support
+  model comparison instead of hiding specifications behind an enquiry form.
+year: "08.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - GeneratePress
+  - PHP
+  - SVG
+  - Contact Form 7
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Adapted product pages for buyers who discuss requirements and equipment
+      with a sales specialist before ordering. Product cards still needed to
+      support model comparison instead of hiding specifications behind an
+      enquiry form.
+  - type: text
+    title: How it works
+    body: Replaced decorative specification markers with SVG icons while retaining
+      readable labels. Removed the default purchase action on the product page
+      and kept the consultation action. Styled the existing Contact Form 7
+      dialog through Popup Maker without altering the third-party EnvyBox
+      widget. Also checked informational pages, links and form placement below
+      the first viewport.
+  - type: text
+    title: Result and verification
+    body: The category browser check found six cards and 18 specification icons. The
+      tested product page showed the consultation button instead of purchase,
+      and the dialog opened without horizontal overflow. This verifies the
+      interface, not email delivery or enquiry growth.
+  - type: image
+    src: /media/projects/artred-b2b-equipment-catalog/archive-viewport.webp
+    alt: ARTRED equipment page with specifications and a consultation button
+    caption: "Desktop QA capture from August 28, 2026: 1440 × 1100 browser viewport.
+      It does not verify form delivery or the current site."
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: preparing the site cutover"
+        url: /showcase/artred-woocommerce-migration-readiness/en/

@@ -5538,3 +5538,53 @@ projects:
       - label: Read case study
         url: /showcase/faeton-blog-tag-archive-recovery/en
         type: product
+  - slug: artred-woocommerce-migration-readiness
+    name: "ARTRED: preparing a WooCommerce site replacement"
+    year: 08–09.2026
+    role: Web development and automation
+    description: "Prepared a replacement website for a scrubber-dryer manufacturer.
+      The migration had to preserve more than the design: catalog and article
+      access, embedded videos and links, and protection against premature
+      indexing of the staging site."
+    stack:
+      - WordPress
+      - WooCommerce
+      - GeneratePress
+      - Bash
+      - SEO migration
+    order: 313
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/artred-woocommerce-migration-readiness/archive-viewport.webp
+        alt: ARTRED homepage after cutover, archived browser view
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/artred-woocommerce-migration-readiness/en
+        type: product
+  - slug: artred-b2b-equipment-catalog
+    name: "ARTRED: B2B equipment catalog and product enquiries"
+    year: "08.2026"
+    role: Web development and automation
+    description: Adapted product pages for buyers who discuss requirements and
+      equipment with a sales specialist before ordering. Product cards still
+      needed to support model comparison instead of hiding specifications behind
+      an enquiry form.
+    stack:
+      - WooCommerce
+      - GeneratePress
+      - PHP
+      - SVG
+      - Contact Form 7
+    order: 314
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/artred-b2b-equipment-catalog/archive-viewport.webp
+        alt: ARTRED equipment page with specifications and a consultation button
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/artred-b2b-equipment-catalog/en
+        type: product
