@@ -1,0 +1,40 @@
+title: "MediMarket24: restoring 120 catalog images"
+tagline: Catalog images disappeared when a supplier was temporarily unavailable.
+  The build treated a network failure as grounds to drop the image despite
+  having a usable local version. The fix needed to preserve verified assets
+  without substituting a different product’s image.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - Astro
+  - Node.js
+  - Sharp
+  - Git
+  - SHA-256
+  - GitHub Actions
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Catalog images disappeared when a supplier was temporarily unavailable.
+      The build treated a network failure as grounds to drop the image despite
+      having a usable local version. The fix needed to preserve verified assets
+      without substituting a different product’s image.
+  - type: text
+    title: How it works
+    body: Reproduced the missing-image behavior with a regression test.
+      Distinguished temporary source failures from cases where an image could
+      not be used. Restored files from a verified Git cache only when the source
+      and checksum matched, then checked decodability with Sharp. Left
+      disallowed or unavailable sources out rather than substituting visually
+      similar images.
+  - type: text
+    title: Result and verification
+    body: After release, all 120 restored images returned HTTP 200 and matched the
+      verified cache by SHA-256. The build accepted 740 of 746 product images at
+      sign-off. This verifies asset integrity and availability, not traffic or
+      sales growth.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: affiliate click attribution"
+        url: /showcase/medimarket-affiliate-click-attribution/en/

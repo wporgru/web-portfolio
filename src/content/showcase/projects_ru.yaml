@@ -5903,3 +5903,44 @@ projects:
       - label: Читать кейс
         url: /showcase/nomad-english-megamenu-localization/
         type: product
+  - slug: medimarket-image-fallback-recovery
+    name: "MediMarket24: восстановление 120 изображений каталога"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: В каталоге пропадали изображения, когда поставщик временно не
+      отвечал. Сборка воспринимала сетевой сбой как повод убрать картинку, хотя
+      у неё уже был пригодный локальный вариант. Нужно было сохранить
+      проверенные изображения, не подставляя файлы от других товаров.
+    stack:
+      - Astro
+      - Node.js
+      - Sharp
+      - Git
+      - SHA-256
+      - GitHub Actions
+    order: 327
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/medimarket-image-fallback-recovery/
+        type: product
+  - slug: medimarket-affiliate-click-attribution
+    name: "MediMarket24: аналитика партнёрских переходов"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: На витрине один товар мог появляться на главной, в каталоге,
+      рекомендациях или поиске. Требовалось видеть, откуда посетитель ушёл к
+      партнёру, и не считать этот переход покупкой или подтверждённой комиссией.
+    stack:
+      - JavaScript
+      - Astro
+      - Yandex Metrica
+      - GA4
+      - Admitad
+      - Event tracking
+    order: 328
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/medimarket-affiliate-click-attribution/
+        type: product

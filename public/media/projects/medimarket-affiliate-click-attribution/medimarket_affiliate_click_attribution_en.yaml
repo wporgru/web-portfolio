@@ -1,0 +1,38 @@
+title: "MediMarket24: affiliate click attribution"
+tagline: A product could appear on the homepage, catalog, recommendations or
+  search. The operator needed to know where a visitor clicked through to a
+  merchant without mistaking that action for a purchase or confirmed commission.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - JavaScript
+  - Astro
+  - Yandex Metrica
+  - GA4
+  - Admitad
+  - Event tracking
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A product could appear on the homepage, catalog, recommendations or
+      search. The operator needed to know where a visitor clicked through to a
+      merchant without mistaking that action for a purchase or confirmed
+      commission.
+  - type: text
+    title: How it works
+    body: Added an affiliate_click event for Metrica and GA4 with product, merchant,
+      placement and page path. Built a product-and-placement subid while
+      preserving disclosure and affiliate parameters. Covered dynamic search
+      results and middle-click navigation. Added project tests for attribution
+      behavior.
+  - type: text
+    title: Result and verification
+    body: "A mobile check covered markup for 24 tracked links on one collection.
+      Event implementation does not prove that a configured goal received it:
+      the Metrica API did not allow creating the goal at first release. Partner
+      reports, not outbound clicks, establish sales and commission."
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Project foundation: storefront built from affiliate feeds"
+        url: /showcase/medimarket-catalog/en/

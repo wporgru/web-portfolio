@@ -5841,3 +5841,45 @@ projects:
       - label: Read case study
         url: /showcase/nomad-english-megamenu-localization/en/
         type: product
+  - slug: medimarket-image-fallback-recovery
+    name: "MediMarket24: restoring 120 catalog images"
+    year: "10.2026"
+    role: Web development and automation
+    description: Catalog images disappeared when a supplier was temporarily
+      unavailable. The build treated a network failure as grounds to drop the
+      image despite having a usable local version. The fix needed to preserve
+      verified assets without substituting a different product’s image.
+    stack:
+      - Astro
+      - Node.js
+      - Sharp
+      - Git
+      - SHA-256
+      - GitHub Actions
+    order: 327
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/medimarket-image-fallback-recovery/en/
+        type: product
+  - slug: medimarket-affiliate-click-attribution
+    name: "MediMarket24: affiliate click attribution"
+    year: "10.2026"
+    role: Web development and automation
+    description: A product could appear on the homepage, catalog, recommendations or
+      search. The operator needed to know where a visitor clicked through to a
+      merchant without mistaking that action for a purchase or confirmed
+      commission.
+    stack:
+      - JavaScript
+      - Astro
+      - Yandex Metrica
+      - GA4
+      - Admitad
+      - Event tracking
+    order: 328
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/medimarket-affiliate-click-attribution/en/
+        type: product

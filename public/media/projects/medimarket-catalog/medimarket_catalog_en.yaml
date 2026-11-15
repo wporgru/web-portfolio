@@ -23,3 +23,8 @@ blocks:
     body: Recrawl service availability is not treated as proof of deployment or
       indexing. Yandex, IndexNow and Google are tracked independently so an
       external failure cannot obscure the build status.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: restoring catalog images"
+        url: /showcase/medimarket-image-fallback-recovery/en/

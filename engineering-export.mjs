@@ -32,6 +32,9 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'medimarket-catalog': ['medimarket-image-fallback-recovery', 'Связанная работа: восстановление изображений каталога', 'Related work: restoring catalog images'],
+  'medimarket-image-fallback-recovery': ['medimarket-affiliate-click-attribution', 'Связанная работа: аналитика партнёрских переходов', 'Related work: affiliate click attribution'],
+  'medimarket-affiliate-click-attribution': ['medimarket-catalog', 'Основа проекта: каталог из партнёрских фидов', 'Project foundation: storefront built from affiliate feeds'],
   'nomad-spain-landing-figma': ['nomad-english-megamenu-localization', 'Связанная работа: локализация мегаменю', 'Related work: megamenu localization'],
   'nomad-english-megamenu-localization': ['nomad-spain-landing-figma', 'Связанная работа: вёрстка лендинга по Figma', 'Related work: implementing the Figma landing page'],
   'tara-bergman-gallery-batches': ['tara-bergman-hreflang-page-mapping', 'Связанная работа: языковые адреса фотосайта', 'Related work: localized photography URLs'],
