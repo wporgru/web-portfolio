@@ -25,3 +25,8 @@ blocks:
     body: Scheduled collection does not modify the site or submit URLs. Submission
       is explicit and each service response is recorded. Failed refreshes
       preserve previous values and incomplete exports are flagged.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related module: search demand and Google Trends history"
+        url: /showcase/trends-search-demand-history/en/

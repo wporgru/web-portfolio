@@ -5962,3 +5962,44 @@ projects:
       - label: Read case study
         url: /showcase/solomon-responsive-conversion-audit/en/
         type: product
+  - slug: admitad-order-click-reconciliation
+    name: Matching affiliate orders to their originating clicks
+    year: "09.2026"
+    role: Web development and automation
+    description: An affiliate report shows a purchase, but does not always reveal
+      which page and listing initiated the visit. A customer may also buy a
+      different item. The task was to recover the originating click without
+      rewriting the order contents.
+    stack:
+      - Python
+      - SQLite
+      - Admitad
+      - SSH
+      - Attribution
+      - Automated tests
+    order: 333
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/admitad-order-click-reconciliation/en/
+        type: product
+  - slug: trends-search-demand-history
+    name: Search demand dashboard with Google Trends history
+    year: "09.2026"
+    role: Web development and automation
+    description: A query rising in one export is not enough reason to create a new
+      page. The dashboard needed to retain observations, distinguish export
+      types and cross-check queries against stored search data.
+    stack:
+      - Python
+      - SQLite
+      - CSV
+      - Google Trends
+      - Search Console
+      - Yandex Webmaster
+    order: 334
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/trends-search-demand-history/en/
+        type: product

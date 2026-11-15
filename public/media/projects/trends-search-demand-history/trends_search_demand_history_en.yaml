@@ -1,0 +1,39 @@
+title: Search demand dashboard with Google Trends history
+tagline: A query rising in one export is not enough reason to create a new page.
+  The dashboard needed to retain observations, distinguish export types and
+  cross-check queries against stored search data.
+year: "09.2026"
+role: Web development and automation
+stack:
+  - Python
+  - SQLite
+  - CSV
+  - Google Trends
+  - Search Console
+  - Yandex Webmaster
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A query rising in one export is not enough reason to create a new page.
+      The dashboard needed to retain observations, distinguish export types and
+      cross-check queries against stored search data.
+  - type: text
+    title: How it works
+    body: "Built a Rising CSV import into SQLite. Growth percentages and Breakout
+      are accepted; the standard Top scale is not treated as growth. Snapshots
+      are immutable: importing the same file and filters records a new
+      observation without duplicating data. Geography, category and period are
+      recorded explicitly. Exact queries are checked against Yandex Webmaster
+      and Search Console aggregates, while product-title matches are
+      provisional."
+  - type: text
+    title: Result and verification
+    body: Tests on a separate database covered re-import, invalid format rejection
+      and sorting the full dataset rather than just the current page. The
+      dashboard helps prioritize investigation; relative Trends growth is not
+      presented as absolute search volume, traffic or sales.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related module: matching affiliate clicks to orders"
+        url: /showcase/admitad-order-click-reconciliation/en/

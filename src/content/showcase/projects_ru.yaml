@@ -6024,3 +6024,44 @@ projects:
       - label: Читать кейс
         url: /showcase/solomon-responsive-conversion-audit/
         type: product
+  - slug: admitad-order-click-reconciliation
+    name: Сверка партнёрских заказов с исходным кликом
+    year: "09.2026"
+    role: Веб-разработка и автоматизация
+    description: В партнёрском отчёте видна покупка, но не всегда понятно, с какой
+      страницы и карточки начался переход. При этом посетитель может купить не
+      тот товар, по которому кликнул. Нужно было восстановить маршрут без
+      подмены состава заказа данными клика.
+    stack:
+      - Python
+      - SQLite
+      - Admitad
+      - SSH
+      - Attribution
+      - Automated tests
+    order: 333
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/admitad-order-click-reconciliation/
+        type: product
+  - slug: trends-search-demand-history
+    name: "Дашборд спроса: история выгрузок Google Trends"
+    year: "09.2026"
+    role: Веб-разработка и автоматизация
+    description: Отчётливый рост запроса в одной выгрузке ещё не повод делать новую
+      страницу. Требовалось хранить историю наблюдений, различать типы отчётов и
+      сверять запросы с накопленными данными поиска.
+    stack:
+      - Python
+      - SQLite
+      - CSV
+      - Google Trends
+      - Search Console
+      - Yandex Webmaster
+    order: 334
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/trends-search-demand-history/
+        type: product

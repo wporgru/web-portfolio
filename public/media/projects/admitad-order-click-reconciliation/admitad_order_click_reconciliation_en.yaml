@@ -1,0 +1,39 @@
+title: Matching affiliate orders to their originating clicks
+tagline: An affiliate report shows a purchase, but does not always reveal which
+  page and listing initiated the visit. A customer may also buy a different
+  item. The task was to recover the originating click without rewriting the
+  order contents.
+year: "09.2026"
+role: Web development and automation
+stack:
+  - Python
+  - SQLite
+  - Admitad
+  - SSH
+  - Attribution
+  - Automated tests
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: An affiliate report shows a purchase, but does not always reveal which
+      page and listing initiated the visit. A customer may also buy a different
+      item. The task was to recover the originating click without rewriting the
+      order contents.
+  - type: text
+    title: How it works
+    body: Added a separate read-only click-log import into SQLite through a verified
+      SSH connection. Made repeated imports idempotent and scoped matching to
+      the affiliate property and the click ID from SubID. Kept originating SKU,
+      purchased items, order amount and commission separate. A journal that has
+      not been imported is not reported as zero clicks.
+  - type: text
+    title: Result and verification
+    body: "All three targeted tests passed again: repeated rows do not duplicate, a
+      different property does not match, and an unimported journal is not shown
+      as zero. This verifies attribution logic, not the number of missed sales
+      or commission totals."
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: the core SEO dashboard"
+        url: /showcase/seo-dashboard/en/
