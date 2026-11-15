@@ -2,17 +2,23 @@
 import Layout from './Layout.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
 import { services } from '../content/services.mjs';
+import { serviceGroups } from '../content/service-groups.mjs';
 
 const { lang } = Astro.props;
 const ru = lang === 'ru';
+const locale = ru ? 'ru' : 'en';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const localeSuffix = ru ? '/' : '/en/';
 const title = ru ? 'Услуги веб-разработчика Олега Тишина' : 'Web development services by Oleg Tishin';
 const intro = ru
-  ? 'Запускаю, обновляю и восстанавливаю сайты. Помогаю интернет-магазинам с каталогом, оплатой и доставкой, а бизнесу — с переездом, техническим SEO и автоматизацией.'
-  : 'I launch, improve and repair websites. I help stores with catalogs, payments and shipping, and businesses with hosting migrations, technical SEO and automation.';
+  ? 'Разработка сайтов, каталоги и интеграции, ремонт, техническое SEO и автоматизация. Выберите задачу: покажу, что входит в работу и как проверяю результат.'
+  : 'Website development, catalog integrations, repair, technical SEO and automation. Find your task and see what the work covers and how I verify the result.';
 const alternates = ['ru','en'].map(id=>({id,label:id.toUpperCase(),href:base+'/services'+(id==='ru'?'/':'/en/'),active:id===lang}));
 const breadcrumbs = [{name:ru?'Главная':'Home',href:base+localeSuffix},{name:ru?'Услуги':'Services'}];
+const assigned = serviceGroups.flatMap(group=>group.slugs);
+if (assigned.length !== services.length || new Set(assigned).size !== services.length ||
+    services.some(service=>!assigned.includes(service.slug))) throw Error('Service groups must cover all services exactly once');
+const bySlug = new Map(services.map(service=>[service.slug,service]));
 ---
 <Layout title={title} description={intro} lang={lang} section="services" customLangLinks={alternates} roleLinks={[]} breadcrumbs={breadcrumbs}>
   <div class="container stack service-index">
@@ -25,15 +31,22 @@ const breadcrumbs = [{name:ru?'Главная':'Home',href:base+localeSuffix},{n
         <a class="btn btn--ghost" href={base+'/showcase'+localeSuffix}>{ru?'Посмотреть выполненные работы':'See completed work'}</a>
       </div>
     </article>
-    <div class="grid">
-      {services.map(service=>{
-        const [name,summary] = service[lang];
+    <nav class="card service-jumps" aria-label={ru?'Направления услуг':'Service categories'}>
+      <ul class="tags">{serviceGroups.map(group=><li><a class="pill" href={'#'+group.id}>{group[locale][0]}</a></li>)}</ul>
+    </nav>
+    {serviceGroups.map(group=><section class="stack service-group" id={group.id} aria-labelledby={group.id+'-heading'}>
+      <div><h2 class="h2" id={group.id+'-heading'}>{group[locale][0]}</h2><p class="muted">{group[locale][1]}</p></div>
+      <div class="grid">{group.slugs.map(slug=>{
+        const service = bySlug.get(slug)!;
+        const [name,summary] = service[locale];
+        const count = service.cases.length;
         return <article class="card">
-          <h2 class="h2"><a href={base+'/services/'+service.slug+localeSuffix}>{name}</a></h2>
+          <h3 class="h2"><a href={base+'/services/'+slug+localeSuffix}>{name}</a></h3>
           <p>{summary}</p>
+          <p class="muted service-proof">{ru?'Кейсов по услуге: '+count:count+' related case studies'}</p>
         </article>;
-      })}
-    </div>
+      })}</div>
+    </section>)}
     <section class="card">
       <h2 class="h2">{ru?'Не знаете, с чего начать?':'Not sure where to start?'}</h2>
       <p>{ru?'Пришлите ссылку, опишите проблему и укажите, что важно сохранить. Предложу первый этап и объясню, по каким признакам можно принять результат.':'Send the site URL, describe the problem and tell me what must stay intact. I will suggest a first stage and explain how we can verify the result.'}</p>
@@ -43,5 +56,9 @@ const breadcrumbs = [{name:ru?'Главная':'Home',href:base+localeSuffix},{n
 </Layout>
 <style>
 .service-index{padding-block:16px 32px}
-.service-index h2 a{text-decoration:underline;text-underline-offset:.18em}
+.service-index h3 a{text-decoration:underline;text-underline-offset:.18em}
+.service-group{scroll-margin-top:8rem}
+.service-group > div:first-child p{margin:.35rem 0 0}
+.service-proof{margin-bottom:0;font-size:.9rem}
+.service-jumps ul{margin:0}
 </style>
