@@ -5796,3 +5796,48 @@ projects:
       - label: Read case study
         url: /showcase/tara-bergman-hreflang-page-mapping/en/
         type: product
+  - slug: nomad-spain-landing-figma
+    name: "Digital Nomad: responsive landing page from Figma"
+    year: "10.2026"
+    role: Web development and automation
+    description: Implemented a long Spain-program page from Figma in a WordPress
+      template. Desktop needed readable content alongside navigation; mobile
+      needed easy access to enquiries, documents and FAQs without sideways
+      scrolling.
+    stack:
+      - WordPress
+      - PHP
+      - Figma
+      - CSS
+      - Responsive design
+      - Playwright
+    order: 325
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/nomad-spain-landing-figma/archive-full.webp
+        alt: Full Digital Nomad page for the Spain program
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/nomad-spain-landing-figma/en/
+        type: product
+  - slug: nomad-english-megamenu-localization
+    name: "Digital Nomad: fixing the English megamenu layout"
+    year: "10.2026"
+    role: Web development and automation
+    description: "The English menu showed long article titles instead of short
+      country labels. A no-wrap rule made it worse: links spilled into adjacent
+      columns and became hard to scan."
+    stack:
+      - WordPress
+      - PHP
+      - CSS
+      - Multilingual navigation
+      - Playwright
+    order: 326
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/nomad-english-megamenu-localization/en/
+        type: product

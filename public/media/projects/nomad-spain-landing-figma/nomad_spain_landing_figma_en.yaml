@@ -1,0 +1,43 @@
+title: "Digital Nomad: responsive landing page from Figma"
+tagline: Implemented a long Spain-program page from Figma in a WordPress
+  template. Desktop needed readable content alongside navigation; mobile needed
+  easy access to enquiries, documents and FAQs without sideways scrolling.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - PHP
+  - Figma
+  - CSS
+  - Responsive design
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Implemented a long Spain-program page from Figma in a WordPress template.
+      Desktop needed readable content alongside navigation; mobile needed easy
+      access to enquiries, documents and FAQs without sideways scrolling.
+  - type: text
+    title: How it works
+    body: Separated the outer container from inner card padding so nesting did not
+      squeeze text twice. Aligned the two opening panels on desktop, added
+      sticky contents and matched the article width to the reference. On mobile,
+      stacked the opening and document sections, removed the decorative join and
+      preserved the jump from the hero to the quiz.
+  - type: text
+    title: Result and verification
+    body: In the verified version, a 1680 px viewport had a 1320 px container and a
+      375 px viewport had a 327 px container, with no horizontal overflow.
+      Checked key section dimensions in the DOM and visually. The capture
+      documents the verified interface, not current program terms or enquiry
+      outcomes.
+  - type: image
+    src: /media/projects/nomad-spain-landing-figma/archive-full.webp
+    alt: Full Digital Nomad page for the Spain program
+    caption: Uncropped full-page archive image of the verified version, 1680 ×
+      12327. It documents the interface, not current program terms.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: megamenu localization"
+        url: /showcase/nomad-english-megamenu-localization/en/

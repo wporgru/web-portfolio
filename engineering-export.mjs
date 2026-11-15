@@ -8,6 +8,8 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'nomad-spain-landing-figma': ['archive-full.webp', 'Полная страница программы Digital Nomad: Испания', 'Full Digital Nomad page for the Spain program', 'Архивный полностраничный снимок проверенной версии без обрезки, 1680 × 12327. Показаны интерфейс и вёрстка, а не актуальные условия программы.', 'Uncropped full-page archive image of the verified version, 1680 × 12327. It documents the interface, not current program terms.'],
+  'nomad-english-megamenu-localization': ['archive-menu.webp', 'Английское меню Digital Nomad с пятью колонками', 'English Digital Nomad megamenu with five columns', 'Снимок раскрытого меню из отчёта проверки. Это фрагмент шапки, не снимок всей страницы.', 'Expanded menu from the verification report. This is a header excerpt, not a full-page capture.', false],
   'arenda-pm-catalog-indexability': ['seo-release-viewport.webp', 'Главная «Аренда-ПМ» после правки заголовков', 'Arenda-PM homepage after heading updates', 'Фрагмент браузерной проверки после правки заголовков. Показывает сохранённое оформление, а не состояние поисковой выдачи.', 'Browser viewport captured after the heading edits. It shows the preserved design, not search visibility.'],
   'wellland-editorial-ai-production': ['editorial-illustration.webp', 'Редакционная ИИ-иллюстрация поломоечной машины для статьи Wellland', 'AI-generated illustration of a scrubber dryer for the Wellland article', 'Одна из шести редакционных обложек. Сгенерирована по референсам техники; не фотография клиента или объекта.', 'One of six editorial covers. Generated from equipment references; not a photograph of a client or site.'],
   'wellland-native-catalog-pagination': ['pagination-control.webp', 'Штатная пагинация WooCommerce на мобильном Wellland', 'Native WooCommerce pagination on mobile Wellland', 'Архивный снимок элемента интерфейса при ширине окна 390 px, 29 октября 2026 года. Это не снимок всей страницы или текущей версии.', 'Archive capture of the control at a 390 px viewport on October 29, 2026. Not a full-page screenshot or a current-version capture.', false],
@@ -30,6 +32,8 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'nomad-spain-landing-figma': ['nomad-english-megamenu-localization', 'Связанная работа: локализация мегаменю', 'Related work: megamenu localization'],
+  'nomad-english-megamenu-localization': ['nomad-spain-landing-figma', 'Связанная работа: вёрстка лендинга по Figma', 'Related work: implementing the Figma landing page'],
   'tara-bergman-gallery-batches': ['tara-bergman-hreflang-page-mapping', 'Связанная работа: языковые адреса фотосайта', 'Related work: localized photography URLs'],
   'tara-bergman-hreflang-page-mapping': ['tara-bergman', 'Предыдущий этап: перенос фотосайта в WordPress', 'Earlier stage: moving the photography site to WordPress'],
   'psy343-gutenberg-site-redesign': ['psy343-seo-redirect-mapping', 'Связанный этап: карта старых адресов и редиректы', 'Related stage: legacy URL mapping and redirects'],

@@ -1,0 +1,41 @@
+title: "Digital Nomad: fixing the English megamenu layout"
+tagline: "The English menu showed long article titles instead of short country
+  labels. A no-wrap rule made it worse: links spilled into adjacent columns and
+  became hard to scan."
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - PHP
+  - CSS
+  - Multilingual navigation
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The English menu showed long article titles instead of short country
+      labels. A no-wrap rule made it worse: links spilled into adjacent columns
+      and became hard to scan."
+  - type: text
+    title: How it works
+    body: Separated short navigation labels from full page titles. Used the linked
+      page’s country field and translated labels, with explicit names for
+      special programs. Shared the labeling logic between desktop and mobile.
+      Allowed wrapping, capped the menu at the viewport and gave long program
+      names a wider column.
+  - type: text
+    title: Result and verification
+    body: Checked the Russian and English menus on staging at 1280, 1440, 1920 and
+      3392 px. Columns no longer overlapped and did not create horizontal
+      overflow. This verifies menu behavior, not site-wide translation or
+      accessibility.
+  - type: image
+    src: /media/projects/nomad-english-megamenu-localization/archive-menu.webp
+    alt: English Digital Nomad megamenu with five columns
+    caption: Expanded menu from the verification report. This is a header excerpt,
+      not a full-page capture.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: implementing the Figma landing page"
+        url: /showcase/nomad-spain-landing-figma/en/

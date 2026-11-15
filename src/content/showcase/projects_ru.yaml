@@ -5857,3 +5857,49 @@ projects:
       - label: Читать кейс
         url: /showcase/tara-bergman-hreflang-page-mapping/
         type: product
+  - slug: nomad-spain-landing-figma
+    name: "Digital Nomad: адаптивный лендинг по макетам Figma"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Перенёс длинную страницу программы по Испании из макетов Figma в
+      шаблон WordPress. На десктопе важно было сохранить читаемую статью рядом с
+      оглавлением, а на телефоне — оставить заявки, документы и вопросы
+      доступными без горизонтальной прокрутки.
+    stack:
+      - WordPress
+      - PHP
+      - Figma
+      - CSS
+      - Responsive design
+      - Playwright
+    order: 325
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/nomad-spain-landing-figma/archive-full.webp
+        alt: "Полная страница программы Digital Nomad: Испания"
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/nomad-spain-landing-figma/
+        type: product
+  - slug: nomad-english-megamenu-localization
+    name: "Digital Nomad: локализация английского мегаменю"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: "В английском меню вместо коротких названий стран появлялись
+      длинные заголовки страниц. Запрет переноса строк усиливал проблему: пункты
+      накладывались на соседние колонки, а часть навигации было трудно
+      прочитать."
+    stack:
+      - WordPress
+      - PHP
+      - CSS
+      - Multilingual navigation
+      - Playwright
+    order: 326
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/nomad-english-megamenu-localization/
+        type: product
