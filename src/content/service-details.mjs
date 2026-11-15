@@ -1,4 +1,20 @@
 export const serviceDetails = {
+  'b2b-catalog-and-enquiries': {
+    ru: ['Цена зависит от задачи, но покупателю всё равно нужно выбрать модель', 'Карточка должна помогать сравнить технику, а заявка — передавать контекст. Если человек уже выбрал машину, не нужно заставлять его повторно вводить название: подставим модель, а при выборе нескольких позиций передадим весь список. Условия и итоговую цену согласует менеджер.', 'Получите редактируемые карточки, согласованные фильтры и рабочий сценарий обращения. Перед приёмкой проверим, что модель и количество не теряются между витриной, формой и уведомлением. Если в объём входит счёт, отдельно проверим его поля и статус заказа.',],
+    en: ['The price depends on the job, but buyers still need to choose a model', 'The product page should support comparison, and the enquiry should carry the context. Prefill the chosen model instead of making buyers type it again; send the complete list when they select several items. Sales staff can then agree on terms and final pricing.', 'Get editable product pages, agreed filters and an enquiry flow. Before sign-off, verify that model and quantity survive the path from catalog to form to notification. If invoicing is in scope, check invoice fields and order status separately.'],
+    questions: {
+      ru: [
+        ['Можно оставить каталог без онлайн-оплаты?', 'Да. Для отдельных товаров подойдёт запрос с карточки, для комплектов и нескольких позиций — корзина-заявка. Подтверждение условий и оплату можно вынести на следующий шаг.'],
+        ['Что делать, если закупочные цены только в Excel?', 'Начнём с выборки: определим ключ товара, отделим закупочную цену от публичной и согласуем, какие поля обновляет импорт. Неопределённые строки не должны менять опубликованные карточки.'],
+        ['Как понять, не теряются ли заявки?', 'Проверим открытие формы и содержимое уведомления, а по согласованию отправим контрольную заявку. Успешное открытие формы само по себе не доказывает доставку письма.'],
+      ],
+      en: [
+        ['Can we keep the catalog without online payments?', 'Yes. Use a product-page enquiry for individual items or an enquiry cart for bundles and multiple items. Agreement and payment can happen afterward.'],
+        ['What if supplier prices only exist in Excel?', 'Start with a sample. Define a product key, separate internal costs from public prices, and agree which fields imports may overwrite. Ambiguous rows should not update public listings.'],
+        ['How do we know enquiries are not being lost?', 'Check the dialog and notification payload, then send an agreed test enquiry. A dialog opening successfully does not prove email delivery.'],
+      ],
+    },
+  },
   'ai-agent-workflows': {
     ru: ['Один и тот же промпт каждый раз даёт разный результат', 'Превращу промпт в последовательность действий с обязательными входными данными, примерами и правилами остановки. Например, сценарий подготовки кейса использует только подтверждённые работы и помечает отсутствующие метрики, а текст перед публикацией проверяет редактор.', 'Получите настроенный сценарий, инструкцию запуска, примеры входа и результата, критерии приёмки и список действий, которые остаются за человеком.'],
     en: ['The same prompt gives a different result every time', 'Turn the prompt into a workflow with required inputs, examples and clear stop rules. A case-study workflow, for instance, cites verified work, flags missing metrics and leaves the publish decision to an editor.', 'Get a configured workflow, run instructions, sample inputs and outputs, acceptance criteria and a list of actions that stay under human control.'],
