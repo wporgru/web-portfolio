@@ -1,0 +1,38 @@
+title: "Megawatt: moving 136 service entries to a new template"
+tagline: On staging, commercial services needed to be separated from articles
+  and projects. Service pages had to use structured editing fields without
+  changing mixed categories or losing content and search metadata.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - GeneratePress
+  - Secure Custom Fields
+  - SEO migration
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: On staging, commercial services needed to be separated from articles and
+      projects. Service pages had to use structured editing fields without
+      changing mixed categories or losing content and search metadata.
+  - type: text
+    title: How it works
+    body: Identified entries in clearly commercial categories, backed up the theme
+      and database, and converted 136 posts into pages. Applied a service
+      template with SCF sections, relevant images and FAQs. On 14 main service
+      pages, replaced generic copy with ten service-specific questions per page.
+      Rendered mobile pricing as cards with visible column labels while
+      retaining the desktop table and sorting.
+  - type: text
+    title: Result and verification
+    body: On staging, all 136 URLs returned HTTP 200 with one H1, the service
+      template and visible content. 135 retained their URLs; one received an
+      agreed new slug, and its former address continued to serve another
+      existing page. Production was not changed in this stage, so these results
+      do not establish release or indexing.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: content migration and redirects"
+        url: /showcase/megawatt-content/en/

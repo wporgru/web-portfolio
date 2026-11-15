@@ -5693,3 +5693,43 @@ projects:
       - label: Читать кейс
         url: /showcase/wellland-native-catalog-pagination/
         type: product
+  - slug: megawatt-service-template-migration
+    name: "«Мегаватт»: перенос 136 услуг на новый шаблон"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: На тестовой копии нужно было отделить коммерческие услуги от статей
+      и проектов. Страницы услуг должны редактироваться через структурированные
+      поля, но при переносе нельзя было затронуть смешанные рубрики или потерять
+      содержание и поисковые метаданные.
+    stack:
+      - WordPress
+      - GeneratePress
+      - Secure Custom Fields
+      - SEO migration
+      - Playwright
+    order: 317
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/megawatt-service-template-migration/
+        type: product
+  - slug: promkraska-regional-multisite-audit
+    name: "«Промкраска»: SEO-аудит четырёх городских поддоменов"
+    year: "08.2026"
+    role: Веб-разработка и автоматизация
+    description: Проверил, что мешает региональному каталогу показывать правильные
+      данные по городу. Массовый обход прерывался ошибками сервера, поэтому
+      нужно было отделить подтверждённые проблемы шаблонов от участков, которые
+      проверить полностью не получилось.
+    stack:
+      - WooCommerce
+      - WordPress Multisite
+      - Screaming Frog
+      - Search Console
+      - Technical SEO
+    order: 318
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/promkraska-regional-multisite-audit/
+        type: product

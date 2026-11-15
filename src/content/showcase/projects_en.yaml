@@ -5634,3 +5634,42 @@ projects:
       - label: Read case study
         url: /showcase/wellland-native-catalog-pagination/en/
         type: product
+  - slug: megawatt-service-template-migration
+    name: "Megawatt: moving 136 service entries to a new template"
+    year: "10.2026"
+    role: Web development and automation
+    description: On staging, commercial services needed to be separated from
+      articles and projects. Service pages had to use structured editing fields
+      without changing mixed categories or losing content and search metadata.
+    stack:
+      - WordPress
+      - GeneratePress
+      - Secure Custom Fields
+      - SEO migration
+      - Playwright
+    order: 317
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/megawatt-service-template-migration/en/
+        type: product
+  - slug: promkraska-regional-multisite-audit
+    name: "Promkraska: SEO audit of four regional subdomains"
+    year: "08.2026"
+    role: Web development and automation
+    description: Investigated why the regional catalog showed incorrect city
+      information. Server errors interrupted full crawling, so confirmed
+      template defects had to be separated from areas that could not be checked
+      exhaustively.
+    stack:
+      - WooCommerce
+      - WordPress Multisite
+      - Screaming Frog
+      - Search Console
+      - Technical SEO
+    order: 318
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/promkraska-regional-multisite-audit/en/
+        type: product

@@ -1,0 +1,32 @@
+title: "Promkraska: SEO audit of four regional subdomains"
+tagline: Investigated why the regional catalog showed incorrect city
+  information. Server errors interrupted full crawling, so confirmed template
+  defects had to be separated from areas that could not be checked exhaustively.
+year: "08.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WordPress Multisite
+  - Screaming Frog
+  - Search Console
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Investigated why the regional catalog showed incorrect city information.
+      Server errors interrupted full crawling, so confirmed template defects had
+      to be separated from areas that could not be checked exhaustively.
+  - type: text
+    title: How it works
+    body: Compared the primary domain and four subdomains across availability and
+      HTTPS, sitemaps, canonicals, headings, descriptions and product markup.
+      When crawler runs failed, switched to direct sampling. Compared city
+      homepages and product-template duplication signals, then reviewed exported
+      search analytics separately from crawl findings.
+  - type: text
+    title: Result and verification
+    body: "In 21 of 24 sampled regional product pages, descriptions repeated another
+      city, brand and phone number. The sitemap listed 2,807 URLs; that is not
+      the number of pages inspected. Delivered priorities: availability and
+      certificates first, then product templates and local business data. The
+      audit does not claim implementation or traffic gains."

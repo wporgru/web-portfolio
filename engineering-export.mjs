@@ -29,6 +29,7 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'megawatt-service-template-migration': ['megawatt-content', 'Похожая работа: перенос материалов и настройка редиректов', 'Related work: content migration and redirects'],
   'wellland-native-catalog-pagination': ['wellland-facets', 'Связанная работа: фильтры и атрибуты каталога', 'Related work: catalog attributes and filters'],
   'artred-woocommerce-migration-readiness': ['artred-b2b-equipment-catalog', 'Связанная работа: каталог техники и консультации', 'Related work: equipment catalog and consultations'],
   'artred-b2b-equipment-catalog': ['artred-woocommerce-migration-readiness', 'Связанная работа: подготовка сайта к переключению', 'Related work: preparing the site cutover'],
