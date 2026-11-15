@@ -54,6 +54,7 @@ const withBase = (p = '') => {
 
 const featuredMedia = media.find((m) => m.featured) ?? media[0] ?? null;
 const featuredImage = projectImage(featuredMedia?.src);
+const isInternal = (url: string) => url.startsWith('/') && !url.startsWith('//');
 
 // Inline style override if accent HEX is provided
 const accentStyle = accent ? `--card-accent: ${accent};` : '';
@@ -200,7 +201,7 @@ const accentStyle = accent ? `--card-accent: ${accent};` : '';
           {links
             .filter((l) => l?.label && l?.url)
             .map((l) => (
-              <a class="link" href={withBase(l.url)} target="_blank" rel="noopener">
+              <a class="link" href={withBase(l.url)} target={isInternal(l.url) ? undefined : '_blank'} rel={isInternal(l.url) ? undefined : 'noopener'}>
                 {l.label}
               </a>
             ))}
@@ -358,7 +359,7 @@ const accentStyle = accent ? `--card-accent: ${accent};` : '';
         {links
           .filter((l) => l?.label && l?.url)
           .map((l) => (
-            <a class="link" href={withBase(l.url)} target="_blank" rel="noopener">
+            <a class="link" href={withBase(l.url)} target={isInternal(l.url) ? undefined : '_blank'} rel={isInternal(l.url) ? undefined : 'noopener'}>
               {l.label}
             </a>
           ))}

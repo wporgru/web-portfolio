@@ -84,15 +84,14 @@ function buildHref(profileSlug: string, langId: string): string {
   const segments = [];
   if (profileSlug) segments.push(profileSlug);
   if (langId !== defaultLang) segments.push(langId);
-  return `${base}/${segments.join('/')}`;
+  return slash(`${base}/${segments.join('/')}`);
 }
 
 const homeHref     = buildHref(profile, lang);
 
-const isShowcaseIndex = Astro.url.pathname === `${base}/showcase`;
 const showcaseHref = lang === defaultLang
-  ? `${base}/showcase`
-  : `${base}/showcase/${lang}`;
+  ? `${base}/showcase/`
+  : `${base}/showcase/${lang}/`;
 
 const langLinks = customLangLinks ?? allLangs.map(l => ({
   id:     l.id,
@@ -250,7 +249,7 @@ const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
 
           <a href={showcaseHref}>{t('nav.showcase')}</a>
           <a href={base+'/services'+(lang===defaultLang?'/':'/'+lang+'/')}>{lang==='ru'?'Услуги':'Services'}</a>
-          <a href={slash(buildHref('', lang))+'#resume'}>{lang==='ru'?'Резюме':'Resume'}</a>
+          <a href={buildHref('', lang)+'#resume'}>{lang==='ru'?'Резюме':'Resume'}</a>
         </nav>
 
         <div class="lang">

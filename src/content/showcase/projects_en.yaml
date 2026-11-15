@@ -21,7 +21,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/78-dosok/en
+        url: /showcase/78-dosok/en/
         type: product
   - slug: diamond-tools
     name: "Diamond tools store: storefront improvements"
@@ -43,7 +43,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/diamond-tools/en
+        url: /showcase/diamond-tools/en/
         type: product
   - slug: stalex-feed
     name: "STALEX: automated import of 719 products"
@@ -66,7 +66,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/stalex-feed/en
+        url: /showcase/stalex-feed/en/
         type: product
   - slug: tara-bergman
     name: Photography website migration to WordPress
@@ -85,7 +85,7 @@ projects:
     media: []
     links:
       - label: Read case study
-        url: /showcase/tara-bergman/en
+        url: /showcase/tara-bergman/en/
         type: product
   - slug: primeclean-forms
     name: Spam protection for WordPress forms
@@ -103,7 +103,7 @@ projects:
     media: []
     links:
       - label: Read case study
-        url: /showcase/primeclean-forms/en
+        url: /showcase/primeclean-forms/en/
         type: product
   - slug: cvetnik-widget
     name: Contact widget for an InSales store
@@ -124,7 +124,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/cvetnik-widget/en
+        url: /showcase/cvetnik-widget/en/
         type: product
   - slug: service-checkout
     name: WooCommerce and YooKassa payments for services
@@ -147,7 +147,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/service-checkout/en
+        url: /showcase/service-checkout/en/
         type: product
   - slug: tile-catalog
     name: "Tile catalog: 1C sync and fractional stock"
@@ -169,7 +169,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/tile-catalog/en
+        url: /showcase/tile-catalog/en/
         type: product
   - slug: megawatt-content
     name: Migrating service pages and configuring redirects
@@ -192,7 +192,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/megawatt-content/en
+        url: /showcase/megawatt-content/en/
         type: product
   - slug: cleaning-catalog
     name: Cleaning equipment catalog import
@@ -215,7 +215,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/cleaning-catalog/en
+        url: /showcase/cleaning-catalog/en/
         type: product
   - slug: ajax-filters
     name: Category-specific AJAX filters for eight attributes
@@ -238,7 +238,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/ajax-filters/en
+        url: /showcase/ajax-filters/en/
         type: product
   - slug: sovo-sova
     name: "Sovo Sova: WooCommerce redesign on WoodMart"
@@ -261,7 +261,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/sovo-sova/en
+        url: /showcase/sovo-sova/en/
         type: product
   - slug: tea-shop
     name: Tea store rebuild with two product catalogs
@@ -284,7 +284,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/tea-shop/en
+        url: /showcase/tea-shop/en/
         type: product
   - slug: geekchoice
     name: "GeekChoice: electronics filters and comparison"
@@ -306,7 +306,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/geekchoice/en
+        url: /showcase/geekchoice/en/
         type: product
   - slug: bowling-migration
     name: WooCommerce hosting migration and product-page repair
@@ -329,7 +329,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/bowling-migration/en
+        url: /showcase/bowling-migration/en/
         type: product
   - slug: seo-dashboard
     name: SEO dashboard for analytics and indexing history
@@ -346,7 +346,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/seo-dashboard/en
+        url: /showcase/seo-dashboard/en/
         type: product
   - slug: medicine-data
     name: Medical reference data and normalization in Directus
@@ -364,7 +364,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/medicine-data/en
+        url: /showcase/medicine-data/en/
         type: product
   - slug: medimarket-catalog
     name: "MediMarket24: catalog builds from affiliate feeds"
@@ -381,7 +381,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/medimarket-catalog/en
+        url: /showcase/medimarket-catalog/en/
         type: product
   - slug: sport-affiliate
     name: "Sport-man: handling expired affiliate offers"
@@ -398,7 +398,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/sport-affiliate/en
+        url: /showcase/sport-affiliate/en/
         type: product
   - slug: wellland-facets
     name: "Wellland: global attributes and product filters"
@@ -415,7 +415,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wellland-facets/en
+        url: /showcase/wellland-facets/en/
         type: product
   - slug: autopartner-import
     name: "Autopartner: catalog update package"
@@ -431,7 +431,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/autopartner-import/en
+        url: /showcase/autopartner-import/en/
         type: product
   - slug: wp-studio
     name: "WP.ORG.RU: independent web studio site"
@@ -447,7 +447,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wp-studio/en
+        url: /showcase/wp-studio/en/
         type: product
   - slug: wpgencrm-recovery
     name: Recovering the Streamlit dashboard for WPGenCRM
@@ -464,7 +464,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wpgencrm-recovery/en
+        url: /showcase/wpgencrm-recovery/en/
         type: product
   - slug: goodwin-php
     name: "Goodwin Shop: PHP 8.3 upgrade after a failed attempt"
@@ -481,7 +481,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/goodwin-php/en
+        url: /showcase/goodwin-php/en/
         type: product
   - slug: two-catalog-import
     name: Migrating 205 products from two sources
@@ -496,7 +496,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/two-catalog-import/en
+        url: /showcase/two-catalog-import/en/
         type: product
   - slug: office-catalog
     name: Scraping and importing an office equipment catalog
@@ -512,7 +512,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/office-catalog/en
+        url: /showcase/office-catalog/en/
         type: product
   - slug: digital-guide-checkout
     name: Selling a digital guide without a cart step
@@ -527,7 +527,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/digital-guide-checkout/en
+        url: /showcase/digital-guide-checkout/en/
         type: product
   - slug: guest-cdek
     name: Restoring CDEK shipping quotes for guest shoppers
@@ -542,7 +542,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/guest-cdek/en
+        url: /showcase/guest-cdek/en/
         type: product
   - slug: electrical-catalog
     name: Electrical equipment scraping and catalog restructuring
@@ -558,7 +558,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/electrical-catalog/en
+        url: /showcase/electrical-catalog/en/
         type: product
   - slug: site-cleanup-recovery
     name: WordPress cleanup and recovery of site sections
@@ -574,7 +574,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/site-cleanup-recovery/en
+        url: /showcase/site-cleanup-recovery/en/
         type: product
   - slug: legacy-php-compatibility
     name: Updating RT-Theme 19 and its extension for PHP 8.5
@@ -591,7 +591,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/legacy-php-compatibility/en
+        url: /showcase/legacy-php-compatibility/en/
         type: product
   - slug: catalog-relaunch-cleanup
     name: Preparing a WooCommerce store for a catalog relaunch
@@ -607,7 +607,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/catalog-relaunch-cleanup/en
+        url: /showcase/catalog-relaunch-cleanup/en/
         type: product
   - slug: blog-rebuild-astra
     name: Migrating a WordPress blog to a clean Astra setup
@@ -623,7 +623,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/blog-rebuild-astra/en
+        url: /showcase/blog-rebuild-astra/en/
         type: product
   - slug: checkout-tax-breakdown
     name: Separating product and shipping VAT in WooCommerce
@@ -640,7 +640,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/checkout-tax-breakdown/en
+        url: /showcase/checkout-tax-breakdown/en/
         type: product
   - slug: yookassa-test-order
     name: Integrating YooKassa and testing payment and receipt
@@ -657,7 +657,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/yookassa-test-order/en
+        url: /showcase/yookassa-test-order/en/
         type: product
   - slug: course-catalog-excel
     name: Importing a training course catalog from Excel
@@ -674,7 +674,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/course-catalog-excel/en
+        url: /showcase/course-catalog-excel/en/
         type: product
   - slug: pool-sites-forms
     name: Refining inquiry forms across a group of pool websites
@@ -692,7 +692,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/pool-sites-forms/en
+        url: /showcase/pool-sites-forms/en/
         type: product
   - slug: woodmart-category-tools
     name: Configuring a tool store and automating its categories
@@ -710,7 +710,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woodmart-category-tools/en
+        url: /showcase/woodmart-category-tools/en/
         type: product
   - slug: dokan-marketplace-recovery
     name: Restoring product publishing in a Dokan marketplace
@@ -726,7 +726,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/dokan-marketplace-recovery/en
+        url: /showcase/dokan-marketplace-recovery/en/
         type: product
   - slug: metform-replacement
     name: Replacing MetForm and verifying inquiry delivery
@@ -742,7 +742,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/metform-replacement/en
+        url: /showcase/metform-replacement/en/
         type: product
   - slug: wordpress-sheet-to-blog
     name: Migrating Google Sheets content into a WordPress blog
@@ -759,7 +759,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-sheet-to-blog/en
+        url: /showcase/wordpress-sheet-to-blog/en/
         type: product
   - slug: woocommerce-bulk-editor
     name: Catalog export and bulk product editing in WooCommerce
@@ -775,7 +775,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-bulk-editor/en
+        url: /showcase/woocommerce-bulk-editor/en/
         type: product
   - slug: catalog-thumbnail-disk
     name: Managing thumbnail growth in a large WooCommerce catalog
@@ -792,7 +792,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/catalog-thumbnail-disk/en
+        url: /showcase/catalog-thumbnail-disk/en/
         type: product
   - slug: variation-import-template
     name: SKU-based WooCommerce variation import template
@@ -809,7 +809,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/variation-import-template/en
+        url: /showcase/variation-import-template/en/
         type: product
   - slug: woodmart-plural-forms
     name: Fixing Russian plural forms in a WoodMart catalog
@@ -825,7 +825,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woodmart-plural-forms/en
+        url: /showcase/woodmart-plural-forms/en/
         type: product
   - slug: form-confirmation-recovery
     name: Restoring WordPress form submission feedback
@@ -841,7 +841,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/form-confirmation-recovery/en
+        url: /showcase/form-confirmation-recovery/en/
         type: product
   - slug: fishing-catalog-launch
     name: Launching a fishing catalog from a supplier price list
@@ -857,7 +857,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/fishing-catalog-launch/en
+        url: /showcase/fishing-catalog-launch/en/
         type: product
   - slug: tile-storefront-woodmart
     name: A WoodMart tile storefront with an inquiry form
@@ -874,7 +874,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/tile-storefront-woodmart/en
+        url: /showcase/tile-storefront-woodmart/en/
         type: product
   - slug: product-accessories-logistics
     name: Compatible accessories and shipping in WooCommerce
@@ -890,7 +890,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/product-accessories-logistics/en
+        url: /showcase/product-accessories-logistics/en/
         type: product
   - slug: wordpress-footer-update
     name: WordPress component updates and footer recovery
@@ -907,7 +907,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-footer-update/en
+        url: /showcase/wordpress-footer-update/en/
         type: product
   - slug: two-brand-catalog-merge
     name: Merging two brand catalogs for WooCommerce
@@ -924,7 +924,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/two-brand-catalog-merge/en
+        url: /showcase/two-brand-catalog-merge/en/
         type: product
   - slug: wordpress-broken-media-repair
     name: Fixing broken blog images and redirect issues
@@ -942,7 +942,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-broken-media-repair/en
+        url: /showcase/wordpress-broken-media-repair/en/
         type: product
   - slug: legacy-wordpress-lead-form
     name: Updating legacy WordPress and restoring a lead form
@@ -960,7 +960,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/legacy-wordpress-lead-form/en
+        url: /showcase/legacy-wordpress-lead-form/en/
         type: product
   - slug: woodmart-marketplace-handoff
     name: Preparing WoodMart Marketplace for client-managed content
@@ -977,7 +977,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woodmart-marketplace-handoff/en
+        url: /showcase/woodmart-marketplace-handoff/en/
         type: product
   - slug: bowling-stock-notices
     name: Back-in-stock notifications and WhatsApp in BowlingStore
@@ -994,7 +994,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/bowling-stock-notices/en
+        url: /showcase/bowling-stock-notices/en/
         type: product
   - slug: ghibli-import-attributes
     name: Importing Ghibli & Wirbel and fixing missing specifications
@@ -1011,7 +1011,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/ghibli-import-attributes/en
+        url: /showcase/ghibli-import-attributes/en/
         type: product
   - slug: multilingual-consent-forms
     name: Consent and policy links in multilingual forms
@@ -1027,7 +1027,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/multilingual-consent-forms/en
+        url: /showcase/multilingual-consent-forms/en/
         type: product
   - slug: osmokot-cdek-checkout
     name: CDEK delivery and simpler checkout for Osmokot
@@ -1044,7 +1044,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/osmokot-cdek-checkout/en
+        url: /showcase/osmokot-cdek-checkout/en/
         type: product
   - slug: cargoterra-service-pages
     name: "CargoTerra: structuring a freight services website"
@@ -1060,7 +1060,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/cargoterra-service-pages/en
+        url: /showcase/cargoterra-service-pages/en/
         type: product
   - slug: ramayoga-storefront
     name: Restoring theme settings and navigation in RamaYoga
@@ -1076,7 +1076,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/ramayoga-storefront/en
+        url: /showcase/ramayoga-storefront/en/
         type: product
   - slug: wordpress-db-rollback
     name: Recovering WordPress pages from a database backup
@@ -1093,7 +1093,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-db-rollback/en
+        url: /showcase/wordpress-db-rollback/en/
         type: product
   - slug: wordpress-hosting-recovery
     name: Recovering a WordPress site after a malware incident
@@ -1110,7 +1110,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-hosting-recovery/en
+        url: /showcase/wordpress-hosting-recovery/en/
         type: product
   - slug: regional-seo-metadata
     name: Resolving duplicate metadata across a regional catalog
@@ -1128,7 +1128,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/regional-seo-metadata/en
+        url: /showcase/regional-seo-metadata/en/
         type: product
   - slug: tajbazar-store-upgrade
     name: Upgrading Taj Bazar while preserving its storefront design
@@ -1145,7 +1145,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/tajbazar-store-upgrade/en
+        url: /showcase/tajbazar-store-upgrade/en/
         type: product
   - slug: creatium-contact-widget
     name: Adding a contact widget to an existing Creatium site
@@ -1160,7 +1160,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/creatium-contact-widget/en
+        url: /showcase/creatium-contact-widget/en/
         type: product
   - slug: vk-widget-metrica
     name: Embedding VK and removing duplicate Metrica integrations
@@ -1177,7 +1177,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/vk-widget-metrica/en
+        url: /showcase/vk-widget-metrica/en/
         type: product
   - slug: mobile-product-image-sizing
     name: Correcting mobile product image sizes on a storefront
@@ -1193,7 +1193,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/mobile-product-image-sizing/en
+        url: /showcase/mobile-product-image-sizing/en/
         type: product
   - slug: blog-tags-and-antispam
     name: Fixing blog tag navigation and reducing form spam
@@ -1210,7 +1210,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/blog-tags-and-antispam/en
+        url: /showcase/blog-tags-and-antispam/en/
         type: product
   - slug: header-logo-and-search
     name: Fixing logo navigation and replacing header search
@@ -1225,7 +1225,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/header-logo-and-search/en
+        url: /showcase/header-logo-and-search/en/
         type: product
   - slug: woodmart-product-page-recovery
     name: Restoring product pages in a WoodMart store
@@ -1242,7 +1242,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woodmart-product-page-recovery/en
+        url: /showcase/woodmart-product-page-recovery/en/
         type: product
   - slug: generator-catalog-variants
     name: Generator catalog from multiple supplier exports
@@ -1259,7 +1259,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/generator-catalog-variants/en
+        url: /showcase/generator-catalog-variants/en/
         type: product
   - slug: plumbing-catalog-selection
     name: Selecting and importing a large plumbing catalog
@@ -1277,7 +1277,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/plumbing-catalog-selection/en
+        url: /showcase/plumbing-catalog-selection/en/
         type: product
   - slug: bitrix-staging-import
     name: Importing products from 1C-Bitrix into WooCommerce staging
@@ -1294,7 +1294,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/bitrix-staging-import/en
+        url: /showcase/bitrix-staging-import/en/
         type: product
   - slug: filament-savoy-storefront
     name: "Filament Store: restoring storefront and SEO templates"
@@ -1312,7 +1312,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/filament-savoy-storefront/en
+        url: /showcase/filament-savoy-storefront/en/
         type: product
   - slug: ozon-pet-catalog
     name: From Ozon exports to a pet product catalog
@@ -1330,7 +1330,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/ozon-pet-catalog/en
+        url: /showcase/ozon-pet-catalog/en/
         type: product
   - slug: batch-watermark-images
     name: Batch watermarking of 914 product photographs
@@ -1347,7 +1347,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/batch-watermark-images/en
+        url: /showcase/batch-watermark-images/en/
         type: product
   - slug: gadget-store-mobile-cart
     name: Mobile navigation and cart for a gadget store
@@ -1363,7 +1363,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/gadget-store-mobile-cart/en
+        url: /showcase/gadget-store-mobile-cart/en/
         type: product
   - slug: promarko-astra-foundation
     name: Building a corporate site foundation for Promarko
@@ -1380,7 +1380,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/promarko-astra-foundation/en
+        url: /showcase/promarko-astra-foundation/en/
         type: product
   - slug: diamond-grinding-products
     name: Preparing and importing diamond grinding products
@@ -1397,7 +1397,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/diamond-grinding-products/en
+        url: /showcase/diamond-grinding-products/en/
         type: product
   - slug: mobile-call-button-footer
     name: Mobile click-to-call and footer repair for a service site
@@ -1414,7 +1414,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/mobile-call-button-footer/en
+        url: /showcase/mobile-call-button-footer/en/
         type: product
   - slug: messenger-widget-code-handoff
     name: Delivering an HTML CSS and JavaScript messenger widget
@@ -1432,7 +1432,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/messenger-widget-code-handoff/en
+        url: /showcase/messenger-widget-code-handoff/en/
         type: product
   - slug: woocommerce-attribute-workflow
     name: Designing a bulk WooCommerce attribute editing workflow
@@ -1450,7 +1450,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-attribute-workflow/en
+        url: /showcase/woocommerce-attribute-workflow/en/
         type: product
   - slug: wordpress-internal-https
     name: Fixing internal HTTP links on a WordPress site
@@ -1467,7 +1467,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-internal-https/en
+        url: /showcase/wordpress-internal-https/en/
         type: product
   - slug: breez-api-catalog
     name: Importing 2,744 Breez products via API into WooCommerce
@@ -1485,7 +1485,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/breez-api-catalog/en
+        url: /showcase/breez-api-catalog/en/
         type: product
   - slug: aurora-xml-price-stock
     name: Mapping bundle prices and stock from the Aurora XML feed
@@ -1503,7 +1503,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/aurora-xml-price-stock/en
+        url: /showcase/aurora-xml-price-stock/en/
         type: product
   - slug: vstrade-supplier-pricing
     name: Importing VsTrade products and syncing prices and stock
@@ -1520,7 +1520,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/vstrade-supplier-pricing/en
+        url: /showcase/vstrade-supplier-pricing/en/
         type: product
   - slug: astra-editable-homepage
     name: Building an editable Astra homepage from a client design
@@ -1537,7 +1537,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/astra-editable-homepage/en
+        url: /showcase/astra-editable-homepage/en/
         type: product
   - slug: welding-supplier-import
     name: Importing a welding equipment catalog into WooCommerce
@@ -1554,7 +1554,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/welding-supplier-import/en
+        url: /showcase/welding-supplier-import/en/
         type: product
   - slug: elementor-editor-recovery
     name: Restoring Elementor after a critical WordPress error
@@ -1571,7 +1571,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/elementor-editor-recovery/en
+        url: /showcase/elementor-editor-recovery/en/
         type: product
   - slug: php8-layout-repair
     name: Upgrading WordPress to PHP 8 and repairing layout
@@ -1588,7 +1588,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/php8-layout-repair/en
+        url: /showcase/php8-layout-repair/en/
         type: product
   - slug: aurora-storefront-availability
     name: Displaying availability and lead times on the Aurora storefront
@@ -1605,7 +1605,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/aurora-storefront-availability/en
+        url: /showcase/aurora-storefront-availability/en/
         type: product
   - slug: checkout-contact-foundation
     name: Improving WooCommerce checkout and contact flows
@@ -1621,7 +1621,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/checkout-contact-foundation/en
+        url: /showcase/checkout-contact-foundation/en/
         type: product
   - slug: animated-max-telegram-widget
     name: An animated MAX and Telegram contact widget
@@ -1638,7 +1638,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/animated-max-telegram-widget/en
+        url: /showcase/animated-max-telegram-widget/en/
         type: product
   - slug: messenger-and-email-leads
     name: Replacing a contact widget and restoring an inquiry form
@@ -1656,7 +1656,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/messenger-and-email-leads/en
+        url: /showcase/messenger-and-email-leads/en/
         type: product
   - slug: osmokot-product-page-repair
     name: Repairing an Osmokot product page and its template
@@ -1672,7 +1672,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/osmokot-product-page-repair/en
+        url: /showcase/osmokot-product-page-repair/en/
         type: product
   - slug: woodmart-theme-rebuild
     name: Updating WoodMart and rebuilding the header and footer
@@ -1689,7 +1689,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woodmart-theme-rebuild/en
+        url: /showcase/woodmart-theme-rebuild/en/
         type: product
   - slug: woocommerce-cart-recovery
     name: Restoring the cart and checkout in WooCommerce
@@ -1706,7 +1706,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-cart-recovery/en
+        url: /showcase/woocommerce-cart-recovery/en/
         type: product
   - slug: dpd-woocommerce-setup
     name: Configuring DPD delivery for a WooCommerce store
@@ -1722,7 +1722,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/dpd-woocommerce-setup/en
+        url: /showcase/dpd-woocommerce-setup/en/
         type: product
   - slug: paypal-standard-checkout
     name: Restoring PayPal compatibility in WooCommerce checkout
@@ -1738,7 +1738,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/paypal-standard-checkout/en
+        url: /showcase/paypal-standard-checkout/en/
         type: product
   - slug: xlsx-large-catalog
     name: Importing more than 15,000 WooCommerce items from XLSX
@@ -1756,7 +1756,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/xlsx-large-catalog/en
+        url: /showcase/xlsx-large-catalog/en/
         type: product
   - slug: tub-store-mobile-layout
     name: Mobile layout and cart refinements for a soaking tub store
@@ -1772,7 +1772,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/tub-store-mobile-layout/en
+        url: /showcase/tub-store-mobile-layout/en/
         type: product
   - slug: cosmetics-woodmart-migration
     name: Migrating a cosmetics store to WoodMart using staging
@@ -1790,7 +1790,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/cosmetics-woodmart-migration/en
+        url: /showcase/cosmetics-woodmart-migration/en/
         type: product
   - slug: daichi-two-stage-catalog
     name: Importing the Daichi catalog through a two-part API
@@ -1807,7 +1807,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/daichi-two-stage-catalog/en
+        url: /showcase/daichi-two-stage-catalog/en/
         type: product
   - slug: champs-catalog-structure
     name: Catalog structure, filters and URLs for the Champs store
@@ -1824,7 +1824,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/champs-catalog-structure/en
+        url: /showcase/champs-catalog-structure/en/
         type: product
   - slug: paypal-checkout-presentation
     name: Simplifying the checkout form after PayPal setup
@@ -1841,7 +1841,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/paypal-checkout-presentation/en
+        url: /showcase/paypal-checkout-presentation/en/
         type: product
   - slug: cleaning-messenger-buttons
     name: WhatsApp and Telegram contact buttons for a cleaning website
@@ -1857,7 +1857,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/cleaning-messenger-buttons/en
+        url: /showcase/cleaning-messenger-buttons/en/
         type: product
   - slug: tub-store-guest-checkout
     name: Performance work and guest checkout for a soaking tub store
@@ -1875,7 +1875,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/tub-store-guest-checkout/en
+        url: /showcase/tub-store-guest-checkout/en/
         type: product
   - slug: circa-outlet-catalog
     name: "Circa Outlet: importing 9,645 products and displaying sizes"
@@ -1891,7 +1891,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/circa-outlet-catalog/en
+        url: /showcase/circa-outlet-catalog/en/
         type: product
   - slug: torin-fashion-import
     name: "Torin Fashion: migrating a clothing assortment"
@@ -1908,7 +1908,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/torin-fashion-import/en
+        url: /showcase/torin-fashion-import/en/
         type: product
   - slug: dollor-feed-pricing
     name: "DOLLOR: importing equipment and updating prices"
@@ -1924,7 +1924,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/dollor-feed-pricing/en
+        url: /showcase/dollor-feed-pricing/en/
         type: product
   - slug: footwear-variation-import
     name: Reusable import template for footwear variations
@@ -1941,7 +1941,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/footwear-variation-import/en
+        url: /showcase/footwear-variation-import/en/
         type: product
   - slug: construction-catalog-variants
     name: Building supply catalog with variants, filters and search
@@ -1959,7 +1959,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/construction-catalog-variants/en
+        url: /showcase/construction-catalog-variants/en/
         type: product
   - slug: xml-variable-catalog-refresh
     name: XML import of variable products with markup rules
@@ -1976,7 +1976,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/xml-variable-catalog-refresh/en
+        url: /showcase/xml-variable-catalog-refresh/en/
         type: product
   - slug: zipal-listings-schedule
     name: Refreshing Zipal property listings every six hours
@@ -1993,7 +1993,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/zipal-listings-schedule/en
+        url: /showcase/zipal-listings-schedule/en/
         type: product
   - slug: generator-storefront-rebuild
     name: Restoring a generator storefront and its product pages
@@ -2010,7 +2010,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/generator-storefront-rebuild/en
+        url: /showcase/generator-storefront-rebuild/en/
         type: product
   - slug: megamarket-store-foundation
     name: Preparing a WoodMart Megamarket store with SSL
@@ -2028,7 +2028,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/megamarket-store-foundation/en
+        url: /showcase/megamarket-store-foundation/en/
         type: product
   - slug: automotive-catalog-photo-collection
     name: Automated photo collection from an automotive catalog
@@ -2044,7 +2044,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/automotive-catalog-photo-collection/en
+        url: /showcase/automotive-catalog-photo-collection/en/
         type: product
   - slug: woocommerce-template-recovery
     name: Repairing WooCommerce categories and menus after an update
@@ -2062,7 +2062,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-template-recovery/en
+        url: /showcase/woocommerce-template-recovery/en/
         type: product
   - slug: prodamus-discount-repair
     name: Fixing a WooCommerce discount for Prodamus checkout
@@ -2079,7 +2079,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/prodamus-discount-repair/en
+        url: /showcase/prodamus-discount-repair/en/
         type: product
   - slug: mega-electronics-setup
     name: Configuring a WoodMart Mega Electronics storefront
@@ -2097,7 +2097,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/mega-electronics-setup/en
+        url: /showcase/mega-electronics-setup/en/
         type: product
   - slug: store-theme-reset
     name: Recovering a store after conflicting page-builder edits
@@ -2114,7 +2114,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/store-theme-reset/en
+        url: /showcase/store-theme-reset/en/
         type: product
   - slug: dme-english-service-site
     name: An English-language service website for DME
@@ -2131,7 +2131,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/dme-english-service-site/en
+        url: /showcase/dme-english-service-site/en/
         type: product
   - slug: hockey-insales-woodmart
     name: Migrating a hockey catalog from InSales to WoodMart
@@ -2149,7 +2149,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/hockey-insales-woodmart/en
+        url: /showcase/hockey-insales-woodmart/en/
         type: product
   - slug: hockey-storefront-ux
     name: Redesigning product cards and the mobile storefront
@@ -2167,7 +2167,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/hockey-storefront-ux/en
+        url: /showcase/hockey-storefront-ux/en/
         type: product
   - slug: supplier-price-list-refresh
     name: Refreshing prices and assortment from a new price list
@@ -2184,7 +2184,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/supplier-price-list-refresh/en
+        url: /showcase/supplier-price-list-refresh/en/
         type: product
   - slug: two-store-category-repricing
     name: Repricing selected categories across two online stores
@@ -2200,7 +2200,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/two-store-category-repricing/en
+        url: /showcase/two-store-category-repricing/en/
         type: product
   - slug: avangard-woodmart-foundation
     name: Setting up an Avangard Plus store on WoodMart
@@ -2217,7 +2217,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/avangard-woodmart-foundation/en
+        url: /showcase/avangard-woodmart-foundation/en/
         type: product
   - slug: gutenberg-store-migration
     name: Replacing a store theme and restoring checkout
@@ -2236,7 +2236,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/gutenberg-store-migration/en
+        url: /showcase/gutenberg-store-migration/en/
         type: product
   - slug: cdek-address-and-parcel
     name: CDEK shipping quotes and address suggestions in checkout
@@ -2253,7 +2253,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/cdek-address-and-parcel/en
+        url: /showcase/cdek-address-and-parcel/en/
         type: product
   - slug: xml-sewing-equipment-catalog
     name: Importing sewing equipment from a supplier XML feed
@@ -2270,7 +2270,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/xml-sewing-equipment-catalog/en
+        url: /showcase/xml-sewing-equipment-catalog/en/
         type: product
   - slug: yandex-mail-signature-kit
     name: Six corporate HTML signatures for Yandex Mail
@@ -2287,7 +2287,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/yandex-mail-signature-kit/en
+        url: /showcase/yandex-mail-signature-kit/en/
         type: product
   - slug: bowling-woodmart-launch
     name: Building the foundation for a bowling equipment store
@@ -2304,7 +2304,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/bowling-woodmart-launch/en
+        url: /showcase/bowling-woodmart-launch/en/
         type: product
   - slug: fashion-data-preparation
     name: Collecting a fashion catalog and preparing import data
@@ -2321,7 +2321,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/fashion-data-preparation/en
+        url: /showcase/fashion-data-preparation/en/
         type: product
   - slug: construction-services-site
     name: Reworking service pages for a construction company
@@ -2339,7 +2339,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/construction-services-site/en
+        url: /showcase/construction-services-site/en/
         type: product
   - slug: wordpress-editor-map-recovery
     name: Restoring edit saving in the WordPress editor
@@ -2355,7 +2355,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-editor-map-recovery/en
+        url: /showcase/wordpress-editor-map-recovery/en/
         type: product
   - slug: child-theme-store-training
     name: Repairing a store theme and training its owner
@@ -2372,7 +2372,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/child-theme-store-training/en
+        url: /showcase/child-theme-store-training/en/
         type: product
   - slug: taxi-vehicle-booking
     name: Vehicle selection form for Silver Park Taxi
@@ -2388,7 +2388,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/taxi-vehicle-booking/en
+        url: /showcase/taxi-vehicle-booking/en/
         type: product
   - slug: taxi-mobile-car-cards
     name: Mobile car cards for Silver Park Taxi
@@ -2406,7 +2406,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/taxi-mobile-car-cards/en
+        url: /showcase/taxi-mobile-car-cards/en/
         type: product
   - slug: woodmart-equipment-store
     name: Adapting WoodMart for an equipment store
@@ -2423,7 +2423,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woodmart-equipment-store/en
+        url: /showcase/woodmart-equipment-store/en/
         type: product
   - slug: plant-store-variation-repair
     name: Repairing product variations and signup in a plant store
@@ -2441,7 +2441,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/plant-store-variation-repair/en
+        url: /showcase/plant-store-variation-repair/en/
         type: product
   - slug: furniture-catalog-csv-migration
     name: Migrating a furniture catalog to WooCommerce
@@ -2459,7 +2459,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/furniture-catalog-csv-migration/en
+        url: /showcase/furniture-catalog-csv-migration/en/
         type: product
   - slug: woocommerce-layout-bulk-edit-advice
     name: WooCommerce layout and catalog editing consultation
@@ -2477,7 +2477,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-layout-bulk-edit-advice/en
+        url: /showcase/woocommerce-layout-bulk-edit-advice/en/
         type: product
   - slug: auto-service-site-handoff
     name: Auto repair website package for self-hosted setup
@@ -2493,7 +2493,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/auto-service-site-handoff/en
+        url: /showcase/auto-service-site-handoff/en/
         type: product
   - slug: food-delivery-city-selector
     name: City selector for a food delivery website
@@ -2510,7 +2510,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/food-delivery-city-selector/en
+        url: /showcase/food-delivery-city-selector/en/
         type: product
   - slug: hvac-store-index-audit
     name: Technical SEO for an HVAC equipment store
@@ -2528,7 +2528,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/hvac-store-index-audit/en
+        url: /showcase/hvac-store-index-audit/en/
         type: product
   - slug: spanish-portfolio-localization
     name: Spanish localization for a WordPress portfolio
@@ -2545,7 +2545,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/spanish-portfolio-localization/en
+        url: /showcase/spanish-portfolio-localization/en/
         type: product
   - slug: lighting-store-product-specs
     name: Product specifications and cart for a lighting store
@@ -2562,7 +2562,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/lighting-store-product-specs/en
+        url: /showcase/lighting-store-product-specs/en/
         type: product
   - slug: coffee-catalog-price-layout
     name: WooCommerce coffee cards with pack-size options
@@ -2579,7 +2579,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/coffee-catalog-price-layout/en
+        url: /showcase/coffee-catalog-price-layout/en/
         type: product
   - slug: plumbing-catalog-data-handoff
     name: Preparing plumbing catalog data for import
@@ -2597,7 +2597,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/plumbing-catalog-data-handoff/en
+        url: /showcase/plumbing-catalog-data-handoff/en/
         type: product
   - slug: portuguese-responsive-site
     name: Responsive Portuguese-language website from a reference
@@ -2614,7 +2614,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/portuguese-responsive-site/en
+        url: /showcase/portuguese-responsive-site/en/
         type: product
   - slug: arenda-pm-home-performance
     name: Faster mobile homepage for Arenda-PM
@@ -2637,7 +2637,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/arenda-pm-home-performance/en
+        url: /showcase/arenda-pm-home-performance/en/
         type: product
   - slug: marketplace-photo-batch
     name: Batch image preparation for Ozon and Wildberries
@@ -2658,7 +2658,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/marketplace-photo-batch/en
+        url: /showcase/marketplace-photo-batch/en/
         type: product
   - slug: boxberry-cart-recovery
     name: Boxberry setup and WooCommerce cart recovery
@@ -2676,7 +2676,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/boxberry-cart-recovery/en
+        url: /showcase/boxberry-cart-recovery/en/
         type: product
   - slug: roofing-store-seo
     name: SEO metadata for a roofing materials store
@@ -2693,7 +2693,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/roofing-store-seo/en
+        url: /showcase/roofing-store-seo/en/
         type: product
   - slug: prelaunch-wordpress-seo
     name: WordPress SEO preparation before launch
@@ -2711,7 +2711,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/prelaunch-wordpress-seo/en
+        url: /showcase/prelaunch-wordpress-seo/en/
         type: product
   - slug: service-page-product-selection
     name: Relevant WooCommerce products on service pages
@@ -2727,7 +2727,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/service-page-product-selection/en
+        url: /showcase/service-page-product-selection/en/
         type: product
   - slug: altr-storefront-adaptation
     name: Adapting an existing WooCommerce store to Altr
@@ -2745,7 +2745,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/altr-storefront-adaptation/en
+        url: /showcase/altr-storefront-adaptation/en/
         type: product
   - slug: hyperstroy-tool-store
     name: "HyperStroy: launching a tools and equipment store"
@@ -2768,7 +2768,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/hyperstroy-tool-store/en
+        url: /showcase/hyperstroy-tool-store/en/
         type: product
   - slug: real-estate-photo-import-repair
     name: Repairing the import of property listings and photos
@@ -2785,7 +2785,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/real-estate-photo-import-repair/en
+        url: /showcase/real-estate-photo-import-repair/en/
         type: product
   - slug: yandex-delivery-pickup-setup
     name: Setting up Yandex Delivery pickup in WooCommerce
@@ -2803,7 +2803,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/yandex-delivery-pickup-setup/en
+        url: /showcase/yandex-delivery-pickup-setup/en/
         type: product
   - slug: product-consultation-and-filters
     name: Product consultation form and filters in WooCommerce
@@ -2820,7 +2820,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/product-consultation-and-filters/en
+        url: /showcase/product-consultation-and-filters/en/
         type: product
   - slug: hvac-category-filter-templates
     name: Filter templates for HVAC product categories
@@ -2838,7 +2838,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/hvac-category-filter-templates/en
+        url: /showcase/hvac-category-filter-templates/en/
         type: product
   - slug: flooring-catalog-id-refresh
     name: Updating a flooring catalog by product ID
@@ -2854,7 +2854,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/flooring-catalog-id-refresh/en
+        url: /showcase/flooring-catalog-id-refresh/en/
         type: product
   - slug: acf-homepage-update-recovery
     name: Restoring a WordPress homepage backed by ACF
@@ -2871,7 +2871,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/acf-homepage-update-recovery/en
+        url: /showcase/acf-homepage-update-recovery/en/
         type: product
   - slug: hanyi-facade-panel-catalog
     name: Building out the Hanyi facade panel catalog
@@ -2887,7 +2887,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/hanyi-facade-panel-catalog/en
+        url: /showcase/hanyi-facade-panel-catalog/en/
         type: product
   - slug: yandex-crawl-parameter-cleanup
     name: Cleaning up redundant URLs in Yandex Webmaster
@@ -2905,7 +2905,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/yandex-crawl-parameter-cleanup/en
+        url: /showcase/yandex-crawl-parameter-cleanup/en/
         type: product
   - slug: lighting-catalog-staged-import
     name: Staged import of a large lighting catalog
@@ -2923,7 +2923,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/lighting-catalog-staged-import/en
+        url: /showcase/lighting-catalog-staged-import/en/
         type: product
   - slug: lighting-catalog-navigation
     name: Navigation and filters for a large lighting catalog
@@ -2940,7 +2940,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/lighting-catalog-navigation/en
+        url: /showcase/lighting-catalog-navigation/en/
         type: product
   - slug: fastener-specification-display
     name: Restoring fastener specifications in WooCommerce
@@ -2958,7 +2958,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/fastener-specification-display/en
+        url: /showcase/fastener-specification-display/en/
         type: product
   - slug: fastener-catalog-attribute-filters
     name: Attribute filters for a fastener catalog
@@ -2975,7 +2975,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/fastener-catalog-attribute-filters/en
+        url: /showcase/fastener-catalog-attribute-filters/en/
         type: product
   - slug: transport-site-media-repair
     name: Responsive video and navigation on a transport website
@@ -2991,7 +2991,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/transport-site-media-repair/en
+        url: /showcase/transport-site-media-repair/en/
         type: product
   - slug: bgtgroup-technical-seo-performance
     name: "BGT Group: technical SEO and site performance"
@@ -3009,7 +3009,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/bgtgroup-technical-seo-performance/en
+        url: /showcase/bgtgroup-technical-seo-performance/en/
         type: product
   - slug: edible-bouquet-catalog-data
     name: Preparing edible bouquet products for WooCommerce
@@ -3026,7 +3026,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/edible-bouquet-catalog-data/en
+        url: /showcase/edible-bouquet-catalog-data/en/
         type: product
   - slug: woocommerce-product-template-training
     name: Individual WooCommerce product page templates
@@ -3043,7 +3043,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-product-template-training/en
+        url: /showcase/woocommerce-product-template-training/en/
         type: product
   - slug: woocommerce-native-order-statuses
     name: Restoring native WooCommerce order statuses
@@ -3059,7 +3059,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-native-order-statuses/en
+        url: /showcase/woocommerce-native-order-statuses/en/
         type: product
   - slug: woocommerce-admin-email-items
     name: Restoring order items in WooCommerce admin emails
@@ -3075,7 +3075,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-admin-email-items/en
+        url: /showcase/woocommerce-admin-email-items/en/
         type: product
   - slug: booking-form-email-recovery
     name: Restoring email from website booking forms
@@ -3092,7 +3092,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/booking-form-email-recovery/en
+        url: /showcase/booking-form-email-recovery/en/
         type: product
   - slug: cart-gift-thresholds
     name: Updating gift thresholds in a delivery store cart
@@ -3108,7 +3108,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/cart-gift-thresholds/en
+        url: /showcase/cart-gift-thresholds/en/
         type: product
   - slug: door-catalog-variation-import
     name: Importing a door catalog with color and size options
@@ -3125,7 +3125,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/door-catalog-variation-import/en
+        url: /showcase/door-catalog-variation-import/en/
         type: product
   - slug: tilda-yml-specifications
     name: Refining a Tilda YML product feed for Yandex
@@ -3143,7 +3143,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/tilda-yml-specifications/en
+        url: /showcase/tilda-yml-specifications/en/
         type: product
   - slug: yookassa-webhook-recovery
     name: Restoring YooKassa payment notifications
@@ -3160,7 +3160,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/yookassa-webhook-recovery/en
+        url: /showcase/yookassa-webhook-recovery/en/
         type: product
   - slug: garland-catalog-import-training
     name: Garland catalog import and color variations
@@ -3183,7 +3183,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/garland-catalog-import-training/en
+        url: /showcase/garland-catalog-import-training/en/
         type: product
   - slug: estate-renovation-astra-site
     name: Astra website for the Pomestye renovation company
@@ -3200,7 +3200,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/estate-renovation-astra-site/en
+        url: /showcase/estate-renovation-astra-site/en/
         type: product
   - slug: car-buyback-site-with-blog
     name: Car buyback website with services and a blog
@@ -3217,7 +3217,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/car-buyback-site-with-blog/en
+        url: /showcase/car-buyback-site-with-blog/en/
         type: product
   - slug: related-articles-product-tabs
     name: Related articles in WooCommerce product tabs
@@ -3233,7 +3233,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/related-articles-product-tabs/en
+        url: /showcase/related-articles-product-tabs/en/
         type: product
   - slug: metrica-ecommerce-purchase-goals
     name: Yandex Metrica e-commerce and purchase goals
@@ -3249,7 +3249,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/metrica-ecommerce-purchase-goals/en
+        url: /showcase/metrica-ecommerce-purchase-goals/en/
         type: product
   - slug: wordpress-webp-image-workflow
     name: WordPress image optimization and WebP delivery
@@ -3267,7 +3267,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-webp-image-workflow/en
+        url: /showcase/wordpress-webp-image-workflow/en/
         type: product
   - slug: academy-opt-one-page-checkout
     name: One-page course checkout with Tinkoff payment
@@ -3285,7 +3285,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/academy-opt-one-page-checkout/en
+        url: /showcase/academy-opt-one-page-checkout/en/
         type: product
   - slug: cdek-pickup-without-rating
     name: CDEK pickup point selection without rate calculation
@@ -3303,7 +3303,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/cdek-pickup-without-rating/en
+        url: /showcase/cdek-pickup-without-rating/en/
         type: product
   - slug: woocommerce-taplink-export
     name: Exporting a WooCommerce catalog for Taplink
@@ -3320,7 +3320,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-taplink-export/en
+        url: /showcase/woocommerce-taplink-export/en/
         type: product
   - slug: industrial-image-ai-upscale
     name: AI-assisted upscaling for bridge railing images
@@ -3337,7 +3337,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/industrial-image-ai-upscale/en
+        url: /showcase/industrial-image-ai-upscale/en/
         type: product
   - slug: florist-scheduled-yml-feed
     name: Automatically refreshed YML feed for a florist
@@ -3354,7 +3354,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/florist-scheduled-yml-feed/en
+        url: /showcase/florist-scheduled-yml-feed/en/
         type: product
   - slug: inegolhome-furniture-store
     name: Inegol Home furniture store and catalog import
@@ -3377,7 +3377,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/inegolhome-furniture-store/en
+        url: /showcase/inegolhome-furniture-store/en/
         type: product
   - slug: gauss-image-link-export
     name: Exporting Gauss SKUs and photo links to Excel
@@ -3395,7 +3395,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/gauss-image-link-export/en
+        url: /showcase/gauss-image-link-export/en/
         type: product
   - slug: coffee-machine-yml-model-tag
     name: Adding a model element to a coffee machine YML feed
@@ -3413,7 +3413,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/coffee-machine-yml-model-tag/en
+        url: /showcase/coffee-machine-yml-model-tag/en/
         type: product
   - slug: bite-news-wordpress-launch
     name: "Bite News: launching a dark news website"
@@ -3436,7 +3436,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/bite-news-wordpress-launch/en
+        url: /showcase/bite-news-wordpress-launch/en/
         type: product
   - slug: anta-preorder-variant-import
     name: Importing ANTA preorder variants from three spreadsheets
@@ -3454,7 +3454,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/anta-preorder-variant-import/en
+        url: /showcase/anta-preorder-variant-import/en/
         type: product
   - slug: spare-parts-enquiry-catalog
     name: Spare parts catalog without online checkout
@@ -3472,7 +3472,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/spare-parts-enquiry-catalog/en
+        url: /showcase/spare-parts-enquiry-catalog/en/
         type: product
   - slug: watchdivision-home-megamenu
     name: WatchDivision homepage and mega menu redesign
@@ -3490,7 +3490,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/watchdivision-home-megamenu/en
+        url: /showcase/watchdivision-home-megamenu/en/
         type: product
   - slug: english-affiliate-storefront
     name: English-language affiliate storefront on WoodMart
@@ -3508,7 +3508,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/english-affiliate-storefront/en
+        url: /showcase/english-affiliate-storefront/en/
         type: product
   - slug: industrial-builder-landing
     name: One-page website for Neftekhimik-N
@@ -3530,7 +3530,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/industrial-builder-landing/en
+        url: /showcase/industrial-builder-landing/en/
         type: product
   - slug: lingfast-language-site-foundation
     name: "Lingfast: website foundation for a language project"
@@ -3548,7 +3548,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/lingfast-language-site-foundation/en
+        url: /showcase/lingfast-language-site-foundation/en/
         type: product
   - slug: blinds-conditional-enquiry-fields
     name: Conditional enquiry fields for a blinds website
@@ -3565,7 +3565,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/blinds-conditional-enquiry-fields/en
+        url: /showcase/blinds-conditional-enquiry-fields/en/
         type: product
   - slug: creatium-to-elementor-header
     name: Rebuilding a Creatium header in WordPress
@@ -3583,7 +3583,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/creatium-to-elementor-header/en
+        url: /showcase/creatium-to-elementor-header/en/
         type: product
   - slug: three-sites-dns-ssl-migration
     name: Coordinating a three-site migration, DNS and TLS
@@ -3601,7 +3601,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/three-sites-dns-ssl-migration/en
+        url: /showcase/three-sites-dns-ssl-migration/en/
         type: product
   - slug: per-product-quantity-discounts
     name: Per-product quantity discounts in WooCommerce
@@ -3617,7 +3617,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/per-product-quantity-discounts/en
+        url: /showcase/per-product-quantity-discounts/en/
         type: product
   - slug: generatepress-editorial-blog
     name: GeneratePress blog with article contents
@@ -3634,7 +3634,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/generatepress-editorial-blog/en
+        url: /showcase/generatepress-editorial-blog/en/
         type: product
   - slug: saferoute-shipping-migration
     name: Replacing Shiptor with SafeRoute in WooCommerce
@@ -3651,7 +3651,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/saferoute-shipping-migration/en
+        url: /showcase/saferoute-shipping-migration/en/
         type: product
   - slug: titanfox-catalog-hosting-migration
     name: Titanfox catalog navigation and hosting migration
@@ -3668,7 +3668,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/titanfox-catalog-hosting-migration/en
+        url: /showcase/titanfox-catalog-hosting-migration/en/
         type: product
   - slug: grundfos-pump-catalog-import
     name: Configuring a pump catalog import in WooCommerce
@@ -3685,7 +3685,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/grundfos-pump-catalog-import/en
+        url: /showcase/grundfos-pump-catalog-import/en/
         type: product
   - slug: bobst-catalog-accordion
     name: BOB-ST catalog tiles and accordion navigation
@@ -3702,7 +3702,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/bobst-catalog-accordion/en
+        url: /showcase/bobst-catalog-accordion/en/
         type: product
   - slug: engineering-store-media-regeneration
     name: Media optimization for an engineering equipment store
@@ -3720,7 +3720,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/engineering-store-media-regeneration/en
+        url: /showcase/engineering-store-media-regeneration/en/
         type: product
   - slug: marketlace-woodmart-transition
     name: Marketlace theme migration from Astra to WoodMart
@@ -3738,7 +3738,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/marketlace-woodmart-transition/en
+        url: /showcase/marketlace-woodmart-transition/en/
         type: product
   - slug: belarus-aggregator-yml-feed
     name: WooCommerce YML feed for Belarusian aggregators
@@ -3755,7 +3755,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/belarus-aggregator-yml-feed/en
+        url: /showcase/belarus-aggregator-yml-feed/en/
         type: product
   - slug: textili-header-import-diagnostics
     name: Textili header update and import diagnostics
@@ -3772,7 +3772,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/textili-header-import-diagnostics/en
+        url: /showcase/textili-header-import-diagnostics/en/
         type: product
   - slug: zooforsale-sber-launch-stage
     name: Zooforsale setup and Sber test payments
@@ -3789,7 +3789,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/zooforsale-sber-launch-stage/en
+        url: /showcase/zooforsale-sber-launch-stage/en/
         type: product
   - slug: osama-market-store-launch
     name: Osama Market storefront launch and catalog import
@@ -3807,7 +3807,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/osama-market-store-launch/en
+        url: /showcase/osama-market-store-launch/en/
         type: product
   - slug: grandkrovlya-import-slugs
     name: "Grandkrovlya: restoring imports and product URLs"
@@ -3824,7 +3824,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/grandkrovlya-import-slugs/en
+        url: /showcase/grandkrovlya-import-slugs/en/
         type: product
   - slug: astola-guest-cache-layout
     name: "Astola: repairing the logged-out layout"
@@ -3842,7 +3842,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/astola-guest-cache-layout/en
+        url: /showcase/astola-guest-cache-layout/en/
         type: product
   - slug: dommebeli-instoria-catalog-rebrand
     name: Furniture catalog updates and rebranding imagery
@@ -3860,7 +3860,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/dommebeli-instoria-catalog-rebrand/en
+        url: /showcase/dommebeli-instoria-catalog-rebrand/en/
         type: product
   - slug: pariscoiff-mobile-onpage-seo
     name: Pariscoiff on-page SEO and mobile refinements
@@ -3877,7 +3877,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/pariscoiff-mobile-onpage-seo/en
+        url: /showcase/pariscoiff-mobile-onpage-seo/en/
         type: product
   - slug: automotive-firmware-digital-store
     name: Automotive firmware store with YooKassa payments
@@ -3895,7 +3895,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/automotive-firmware-digital-store/en
+        url: /showcase/automotive-firmware-digital-store/en/
         type: product
   - slug: sushi-panda-payment-recovery
     name: Sushi Panda website and payment recovery
@@ -3912,7 +3912,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/sushi-panda-payment-recovery/en
+        url: /showcase/sushi-panda-payment-recovery/en/
         type: product
   - slug: wordpress-editable-profile-directory
     name: Editable WordPress profile directory
@@ -3929,7 +3929,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-editable-profile-directory/en
+        url: /showcase/wordpress-editable-profile-directory/en/
         type: product
   - slug: vector-dobra-social-services
     name: Vector Dobra website for social services
@@ -3951,7 +3951,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/vector-dobra-social-services/en
+        url: /showcase/vector-dobra-social-services/en/
         type: product
   - slug: nazim-multilingual-catalog
     name: "Nazim 1001: a three-language WooCommerce catalog"
@@ -3968,7 +3968,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/nazim-multilingual-catalog/en
+        url: /showcase/nazim-multilingual-catalog/en/
         type: product
   - slug: sugarlips-supplier-csv-import
     name: Sugarlips supplier catalog import and updates
@@ -3985,7 +3985,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/sugarlips-supplier-csv-import/en
+        url: /showcase/sugarlips-supplier-csv-import/en/
         type: product
   - slug: salt-switch-order-recovery
     name: SALT SWITCH order and email recovery
@@ -4002,7 +4002,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/salt-switch-order-recovery/en
+        url: /showcase/salt-switch-order-recovery/en/
         type: product
   - slug: salt-switch-editorial-blog
     name: SALT SWITCH blog and article layouts
@@ -4019,7 +4019,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/salt-switch-editorial-blog/en
+        url: /showcase/salt-switch-editorial-blog/en/
         type: product
   - slug: fireknife-catalog-facets-import
     name: Fireknife knife catalog migration and filter data
@@ -4037,7 +4037,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/fireknife-catalog-facets-import/en
+        url: /showcase/fireknife-catalog-facets-import/en/
         type: product
   - slug: randewoo-perfume-data-extract
     name: Randewoo perfume catalog data extraction
@@ -4053,7 +4053,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/randewoo-perfume-data-extract/en
+        url: /showcase/randewoo-perfume-data-extract/en/
         type: product
   - slug: metakredits-wordpress-domain-recovery
     name: Metakredits domain setup and WordPress recovery
@@ -4071,7 +4071,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/metakredits-wordpress-domain-recovery/en
+        url: /showcase/metakredits-wordpress-domain-recovery/en/
         type: product
   - slug: foodsfact-equipment-catalog
     name: "FoodsFact: English-language equipment catalog"
@@ -4094,7 +4094,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/foodsfact-equipment-catalog/en
+        url: /showcase/foodsfact-equipment-catalog/en/
         type: product
   - slug: murmansk-culture-palace-site
     name: Murmansk regional palace of culture website
@@ -4112,7 +4112,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/murmansk-culture-palace-site/en
+        url: /showcase/murmansk-culture-palace-site/en/
         type: product
   - slug: vyvoz24-service-site-technical-seo
     name: "Vyvoz24: technical SEO for a service website"
@@ -4129,7 +4129,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/vyvoz24-service-site-technical-seo/en
+        url: /showcase/vyvoz24-service-site-technical-seo/en/
         type: product
   - slug: antique-store-media-regression
     name: Media optimization for an antiques store
@@ -4147,7 +4147,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/antique-store-media-regression/en
+        url: /showcase/antique-store-media-regression/en/
         type: product
   - slug: wordpress-posts-to-woocommerce-catalog
     name: Moving a WordPress post catalog to WooCommerce
@@ -4165,7 +4165,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-posts-to-woocommerce-catalog/en
+        url: /showcase/wordpress-posts-to-woocommerce-catalog/en/
         type: product
   - slug: cosmetics-catalog-localization-data
     name: Cosmetics catalog spreadsheet for Italian localization
@@ -4183,7 +4183,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/cosmetics-catalog-localization-data/en
+        url: /showcase/cosmetics-catalog-localization-data/en/
         type: product
   - slug: ibike-scooter-rental-website
     name: iBike rental website with a mobile enquiry form
@@ -4205,7 +4205,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/ibike-scooter-rental-website/en
+        url: /showcase/ibike-scooter-rental-website/en/
         type: product
   - slug: video-surveillance-catalog-migration
     name: Migrating a video surveillance equipment catalog
@@ -4223,7 +4223,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/video-surveillance-catalog-migration/en
+        url: /showcase/video-surveillance-catalog-migration/en/
         type: product
   - slug: woocommerce-stock-waitlist-localization
     name: WooCommerce waitlist and Russian email localization
@@ -4240,7 +4240,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-stock-waitlist-localization/en
+        url: /showcase/woocommerce-stock-waitlist-localization/en/
         type: product
   - slug: regional-sports-directory-extract
     name: Extracting a regional sports organization directory
@@ -4256,7 +4256,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/regional-sports-directory-extract/en
+        url: /showcase/regional-sports-directory-extract/en/
         type: product
   - slug: lab-order-dashboard-css
     name: Interface styling for a lab order dashboard
@@ -4273,7 +4273,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/lab-order-dashboard-css/en
+        url: /showcase/lab-order-dashboard-css/en/
         type: product
   - slug: aravia-postcode-delivery-checkout
     name: Postcode delivery and pickup for Aravia
@@ -4290,7 +4290,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/aravia-postcode-delivery-checkout/en
+        url: /showcase/aravia-postcode-delivery-checkout/en/
         type: product
   - slug: dependent-category-filters-repair
     name: Repairing dependent WooCommerce catalog filters
@@ -4307,7 +4307,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/dependent-category-filters-repair/en
+        url: /showcase/dependent-category-filters-repair/en/
         type: product
   - slug: electronics-catalog-price-list-assets
     name: Building an electronics catalog from a price list
@@ -4325,7 +4325,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/electronics-catalog-price-list-assets/en
+        url: /showcase/electronics-catalog-price-list-assets/en/
         type: product
   - slug: kontel-woocommerce-breadcrumbs
     name: Adding WooCommerce breadcrumbs to site templates
@@ -4342,7 +4342,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/kontel-woocommerce-breadcrumbs/en
+        url: /showcase/kontel-woocommerce-breadcrumbs/en/
         type: product
   - slug: b2b-woocommerce-order-request
     name: WooCommerce B2B checkout for order enquiries
@@ -4359,7 +4359,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/b2b-woocommerce-order-request/en
+        url: /showcase/b2b-woocommerce-order-request/en/
         type: product
   - slug: schmidt-studio-migration-performance
     name: "Schmidt Studio: WordPress migration and optimization"
@@ -4377,7 +4377,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/schmidt-studio-migration-performance/en
+        url: /showcase/schmidt-studio-migration-performance/en/
         type: product
   - slug: woocommerce-excerpt-import-repair
     name: Restoring short descriptions in a WooCommerce import
@@ -4395,7 +4395,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-excerpt-import-repair/en
+        url: /showcase/woocommerce-excerpt-import-repair/en/
         type: product
   - slug: avada-furniture-store-foundation
     name: Avada foundation for a furniture store
@@ -4412,7 +4412,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/avada-furniture-store-foundation/en
+        url: /showcase/avada-furniture-store-foundation/en/
         type: product
   - slug: woocommerce-draft-products-visibility
     name: Restoring WooCommerce products hidden as drafts
@@ -4428,7 +4428,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-draft-products-visibility/en
+        url: /showcase/woocommerce-draft-products-visibility/en/
         type: product
   - slug: medical-equipment-catalog-layout
     name: Medical equipment catalog layout and dimensions
@@ -4445,7 +4445,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/medical-equipment-catalog-layout/en
+        url: /showcase/medical-equipment-catalog-layout/en/
         type: product
   - slug: woocommerce-quick-view-cart-refinement
     name: WooCommerce product page, quick view and cart refinements
@@ -4462,7 +4462,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-quick-view-cart-refinement/en
+        url: /showcase/woocommerce-quick-view-cart-refinement/en/
         type: product
   - slug: course-price-list-for-business
     name: Course pricing updates and a business price list
@@ -4479,7 +4479,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/course-price-list-for-business/en
+        url: /showcase/course-price-list-for-business/en/
         type: product
   - slug: ecu-files-table-filter
     name: ECU file catalog with a horizontal filter
@@ -4496,7 +4496,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/ecu-files-table-filter/en
+        url: /showcase/ecu-files-table-filter/en/
         type: product
   - slug: confectionery-woocommerce-foundation
     name: Setting up a confectionery store on WoodMart
@@ -4514,7 +4514,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/confectionery-woocommerce-foundation/en
+        url: /showcase/confectionery-woocommerce-foundation/en/
         type: product
   - slug: furniture-home-city-selection
     name: Furniture storefront homepage and city selection
@@ -4532,7 +4532,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/furniture-home-city-selection/en
+        url: /showcase/furniture-home-city-selection/en/
         type: product
   - slug: furniture-product-options-and-media
     name: "Furniture product pages: options, photos and enquiries"
@@ -4550,7 +4550,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/furniture-product-options-and-media/en
+        url: /showcase/furniture-product-options-and-media/en/
         type: product
   - slug: skyruss-news-site-foundation
     name: Skyruss news site foundation on Cream Magazine
@@ -4566,7 +4566,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/skyruss-news-site-foundation/en
+        url: /showcase/skyruss-news-site-foundation/en/
         type: product
   - slug: volvoparts-woodmart-demo
     name: Volvoparts starter storefront on WoodMart
@@ -4584,7 +4584,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/volvoparts-woodmart-demo/en
+        url: /showcase/volvoparts-woodmart-demo/en/
         type: product
   - slug: wordpress-menu-editor-recovery
     name: Restoring the WordPress menu editor
@@ -4601,7 +4601,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-menu-editor-recovery/en
+        url: /showcase/wordpress-menu-editor-recovery/en/
         type: product
   - slug: langformula-digital-cart-flow
     name: Langformula digital product cart flow
@@ -4620,7 +4620,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/langformula-digital-cart-flow/en
+        url: /showcase/langformula-digital-cart-flow/en/
         type: product
   - slug: evrosumka-checkout-footer
     name: Simplifying checkout for the Evrosumka store
@@ -4637,7 +4637,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/evrosumka-checkout-footer/en
+        url: /showcase/evrosumka-checkout-footer/en/
         type: product
   - slug: medcors-joomla-transition-design
     name: Medcors website design ahead of a CMS migration
@@ -4655,7 +4655,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/medcors-joomla-transition-design/en
+        url: /showcase/medcors-joomla-transition-design/en/
         type: product
   - slug: goa-tours-stripe-setup
     name: Stripe setup for the Goa Tours storefront
@@ -4672,7 +4672,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/goa-tours-stripe-setup/en
+        url: /showcase/goa-tours-stripe-setup/en/
         type: product
   - slug: woocommerce-alongside-digiseller
     name: Setting up WooCommerce alongside Digiseller
@@ -4690,7 +4690,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-alongside-digiseller/en
+        url: /showcase/woocommerce-alongside-digiseller/en/
         type: product
   - slug: pelicula-staging-demo-handoff
     name: Pelicula staging setup and website archive handoff
@@ -4707,7 +4707,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/pelicula-staging-demo-handoff/en
+        url: /showcase/pelicula-staging-demo-handoff/en/
         type: product
   - slug: woocommerce-invoice-approval
     name: Automatic WooCommerce invoices and order approval
@@ -4725,7 +4725,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-invoice-approval/en
+        url: /showcase/woocommerce-invoice-approval/en/
         type: product
   - slug: cdek-express-checkout-notifications
     name: CDEK express shipping and checkout notifications
@@ -4743,7 +4743,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/cdek-express-checkout-notifications/en
+        url: /showcase/cdek-express-checkout-notifications/en/
         type: product
   - slug: keytering-domain-cutover
     name: Keytering domain move and homepage update
@@ -4761,7 +4761,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/keytering-domain-cutover/en
+        url: /showcase/keytering-domain-cutover/en/
         type: product
   - slug: outlook-interactive-signature-redesign
     name: Interactive Outlook signature replacing a static image
@@ -4779,7 +4779,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/outlook-interactive-signature-redesign/en
+        url: /showcase/outlook-interactive-signature-redesign/en/
         type: product
   - slug: digital-database-stores-checkout
     name: Digital database storefront and payment setup
@@ -4797,7 +4797,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/digital-database-stores-checkout/en
+        url: /showcase/digital-database-stores-checkout/en/
         type: product
   - slug: woocommerce-document-pack-product-page
     name: WooCommerce product page for a document bundle
@@ -4814,7 +4814,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-document-pack-product-page/en
+        url: /showcase/woocommerce-document-pack-product-page/en/
         type: product
   - slug: delovye-linii-classic-cart
     name: Delovye Linii shipping and WooCommerce cart diagnosis
@@ -4832,7 +4832,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/delovye-linii-classic-cart/en
+        url: /showcase/delovye-linii-classic-cart/en/
         type: product
   - slug: wordpress-guest-comments-recovery
     name: Restoring WordPress comments for logged-out visitors
@@ -4850,7 +4850,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/wordpress-guest-comments-recovery/en
+        url: /showcase/wordpress-guest-comments-recovery/en/
         type: product
   - slug: presnya-tea-captcha-cdek
     name: "Presnya Tea: CAPTCHA and delivery setup"
@@ -4867,7 +4867,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/presnya-tea-captcha-cdek/en
+        url: /showcase/presnya-tea-captcha-cdek/en/
         type: product
   - slug: airmania-selective-product-feed
     name: Airmania selective product feed and model field
@@ -4884,7 +4884,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/airmania-selective-product-feed/en
+        url: /showcase/airmania-selective-product-feed/en/
         type: product
   - slug: sugarlips-boxberry-city-mapping
     name: "Sugarlips: restoring Boxberry at checkout"
@@ -4902,7 +4902,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/sugarlips-boxberry-city-mapping/en
+        url: /showcase/sugarlips-boxberry-city-mapping/en/
         type: product
   - slug: sugarlips-category-navigation
     name: Sugarlips navigation using real product categories
@@ -4919,7 +4919,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/sugarlips-category-navigation/en
+        url: /showcase/sugarlips-category-navigation/en/
         type: product
   - slug: bgtgroup-pl-multilingual-redirects
     name: Redirects and broken links on a three-language site
@@ -4937,7 +4937,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/bgtgroup-pl-multilingual-redirects/en
+        url: /showcase/bgtgroup-pl-multilingual-redirects/en/
         type: product
   - slug: eclect-furniture-attribute-cleanup
     name: Eclect furniture import and attribute cleanup
@@ -4954,7 +4954,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/eclect-furniture-attribute-cleanup/en
+        url: /showcase/eclect-furniture-attribute-cleanup/en/
         type: product
   - slug: troubleshooter-wordpress-business-card
     name: Troubleshooter business website on WordPress
@@ -4972,7 +4972,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/troubleshooter-wordpress-business-card/en
+        url: /showcase/troubleshooter-wordpress-business-card/en/
         type: product
   - slug: woocommerce-cart-cdek-pickup-recovery
     name: WooCommerce cart recovery and CDEK pickup setup
@@ -4990,7 +4990,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-cart-cdek-pickup-recovery/en
+        url: /showcase/woocommerce-cart-cdek-pickup-recovery/en/
         type: product
   - slug: woocommerce-pdf-invoice-branding
     name: Refining a WooCommerce PDF invoice for B2B
@@ -5008,7 +5008,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-pdf-invoice-branding/en
+        url: /showcase/woocommerce-pdf-invoice-branding/en/
         type: product
   - slug: rpm9000-site-content-ssl-check
     name: 9000 RPM website updates and TLS verification
@@ -5026,7 +5026,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/rpm9000-site-content-ssl-check/en
+        url: /showcase/rpm9000-site-content-ssl-check/en/
         type: product
   - slug: fabric-catalog-webp-compression
     name: WebP image preparation for fabric and leather catalogs
@@ -5044,7 +5044,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/fabric-catalog-webp-compression/en
+        url: /showcase/fabric-catalog-webp-compression/en/
         type: product
   - slug: woocommerce-mobile-grid-regression
     name: Repairing a WooCommerce mobile catalog grid
@@ -5062,7 +5062,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-mobile-grid-regression/en
+        url: /showcase/woocommerce-mobile-grid-regression/en/
         type: product
   - slug: farkop-service-catalog-facets
     name: Farkop Service catalog and vehicle-brand filter
@@ -5079,7 +5079,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/farkop-service-catalog-facets/en
+        url: /showcase/farkop-service-catalog-facets/en/
         type: product
   - slug: aravia-mobile-catalog-bulk-editor
     name: Aravia mobile catalog and bulk product editing
@@ -5097,7 +5097,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/aravia-mobile-catalog-bulk-editor/en
+        url: /showcase/aravia-mobile-catalog-bulk-editor/en/
         type: product
   - slug: yookassa-merchant-checkout-handoff
     name: Connecting YooKassa and checking the payment handoff
@@ -5114,7 +5114,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/yookassa-merchant-checkout-handoff/en
+        url: /showcase/yookassa-merchant-checkout-handoff/en/
         type: product
   - slug: goa-tours-interface-copy
     name: Goa Tours search and empty cart copy
@@ -5132,7 +5132,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/goa-tours-interface-copy/en
+        url: /showcase/goa-tours-interface-copy/en/
         type: product
   - slug: salt-switch-cross-border-checkout
     name: SALT SWITCH shipping and invoices across two stores
@@ -5150,7 +5150,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/salt-switch-cross-border-checkout/en
+        url: /showcase/salt-switch-cross-border-checkout/en/
         type: product
   - slug: blaskos-yandex-market-category-feed
     name: Exporting selected categories to Yandex Market
@@ -5167,7 +5167,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/blaskos-yandex-market-category-feed/en
+        url: /showcase/blaskos-yandex-market-category-feed/en/
         type: product
   - slug: woocommerce-variant-selector-placement
     name: Placing the WooCommerce variant selector below the price
@@ -5185,7 +5185,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-variant-selector-placement/en
+        url: /showcase/woocommerce-variant-selector-placement/en/
         type: product
   - slug: lossless-product-media-batch
     name: Lossless batch optimization of catalog images
@@ -5203,7 +5203,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/lossless-product-media-batch/en
+        url: /showcase/lossless-product-media-batch/en/
         type: product
   - slug: shulpinchik-checkout-styles
     name: Styling WooCommerce cart and checkout controls
@@ -5221,7 +5221,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/shulpinchik-checkout-styles/en
+        url: /showcase/shulpinchik-checkout-styles/en/
         type: product
   - slug: woocommerce-compact-cart-cross-sells
     name: Compact WooCommerce cart and related product layouts
@@ -5239,7 +5239,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-compact-cart-cross-sells/en
+        url: /showcase/woocommerce-compact-cart-cross-sells/en/
         type: product
   - slug: le-fontan-multivendor-foundation
     name: Le Fontan multivendor store foundation
@@ -5257,7 +5257,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/le-fontan-multivendor-foundation/en
+        url: /showcase/le-fontan-multivendor-foundation/en/
         type: product
   - slug: woocommerce-delivery-hidden-fields-conflict
     name: Diagnosing missing delivery options in WooCommerce
@@ -5275,7 +5275,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-delivery-hidden-fields-conflict/en
+        url: /showcase/woocommerce-delivery-hidden-fields-conflict/en/
         type: product
   - slug: woocommerce-checkout-in-stock-recommendations
     name: Simpler checkout and in-stock product recommendations
@@ -5293,7 +5293,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/woocommerce-checkout-in-stock-recommendations/en
+        url: /showcase/woocommerce-checkout-in-stock-recommendations/en/
         type: product
   - slug: kabanchik-restaurant-website
     name: "Kabanchik: a restaurant site for menus and banquets"
@@ -5317,7 +5317,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/kabanchik-restaurant-website/en
+        url: /showcase/kabanchik-restaurant-website/en/
         type: product
   - slug: kabanchik-menu-data
     name: "Kabanchik: 212 menu items extracted from DOCX and TXT"
@@ -5336,7 +5336,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/kabanchik-menu-data/en
+        url: /showcase/kabanchik-menu-data/en/
         type: product
   - slug: kabanchik-delivery-catalog
     name: "Kabanchik: a food delivery catalog and cart"
@@ -5361,7 +5361,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/kabanchik-delivery-catalog/en
+        url: /showcase/kabanchik-delivery-catalog/en/
         type: product
   - slug: diskprices-comparison-platform
     name: "DiskPrices: price comparison and price history"
@@ -5382,7 +5382,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/diskprices-comparison-platform/en
+        url: /showcase/diskprices-comparison-platform/en/
         type: product
   - slug: ramprices-memory-offer-normalization
     name: "RamPrices: memory catalog and offer matching"
@@ -5402,7 +5402,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/ramprices-memory-offer-normalization/en
+        url: /showcase/ramprices-memory-offer-normalization/en/
         type: product
   - slug: klimat-profi-server-storage
     name: "Klimat Profi: recovering server storage capacity"
@@ -5421,7 +5421,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/klimat-profi-server-storage/en
+        url: /showcase/klimat-profi-server-storage/en/
         type: product
   - slug: klimat-profi-backup-automation
     name: "Klimat Profi: automated website and database backups"
@@ -5440,7 +5440,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/klimat-profi-backup-automation/en
+        url: /showcase/klimat-profi-backup-automation/en/
         type: product
   - slug: codex-marketing-skills-workflow
     name: Local Codex skills for marketing workflows
@@ -5461,7 +5461,7 @@ projects:
     theme: cyan
     links:
       - label: Read case study
-        url: /showcase/codex-marketing-skills-workflow/en
+        url: /showcase/codex-marketing-skills-workflow/en/
         type: product
   - slug: apteka-optika-price-comparison
     name: "Apteka & Optika: Node.js price comparison storefront"
@@ -5487,7 +5487,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/apteka-optika-price-comparison/en
+        url: /showcase/apteka-optika-price-comparison/en/
         type: product
   - slug: faeton-rental-catalog-recovery
     name: "Faeton: restoring the equipment rental catalog"
@@ -5511,7 +5511,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/faeton-rental-catalog-recovery/en
+        url: /showcase/faeton-rental-catalog-recovery/en/
         type: product
   - slug: faeton-blog-tag-archive-recovery
     name: "Faeton: restoring blog navigation and tag archives"
@@ -5536,7 +5536,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/faeton-blog-tag-archive-recovery/en
+        url: /showcase/faeton-blog-tag-archive-recovery/en/
         type: product
   - slug: artred-woocommerce-migration-readiness
     name: "ARTRED: preparing a WooCommerce site replacement"
@@ -5561,7 +5561,7 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/artred-woocommerce-migration-readiness/en
+        url: /showcase/artred-woocommerce-migration-readiness/en/
         type: product
   - slug: artred-b2b-equipment-catalog
     name: "ARTRED: B2B equipment catalog and product enquiries"
@@ -5586,5 +5586,5 @@ projects:
         featured: true
     links:
       - label: Read case study
-        url: /showcase/artred-b2b-equipment-catalog/en
+        url: /showcase/artred-b2b-equipment-catalog/en/
         type: product

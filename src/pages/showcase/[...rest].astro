@@ -166,7 +166,7 @@ const showcaseLangLinks = kind === 'list'
   ? allLangs.map(l => ({
       id:     l.id,
       label:  l.label,
-      href:   l.id === defaultLang ? `${base}/showcase` : `${base}/showcase/${l.id}`,
+      href:   l.id === defaultLang ? `${base}/showcase/` : `${base}/showcase/${l.id}/`,
       active: l.id === lang,
     }))
   : undefined;
@@ -189,8 +189,8 @@ const relatedCases = allCases
 
 
 const showcaseHref = lang === defaultLang
-  ? `${base}/showcase`
-  : `${base}/showcase/${lang}`;
+  ? `${base}/showcase/`
+  : `${base}/showcase/${lang}/`;
 
 const langLinks = kind === 'project'
   ? allLangs
@@ -199,8 +199,8 @@ const langLinks = kind === 'project'
           id:     l.id,
           label:  l.label,
           href:   l.id === defaultLang
-                    ? `${base}/showcase/${slug}`
-                    : `${base}/showcase/${slug}/${l.id}`,
+                    ? `${base}/showcase/${slug}/`
+                    : `${base}/showcase/${slug}/${l.id}/`,
           active: l.id === lang,
         }))
   : [];

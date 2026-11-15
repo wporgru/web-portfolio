@@ -68,7 +68,7 @@ const eagerIdx = projects.findIndex(hasImageCover);
 const showcaseLangLinks = allLangs.map(l => ({
   id:     l.id,
   label:  l.label,
-  href:   l.id === defaultLang ? `${base}/showcase` : `${base}/showcase/${l.id}`,
+  href:   l.id === defaultLang ? `${base}/showcase/` : `${base}/showcase/${l.id}/`,
   active: l.id === defaultLang,
 }));
 ---

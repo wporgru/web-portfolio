@@ -102,7 +102,7 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
     save(dir+'/'+slug.replaceAll('-','_')+'_'+lang+'.yaml',{title,tagline:task,role,year,stack:tags,blocks});
     projects[lang].push({slug,name:title,description:result,year,role,stack:tags,order:n+1,featured:n<3,theme:['blue','cyan','emerald'][n%3],
       media:redesignShots.length ? [{type:'image',src:redesignShots[1],alt:ru?'Главная «78 Досок» после редизайна':'78 Dosok homepage after the redesign',featured:true}] : src?[{type:'image',src,alt,featured:true}]:[],
-      links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'':'/en'),type:'product'}]});
+      links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'/':'/en/'),type:'product'}]});
   }
 }
 addEngineeringCases(projects);

@@ -106,7 +106,7 @@ export function addEngineeringCases(projects){
         });
       }
       fs.writeFileSync(dir+'/'+slug.replaceAll('-','_')+'_'+lang+'.yaml',stringify({title:name,tagline:brief,year,role,stack:tags,blocks}));
-      projects[lang].push({slug,name,year,role,description:brief,stack:tags,order:projects[lang].length+1,theme:'cyan',...(media && {media}),links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'':'/en'),type:'product'}]});
+      projects[lang].push({slug,name,year,role,description:brief,stack:tags,order:projects[lang].length+1,theme:'cyan',...(media && {media}),links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'/':'/en/'),type:'product'}]});
     }
   }
 }

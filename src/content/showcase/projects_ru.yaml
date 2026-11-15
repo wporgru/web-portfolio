@@ -21,7 +21,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/78-dosok
+        url: /showcase/78-dosok/
         type: product
   - slug: diamond-tools
     name: "Магазин алмазного инструмента: коммерческие доработки"
@@ -43,7 +43,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/diamond-tools
+        url: /showcase/diamond-tools/
         type: product
   - slug: stalex-feed
     name: Автоимпорт 719 товаров STALEX
@@ -66,7 +66,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/stalex-feed
+        url: /showcase/stalex-feed/
         type: product
   - slug: tara-bergman
     name: Перенос сайта фотографа на WordPress
@@ -85,7 +85,7 @@ projects:
     media: []
     links:
       - label: Читать кейс
-        url: /showcase/tara-bergman
+        url: /showcase/tara-bergman/
         type: product
   - slug: primeclean-forms
     name: Антиспам для форм WordPress
@@ -103,7 +103,7 @@ projects:
     media: []
     links:
       - label: Читать кейс
-        url: /showcase/primeclean-forms
+        url: /showcase/primeclean-forms/
         type: product
   - slug: cvetnik-widget
     name: Контактный виджет для магазина InSales
@@ -125,7 +125,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/cvetnik-widget
+        url: /showcase/cvetnik-widget/
         type: product
   - slug: service-checkout
     name: Оплата услуг через WooCommerce и ЮKassa
@@ -148,7 +148,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/service-checkout
+        url: /showcase/service-checkout/
         type: product
   - slug: tile-catalog
     name: "Каталог плитки: обмен с 1С и дробные остатки"
@@ -170,7 +170,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/tile-catalog
+        url: /showcase/tile-catalog/
         type: product
   - slug: megawatt-content
     name: Перенос страниц услуг и настройка редиректов
@@ -193,7 +193,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/megawatt-content
+        url: /showcase/megawatt-content/
         type: product
   - slug: cleaning-catalog
     name: Импорт каталога уборочной техники
@@ -216,7 +216,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/cleaning-catalog
+        url: /showcase/cleaning-catalog/
         type: product
   - slug: ajax-filters
     name: Категорийные AJAX-фильтры по восьми параметрам
@@ -239,7 +239,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/ajax-filters
+        url: /showcase/ajax-filters/
         type: product
   - slug: sovo-sova
     name: "«Сово Сова»: редизайн на WoodMart"
@@ -262,7 +262,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/sovo-sova
+        url: /showcase/sovo-sova/
         type: product
   - slug: tea-shop
     name: Новая витрина чайного магазина с объединением каталогов
@@ -285,7 +285,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/tea-shop
+        url: /showcase/tea-shop/
         type: product
   - slug: geekchoice
     name: "GeekChoice: фильтры и сравнение электроники"
@@ -307,7 +307,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/geekchoice
+        url: /showcase/geekchoice/
         type: product
   - slug: bowling-migration
     name: Переезд WooCommerce-магазина и восстановление карточек
@@ -330,7 +330,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/bowling-migration
+        url: /showcase/bowling-migration/
         type: product
   - slug: seo-dashboard
     name: "SEO-дашборд: аналитика и история индексации"
@@ -347,7 +347,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/seo-dashboard
+        url: /showcase/seo-dashboard/
         type: product
   - slug: medicine-data
     name: Медицинские справочники и нормализация в Directus
@@ -365,7 +365,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/medicine-data
+        url: /showcase/medicine-data/
         type: product
   - slug: medimarket-catalog
     name: "MediMarket24: сборка каталога из партнёрских фидов"
@@ -382,7 +382,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/medimarket-catalog
+        url: /showcase/medimarket-catalog/
         type: product
   - slug: sport-affiliate
     name: "Sport-man: управление неактуальными предложениями"
@@ -399,7 +399,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/sport-affiliate
+        url: /showcase/sport-affiliate/
         type: product
   - slug: wellland-facets
     name: "Wellland: глобальные атрибуты и фильтры каталога"
@@ -416,7 +416,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wellland-facets
+        url: /showcase/wellland-facets/
         type: product
   - slug: autopartner-import
     name: "Автопартнёр: пакет обновления каталога"
@@ -433,7 +433,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/autopartner-import
+        url: /showcase/autopartner-import/
         type: product
   - slug: wp-studio
     name: "WP.ORG.RU: сайт веб-мастерской"
@@ -449,7 +449,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wp-studio
+        url: /showcase/wp-studio/
         type: product
   - slug: wpgencrm-recovery
     name: Восстановление панели WPGenCRM на Streamlit
@@ -466,7 +466,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wpgencrm-recovery
+        url: /showcase/wpgencrm-recovery/
         type: product
   - slug: goodwin-php
     name: "Goodwin Shop: переход на PHP 8.3 после сбоя"
@@ -483,7 +483,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/goodwin-php
+        url: /showcase/goodwin-php/
         type: product
   - slug: two-catalog-import
     name: Перенос 205 товаров из двух источников
@@ -498,7 +498,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/two-catalog-import
+        url: /showcase/two-catalog-import/
         type: product
   - slug: office-catalog
     name: Парсинг и импорт каталога офисной техники
@@ -515,7 +515,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/office-catalog
+        url: /showcase/office-catalog/
         type: product
   - slug: digital-guide-checkout
     name: Продажа цифрового гайда без шага корзины
@@ -530,7 +530,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/digital-guide-checkout
+        url: /showcase/digital-guide-checkout/
         type: product
   - slug: guest-cdek
     name: Восстановление расчёта СДЭК для гостей магазина
@@ -545,7 +545,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/guest-cdek
+        url: /showcase/guest-cdek/
         type: product
   - slug: electrical-catalog
     name: Парсинг электротехники и перестройка каталога
@@ -561,7 +561,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/electrical-catalog
+        url: /showcase/electrical-catalog/
         type: product
   - slug: site-cleanup-recovery
     name: Очистка WordPress и восстановление разделов сайта
@@ -577,7 +577,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/site-cleanup-recovery
+        url: /showcase/site-cleanup-recovery/
         type: product
   - slug: legacy-php-compatibility
     name: Адаптация RT-Theme 19 и её расширения к PHP 8.5
@@ -594,7 +594,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/legacy-php-compatibility
+        url: /showcase/legacy-php-compatibility/
         type: product
   - slug: catalog-relaunch-cleanup
     name: Подготовка WooCommerce к перезапуску каталога
@@ -611,7 +611,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/catalog-relaunch-cleanup
+        url: /showcase/catalog-relaunch-cleanup/
         type: product
   - slug: blog-rebuild-astra
     name: Переезд WordPress-блога на чистую установку Astra
@@ -628,7 +628,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/blog-rebuild-astra
+        url: /showcase/blog-rebuild-astra/
         type: product
   - slug: checkout-tax-breakdown
     name: Разные ставки НДС для товаров и доставки WooCommerce
@@ -645,7 +645,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/checkout-tax-breakdown
+        url: /showcase/checkout-tax-breakdown/
         type: product
   - slug: yookassa-test-order
     name: Подключение ЮKassa с проверкой оплаты и чека
@@ -662,7 +662,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/yookassa-test-order
+        url: /showcase/yookassa-test-order/
         type: product
   - slug: course-catalog-excel
     name: Импорт каталога курсов учебного центра из Excel
@@ -679,7 +679,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/course-catalog-excel
+        url: /showcase/course-catalog-excel/
         type: product
   - slug: pool-sites-forms
     name: Доработка форм и интерфейса сети бассейновых сайтов
@@ -697,7 +697,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/pool-sites-forms
+        url: /showcase/pool-sites-forms/
         type: product
   - slug: woodmart-category-tools
     name: Настройка магазина инструментов и автоматизация категорий
@@ -715,7 +715,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woodmart-category-tools
+        url: /showcase/woodmart-category-tools/
         type: product
   - slug: dokan-marketplace-recovery
     name: Восстановление публикации товаров в маркетплейсе Dokan
@@ -732,7 +732,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/dokan-marketplace-recovery
+        url: /showcase/dokan-marketplace-recovery/
         type: product
   - slug: metform-replacement
     name: Замена MetForm и проверка доставки заявок
@@ -748,7 +748,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/metform-replacement
+        url: /showcase/metform-replacement/
         type: product
   - slug: wordpress-sheet-to-blog
     name: Перенос материалов из Google Таблиц в блог WordPress
@@ -765,7 +765,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-sheet-to-blog
+        url: /showcase/wordpress-sheet-to-blog/
         type: product
   - slug: woocommerce-bulk-editor
     name: Выгрузка каталога и массовое редактирование товаров
@@ -781,7 +781,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-bulk-editor
+        url: /showcase/woocommerce-bulk-editor/
         type: product
   - slug: catalog-thumbnail-disk
     name: Управление миниатюрами большого каталога WooCommerce
@@ -798,7 +798,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/catalog-thumbnail-disk
+        url: /showcase/catalog-thumbnail-disk/
         type: product
   - slug: variation-import-template
     name: Шаблон импорта вариаций WooCommerce по SKU
@@ -815,7 +815,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/variation-import-template
+        url: /showcase/variation-import-template/
         type: product
   - slug: woodmart-plural-forms
     name: Русские формы числительных в каталоге WoodMart
@@ -832,7 +832,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woodmart-plural-forms
+        url: /showcase/woodmart-plural-forms/
         type: product
   - slug: form-confirmation-recovery
     name: Восстановление подтверждения отправки форм WordPress
@@ -849,7 +849,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/form-confirmation-recovery
+        url: /showcase/form-confirmation-recovery/
         type: product
   - slug: fishing-catalog-launch
     name: Запуск каталога рыболовных товаров из прайса
@@ -865,7 +865,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/fishing-catalog-launch
+        url: /showcase/fishing-catalog-launch/
         type: product
   - slug: tile-storefront-woodmart
     name: Витрина плитки на WoodMart и форма заказа
@@ -882,7 +882,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/tile-storefront-woodmart
+        url: /showcase/tile-storefront-woodmart/
         type: product
   - slug: product-accessories-logistics
     name: Совместимые аксессуары и доставка в WooCommerce
@@ -899,7 +899,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/product-accessories-logistics
+        url: /showcase/product-accessories-logistics/
         type: product
   - slug: wordpress-footer-update
     name: Обновление компонентов и восстановление футера
@@ -916,7 +916,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-footer-update
+        url: /showcase/wordpress-footer-update/
         type: product
   - slug: two-brand-catalog-merge
     name: Объединение каталогов двух брендов для WooCommerce
@@ -933,7 +933,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/two-brand-catalog-merge
+        url: /showcase/two-brand-catalog-merge/
         type: product
   - slug: wordpress-broken-media-repair
     name: Исправление битых изображений и редиректов блога
@@ -951,7 +951,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-broken-media-repair
+        url: /showcase/wordpress-broken-media-repair/
         type: product
   - slug: legacy-wordpress-lead-form
     name: Обновление старого WordPress и восстановление формы заявок
@@ -969,7 +969,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/legacy-wordpress-lead-form
+        url: /showcase/legacy-wordpress-lead-form/
         type: product
   - slug: woodmart-marketplace-handoff
     name: Настройка WoodMart Marketplace под контент клиента
@@ -987,7 +987,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woodmart-marketplace-handoff
+        url: /showcase/woodmart-marketplace-handoff/
         type: product
   - slug: bowling-stock-notices
     name: Уведомления о поступлении и WhatsApp в BowlingStore
@@ -1004,7 +1004,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/bowling-stock-notices
+        url: /showcase/bowling-stock-notices/
         type: product
   - slug: ghibli-import-attributes
     name: Импорт Ghibli & Wirbel и восстановление характеристик
@@ -1022,7 +1022,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/ghibli-import-attributes
+        url: /showcase/ghibli-import-attributes/
         type: product
   - slug: multilingual-consent-forms
     name: Согласие и ссылки на политику в многоязычных формах
@@ -1038,7 +1038,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/multilingual-consent-forms
+        url: /showcase/multilingual-consent-forms/
         type: product
   - slug: osmokot-cdek-checkout
     name: Доставка СДЭК и упрощение оформления в Осмокот
@@ -1055,7 +1055,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/osmokot-cdek-checkout
+        url: /showcase/osmokot-cdek-checkout/
         type: product
   - slug: cargoterra-service-pages
     name: "CargoTerra: структура сайта грузоперевозок"
@@ -1071,7 +1071,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/cargoterra-service-pages
+        url: /showcase/cargoterra-service-pages/
         type: product
   - slug: ramayoga-storefront
     name: Восстановление настроек и навигации магазина RamaYoga
@@ -1087,7 +1087,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/ramayoga-storefront
+        url: /showcase/ramayoga-storefront/
         type: product
   - slug: wordpress-db-rollback
     name: Восстановление страниц WordPress из резервной копии
@@ -1104,7 +1104,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-db-rollback
+        url: /showcase/wordpress-db-rollback/
         type: product
   - slug: wordpress-hosting-recovery
     name: Восстановление WordPress после заражения сайта
@@ -1121,7 +1121,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-hosting-recovery
+        url: /showcase/wordpress-hosting-recovery/
         type: product
   - slug: regional-seo-metadata
     name: Уникализация метаданных каталога и региональной сети
@@ -1139,7 +1139,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/regional-seo-metadata
+        url: /showcase/regional-seo-metadata/
         type: product
   - slug: tajbazar-store-upgrade
     name: Обновление магазина Taj Bazar без смены оформления
@@ -1156,7 +1156,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/tajbazar-store-upgrade
+        url: /showcase/tajbazar-store-upgrade/
         type: product
   - slug: creatium-contact-widget
     name: Контактный виджет на действующем сайте Creatium
@@ -1171,7 +1171,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/creatium-contact-widget
+        url: /showcase/creatium-contact-widget/
         type: product
   - slug: vk-widget-metrica
     name: Подключение ВКонтакте и очистка дублей Метрики
@@ -1188,7 +1188,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/vk-widget-metrica
+        url: /showcase/vk-widget-metrica/
         type: product
   - slug: mobile-product-image-sizing
     name: Исправление размеров фото товаров в мобильной витрине
@@ -1204,7 +1204,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/mobile-product-image-sizing
+        url: /showcase/mobile-product-image-sizing/
         type: product
   - slug: blog-tags-and-antispam
     name: Исправление навигации блога и антиспам для заявок
@@ -1221,7 +1221,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/blog-tags-and-antispam
+        url: /showcase/blog-tags-and-antispam/
         type: product
   - slug: header-logo-and-search
     name: Исправление логотипа и замена поиска в шапке сайта
@@ -1237,7 +1237,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/header-logo-and-search
+        url: /showcase/header-logo-and-search/
         type: product
   - slug: woodmart-product-page-recovery
     name: Восстановление карточек товаров на WoodMart
@@ -1254,7 +1254,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woodmart-product-page-recovery
+        url: /showcase/woodmart-product-page-recovery/
         type: product
   - slug: generator-catalog-variants
     name: Каталог генераторов из нескольких выгрузок поставщиков
@@ -1272,7 +1272,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/generator-catalog-variants
+        url: /showcase/generator-catalog-variants/
         type: product
   - slug: plumbing-catalog-selection
     name: Отбор и импорт большого каталога сантехники
@@ -1290,7 +1290,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/plumbing-catalog-selection
+        url: /showcase/plumbing-catalog-selection/
         type: product
   - slug: bitrix-staging-import
     name: Перенос товаров из 1С-Битрикс в тестовый WooCommerce
@@ -1307,7 +1307,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/bitrix-staging-import
+        url: /showcase/bitrix-staging-import/
         type: product
   - slug: filament-savoy-storefront
     name: "Filament Store: восстановление витрины и SEO-шаблонов"
@@ -1325,7 +1325,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/filament-savoy-storefront
+        url: /showcase/filament-savoy-storefront/
         type: product
   - slug: ozon-pet-catalog
     name: Из выгрузок Ozon в каталог товаров для животных
@@ -1343,7 +1343,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/ozon-pet-catalog
+        url: /showcase/ozon-pet-catalog/
         type: product
   - slug: batch-watermark-images
     name: Пакетная обработка 914 товарных фотографий
@@ -1360,7 +1360,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/batch-watermark-images
+        url: /showcase/batch-watermark-images/
         type: product
   - slug: gadget-store-mobile-cart
     name: Мобильное меню и корзина магазина гаджетов
@@ -1376,7 +1376,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/gadget-store-mobile-cart
+        url: /showcase/gadget-store-mobile-cart/
         type: product
   - slug: promarko-astra-foundation
     name: Корпоративный сайт Promarko на базе Astra
@@ -1393,7 +1393,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/promarko-astra-foundation
+        url: /showcase/promarko-astra-foundation/
         type: product
   - slug: diamond-grinding-products
     name: Подготовка и загрузка алмазных шлифовальных головок
@@ -1410,7 +1410,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/diamond-grinding-products
+        url: /showcase/diamond-grinding-products/
         type: product
   - slug: mobile-call-button-footer
     name: Мобильная кнопка звонка и ремонт подвала сайта услуг
@@ -1427,7 +1427,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/mobile-call-button-footer
+        url: /showcase/mobile-call-button-footer/
         type: product
   - slug: messenger-widget-code-handoff
     name: Готовый виджет мессенджеров на HTML CSS и JS
@@ -1445,7 +1445,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/messenger-widget-code-handoff
+        url: /showcase/messenger-widget-code-handoff/
         type: product
   - slug: woocommerce-attribute-workflow
     name: Консультация по массовой правке атрибутов WooCommerce
@@ -1463,7 +1463,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-attribute-workflow
+        url: /showcase/woocommerce-attribute-workflow/
         type: product
   - slug: wordpress-internal-https
     name: Исправление внутренних HTTP-ссылок в WordPress
@@ -1480,7 +1480,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-internal-https
+        url: /showcase/wordpress-internal-https/
         type: product
   - slug: breez-api-catalog
     name: Импорт 2 744 товаров Breez по API в WooCommerce
@@ -1499,7 +1499,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/breez-api-catalog
+        url: /showcase/breez-api-catalog/
         type: product
   - slug: aurora-xml-price-stock
     name: Цены комплектов и остатки из XML-фида Aurora
@@ -1517,7 +1517,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/aurora-xml-price-stock
+        url: /showcase/aurora-xml-price-stock/
         type: product
   - slug: vstrade-supplier-pricing
     name: Импорт «ВсТрейд» и обновление цен и остатков
@@ -1534,7 +1534,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/vstrade-supplier-pricing
+        url: /showcase/vstrade-supplier-pricing/
         type: product
   - slug: astra-editable-homepage
     name: Редактируемая главная WordPress по макету на Astra
@@ -1552,7 +1552,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/astra-editable-homepage
+        url: /showcase/astra-editable-homepage/
         type: product
   - slug: welding-supplier-import
     name: Загрузка каталога сварочного оборудования в WooCommerce
@@ -1569,7 +1569,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/welding-supplier-import
+        url: /showcase/welding-supplier-import/
         type: product
   - slug: elementor-editor-recovery
     name: Восстановление редактора Elementor после ошибки
@@ -1586,7 +1586,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/elementor-editor-recovery
+        url: /showcase/elementor-editor-recovery/
         type: product
   - slug: php8-layout-repair
     name: Переход на PHP 8 с ремонтом вёрстки сайта
@@ -1603,7 +1603,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/php8-layout-repair
+        url: /showcase/php8-layout-repair/
         type: product
   - slug: aurora-storefront-availability
     name: Статусы наличия и сроки поставки на витрине Aurora
@@ -1620,7 +1620,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/aurora-storefront-availability
+        url: /showcase/aurora-storefront-availability/
         type: product
   - slug: checkout-contact-foundation
     name: Доработка оформления заказа и контактов WooCommerce
@@ -1637,7 +1637,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/checkout-contact-foundation
+        url: /showcase/checkout-contact-foundation/
         type: product
   - slug: animated-max-telegram-widget
     name: Анимированный контактный виджет MAX и Telegram
@@ -1654,7 +1654,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/animated-max-telegram-widget
+        url: /showcase/animated-max-telegram-widget/
         type: product
   - slug: messenger-and-email-leads
     name: Новый виджет связи и восстановление формы заявки
@@ -1673,7 +1673,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/messenger-and-email-leads
+        url: /showcase/messenger-and-email-leads/
         type: product
   - slug: osmokot-product-page-repair
     name: Ремонт карточки товара и шаблона магазина «Осмокот»
@@ -1690,7 +1690,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/osmokot-product-page-repair
+        url: /showcase/osmokot-product-page-repair/
         type: product
   - slug: woodmart-theme-rebuild
     name: Обновление WoodMart с пересборкой шапки и футера
@@ -1707,7 +1707,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woodmart-theme-rebuild
+        url: /showcase/woodmart-theme-rebuild/
         type: product
   - slug: woocommerce-cart-recovery
     name: Восстановление корзины и чекаута WooCommerce
@@ -1724,7 +1724,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-cart-recovery
+        url: /showcase/woocommerce-cart-recovery/
         type: product
   - slug: dpd-woocommerce-setup
     name: Настройка модуля доставки DPD для WooCommerce
@@ -1741,7 +1741,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/dpd-woocommerce-setup
+        url: /showcase/dpd-woocommerce-setup/
         type: product
   - slug: paypal-standard-checkout
     name: Совместимость PayPal и товарный блок в чекауте
@@ -1758,7 +1758,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/paypal-standard-checkout
+        url: /showcase/paypal-standard-checkout/
         type: product
   - slug: xlsx-large-catalog
     name: Массовая загрузка более 15 тысяч позиций из XLSX
@@ -1776,7 +1776,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/xlsx-large-catalog
+        url: /showcase/xlsx-large-catalog/
         type: product
   - slug: tub-store-mobile-layout
     name: Мобильная вёрстка магазина купелей и правки корзины
@@ -1793,7 +1793,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/tub-store-mobile-layout
+        url: /showcase/tub-store-mobile-layout/
         type: product
   - slug: cosmetics-woodmart-migration
     name: Переезд косметического магазина на WoodMart через стенд
@@ -1811,7 +1811,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/cosmetics-woodmart-migration
+        url: /showcase/cosmetics-woodmart-migration/
         type: product
   - slug: daichi-two-stage-catalog
     name: Импорт ассортимента Daichi через двухчастный API
@@ -1829,7 +1829,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/daichi-two-stage-catalog
+        url: /showcase/daichi-two-stage-catalog/
         type: product
   - slug: champs-catalog-structure
     name: Структура каталога, фильтры и адреса магазина Champs
@@ -1846,7 +1846,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/champs-catalog-structure
+        url: /showcase/champs-catalog-structure/
         type: product
   - slug: paypal-checkout-presentation
     name: Упрощение формы чекаута после настройки PayPal
@@ -1863,7 +1863,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/paypal-checkout-presentation
+        url: /showcase/paypal-checkout-presentation/
         type: product
   - slug: cleaning-messenger-buttons
     name: Кнопки WhatsApp и Telegram для клинингового сайта
@@ -1880,7 +1880,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/cleaning-messenger-buttons
+        url: /showcase/cleaning-messenger-buttons/
         type: product
   - slug: tub-store-guest-checkout
     name: Оптимизация магазина купелей и гостевого чекаута
@@ -1898,7 +1898,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/tub-store-guest-checkout
+        url: /showcase/tub-store-guest-checkout/
         type: product
   - slug: circa-outlet-catalog
     name: "Circa Outlet: импорт 9 645 товаров и вывод размеров"
@@ -1914,7 +1914,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/circa-outlet-catalog
+        url: /showcase/circa-outlet-catalog/
         type: product
   - slug: torin-fashion-import
     name: "Torin Fashion: перенос ассортимента одежды"
@@ -1931,7 +1931,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/torin-fashion-import
+        url: /showcase/torin-fashion-import/
         type: product
   - slug: dollor-feed-pricing
     name: "DOLLOR: импорт оборудования и обновление цен"
@@ -1948,7 +1948,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/dollor-feed-pricing
+        url: /showcase/dollor-feed-pricing/
         type: product
   - slug: footwear-variation-import
     name: Шаблон повторного импорта вариаций обуви
@@ -1965,7 +1965,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/footwear-variation-import
+        url: /showcase/footwear-variation-import/
         type: product
   - slug: construction-catalog-variants
     name: "Строительный каталог: вариации, фильтры и поиск"
@@ -1983,7 +1983,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/construction-catalog-variants
+        url: /showcase/construction-catalog-variants/
         type: product
   - slug: xml-variable-catalog-refresh
     name: XML-импорт вариативных товаров с наценкой
@@ -2001,7 +2001,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/xml-variable-catalog-refresh
+        url: /showcase/xml-variable-catalog-refresh/
         type: product
   - slug: zipal-listings-schedule
     name: Обновление объявлений недвижимости из Zipal каждые 6 часов
@@ -2018,7 +2018,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/zipal-listings-schedule
+        url: /showcase/zipal-listings-schedule/
         type: product
   - slug: generator-storefront-rebuild
     name: Восстановление витрины генераторов и карточек товаров
@@ -2035,7 +2035,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/generator-storefront-rebuild
+        url: /showcase/generator-storefront-rebuild/
         type: product
   - slug: megamarket-store-foundation
     name: Подготовка магазина на WoodMart Megamarket с SSL
@@ -2054,7 +2054,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/megamarket-store-foundation
+        url: /showcase/megamarket-store-foundation/
         type: product
   - slug: automotive-catalog-photo-collection
     name: Автоматический сбор фотографий каталога автотоваров
@@ -2071,7 +2071,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/automotive-catalog-photo-collection
+        url: /showcase/automotive-catalog-photo-collection/
         type: product
   - slug: woocommerce-template-recovery
     name: Ремонт категорий и меню WooCommerce после обновления
@@ -2089,7 +2089,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-template-recovery
+        url: /showcase/woocommerce-template-recovery/
         type: product
   - slug: prodamus-discount-repair
     name: Исправление скидки WooCommerce для оплаты Prodamus
@@ -2106,7 +2106,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/prodamus-discount-repair
+        url: /showcase/prodamus-discount-repair/
         type: product
   - slug: mega-electronics-setup
     name: Настройка витрины WoodMart Mega Electronics
@@ -2124,7 +2124,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/mega-electronics-setup
+        url: /showcase/mega-electronics-setup/
         type: product
   - slug: store-theme-reset
     name: Восстановление магазина после конфликта редакторов
@@ -2142,7 +2142,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/store-theme-reset
+        url: /showcase/store-theme-reset/
         type: product
   - slug: dme-english-service-site
     name: Англоязычный сайт сервисной компании DME
@@ -2159,7 +2159,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/dme-english-service-site
+        url: /showcase/dme-english-service-site/
         type: product
   - slug: hockey-insales-woodmart
     name: Перенос хоккейного каталога из InSales на WoodMart
@@ -2177,7 +2177,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/hockey-insales-woodmart
+        url: /showcase/hockey-insales-woodmart/
         type: product
   - slug: hockey-storefront-ux
     name: Редизайн карточек и мобильной витрины магазина
@@ -2195,7 +2195,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/hockey-storefront-ux
+        url: /showcase/hockey-storefront-ux/
         type: product
   - slug: supplier-price-list-refresh
     name: Обновление цен и ассортимента по новому прайсу
@@ -2212,7 +2212,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/supplier-price-list-refresh
+        url: /showcase/supplier-price-list-refresh/
         type: product
   - slug: two-store-category-repricing
     name: Переоценка выбранных категорий двух магазинов
@@ -2229,7 +2229,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/two-store-category-repricing
+        url: /showcase/two-store-category-repricing/
         type: product
   - slug: avangard-woodmart-foundation
     name: Стартовая настройка магазина Avangard Plus на WoodMart
@@ -2246,7 +2246,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/avangard-woodmart-foundation
+        url: /showcase/avangard-woodmart-foundation/
         type: product
   - slug: gutenberg-store-migration
     name: Замена темы магазина с восстановлением чекаута
@@ -2265,7 +2265,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/gutenberg-store-migration
+        url: /showcase/gutenberg-store-migration/
         type: product
   - slug: cdek-address-and-parcel
     name: Расчёт СДЭК и адресные подсказки в чекауте
@@ -2283,7 +2283,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/cdek-address-and-parcel
+        url: /showcase/cdek-address-and-parcel/
         type: product
   - slug: xml-sewing-equipment-catalog
     name: Импорт швейного оборудования из XML поставщика
@@ -2300,7 +2300,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/xml-sewing-equipment-catalog
+        url: /showcase/xml-sewing-equipment-catalog/
         type: product
   - slug: yandex-mail-signature-kit
     name: Шесть корпоративных HTML-подписей для Яндекс Почты
@@ -2317,7 +2317,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/yandex-mail-signature-kit
+        url: /showcase/yandex-mail-signature-kit/
         type: product
   - slug: bowling-woodmart-launch
     name: Запуск основы магазина товаров для боулинга
@@ -2335,7 +2335,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/bowling-woodmart-launch
+        url: /showcase/bowling-woodmart-launch/
         type: product
   - slug: fashion-data-preparation
     name: Парсинг каталога одежды и подготовка данных к импорту
@@ -2353,7 +2353,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/fashion-data-preparation
+        url: /showcase/fashion-data-preparation/
         type: product
   - slug: construction-services-site
     name: Перестройка раздела услуг строительной компании
@@ -2371,7 +2371,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/construction-services-site
+        url: /showcase/construction-services-site/
         type: product
   - slug: wordpress-editor-map-recovery
     name: Восстановление сохранения правок в редакторе WordPress
@@ -2388,7 +2388,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-editor-map-recovery
+        url: /showcase/wordpress-editor-map-recovery/
         type: product
   - slug: child-theme-store-training
     name: Ремонт темы и обучение владельца магазина
@@ -2405,7 +2405,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/child-theme-store-training
+        url: /showcase/child-theme-store-training/
         type: product
   - slug: taxi-vehicle-booking
     name: Форма выбора автомобиля для Silver Park Taxi
@@ -2422,7 +2422,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/taxi-vehicle-booking
+        url: /showcase/taxi-vehicle-booking/
         type: product
   - slug: taxi-mobile-car-cards
     name: Мобильные карточки автомобилей Silver Park Taxi
@@ -2440,7 +2440,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/taxi-mobile-car-cards
+        url: /showcase/taxi-mobile-car-cards/
         type: product
   - slug: woodmart-equipment-store
     name: Адаптация WoodMart для магазина техники
@@ -2458,7 +2458,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woodmart-equipment-store
+        url: /showcase/woodmart-equipment-store/
         type: product
   - slug: plant-store-variation-repair
     name: Ремонт вариаций и регистрации магазина растений
@@ -2476,7 +2476,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/plant-store-variation-repair
+        url: /showcase/plant-store-variation-repair/
         type: product
   - slug: furniture-catalog-csv-migration
     name: Перенос мебельного каталога в WooCommerce
@@ -2494,7 +2494,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/furniture-catalog-csv-migration
+        url: /showcase/furniture-catalog-csv-migration/
         type: product
   - slug: woocommerce-layout-bulk-edit-advice
     name: Консультация по шаблонам и каталогу WooCommerce
@@ -2512,7 +2512,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-layout-bulk-edit-advice
+        url: /showcase/woocommerce-layout-bulk-edit-advice/
         type: product
   - slug: auto-service-site-handoff
     name: Передача сайта автосервиса для самостоятельного запуска
@@ -2528,7 +2528,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/auto-service-site-handoff
+        url: /showcase/auto-service-site-handoff/
         type: product
   - slug: food-delivery-city-selector
     name: Выбор города на сайте доставки еды
@@ -2545,7 +2545,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/food-delivery-city-selector
+        url: /showcase/food-delivery-city-selector/
         type: product
   - slug: hvac-store-index-audit
     name: Техническое SEO магазина климатической техники
@@ -2563,7 +2563,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/hvac-store-index-audit
+        url: /showcase/hvac-store-index-audit/
         type: product
   - slug: spanish-portfolio-localization
     name: Испанская версия WordPress-сайта и портфолио
@@ -2580,7 +2580,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/spanish-portfolio-localization
+        url: /showcase/spanish-portfolio-localization/
         type: product
   - slug: lighting-store-product-specs
     name: Характеристики и корзина магазина освещения
@@ -2596,7 +2596,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/lighting-store-product-specs
+        url: /showcase/lighting-store-product-specs/
         type: product
   - slug: coffee-catalog-price-layout
     name: Карточки кофе с выбором фасовки в WooCommerce
@@ -2613,7 +2613,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/coffee-catalog-price-layout
+        url: /showcase/coffee-catalog-price-layout/
         type: product
   - slug: plumbing-catalog-data-handoff
     name: Подготовка каталога сантехники к импорту
@@ -2631,7 +2631,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/plumbing-catalog-data-handoff
+        url: /showcase/plumbing-catalog-data-handoff/
         type: product
   - slug: portuguese-responsive-site
     name: Адаптивный португалоязычный сайт по образцу
@@ -2648,7 +2648,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/portuguese-responsive-site
+        url: /showcase/portuguese-responsive-site/
         type: product
   - slug: arenda-pm-home-performance
     name: Ускорение мобильной главной Аренда-ПМ
@@ -2671,7 +2671,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/arenda-pm-home-performance
+        url: /showcase/arenda-pm-home-performance/
         type: product
   - slug: marketplace-photo-batch
     name: Пакетная подготовка фото для Ozon и Wildberries
@@ -2692,7 +2692,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/marketplace-photo-batch
+        url: /showcase/marketplace-photo-batch/
         type: product
   - slug: boxberry-cart-recovery
     name: Подключение Boxberry и восстановление корзины
@@ -2710,7 +2710,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/boxberry-cart-recovery
+        url: /showcase/boxberry-cart-recovery/
         type: product
   - slug: roofing-store-seo
     name: SEO-метаданные магазина кровельных материалов
@@ -2728,7 +2728,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/roofing-store-seo
+        url: /showcase/roofing-store-seo/
         type: product
   - slug: prelaunch-wordpress-seo
     name: SEO-подготовка WordPress перед открытием сайта
@@ -2746,7 +2746,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/prelaunch-wordpress-seo
+        url: /showcase/prelaunch-wordpress-seo/
         type: product
   - slug: service-page-product-selection
     name: Товары WooCommerce на страницах услуг
@@ -2762,7 +2762,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/service-page-product-selection
+        url: /showcase/service-page-product-selection/
         type: product
   - slug: altr-storefront-adaptation
     name: Адаптация витрины WooCommerce на теме Altr
@@ -2780,7 +2780,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/altr-storefront-adaptation
+        url: /showcase/altr-storefront-adaptation/
         type: product
   - slug: hyperstroy-tool-store
     name: "ГиперСтрой: запуск магазина инструментов"
@@ -2803,7 +2803,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/hyperstroy-tool-store
+        url: /showcase/hyperstroy-tool-store/
         type: product
   - slug: real-estate-photo-import-repair
     name: Исправление импорта объектов недвижимости и фото
@@ -2821,7 +2821,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/real-estate-photo-import-repair
+        url: /showcase/real-estate-photo-import-repair/
         type: product
   - slug: yandex-delivery-pickup-setup
     name: Настройка Яндекс Доставки и ПВЗ в WooCommerce
@@ -2839,7 +2839,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/yandex-delivery-pickup-setup
+        url: /showcase/yandex-delivery-pickup-setup/
         type: product
   - slug: product-consultation-and-filters
     name: Форма консультации и фильтры магазина WooCommerce
@@ -2856,7 +2856,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/product-consultation-and-filters
+        url: /showcase/product-consultation-and-filters/
         type: product
   - slug: hvac-category-filter-templates
     name: Шаблоны фильтров для категорий климатической техники
@@ -2874,7 +2874,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/hvac-category-filter-templates
+        url: /showcase/hvac-category-filter-templates/
         type: product
   - slug: flooring-catalog-id-refresh
     name: Переимпорт каталога напольных покрытий по ID
@@ -2890,7 +2890,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/flooring-catalog-id-refresh
+        url: /showcase/flooring-catalog-id-refresh/
         type: product
   - slug: acf-homepage-update-recovery
     name: Восстановление главной WordPress с контентом ACF
@@ -2907,7 +2907,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/acf-homepage-update-recovery
+        url: /showcase/acf-homepage-update-recovery/
         type: product
   - slug: hanyi-facade-panel-catalog
     name: Наполнение раздела фасадных панелей Ханьи
@@ -2923,7 +2923,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/hanyi-facade-panel-catalog
+        url: /showcase/hanyi-facade-panel-catalog/
         type: product
   - slug: yandex-crawl-parameter-cleanup
     name: Устранение лишних URL в Яндекс Вебмастере
@@ -2941,7 +2941,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/yandex-crawl-parameter-cleanup
+        url: /showcase/yandex-crawl-parameter-cleanup/
         type: product
   - slug: lighting-catalog-staged-import
     name: Поэтапный импорт большого каталога освещения
@@ -2959,7 +2959,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/lighting-catalog-staged-import
+        url: /showcase/lighting-catalog-staged-import/
         type: product
   - slug: lighting-catalog-navigation
     name: Навигация и фильтры большого каталога освещения
@@ -2977,7 +2977,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/lighting-catalog-navigation
+        url: /showcase/lighting-catalog-navigation/
         type: product
   - slug: fastener-specification-display
     name: Восстановление характеристик крепежа в WooCommerce
@@ -2995,7 +2995,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/fastener-specification-display
+        url: /showcase/fastener-specification-display/
         type: product
   - slug: fastener-catalog-attribute-filters
     name: Фильтры каталога крепежа по характеристикам
@@ -3012,7 +3012,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/fastener-catalog-attribute-filters
+        url: /showcase/fastener-catalog-attribute-filters/
         type: product
   - slug: transport-site-media-repair
     name: Адаптивное видео и навигация сайта перевозок
@@ -3028,7 +3028,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/transport-site-media-repair
+        url: /showcase/transport-site-media-repair/
         type: product
   - slug: bgtgroup-technical-seo-performance
     name: "BGT Group: техническое SEO и скорость сайта"
@@ -3046,7 +3046,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/bgtgroup-technical-seo-performance
+        url: /showcase/bgtgroup-technical-seo-performance/
         type: product
   - slug: edible-bouquet-catalog-data
     name: Подготовка каталога съедобных букетов к импорту
@@ -3063,7 +3063,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/edible-bouquet-catalog-data
+        url: /showcase/edible-bouquet-catalog-data/
         type: product
   - slug: woocommerce-product-template-training
     name: Индивидуальные шаблоны товаров WooCommerce
@@ -3080,7 +3080,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-product-template-training
+        url: /showcase/woocommerce-product-template-training/
         type: product
   - slug: woocommerce-native-order-statuses
     name: Возврат штатных статусов заказов WooCommerce
@@ -3096,7 +3096,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-native-order-statuses
+        url: /showcase/woocommerce-native-order-statuses/
         type: product
   - slug: woocommerce-admin-email-items
     name: Состав заказа в письмах менеджеру WooCommerce
@@ -3112,7 +3112,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-admin-email-items
+        url: /showcase/woocommerce-admin-email-items/
         type: product
   - slug: booking-form-email-recovery
     name: Восстановление писем из форм бронирования
@@ -3129,7 +3129,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/booking-form-email-recovery
+        url: /showcase/booking-form-email-recovery/
         type: product
   - slug: cart-gift-thresholds
     name: Настройка порогов подарка в корзине доставки
@@ -3145,7 +3145,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/cart-gift-thresholds
+        url: /showcase/cart-gift-thresholds/
         type: product
   - slug: door-catalog-variation-import
     name: Импорт дверей с выбором цвета и размера
@@ -3163,7 +3163,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/door-catalog-variation-import
+        url: /showcase/door-catalog-variation-import/
         type: product
   - slug: tilda-yml-specifications
     name: Доработка YML-фида из Tilda для Яндекса
@@ -3181,7 +3181,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/tilda-yml-specifications
+        url: /showcase/tilda-yml-specifications/
         type: product
   - slug: yookassa-webhook-recovery
     name: Восстановление уведомлений об оплате ЮKassa
@@ -3198,7 +3198,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/yookassa-webhook-recovery
+        url: /showcase/yookassa-webhook-recovery/
         type: product
   - slug: garland-catalog-import-training
     name: Импорт гирлянд и настройка выбора цвета
@@ -3221,7 +3221,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/garland-catalog-import-training
+        url: /showcase/garland-catalog-import-training/
         type: product
   - slug: estate-renovation-astra-site
     name: Сайт ремонтной компании «Поместье» на Astra
@@ -3238,7 +3238,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/estate-renovation-astra-site
+        url: /showcase/estate-renovation-astra-site/
         type: product
   - slug: car-buyback-site-with-blog
     name: Сайт выкупа автомобилей с услугами и блогом
@@ -3255,7 +3255,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/car-buyback-site-with-blog
+        url: /showcase/car-buyback-site-with-blog/
         type: product
   - slug: related-articles-product-tabs
     name: Связанные статьи во вкладках товаров WooCommerce
@@ -3271,7 +3271,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/related-articles-product-tabs
+        url: /showcase/related-articles-product-tabs/
         type: product
   - slug: metrica-ecommerce-purchase-goals
     name: Электронная торговля и цели Яндекс Метрики
@@ -3287,7 +3287,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/metrica-ecommerce-purchase-goals
+        url: /showcase/metrica-ecommerce-purchase-goals/
         type: product
   - slug: wordpress-webp-image-workflow
     name: Оптимизация изображений и настройка WebP
@@ -3305,7 +3305,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-webp-image-workflow
+        url: /showcase/wordpress-webp-image-workflow/
         type: product
   - slug: academy-opt-one-page-checkout
     name: Одностраничная покупка курса с оплатой Тинькофф
@@ -3323,7 +3323,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/academy-opt-one-page-checkout
+        url: /showcase/academy-opt-one-page-checkout/
         type: product
   - slug: cdek-pickup-without-rating
     name: Выбор пункта СДЭК без расчёта тарифа
@@ -3341,7 +3341,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/cdek-pickup-without-rating
+        url: /showcase/cdek-pickup-without-rating/
         type: product
   - slug: woocommerce-taplink-export
     name: Выгрузка каталога WooCommerce для Taplink
@@ -3359,7 +3359,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-taplink-export
+        url: /showcase/woocommerce-taplink-export/
         type: product
   - slug: industrial-image-ai-upscale
     name: Увеличение фотографий мостовых ограждений с ИИ
@@ -3376,7 +3376,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/industrial-image-ai-upscale
+        url: /showcase/industrial-image-ai-upscale/
         type: product
   - slug: florist-scheduled-yml-feed
     name: Обновляемый YML-фид цветочного магазина
@@ -3394,7 +3394,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/florist-scheduled-yml-feed
+        url: /showcase/florist-scheduled-yml-feed/
         type: product
   - slug: inegolhome-furniture-store
     name: "Inegol Home: магазин и импорт мебельного каталога"
@@ -3417,7 +3417,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/inegolhome-furniture-store
+        url: /showcase/inegolhome-furniture-store/
         type: product
   - slug: gauss-image-link-export
     name: Выгрузка артикулов и фотографий Gauss в Excel
@@ -3435,7 +3435,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/gauss-image-link-export
+        url: /showcase/gauss-image-link-export/
         type: product
   - slug: coffee-machine-yml-model-tag
     name: Отдельный тег модели в YML-фиде кофемашин
@@ -3453,7 +3453,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/coffee-machine-yml-model-tag
+        url: /showcase/coffee-machine-yml-model-tag/
         type: product
   - slug: bite-news-wordpress-launch
     name: "Bite News: запуск тёмного новостного сайта"
@@ -3477,7 +3477,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/bite-news-wordpress-launch
+        url: /showcase/bite-news-wordpress-launch/
         type: product
   - slug: anta-preorder-variant-import
     name: Импорт предзаказа ANTA из трёх таблиц
@@ -3495,7 +3495,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/anta-preorder-variant-import
+        url: /showcase/anta-preorder-variant-import/
         type: product
   - slug: spare-parts-enquiry-catalog
     name: Каталог запчастей без онлайн-продажи
@@ -3513,7 +3513,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/spare-parts-enquiry-catalog
+        url: /showcase/spare-parts-enquiry-catalog/
         type: product
   - slug: watchdivision-home-megamenu
     name: "WatchDivision: редизайн главной и мегаменю"
@@ -3531,7 +3531,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/watchdivision-home-megamenu
+        url: /showcase/watchdivision-home-megamenu/
         type: product
   - slug: english-affiliate-storefront
     name: Англоязычная партнёрская витрина на WoodMart
@@ -3549,7 +3549,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/english-affiliate-storefront
+        url: /showcase/english-affiliate-storefront/
         type: product
   - slug: industrial-builder-landing
     name: Сайт-визитка предприятия «Нефтехимик-Н»
@@ -3571,7 +3571,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/industrial-builder-landing
+        url: /showcase/industrial-builder-landing/
         type: product
   - slug: lingfast-language-site-foundation
     name: "Lingfast: основа сайта языкового проекта"
@@ -3589,7 +3589,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/lingfast-language-site-foundation
+        url: /showcase/lingfast-language-site-foundation/
         type: product
   - slug: blinds-conditional-enquiry-fields
     name: Зависимые поля формы заявки для сайта жалюзи
@@ -3607,7 +3607,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/blinds-conditional-enquiry-fields
+        url: /showcase/blinds-conditional-enquiry-fields/
         type: product
   - slug: creatium-to-elementor-header
     name: Перенос шапки из Creatium в WordPress
@@ -3625,7 +3625,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/creatium-to-elementor-header
+        url: /showcase/creatium-to-elementor-header/
         type: product
   - slug: three-sites-dns-ssl-migration
     name: "Координация переезда трёх сайтов: DNS и SSL"
@@ -3643,7 +3643,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/three-sites-dns-ssl-migration
+        url: /showcase/three-sites-dns-ssl-migration/
         type: product
   - slug: per-product-quantity-discounts
     name: Количественные скидки по каждому товару
@@ -3660,7 +3660,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/per-product-quantity-discounts
+        url: /showcase/per-product-quantity-discounts/
         type: product
   - slug: generatepress-editorial-blog
     name: Блог на GeneratePress с оглавлением статей
@@ -3677,7 +3677,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/generatepress-editorial-blog
+        url: /showcase/generatepress-editorial-blog/
         type: product
   - slug: saferoute-shipping-migration
     name: Замена Shiptor на SafeRoute в WooCommerce
@@ -3694,7 +3694,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/saferoute-shipping-migration
+        url: /showcase/saferoute-shipping-migration/
         type: product
   - slug: titanfox-catalog-hosting-migration
     name: "Titanfox: навигация каталога и смена хостинга"
@@ -3712,7 +3712,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/titanfox-catalog-hosting-migration
+        url: /showcase/titanfox-catalog-hosting-migration/
         type: product
   - slug: grundfos-pump-catalog-import
     name: Настройка импорта каталога насосов WooCommerce
@@ -3729,7 +3729,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/grundfos-pump-catalog-import
+        url: /showcase/grundfos-pump-catalog-import/
         type: product
   - slug: bobst-catalog-accordion
     name: "BOB-ST: плитки каталога и меню-аккордеон"
@@ -3746,7 +3746,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/bobst-catalog-accordion
+        url: /showcase/bobst-catalog-accordion/
         type: product
   - slug: engineering-store-media-regeneration
     name: Оптимизация медиатеки магазина оборудования
@@ -3764,7 +3764,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/engineering-store-media-regeneration
+        url: /showcase/engineering-store-media-regeneration/
         type: product
   - slug: marketlace-woodmart-transition
     name: "Marketlace: переход с Astra на WoodMart"
@@ -3782,7 +3782,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/marketlace-woodmart-transition
+        url: /showcase/marketlace-woodmart-transition/
         type: product
   - slug: belarus-aggregator-yml-feed
     name: YML-фид для белорусских товарных агрегаторов
@@ -3800,7 +3800,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/belarus-aggregator-yml-feed
+        url: /showcase/belarus-aggregator-yml-feed/
         type: product
   - slug: textili-header-import-diagnostics
     name: "Textili: доработка шапки и диагностика импорта"
@@ -3817,7 +3817,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/textili-header-import-diagnostics
+        url: /showcase/textili-header-import-diagnostics/
         type: product
   - slug: zooforsale-sber-launch-stage
     name: Zooforsale и тестовый эквайринг для Balance Group Life
@@ -3834,7 +3834,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/zooforsale-sber-launch-stage
+        url: /showcase/zooforsale-sber-launch-stage/
         type: product
   - slug: osama-market-store-launch
     name: "Osama Market: запуск витрины и импорт каталога"
@@ -3852,7 +3852,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/osama-market-store-launch
+        url: /showcase/osama-market-store-launch/
         type: product
   - slug: grandkrovlya-import-slugs
     name: "Grandkrovlya: восстановление импорта и адресов"
@@ -3869,7 +3869,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/grandkrovlya-import-slugs
+        url: /showcase/grandkrovlya-import-slugs/
         type: product
   - slug: astola-guest-cache-layout
     name: "Astola: исправление вёрстки для посетителей"
@@ -3887,7 +3887,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/astola-guest-cache-layout
+        url: /showcase/astola-guest-cache-layout/
         type: product
   - slug: dommebeli-instoria-catalog-rebrand
     name: Мебельный каталог и подготовка фото к ребрендингу
@@ -3905,7 +3905,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/dommebeli-instoria-catalog-rebrand
+        url: /showcase/dommebeli-instoria-catalog-rebrand/
         type: product
   - slug: pariscoiff-mobile-onpage-seo
     name: "Pariscoiff: внутренняя SEO-настройка и мобильные правки"
@@ -3922,7 +3922,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/pariscoiff-mobile-onpage-seo
+        url: /showcase/pariscoiff-mobile-onpage-seo/
         type: product
   - slug: automotive-firmware-digital-store
     name: Магазин автомобильных прошивок с ЮKassa
@@ -3940,7 +3940,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/automotive-firmware-digital-store
+        url: /showcase/automotive-firmware-digital-store/
         type: product
   - slug: sushi-panda-payment-recovery
     name: "Sushi Panda: восстановление сайта и онлайн-оплаты"
@@ -3957,7 +3957,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/sushi-panda-payment-recovery
+        url: /showcase/sushi-panda-payment-recovery/
         type: product
   - slug: wordpress-editable-profile-directory
     name: Каталог анкет с самостоятельным наполнением
@@ -3974,7 +3974,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-editable-profile-directory
+        url: /showcase/wordpress-editable-profile-directory/
         type: product
   - slug: vector-dobra-social-services
     name: "«Вектор Добра»: сайт социальных услуг"
@@ -3997,7 +3997,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/vector-dobra-social-services
+        url: /showcase/vector-dobra-social-services/
         type: product
   - slug: nazim-multilingual-catalog
     name: "Nazim 1001: каталог на трёх языках"
@@ -4015,7 +4015,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/nazim-multilingual-catalog
+        url: /showcase/nazim-multilingual-catalog/
         type: product
   - slug: sugarlips-supplier-csv-import
     name: Импорт и обновление каталога Sugarlips
@@ -4032,7 +4032,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/sugarlips-supplier-csv-import
+        url: /showcase/sugarlips-supplier-csv-import/
         type: product
   - slug: salt-switch-order-recovery
     name: "SALT SWITCH: восстановление заказов и писем"
@@ -4049,7 +4049,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/salt-switch-order-recovery
+        url: /showcase/salt-switch-order-recovery/
         type: product
   - slug: salt-switch-editorial-blog
     name: "SALT SWITCH: запуск блога и оформление статей"
@@ -4067,7 +4067,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/salt-switch-editorial-blog
+        url: /showcase/salt-switch-editorial-blog/
         type: product
   - slug: fireknife-catalog-facets-import
     name: "Fireknife: перенос ножей и подготовка фильтров"
@@ -4085,7 +4085,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/fireknife-catalog-facets-import
+        url: /showcase/fireknife-catalog-facets-import/
         type: product
   - slug: randewoo-perfume-data-extract
     name: Сбор данных парфюмерного каталога Randewoo
@@ -4102,7 +4102,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/randewoo-perfume-data-extract
+        url: /showcase/randewoo-perfume-data-extract/
         type: product
   - slug: metakredits-wordpress-domain-recovery
     name: "Metakredits: привязка домена и восстановление сайта"
@@ -4120,7 +4120,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/metakredits-wordpress-domain-recovery
+        url: /showcase/metakredits-wordpress-domain-recovery/
         type: product
   - slug: foodsfact-equipment-catalog
     name: "FoodsFact: англоязычный каталог оборудования"
@@ -4143,7 +4143,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/foodsfact-equipment-catalog
+        url: /showcase/foodsfact-equipment-catalog/
         type: product
   - slug: murmansk-culture-palace-site
     name: Сайт Мурманского областного дворца культуры
@@ -4161,7 +4161,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/murmansk-culture-palace-site
+        url: /showcase/murmansk-culture-palace-site/
         type: product
   - slug: vyvoz24-service-site-technical-seo
     name: "«Вывоз24»: техническое SEO сайта услуг"
@@ -4178,7 +4178,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/vyvoz24-service-site-technical-seo
+        url: /showcase/vyvoz24-service-site-technical-seo/
         type: product
   - slug: antique-store-media-regression
     name: Оптимизация изображений антикварного магазина
@@ -4196,7 +4196,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/antique-store-media-regression
+        url: /showcase/antique-store-media-regression/
         type: product
   - slug: wordpress-posts-to-woocommerce-catalog
     name: Перенос каталога из записей WordPress в WooCommerce
@@ -4214,7 +4214,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-posts-to-woocommerce-catalog
+        url: /showcase/wordpress-posts-to-woocommerce-catalog/
         type: product
   - slug: cosmetics-catalog-localization-data
     name: Таблица косметики для итальянской локализации
@@ -4232,7 +4232,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/cosmetics-catalog-localization-data
+        url: /showcase/cosmetics-catalog-localization-data/
         type: product
   - slug: ibike-scooter-rental-website
     name: "iBike: сайт проката с заявкой на аренду"
@@ -4254,7 +4254,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/ibike-scooter-rental-website
+        url: /showcase/ibike-scooter-rental-website/
         type: product
   - slug: video-surveillance-catalog-migration
     name: Перенос каталога оборудования видеонаблюдения
@@ -4273,7 +4273,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/video-surveillance-catalog-migration
+        url: /showcase/video-surveillance-catalog-migration/
         type: product
   - slug: woocommerce-stock-waitlist-localization
     name: Лист ожидания и русификация писем WooCommerce
@@ -4290,7 +4290,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-stock-waitlist-localization
+        url: /showcase/woocommerce-stock-waitlist-localization/
         type: product
   - slug: regional-sports-directory-extract
     name: Сбор справочника спортивных организаций
@@ -4306,7 +4306,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/regional-sports-directory-extract
+        url: /showcase/regional-sports-directory-extract/
         type: product
   - slug: lab-order-dashboard-css
     name: Оформление кабинета лабораторных заказов
@@ -4323,7 +4323,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/lab-order-dashboard-css
+        url: /showcase/lab-order-dashboard-css/
         type: product
   - slug: aravia-postcode-delivery-checkout
     name: Доставка по индексам и самовывоз для Aravia
@@ -4341,7 +4341,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/aravia-postcode-delivery-checkout
+        url: /showcase/aravia-postcode-delivery-checkout/
         type: product
   - slug: dependent-category-filters-repair
     name: Восстановление зависимых фильтров WooCommerce
@@ -4358,7 +4358,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/dependent-category-filters-repair
+        url: /showcase/dependent-category-filters-repair/
         type: product
   - slug: electronics-catalog-price-list-assets
     name: Наполнение каталога электроники по прайсу
@@ -4376,7 +4376,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/electronics-catalog-price-list-assets
+        url: /showcase/electronics-catalog-price-list-assets/
         type: product
   - slug: kontel-woocommerce-breadcrumbs
     name: Хлебные крошки WooCommerce в шаблонах сайта
@@ -4393,7 +4393,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/kontel-woocommerce-breadcrumbs
+        url: /showcase/kontel-woocommerce-breadcrumbs/
         type: product
   - slug: b2b-woocommerce-order-request
     name: Оформление B2B-заявок через корзину WooCommerce
@@ -4410,7 +4410,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/b2b-woocommerce-order-request
+        url: /showcase/b2b-woocommerce-order-request/
         type: product
   - slug: schmidt-studio-migration-performance
     name: "Schmidt Studio: переезд и оптимизация WordPress"
@@ -4428,7 +4428,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/schmidt-studio-migration-performance
+        url: /showcase/schmidt-studio-migration-performance/
         type: product
   - slug: woocommerce-excerpt-import-repair
     name: Восстановление кратких описаний при импорте
@@ -4446,7 +4446,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-excerpt-import-repair
+        url: /showcase/woocommerce-excerpt-import-repair/
         type: product
   - slug: avada-furniture-store-foundation
     name: Основа мебельного магазина на Avada
@@ -4463,7 +4463,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/avada-furniture-store-foundation
+        url: /showcase/avada-furniture-store-foundation/
         type: product
   - slug: woocommerce-draft-products-visibility
     name: Возврат скрытых товаров на витрину WooCommerce
@@ -4479,7 +4479,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-draft-products-visibility
+        url: /showcase/woocommerce-draft-products-visibility/
         type: product
   - slug: medical-equipment-catalog-layout
     name: Сетка и габариты каталога медоборудования
@@ -4497,7 +4497,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/medical-equipment-catalog-layout
+        url: /showcase/medical-equipment-catalog-layout/
         type: product
   - slug: woocommerce-quick-view-cart-refinement
     name: Карточка, быстрый просмотр и корзина WooCommerce
@@ -4514,7 +4514,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-quick-view-cart-refinement
+        url: /showcase/woocommerce-quick-view-cart-refinement/
         type: product
   - slug: course-price-list-for-business
     name: Обновление цен курсов и прайс для организаций
@@ -4532,7 +4532,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/course-price-list-for-business
+        url: /showcase/course-price-list-for-business/
         type: product
   - slug: ecu-files-table-filter
     name: Таблица файлов прошивок с горизонтальным фильтром
@@ -4549,7 +4549,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/ecu-files-table-filter
+        url: /showcase/ecu-files-table-filter/
         type: product
   - slug: confectionery-woocommerce-foundation
     name: Настройка кондитерского магазина на WoodMart
@@ -4567,7 +4567,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/confectionery-woocommerce-foundation
+        url: /showcase/confectionery-woocommerce-foundation/
         type: product
   - slug: furniture-home-city-selection
     name: Главная мебельного магазина и выбор города
@@ -4584,7 +4584,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/furniture-home-city-selection
+        url: /showcase/furniture-home-city-selection/
         type: product
   - slug: furniture-product-options-and-media
     name: "Карточки мебели: варианты, фотографии и заявки"
@@ -4602,7 +4602,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/furniture-product-options-and-media
+        url: /showcase/furniture-product-options-and-media/
         type: product
   - slug: skyruss-news-site-foundation
     name: Новостная основа Skyruss на Cream Magazine
@@ -4618,7 +4618,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/skyruss-news-site-foundation
+        url: /showcase/skyruss-news-site-foundation/
         type: product
   - slug: volvoparts-woodmart-demo
     name: Шаблонная витрина автозапчастей Volvoparts
@@ -4636,7 +4636,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/volvoparts-woodmart-demo
+        url: /showcase/volvoparts-woodmart-demo/
         type: product
   - slug: wordpress-menu-editor-recovery
     name: Восстановление редактора меню WordPress
@@ -4653,7 +4653,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-menu-editor-recovery
+        url: /showcase/wordpress-menu-editor-recovery/
         type: product
   - slug: langformula-digital-cart-flow
     name: Покупка цифровых материалов Langformula
@@ -4672,7 +4672,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/langformula-digital-cart-flow
+        url: /showcase/langformula-digital-cart-flow/
         type: product
   - slug: evrosumka-checkout-footer
     name: Упрощение оформления заказа в Evrosumka
@@ -4689,7 +4689,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/evrosumka-checkout-footer
+        url: /showcase/evrosumka-checkout-footer/
         type: product
   - slug: medcors-joomla-transition-design
     name: "Medcors: оформление WordPress-версии сайта"
@@ -4707,7 +4707,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/medcors-joomla-transition-design
+        url: /showcase/medcors-joomla-transition-design/
         type: product
   - slug: goa-tours-stripe-setup
     name: Настройка Stripe для магазина Goa Tours
@@ -4724,7 +4724,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/goa-tours-stripe-setup
+        url: /showcase/goa-tours-stripe-setup/
         type: product
   - slug: woocommerce-alongside-digiseller
     name: WooCommerce рядом с витриной Digiseller
@@ -4742,7 +4742,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-alongside-digiseller
+        url: /showcase/woocommerce-alongside-digiseller/
         type: product
   - slug: pelicula-staging-demo-handoff
     name: Развёртывание Pelicula и передача архива сайта
@@ -4760,7 +4760,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/pelicula-staging-demo-handoff
+        url: /showcase/pelicula-staging-demo-handoff/
         type: product
   - slug: woocommerce-invoice-approval
     name: Автоматический счёт и согласование заказа
@@ -4778,7 +4778,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-invoice-approval
+        url: /showcase/woocommerce-invoice-approval/
         type: product
   - slug: cdek-express-checkout-notifications
     name: Экспресс-доставка СДЭК и письма заказа
@@ -4796,7 +4796,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/cdek-express-checkout-notifications
+        url: /showcase/cdek-express-checkout-notifications/
         type: product
   - slug: keytering-domain-cutover
     name: "Keytering: смена домена и правка первого экрана"
@@ -4814,7 +4814,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/keytering-domain-cutover
+        url: /showcase/keytering-domain-cutover/
         type: product
   - slug: outlook-interactive-signature-redesign
     name: Интерактивная подпись Outlook вместо картинки
@@ -4832,7 +4832,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/outlook-interactive-signature-redesign
+        url: /showcase/outlook-interactive-signature-redesign/
         type: product
   - slug: digital-database-stores-checkout
     name: Витрина цифровых баз и настройка оплаты
@@ -4850,7 +4850,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/digital-database-stores-checkout
+        url: /showcase/digital-database-stores-checkout/
         type: product
   - slug: woocommerce-document-pack-product-page
     name: Карточка пакета документов для WooCommerce
@@ -4868,7 +4868,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-document-pack-product-page
+        url: /showcase/woocommerce-document-pack-product-page/
         type: product
   - slug: delovye-linii-classic-cart
     name: "Деловые Линии: диагностика доставки и корзины"
@@ -4886,7 +4886,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/delovye-linii-classic-cart
+        url: /showcase/delovye-linii-classic-cart/
         type: product
   - slug: wordpress-guest-comments-recovery
     name: Возврат комментариев для гостей WordPress
@@ -4904,7 +4904,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/wordpress-guest-comments-recovery
+        url: /showcase/wordpress-guest-comments-recovery/
         type: product
   - slug: presnya-tea-captcha-cdek
     name: "Presnya Tea: защита форм и настройка доставки"
@@ -4921,7 +4921,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/presnya-tea-captcha-cdek
+        url: /showcase/presnya-tea-captcha-cdek/
         type: product
   - slug: airmania-selective-product-feed
     name: "Airmania: выборочная выгрузка и поле модели"
@@ -4939,7 +4939,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/airmania-selective-product-feed
+        url: /showcase/airmania-selective-product-feed/
         type: product
   - slug: sugarlips-boxberry-city-mapping
     name: "Sugarlips: восстановление доставки Boxberry"
@@ -4957,7 +4957,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/sugarlips-boxberry-city-mapping
+        url: /showcase/sugarlips-boxberry-city-mapping/
         type: product
   - slug: sugarlips-category-navigation
     name: "Sugarlips: меню на основе товарных категорий"
@@ -4974,7 +4974,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/sugarlips-category-navigation
+        url: /showcase/sugarlips-category-navigation/
         type: product
   - slug: bgtgroup-pl-multilingual-redirects
     name: Редиректы и битые ссылки трёх языковых версий
@@ -4992,7 +4992,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/bgtgroup-pl-multilingual-redirects
+        url: /showcase/bgtgroup-pl-multilingual-redirects/
         type: product
   - slug: eclect-furniture-attribute-cleanup
     name: Импорт мебели и очистка атрибутов Eclect
@@ -5010,7 +5010,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/eclect-furniture-attribute-cleanup
+        url: /showcase/eclect-furniture-attribute-cleanup/
         type: product
   - slug: troubleshooter-wordpress-business-card
     name: Сайт-визитка Troubleshooter на WordPress
@@ -5028,7 +5028,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/troubleshooter-wordpress-business-card
+        url: /showcase/troubleshooter-wordpress-business-card/
         type: product
   - slug: woocommerce-cart-cdek-pickup-recovery
     name: Ремонт корзины WooCommerce и подключение ПВЗ
@@ -5046,7 +5046,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-cart-cdek-pickup-recovery
+        url: /showcase/woocommerce-cart-cdek-pickup-recovery/
         type: product
   - slug: woocommerce-pdf-invoice-branding
     name: Доработка PDF-счёта WooCommerce для B2B
@@ -5064,7 +5064,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-pdf-invoice-branding
+        url: /showcase/woocommerce-pdf-invoice-branding/
         type: product
   - slug: rpm9000-site-content-ssl-check
     name: "9000 RPM: обновление сайта и проверка SSL"
@@ -5082,7 +5082,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/rpm9000-site-content-ssl-check
+        url: /showcase/rpm9000-site-content-ssl-check/
         type: product
   - slug: fabric-catalog-webp-compression
     name: Подготовка WebP для каталога тканей и кожи
@@ -5100,7 +5100,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/fabric-catalog-webp-compression
+        url: /showcase/fabric-catalog-webp-compression/
         type: product
   - slug: woocommerce-mobile-grid-regression
     name: Ремонт мобильной сетки товаров и категорий
@@ -5118,7 +5118,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-mobile-grid-regression
+        url: /showcase/woocommerce-mobile-grid-regression/
         type: product
   - slug: farkop-service-catalog-facets
     name: "Farkop Service: каталог и фильтр по марке авто"
@@ -5135,7 +5135,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/farkop-service-catalog-facets
+        url: /showcase/farkop-service-catalog-facets/
         type: product
   - slug: aravia-mobile-catalog-bulk-editor
     name: "Aravia: мобильный каталог и пакетное редактирование"
@@ -5153,7 +5153,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/aravia-mobile-catalog-bulk-editor
+        url: /showcase/aravia-mobile-catalog-bulk-editor/
         type: product
   - slug: yookassa-merchant-checkout-handoff
     name: Подключение ЮKassa и проверка перехода к оплате
@@ -5170,7 +5170,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/yookassa-merchant-checkout-handoff
+        url: /showcase/yookassa-merchant-checkout-handoff/
         type: product
   - slug: goa-tours-interface-copy
     name: "Goa Tours: тексты поиска и пустой корзины"
@@ -5188,7 +5188,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/goa-tours-interface-copy
+        url: /showcase/goa-tours-interface-copy/
         type: product
   - slug: salt-switch-cross-border-checkout
     name: "SALT SWITCH: доставка и счета для двух магазинов"
@@ -5206,7 +5206,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/salt-switch-cross-border-checkout
+        url: /showcase/salt-switch-cross-border-checkout/
         type: product
   - slug: blaskos-yandex-market-category-feed
     name: Выгрузка выбранных категорий в Яндекс Маркет
@@ -5224,7 +5224,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/blaskos-yandex-market-category-feed
+        url: /showcase/blaskos-yandex-market-category-feed/
         type: product
   - slug: woocommerce-variant-selector-placement
     name: Выбор вариаций под ценой в WooCommerce
@@ -5242,7 +5242,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-variant-selector-placement
+        url: /showcase/woocommerce-variant-selector-placement/
         type: product
   - slug: lossless-product-media-batch
     name: Пакетное сжатие каталожных изображений без потерь
@@ -5260,7 +5260,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/lossless-product-media-batch
+        url: /showcase/lossless-product-media-batch/
         type: product
   - slug: shulpinchik-checkout-styles
     name: Оформление полей и кнопок корзины WooCommerce
@@ -5278,7 +5278,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/shulpinchik-checkout-styles
+        url: /showcase/shulpinchik-checkout-styles/
         type: product
   - slug: woocommerce-compact-cart-cross-sells
     name: Компактная корзина и связанные товары WooCommerce
@@ -5296,7 +5296,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-compact-cart-cross-sells
+        url: /showcase/woocommerce-compact-cart-cross-sells/
         type: product
   - slug: le-fontan-multivendor-foundation
     name: Основа мультвендорного магазина Le Fontan
@@ -5315,7 +5315,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/le-fontan-multivendor-foundation
+        url: /showcase/le-fontan-multivendor-foundation/
         type: product
   - slug: woocommerce-delivery-hidden-fields-conflict
     name: Диагностика пропавшей доставки в WooCommerce
@@ -5333,7 +5333,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-delivery-hidden-fields-conflict
+        url: /showcase/woocommerce-delivery-hidden-fields-conflict/
         type: product
   - slug: woocommerce-checkout-in-stock-recommendations
     name: Упрощение чекаута и подборок товаров в наличии
@@ -5351,7 +5351,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/woocommerce-checkout-in-stock-recommendations
+        url: /showcase/woocommerce-checkout-in-stock-recommendations/
         type: product
   - slug: kabanchik-restaurant-website
     name: "«Кабанчик»: сайт ресторана с меню и банкетами"
@@ -5375,7 +5375,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/kabanchik-restaurant-website
+        url: /showcase/kabanchik-restaurant-website/
         type: product
   - slug: kabanchik-menu-data
     name: "«Кабанчик»: 212 позиций меню из DOCX и TXT"
@@ -5394,7 +5394,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/kabanchik-menu-data
+        url: /showcase/kabanchik-menu-data/
         type: product
   - slug: kabanchik-delivery-catalog
     name: "«Кабанчик»: каталог доставки и корзина блюд"
@@ -5418,7 +5418,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/kabanchik-delivery-catalog
+        url: /showcase/kabanchik-delivery-catalog/
         type: product
   - slug: diskprices-comparison-platform
     name: "DiskPrices: сравнение цен и история стоимости"
@@ -5439,7 +5439,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/diskprices-comparison-platform
+        url: /showcase/diskprices-comparison-platform/
         type: product
   - slug: ramprices-memory-offer-normalization
     name: "RamPrices: каталог и сопоставление модулей памяти"
@@ -5459,7 +5459,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/ramprices-memory-offer-normalization
+        url: /showcase/ramprices-memory-offer-normalization/
         type: product
   - slug: klimat-profi-server-storage
     name: "Климат Профи: освобождение места на сервере"
@@ -5479,7 +5479,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/klimat-profi-server-storage
+        url: /showcase/klimat-profi-server-storage/
         type: product
   - slug: klimat-profi-backup-automation
     name: "Климат Профи: автоматические копии сайта и базы"
@@ -5499,7 +5499,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/klimat-profi-backup-automation
+        url: /showcase/klimat-profi-backup-automation/
         type: product
   - slug: codex-marketing-skills-workflow
     name: Маркетинговые ИИ-навыки в локальном Codex
@@ -5520,7 +5520,7 @@ projects:
     theme: cyan
     links:
       - label: Читать кейс
-        url: /showcase/codex-marketing-skills-workflow
+        url: /showcase/codex-marketing-skills-workflow/
         type: product
   - slug: apteka-optika-price-comparison
     name: "Аптека & Оптика: витрина сравнения цен на Node.js"
@@ -5546,7 +5546,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/apteka-optika-price-comparison
+        url: /showcase/apteka-optika-price-comparison/
         type: product
   - slug: faeton-rental-catalog-recovery
     name: "«Фаэтон»: восстановление каталога аренды техники"
@@ -5570,7 +5570,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/faeton-rental-catalog-recovery
+        url: /showcase/faeton-rental-catalog-recovery/
         type: product
   - slug: faeton-blog-tag-archive-recovery
     name: "«Фаэтон»: восстановление блога и архивов тегов"
@@ -5595,7 +5595,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/faeton-blog-tag-archive-recovery
+        url: /showcase/faeton-blog-tag-archive-recovery/
         type: product
   - slug: artred-woocommerce-migration-readiness
     name: "ARTRED: подготовка WooCommerce к смене сайта"
@@ -5620,7 +5620,7 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/artred-woocommerce-migration-readiness
+        url: /showcase/artred-woocommerce-migration-readiness/
         type: product
   - slug: artred-b2b-equipment-catalog
     name: "ARTRED: B2B-каталог техники и заявки с карточек"
@@ -5645,5 +5645,5 @@ projects:
         featured: true
     links:
       - label: Читать кейс
-        url: /showcase/artred-b2b-equipment-catalog
+        url: /showcase/artred-b2b-equipment-catalog/
         type: product

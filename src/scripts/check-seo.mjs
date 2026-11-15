@@ -62,6 +62,7 @@ if(!pages.size||sitemap.size!==pages.size) fail(root,'sitemap and HTML counts di
 const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcase/'));
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
+let canonicalInternalLinks = 0;
 const imageManifest = JSON.parse(read('.astro/project-images.json'));
 for (const [src, image] of Object.entries(imageManifest)) {
   const original = fs.statSync(path.join(root,src)).size;
@@ -113,8 +114,14 @@ for(const [canonical,alternates] of pages){
     if(pages.get(target)?.get(locale)!==target)fail(canonical,'breadcrumb leads to wrong locale: '+target);
   }
   for(const link of internalTargets.get(canonical)){
-    const target = decodeURIComponent(new URL(link,canonical).pathname);
+    const linked = new URL(link,canonical);
+    const target = decodeURIComponent(linked.pathname);
     if(target.startsWith(base)&&!exists(target.slice(base.length))) fail(canonical,'broken local URL '+link);
+    const pathWithSlash = linked.pathname.endsWith('/') ? linked.pathname : linked.pathname+'/';
+    if(pages.has(linked.origin+pathWithSlash)){
+      if(linked.pathname!==pathWithSlash) fail(canonical,'internal page link is not canonical: '+link);
+      canonicalInternalLinks++;
+    }
   }
   for(const target of alternates.values()){
     const peer=pages.get(target);
@@ -126,3 +133,4 @@ for (const url of new Set(sharingCards.values())) {
   if(bytes.subarray(0,8).toString('hex')!=='89504e470d0a1a0a'||bytes.readUInt32BE(16)!==1200||bytes.readUInt32BE(20)!==630)fail(url,'sharing image must be a 1200×630 PNG');
 }
 console.log('SEO checks passed for '+pages.size+' HTML pages and '+breadcrumbTargets.size+' breadcrumb trails.');
+console.log('Verified '+canonicalInternalLinks+' canonical internal page links.');
