@@ -5647,3 +5647,49 @@ projects:
       - label: Читать кейс
         url: /showcase/artred-b2b-equipment-catalog/
         type: product
+  - slug: wellland-editorial-ai-production
+    name: "Wellland: блог, клиентские кейсы и ИИ-иллюстрации"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: "Запустил редакционный раздел для поставщика уборочной техники:
+      новости и статьи должны были редактироваться штатно, а кейсы — иметь свою
+      структуру и фильтры по отраслям. Для первого наполнения нужны были
+      единообразные обложки без выдачи синтетических изображений за съёмку у
+      клиентов."
+    stack:
+      - WordPress
+      - Editorial workflows
+      - AI-assisted image generation
+      - WebP
+      - Technical SEO
+    order: 315
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/wellland-editorial-ai-production/editorial-illustration.webp
+        alt: Редакционная ИИ-иллюстрация поломоечной машины для статьи Wellland
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/wellland-editorial-ai-production/
+        type: product
+  - slug: wellland-native-catalog-pagination
+    name: "Wellland: мобильная пагинация каталога WooCommerce"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Освежил навигацию по страницам каталога, не заменяя штатную
+      пагинацию собственным скриптом. На узком экране должны были оставаться
+      заметны текущая страница и переход дальше, а кнопки — быть удобными для
+      нажатия пальцем.
+    stack:
+      - WooCommerce
+      - CSS
+      - Responsive design
+      - Pagination
+      - Playwright
+    order: 316
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wellland-native-catalog-pagination/
+        type: product

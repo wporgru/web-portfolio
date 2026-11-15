@@ -1,0 +1,42 @@
+title: "Wellland: blog, case studies and AI illustrations"
+tagline: Launched an editorial section for a cleaning-equipment supplier. Staff
+  needed standard publishing tools for news and articles, plus structured case
+  studies and industry filters. The first releases also needed consistent covers
+  without passing synthetic illustrations off as customer-site photography.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Editorial workflows
+  - AI-assisted image generation
+  - WebP
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Launched an editorial section for a cleaning-equipment supplier. Staff
+      needed standard publishing tools for news and articles, plus structured
+      case studies and industry filters. The first releases also needed
+      consistent covers without passing synthetic illustrations off as
+      customer-site photography.
+  - type: text
+    title: How it works
+    body: Separated the blog from a dedicated case-study content type with
+      challenge, solution and result fields. Set up industry categories,
+      templates, menu links and a generated HTML sitemap. Prepared the launch
+      content, reviewed source facts and preserved links to original materials.
+      Generated six covers using equipment references, labeled them as
+      illustrations and exported them as WebP. Resolved a routing conflict
+      between industry filters and attachment URLs.
+  - type: text
+    title: Result and verification
+    body: "The release included six publications: two news items, one article and
+      three case studies. All six URLs loaded and appeared in the HTML sitemap;
+      covers, disclosures and three industry filters were checked. Cover files
+      went from 13.0 MB to 0.81 MB, a 93.8% reduction. Existing noindex settings
+      for posts and cases were left unchanged, so indexing is not claimed."
+  - type: image
+    src: /media/projects/wellland-editorial-ai-production/editorial-illustration.webp
+    alt: AI-generated illustration of a scrubber dryer for the Wellland article
+    caption: One of six editorial covers. Generated from equipment references; not a
+      photograph of a client or site.

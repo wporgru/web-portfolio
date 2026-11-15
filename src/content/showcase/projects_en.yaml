@@ -5588,3 +5588,49 @@ projects:
       - label: Read case study
         url: /showcase/artred-b2b-equipment-catalog/en/
         type: product
+  - slug: wellland-editorial-ai-production
+    name: "Wellland: blog, case studies and AI illustrations"
+    year: "10.2026"
+    role: Web development and automation
+    description: Launched an editorial section for a cleaning-equipment supplier.
+      Staff needed standard publishing tools for news and articles, plus
+      structured case studies and industry filters. The first releases also
+      needed consistent covers without passing synthetic illustrations off as
+      customer-site photography.
+    stack:
+      - WordPress
+      - Editorial workflows
+      - AI-assisted image generation
+      - WebP
+      - Technical SEO
+    order: 315
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/wellland-editorial-ai-production/editorial-illustration.webp
+        alt: AI-generated illustration of a scrubber dryer for the Wellland article
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/wellland-editorial-ai-production/en/
+        type: product
+  - slug: wellland-native-catalog-pagination
+    name: "Wellland: mobile pagination for a WooCommerce catalog"
+    year: "10.2026"
+    role: Web development and automation
+    description: Improved navigation between catalog pages without replacing
+      WooCommerce pagination with a custom script. The current page and next
+      action needed to stay visible on narrow screens, with controls large
+      enough for touch.
+    stack:
+      - WooCommerce
+      - CSS
+      - Responsive design
+      - Pagination
+      - Playwright
+    order: 316
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wellland-native-catalog-pagination/en/
+        type: product

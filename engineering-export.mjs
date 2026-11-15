@@ -8,6 +8,8 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'wellland-editorial-ai-production': ['editorial-illustration.webp', 'Редакционная ИИ-иллюстрация поломоечной машины для статьи Wellland', 'AI-generated illustration of a scrubber dryer for the Wellland article', 'Одна из шести редакционных обложек. Сгенерирована по референсам техники; не фотография клиента или объекта.', 'One of six editorial covers. Generated from equipment references; not a photograph of a client or site.'],
+  'wellland-native-catalog-pagination': ['pagination-control.webp', 'Штатная пагинация WooCommerce на мобильном Wellland', 'Native WooCommerce pagination on mobile Wellland', 'Архивный снимок элемента интерфейса при ширине окна 390 px, 29 октября 2026 года. Это не снимок всей страницы или текущей версии.', 'Archive capture of the control at a 390 px viewport on October 29, 2026. Not a full-page screenshot or a current-version capture.', false],
   'artred-woocommerce-migration-readiness': ['archive-viewport.webp', 'Главная ARTRED после переключения, архивный вид в браузере', 'ARTRED homepage after cutover, archived browser view', 'Сохранённый десктопный вид главной на основном домене от 7 сентября 2026 года. Снимок области окна 1440 × 1000, не всей страницы.', 'Archived desktop homepage on the production domain, September 7, 2026. The 1440 × 1000 browser viewport is not a full-page capture.'],
   'artred-b2b-equipment-catalog': ['archive-viewport.webp', 'Карточка техники ARTRED с характеристиками и кнопкой консультации', 'ARTRED equipment page with specifications and a consultation button', 'Десктопный снимок проверки 28 августа 2026 года: область окна 1440 × 1100. Не подтверждает отправку формы или текущий вид сайта.', 'Desktop QA capture from August 28, 2026: 1440 × 1100 browser viewport. It does not verify form delivery or the current site.'],
   'faeton-rental-catalog-recovery': ['public-full.webp', 'Полная страница аренды машин «Фаэтон» с карточками техники', 'Full Faeton equipment rental page with product cards', 'Публичная страница целиком, снимок без обрезки от 15 ноября 2026 года. Это вид после работ, а не тест отправки заявки.', 'Uncropped public page captured November 15, 2026. It shows the later interface, not a submission test.'],
@@ -27,6 +29,7 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'wellland-native-catalog-pagination': ['wellland-facets', 'Связанная работа: фильтры и атрибуты каталога', 'Related work: catalog attributes and filters'],
   'artred-woocommerce-migration-readiness': ['artred-b2b-equipment-catalog', 'Связанная работа: каталог техники и консультации', 'Related work: equipment catalog and consultations'],
   'artred-b2b-equipment-catalog': ['artred-woocommerce-migration-readiness', 'Связанная работа: подготовка сайта к переключению', 'Related work: preparing the site cutover'],
   'klimat-profi-server-storage': ['klimat-profi-backup-automation', 'Связанная работа: автоматизация резервных копий', 'Related work: backup automation'],
@@ -84,12 +87,12 @@ export function addEngineeringCases(projects){
       const proof = caseImages[slug];
       let media;
       if (proof) {
-        const [file, ruAlt, enAlt, ruCaption, enCaption] = proof;
+        const [file, ruAlt, enAlt, ruCaption, enCaption, catalogCover = true] = proof;
         if (!fs.existsSync(dir+'/'+file)) throw Error('Missing case image: '+slug+'/'+file);
         const src = '/media/projects/'+slug+'/'+file;
         const alt = ru?ruAlt:enAlt;
         blocks.push({type:'image',src,alt,caption:ru?ruCaption:enCaption});
-        media = [{type:'image',src,alt,featured:true}];
+        if (catalogCover) media = [{type:'image',src,alt,featured:true}];
       }
       const stage = projectStages[slug];
       if (stage) {

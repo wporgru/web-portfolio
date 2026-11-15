@@ -1,0 +1,40 @@
+title: "Wellland: mobile pagination for a WooCommerce catalog"
+tagline: Improved navigation between catalog pages without replacing WooCommerce
+  pagination with a custom script. The current page and next action needed to
+  stay visible on narrow screens, with controls large enough for touch.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CSS
+  - Responsive design
+  - Pagination
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Improved navigation between catalog pages without replacing WooCommerce
+      pagination with a custom script. The current page and next action needed
+      to stay visible on narrow screens, with controls large enough for touch.
+  - type: text
+    title: How it works
+    body: Scoped CSS to WooCommerce archives. Retained native links and states,
+      styling the current page, arrow, hover and keyboard focus. Set a minimum
+      control height of 44 px and responsive gaps to keep the row compact. No
+      changes to product queries, link generation or the database.
+  - type: text
+    title: Result and verification
+    body: "Verified control sizes and no horizontal overflow at 1440, 390 and 320
+      px. Followed the second-page link: page 2 became active and the catalog
+      displayed 16 cards. This verifies navigation, not ranking or conversion
+      gains."
+  - type: image
+    src: /media/projects/wellland-native-catalog-pagination/pagination-control.webp
+    alt: Native WooCommerce pagination on mobile Wellland
+    caption: Archive capture of the control at a 390 px viewport on October 29,
+      2026. Not a full-page screenshot or a current-version capture.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: catalog attributes and filters"
+        url: /showcase/wellland-facets/en/
