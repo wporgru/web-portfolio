@@ -1,0 +1,44 @@
+title: "Faeton: restoring blog navigation and tag archives"
+tagline: "Readers were sent to the homepage instead of tag archives, and an old
+  category address returned a 404. Restoring the archives revealed another
+  issue: identical dates on imported posts caused duplicates and omissions
+  across archive pages."
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Clearfy
+  - Technical SEO
+  - 301 redirects
+  - Pagination
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "Readers were sent to the homepage instead of tag archives, and an old
+      category address returned a 404. Restoring the archives revealed another
+      issue: identical dates on imported posts caused duplicates and omissions
+      across archive pages."
+  - type: text
+    title: How it works
+    body: Disabled only the Clearfy setting responsible for redirecting tag
+      archives. Added date and ID ordering to the main query so tied dates could
+      not reshuffle posts across pages. Removed stale static tabs, retained the
+      H1 and kept the dynamic category sidebar. Added a narrow 301 to the blog
+      for the old route only when it would otherwise return 404, preserving
+      query parameters.
+  - type: text
+    title: Result and verification
+    body: The release report records 81 non-empty archives returning HTTP 200
+      without redirects. Across eight Wellland tag pages, all 91 expected posts
+      were unique, compared with 88 distinct posts before the fix. This verifies
+      availability and pagination, not indexing or traffic growth.
+  - type: image
+    src: /media/projects/faeton-blog-tag-archive-recovery/public-full.webp
+    alt: Faeton blog with posts, categories and pagination
+    caption: Uncropped public blog captured November 15, 2026. Archive counts are
+      from the separate October verification.
+  - type: text
+    title: Live website
+    links:
+      - label: Open the project page
+        url: https://faetonclean.ru/blog/

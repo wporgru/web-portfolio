@@ -5548,3 +5548,52 @@ projects:
       - label: Читать кейс
         url: /showcase/apteka-optika-price-comparison
         type: product
+  - slug: faeton-rental-catalog-recovery
+    name: "«Фаэтон»: восстановление каталога аренды техники"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Страница аренды поломоечных машин открывалась, но каталог был пуст.
+      Нужно было вернуть актуальные машины, месячные цены и возможность открыть
+      форму заявки, не правя ассортимент и цены в базе вручную.
+    stack:
+      - WordPress
+      - WooCommerce
+      - GenerateBlocks
+      - Contact Form 7
+      - Playwright
+    order: 311
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/faeton-rental-catalog-recovery/public-full.webp
+        alt: Полная страница аренды машин «Фаэтон» с карточками техники
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/faeton-rental-catalog-recovery
+        type: product
+  - slug: faeton-blog-tag-archive-recovery
+    name: "«Фаэтон»: восстановление блога и архивов тегов"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: "Читатель попадал на главную вместо публикаций по тегу, а один
+      старый адрес рубрики возвращал 404. После снятия перенаправления
+      обнаружилась ещё одна проблема: одинаковые даты импортированных записей
+      приводили к дублям и пропускам при переходе между страницами архива."
+    stack:
+      - WordPress
+      - Clearfy
+      - Technical SEO
+      - 301 redirects
+      - Pagination
+    order: 312
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/faeton-blog-tag-archive-recovery/public-full.webp
+        alt: Блог «Фаэтон» со списком статей, рубриками и пагинацией
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/faeton-blog-tag-archive-recovery
+        type: product

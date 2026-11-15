@@ -2,10 +2,14 @@ import fs from 'node:fs';
 import {stringify} from 'yaml';
 const read=p=>fs.readFileSync(p,'utf8').replace(/^\uFEFF/,'');
 const publicSources = {
+  'faeton-rental-catalog-recovery': 'https://faetonclean.ru/arenda-polomoechnoy-mashiny/',
+  'faeton-blog-tag-archive-recovery': 'https://faetonclean.ru/blog/',
   'apteka-optika-price-comparison': 'https://apteka-optika.ru/',
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'faeton-rental-catalog-recovery': ['public-full.webp', 'Полная страница аренды машин «Фаэтон» с карточками техники', 'Full Faeton equipment rental page with product cards', 'Публичная страница целиком, снимок без обрезки от 15 ноября 2026 года. Это вид после работ, а не тест отправки заявки.', 'Uncropped public page captured November 15, 2026. It shows the later interface, not a submission test.'],
+  'faeton-blog-tag-archive-recovery': ['public-full.webp', 'Блог «Фаэтон» со списком статей, рубриками и пагинацией', 'Faeton blog with posts, categories and pagination', 'Публичный блог целиком, снимок без обрезки от 15 ноября 2026 года. Статистика архивов относится к отдельной проверке в октябре.', 'Uncropped public blog captured November 15, 2026. Archive counts are from the separate October verification.'],
   'apteka-optika-price-comparison': ['homepage-full.webp', 'Полностраничный снимок витрины «Аптека & Оптика»', 'Full-page screenshot of the Apteka & Optika storefront', 'Полностраничный снимок действующей главной в браузере, ширина 1440 px, без обрезки. Это текущий вид, а не исторический снимок запуска.', 'Uncropped browser capture of the current live homepage at 1440 px width. This is not an archival launch screenshot.'],
   'kabanchik-restaurant-website': ['homepage-20261102.webp', 'Полностраничный снимок сайта ресторана «Кабанчик»', 'Full-page screenshot of the Kabanchik restaurant website', 'Главная без обрезки, захват 2 ноября 2026 года. На снимке более поздняя версия, не сдача первого этапа в июне.', 'Uncropped homepage captured November 2, 2026. It shows a later version, not the June first-stage handover.'],
   'kabanchik-delivery-catalog': ['delivery-desktop.webp', 'Каталог доставки «Кабанчика» с блюдами и корзиной справа', 'Kabanchik delivery catalog with dishes and a cart on the right', 'Архивный полностраничный снимок доставки на десктопе, без обрезки. Снимок показывает интерфейс, но не подтверждает оплату или работу службы доставки.', 'Uncropped archival desktop capture of the delivery page. It shows the storefront, not payment processing or delivery operations.'],
@@ -94,7 +98,7 @@ export function addEngineeringCases(projects){
         blocks.push({
           type:'text', title:slug==='dme-english-service-site'?(ru?'Проект в портфолио Kwork':'Original Kwork portfolio entry'):(ru?'Действующий сайт':'Live website'),
           ...(slug==='dme-english-service-site' && {body:ru?'Март 2021 года — дата публикации карточки; точная дата сдачи не установлена.':'March 2021 is the publication date; the exact delivery date is unknown.'}),
-          links:[{label:slug==='dme-english-service-site'?(ru?'Посмотреть оригинальную карточку':'View the original entry'):(ru?'Открыть витрину':'Open storefront'),url:publicSources[slug]}],
+          links:[{label:slug==='dme-english-service-site'?(ru?'Посмотреть оригинальную карточку':'View the original entry'):(ru?'Открыть страницу проекта':'Open the project page'),url:publicSources[slug]}],
         });
       }
       fs.writeFileSync(dir+'/'+slug.replaceAll('-','_')+'_'+lang+'.yaml',stringify({title:name,tagline:brief,year,role,stack:tags,blocks}));

@@ -1,0 +1,43 @@
+title: "Faeton: restoring the equipment rental catalog"
+tagline: The scrubber-dryer rental page loaded, but the catalog was empty. It
+  needed current equipment, monthly prices and a working enquiry dialog without
+  manually editing inventory or prices in the database.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - GenerateBlocks
+  - Contact Form 7
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The scrubber-dryer rental page loaded, but the catalog was empty. It
+      needed current equipment, monthly prices and a working enquiry dialog
+      without manually editing inventory or prices in the database.
+  - type: text
+    title: How it works
+    body: Traced the failure to a GenerateBlocks query that required both six
+      outdated sales products and the rental category. Replaced the fixed list
+      with a dynamic query for published items in the category and its
+      descendants. An empty category does not fall back to all stock. Cards read
+      prices, photos and links from the rental product and omit missing
+      specifications. Wired catalog buttons and standalone page CTAs to the
+      existing enquiry form.
+  - type: text
+    title: Result and verification
+    body: After deployment all five rental products displayed at 1366, 768 and 390
+      px. All five detail links returned HTTP 200. Across two widths, checked 16
+      dialog openings and Escape dismissal without submitting a production
+      enquiry.
+  - type: image
+    src: /media/projects/faeton-rental-catalog-recovery/public-full.webp
+    alt: Full Faeton equipment rental page with product cards
+    caption: Uncropped public page captured November 15, 2026. It shows the later
+      interface, not a submission test.
+  - type: text
+    title: Live website
+    links:
+      - label: Open the project page
+        url: https://faetonclean.ru/arenda-polomoechnoy-mashiny/

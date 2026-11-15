@@ -5489,3 +5489,52 @@ projects:
       - label: Read case study
         url: /showcase/apteka-optika-price-comparison/en
         type: product
+  - slug: faeton-rental-catalog-recovery
+    name: "Faeton: restoring the equipment rental catalog"
+    year: "10.2026"
+    role: Web development and automation
+    description: The scrubber-dryer rental page loaded, but the catalog was empty.
+      It needed current equipment, monthly prices and a working enquiry dialog
+      without manually editing inventory or prices in the database.
+    stack:
+      - WordPress
+      - WooCommerce
+      - GenerateBlocks
+      - Contact Form 7
+      - Playwright
+    order: 311
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/faeton-rental-catalog-recovery/public-full.webp
+        alt: Full Faeton equipment rental page with product cards
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/faeton-rental-catalog-recovery/en
+        type: product
+  - slug: faeton-blog-tag-archive-recovery
+    name: "Faeton: restoring blog navigation and tag archives"
+    year: "10.2026"
+    role: Web development and automation
+    description: "Readers were sent to the homepage instead of tag archives, and an
+      old category address returned a 404. Restoring the archives revealed
+      another issue: identical dates on imported posts caused duplicates and
+      omissions across archive pages."
+    stack:
+      - WordPress
+      - Clearfy
+      - Technical SEO
+      - 301 redirects
+      - Pagination
+    order: 312
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/faeton-blog-tag-archive-recovery/public-full.webp
+        alt: Faeton blog with posts, categories and pagination
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/faeton-blog-tag-archive-recovery/en
+        type: product
