@@ -16,8 +16,8 @@ projects:
     theme: blue
     media:
       - type: image
-        src: /media/projects/78-dosok/site.png
-        alt: Публичная версия сайта проекта
+        src: /media/projects/78-dosok/after-redesign.webp
+        alt: Главная «78 Досок» после редизайна
         featured: true
     links:
       - label: Читать кейс
@@ -2664,6 +2664,11 @@ projects:
       - Playwright
     order: 151
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/arenda-pm-home-performance/mobile-viewport.png
+        alt: Мобильный первый экран после оптимизации
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/arenda-pm-home-performance
@@ -2680,6 +2685,11 @@ projects:
       - Batch production
     order: 152
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/marketplace-photo-batch/processed-sample.webp
+        alt: Пример обработанных товарных фотографий
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/marketplace-photo-batch
@@ -2786,6 +2796,11 @@ projects:
       - Data import
     order: 158
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/hyperstroy-tool-store/historical-storefront.webp
+        alt: "Главная магазина «ГиперСтрой»: категории и товары"
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/hyperstroy-tool-store
@@ -3199,6 +3214,11 @@ projects:
       - Product variations
     order: 182
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/garland-catalog-import-training/historical-variants.webp
+        alt: Выбор цвета в карточке гирлянды
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/garland-catalog-import-training
@@ -3390,6 +3410,11 @@ projects:
       - Catalog migration
     order: 193
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/inegolhome-furniture-store/historical-storefront.webp
+        alt: Мебельные карточки и баннеры Inegol Home
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/inegolhome-furniture-store
@@ -3445,6 +3470,11 @@ projects:
       - DNS
     order: 196
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/bite-news-wordpress-launch/historical-first-screen.webp
+        alt: Тёмный первый экран Bite News
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/bite-news-wordpress-launch
@@ -3534,6 +3564,11 @@ projects:
       - Content editing
     order: 201
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/industrial-builder-landing/historical-landing.webp
+        alt: Промышленная фотография и заголовок сайта «Нефтехимик-Н»
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/industrial-builder-landing
@@ -3955,6 +3990,11 @@ projects:
       - Service pages
     order: 225
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/vector-dobra-social-services/historical-first-screen.webp
+        alt: Шапка и первый экран сайта «Вектор Добра»
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/vector-dobra-social-services
@@ -4096,6 +4136,11 @@ projects:
       - Product UX
     order: 233
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/foodsfact-equipment-catalog/historical-storefront.webp
+        alt: Главная англоязычного каталога FoodsFact
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/foodsfact-equipment-catalog
@@ -4202,6 +4247,11 @@ projects:
       - Responsive forms
     order: 239
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/ibike-scooter-rental-website/historical-rental.webp
+        alt: Исторический экран сайта проката iBike
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/ibike-scooter-rental-website
@@ -5318,6 +5368,11 @@ projects:
       - Restaurant website
     order: 302
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/kabanchik-restaurant-website/homepage-20261102.webp
+        alt: Полностраничный снимок сайта ресторана «Кабанчик»
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/kabanchik-restaurant-website
@@ -5356,6 +5411,11 @@ projects:
       - Playwright
     order: 304
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/kabanchik-delivery-catalog/delivery-desktop.webp
+        alt: Каталог доставки «Кабанчика» с блюдами и корзиной справа
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/kabanchik-delivery-catalog
@@ -5479,6 +5539,11 @@ projects:
       - Technical SEO
     order: 310
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/apteka-optika-price-comparison/homepage-full.webp
+        alt: Полностраничный снимок витрины «Аптека & Оптика»
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/apteka-optika-price-comparison

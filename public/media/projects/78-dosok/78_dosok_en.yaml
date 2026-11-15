@@ -49,18 +49,24 @@ blocks:
       redesign uses a larger opening section, clearer catalog groupings and
       trust-building sections such as reviews and FAQs.
     links:
-      - label: Before redesign
+      - label: Before screenshot
+        url: "#before-redesign"
+      - label: After screenshot
+        url: "#after-redesign"
+      - label: "Kwork original: before"
         url: https://kwork.ru/portfolio/23517585
-      - label: After redesign
+      - label: "Kwork original: after"
         url: https://kwork.ru/portfolio/23517588
   - type: image
     src: /media/projects/78-dosok/before-redesign.webp
+    anchor: before-redesign
     title: Original homepage
     alt: Original 78 Dosok homepage with slider and category list
     caption: Historical capture before the theme replacement. Uncropped original
       from Kwork.
   - type: image
     src: /media/projects/78-dosok/after-redesign.webp
+    anchor: after-redesign
     title: Homepage after the theme replacement
     alt: Redesigned 78 Dosok homepage with a larger hero, catalog, reviews and FAQ
     caption: Historical capture after the redesign. The WordPress toolbar is
@@ -74,6 +80,14 @@ blocks:
       - A more prominent homepage catalog and easier access to the cart on
         mobile.
   - type: text
+    title: How the client rated the work
+    body: The client approved the direction after seeing the initial homepage,
+      accepted the completed stage and highlighted the “full redesign” in a
+      Kwork review (translated).
+    links:
+      - label: Public Kwork profile and reviews
+        url: https://kwork.ru/user/wporgru
+  - type: text
     title: How to scope your own store redesign
     body: If updates keep breaking the header, menu or cart, start by mapping the
       templates and extensions behind them. For an estimate, send the store URL,
@@ -81,11 +95,11 @@ blocks:
       This helps define what to redesign, what to test on mobile and what
       performance measurements to capture before and after.
     links:
-      - label: Discuss a store redesign
-        url: https://wp.org.ru/contacts/
+      - label: What a store redesign covers
+        url: /services/website-redesign/en/
   - type: image
     title: Public website snapshot
     src: /media/projects/78-dosok/site.png
-    alt: Public website snapshot
+    alt: Homepage of the 78 Dosok timber store
     caption: Captured during a later availability check; it may differ from the site
       at handoff.

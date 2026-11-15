@@ -74,10 +74,14 @@ export function addEngineeringCases(projects){
         {type:'text',title:ru?'Результат и проверка':'Result and verification',body:result}
       ];
       const proof = caseImages[slug];
+      let media;
       if (proof) {
         const [file, ruAlt, enAlt, ruCaption, enCaption] = proof;
         if (!fs.existsSync(dir+'/'+file)) throw Error('Missing case image: '+slug+'/'+file);
-        blocks.push({type:'image',src:'/media/projects/'+slug+'/'+file,alt:ru?ruAlt:enAlt,caption:ru?ruCaption:enCaption});
+        const src = '/media/projects/'+slug+'/'+file;
+        const alt = ru?ruAlt:enAlt;
+        blocks.push({type:'image',src,alt,caption:ru?ruCaption:enCaption});
+        media = [{type:'image',src,alt,featured:true}];
       }
       const stage = projectStages[slug];
       if (stage) {
@@ -94,7 +98,7 @@ export function addEngineeringCases(projects){
         });
       }
       fs.writeFileSync(dir+'/'+slug.replaceAll('-','_')+'_'+lang+'.yaml',stringify({title:name,tagline:brief,year,role,stack:tags,blocks}));
-      projects[lang].push({slug,name,year,role,description:brief,stack:tags,order:projects[lang].length+1,theme:'cyan',links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'':'/en'),type:'product'}]});
+      projects[lang].push({slug,name,year,role,description:brief,stack:tags,order:projects[lang].length+1,theme:'cyan',...(media && {media}),links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'':'/en'),type:'product'}]});
     }
   }
 }

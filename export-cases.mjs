@@ -53,7 +53,7 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
   for(const lang of languages) {
     const ru=lang==='ru', title=ru?tRu:tEn, task=ru?qRu:qEn, result=ru?aRu:aEn;
     const tags=stack.split(', ');
-    const alt=ru?'Публичная версия сайта проекта':'Public website snapshot';
+    const alt=slug==='78-dosok'?(ru?'Главная магазина пиломатериалов «78 Досок»':'Homepage of the 78 Dosok timber store'):(ru?'Публичная версия сайта проекта':'Public website snapshot');
     const blocks=[
       {type:'text', title:ru?'Задача':'Brief', body:task},
       {type:'text', title:ru?'Что сделано':'Work delivered', body:result},
@@ -74,26 +74,34 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
       ]});
     if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Главная до и после':'Homepage before and after',
       body:ru?'В старой версии акцент был на слайдере и плотном списке категорий; после редизайна — на крупном первом экране, укрупнённых разделах каталога и блоках доверия, включая отзывы и FAQ.':'The original homepage emphasized a slider and a dense category list. The redesign uses a larger opening section, clearer catalog groupings and trust-building sections such as reviews and FAQs.',
-      links:[{label:ru?'До редизайна':'Before redesign',url:'https://kwork.ru/portfolio/23517585'},{label:ru?'После редизайна':'After redesign',url:'https://kwork.ru/portfolio/23517588'}]});
+      links:[
+        {label:ru?'Снимок до редизайна':'Before screenshot',url:'#before-redesign'},
+        {label:ru?'Снимок после редизайна':'After screenshot',url:'#after-redesign'},
+        {label:ru?'Оригиналы на Kwork: до':'Kwork original: before',url:'https://kwork.ru/portfolio/23517585'},
+        {label:ru?'Оригиналы на Kwork: после':'Kwork original: after',url:'https://kwork.ru/portfolio/23517588'},
+      ]});
     if(redesignShots.length) blocks.push(
-      {type:'image',src:redesignShots[0],title:ru?'Прежняя главная':'Original homepage',alt:ru?'Старая главная магазина 78 Досок со слайдером и списком категорий':'Original 78 Dosok homepage with slider and category list',
+      {type:'image',src:redesignShots[0],anchor:'before-redesign',title:ru?'Прежняя главная':'Original homepage',alt:ru?'Старая главная магазина 78 Досок со слайдером и списком категорий':'Original 78 Dosok homepage with slider and category list',
         caption:ru?'Исторический снимок до смены темы. Оригинал из портфолио Kwork без обрезки.':'Historical capture before the theme replacement. Uncropped original from Kwork.'},
-      {type:'image',src:redesignShots[1],title:ru?'Главная после смены темы':'Homepage after the theme replacement',alt:ru?'Новая главная 78 Досок: крупный первый экран, каталог, отзывы и FAQ':'Redesigned 78 Dosok homepage with a larger hero, catalog, reviews and FAQ',
+      {type:'image',src:redesignShots[1],anchor:'after-redesign',title:ru?'Главная после смены темы':'Homepage after the theme replacement',alt:ru?'Новая главная 78 Досок: крупный первый экран, каталог, отзывы и FAQ':'Redesigned 78 Dosok homepage with a larger hero, catalog, reviews and FAQ',
         caption:ru?'Исторический снимок после редизайна. Верхняя панель WordPress сохранена как на оригинале.':'Historical capture after the redesign. The WordPress toolbar is retained as in the original.'},
     );
     if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Что получил магазин':'What the store gained',
       bullets:ru?['Новая тема и обновлённая витрина вместо точечных правок старого шаблона.','Меньше дублирующих расширений, которые приходится поддерживать и проверять после обновлений.','Более заметный каталог на главной и быстрый доступ к корзине на мобильном.']:
       ['A new theme and a redesigned storefront instead of isolated patches to the old template.','Fewer overlapping extensions to maintain and check after updates.','A more prominent homepage catalog and easier access to the cart on mobile.']});
+    if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Как заказчик оценил работу':'How the client rated the work',
+      body:ru?'Заказчик согласовал направление по первому варианту главной, принял выполненный этап и отдельно отметил в отзыве на Kwork: «Полный редизайн».':'The client approved the direction after seeing the initial homepage, accepted the completed stage and highlighted the “full redesign” in a Kwork review (translated).',
+      links:[{label:ru?'Публичный профиль и отзывы на Kwork':'Public Kwork profile and reviews',url:'https://kwork.ru/user/wporgru'}]});
     if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Как оценить редизайн своего магазина':'How to scope your own store redesign',
       body:ru?'Если каждое обновление задевает шапку, меню или корзину, начните с разбора шаблонов и расширений, которые ими управляют. Для оценки пришлите адрес магазина, две-три проблемные страницы и список функций, которые нужно сохранить. По этим данным можно определить, какие части витрины обновлять, что проверить на мобильном и какие замеры скорости снять до и после.':'If updates keep breaking the header, menu or cart, start by mapping the templates and extensions behind them. For an estimate, send the store URL, two or three problem pages and a list of features that must be retained. This helps define what to redesign, what to test on mobile and what performance measurements to capture before and after.',
-      links:[{label:ru?'Обсудить редизайн магазина':'Discuss a store redesign',url:'https://wp.org.ru/contacts/'}]});
+      links:[{label:ru?'Что входит в редизайн интернет-магазина':'What a store redesign covers',url:'/services/website-redesign/'+(ru?'':'en/')}]});
     if(src) blocks.push({type:'image',title:ru?'Публичный вид сайта':'Public website snapshot',src,alt,
       caption:ru?'Снимок на дату проверки. Он показывает публичную версию сайта, а не обязательно вид на момент сдачи.':'Captured during a later availability check; it may differ from the site at handoff.'});
     const role=ru?'Веб-разработка':'Web development';
     const year=order.month_year;
     save(dir+'/'+slug.replaceAll('-','_')+'_'+lang+'.yaml',{title,tagline:task,role,year,stack:tags,blocks});
     projects[lang].push({slug,name:title,description:result,year,role,stack:tags,order:n+1,featured:n<3,theme:['blue','cyan','emerald'][n%3],
-      media:src?[{type:'image',src,alt,featured:true}]:[],
+      media:redesignShots.length ? [{type:'image',src:redesignShots[1],alt:ru?'Главная «78 Досок» после редизайна':'78 Dosok homepage after the redesign',featured:true}] : src?[{type:'image',src,alt,featured:true}]:[],
       links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'':'/en'),type:'product'}]});
   }
 }

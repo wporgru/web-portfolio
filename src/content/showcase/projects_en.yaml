@@ -16,8 +16,8 @@ projects:
     theme: blue
     media:
       - type: image
-        src: /media/projects/78-dosok/site.png
-        alt: Public website snapshot
+        src: /media/projects/78-dosok/after-redesign.webp
+        alt: 78 Dosok homepage after the redesign
         featured: true
     links:
       - label: Read case study
@@ -2630,6 +2630,11 @@ projects:
       - Playwright
     order: 151
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/arenda-pm-home-performance/mobile-viewport.png
+        alt: Mobile first screen after optimization
+        featured: true
     links:
       - label: Read case study
         url: /showcase/arenda-pm-home-performance/en
@@ -2646,6 +2651,11 @@ projects:
       - Batch production
     order: 152
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/marketplace-photo-batch/processed-sample.webp
+        alt: Sample of processed product photographs
+        featured: true
     links:
       - label: Read case study
         url: /showcase/marketplace-photo-batch/en
@@ -2751,6 +2761,11 @@ projects:
       - Data import
     order: 158
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/hyperstroy-tool-store/historical-storefront.webp
+        alt: HyperStroy homepage with categories and products
+        featured: true
     links:
       - label: Read case study
         url: /showcase/hyperstroy-tool-store/en
@@ -3161,6 +3176,11 @@ projects:
       - Product variations
     order: 182
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/garland-catalog-import-training/historical-variants.webp
+        alt: Color selection on a garland product page
+        featured: true
     links:
       - label: Read case study
         url: /showcase/garland-catalog-import-training/en
@@ -3350,6 +3370,11 @@ projects:
       - Catalog migration
     order: 193
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/inegolhome-furniture-store/historical-storefront.webp
+        alt: Inegol Home furniture cards and banners
+        featured: true
     links:
       - label: Read case study
         url: /showcase/inegolhome-furniture-store/en
@@ -3404,6 +3429,11 @@ projects:
       - DNS
     order: 196
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/bite-news-wordpress-launch/historical-first-screen.webp
+        alt: Dark Bite News homepage hero
+        featured: true
     links:
       - label: Read case study
         url: /showcase/bite-news-wordpress-launch/en
@@ -3493,6 +3523,11 @@ projects:
       - Content editing
     order: 201
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/industrial-builder-landing/historical-landing.webp
+        alt: Industrial photograph and heading on the Neftekhimik-N website
+        featured: true
     links:
       - label: Read case study
         url: /showcase/industrial-builder-landing/en
@@ -3909,6 +3944,11 @@ projects:
       - Service pages
     order: 225
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/vector-dobra-social-services/historical-first-screen.webp
+        alt: Header and first screen of the Vector Dobra website
+        featured: true
     links:
       - label: Read case study
         url: /showcase/vector-dobra-social-services/en
@@ -4047,6 +4087,11 @@ projects:
       - Product UX
     order: 233
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/foodsfact-equipment-catalog/historical-storefront.webp
+        alt: Homepage of the English-language FoodsFact catalog
+        featured: true
     links:
       - label: Read case study
         url: /showcase/foodsfact-equipment-catalog/en
@@ -4153,6 +4198,11 @@ projects:
       - Responsive forms
     order: 239
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/ibike-scooter-rental-website/historical-rental.webp
+        alt: Archived iBike rental website screen
+        featured: true
     links:
       - label: Read case study
         url: /showcase/ibike-scooter-rental-website/en
@@ -5260,6 +5310,11 @@ projects:
       - Restaurant website
     order: 302
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/kabanchik-restaurant-website/homepage-20261102.webp
+        alt: Full-page screenshot of the Kabanchik restaurant website
+        featured: true
     links:
       - label: Read case study
         url: /showcase/kabanchik-restaurant-website/en
@@ -5299,6 +5354,11 @@ projects:
       - Playwright
     order: 304
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/kabanchik-delivery-catalog/delivery-desktop.webp
+        alt: Kabanchik delivery catalog with dishes and a cart on the right
+        featured: true
     links:
       - label: Read case study
         url: /showcase/kabanchik-delivery-catalog/en
@@ -5420,6 +5480,11 @@ projects:
       - Technical SEO
     order: 310
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/apteka-optika-price-comparison/homepage-full.webp
+        alt: Full-page screenshot of the Apteka & Optika storefront
+        featured: true
     links:
       - label: Read case study
         url: /showcase/apteka-optika-price-comparison/en
