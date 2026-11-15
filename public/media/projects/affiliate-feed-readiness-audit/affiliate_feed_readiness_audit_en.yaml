@@ -1,0 +1,39 @@
+title: Feed readiness audit across three affiliate networks
+tagline: Needed to choose sources for an affiliate storefront. An API offer
+  listing did not guarantee a working feed, the right region or enough data for
+  product pages. Compared import readiness, not just lists of programs.
+year: "09.2026"
+role: Web development and automation
+stack:
+  - Python
+  - REST API
+  - XML
+  - YML
+  - Data validation
+  - Affiliate catalogs
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Needed to choose sources for an affiliate storefront. An API offer listing
+      did not guarantee a working feed, the right region or enough data for
+      product pages. Compared import readiness, not just lists of programs.
+  - type: text
+    title: How it works
+    body: Collected listings from Admitad, AdvCake and GdeSlon, filtered relevant
+      programs and inspected available sample feeds separately. Compared region,
+      listing counts and coverage for descriptions, images and attributes.
+      Flagged empty XML exports, errors and programs without a feed. Delivered
+      CSV and XLSX tables that distinguished discovered offers from verified
+      data sources.
+  - type: text
+    title: Result and verification
+    body: The Admitad export contained 143 relevant programs out of 1,283 API
+      records. One checked Moscow feed contained 11,245 products and 11,243
+      images; another available feed was for a different region. The deliverable
+      prioritized pilot sources. This is a September snapshot, not proof of
+      current feed availability or commissions.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: building a storefront from feeds"
+        url: /showcase/medimarket-catalog/en/

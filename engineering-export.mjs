@@ -32,6 +32,7 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'affiliate-feed-readiness-audit': ['medimarket-catalog', 'Связанная работа: сборка каталога из фидов', 'Related work: building a storefront from feeds'],
   'medimarket-catalog': ['medimarket-image-fallback-recovery', 'Связанная работа: восстановление изображений каталога', 'Related work: restoring catalog images'],
   'medimarket-image-fallback-recovery': ['medimarket-affiliate-click-attribution', 'Связанная работа: аналитика партнёрских переходов', 'Related work: affiliate click attribution'],
   'medimarket-affiliate-click-attribution': ['medimarket-catalog', 'Основа проекта: каталог из партнёрских фидов', 'Project foundation: storefront built from affiliate feeds'],

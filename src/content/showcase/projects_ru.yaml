@@ -5944,3 +5944,24 @@ projects:
       - label: Читать кейс
         url: /showcase/medimarket-affiliate-click-attribution/
         type: product
+  - slug: affiliate-feed-readiness-audit
+    name: Аудит товарных фидов трёх партнёрских сетей
+    year: "09.2026"
+    role: Веб-разработка и автоматизация
+    description: Нужно было выбрать источники для партнёрской витрины. Наличие
+      оффера в API не гарантировало, что у него есть рабочий товарный фид,
+      нужный регион и достаточно данных для карточек. Поэтому сравнивал не
+      только списки программ, но и пригодность выгрузок для импорта.
+    stack:
+      - Python
+      - REST API
+      - XML
+      - YML
+      - Data validation
+      - Affiliate catalogs
+    order: 329
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/affiliate-feed-readiness-audit/
+        type: product

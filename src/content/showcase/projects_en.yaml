@@ -5883,3 +5883,23 @@ projects:
       - label: Read case study
         url: /showcase/medimarket-affiliate-click-attribution/en/
         type: product
+  - slug: affiliate-feed-readiness-audit
+    name: Feed readiness audit across three affiliate networks
+    year: "09.2026"
+    role: Web development and automation
+    description: Needed to choose sources for an affiliate storefront. An API offer
+      listing did not guarantee a working feed, the right region or enough data
+      for product pages. Compared import readiness, not just lists of programs.
+    stack:
+      - Python
+      - REST API
+      - XML
+      - YML
+      - Data validation
+      - Affiliate catalogs
+    order: 329
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/affiliate-feed-readiness-audit/en/
+        type: product
