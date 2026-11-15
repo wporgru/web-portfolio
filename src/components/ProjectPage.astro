@@ -13,9 +13,11 @@ import VideoBlock from './blocks/VideoBlock.astro';
 import CodeBlock  from './blocks/CodeBlock.astro';
 import Divider    from './blocks/DividerBlock.astro';
 import { services } from '../content/services.mjs';
+import { caseHighlights } from '../content/case-highlights.mjs';
 import Breadcrumbs from './Breadcrumbs.astro';
 
 const { data, showcaseHref, langLinks, lang, relatedCases = [], slug } = Astro.props;
+const highlight = caseHighlights[slug]?.[lang === 'en' ? 'en' : 'ru'];
 const ogImage = slug === '78-dosok' ? '/media/sharing/78-dosok-'+lang+'.png' : undefined;
 const ogImageAlt = ogImage ? (lang==='ru'?'78 Досок — полный редизайн интернет-магазина':'78 Dosok — full online store redesign') : undefined;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -38,7 +40,7 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
 
 <Layout
   title={pageTitle}
-  description={data?.tagline || undefined}
+  description={highlight || data?.tagline || undefined}
   ogImage={ogImage}
   ogImageAlt={ogImageAlt}
   lang={lang}
@@ -83,8 +85,8 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
 
     <h1 class="project-page__title">{data.title}</h1>
 
-    {data.tagline && (
-      <p class="project-page__tagline muted">{data.tagline}</p>
+    {(highlight || data.tagline) && (
+      <p class="project-page__tagline muted" data-case-highlight={highlight ? true : undefined}>{highlight || data.tagline}</p>
     )}
 
     {(data.platforms?.length > 0 || data.stack?.length > 0) && (

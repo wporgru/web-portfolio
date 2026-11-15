@@ -2,6 +2,7 @@
 import Layout from './Layout.astro';
 import { getEntry } from 'astro:content';
 import copy from '../content/portfolio-home.json';
+import { caseHighlights } from '../content/case-highlights.mjs';
 import { services } from '../content/services.mjs';
 const { lang='ru', profile='', downloadUrls } = Astro.props;
 const ru = lang === 'ru';
@@ -107,7 +108,7 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
 
       <section class="section cv-extra">
         <h2 class="h2">{c.workTitle}</h2>
-        <div class="stack">{picks.map(p=><article class="card item"><h3 class="h2"><a href={base+'/showcase/'+p.slug+(ru?'/':'/en/')}>{p.name}</a></h3><p class="muted">{p.description}</p></article>)}</div>
+        <div class="stack">{picks.map(p=><article class="card item"><h3 class="h2"><a href={base+'/showcase/'+p.slug+(ru?'/':'/en/')}>{p.name}</a></h3><p class="muted">{caseHighlights[p.slug]?.[ru?'ru':'en'] ?? p.description}</p></article>)}</div>
         <p><a class="btn btn--ghost" href={catalog}>{c.all} →</a></p>
       </section>
     </div>

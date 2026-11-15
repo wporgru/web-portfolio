@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { services } from '../content/services.mjs';
 import { serviceDetails } from '../content/service-details.mjs';
+import { caseHighlights } from '../content/case-highlights.mjs';
 
 const root = 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
@@ -77,6 +78,16 @@ if(!pages.size||sitemap.size!==pages.size) fail(root,'sitemap and HTML counts di
 const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcase/'));
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
+for (const [slug, localized] of Object.entries(caseHighlights)) {
+  for (const lang of ['ru','en']) {
+    const html = read(path.join(root,'showcase',slug,lang==='en'?'en':'','index.html'));
+    const expected = localized[lang];
+    const lead = html.match(/<p\b[^>]*\bdata-case-highlight[^>]*>([^<]+)<\/p>/)?.[1];
+    const meta = html.match(/<meta name="description" content="([^"]+)"/)?.[1];
+    const share = html.match(/<meta property="og:description" content="([^"]+)"/)?.[1];
+    if (!expected?.trim() || lead!==expected || meta!==expected || share!==expected) fail(slug+'/'+lang,'case highlight differs from the visible lead or metadata');
+  }
+}
 let canonicalInternalLinks = 0;
 let imageEntries = 0;
 const distinctSitemapImages = new Set();
