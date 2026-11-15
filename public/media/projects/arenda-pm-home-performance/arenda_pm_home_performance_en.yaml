@@ -36,3 +36,8 @@ blocks:
     alt: Mobile first screen after optimization
     caption: Browser verification screenshot at 390 px. This is not a PageSpeed
       report or a full-page capture.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: technical SEO for the catalog"
+        url: /showcase/arenda-pm-catalog-indexability/en/

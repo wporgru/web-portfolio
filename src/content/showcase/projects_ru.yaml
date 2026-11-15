@@ -5733,3 +5733,47 @@ projects:
       - label: Читать кейс
         url: /showcase/promkraska-regional-multisite-audit/
         type: product
+  - slug: arenda-pm-catalog-indexability
+    name: "Аренда-ПМ: техническое SEO каталога техники"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: Четырнадцать карточек техники открывались для посетителей, но были
+      закрыты от индексации. В карте сайта при этом оставались адреса, которые
+      вели через редирект. Нужно было согласовать карту, правила обхода и
+      шаблоны, не мешая посетителям бронировать технику.
+    stack:
+      - Technical SEO
+      - Yoast SEO
+      - WordPress
+      - Canonical
+      - 301 redirects
+    order: 319
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/arenda-pm-catalog-indexability/seo-release-viewport.webp
+        alt: Главная «Аренда-ПМ» после правки заголовков
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/arenda-pm-catalog-indexability/
+        type: product
+  - slug: arenda-pm-legacy-js-cleanup
+    name: "Аренда-ПМ: устранение ошибки JavaScript без потери аналитики"
+    year: "10.2026"
+    role: Веб-разработка и автоматизация
+    description: В консоли возникала ошибка обращения к отсутствующему API старого
+      конструктора. Нужно было убрать только сломанный фрагмент, не отключая
+      аналитику, отслеживание звонков и действующие формы.
+    stack:
+      - WordPress
+      - JavaScript
+      - Clearfy
+      - Contact Form 7
+      - Playwright
+    order: 320
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/arenda-pm-legacy-js-cleanup/
+        type: product

@@ -36,3 +36,8 @@ blocks:
     alt: Мобильный первый экран после оптимизации
     caption: Снимок браузерной проверки, ширина 390 px. Это не отчёт PageSpeed и не
       полностраничный снимок.
+  - type: text
+    title: Другой этап этого проекта
+    links:
+      - label: "Связанный этап: техническое SEO каталога"
+        url: /showcase/arenda-pm-catalog-indexability/

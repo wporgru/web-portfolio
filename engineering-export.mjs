@@ -8,6 +8,7 @@ const publicSources = {
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
 };
 const caseImages = {
+  'arenda-pm-catalog-indexability': ['seo-release-viewport.webp', 'Главная «Аренда-ПМ» после правки заголовков', 'Arenda-PM homepage after heading updates', 'Фрагмент браузерной проверки после правки заголовков. Показывает сохранённое оформление, а не состояние поисковой выдачи.', 'Browser viewport captured after the heading edits. It shows the preserved design, not search visibility.'],
   'wellland-editorial-ai-production': ['editorial-illustration.webp', 'Редакционная ИИ-иллюстрация поломоечной машины для статьи Wellland', 'AI-generated illustration of a scrubber dryer for the Wellland article', 'Одна из шести редакционных обложек. Сгенерирована по референсам техники; не фотография клиента или объекта.', 'One of six editorial covers. Generated from equipment references; not a photograph of a client or site.'],
   'wellland-native-catalog-pagination': ['pagination-control.webp', 'Штатная пагинация WooCommerce на мобильном Wellland', 'Native WooCommerce pagination on mobile Wellland', 'Архивный снимок элемента интерфейса при ширине окна 390 px, 29 октября 2026 года. Это не снимок всей страницы или текущей версии.', 'Archive capture of the control at a 390 px viewport on October 29, 2026. Not a full-page screenshot or a current-version capture.', false],
   'artred-woocommerce-migration-readiness': ['archive-viewport.webp', 'Главная ARTRED после переключения, архивный вид в браузере', 'ARTRED homepage after cutover, archived browser view', 'Сохранённый десктопный вид главной на основном домене от 7 сентября 2026 года. Снимок области окна 1440 × 1000, не всей страницы.', 'Archived desktop homepage on the production domain, September 7, 2026. The 1440 × 1000 browser viewport is not a full-page capture.'],
@@ -29,6 +30,9 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'arenda-pm-catalog-indexability': ['arenda-pm-legacy-js-cleanup', 'Связанный этап: исправление JavaScript и проверка форм', 'Related stage: JavaScript repair and form verification'],
+  'arenda-pm-legacy-js-cleanup': ['arenda-pm-home-performance', 'Связанный этап: ускорение мобильной главной', 'Related stage: mobile homepage performance'],
+  'arenda-pm-home-performance': ['arenda-pm-catalog-indexability', 'Связанный этап: техническое SEO каталога', 'Related stage: technical SEO for the catalog'],
   'megawatt-service-template-migration': ['megawatt-content', 'Похожая работа: перенос материалов и настройка редиректов', 'Related work: content migration and redirects'],
   'wellland-native-catalog-pagination': ['wellland-facets', 'Связанная работа: фильтры и атрибуты каталога', 'Related work: catalog attributes and filters'],
   'artred-woocommerce-migration-readiness': ['artred-b2b-equipment-catalog', 'Связанная работа: каталог техники и консультации', 'Related work: equipment catalog and consultations'],

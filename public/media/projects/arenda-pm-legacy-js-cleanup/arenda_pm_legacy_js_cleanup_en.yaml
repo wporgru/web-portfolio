@@ -1,0 +1,36 @@
+title: "Arenda-PM: fixing JavaScript without disrupting analytics"
+tagline: A script referenced a missing legacy builder API and failed in the
+  browser. The job was to remove only the broken fragment, preserving analytics,
+  call tracking and existing forms.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - JavaScript
+  - Clearfy
+  - Contact Form 7
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A script referenced a missing legacy builder API and failed in the
+      browser. The job was to remove only the broken fragment, preserving
+      analytics, call tracking and existing forms.
+  - type: text
+    title: How it works
+    body: Located the obsolete call in Clearfy custom code. Removed one fragment,
+      saved the original setting for rollback and compared all other fields
+      before and after. Verified three analytics blocks in the saved HTML by
+      checksum. Retested category selection, the mobile menu and the booking
+      dialog with M20 prefilled.
+  - type: text
+    title: Result and verification
+    body: On eight URLs at 1440 and 390 px, the interaction and scroll checks found
+      no runtime errors or console.error messages. All three analytics blocks
+      stayed unchanged. Form delivery and receipt of data in external reports
+      were not tested.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: mobile homepage performance"
+        url: /showcase/arenda-pm-home-performance/en/

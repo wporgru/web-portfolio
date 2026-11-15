@@ -5673,3 +5673,47 @@ projects:
       - label: Read case study
         url: /showcase/promkraska-regional-multisite-audit/en/
         type: product
+  - slug: arenda-pm-catalog-indexability
+    name: "Arenda-PM: technical SEO for the equipment catalog"
+    year: "10.2026"
+    role: Web development and automation
+    description: Fourteen equipment pages opened for visitors but were excluded from
+      indexing. The sitemap still listed URLs that redirected. The task was to
+      align the sitemap, crawl rules and templates without disrupting equipment
+      enquiries.
+    stack:
+      - Technical SEO
+      - Yoast SEO
+      - WordPress
+      - Canonical
+      - 301 redirects
+    order: 319
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/arenda-pm-catalog-indexability/seo-release-viewport.webp
+        alt: Arenda-PM homepage after heading updates
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/arenda-pm-catalog-indexability/en/
+        type: product
+  - slug: arenda-pm-legacy-js-cleanup
+    name: "Arenda-PM: fixing JavaScript without disrupting analytics"
+    year: "10.2026"
+    role: Web development and automation
+    description: A script referenced a missing legacy builder API and failed in the
+      browser. The job was to remove only the broken fragment, preserving
+      analytics, call tracking and existing forms.
+    stack:
+      - WordPress
+      - JavaScript
+      - Clearfy
+      - Contact Form 7
+      - Playwright
+    order: 320
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/arenda-pm-legacy-js-cleanup/en/
+        type: product

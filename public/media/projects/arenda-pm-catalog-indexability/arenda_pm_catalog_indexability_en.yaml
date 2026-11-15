@@ -1,0 +1,45 @@
+title: "Arenda-PM: technical SEO for the equipment catalog"
+tagline: Fourteen equipment pages opened for visitors but were excluded from
+  indexing. The sitemap still listed URLs that redirected. The task was to align
+  the sitemap, crawl rules and templates without disrupting equipment enquiries.
+year: "10.2026"
+role: Web development and automation
+stack:
+  - Technical SEO
+  - Yoast SEO
+  - WordPress
+  - Canonical
+  - 301 redirects
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Fourteen equipment pages opened for visitors but were excluded from
+      indexing. The sitemap still listed URLs that redirected. The task was to
+      align the sitemap, crawl rules and templates without disrupting equipment
+      enquiries.
+  - type: text
+    title: How it works
+    body: Removed noindex from the equipment pages in Yoast, excluded redirecting
+      pages from the sitemap and removed conflicting robots.txt groups. Set
+      direct 301 redirects from the redundant first catalog page and the former
+      M20 URL without renaming the separate F50P page. Restored Yoast control
+      over metadata, removed hard-coded theme overrides and rewrote titles and
+      descriptions for 77 pages, articles and listings. Set the homepage heading
+      structure in Elementor without changing its design.
+  - type: text
+    title: Result and verification
+    body: "At the verification milestone, checked all 83 unique sitemap URLs: HTTP
+      200, with no redirects, noindex flags, missing or duplicate titles or
+      descriptions. All 14 equipment pages were included. Tested the M20 enquiry
+      dialog without submitting it. This establishes technical accessibility,
+      not placement in search results."
+  - type: image
+    src: /media/projects/arenda-pm-catalog-indexability/seo-release-viewport.webp
+    alt: Arenda-PM homepage after heading updates
+    caption: Browser viewport captured after the heading edits. It shows the
+      preserved design, not search visibility.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: JavaScript repair and form verification"
+        url: /showcase/arenda-pm-legacy-js-cleanup/en/
