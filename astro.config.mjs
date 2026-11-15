@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
-import { cpSync } from 'fs';
+import { cpSync, readFileSync, statSync } from 'node:fs';
+import path from 'node:path';
+import { parse } from 'yaml';
 
 import sitemap from '@astrojs/sitemap';
 
@@ -14,6 +16,33 @@ const [owner, name] = repo ? repo.split('/') : [null, null];
 // route the custom domain — see docs/INFO_en.md §15.
 const site = process.env.SITE_URL || (owner ? `https://${owner}.github.io` : 'http://localhost:4321');
 const base = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : (name ? `/${name}` : undefined);
+const mount = (base ?? '').replace(/\/$/, '');
+
+function addCaseImages(item) {
+  const url = new URL(item.url);
+  const route = url.pathname.slice(mount.length);
+  const match = /^\/showcase\/([a-z0-9-]+)(\/en)?\/$/.exec(route);
+  if (!match || ['ru','en'].includes(match[1])) return item;
+  const [,slug,englishSuffix] = match;
+  const locale = englishSuffix ? 'en' : 'ru';
+  const projectDir = path.join('public','media','projects',slug);
+  const file = path.join(projectDir,`${slug.replaceAll('-','_')}_${locale}.yaml`);
+  if (!statSync(file,{throwIfNoEntry:false})?.isFile()) return item;
+  const project = parse(readFileSync(file,'utf8'));
+  const prefix = `/media/projects/${slug}/`;
+  const images = new Set();
+  for (const block of project?.blocks ?? []) {
+    const src = block?.src;
+    if (block?.type !== 'image' || typeof src !== 'string' || !src.startsWith(prefix)) continue;
+    const basename = src.slice(prefix.length);
+    if (!/^[a-z0-9_.-]+\.(?:png|jpe?g|webp|gif|avif)$/i.test(basename)) continue;
+    if (!statSync(path.join(projectDir,basename),{throwIfNoEntry:false})?.isFile()) {
+      throw new Error('Missing project image: '+src);
+    }
+    images.add(new URL(mount+src,url).href);
+  }
+  return images.size ? {...item,img:[...images]} : item;
+}
 
 export default defineConfig({
   site,
@@ -30,6 +59,7 @@ export default defineConfig({
 
   integrations: [
     sitemap({
+      serialize: addCaseImages,
       filter: (page) =>
         // og-preview renders sample/mock data for the OG-image screenshot
         // pipeline and is deleted from dist/ before deploy — never a real page.

@@ -46,7 +46,7 @@ const srcset = image?.variants.length
 
   {hasSrc && (
     <figure class="image-block__figure">
-      <a href={withBase(src)} target="_blank" rel="noopener" aria-label={lang === "en" ? "Open original image" : "Открыть оригинал снимка"}>
+      <a href={withBase(src)} data-original-image target="_blank" rel="noopener" aria-label={lang === "en" ? "Open original image" : "Открыть оригинал снимка"}>
       <img
         src={withBase(src)}
         width={image?.width}

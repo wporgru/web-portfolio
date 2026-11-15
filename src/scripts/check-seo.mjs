@@ -7,12 +7,24 @@ const root = 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
 const fail = (file, why) => { throw Error(file + ': ' + why); };
 const htmlFiles = fs.readdirSync(root, {recursive:true}).filter(file => path.basename(file)==='index.html');
-const sitemap = new Set(fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.test(file))
-  .flatMap(file=>[...read(path.join(root,file)).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1])));
+const sitemapEntries = new Map();
+for (const file of fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.test(file))) {
+  const xml = read(path.join(root,file));
+  if (xml.includes('<image:image>') && !xml.includes('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"')) {
+    fail(file,'missing image sitemap namespace');
+  }
+  for (const [,entry] of xml.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+    const url = entry.match(/<loc>([^<]+)<\/loc>/)?.[1];
+    if (!url || sitemapEntries.has(url)) fail(file,'missing or repeated sitemap URL');
+    sitemapEntries.set(url,[...entry.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(m=>m[1]));
+  }
+}
+const sitemap = new Set(sitemapEntries.keys());
 const pages = new Map();
 const internalTargets = new Map();
 const breadcrumbTargets = new Map();
 const sharingCards = new Map();
+const originalImages = new Map();
 const titles = new Set(), descriptions = new Set();
 for(const file of htmlFiles){
   const html=read(path.join(root,file));
@@ -34,6 +46,9 @@ for(const file of htmlFiles){
   const alternates=new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map(m=>[m[1],m[2]]));
   if(alternates.size!==3||!['ru','en'].includes(lang)||alternates.get(lang)!==canonical||alternates.get('x-default')!==alternates.get('ru')) fail(file,'invalid locale alternates');
   pages.set(canonical,alternates);
+  originalImages.set(canonical,[...html.matchAll(/<a\b[^>]*\bdata-original-image(?=\s|>)[^>]*>/g)]
+    .map(([tag])=>tag.match(/\bhref="([^"]+)"/)?.[1])
+    .filter(Boolean));
   const social = (attribute, key) => html.match(new RegExp('<meta '+attribute+'="'+key+'" content="([^"]+)"'))?.[1];
   const image = social('property','og:image');
   if(!image||social('name','twitter:image')!==image||
@@ -63,6 +78,8 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 let canonicalInternalLinks = 0;
+let imageEntries = 0;
+const distinctSitemapImages = new Set();
 const imageManifest = JSON.parse(read('.astro/project-images.json'));
 for (const [src, image] of Object.entries(imageManifest)) {
   const original = fs.statSync(path.join(root,src)).size;
@@ -110,6 +127,18 @@ for(const [canonical,alternates] of pages){
   const sharingUrl=new URL(sharingCards.get(canonical));
   const expectedCard=relative.startsWith('showcase/78-dosok/')?'78-dosok':'portfolio';
   if(sharingUrl.origin!==new URL(canonical).origin||sharingUrl.pathname!==base+'media/sharing/'+expectedCard+'-'+locale+'.png')fail(canonical,'sharing image locale or route mismatch');
+  const caseSlug = /^showcase\/([a-z0-9-]+)\/(?:en\/)?$/.exec(relative)?.[1];
+  const prefix = base+'media/projects/'+caseSlug+'/';
+  const expectedImages = new Set((caseSlug ? originalImages.get(canonical) : [])
+    .filter(src=>src.startsWith(prefix) && /^[a-z0-9_.-]+\.(?:png|jpe?g|webp|gif|avif)$/i.test(src.slice(prefix.length)))
+    .map(src=>new URL(src,canonical).href));
+  const listedImages = sitemapEntries.get(canonical);
+  if (listedImages.length!==expectedImages.size || new Set(listedImages).size!==expectedImages.size ||
+      listedImages.some(src=>!expectedImages.has(src) || !exists(new URL(src).pathname.slice(base.length)))) {
+    fail(canonical,'image sitemap differs from original images in HTML');
+  }
+  if (listedImages.length) imageEntries++;
+  for (const image of listedImages) distinctSitemapImages.add(image);
   for(const target of breadcrumbTargets.get(canonical)??[]){
     if(pages.get(target)?.get(locale)!==target)fail(canonical,'breadcrumb leads to wrong locale: '+target);
   }
@@ -134,3 +163,4 @@ for (const url of new Set(sharingCards.values())) {
 }
 console.log('SEO checks passed for '+pages.size+' HTML pages and '+breadcrumbTargets.size+' breadcrumb trails.');
 console.log('Verified '+canonicalInternalLinks+' canonical internal page links.');
+console.log('Verified '+distinctSitemapImages.size+' original images across '+imageEntries+' localized image sitemap entries.');
