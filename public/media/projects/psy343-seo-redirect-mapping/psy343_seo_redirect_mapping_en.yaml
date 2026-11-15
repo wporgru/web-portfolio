@@ -1,0 +1,37 @@
+title: Redirect mapping for a psychologist’s site redesign
+tagline: The redesign changed legacy URLs with Cyrillic slugs, dates and old
+  prefixes. Useful content needed to remain reachable, while demo URLs needed
+  intentional removal rather than a blanket redirect to the homepage.
+year: "09.2026"
+role: Web development and automation
+stack:
+  - Python
+  - WordPress
+  - XML sitemaps
+  - 301 redirects
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The redesign changed legacy URLs with Cyrillic slugs, dates and old
+      prefixes. Useful content needed to remain reachable, while demo URLs
+      needed intentional removal rather than a blanket redirect to the homepage.
+  - type: text
+    title: How it works
+    body: Collected legacy paths from 12 sitemaps and mapped content records to new
+      slugs. Used Python to handle raw and URL-encoded Cyrillic and dated paths;
+      reviewed legacy product and landing routes separately. Prepared direct 301
+      redirects for moved resources and 410 responses for retired demo content.
+      Verification tracked the initial response and destination, not just a
+      final HTTP 200.
+  - type: text
+    title: Result and verification
+    body: The final staging report covers 126 original URLs, including 78 direct
+      redirects and 12 intentional 410 responses for retired demo URLs. It
+      recorded no broken content 404s. Production rollout and ranking changes
+      are not verified.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: Gutenberg redesign"
+        url: /showcase/psy343-gutenberg-site-redesign/en/

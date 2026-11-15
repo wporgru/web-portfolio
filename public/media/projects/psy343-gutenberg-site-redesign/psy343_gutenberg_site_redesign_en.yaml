@@ -1,0 +1,38 @@
+title: Redesigning a psychologist’s website with Gutenberg
+tagline: Rebuilt the staging version of a private practice website. Visitors
+  needed to understand consultation formats and how to book, while the owner
+  needed to edit prices, copy and service sections without modifying templates.
+year: "09.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - GeneratePress
+  - Gutenberg
+  - CSS
+  - SVG
+  - Contact Form 7
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Rebuilt the staging version of a private practice website. Visitors needed
+      to understand consultation formats and how to book, while the owner needed
+      to edit prices, copy and service sections without modifying templates.
+  - type: text
+    title: How it works
+    body: Created a GeneratePress child theme and a library of reusable Gutenberg
+      patterns. Unified width, typography and spacing with CSS tokens and used
+      SVG icons. Rebuilt the homepage, service and contact pages and refreshed
+      the blog templates. Distinguished remote from in-person consultations and
+      connected booking buttons to one Contact Form 7 dialog. Implemented mobile
+      menu and FAQ expansion states.
+  - type: text
+    title: Result and verification
+    body: Antigravity artifacts record responsive, menu and booking dialog checks.
+      One Chromium lab run on staging measured mobile FCP around 1.4 s and CLS
+      0.000. This is a single staging measurement, not field Core Web Vitals or
+      proof of a production release.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related stage: legacy URL mapping and redirects"
+        url: /showcase/psy343-seo-redirect-mapping/en/

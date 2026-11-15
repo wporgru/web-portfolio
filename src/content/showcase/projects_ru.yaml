@@ -5777,3 +5777,43 @@ projects:
       - label: Читать кейс
         url: /showcase/arenda-pm-legacy-js-cleanup/
         type: product
+  - slug: psy343-gutenberg-site-redesign
+    name: Редизайн сайта психолога на Gutenberg
+    year: "09.2026"
+    role: Веб-разработка и автоматизация
+    description: Пересобрал тестовую версию сайта частной практики. Посетителю нужно
+      было быстро понять форматы консультаций и порядок записи, а владельцу —
+      менять цены, тексты и блоки услуг без ручной правки шаблонов.
+    stack:
+      - WordPress
+      - GeneratePress
+      - Gutenberg
+      - CSS
+      - SVG
+      - Contact Form 7
+    order: 321
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/psy343-gutenberg-site-redesign/
+        type: product
+  - slug: psy343-seo-redirect-mapping
+    name: Карта редиректов для редизайна сайта психолога
+    year: "09.2026"
+    role: Веб-разработка и автоматизация
+    description: При редизайне менялись устаревшие адреса с кириллицей, датами и
+      префиксами. Требовалось сохранить переходы к полезным материалам, а
+      демонстрационные URL удалить осознанно, а не перенаправлять весь
+      накопившийся архив на главную.
+    stack:
+      - Python
+      - WordPress
+      - XML sitemaps
+      - 301 redirects
+      - Technical SEO
+    order: 322
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/psy343-seo-redirect-mapping/
+        type: product

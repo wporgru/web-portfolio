@@ -5717,3 +5717,43 @@ projects:
       - label: Read case study
         url: /showcase/arenda-pm-legacy-js-cleanup/en/
         type: product
+  - slug: psy343-gutenberg-site-redesign
+    name: Redesigning a psychologist’s website with Gutenberg
+    year: "09.2026"
+    role: Web development and automation
+    description: Rebuilt the staging version of a private practice website. Visitors
+      needed to understand consultation formats and how to book, while the owner
+      needed to edit prices, copy and service sections without modifying
+      templates.
+    stack:
+      - WordPress
+      - GeneratePress
+      - Gutenberg
+      - CSS
+      - SVG
+      - Contact Form 7
+    order: 321
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/psy343-gutenberg-site-redesign/en/
+        type: product
+  - slug: psy343-seo-redirect-mapping
+    name: Redirect mapping for a psychologist’s site redesign
+    year: "09.2026"
+    role: Web development and automation
+    description: The redesign changed legacy URLs with Cyrillic slugs, dates and old
+      prefixes. Useful content needed to remain reachable, while demo URLs
+      needed intentional removal rather than a blanket redirect to the homepage.
+    stack:
+      - Python
+      - WordPress
+      - XML sitemaps
+      - 301 redirects
+      - Technical SEO
+    order: 322
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/psy343-seo-redirect-mapping/en/
+        type: product
