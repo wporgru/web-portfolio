@@ -60,6 +60,12 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
     ];
     if(!details.get(slug)?.[lang]) throw Error('Missing localized technical detail: '+slug);
     blocks.push({type:'text',title:ru?'Как решалась задача':'Implementation and scope',body:details.get(slug)[lang]});
+    if(slug==='tara-bergman') blocks.push({type:'text',title:ru?'После переноса':'After migration',
+      body:ru?'Галереи и языковая разметка потребовали собственных проверок после переноса. Эти этапы разобраны отдельно.':'Galleries and language markup required their own checks after migration. Both follow-up projects are documented separately.',
+      links:[
+        {label:ru?'Порционная загрузка галереи':'Batch loading for galleries',url:'/showcase/tara-bergman-gallery-batches/'+(ru?'':'en/')},
+        {label:ru?'Исправление языковых ссылок':'Fixing hreflang',url:'/showcase/tara-bergman-hreflang-page-mapping/'+(ru?'':'en/')},
+      ]});
     if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Что вошло в комплексное обновление':'What the overhaul covered',
       bullets:ru?[
         'Смена темы и полный редизайн: сохранил узнаваемый зелёный цвет, но изменил первый экран, структуру каталога и навигацию.',

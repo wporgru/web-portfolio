@@ -5817,3 +5817,43 @@ projects:
       - label: Читать кейс
         url: /showcase/psy343-seo-redirect-mapping/
         type: product
+  - slug: tara-bergman-gallery-batches
+    name: "Tara Bergman: ускорение фотогалереи порциями"
+    year: "07.2026"
+    role: Веб-разработка и автоматизация
+    description: На странице портфолио почти три сотни фотографий уже имели lazy
+      loading, но при обычном открытии браузер всё равно запрашивал почти всю
+      галерею. Нужно было облегчить старт, не исключая фотографии из коллекции и
+      не ломая просмотр в полноэкранном режиме.
+    stack:
+      - WordPress
+      - PHP
+      - JavaScript
+      - Image loading
+      - Playwright
+    order: 323
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/tara-bergman-gallery-batches/
+        type: product
+  - slug: tara-bergman-hreflang-page-mapping
+    name: "Tara Bergman: исправление hreflang для внутренних страниц"
+    year: "07.2026"
+    role: Веб-разработка и автоматизация
+    description: У внутренних страниц фотосайта x-default указывал на главную. Для
+      галереи, студии и воркшопов нужно было указывать соответствующую
+      английскую страницу, а не отправлять поисковику один общий URL для разных
+      материалов.
+    stack:
+      - WordPress
+      - Polylang
+      - PHP
+      - hreflang
+      - Technical SEO
+    order: 324
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/tara-bergman-hreflang-page-mapping/
+        type: product

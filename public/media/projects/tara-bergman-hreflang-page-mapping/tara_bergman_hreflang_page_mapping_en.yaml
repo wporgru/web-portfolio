@@ -1,0 +1,37 @@
+title: "Tara Bergman: fixing hreflang on localized pages"
+tagline: Localized pages used the homepage as their x-default target. Galleries,
+  studio details and workshops needed their corresponding English pages instead
+  of one shared target for unrelated content.
+year: "07.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Polylang
+  - PHP
+  - hreflang
+  - Technical SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Localized pages used the homepage as their x-default target. Galleries,
+      studio details and workshops needed their corresponding English pages
+      instead of one shared target for unrelated content.
+  - type: text
+    title: How it works
+    body: Replaced the shared header URL with a context-aware target. The homepage
+      keeps the English root; individual pages use their linked English
+      counterpart in Polylang. Without a counterpart, the template omits its own
+      x-default instead of pointing at an irrelevant page. Verified after
+      deployment and cache clearing.
+  - type: text
+    title: Result and verification
+    body: "The release report covers five routes: home, gallery, city page, studio
+      and workshops. Each had a route-specific x-default with no duplicates
+      reported. A later public-gallery check found its x-default matched the
+      English gallery URL. This verifies markup, not search engines’ page
+      selection."
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Earlier stage: moving the photography site to WordPress"
+        url: /showcase/tara-bergman/en/

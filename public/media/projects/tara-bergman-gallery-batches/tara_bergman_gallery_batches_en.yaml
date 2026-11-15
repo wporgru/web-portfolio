@@ -1,0 +1,38 @@
+title: "Tara Bergman: faster photo galleries with batch loading"
+tagline: Almost three hundred photos already used lazy loading, yet opening the
+  portfolio still triggered requests for nearly the entire gallery. The goal was
+  a lighter initial page without removing photos or breaking the full-screen
+  viewer.
+year: "07.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - PHP
+  - JavaScript
+  - Image loading
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Almost three hundred photos already used lazy loading, yet opening the
+      portfolio still triggered requests for nearly the entire gallery. The goal
+      was a lighter initial page without removing photos or breaking the
+      full-screen viewer.
+  - type: text
+    title: How it works
+    body: "Compared markup with network responses: the baseline audit recorded 302
+      img elements, 298 with lazy loading, but 301 image responses without
+      scrolling. Split rendering into a server-rendered first batch and
+      additional items on demand. Kept thumbnails, alt text, viewer indexes and
+      lazy loading for appended photos. Localized the control for English,
+      Russian and Spanish."
+  - type: text
+    title: Result and verification
+    body: A current browser check found 30 gallery images initially and 60 after one
+      click, confirming batched rendering. The historical network payload and
+      the current HTML size are not reported as comparable metrics.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Related work: localized photography URLs"
+        url: /showcase/tara-bergman-hreflang-page-mapping/en/

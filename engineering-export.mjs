@@ -30,6 +30,8 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'tara-bergman-gallery-batches': ['tara-bergman-hreflang-page-mapping', 'Связанная работа: языковые адреса фотосайта', 'Related work: localized photography URLs'],
+  'tara-bergman-hreflang-page-mapping': ['tara-bergman', 'Предыдущий этап: перенос фотосайта в WordPress', 'Earlier stage: moving the photography site to WordPress'],
   'psy343-gutenberg-site-redesign': ['psy343-seo-redirect-mapping', 'Связанный этап: карта старых адресов и редиректы', 'Related stage: legacy URL mapping and redirects'],
   'psy343-seo-redirect-mapping': ['psy343-gutenberg-site-redesign', 'Связанный этап: редизайн на Gutenberg', 'Related stage: Gutenberg redesign'],
   'arenda-pm-catalog-indexability': ['arenda-pm-legacy-js-cleanup', 'Связанный этап: исправление JavaScript и проверка форм', 'Related stage: JavaScript repair and form verification'],

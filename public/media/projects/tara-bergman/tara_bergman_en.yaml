@@ -22,3 +22,12 @@ blocks:
       on staging first and then reviewed how to integrate the photographer's
       awards without crowding mobile layouts. I prepared separate EN, RU and ES
       workshop URLs; this does not mean the entire site was translated.
+  - type: text
+    title: After migration
+    body: Galleries and language markup required their own checks after migration.
+      Both follow-up projects are documented separately.
+    links:
+      - label: Batch loading for galleries
+        url: /showcase/tara-bergman-gallery-batches/en/
+      - label: Fixing hreflang
+        url: /showcase/tara-bergman-hreflang-page-mapping/en/

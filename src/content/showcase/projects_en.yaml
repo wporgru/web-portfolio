@@ -5757,3 +5757,42 @@ projects:
       - label: Read case study
         url: /showcase/psy343-seo-redirect-mapping/en/
         type: product
+  - slug: tara-bergman-gallery-batches
+    name: "Tara Bergman: faster photo galleries with batch loading"
+    year: "07.2026"
+    role: Web development and automation
+    description: Almost three hundred photos already used lazy loading, yet opening
+      the portfolio still triggered requests for nearly the entire gallery. The
+      goal was a lighter initial page without removing photos or breaking the
+      full-screen viewer.
+    stack:
+      - WordPress
+      - PHP
+      - JavaScript
+      - Image loading
+      - Playwright
+    order: 323
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/tara-bergman-gallery-batches/en/
+        type: product
+  - slug: tara-bergman-hreflang-page-mapping
+    name: "Tara Bergman: fixing hreflang on localized pages"
+    year: "07.2026"
+    role: Web development and automation
+    description: Localized pages used the homepage as their x-default target.
+      Galleries, studio details and workshops needed their corresponding English
+      pages instead of one shared target for unrelated content.
+    stack:
+      - WordPress
+      - Polylang
+      - PHP
+      - hreflang
+      - Technical SEO
+    order: 324
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/tara-bergman-hreflang-page-mapping/en/
+        type: product
