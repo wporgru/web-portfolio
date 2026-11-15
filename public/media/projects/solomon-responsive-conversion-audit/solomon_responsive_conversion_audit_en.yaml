@@ -1,0 +1,32 @@
+title: "Solomon: responsive layout and enquiry button audit"
+tagline: Compared a service website’s requested changes with the public version.
+  Pages could load while still showing a consultation button that did nothing or
+  cutting text off at the screen edge.
+year: "07.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - Elementor
+  - Chromium
+  - Responsive QA
+  - UX audit
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Compared a service website’s requested changes with the public version.
+      Pages could load while still showing a consultation button that did
+      nothing or cutting text off at the screen edge.
+  - type: text
+    title: How it works
+    body: Checked eight URLs in Chromium at 1440 and 390 px. Compared visible
+      elements with the brief, opened menus and dialogs, measured document width
+      and identified the exact overflow sources. Distinguished actual horizontal
+      scrolling from intentional carousel clipping. Prioritized broken actions
+      and clipped text ahead of missing sections and cosmetic work.
+  - type: text
+    title: Result and verification
+    body: "One desktop page was about 100 px wider than its viewport; one mobile
+      page overflowed by 40 px. Listed placeholder CTAs separately from working
+      dialogs so repairs could target the actual failures. No site edits or form
+      submissions were made: the deliverable was reproducible findings and a
+      repair order."

@@ -5943,3 +5943,22 @@ projects:
       - label: Read case study
         url: /showcase/medimarket-source-content-validation/en/
         type: product
+  - slug: solomon-responsive-conversion-audit
+    name: "Solomon: responsive layout and enquiry button audit"
+    year: "07.2026"
+    role: Web development and automation
+    description: Compared a service website’s requested changes with the public
+      version. Pages could load while still showing a consultation button that
+      did nothing or cutting text off at the screen edge.
+    stack:
+      - WordPress
+      - Elementor
+      - Chromium
+      - Responsive QA
+      - UX audit
+    order: 332
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/solomon-responsive-conversion-audit/en/
+        type: product

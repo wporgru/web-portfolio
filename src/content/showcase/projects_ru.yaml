@@ -6004,3 +6004,23 @@ projects:
       - label: Читать кейс
         url: /showcase/medimarket-source-content-validation/
         type: product
+  - slug: solomon-responsive-conversion-audit
+    name: "«Соломон»: аудит мобильной вёрстки и кнопок заявок"
+    year: "07.2026"
+    role: Веб-разработка и автоматизация
+    description: "Сопоставил замечания к сайту услуг с его публичной версией. Все
+      страницы открывались, но этого было недостаточно: посетитель мог увидеть
+      кнопку консультации, которая ничего не открывала, или потерять часть
+      текста за краем экрана."
+    stack:
+      - WordPress
+      - Elementor
+      - Chromium
+      - Responsive QA
+      - UX audit
+    order: 332
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/solomon-responsive-conversion-audit/
+        type: product
