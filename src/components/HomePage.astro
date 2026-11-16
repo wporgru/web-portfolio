@@ -40,6 +40,22 @@ const roleServices = ['website-redesign','catalog-automation','data-and-ai','tec
 const roleServiceSlugs = new Set(roleServices.map(service=>service.slug));
 const extraServices = services.filter(service=>!roleServiceSlugs.has(service.slug));
 const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
+const workSteps = ru ? [
+  ['Сначала выясняю, где ломается сценарий', 'Проверяю сайт глазами посетителя: находит ли он товар, открывается ли форма, читается ли страница на телефоне. Отделяю ошибки, которые мешают заявке, от правок оформления.', 'solomon-responsive-conversion-audit', 'Как проверял кнопки и мобильную вёрстку'],
+  ['Согласую, что меняем и что сохраняем', 'Для редизайна это могут быть адреса, данные каталога и оформление заказа. Для импорта — ключи товаров, поля, которые нельзя перезаписывать, и правила для отсутствующих позиций. Если есть риск потерять данные, выделяю тестовую копию и план отката.', 'artred-woocommerce-migration-readiness', 'Как готовил перенос каталога и статей'],
+  ['Проверяю результат на реальных сценариях', 'После изменений повторяю согласованные проверки и передаю результаты. Если замер был лабораторным, так и отмечаю. Открытие формы не считается доставкой заявки, а отправка URL — индексацией.', 'arenda-pm-home-performance', 'Как проверял скорость и работу мобильной главной'],
+] : [
+  ['Find where the customer journey breaks', 'Review the site as a visitor: can they find a product, open a form and read the page on a phone? Separate issues that block enquiries from visual adjustments.', 'solomon-responsive-conversion-audit', 'How I tested buttons and mobile layouts'],
+  ['Agree on what changes and what stays', 'For a redesign, that could mean URLs, catalog data and checkout. For an import, agree on product keys, fields to preserve and how to handle missing records. If data could be lost, plan staging and rollback first.', 'artred-woocommerce-migration-readiness', 'How I prepared the catalog and article migration'],
+  ['Retest the real workflows', 'Repeat the agreed checks after implementation and share the results. Label lab measurements as such. An open form does not prove delivery, and submitting a URL does not prove indexing.', 'arenda-pm-home-performance', 'How I tested speed and mobile homepage behavior'],
+];
+const projectBrief = [
+  ru?'Ссылка на сайт или пример:':'Website or reference URL:',
+  ru?'Задача и ожидаемый результат:':'Task and expected result:',
+  ru?'Что важно сохранить:':'What must stay intact:',
+  ru?'Желаемые сроки:':'Preferred timeline:',
+].join('\r\n\r\n');
+const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'Задача по веб-разработке':'Web development enquiry')+'&body='+encodeURIComponent(projectBrief);
 ---
 <Layout title={c.title} description={c.description} lang={lang} profile={profile} section="main" personJsonLd={person} roleLinks={roleLinks}>
 <section class="container cv-home">
@@ -54,6 +70,7 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
             <div class="btnrow">
               <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить проект':'Discuss a project'}</a>
               <a class="btn btn--ghost" href={base+'/services'+(ru?'/':'/en/')}>{ru?'Выбрать услугу':'Explore services'}</a>
+              <a class="btn btn--ghost" href="#project-brief">{ru?'Что прислать для оценки':'What to send for an estimate'}</a>
             </div>
           </div>
         </div>
@@ -111,6 +128,32 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
         <div class="stack">{picks.map(p=><article class="card item"><h3 class="h2"><a href={base+'/showcase/'+p.slug+(ru?'/':'/en/')}>{p.name}</a></h3><p class="muted">{caseHighlights[p.slug]?.[ru?'ru':'en'] ?? p.description}</p></article>)}</div>
         <p><a class="btn btn--ghost" href={catalog}>{c.all} →</a></p>
       </section>
+
+      <section class="section cv-extra">
+        <h2 class="h2">{ru?'Как я работаю':'How I work'}</h2>
+        <ol class="list work-steps">
+          {workSteps.map(([title,body,slug,label])=><li class="card item">
+            <h3 class="h2">{title}</h3>
+            <p>{body}</p>
+            <a href={base+'/showcase/'+slug+(ru?'/':'/en/')}>{label}</a>
+          </li>)}
+        </ol>
+      </section>
+
+      <section class="card cv-extra" id="project-brief" aria-labelledby="project-brief-title">
+        <h2 class="h2" id="project-brief-title">{c.contactTitle}</h2>
+        <p>{c.contactText}</p>
+        <ul class="list">
+          <li>{ru?'Новый сайт: пример, основные разделы и действие, которое должен выполнить посетитель.':'New site: a reference, key sections and the action visitors should take.'}</li>
+          <li>{ru?'Доработка: адрес страницы, что происходит сейчас и что должно измениться.':'Existing site: the affected URL, current behavior and desired change.'}</li>
+          <li>{ru?'Импорт или автоматизация: небольшой пример исходных данных и ожидаемого результата.':'Import or automation: a small sample of the input and expected output.'}</li>
+        </ul>
+        <p class="muted">{ru?'Доступы и пароли для первого обсуждения не нужны.':'No credentials or passwords are needed for the first discussion.'}</p>
+        <div class="btnrow">
+          <a class="btn" href={briefEmail}>{ru?'Открыть шаблон письма':'Open enquiry email template'}</a>
+          <a class="btn btn--ghost" href="https://t.me/wporgru">{ru?'Написать в Telegram':'Message me on Telegram'}</a>
+        </div>
+      </section>
     </div>
 
     <aside class="sidebar cv-sidebar">
@@ -164,6 +207,9 @@ const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:
 </Layout>
 <style>
 .cv-home{padding-block:16px 32px}
+#project-brief{scroll-margin-top:8rem}
+.work-steps{display:grid;gap:14px;list-style-position:inside;padding:0}
+.work-steps h3{display:inline}
 #resume{scroll-margin-top:85px}
 .cv-grid :global([id^="role-"]){scroll-margin-top:85px}
 @media(max-width:480px){
