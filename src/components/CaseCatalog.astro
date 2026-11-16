@@ -1,7 +1,10 @@
 ---
 const {projects,lang,t,eagerIdx}=Astro.props;
 import ProjectCard from './ProjectCard.astro';
+import { services } from '../content/services.mjs';
+import { serviceGroups } from '../content/service-groups.mjs';
 const ru=lang==='ru';
+const locale=ru?'ru':'en';
 const base=import.meta.env.BASE_URL.replace(/\/$/, '');
 const starters=[
   ['Импорт и товарные фиды','Catalog imports and feeds','construction-catalog-variants'],
@@ -13,6 +16,21 @@ const starters=[
   ['Автоматизация и данные','Automation and data','medicine-data'],
 ].filter(([, , slug])=>projects.some((p:any)=>p.slug===slug));
 const tags=[...new Set<string>(projects.flatMap((p:any)=>p.stack ?? []))].sort((a,b)=>a.localeCompare(b,lang));
+const servicesBySlug=new Map(services.map(service=>[service.slug,service]));
+const availableSlugs=new Set(projects.map((project:any)=>project.slug));
+const taskOptions=serviceGroups.map(group=>({
+  label:group[locale][0],
+  services:group.slugs.map(slug=>servicesBySlug.get(slug)!).map(service=>({
+    slug:service.slug, label:service[locale][0],
+    count:service.cases.filter(slug=>availableSlugs.has(slug)).length,
+  })).filter(service=>service.count),
+}));
+const projectTasks=new Map<string,string[]>();
+for(const service of services)for(const slug of service.cases){
+  const tasks=projectTasks.get(slug)??[];
+  tasks.push(service.slug);
+  projectTasks.set(slug,tasks);
+}
 const dateKey=(value:unknown)=>{
   const match=String(value??'').match(/^(?:(?:\d{2}[–-])?(\d{2})\.)?(\d{4})$/);
   return match ? Number(match[2])*100+Number(match[1]??0) : 0;
@@ -25,6 +43,9 @@ const dateKey=(value:unknown)=>{
 <case-catalog>
   <form class="card case-search" role="search" hidden>
     <label>{ru?'Поиск по кейсам':'Search case studies'}<input type="search" name="q" placeholder={ru?'Например, импорт или Dokan':'For example, import or Dokan'} /></label>
+    <label>{ru?'Задача клиента':'Client need'}<select name="task"><option value="">{ru?'Все задачи':'All client needs'}</option>{taskOptions.map(group=><optgroup label={group.label}>
+      {group.services.map(service=><option value={service.slug}>{service.label} ({service.count})</option>)}
+    </optgroup>)}</select></label>
     <label>{ru?'Технология':'Technology'}<select name="tech"><option value="">{ru?'Все технологии':'All technologies'}</option>{tags.map(tag=><option value={tag}>{tag}</option>)}</select></label>
     <label>{ru?'Порядок':'Sort by'}<select name="order"><option value="featured">{ru?'Подборка':'Portfolio order'}</option><option value="recent">{ru?'Сначала новые':'Newest first'}</option><option value="oldest">{ru?'Сначала ранние':'Oldest first'}</option></select></label>
     <button class="btn btn--ghost" type="reset">{ru?'Сбросить':'Reset'}</button>
@@ -32,7 +53,7 @@ const dateKey=(value:unknown)=>{
   </form>
   <p class="card" data-case-empty hidden>{ru?'Ничего не найдено. Попробуйте другое слово или сбросьте фильтры.':'No cases found. Try a different keyword or reset the filters.'}</p>
   <div class="grid" data-case-grid>
-    {projects.map((p:any,i:number)=><div data-case data-date={dateKey(p.year)} data-search={[p.name,p.description,p.year,...(p.stack??[])].join(' ').toLocaleLowerCase(lang)} data-tech={JSON.stringify(p.stack??[])}>
+    {projects.map((p:any,i:number)=><div data-case={p.slug} data-date={dateKey(p.year)} data-search={[p.name,p.description,p.year,...(p.stack??[])].join(' ').toLocaleLowerCase(lang)} data-tech={JSON.stringify(p.stack??[])} data-tasks={projectTasks.get(p.slug)?.join(' ')}>
       <ProjectCard project={p} eager={i===eagerIdx} t={t}/>
     </div>)}
   </div>
@@ -43,14 +64,25 @@ class CaseCatalog extends HTMLElement {
     const form=this.querySelector('form');
     const query=form?.querySelector('input');
     const tech=form?.querySelector<HTMLSelectElement>('select[name="tech"]');
+    const task=form?.querySelector<HTMLSelectElement>('select[name="task"]');
     const order=form?.querySelector<HTMLSelectElement>('select[name="order"]');
     const output=form?.querySelector('output');
     const grid=this.querySelector('[data-case-grid]');
     const empty=this.querySelector<HTMLElement>('[data-case-empty]');
-    if(!form||!query||!tech||!order||!output||!grid||!empty)return;
+    if(!form||!query||!tech||!task||!order||!output||!grid||!empty)return;
     const lang=document.documentElement.lang;
     const normalize=(value:string)=>value.toLocaleLowerCase(lang).replace(/ё/g,'е');
-    const cards=[...grid.querySelectorAll<HTMLElement>('[data-case]')].map(el=>({el,tags:JSON.parse(el.dataset.tech??'[]') as string[],text:normalize(el.dataset.search??''),date:Number(el.dataset.date)}));
+    const cards=[...grid.querySelectorAll<HTMLElement>('[data-case]')].map(el=>({el,tags:JSON.parse(el.dataset.tech??'[]') as string[],tasks:(el.dataset.tasks??'').split(' '),text:normalize(el.dataset.search??''),date:Number(el.dataset.date)}));
+    const restoreTask=()=>{
+      const value=new URL(location.href).searchParams.get('task')??'';
+      task.value=[...task.options].some(option=>option.value===value)?value:'';
+    };
+    const syncTask=()=>{
+      const url=new URL(location.href);
+      if(task.value)url.searchParams.set('task',task.value);
+      else url.searchParams.delete('task');
+      if(url.href!==location.href)history.replaceState(history.state,'',url);
+    };
     let currentOrder='featured';
     const update=()=>{
       if(order.value!==currentOrder){
@@ -63,8 +95,8 @@ class CaseCatalog extends HTMLElement {
       }
       const words=normalize(query.value.trim()).split(/\s+/).filter(Boolean);
       let visible=0;
-      for(const {el,tags,text} of cards){
-        const matches=words.every(word=>text.includes(word)) && (!tech.value||tags.includes(tech.value));
+      for(const {el,tags,tasks,text} of cards){
+        const matches=words.every(word=>text.includes(word)) && (!tech.value||tags.includes(tech.value)) && (!task.value||tasks.includes(task.value));
         el.hidden=!matches;
         if(matches)visible++;
       }
@@ -72,14 +104,18 @@ class CaseCatalog extends HTMLElement {
       output.value=lang==='ru'?`Показано: ${visible} из ${cards.length}`:`Showing ${visible} of ${cards.length}`;
     };
     form.addEventListener('input',update);
+    task.addEventListener('change',syncTask);
     form.addEventListener('submit',event=>{event.preventDefault();update();});
     form.addEventListener('reset',event=>{
       event.preventDefault();
       query.value=query.defaultValue;
       tech.value='';
+      task.value='';
       order.value='featured';
+      syncTask();
       update();
     });
+    restoreTask();
     form.hidden=false; update();
   }
 }
@@ -89,8 +125,8 @@ if(!customElements.get('case-catalog'))customElements.define('case-catalog',Case
 .case-paths{margin-bottom:1rem}
 .case-paths p{margin:0 0 .65rem;font-weight:650}
 .case-search:not([hidden]){display:flex;align-items:end;flex-wrap:wrap;gap:1rem;margin-bottom:1rem}
-.case-search label{display:grid;gap:.35rem;flex:1 1 210px}
-.case-search input,.case-search select{font:inherit;width:100%;padding:.55rem;color:var(--text);background:var(--card-bg);border:1px solid var(--border);border-radius:8px}
+.case-search label{display:grid;gap:.35rem;flex:1 1 210px;min-width:0}
+.case-search input,.case-search select{font:inherit;width:100%;min-width:0;padding:.55rem;color:var(--text);background:var(--card-bg);border:1px solid var(--border);border-radius:8px}
 .case-search option{background:#182438;color:white}
 .case-search output{padding:.55rem 0;color:var(--muted)}
 [data-case][hidden],[data-case-empty][hidden]{display:none}

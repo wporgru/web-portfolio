@@ -64,6 +64,7 @@ const examples = service.cases.map(slug => {
           <p class="muted">{p.description}</p>
         </article>)}
       </div>
+      <p><a class="btn btn--ghost" href={base+'/showcase'+localeSuffix+'?task='+encodeURIComponent(service.slug)}>{ru?'Открыть подборку в каталоге':'Open this collection in the case catalog'}</a></p>
     </section>
     {questions.length > 0 && <section class="card" data-service-questions>
       <h2 class="h2">{ru?'Вопросы перед началом работы':'Common questions before we start'}</h2>

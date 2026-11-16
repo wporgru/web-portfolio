@@ -91,6 +91,23 @@ for (const [slug, localized] of Object.entries(caseHighlights)) {
 let canonicalInternalLinks = 0;
 let imageEntries = 0;
 const distinctSitemapImages = new Set();
+for (const suffix of ['', 'en/']) {
+  const catalog = read(path.join(root,'showcase',suffix,'index.html'));
+  const tasks = new Map(services.map(service=>[service.slug,new Set()]));
+  for (const [tag,slug] of catalog.matchAll(/<div\b[^>]*\bdata-case="([^"]+)"[^>]*>/g)) {
+    for (const task of (tag.match(/\bdata-tasks="([^"]+)"/)?.[1] ?? '').split(' ').filter(Boolean)) {
+      if (!tasks.has(task)) fail(slug,'unknown catalog task: '+task);
+      tasks.get(task).add(slug);
+    }
+  }
+  for (const service of services) {
+    const actual = tasks.get(service.slug);
+    if (!new RegExp(`<option\\b[^>]*\\bvalue="${service.slug}"`).test(catalog) || actual.size!==service.cases.length ||
+        service.cases.some(slug=>!actual.has(slug))) fail(service.slug,'catalog task does not match service cases');
+    const html = read(path.join(root,'services',service.slug,suffix,'index.html'));
+    if (!html.includes(`href="${base}showcase/${suffix}?task=${service.slug}"`)) fail(service.slug,'missing localized catalog task link');
+  }
+}
 const imageManifest = JSON.parse(read('.astro/project-images.json'));
 for (const [src, image] of Object.entries(imageManifest)) {
   const original = fs.statSync(path.join(root,src)).size;
