@@ -4,6 +4,14 @@ import {createHash} from 'node:crypto';
 
 // Only named originals from the author's public portfolio, not order attachments.
 const archive = {
+  'sovo-sova': [
+    '56411105','historical-homepage-portfolio-19774603.webp','19774603',
+    'f73dfaab0856ee1c35d28a3f825063a23e530a752a1a38e6143b36d54ee534ea',
+    ['Главная «Сово Сова» на WoodMart: категории, товары, новости и подвал',
+      'Архивная главная целиком, 1400 × 3744, опубликована 25 ноября 2025 года. На снимке виден результат оформления витрины; адрес открытой страницы не установлен, поэтому снимок не подтверждает переключение основного домена.'],
+    ['Sovo Sova WoodMart homepage with product categories, listings, news and footer',
+      'Full archived homepage, 1400 × 3744, published on November 25, 2025. It shows the storefront layout; the address used for the screenshot is unknown, so it does not verify a production cutover.'],
+  ],
   'tara-bergman': [
     '62611119','historical-homepage-portfolio-22781455.webp','22781455',
     '54fbd3e2061da3d0e34ac26102bc1ca01911b4ac4a3e07ccdbdb7827cfd077b9',

@@ -7,6 +7,7 @@ const publicSources = {
   'faeton-blog-tag-archive-recovery': 'https://faetonclean.ru/blog/',
   'apteka-optika-price-comparison': 'https://apteka-optika.ru/',
   'dme-english-service-site': 'https://kwork.ru/portfolio/4093977',
+  'svl-avto-woocommerce-catalog': 'https://kwork.ru/portfolio/18438983',
 };
 const caseImages = {
   'nomad-spain-landing-figma': ['archive-full.webp', 'Полная страница программы Digital Nomad: Испания', 'Full Digital Nomad page for the Spain program', 'Архивный полностраничный снимок проверенной версии без обрезки, 1680 × 12327. Показаны интерфейс и вёрстка, а не актуальные условия программы.', 'Uncropped full-page archive image of the verified version, 1680 × 12327. It documents the interface, not current program terms.'],
@@ -126,10 +127,11 @@ export function addEngineeringCases(projects,root){
         });
       }
       if (publicSources[slug]) {
+        const portfolioSource=publicSources[slug].startsWith('https://kwork.ru/portfolio/');
         blocks.push({
-          type:'text', title:slug==='dme-english-service-site'?(ru?'Проект в портфолио Kwork':'Original Kwork portfolio entry'):(ru?'Действующий сайт':'Live website'),
+          type:'text', title:portfolioSource?(ru?'Проект в портфолио Kwork':'Original Kwork portfolio entry'):(ru?'Действующий сайт':'Live website'),
           ...(slug==='dme-english-service-site' && {body:ru?'Март 2021 года — дата публикации карточки; точная дата сдачи не установлена.':'March 2021 is the publication date; the exact delivery date is unknown.'}),
-          links:[{label:slug==='dme-english-service-site'?(ru?'Посмотреть оригинальную карточку':'View the original entry'):(ru?'Открыть страницу проекта':'Open the project page'),url:publicSources[slug]}],
+          links:[{label:portfolioSource?(ru?'Посмотреть оригинальную карточку':'View the original entry'):(ru?'Открыть страницу проекта':'Open the project page'),url:publicSources[slug]}],
         });
       }
       if (historical) {

@@ -17,11 +17,26 @@ blocks:
       domain switch was outside the confirmed stage.
   - type: text
     title: Implementation and scope
-    body: I used a staging copy to avoid changing the live storefront before
-      approval. I added articles to the homepage, reviewed their ordering and
-      replaced the icon with a text wordmark. The SEO plugin stayed in place
-      pending a separate configuration decision. The client accepted phase one;
-      the case does not claim a domain switch or SEO settings migration.
+    body: Used a staging copy instead of a clean install so the new theme could be
+      tested with existing products, articles and URLs. Added news to the
+      homepage, reviewed the order of posts when the newest one lacked a cover
+      and replaced the icon with a wordmark. Translated visible English strings
+      and left the SEO plugin in place pending a separate decision about its
+      settings. Showed the client where to edit the pages they planned to
+      maintain. The client accepted phase one; production cutover and full SEO
+      settings migration are outside this result.
+  - type: text
+    title: Archived project homepage
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/19774603
+  - type: image
+    src: /media/projects/sovo-sova/archive-homepage.webp
+    alt: Sovo Sova WoodMart homepage with product categories, listings, news and
+      footer
+    caption: Full archived homepage, 1400 × 3744, published on November 25, 2025. It
+      shows the storefront layout; the address used for the screenshot is
+      unknown, so it does not verify a production cutover.
   - type: image
     title: Public website snapshot
     src: /media/projects/sovo-sova/site.png

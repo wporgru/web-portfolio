@@ -261,8 +261,9 @@ projects:
     theme: emerald
     media:
       - type: image
-        src: /media/projects/sovo-sova/site.png
-        alt: Public website snapshot
+        src: /media/projects/sovo-sova/archive-homepage.webp
+        alt: Sovo Sova WoodMart homepage with product categories, listings, news and
+          footer
         featured: true
     links:
       - label: Read case study
@@ -6018,4 +6019,24 @@ projects:
     links:
       - label: Read case study
         url: /showcase/trends-search-demand-history/en/
+        type: product
+  - slug: svl-avto-woocommerce-catalog
+    name: "SVL-AVTO: moving an equipment store from Joomla to WooCommerce"
+    year: 07–08.2025
+    role: Web development and automation
+    description: An auto workshop equipment store needed a new storefront with SKU
+      search and filters. The brief called for moving products from Joomla,
+      preparing spreadsheet updates and keeping the existing store unchanged
+      until its replacement was approved.
+    stack:
+      - WooCommerce
+      - Joomla
+      - WoodMart
+      - CSV
+      - Staging
+    order: 335
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/svl-avto-woocommerce-catalog/en/
         type: product

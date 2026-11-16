@@ -261,8 +261,8 @@ projects:
     theme: emerald
     media:
       - type: image
-        src: /media/projects/sovo-sova/site.png
-        alt: Публичная версия сайта проекта
+        src: /media/projects/sovo-sova/archive-homepage.webp
+        alt: "Главная «Сово Сова» на WoodMart: категории, товары, новости и подвал"
         featured: true
     links:
       - label: Читать кейс
@@ -6081,4 +6081,24 @@ projects:
     links:
       - label: Читать кейс
         url: /showcase/trends-search-demand-history/
+        type: product
+  - slug: svl-avto-woocommerce-catalog
+    name: "SVL-AVTO: перенос магазина с Joomla на WooCommerce"
+    year: 07–08.2025
+    role: Веб-разработка и автоматизация
+    description: Магазину оборудования для автосервисов нужна была новая витрина с
+      поиском по артикулу и фильтрацией. Требовалось перенести товары из Joomla,
+      подготовить обновление из таблиц и не менять действующий магазин до
+      приёмки новой версии.
+    stack:
+      - WooCommerce
+      - Joomla
+      - WoodMart
+      - CSV
+      - Staging
+    order: 335
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/svl-avto-woocommerce-catalog/
         type: product
