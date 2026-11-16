@@ -27,6 +27,15 @@ const skillTags = [
   ['Yandex Webmaster','Metrica','Google Search Console','IndexNow',ru?'Технический аудит':'Technical audits','Canonical','Sitemap','301 redirects'],
   ['Git','GitHub Actions','Playwright',ru?'Миграция сайтов':'Site migrations',ru?'Тестовый стенд':'Staging',ru?'Диагностика PHP и плагинов':'PHP and plugin diagnostics',ru?'Браузерные регрессии':'Browser regression testing',ru?'План отката':'Rollback planning'],
 ];
+const skillExamples = [
+  ['nomad-spain-landing-figma', 'Адаптивная вёрстка по Figma', 'Responsive Figma implementation'],
+  ['diskprices-comparison-platform', 'Laravel: сравнение цен и история предложений', 'Laravel: price comparison and offer history'],
+  ['medicine-data', 'Python и Directus: нормализация справочников', 'Python and Directus: reference data normalization'],
+  ['codex-marketing-skills-workflow', 'Codex: аудит и настройка агентных навыков', 'Codex: auditing and configuring agent skills'],
+  ['tara-bergman-hreflang-page-mapping', 'Hreflang: языковые пары вместо ссылки на главную', 'Hreflang: linking page equivalents instead of the homepage'],
+  ['artred-woocommerce-migration-readiness', 'Подготовка переноса магазина с проверками и планом отката', 'Store cutover preparation with checks and rollback'],
+] as const;
+const projectHref = (slug: string) => `${base}/showcase/${slug}${ru?'/':'/en/'}`;
 const commerceTags = ['YooKassa','CDEK',ru?'Платёжные сценарии':'Payment flows',ru?'Фильтры каталога':'Catalog filters',ru?'Глобальные атрибуты':'Global product attributes',ru?'Вариативные товары':'Product variations',ru?'Проверка остатков из 1С':'1C stock validation',ru?'Товарные фиды':'Product feeds',ru?'Партнёрские витрины':'Affiliate storefronts'];
 const seoTags = ['Rank Math','Yoast SEO','Screaming Frog','GA4','Google Trends',ru?'Аудит метаданных':'Metadata audits',ru?'Региональные поддомены':'Regional subdomains','WordPress Multisite',ru?'Сверка URL при миграции':'URL verification during migrations',ru?'Цели покупки в Яндекс Метрике':'Yandex Metrica purchase goals',ru?'Атрибуция партнёрских переходов':'Affiliate click attribution',ru?'Сопоставление заказов по SubID':'SubID order reconciliation'];
 const performanceTags = ['PageSpeed Insights','LCP','Critical CSS',ru?'Оптимизация первого экрана':'Above-the-fold optimization',ru?'Проверка кэша без авторизации':'Logged-out cache testing'];
@@ -175,6 +184,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
         <div class="skillsgrid">{c.skills.map(([group],i)=><div class="skillsgroup">
           <div class="skillsgroup__title">{group}</div>
           <ul class="tags">{skillTags[i].map(tag=><li class="tag">{tag}</li>)}</ul>
+          <p class="skill-example">{ru?'Кейс:':'Case study:'} <a data-skill-example href={projectHref(skillExamples[i][0])}>{skillExamples[i][ru?1:2]}</a></p>
         </div>)}<div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Интернет-магазины и интеграции':'Commerce and integrations'}</div>
           <ul class="tags">{commerceTags.map(tag=><li class="tag">{tag}</li>)}</ul>
@@ -207,6 +217,8 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
 </Layout>
 <style>
 .cv-home{padding-block:16px 32px}
+.skill-example{margin:8px 0 0;color:var(--muted);font-size:.875rem}
+.skill-example a{color:var(--text);text-decoration:underline;text-underline-offset:.2em}
 #project-brief{scroll-margin-top:8rem}
 .work-steps{display:grid;gap:14px;list-style-position:inside;padding:0}
 .work-steps h3{display:inline}

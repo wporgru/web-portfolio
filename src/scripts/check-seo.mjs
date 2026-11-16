@@ -105,6 +105,14 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+for (const suffix of ['', 'en/']) {
+  const homepage = read(path.join(root,suffix,'index.html'));
+  const examples = [...homepage.matchAll(/<a\b[^>]*data-skill-example\b[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a>/g)];
+  if (examples.length!==6 || new Set(examples.map(([,href])=>href)).size!==6 ||
+      examples.some(([,href,label])=>!label.trim() || !href.startsWith(base+'showcase/') ||
+        (suffix ? !href.endsWith('/en/') : href.endsWith('/en/')) ||
+        !sitemap.has(new URL(href,profileUrl).href))) fail('home/'+suffix,'expected six distinct localized skill examples');
+}
 const personId = profileUrl+'#oleg-tishin';
 const jsonLdOf = (html,type) => [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
   .map(([,value])=>JSON.parse(value)).filter(node=>node['@type']===type);
