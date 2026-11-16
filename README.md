@@ -1,4 +1,15 @@
-# WPORGRU — портфолио веб-разработчика
+# Олег Тишин — портфолио веб-разработчика
+
+**[Открыть портфолио](https://wporgru.github.io/web-portfolio/)** · [English version](https://wporgru.github.io/web-portfolio/en/)
+
+Разрабатываю сайты и интернет-магазины на WordPress, WooCommerce и Laravel, готовлю каталоги к импорту, настраиваю техническое SEO и автоматизирую работу с данными. В кейсах показываю исходную задачу, реализацию и то, что удалось проверить.
+
+- [Кейсы веб-разработки и автоматизации](https://wporgru.github.io/web-portfolio/showcase/) · [Case studies](https://wporgru.github.io/web-portfolio/showcase/en/)
+- [Услуги веб-разработки](https://wporgru.github.io/web-portfolio/services/) · [Web development services](https://wporgru.github.io/web-portfolio/services/en/)
+- [Как перенести магазин WooCommerce и сохранить заказы](https://wporgru.github.io/web-portfolio/guides/woocommerce-migration/) · [WooCommerce migration guide](https://wporgru.github.io/web-portfolio/guides/woocommerce-migration/en/)
+- [Скачать резюме](https://wporgru.github.io/web-portfolio/#resume) · [Download the CV](https://wporgru.github.io/web-portfolio/en/#resume)
+
+## О репозитории
 
 Двуязычная витрина на [CV Hub](https://github.com/KeeGooRoomiE/cv_hub) (Astro, MIT). Русский — основной язык, английский доступен из меню и на страницах кейсов.
 
