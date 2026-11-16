@@ -80,6 +80,9 @@ const metaImage = ogImage
 const metaImageAlt = ogImageAlt ?? (lang==='ru'?'Олег Тишин — веб-разработка для бизнеса':'Oleg Tishin — web development for businesses');
 const slash = (p: string) => p.endsWith('/') ? p : p + '/';
 const canonicalUrl = `${siteUrl}${slash(Astro.url.pathname)}`;
+const googleVerification = process.env.GOOGLE_SITE_VERIFICATION?.trim();
+const showGoogleVerification = !noindex && canonicalUrl === siteUrl+slash(base || '/') &&
+  Boolean(googleVerification && /^[A-Za-z0-9_-]{20,100}$/.test(googleVerification));
 
 // --- Navigation ---
 function buildHref(profileSlug: string, langId: string): string {
@@ -191,6 +194,7 @@ const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
     <title>{title}</title>
     <meta name="description" content={metaDescription} />
     {noindex && <meta name="robots" content="noindex" />}
+    {showGoogleVerification && <meta name="google-site-verification" content={googleVerification} />}
     <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="alternate icon" href={`${base}/favicon.ico`} />

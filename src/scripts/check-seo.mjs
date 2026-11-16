@@ -105,6 +105,13 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+const googleVerification = process.env.GOOGLE_SITE_VERIFICATION?.trim();
+if (googleVerification) {
+  const homeHtml=read(path.join(root,'index.html'));
+  if (!homeHtml.includes('<meta name="google-site-verification" content="'+googleVerification+'"')) {
+    fail('home','configured Google ownership proof is missing');
+  }
+}
 for (const suffix of ['', 'en/']) {
   const homepage = read(path.join(root,suffix,'index.html'));
   const examples = [...homepage.matchAll(/<a\b[^>]*data-skill-example\b[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a>/g)];
