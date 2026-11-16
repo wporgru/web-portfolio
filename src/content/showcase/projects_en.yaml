@@ -428,8 +428,9 @@ projects:
     name: "Autopartner: catalog update package"
     year: "10.2026"
     role: Web development and automation
-    description: Prepare new product records and images as a handoff that can be
-      imported independently of the supplier’s source files.
+    description: "Prepare a WooCommerce import package for new parts: separate
+      products, prices and images from supplier files and hand over a bundle
+      that can be verified before updating the live store."
     stack:
       - WooCommerce
       - CSV
@@ -6137,4 +6138,27 @@ projects:
     links:
       - label: Read case study
         url: /showcase/taro-praktik-editorial-wordpress/en/
+        type: product
+  - slug: ecopol-woodmart-flooring-store
+    name: "Ecopol: a WoodMart storefront for flooring"
+    year: "01.2024"
+    role: Web development and automation
+    description: "The client needed a flooring storefront on an existing theme: make
+      the catalog easy to reach and apply their own brand without cloning the
+      reference shop."
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Storefront design
+    order: 340
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/ecopol-woodmart-flooring-store/archive-storefront.webp
+        alt: First screen of the Ecopol flooring storefront on WoodMart
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/ecopol-woodmart-flooring-store/en/
         type: product

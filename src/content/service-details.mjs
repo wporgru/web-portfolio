@@ -1,4 +1,18 @@
 export const serviceDetails = {
+  'woocommerce-store-development': {
+    ru: ['Одинаково оформленные карточки могут требовать разных правил покупки', 'У магазина инструментов покупатель ищет товар по артикулу и характеристикам, у магазина мебели выбирает размер и отделку. Сначала проверим эти модели на небольшой выборке, затем решим, как организовать категории, фильтры и обновление товаров. Платежи и доставку включим только в согласованном объёме.', 'Вы получите витрину, редактируемые товары и оговорённые сценарии заказа. Зафиксируем, что проверено: поиск, товар с вариациями, способ доставки, уведомление или контрольная оплата — в зависимости от комплектации проекта.'],
+    en: ['Similar product pages can require different buying rules', 'Tool buyers search by SKU and specifications, while furniture buyers choose size and finish. Test representative products first, then design categories, filters and update rules. Payment and shipping work follows the agreed scope.', 'Get the storefront, editable products and agreed order flows. The handoff records which scenarios were tested: search, variations, delivery, notification or a test payment, depending on the project scope.'],
+    questions: {
+      ru: [
+        ['Можно начать без полной выгрузки?', 'Да, начнём с нескольких типичных товаров. Для массового запуска отдельно проверим поля, идентификаторы и фотографии.'],
+        ['Можно сначала запустить каталог без онлайн-оплаты?', 'Да. Можно начать с заявки или запроса цены, а оплату подключить после согласования условий и выбора платёжного сервиса.'],
+      ],
+      en: [
+        ['Can we start before the full export is ready?', 'Yes. Begin with a few representative products. Before full import, check fields, identifiers and images separately.'],
+        ['Can we launch a catalog without online payments?', 'Yes. Start with enquiries or quote requests, and add online payments once terms and a payment provider are agreed.'],
+      ],
+    },
+  },
   'wordpress-business-website': {
     ru: ['Посетитель ищет решение своей задачи, а не просто знакомится с компанией', 'Разная аудитория приходит за разным: гостю ресторана нужно меню или условия банкета, а клиенту ремонтной компании — виды работ, примеры и форма оценки. Поэтому сначала определю главные маршруты, затем соберу структуру вокруг них. Для «ПРОМАРКО», где тексты и фотографии оставались за клиентом, выделил отдельный этап: рабочий шаблон с согласованной палитрой без открытия демоданных для индексации.', 'Получите редактируемые страницы и шаблоны, настроенный способ обращения и список проверенных сценариев. Если отдельно заказываете наполнение, запуск или интеграции, зафиксируем их в смете и критериях приёмки.'],
     en: ['Visitors want to solve a problem, not just read a company profile', 'A restaurant guest wants a menu or banquet details. A renovation customer wants to see service types, examples and a quote form. Identify the key journeys first and build around them. For Promarko, where the client owned the copy and photography, I scoped the working template and approved color palette as a separate stage and kept demo content out of search.', 'Get editable pages and templates, a configured contact flow and a record of the tested scenarios. Content production, launch and integrations are listed separately in the estimate and acceptance criteria when included.'],

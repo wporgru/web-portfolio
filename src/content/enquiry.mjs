@@ -1,5 +1,9 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'woocommerce-store-development': [
+    ['Примеры товаров, вариантов и источник цен и остатков', 'Как покупатель оформляет, оплачивает и получает заказ'],
+    ['Sample products, variations and source of prices and stock', 'How customers will order, pay and receive products'],
+  ],
   'wordpress-business-website': [
     ['Какие услуги, разделы и материалы уже есть', 'Что должен сделать посетитель: позвонить, записаться или отправить заявку'],
     ['Services, planned sections and materials already available', 'What visitors should do: call, book or send an enquiry'],

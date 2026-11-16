@@ -4,6 +4,15 @@ import {createHash} from 'node:crypto';
 
 // Only named originals from the author's public portfolio, not order attachments.
 const archive = {
+  'ecopol-woodmart-flooring-store': [
+    '41070613','historical-fragment-portfolio-11998730.webp','11998730',
+    '948f349d70fe8dde8c14ec0e43b988a925eafdfde0a10e0e305e0152cf8abbda',
+    ['Первый экран магазина напольных покрытий «ЭКОПОЛ» на WoodMart',
+      'Необрезанный оригинал архивного фрагмента 1400 × 514: логотип, баннеры и категории. Это первый экран, а не полная страница; показанные акции относятся к архивной версии.'],
+    ['First screen of the Ecopol flooring storefront on WoodMart',
+      'Unedited 1400 × 514 archival excerpt showing the logo, banners and categories. This is the first screen, not the full page; promotions belong to the archived version.'],
+    'archive-storefront.webp',
+  ],
   'llp-pigment-woocommerce-shipping': [
     '38802345','historical-portfolio-10894541.webp','10894541',
     'beaa93ea78d880f07ce52f2475930e602adae5bd18ea18232a168f355a0c3d80',

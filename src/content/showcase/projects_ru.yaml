@@ -428,9 +428,9 @@ projects:
     name: "Автопартнёр: пакет обновления каталога"
     year: "10.2026"
     role: Веб-разработка и автоматизация
-    description: Подготовить клиенту новые карточки и изображения так, чтобы
-      выгрузка и медиа могли быть переданы на импорт независимо от исходных
-      файлов поставщика.
+    description: "Подготовить пакет новых запчастей для WooCommerce: отделить
+      товары, цены и фотографии от файлов поставщика и передать комплект,
+      который можно проверить до загрузки в действующий магазин."
     stack:
       - WooCommerce
       - CSV
@@ -6199,4 +6199,27 @@ projects:
     links:
       - label: Читать кейс
         url: /showcase/taro-praktik-editorial-wordpress/
+        type: product
+  - slug: ecopol-woodmart-flooring-store
+    name: "«ЭКОПОЛ»: витрина напольных покрытий на WoodMart"
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: "Заказчику нужна была витрина напольных покрытий на готовой теме:
+      сохранить понятный вход в каталог и оформить главную под свой бренд, не
+      копируя магазин-пример целиком."
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Storefront design
+    order: 340
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/ecopol-woodmart-flooring-store/archive-storefront.webp
+        alt: Первый экран магазина напольных покрытий «ЭКОПОЛ» на WoodMart
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/ecopol-woodmart-flooring-store/
         type: product

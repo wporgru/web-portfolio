@@ -1,0 +1,39 @@
+title: "Ecopol: a WoodMart storefront for flooring"
+tagline: "The client needed a flooring storefront on an existing theme: make the
+  catalog easy to reach and apply their own brand without cloning the reference
+  shop."
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - Storefront design
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The client needed a flooring storefront on an existing theme: make the
+      catalog easy to reach and apply their own brand without cloning the
+      reference shop."
+  - type: text
+    title: How it works
+    body: Prepared the storefront using WoodMart Megamarket. The archived homepage
+      shows the Ecopol logo, navigation, banners and links into flooring
+      categories. Before handoff, discussed how the client could edit product
+      details and images independently.
+  - type: text
+    title: Result and verification
+    body: The client accepted the storefront. The archive documents its first screen
+      and category presentation. The final domain, complete import, checkout
+      behavior and later price updates were not independently verified.
+  - type: text
+    title: Archived storefront excerpt
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/11998730
+  - type: image
+    src: /media/projects/ecopol-woodmart-flooring-store/archive-storefront.webp
+    alt: First screen of the Ecopol flooring storefront on WoodMart
+    caption: Unedited 1400 × 514 archival excerpt showing the logo, banners and
+      categories. This is the first screen, not the full page; promotions belong
+      to the archived version.

@@ -1,6 +1,7 @@
 title: "Autopartner: catalog update package"
-tagline: Prepare new product records and images as a handoff that can be
-  imported independently of the supplier’s source files.
+tagline: "Prepare a WooCommerce import package for new parts: separate products,
+  prices and images from supplier files and hand over a bundle that can be
+  verified before updating the live store."
 year: "10.2026"
 role: Web development and automation
 stack:
@@ -10,13 +11,20 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Prepare new product records and images as a handoff that can be imported
-      independently of the supplier’s source files.
+    body: "Prepare a WooCommerce import package for new parts: separate products,
+      prices and images from supplier files and hand over a bundle that can be
+      verified before updating the live store."
   - type: text
     title: How it works
-    body: Assembled a CSV with 32 product rows and 73 columns, prepared 220 WebP
-      files and documented data and media constraints.
+    body: "Mapped the client’s list to a 73-column WooCommerce template. Used SKU as
+      the key and kept IDs blank for new listings. Matched images to products,
+      prepared 1280 px WebPs and documented the mapping in a media manifest.
+      Re-read the generated CSV to check headers, blank IDs, unique SKUs,
+      positive prices and image references. One SKU appeared in an older
+      package: I flagged it for review before importing."
   - type: text
     title: Result and verification
-    body: The result is an import-ready package, not a claim of production
-      deployment.
+    body: "Handed over a 32-product CSV, a manifest listing 220 images and a warning
+      list. The archived CSV checksum matches the manifest. Delivery stopped at
+      the package: importing into production, reconciling via API and checking
+      public product pages were outside this run."

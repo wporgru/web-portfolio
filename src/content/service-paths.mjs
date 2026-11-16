@@ -1,5 +1,9 @@
 // Alternatives explain how to scope a job, not just which pages to visit next.
 export const servicePaths = {
+  'woocommerce-store-development': [
+    ['website-redesign','Если магазин работает и нужно обновить дизайн, не теряя старые адреса и каталог.','If a live store needs a redesign without losing its URLs or catalog.'],
+    ['b2b-catalog-and-enquiries','Если клиент выбирает позиции, но цену и условия согласует менеджер, а не чекаут.','If customers choose products but a sales manager agrees on pricing and terms.'],
+  ],
   'wordpress-business-website': [
     ['website-redesign','Если сайт уже работает и нужно сохранить адреса, каталог или заявки.','If the site is already live and you need to retain URLs, the catalog or enquiries.'],
     ['b2b-catalog-and-enquiries','Если клиенты выбирают оборудование и запрашивают условия вместо онлайн-покупки.','If customers select equipment and request terms instead of buying online.'],
