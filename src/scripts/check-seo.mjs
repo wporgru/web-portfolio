@@ -28,6 +28,10 @@ for (const file of fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.test(f
   }
 }
 const sitemap = new Set(sitemapEntries.keys());
+const textSitemap=read(path.join(root,'sitemap.txt')).split('\n');
+if (textSitemap.pop()!=='' || textSitemap.length!==sitemap.size ||
+    new Set(textSitemap).size!==sitemap.size ||
+    textSitemap.some(url=>!sitemap.has(url))) fail('sitemap.txt','expected exactly the same canonical URLs as XML');
 const pages = new Map();
 const internalTargets = new Map();
 const breadcrumbTargets = new Map();

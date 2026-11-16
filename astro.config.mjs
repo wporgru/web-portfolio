@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import { cpSync, readFileSync, statSync } from 'node:fs';
+import { cpSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
 import { latestCaseRevision, readCaseRevisions } from './src/scripts/case-revisions.mjs';
@@ -19,6 +19,7 @@ const site = process.env.SITE_URL || (owner ? `https://${owner}.github.io` : 'ht
 const base = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : (name ? `/${name}` : undefined);
 const mount = (base ?? '').replace(/\/$/, '');
 const caseRevisions=readCaseRevisions({required:process.env.GITHUB_ACTIONS==='true'});
+const sitemapUrls=new Set();
 
 function addCaseMetadata(item) {
   const url = new URL(item.url);
@@ -68,7 +69,11 @@ export default defineConfig({
 
   integrations: [
     sitemap({
-      serialize: addCaseMetadata,
+      serialize: item=>{
+        const entry=addCaseMetadata(item);
+        sitemapUrls.add(entry.url);
+        return entry;
+      },
       filter: (page) =>
         // og-preview renders sample/mock data for the OG-image screenshot
         // pipeline and is deleted from dist/ before deploy — never a real page.
@@ -79,5 +84,15 @@ export default defineConfig({
         !page.includes('/quickstart') &&
         !page.includes('/get-started'),
     }),
+    {
+      name:'portfolio-text-sitemap',
+      hooks:{
+        'astro:build:start':()=>sitemapUrls.clear(),
+        'astro:build:done':({dir})=>{
+          if (!sitemapUrls.size) throw Error('No canonical URLs collected for the text sitemap.');
+          writeFileSync(new URL('sitemap.txt',dir),[...sitemapUrls].sort().join('\n')+'\n','utf8');
+        },
+      },
+    },
   ]
 });
