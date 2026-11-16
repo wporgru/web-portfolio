@@ -1,4 +1,20 @@
 export const serviceDetails = {
+  'wordpress-business-website': {
+    ru: ['Посетитель ищет решение своей задачи, а не просто знакомится с компанией', 'Разная аудитория приходит за разным: гостю ресторана нужно меню или условия банкета, а клиенту ремонтной компании — виды работ, примеры и форма оценки. Поэтому сначала определю главные маршруты, затем соберу структуру вокруг них. Для «ПРОМАРКО», где тексты и фотографии оставались за клиентом, выделил отдельный этап: рабочий шаблон с согласованной палитрой без открытия демоданных для индексации.', 'Получите редактируемые страницы и шаблоны, настроенный способ обращения и список проверенных сценариев. Если отдельно заказываете наполнение, запуск или интеграции, зафиксируем их в смете и критериях приёмки.'],
+    en: ['Visitors want to solve a problem, not just read a company profile', 'A restaurant guest wants a menu or banquet details. A renovation customer wants to see service types, examples and a quote form. Identify the key journeys first and build around them. For Promarko, where the client owned the copy and photography, I scoped the working template and approved color palette as a separate stage and kept demo content out of search.', 'Get editable pages and templates, a configured contact flow and a record of the tested scenarios. Content production, launch and integrations are listed separately in the estimate and acceptance criteria when included.'],
+    questions: {
+      ru: [
+        ['Что делать, если тексты и фотографии ещё не готовы?', 'Начнём со структуры и одного ключевого шаблона. Согласуем, кто готовит материалы, какие блоки можно собрать сразу и при каких условиях открывать сайт для индексации.'],
+        ['Можно ли обновлять содержание самостоятельно?', 'Да. Заранее выберем, что вы меняете сами: услуги, статьи, меню, баннеры или контактные данные. Покажу этот сценарий на готовой странице.'],
+        ['Что входит в проверку перед запуском?', 'Сверю согласованные страницы, навигацию, мобильные состояния и технические настройки поисковой доступности. Отправку тестовой заявки и проверку её доставки согласуем отдельно.'],
+      ],
+      en: [
+        ['What if we do not have copy and photos yet?', 'Start with the page structure and one key template. Agree who provides materials, what can be built now and when the site is ready to open to search engines.'],
+        ['Can we update content ourselves?', 'Yes. Decide what you will maintain: services, posts, menus, banners or contact details. I will demonstrate the workflow on a finished page.'],
+        ['What do you check before launch?', 'Review the agreed pages, navigation, mobile states and technical search settings. A test submission and verification of its delivery are agreed separately.'],
+      ],
+    },
+  },
   'wordpress-plugin-development': {
     ru: ['Нужно выключить покупку у одного поставщика, а не переписывать весь каталог', 'В проекте Sport-man отделил правило витрины от данных карточек: MU-плагин отключал переходы и покупку у 1 892 затронутых позиций. Проверил контрольный товар, чтобы убедиться, что покупка у других поставщиков осталась доступной. Если задачу можно решить такой изолированной правкой, нет смысла переделывать тему или массово менять товары.', 'Вы получите код, инструкцию установки, список затронутых условий и проверок. Будет понятно, как включить и отключить функцию, что происходит с уже записанными данными и какие сценарии повторять после обновлений.'],
     en: ['Pause purchases for one supplier without rewriting the whole catalog', 'For Sport-man, the storefront rule was separate from product records: a must-use plugin disabled clicks and purchases for 1,892 affected listings. A control product verified that unaffected offers still worked. An isolated rule can avoid a theme rebuild or a bulk product rewrite.', 'Get the implementation, installation notes and a record of conditions and checks. Know how to turn the feature on and off, what happens to existing data and what to retest after updates.'],

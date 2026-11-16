@@ -1,5 +1,9 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'wordpress-business-website': [
+    ['Какие услуги, разделы и материалы уже есть', 'Что должен сделать посетитель: позвонить, записаться или отправить заявку'],
+    ['Services, planned sections and materials already available', 'What visitors should do: call, book or send an enquiry'],
+  ],
   'wordpress-plugin-development': [
     ['Какое правило или функцию нужно добавить и где она работает', 'Пример, на котором правило не должно сработать'],
     ['The feature or rule you need and where it should run', 'An example that the rule must leave unaffected'],
