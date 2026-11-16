@@ -4,6 +4,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getEntry } from 'astro:content';
 import { services } from '../../content/services.mjs';
 import { serviceDetails } from '../../content/service-details.mjs';
+import { createEnquiry } from '../../content/enquiry.mjs';
 
 export function getStaticPaths() {
   return services.flatMap(service => ['ru','en'].map(lang => ({
@@ -18,7 +19,10 @@ const providerName = ru?'Олег Тишин':'Oleg Tishin';
 const [title, intro, first, second, outcome] = service[ru ? 'ru' : 'en'];
 const [scenario, approach, deliverables] = serviceDetails[service.slug][ru ? 'ru' : 'en'];
 const questions = serviceDetails[service.slug].questions?.[ru ? 'ru' : 'en'] ?? [];
-const emailHref = 'mailto:zakaz@wp.org.ru?subject='+encodeURIComponent(title);
+const enquiry = createEnquiry({
+  lang, title, kind:'service', serviceSlug:service.slug,
+  url:new URL(Astro.url.pathname,Astro.site ?? Astro.url).href,
+});
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const localeSuffix = ru ? '/' : '/en/';
 const breadcrumbs = [
@@ -43,7 +47,7 @@ const examples = service.cases.map(slug => {
       <p class="muted">{ru?'Исполнитель:':'Provided by:'} <a href={base+localeSuffix}>{providerName}</a></p>
       <div class="btnrow">
         <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить задачу':'Discuss your project'}</a>
-        <a class="btn btn--ghost" href={emailHref}>{ru?'Написать на почту':'Send an email'}</a>
+        <a class="btn btn--ghost" href={enquiry.href} data-enquiry-email>{ru?'Открыть шаблон письма':'Open enquiry email template'}</a>
       </div>
     </article>
     <section class="card" data-service-scenario>
@@ -77,7 +81,10 @@ const examples = service.cases.map(slug => {
     <section class="card">
       <h2 class="h2">{ru?'С чего начнём':'How to get started'}</h2>
       <p>{outcome}</p>
-      <a class="btn" href="https://t.me/wporgru">{ru?'Прислать задачу в Telegram':'Send your brief on Telegram'}</a>
+      <div class="btnrow">
+        <a class="btn" href={enquiry.href} data-enquiry-email>{ru?'Открыть шаблон письма':'Open enquiry email template'}</a>
+        <a class="btn btn--ghost" href="https://t.me/wporgru">{ru?'Прислать задачу в Telegram':'Send your brief on Telegram'}</a>
+      </div>
     </section>
   </div>
 </Layout>

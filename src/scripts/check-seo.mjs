@@ -4,6 +4,7 @@ import { services } from '../content/services.mjs';
 import { serviceDetails } from '../content/service-details.mjs';
 import { caseHighlights } from '../content/case-highlights.mjs';
 import { serviceGroups } from '../content/service-groups.mjs';
+import { enquiryPrompts } from '../content/enquiry.mjs';
 
 const root = 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
@@ -28,6 +29,11 @@ const breadcrumbTargets = new Map();
 const sharingCards = new Map();
 const originalImages = new Map();
 const titles = new Set(), descriptions = new Set();
+let enquiryPages = 0;
+const enquiryKinds = new Map(services.map(service=>[service.slug,service]));
+if (Object.keys(enquiryPrompts).length!==services.length || services.some(service=>!enquiryPrompts[service.slug])) {
+  fail('enquiry','expected bilingual prompts for every service');
+}
 for(const file of htmlFiles){
   const html=read(path.join(root,file));
   const lang=html.match(/<html lang="([^"]+)"/)?.[1];
@@ -40,6 +46,25 @@ for(const file of htmlFiles){
   if(headings[0]?.[1]!=='1'||headings.filter(m=>m[1]==='1').length!==1||!(length>=20&&length<=70)) fail(file,'expected a single first H1 of 20–70 characters');
   const canonical=html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
   if(!canonical||pages.has(canonical)||!sitemap.has(canonical)||/<meta name="robots" content="[^"]*noindex/i.test(html)) fail(file,'indexable canonical missing from sitemap or duplicated');
+  const enquiryRoute=/(?:^|\/)(services|showcase)\/([a-z0-9-]+)(?:\/en)?\/$/.exec(new URL(canonical).pathname);
+  if(enquiryRoute && !['ru','en'].includes(enquiryRoute[2])){
+    const [,section,slug]=enquiryRoute;
+    const isService=section==='services';
+    const group=isService?enquiryKinds.get(slug):services.find(service=>service.cases.includes(slug));
+    const templates=[...html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*\bdata-enquiry-email\b[^>]*>/g)];
+    if(templates.length!==(isService?2:1)||(!isService&&!html.includes('href="#enquiry"'))) fail(file,'missing enquiry action');
+    for(const [,raw] of templates){
+      const draft=new URL(raw.replaceAll('&amp;','&'));
+      const body=draft.searchParams.get('body')??'';
+      const prompts=enquiryPrompts[group?.slug]?.[lang==='ru'?0:1]??[];
+      const first=lang==='ru'?'Адрес сайта или ссылка на пример:':'Website or reference URL:';
+      const source=lang==='ru'?(isService?'Страница услуги: ':'Кейс, на который я ссылаюсь: '):(isService?'Service page: ':'Reference case: ');
+      if(draft.protocol!=='mailto:'||draft.pathname!=='zakaz@wp.org.ru'||!draft.searchParams.get('subject')||
+          !body.startsWith(first+'\r\n\r\n')||!body.endsWith(source+canonical)||
+          !prompts.every(prompt=>body.includes(prompt+':'))) fail(file,'wrong recipient, locale, source or enquiry prompts');
+    }
+    enquiryPages++;
+  }
   if (/^services[\\/](?!en[\\/])[^\\/]+[\\/](?:en[\\/])?index\.html$/.test(file)) {
     for (const marker of ['data-service-scenario','data-service-deliverables','mailto:zakaz@wp.org.ru?subject=']) {
       if (!html.includes(marker)) fail(file,'missing service content: '+marker);
@@ -225,3 +250,4 @@ for (const url of new Set(sharingCards.values())) {
 console.log('SEO checks passed for '+pages.size+' HTML pages and '+breadcrumbTargets.size+' breadcrumb trails.');
 console.log('Verified '+canonicalInternalLinks+' canonical internal page links.');
 console.log('Verified '+distinctSitemapImages.size+' original images across '+imageEntries+' localized image sitemap entries.');
+console.log('Verified contextual enquiry templates for '+enquiryPages+' localized case and service pages.');

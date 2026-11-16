@@ -14,6 +14,7 @@ import CodeBlock  from './blocks/CodeBlock.astro';
 import Divider    from './blocks/DividerBlock.astro';
 import { services } from '../content/services.mjs';
 import { caseHighlights } from '../content/case-highlights.mjs';
+import { createEnquiry } from '../content/enquiry.mjs';
 import Breadcrumbs from './Breadcrumbs.astro';
 
 const { data, showcaseHref, langLinks, lang, relatedCases = [], slug } = Astro.props;
@@ -22,6 +23,7 @@ const ogImage = slug === '78-dosok' ? '/media/sharing/78-dosok-'+lang+'.png' : u
 const ogImageAlt = ogImage ? (lang==='ru'?'78 Досок — полный редизайн интернет-магазина':'78 Dosok — full online store redesign') : undefined;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const linkedServices = services.filter(service => service.cases.includes(slug));
+const ru = lang === 'ru';
 
 // LCP: the first image block is very likely the hero shot right under the
 // title — load it eagerly instead of the lazy default every other image
@@ -30,6 +32,10 @@ const blocks = data.blocks ?? [];
 
 
 const projectTitle = data?.title || 'CV Hub';
+const enquiry = createEnquiry({
+  lang, title:projectTitle, kind:'case', serviceSlug:linkedServices[0]?.slug,
+  url:new URL(Astro.url.pathname,Astro.site ?? Astro.url).href,
+});
 const breadcrumbs = [
   {name:lang==='ru'?'Главная':'Home',href:base+(lang==='ru'?'/':'/en/')},
   {name:lang==='ru'?'Проекты':'Projects',href:showcaseHref.replace(/\/?$/, '/')},
@@ -55,6 +61,7 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
   <!-- Nav: back + share button -->
   <nav class="project-page__nav">
     <a class="btn btn--ghost" href={showcaseHref}>{lang === "ru" ? "← Все проекты" : "← All projects"}</a>
+    <a class="btn btn--ghost" href="#enquiry">{ru?'Заказать похожую работу':'Request similar work'}</a>
     
     {data.shareable === true && (
       <button 
@@ -128,23 +135,24 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
     if (block.type === 'code')    return <CodeBlock   {...block} />;
     return null;
   })}
-  {relatedCases.length > 0 && (
-    <section class="card" style="margin-top: 2rem" data-related-cases>
-      <h2 class="h2">{lang === 'ru' ? 'Похожие проекты' : 'Related case studies'}</h2>
-      <ul class="list">{relatedCases.map((item: {name: string; href: string}) => <li><a href={item.href}>{item.name}</a></li>)}</ul>
-    </section>
-  )}
-  <aside class="card" style="margin-top: 2rem">
-    <h2>{lang === 'ru' ? 'Нужна похожая работа?' : 'Need something similar?'}</h2>
-    <p>{lang === 'ru' ? 'Пришлите ссылку на проект и опишите, что должно измениться.' : 'Send a project link and tell me what you need to change.'}</p>
+  <aside class="card project-page__enquiry" id="enquiry" tabindex="-1" aria-labelledby="enquiry-title">
+    <h2 class="h2" id="enquiry-title">{ru ? 'Нужна похожая работа?' : 'Need something similar?'}</h2>
+    <p>{ru ? 'Для первой оценки пришлите адрес сайта и несколько деталей. Пароли и доступы пока не нужны.' : 'For an initial estimate, send your website and a few details. No account access or passwords yet.'}</p>
+    <ul class="list">{enquiry.prompts.map(prompt => <li>{prompt}</li>)}</ul>
     <div class="btnrow">
-      <a class="btn" href="https://t.me/wporgru">{lang === 'ru' ? 'Обсудить задачу' : 'Discuss your project'}</a>
-      <a class="btn btn--ghost" href={'mailto:zakaz@wp.org.ru?subject='+encodeURIComponent((lang==='ru'?'Задача по примеру: ':'Project enquiry: ')+projectTitle)}>{lang==='ru'?'Написать на почту':'Send an email'}</a>
+      <a class="btn" href={enquiry.href} data-enquiry-email>{ru?'Открыть шаблон письма':'Open enquiry email template'}</a>
+      <a class="btn btn--ghost" href="https://t.me/wporgru">{ru ? 'Обсудить в Telegram' : 'Discuss on Telegram'}</a>
     </div>
     {linkedServices.length > 0 && <ul class="list">
       {linkedServices.map(service => <li><a href={base+'/services/'+service.slug+(lang==='ru'?'/':'/en/')}>{service[lang==='ru'?'ru':'en'][0]}</a></li>)}
     </ul>}
   </aside>
+  {relatedCases.length > 0 && (
+    <section class="card" style="margin-top: 2rem" data-related-cases>
+      <h2 class="h2">{ru ? 'Похожие проекты' : 'Related case studies'}</h2>
+      <ul class="list">{relatedCases.map((item: {name: string; href: string}) => <li><a href={item.href}>{item.name}</a></li>)}</ul>
+    </section>
+  )}
 
 </div>
 
@@ -224,6 +232,8 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
 </script>
 
 <style>
+  .project-page__enquiry { margin-top: 2rem; scroll-margin-top: 9rem; }
+  .project-page__nav { flex-wrap: wrap; }
   .project-page {
     display: flex;
     flex-direction: column;
