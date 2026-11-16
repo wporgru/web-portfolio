@@ -82,7 +82,12 @@ projects:
     order: 4
     featured: false
     theme: blue
-    media: []
+    media:
+      - type: image
+        src: /media/projects/tara-bergman/archive-homepage.webp
+        alt: Tara Bergman photography homepage with galleries, pricing and a booking
+          form
+        featured: true
     links:
       - label: Read case study
         url: /showcase/tara-bergman/en/
@@ -1378,6 +1383,11 @@ projects:
       - Site setup
     order: 78
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/promarko-astra-foundation/archive-homepage.webp
+        alt: Promarko Astra homepage in the approved green and white palette
+        featured: true
     links:
       - label: Read case study
         url: /showcase/promarko-astra-foundation/en/
@@ -1788,6 +1798,11 @@ projects:
       - Staging
     order: 102
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/cosmetics-woodmart-migration/archive-homepage.webp
+        alt: ABCE Store cosmetics homepage with product selections, brands and articles
+        featured: true
     links:
       - label: Read case study
         url: /showcase/cosmetics-woodmart-migration/en/

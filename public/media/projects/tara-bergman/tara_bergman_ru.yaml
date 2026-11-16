@@ -33,3 +33,23 @@ blocks:
         url: /showcase/tara-bergman-gallery-batches/
       - label: Исправление языковых ссылок
         url: /showcase/tara-bergman-hreflang-page-mapping/
+  - type: text
+    title: Главная из архива проекта
+    links:
+      - label: Оригинал в портфолио Kwork
+        url: https://kwork.ru/portfolio/22781455
+  - type: image
+    src: /media/projects/tara-bergman/archive-homepage.webp
+    alt: "Главная сайта фотографа Tara Bergman: галерея, тарифы и форма записи"
+    caption: Главная целиком, 1400 × 5219. Снимок опубликован в портфолио после
+      приёмки, 9 июня 2026 года. Фотографии предоставлены клиентом; снимок
+      показывает вёрстку, а не работу формы.
+  - type: text
+    title: Как проверял скорость главной
+    body: В сохранённом мобильном отчёте PageSpeed от 9 июня 2026 года главная
+      получила 92 балла за производительность, LCP — 2,9 с. Это один
+      лабораторный замер на эмуляции Moto G Power. Он не показывает прирост
+      относительно старого сайта и не описывает скорость всех галерей.
+    links:
+      - label: Посмотреть архивный отчёт
+        url: https://kwork.ru/portfolio/22781382

@@ -24,3 +24,14 @@ blocks:
     body: The client reviewed and accepted the foundation. They received a site
       ready for their content on their own domain; later copy, branding and
       promotion were outside this delivery.
+  - type: text
+    title: Archived project homepage
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/23500194
+  - type: image
+    src: /media/projects/promarko-astra-foundation/archive-homepage.webp
+    alt: Promarko Astra homepage in the approved green and white palette
+    caption: Full homepage, 1400 × 4461. This is the installed template with the
+      approved colors, before content was added. Demo testimonials, headshots
+      and contact details are placeholders, not company information.

@@ -82,7 +82,11 @@ projects:
     order: 4
     featured: false
     theme: blue
-    media: []
+    media:
+      - type: image
+        src: /media/projects/tara-bergman/archive-homepage.webp
+        alt: "Главная сайта фотографа Tara Bergman: галерея, тарифы и форма записи"
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/tara-bergman/
@@ -1391,6 +1395,11 @@ projects:
       - Site setup
     order: 78
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/promarko-astra-foundation/archive-homepage.webp
+        alt: Главная шаблона Astra для «ПРОМАРКО» в зелёно-белой палитре
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/promarko-astra-foundation/
@@ -1809,6 +1818,12 @@ projects:
       - Staging
     order: 102
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/cosmetics-woodmart-migration/archive-homepage.webp
+        alt: Главная магазина косметики ABCE Store с товарными подборками, брендами и
+          статьями
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/cosmetics-woodmart-migration/

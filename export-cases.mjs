@@ -3,6 +3,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { stringify } from 'yaml';
 import { addEngineeringCases } from './engineering-export.mjs';
+import { archiveMedia } from './portfolio-archive-media.mjs';
 
 const root = path.resolve(process.argv[2] ?? '..');
 const read = p => fs.readFileSync(p,'utf8').replace(/^\uFEFF/, '');
@@ -53,6 +54,7 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
   for(const lang of languages) {
     const ru=lang==='ru', title=ru?tRu:tEn, task=ru?qRu:qEn, result=ru?aRu:aEn;
     const tags=stack.split(', ');
+    const historical=archiveMedia(root,slug,lang);
     const alt=slug==='78-dosok'?(ru?'Главная магазина пиломатериалов «78 Досок»':'Homepage of the 78 Dosok timber store'):(ru?'Публичная версия сайта проекта':'Public website snapshot');
     const blocks=[
       {type:'text', title:ru?'Задача':'Brief', body:task},
@@ -101,17 +103,23 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
     if(slug==='78-dosok') blocks.push({type:'text',title:ru?'Как оценить редизайн своего магазина':'How to scope your own store redesign',
       body:ru?'Если каждое обновление задевает шапку, меню или корзину, начните с разбора шаблонов и расширений, которые ими управляют. Для оценки пришлите адрес магазина, две-три проблемные страницы и список функций, которые нужно сохранить. По этим данным можно определить, какие части витрины обновлять, что проверить на мобильном и какие замеры скорости снять до и после.':'If updates keep breaking the header, menu or cart, start by mapping the templates and extensions behind them. For an estimate, send the store URL, two or three problem pages and a list of features that must be retained. This helps define what to redesign, what to test on mobile and what performance measurements to capture before and after.',
       links:[{label:ru?'Что входит в редизайн интернет-магазина':'What a store redesign covers',url:'/services/website-redesign/'+(ru?'':'en/')}]});
+    if(historical) blocks.push(...historical.blocks);
+    if(slug==='tara-bergman') blocks.push({
+      type:'text',title:ru?'Как проверял скорость главной':'How I checked homepage performance',
+      body:ru?'В сохранённом мобильном отчёте PageSpeed от 9 июня 2026 года главная получила 92 балла за производительность, LCP — 2,9 с. Это один лабораторный замер на эмуляции Moto G Power. Он не показывает прирост относительно старого сайта и не описывает скорость всех галерей.':'In the archived mobile PageSpeed report dated June 9, 2026, the homepage scored 92 for performance, with a 2.9 s LCP. This was a single lab test emulating a Moto G Power. It does not measure gains over the original site or cover every gallery.',
+      links:[{label:ru?'Посмотреть архивный отчёт':'View the archived report',url:'https://kwork.ru/portfolio/22781382'}],
+    });
     if(src) blocks.push({type:'image',title:ru?'Публичный вид сайта':'Public website snapshot',src,alt,
       caption:ru?'Снимок на дату проверки. Он показывает публичную версию сайта, а не обязательно вид на момент сдачи.':'Captured during a later availability check; it may differ from the site at handoff.'});
     const role=ru?'Веб-разработка':'Web development';
     const year=order.month_year;
     save(dir+'/'+slug.replaceAll('-','_')+'_'+lang+'.yaml',{title,tagline:task,role,year,stack:tags,blocks});
     projects[lang].push({slug,name:title,description:result,year,role,stack:tags,order:n+1,featured:n<3,theme:['blue','cyan','emerald'][n%3],
-      media:redesignShots.length ? [{type:'image',src:redesignShots[1],alt:ru?'Главная «78 Досок» после редизайна':'78 Dosok homepage after the redesign',featured:true}] : src?[{type:'image',src,alt,featured:true}]:[],
+      media:redesignShots.length ? [{type:'image',src:redesignShots[1],alt:ru?'Главная «78 Досок» после редизайна':'78 Dosok homepage after the redesign',featured:true}] : historical?[historical.cover]:src?[{type:'image',src,alt,featured:true}]:[],
       links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'/':'/en/'),type:'product'}]});
   }
 }
-addEngineeringCases(projects);
+addEngineeringCases(projects,root);
 for(const lang of languages) {
   save('src/content/showcase/projects_'+lang+'.yaml',{projects:projects[lang]});
 

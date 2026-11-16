@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import {stringify} from 'yaml';
+import {archiveMedia} from './portfolio-archive-media.mjs';
 const read=p=>fs.readFileSync(p,'utf8').replace(/^\uFEFF/,'');
 const publicSources = {
   'faeton-rental-catalog-recovery': 'https://faetonclean.ru/arenda-polomoechnoy-mashiny/',
@@ -89,7 +90,7 @@ const projectStages = {
   'hockey-insales-woodmart': ['hockey-storefront-ux', 'Следующий этап: карточки и мобильная витрина', 'Next stage: product cards and mobile storefront'],
   'hockey-storefront-ux': ['hockey-insales-woodmart', 'Предыдущий этап: перенос каталога из InSales', 'Previous stage: catalog migration from InSales'],
 };
-export function addEngineeringCases(projects){
+export function addEngineeringCases(projects,root){
   for(const line of read('engineering-cases.psv').trim().split(/\r?\n/)){
     const fields=line.split('|');
     if(fields.length!==11 || fields.some(x=>!x.trim()))throw Error('Invalid engineering case');
@@ -107,6 +108,7 @@ export function addEngineeringCases(projects){
         {type:'text',title:ru?'Результат и проверка':'Result and verification',body:result}
       ];
       const proof = caseImages[slug];
+      const historical=archiveMedia(root,slug,lang);
       let media;
       if (proof) {
         const [file, ruAlt, enAlt, ruCaption, enCaption, catalogCover = true] = proof;
@@ -129,6 +131,10 @@ export function addEngineeringCases(projects){
           ...(slug==='dme-english-service-site' && {body:ru?'Март 2021 года — дата публикации карточки; точная дата сдачи не установлена.':'March 2021 is the publication date; the exact delivery date is unknown.'}),
           links:[{label:slug==='dme-english-service-site'?(ru?'Посмотреть оригинальную карточку':'View the original entry'):(ru?'Открыть страницу проекта':'Open the project page'),url:publicSources[slug]}],
         });
+      }
+      if (historical) {
+        blocks.push(...historical.blocks);
+        media=[historical.cover];
       }
       fs.writeFileSync(dir+'/'+slug.replaceAll('-','_')+'_'+lang+'.yaml',stringify({title:name,tagline:brief,year,role,stack:tags,blocks}));
       projects[lang].push({slug,name,year,role,description:brief,stack:tags,order:projects[lang].length+1,theme:'cyan',...(media && {media}),links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'/':'/en/'),type:'product'}]});

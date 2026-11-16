@@ -31,3 +31,24 @@ blocks:
         url: /showcase/tara-bergman-gallery-batches/en/
       - label: Fixing hreflang
         url: /showcase/tara-bergman-hreflang-page-mapping/en/
+  - type: text
+    title: Archived project homepage
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/22781455
+  - type: image
+    src: /media/projects/tara-bergman/archive-homepage.webp
+    alt: Tara Bergman photography homepage with galleries, pricing and a booking
+      form
+    caption: Full homepage, 1400 × 5219. Published in the portfolio after acceptance
+      on June 9, 2026. The client supplied the photographs; the screenshot shows
+      the layout, not form delivery.
+  - type: text
+    title: How I checked homepage performance
+    body: In the archived mobile PageSpeed report dated June 9, 2026, the homepage
+      scored 92 for performance, with a 2.9 s LCP. This was a single lab test
+      emulating a Moto G Power. It does not measure gains over the original site
+      or cover every gallery.
+    links:
+      - label: View the archived report
+        url: https://kwork.ru/portfolio/22781382
