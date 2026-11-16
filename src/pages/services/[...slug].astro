@@ -5,6 +5,7 @@ import { getEntry } from 'astro:content';
 import { services } from '../../content/services.mjs';
 import { serviceDetails } from '../../content/service-details.mjs';
 import { createEnquiry } from '../../content/enquiry.mjs';
+import { servicePaths } from '../../content/service-paths.mjs';
 
 export function getStaticPaths() {
   return services.flatMap(service => ['ru','en'].map(lang => ({
@@ -36,6 +37,10 @@ const examples = service.cases.map(slug => {
   const p = projects.find(p => p.slug === slug);
   if (!p) throw Error('Missing service case: '+slug+' ('+lang+')');
   return p;
+});
+const nextServices=servicePaths[service.slug].map(([slug,ruReason,enReason])=>{
+  const target=services.find(item=>item.slug===slug)!;
+  return {slug,title:target[ru?'ru':'en'][0],reason:ru?ruReason:enReason};
 });
 ---
 <Layout title={title+' — '+providerName} description={intro} lang={lang} section="services" customLangLinks={alternate} roleLinks={[]} breadcrumbs={breadcrumbs} serviceJsonLd={{name:title,providerName}}>
@@ -86,6 +91,15 @@ const examples = service.cases.map(slug => {
         <a class="btn btn--ghost" href="https://t.me/wporgru">{ru?'Прислать задачу в Telegram':'Send your brief on Telegram'}</a>
       </div>
     </section>
+    <section class="card" data-service-paths>
+      <h2 class="h2">{ru?'Если задача немного другая':'If your project needs a different approach'}</h2>
+      <ul class="list service-paths">
+        {nextServices.map(item=><li>
+          <a data-related-service={item.slug} href={base+'/services/'+item.slug+localeSuffix}>{item.title}</a>
+          <p>{item.reason}</p>
+        </li>)}
+      </ul>
+    </section>
   </div>
 </Layout>
 <style>
@@ -95,4 +109,6 @@ const examples = service.cases.map(slug => {
 .service-questions{display:grid;gap:1rem;margin:0}
 .service-questions dt{font-weight:700}
 .service-questions dd{margin:.25rem 0 0}
+.service-paths li+li{margin-top:.75rem}
+.service-paths p{margin:.25rem 0 0}
 </style>

@@ -5,6 +5,7 @@ import { serviceDetails } from '../content/service-details.mjs';
 import { caseHighlights } from '../content/case-highlights.mjs';
 import { serviceGroups } from '../content/service-groups.mjs';
 import { enquiryPrompts } from '../content/enquiry.mjs';
+import { servicePaths } from '../content/service-paths.mjs';
 import { latestCaseRevision, readCaseRevisions } from './case-revisions.mjs';
 
 const root = 'dist';
@@ -231,9 +232,21 @@ for (const suffix of ['', 'en/']) {
   }
 }
 for (const service of services) {
+  const choices=servicePaths[service.slug];
+  if (choices?.length!==2 || new Set(choices.map(([target])=>target)).size!==2 ||
+      choices.some(([target,ru,en])=>target===service.slug||!enquiryKinds.has(target)||!ru?.trim()||!en?.trim())) {
+    fail(service.slug,'expected two distinct editorial service alternatives in both languages');
+  }
   for (const suffix of ['', 'en/']) {
     const route = `services/${service.slug}/${suffix}`;
     const detail = read(path.join(root,route,'index.html'));
+    const paths=detail.match(/<section\b[^>]*data-service-paths[^>]*>([\s\S]*?)<\/section>/)?.[1]??'';
+    const linked=[...paths.matchAll(/<a\b[^>]*data-related-service="([^"]+)" href="([^"]+)"/g)];
+    if (linked.length!==choices.length || choices.some(([target],idx)=>
+      linked[idx][1]!==target || linked[idx][2]!==`${base}services/${target}/${suffix}` ||
+      !sitemap.has(new URL(linked[idx][2],profileUrl).href))) {
+      fail(route,'missing canonical localized related service links');
+    }
     const index = read(path.join(root,'services',suffix,'index.html'));
     const homepage = read(path.join(root,suffix,'index.html'));
     if (![index,homepage].every(html => html.includes(`href="${base}${route}"`))) fail(route,'service is not linked from the homepage and services index');
