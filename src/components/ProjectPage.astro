@@ -15,6 +15,7 @@ import Divider    from './blocks/DividerBlock.astro';
 import { services } from '../content/services.mjs';
 import { caseHighlights } from '../content/case-highlights.mjs';
 import { createEnquiry } from '../content/enquiry.mjs';
+import { migrationGuide } from '../content/migration-guide.mjs';
 import Breadcrumbs from './Breadcrumbs.astro';
 
 const { data, showcaseHref, langLinks, lang, relatedCases = [], slug } = Astro.props;
@@ -135,6 +136,10 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
     if (block.type === 'code')    return <CodeBlock   {...block} />;
     return null;
   })}
+  {migrationGuide.cases.includes(slug) && <section class="card">
+    <h2 class="h2">{ru?'Как подготовить свой перенос':'Planning your own migration'}</h2>
+    <p><a href={base+'/guides/'+migrationGuide.slug+(ru?'/':'/en/')}>{ru?migrationGuide.ru.title:migrationGuide.en.title}</a></p>
+  </section>}
   <aside class="card project-page__enquiry" id="enquiry" tabindex="-1" aria-labelledby="enquiry-title">
     <h2 class="h2" id="enquiry-title">{ru ? 'Нужна похожая работа?' : 'Need something similar?'}</h2>
     <p>{ru ? 'Для первой оценки пришлите адрес сайта и несколько деталей. Пароли и доступы пока не нужны.' : 'For an initial estimate, send your website and a few details. No account access or passwords yet.'}</p>

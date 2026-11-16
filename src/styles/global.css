@@ -450,11 +450,11 @@ a:hover { text-decoration: underline; }
     display: contents;
   }
 
-  .card--downloads   { order: 1; }
-  .card.hero         { order: 2; }
-  .card--achievements{ order: 3; }
-  .section--experience { order: 4; }
-  .card--skills      { order: 5; }
+  .cv-grid .card--downloads     { order: 1; }
+  .cv-grid .card.hero           { order: 2; }
+  .cv-grid .card--achievements  { order: 3; }
+  .cv-grid .section--experience { order: 4; }
+  .cv-grid .card--skills        { order: 5; }
 }
 
 

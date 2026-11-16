@@ -6,7 +6,7 @@ const input = process.argv.slice(2);
 const send = input.includes('--send');
 const routes = [...new Set(input.filter(arg => arg !== '--send'))];
 if (routes.length < 1 || routes.length > 20 || routes.some(route =>
-  !/^(?:showcase|services)\/[a-z0-9-]+\/(?:en\/)?$/.test(route) || /^(?:showcase|services)\/(?:en|ru)\//.test(route)
+  !/^(?:showcase|services|guides)\/[a-z0-9-]+\/(?:en\/)?$/.test(route) || /^(?:showcase|services|guides)\/(?:en|ru)\//.test(route)
 )) {
   throw new Error('Pass 1–20 changed canonical routes (e.g. showcase/78-dosok/). Use --send to submit.');
 }

@@ -1,0 +1,68 @@
+---
+import Layout from '../../components/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { migrationGuide } from '../../content/migration-guide.mjs';
+
+export function getStaticPaths() {
+  return ['ru','en'].map(lang=>({
+    params:{slug:migrationGuide.slug+(lang==='en'?'/en':'')}, props:{lang},
+  }));
+}
+
+const {lang}=Astro.props;
+const ru=lang==='ru';
+const copy=migrationGuide[ru?'ru':'en'];
+const base=import.meta.env.BASE_URL.replace(/\/$/,'');
+const suffix=ru?'/':'/en/';
+const service=base+'/services/hosting-migration'+suffix;
+const path=base+'/guides/'+migrationGuide.slug;
+const alternates=[
+  {id:'ru',label:'RU',href:path+'/',active:ru},
+  {id:'en',label:'EN',href:path+'/en/',active:!ru},
+];
+const breadcrumbs=[
+  {name:ru?'Главная':'Home',href:base+suffix},
+  {name:copy.title},
+];
+const sources=[
+  'https://woocommerce.com/document/backup-wordpress-content/',
+  'https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes',
+];
+---
+<Layout title={copy.title+(ru?' — Олег Тишин':' — Oleg Tishin')} description={copy.summary} lang={lang}
+  section="guides" customLangLinks={alternates} breadcrumbs={breadcrumbs}>
+  <article class="container migration-guide">
+    <Breadcrumbs lang={lang} items={breadcrumbs}/>
+    <header class="card hero">
+      <h1 class="hero__name">{copy.title}</h1>
+      <p class="hero__summary">{copy.intro}</p>
+      <p class="muted">{ru?'Олег Тишин, веб-разработчик':'Oleg Tishin, web developer'}</p>
+    </header>
+    <ol class="guide-steps">
+      {copy.steps.map(([title,body])=><li class="card"><h2 class="h2">{title}</h2><p>{body}</p></li>)}
+    </ol>
+    <section class="card">
+      <h2 class="h2">{ru?'Примеры из проектов':'Case studies'}</h2>
+      <ul class="list">{copy.examples.map(([label,slug])=><li><a href={base+'/showcase/'+slug+suffix}>{label}</a></li>)}</ul>
+    </section>
+    <section class="card">
+      <h2 class="h2">{ru?'Официальная документация':'Official documentation'}</h2>
+      <ul class="list">{copy.sources.map((label,index)=><li><a href={sources[index]}>{label}</a></li>)}</ul>
+    </section>
+    <section class="card">
+      <h2 class="h2">{ru?'Обсудить перенос магазина':'Discuss your migration'}</h2>
+      <p>{copy.call}</p>
+      <div class="btnrow">
+        <a class="btn" href={service}>{ru?'Посмотреть услугу переноса':'Explore migration services'}</a>
+        <a class="btn btn--ghost" href="https://t.me/wporgru">{ru?'Обсудить в Telegram':'Discuss on Telegram'}</a>
+      </div>
+    </section>
+  </article>
+</Layout>
+<style>
+.migration-guide{display:grid;gap:1rem;max-width:900px;padding-block:1rem 2rem}
+.migration-guide > :global(.breadcrumbs){margin:0}
+.guide-steps{display:grid;gap:1rem;padding:0;margin:0;list-style-position:inside}
+.guide-steps .h2{display:inline}
+.guide-steps p{margin:.6rem 0 0}
+</style>

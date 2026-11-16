@@ -6,6 +6,7 @@ import { caseHighlights } from '../content/case-highlights.mjs';
 import { serviceGroups } from '../content/service-groups.mjs';
 import { enquiryPrompts } from '../content/enquiry.mjs';
 import { servicePaths } from '../content/service-paths.mjs';
+import { migrationGuide } from '../content/migration-guide.mjs';
 import { latestCaseRevision, readCaseRevisions } from './case-revisions.mjs';
 
 const root = 'dist';
@@ -115,6 +116,21 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+for (const suffix of ['', 'en/']) {
+  const route=`guides/${migrationGuide.slug}/${suffix}`;
+  const guide=read(path.join(root,route,'index.html'));
+  const steps=guide.match(/<ol\b[^>]*class="guide-steps"[^>]*>([\s\S]*?)<\/ol>/)?.[1]??'';
+  if ([...steps.matchAll(/<li\b/g)].length!==5 || !sitemap.has(new URL(route,profileUrl).href)) fail(route,'incomplete guide or sitemap entry');
+  for (const ref of [...migrationGuide.cases.map(slug=>'showcase/'+slug),...migrationGuide.services.map(slug=>'services/'+slug)]) {
+    const refPath=ref+'/'+suffix;
+    const html=read(path.join(root,refPath,'index.html'));
+    if (!html.includes(`href="${base}${route}"`) ||
+        (!guide.includes(`href="${base}${refPath}"`) && !ref.startsWith('services/'))) {
+      fail(route,'missing contextual case or service link: '+refPath);
+    }
+  }
+  if (!guide.includes(`href="${base}services/hosting-migration/${suffix}"`)) fail(route,'missing next step for migration');
+}
 const caseRevisions=readCaseRevisions({required:process.env.GITHUB_ACTIONS==='true'});
 let verifiedRevisions=0;
 for (const [url,images] of sitemapEntries){
