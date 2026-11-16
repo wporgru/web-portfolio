@@ -1,7 +1,7 @@
 import {readdir,readFile} from 'node:fs/promises';
 
 const site = new URL('https://wporgru.github.io/web-portfolio/');
-const endpoint = 'https://yandex.com/indexnow';
+const endpoint = 'https://api.indexnow.org/indexnow';
 const input = process.argv.slice(2);
 const send = input.includes('--send');
 const routes = [...new Set(input.filter(arg => arg !== '--send'))];
@@ -49,7 +49,7 @@ for (const url of urlList) {
   }
 }
 
-const result = {provider:'Yandex IndexNow',liveProof:'verified',urlList,mode:send?'send':'dry-run'};
+const result = {provider:'IndexNow',endpoint,liveProof:'verified',urlList,mode:send?'send':'dry-run'};
 if (send) {
   const response = await fetchStrict(endpoint,{
     method:'POST',
