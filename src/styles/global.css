@@ -203,6 +203,18 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
+.nav .nav__resume {
+  border: 1px solid var(--border-2);
+  color: var(--text);
+  background: rgba(var(--accent-rgb) / 0.10);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.nav .nav__resume:hover {
+  background: rgba(var(--accent-rgb) / 0.18);
+}
+
 .lang {
   display: flex;
   gap: 8px;
@@ -283,6 +295,9 @@ a:hover { text-decoration: underline; }
     grid-column: 1 / -1;
     grid-row: 2;
     flex-wrap: wrap;
+  }
+  .nav .nav__resume {
+    margin-inline-start: auto;
   }
 }
 
