@@ -18,15 +18,31 @@ blocks:
       nothing or cutting text off at the screen edge.
   - type: text
     title: How it works
-    body: Checked eight URLs in Chromium at 1440 and 390 px. Compared visible
-      elements with the brief, opened menus and dialogs, measured document width
-      and identified the exact overflow sources. Distinguished actual horizontal
-      scrolling from intentional carousel clipping. Prioritized broken actions
-      and clipped text ahead of missing sections and cosmetic work.
+    body: Checked eight public pages in Chromium at 1440 and 390 px. Compared the
+      hero, copy and forms with the brief, and tested navigation and
+      consultation buttons separately. Measured document width and element
+      boundaries in addition to the viewport to distinguish full-page overflow
+      from intentional clipping within carousels. Prioritized buttons that
+      opened nothing and clipped text before brief discrepancies and visual
+      polish.
   - type: text
     title: Result and verification
-    body: "One desktop page was about 100 px wider than its viewport; one mobile
-      page overflowed by 40 px. Listed placeholder CTAs separately from working
-      dialogs so repairs could target the actual failures. No site edits or form
-      submissions were made: the deliverable was reproducible findings and a
-      repair order."
+    body: "On the desktop passport page, a heading widened the document to 1540 px
+      in a 1440 px viewport. On the mobile consular review page, a 400 px
+      heading and paragraph started 30 px from the left, leaving the right edge
+      40 px outside the screen. Listed placeholder buttons separately from
+      working Elementor dialogs: appearance alone did not show whether a button
+      triggered an action. Delivered the eight-page matrix and a prioritized
+      repair list. No site edits or form submissions were made."
+  - type: image
+    src: /media/projects/solomon-responsive-conversion-audit/audit-passport-desktop.png
+    alt: Archived desktop capture of the passport service page
+    caption: July 14, 2026, 1440 px viewport. An overflowing heading expanded the
+      document to 1540 px. The capture includes the entire document and overflow
+      area. This is the audited state, not a redesign result.
+  - type: image
+    src: /media/projects/solomon-responsive-conversion-audit/audit-consular-mobile.png
+    alt: Archived mobile capture of the consular review page
+    caption: July 14, 2026, 390 px viewport and a 430 px document. The full-page
+      capture includes the 40 px overflow on the right. No enquiry was
+      submitted.

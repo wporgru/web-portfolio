@@ -5975,6 +5975,11 @@ projects:
       - UX audit
     order: 332
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/solomon-responsive-conversion-audit/audit-passport-desktop.png
+        alt: Archived desktop capture of the passport service page
+        featured: true
     links:
       - label: Read case study
         url: /showcase/solomon-responsive-conversion-audit/en/

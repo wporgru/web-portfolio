@@ -6037,6 +6037,11 @@ projects:
       - UX audit
     order: 332
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/solomon-responsive-conversion-audit/audit-passport-desktop.png
+        alt: Архивный десктопный снимок страницы «Паспорт без проживания»
+        featured: true
     links:
       - label: Читать кейс
         url: /showcase/solomon-responsive-conversion-audit/

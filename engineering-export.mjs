@@ -10,6 +10,7 @@ const publicSources = {
   'svl-avto-woocommerce-catalog': 'https://kwork.ru/portfolio/18438983',
 };
 const caseImages = {
+  'solomon-responsive-conversion-audit': ['audit-passport-desktop.png','Архивный десктопный снимок страницы «Паспорт без проживания»','Archived desktop capture of the passport service page','14 июля 2026 года, окно 1440 px. Из-за выступающего заголовка ширина документа составила 1540 px. Сохранён весь документ, включая область переполнения. Это состояние на момент аудита, не результат редизайна.','July 14, 2026, 1440 px viewport. An overflowing heading expanded the document to 1540 px. The capture includes the entire document and overflow area. This is the audited state, not a redesign result.'],
   'nomad-spain-landing-figma': ['archive-full.webp', 'Полная страница программы Digital Nomad: Испания', 'Full Digital Nomad page for the Spain program', 'Архивный полностраничный снимок проверенной версии без обрезки, 1680 × 12327. Показаны интерфейс и вёрстка, а не актуальные условия программы.', 'Uncropped full-page archive image of the verified version, 1680 × 12327. It documents the interface, not current program terms.'],
   'nomad-english-megamenu-localization': ['archive-menu.webp', 'Английское меню Digital Nomad с пятью колонками', 'English Digital Nomad megamenu with five columns', 'Снимок раскрытого меню из отчёта проверки. Это фрагмент шапки, не снимок всей страницы.', 'Expanded menu from the verification report. This is a header excerpt, not a full-page capture.', false],
   'arenda-pm-catalog-indexability': ['seo-release-viewport.webp', 'Главная «Аренда-ПМ» после правки заголовков', 'Arenda-PM homepage after heading updates', 'Фрагмент браузерной проверки после правки заголовков. Показывает сохранённое оформление, а не состояние поисковой выдачи.', 'Browser viewport captured after the heading edits. It shows the preserved design, not search visibility.'],
@@ -32,6 +33,11 @@ const caseImages = {
   'hyperstroy-tool-store': ['historical-storefront.webp', 'Главная магазина «ГиперСтрой»: категории и товары', 'HyperStroy homepage with categories and products', 'Исторический длинный снимок витрины из портфолио Kwork, июнь 2024. Сохранён без обрезки.', 'Historical storefront screenshot from the Kwork portfolio, June 2024. Preserved without cropping.'],
   'arenda-pm-home-performance': ['mobile-viewport.png', 'Мобильный первый экран после оптимизации', 'Mobile first screen after optimization', 'Снимок браузерной проверки, ширина 390 px. Это не отчёт PageSpeed и не полностраничный снимок.', 'Browser verification screenshot at 390 px. This is not a PageSpeed report or a full-page capture.'],
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
+};
+const additionalCaseImages = {
+  'solomon-responsive-conversion-audit': [
+    ['audit-consular-mobile.png','Архивный мобильный снимок страницы «Консульская проверка»','Archived mobile capture of the consular review page','14 июля 2026 года, окно 390 px, документ шириной 430 px. Полностраничный снимок включает выступающие 40 px справа. Отправка заявки не выполнялась.','July 14, 2026, 390 px viewport and a 430 px document. The full-page capture includes the 40 px overflow on the right. No enquiry was submitted.',false],
+  ],
 };
 const projectStages = {
   'anta-yml-size-variant-import': ['anta-preorder-variant-import', 'Следующий этап: импорт предзаказа из трёх таблиц', 'Follow-up: importing preorder variants from three spreadsheets'],
@@ -113,13 +119,13 @@ export function addEngineeringCases(projects,root){
       const proof = caseImages[slug];
       const historical=archiveMedia(root,slug,lang);
       let media;
-      if (proof) {
-        const [file, ruAlt, enAlt, ruCaption, enCaption, catalogCover = true] = proof;
+      for (const item of [proof,...(additionalCaseImages[slug] ?? [])].filter(Boolean)) {
+        const [file, ruAlt, enAlt, ruCaption, enCaption, catalogCover = true] = item;
         if (!fs.existsSync(dir+'/'+file)) throw Error('Missing case image: '+slug+'/'+file);
         const src = '/media/projects/'+slug+'/'+file;
         const alt = ru?ruAlt:enAlt;
         blocks.push({type:'image',src,alt,caption:ru?ruCaption:enCaption});
-        if (catalogCover) media = [{type:'image',src,alt,featured:true}];
+        if (catalogCover && !media) media = [{type:'image',src,alt,featured:true}];
       }
       const stage = projectStages[slug];
       if (stage) {
