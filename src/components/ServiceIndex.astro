@@ -19,8 +19,12 @@ const assigned = serviceGroups.flatMap(group=>group.slugs);
 if (assigned.length !== services.length || new Set(assigned).size !== services.length ||
     services.some(service=>!assigned.includes(service.slug))) throw Error('Service groups must cover all services exactly once');
 const bySlug = new Map(services.map(service=>[service.slug,service]));
+const serviceCatalog = assigned.map(slug=>({
+  name:bySlug.get(slug)![locale][0],
+  href:base+'/services/'+slug+localeSuffix,
+}));
 ---
-<Layout title={title} description={intro} lang={lang} section="services" customLangLinks={alternates} roleLinks={[]} breadcrumbs={breadcrumbs}>
+<Layout title={title} description={intro} lang={lang} section="services" customLangLinks={alternates} roleLinks={[]} breadcrumbs={breadcrumbs} serviceCatalogJsonLd={serviceCatalog}>
   <div class="container stack service-index">
     <Breadcrumbs items={breadcrumbs} lang={lang}/>
     <article class="card hero">

@@ -28,6 +28,8 @@ const {
   customLangLinks,
   roleLinks,
   personJsonLd,
+  serviceJsonLd,
+  serviceCatalogJsonLd,
   breadcrumbs = [],
   noindex = false,
 } = Astro.props;
@@ -130,10 +132,13 @@ const showFooterCredit = (siteConfig?.data?.footerCredit ?? true) && authorGit !
 // schema.org/Person — only pages that describe an actual person pass
 // personJsonLd (HomePage.astro); url/image are filled in here from data this
 // component already computed, so callers only supply person-specific fields.
+const profileUrl = new URL(base+'/',siteUrl).href;
+const personId = profileUrl+'#oleg-tishin';
 const jsonLd = personJsonLd ? {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  url: canonicalUrl,
+  '@id': personId,
+  url: profileUrl,
   image: metaImage,
   ...Object.fromEntries(
     Object.entries(personJsonLd).filter(([, v]) => v !== undefined && v !== '' && !(Array.isArray(v) && v.length === 0))
@@ -142,7 +147,30 @@ const jsonLd = personJsonLd ? {
 // JSON.stringify output is embedded verbatim in a <script> tag below — a "</"
 // in any string value (e.g. a bio mentioning markup) would otherwise close
 // the tag early. < is invisible to JSON parsers but not to an HTML tokenizer.
-const jsonLdSafe = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : null;
+const safeJsonLd = (value: object) => JSON.stringify(value).replace(/</g, '\\u003c');
+const jsonLdSafe = jsonLd && !noindex ? safeJsonLd(jsonLd) : null;
+const serviceGraph = serviceJsonLd && !noindex ? safeJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': canonicalUrl+'#service',
+  url: canonicalUrl,
+  name: serviceJsonLd.name,
+  description: metaDescription,
+  provider: {'@type':'Person','@id':personId,name:serviceJsonLd.providerName,url:profileUrl},
+}) : null;
+const serviceCatalogGraph = serviceCatalogJsonLd && !noindex ? safeJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  '@id': canonicalUrl+'#services',
+  name: title,
+  numberOfItems: serviceCatalogJsonLd.length,
+  itemListElement: serviceCatalogJsonLd.map(({name,href},i) => ({
+    '@type': 'ListItem',
+    position: i+1,
+    name,
+    url: new URL(href,siteUrl).href,
+  })),
+}) : null;
 const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -180,6 +208,8 @@ const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
       <script type="application/ld+json" set:html={jsonLdSafe} />
     )}
     {breadcrumbJsonLd && <script type="application/ld+json" set:html={breadcrumbJsonLd} />}
+    {serviceGraph && <script type="application/ld+json" set:html={serviceGraph} />}
+    {serviceCatalogGraph && <script type="application/ld+json" set:html={serviceCatalogGraph} />}
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

@@ -3,6 +3,7 @@ import path from 'node:path';
 import { services } from '../content/services.mjs';
 import { serviceDetails } from '../content/service-details.mjs';
 import { caseHighlights } from '../content/case-highlights.mjs';
+import { serviceGroups } from '../content/service-groups.mjs';
 
 const root = 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
@@ -78,6 +79,38 @@ if(!pages.size||sitemap.size!==pages.size) fail(root,'sitemap and HTML counts di
 const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcase/'));
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
+const profileUrl = new URL(base,home.get('ru')).href;
+const personId = profileUrl+'#oleg-tishin';
+const jsonLdOf = (html,type) => [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+  .map(([,value])=>JSON.parse(value)).filter(node=>node['@type']===type);
+for (const lang of ['ru','en']) {
+  const suffix = lang==='en'?'en/':'';
+  const providerName = lang==='en'?'Oleg Tishin':'Олег Тишин';
+  const people = jsonLdOf(read(path.join(root,suffix,'index.html')),'Person');
+  if (people.length!==1 || people[0]['@id']!==personId || people[0].url!==profileUrl || people[0].name!==providerName) fail(lang,'invalid author identity');
+  const index = read(path.join(root,'services',suffix,'index.html'));
+  const [list,...extra] = jsonLdOf(index,'ItemList');
+  const catalogUrl = new URL('services/'+suffix,profileUrl).href;
+  const sorted = serviceGroups.flatMap(group=>group.slugs);
+  if (!list || extra.length || list['@id']!==catalogUrl+'#services' || list.numberOfItems!==services.length ||
+      list.itemListElement?.length!==sorted.length) fail(catalogUrl,'invalid service list structured data');
+  for (const [i,slug] of sorted.entries()) {
+    const service = services.find(item=>item.slug===slug);
+    const [name,description] = service[lang];
+    const route = 'services/'+slug+'/'+suffix;
+    const url = new URL(route,profileUrl).href;
+    const item = list.itemListElement[i];
+    if (item?.['@type']!=='ListItem' || item.position!==i+1 || item.name!==name || item.url!==url ||
+        !index.includes(`href="${base}${route}"`) || !sitemap.has(url)) fail(url,'invalid service list item');
+    const html = read(path.join(root,route,'index.html'));
+    const [node,...others] = jsonLdOf(html,'Service');
+    if (!node || others.length || node['@id']!==url+'#service' || node.url!==url ||
+        node.name!==name || node.description!==description ||
+        node.provider?.['@type']!=='Person' || node.provider?.['@id']!==personId ||
+        node.provider?.url!==profileUrl || node.provider?.name!==providerName ||
+        ['offers','review','aggregateRating'].some(key=>key in node)) fail(url,'invalid service entity or unverified offer and review');
+  }
+}
 for (const [slug, localized] of Object.entries(caseHighlights)) {
   for (const lang of ['ru','en']) {
     const html = read(path.join(root,'showcase',slug,lang==='en'?'en':'','index.html'));
