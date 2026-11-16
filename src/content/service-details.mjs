@@ -1,4 +1,18 @@
 export const serviceDetails = {
+  'affiliate-link-audit': {
+    ru: ['В отчёте — битая ссылка. На сайте — тот ли это адрес?', 'Одна и та же карточка может показывать устаревший адрес из сохранённых данных, из импорта или из шаблона. Отдельно проверяю, воспроизводится ли проблема на публичной странице и можно ли связать с ней событие из кабинета. Не переписываю каталог по одному сигналу из отчёта.', 'На выходе — перечень проверенных ссылок, страницы и источники данных, найденные причины и приоритеты. Если причина не доказана, укажу, какого поля или журнала не хватает. Для подтверждённых исправлений — план проверки и отката.'],
+    en: ['The report shows a broken link. Does the site still publish that URL?', 'A product page might expose an expired link from stored data, an import or a template. I check whether the problem reproduces publicly and whether there is enough evidence to connect it to an event in the network report. A report row alone is not grounds for rewriting the catalog.', 'Get a list of checked links, pages and sources, confirmed causes and remediation priorities. If attribution is incomplete, the report names the missing field or log. Confirmed fixes come with verification and rollback steps.'],
+    questions: {
+      ru: [
+        ['Нужно ли давать доступ к кабинету партнёрской сети?', 'Для первичной оценки достаточно обезличенной выгрузки: название программы, период, причина ошибки, счётчик и реферер, если он есть. Удалите ключи, токены и данные пользователей.'],
+        ['Что делать, если партнёр больше не продаёт товар?', 'Сначала проверю точное совпадение модели и варианта. Если надёжной замены нет, можно приостановить исходящий переход и сохранить страницу, а не подставлять похожий товар.'],
+      ],
+      en: [
+        ['Do you need access to the affiliate account?', 'An anonymized export is enough for an initial assessment: campaign name, period, error reason, click count and referrer if present. Remove keys, tokens and user data.'],
+        ['What if the merchant no longer sells the product?', 'First verify an exact model and variant match. If there is no reliable replacement, pause the outbound action and retain the page rather than substituting a similar item.'],
+      ],
+    },
+  },
   'woocommerce-store-development': {
     ru: ['Одинаково оформленные карточки могут требовать разных правил покупки', 'У магазина инструментов покупатель ищет товар по артикулу и характеристикам, у магазина мебели выбирает размер и отделку. Сначала проверим эти модели на небольшой выборке, затем решим, как организовать категории, фильтры и обновление товаров. Платежи и доставку включим только в согласованном объёме.', 'Вы получите витрину, редактируемые товары и оговорённые сценарии заказа. Зафиксируем, что проверено: поиск, товар с вариациями, способ доставки, уведомление или контрольная оплата — в зависимости от комплектации проекта.'],
     en: ['Similar product pages can require different buying rules', 'Tool buyers search by SKU and specifications, while furniture buyers choose size and finish. Test representative products first, then design categories, filters and update rules. Payment and shipping work follows the agreed scope.', 'Get the storefront, editable products and agreed order flows. The handoff records which scenarios were tested: search, variations, delivery, notification or a test payment, depending on the project scope.'],

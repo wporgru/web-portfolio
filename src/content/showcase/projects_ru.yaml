@@ -6249,3 +6249,23 @@ projects:
       - label: Читать кейс
         url: /showcase/potoc-heater-selection-prototype/
         type: product
+  - slug: sport-affiliate-broken-link-audit
+    name: "Sport-man: расследование битых партнёрских ссылок"
+    description: Две отключённые программы оставались в отчёте Admitad. Проверил метаданные
+      WooCommerce, настройки импорта и 324 файла, не меняя витрину; отделил ошибочный клик от
+      его недоказанного источника.
+    year: "10.2026"
+    role: Технический аудит и аналитика
+    stack:
+      - WooCommerce
+      - Admitad
+      - WP All Import
+      - SQL
+    order: 342
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/sport-affiliate-broken-link-audit/
+        type: product

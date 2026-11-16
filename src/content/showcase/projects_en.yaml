@@ -6188,3 +6188,23 @@ projects:
       - label: Read case study
         url: /showcase/potoc-heater-selection-prototype/en/
         type: product
+  - slug: sport-affiliate-broken-link-audit
+    name: "Sport-man: broken affiliate link investigation"
+    description: Two discontinued campaigns still appeared in Admitad. Audited WooCommerce
+      records, import settings and 324 files without changing the storefront, distinguishing
+      failed clicks from an unproven source.
+    year: "10.2026"
+    role: Technical auditing and analytics
+    stack:
+      - WooCommerce
+      - Admitad
+      - WP All Import
+      - SQL
+    order: 342
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/sport-affiliate-broken-link-audit/en/
+        type: product

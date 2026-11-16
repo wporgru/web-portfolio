@@ -32,3 +32,8 @@ blocks:
       restore the original behavior, remove the isolated rule file and clear the
       cache if needed. The audit did not rule out valid replacements from every
       possible seller; only the verified rule was changed.
+  - type: text
+    title: "A different scenario: a reported link could not be found on the site"
+    links:
+      - label: "Sport-man: broken affiliate link investigation"
+        url: /showcase/sport-affiliate-broken-link-audit/en/

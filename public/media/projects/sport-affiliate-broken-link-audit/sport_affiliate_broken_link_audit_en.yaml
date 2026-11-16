@@ -1,0 +1,49 @@
+title: "Sport-man: broken affiliate link investigation"
+tagline: Admitad reported errors for two discontinued campaigns. I checked whether the
+  storefront still generated those links before recommending import or product changes.
+year: "10.2026"
+role: Technical auditing and analytics
+stack:
+  - WooCommerce
+  - Admitad
+  - WP All Import
+  - SQL
+blocks:
+  - type: text
+    title: Why investigate before changing the catalog
+    body: An affiliate report confirms that a tracking link failed. It does not, by itself, show
+      that the live storefront still publishes it. Editing first could break valid links,
+      target the wrong products or remove evidence needed to diagnose the next event.
+  - type: text
+    title: What I checked in WooCommerce and WordPress
+    body: I searched for the two campaign identifiers and merchant domains. I checked product URLs
+      and metadata, content and excerpts across post states, WordPress settings and category
+      metadata. I then checked 324 files across the web root, themes, must-use plugins, a
+      module cache and WP All Import files. None of those sources contained a match.
+  - type: text
+    title: What the report proved and what it did not
+    body: Both rows lacked a click referrer, and the access log for the relevant date was not
+      found in the paths checked. Admitad documents the date as the first failed click, not
+      necessarily a visit to a current product page. Saved links, older copies and external
+      sources were hypotheses, not findings.
+    links:
+      - label: "Admitad documentation: how to read the report (Russian)"
+        url: https://support.admitad.ru/article/ru/82.html
+  - type: text
+    title: Outcome for the storefront owner
+    body: "The site and the report were left unchanged: there was no confirmed URL to replace. I
+      documented the sources checked and recommended retaining the original export, then
+      comparing the referrer, count and date against server logs if the error recurred. I did
+      not follow the disputed tracking URLs, which could have added test clicks to the
+      report."
+  - type: text
+    title: When this audit is useful
+    body: If an affiliate network reports an old campaign or broken deeplink, send the storefront
+      domain, relevant time period and a sanitized sample of the report. I can distinguish
+      issues reproducible today from unresolved events and identify which offers need
+      remediation.
+    links:
+      - label: Affiliate link and feed audit
+        url: /services/affiliate-link-audit/en/
+      - label: "Related case: a reversible pause for 1,892 listings"
+        url: /showcase/sport-affiliate/en/

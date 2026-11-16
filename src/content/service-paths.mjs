@@ -1,5 +1,9 @@
 // Alternatives explain how to scope a job, not just which pages to visit next.
 export const servicePaths = {
+  'affiliate-link-audit': [
+    ['affiliate-catalog-development','Если вместо ремонта отдельных ссылок нужно заново выстроить витрину и обновление предложений.','If individual link repairs cannot solve the problem and the storefront and refresh pipeline need to be rebuilt.'],
+    ['web-analytics','Если переходы работают, но их нельзя связать с карточками или заказами в отчёте.','If links work but clicks cannot be tied to listings or orders in the report.'],
+  ],
   'woocommerce-store-development': [
     ['website-redesign','Если магазин работает и нужно обновить дизайн, не теряя старые адреса и каталог.','If a live store needs a redesign without losing its URLs or catalog.'],
     ['b2b-catalog-and-enquiries','Если клиент выбирает позиции, но цену и условия согласует менеджер, а не чекаут.','If customers choose products but a sales manager agrees on pricing and terms.'],
@@ -17,8 +21,8 @@ export const servicePaths = {
     ['web-analytics','Если нужно измерить, на каком шаге пользователи перестают двигаться к заказу.','If you need to measure where visitors stop progressing towards an order.'],
   ],
   'affiliate-catalog-development': [
+    ['affiliate-link-audit','Если витрина уже есть, а ссылки, наличие или отчёт сети требуют проверки.','If the storefront already exists but its links, availability or network reporting need an audit.'],
     ['laravel-catalog-development','Если нужен отдельный сервис сравнения с собственными правилами сопоставления.','If you need a standalone comparison service with custom matching rules.'],
-    ['web-analytics','Если витрина готова, но переходы к продавцам и партнёрские заказы не сходятся в отчётах.','If the storefront is live but merchant click-outs and affiliate orders do not reconcile.'],
   ],
   'b2b-catalog-and-enquiries': [
     ['catalog-automation','Если главная проблема — загрузка предложений, характеристик или остатков от поставщиков.','If the main issue is importing supplier offers, specifications or stock.'],

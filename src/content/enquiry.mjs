@@ -1,5 +1,9 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'affiliate-link-audit': [
+    ['Адрес витрины, период и тип ошибки в отчёте', 'Примеры страниц или товаров без трекинговых ключей и данных покупателей'],
+    ['Storefront URL, relevant dates and the network error', 'Example pages or products without tracking keys or customer data'],
+  ],
   'woocommerce-store-development': [
     ['Примеры товаров, вариантов и источник цен и остатков', 'Как покупатель оформляет, оплачивает и получает заказ'],
     ['Sample products, variations and source of prices and stock', 'How customers will order, pay and receive products'],
