@@ -1,0 +1,34 @@
+title: "Rodina Apiary: WordPress site and owner handover"
+tagline: Give the apiary owner a starting site for the business and its products
+  that she could maintain with her own photos and posts.
+role: Web development
+year: "01.2018"
+stack:
+  - WordPress
+  - Website handover
+  - Responsive design
+blocks:
+  - type: text
+    title: Brief
+    body: Give the apiary owner a starting site for the business and its products
+      that she could maintain with her own photos and posts.
+  - type: text
+    title: Work delivered
+    body: Helped with the domain and initial hosting, agreed the structure,
+      configured a WordPress theme, revised the mobile header and handed site
+      management to the owner.
+  - type: text
+    title: Implementation and scope
+    body: "I planned sections for the apiary, bee products, tea and herbs, and
+      contact details so the owner could fill them in gradually. After feedback,
+      I reduced the mobile header title and explained how to prepare 800 × 600
+      images; the gallery waited for source materials. The order was accepted. I
+      do not claim authorship of later copy or photos: the October 2026 capture
+      is a later version. Checkout setup and the final active theme are not
+      verified."
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/paseka-rodina-wordpress/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

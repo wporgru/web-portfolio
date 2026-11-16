@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
-import { stringify } from 'yaml';
+import { parse, stringify } from 'yaml';
 import { addEngineeringCases } from './engineering-export.mjs';
 import { archiveMedia } from './portfolio-archive-media.mjs';
 
@@ -10,8 +10,32 @@ const read = p => fs.readFileSync(p,'utf8').replace(/^\uFEFF/, '');
 const save = (p,data) => { fs.mkdirSync(path.dirname(p),{recursive:true}); fs.writeFileSync(p,stringify(data)); };
 const index = new Map(JSON.parse(read(path.join(root,'orders/index.json'))).map(row=>[row.order_id,row]));
 const languages = ['ru','en'];
+const listFile = lang => 'src/content/showcase/projects_'+lang+'.yaml';
+const existing = Object.fromEntries(languages.map(lang => {
+  const source = read(listFile(lang));
+  const rows = parse(source)?.projects;
+  if (!Array.isArray(rows) || !rows.length || rows.some(row => !row?.slug || !Number.isSafeInteger(row.order))) {
+    throw Error('Invalid existing project catalog: '+lang);
+  }
+  return [lang,{source,rows}];
+}));
+const catalogSlugs = new Set(existing.ru.rows.map(row=>row.slug));
+const orderBySlug = new Map(existing.ru.rows.map(row=>[row.slug,row.order]));
+if (catalogSlugs.size !== existing.ru.rows.length ||
+    new Set(existing.ru.rows.map(row=>row.order)).size !== existing.ru.rows.length ||
+    existing.en.rows.length !== existing.ru.rows.length ||
+    new Set(existing.en.rows.map(row=>row.slug)).size !== existing.en.rows.length ||
+    existing.en.rows.some(row=>orderBySlug.get(row.slug)!==row.order)) {
+  throw Error('RU and EN catalogs have different case sets or orders');
+}
 const projects = {ru:[],en:[]};
 const slugs = new Set();
+const verifyNew = slug => {
+  const dir = 'public/media/projects/'+slug;
+  if (languages.some(lang=>fs.existsSync(dir+'/'+slug.replaceAll('-','_')+'_'+lang+'.yaml'))) {
+    throw Error('Case detail exists outside the catalog; reconcile manually: '+slug);
+  }
+};
 const details = new Map(read('case-details.psv').trim().split(/\r?\n/).map(line=>{
   const [slug,ru,en]=line.split('|'); return [slug,{ru,en}];
 }));
@@ -21,6 +45,8 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
   const [ids,slug,stack,tRu,tEn,qRu,qEn,aRu,aEn] = fields;
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || slugs.has(slug) || !/^\d+(?:,\d+)*$/.test(ids)) throw Error('Invalid case id or slug: '+slug);
   slugs.add(slug);
+  if (catalogSlugs.has(slug)) continue;
+  verifyNew(slug);
   const orders = ids.split(',').map(id=>index.get(id));
   if (orders.some(x=>!x?.description_prepared)) throw Error('Order not verified in local index: '+ids);
   const order = orders[0];
@@ -119,12 +145,20 @@ for (const [n,line] of read('selected-cases.psv').trim().split(/\r?\n/).entries(
       links:[{label:ru?'Читать кейс':'Read case study',url:'/showcase/'+slug+(ru?'/':'/en/'),type:'product'}]});
   }
 }
-addEngineeringCases(projects,root);
-for(const lang of languages) {
-  save('src/content/showcase/projects_'+lang+'.yaml',{projects:projects[lang]});
-
+addEngineeringCases(projects,root,{catalogSlugs,slugs,verifyNew});
+const maxOrder = Math.max(...orderBySlug.values());
+if (projects.ru.length !== projects.en.length || projects.ru.some((row,i)=>row.slug!==projects.en[i]?.slug)) {
+  throw Error('Export did not produce matching RU and EN case lists');
 }
-save('src/content/languages/languages.yml',{default:'ru',languages:[{id:'ru',label:'Русский'},{id:'en',label:'English'}]});
-save('src/content/profiles/profiles.yml',{profiles:[{id:'default',label:'Portfolio',slug:'',spec:null}]});
-save('src/content/site/site.yml',{downloads:[],footerCredit:true});
-console.log(projects.ru.length+' cases exported in both languages');
+for(const lang of languages) {
+  const rows = projects[lang].map((row,i)=>({...row,order:maxOrder+i+1,featured:false}));
+  if (!rows.length) continue;
+  const addition = stringify(rows).replace(/^(?=\S| )/gm,'  ');
+  const source = existing[lang].source;
+  const output = source + (source.endsWith('\n')?'':'\n') + addition;
+  if (parse(output)?.projects?.length !== existing[lang].rows.length + rows.length) {
+    throw Error('Unable to append to existing catalog: '+lang);
+  }
+  fs.writeFileSync(listFile(lang),output);
+}
+console.log(projects.ru.length+' new bilingual cases; '+catalogSlugs.size+' existing cases preserved');

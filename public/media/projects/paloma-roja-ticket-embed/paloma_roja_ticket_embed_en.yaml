@@ -1,0 +1,33 @@
+title: "Paloma Roja: ticket widget for a festival site"
+tagline: The festival needed a separate path into its third-party ticket widget
+  without taking over the existing dancer application form.
+role: Web development
+year: "03.2018"
+stack:
+  - WordPress
+  - JavaScript
+  - Third-party widgets
+blocks:
+  - type: text
+    title: Brief
+    body: The festival needed a separate path into its third-party ticket widget
+      without taking over the existing dancer application form.
+  - type: text
+    title: Work delivered
+    body: Restored the original dancer application, moved the ticket widget to its
+      own page and kept the two flows separate. The client accepted the work.
+  - type: text
+    title: Implementation and scope
+    body: "The initial integration occupied the dancer application button. I
+      restored its original action and connected the supplier script on a
+      dedicated ticket page in place of the diagram. Running multiple events
+      required clarification from the supplier. This was not a custom ticketing
+      system: payment setup, a second event and a completed sale are not
+      verified. The October 2026 capture shows a later version of the site, not
+      the 2018 widget."
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/paloma-roja-ticket-embed/site.png
+    alt: Public website snapshot
+    caption: Captured during a later availability check; it may differ from the site
+      at handoff.

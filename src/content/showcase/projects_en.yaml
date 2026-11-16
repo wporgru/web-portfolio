@@ -6208,3 +6208,68 @@ projects:
       - label: Read case study
         url: /showcase/sport-affiliate-broken-link-audit/en/
         type: product
+  - slug: paloma-roja-ticket-embed
+    name: "Paloma Roja: ticket widget for a festival site"
+    description: Restored the original dancer application, moved the ticket widget
+      to its own page and kept the two flows separate. The client accepted the
+      work.
+    year: "03.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - JavaScript
+      - Third-party widgets
+    order: 343
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/paloma-roja-ticket-embed/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/paloma-roja-ticket-embed/en/
+        type: product
+  - slug: professional-chemistry-xlsx
+    name: "Professional cleaning products: catalog extraction and cleanup"
+    description: Identified 253 preliminary product records among more than 900
+      URLs, reviewed duplicates and checked the price list, then delivered a
+      cleaned XLSX. The final unique-row count is not known.
+    year: "03.2018"
+    role: Web development
+    stack:
+      - Data extraction
+      - XLSX
+      - Product data
+    order: 344
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/professional-chemistry-xlsx/en/
+        type: product
+  - slug: paseka-rodina-wordpress
+    name: "Rodina Apiary: WordPress site and owner handover"
+    description: Helped with the domain and initial hosting, agreed the structure,
+      configured a WordPress theme, revised the mobile header and handed site
+      management to the owner.
+    year: "01.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - Website handover
+      - Responsive design
+    order: 345
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/paseka-rodina-wordpress/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/paseka-rodina-wordpress/en/
+        type: product

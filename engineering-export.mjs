@@ -99,12 +99,15 @@ const projectStages = {
   'hockey-insales-woodmart': ['hockey-storefront-ux', 'Следующий этап: карточки и мобильная витрина', 'Next stage: product cards and mobile storefront'],
   'hockey-storefront-ux': ['hockey-insales-woodmart', 'Предыдущий этап: перенос каталога из InSales', 'Previous stage: catalog migration from InSales'],
 };
-export function addEngineeringCases(projects,root){
+export function addEngineeringCases(projects,root,{catalogSlugs,slugs,verifyNew}){
   for(const line of read('engineering-cases.psv').trim().split(/\r?\n/)){
     const fields=line.split('|');
     if(fields.length!==11 || fields.some(x=>!x.trim()))throw Error('Invalid engineering case');
     const [slug,year,stack,...t]=fields;
-    if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error('Invalid slug');
+    if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)||slugs.has(slug))throw Error('Invalid or duplicate slug: '+slug);
+    slugs.add(slug);
+    if(catalogSlugs.has(slug))continue;
+    verifyNew(slug);
     const dir='public/media/projects/'+slug;
     fs.mkdirSync(dir,{recursive:true});
     for(const [lang,k] of [['ru',0],['en',1]]){

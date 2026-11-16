@@ -1,0 +1,29 @@
+title: "Professional cleaning products: catalog extraction and cleanup"
+tagline: Extract professional cleaning product data, separate product records
+  from non-product pages and hand over an editable spreadsheet for a later
+  migration.
+role: Web development
+year: "03.2018"
+stack:
+  - Data extraction
+  - XLSX
+  - Product data
+blocks:
+  - type: text
+    title: Brief
+    body: Extract professional cleaning product data, separate product records from
+      non-product pages and hand over an editable spreadsheet for a later
+      migration.
+  - type: text
+    title: Work delivered
+    body: Identified 253 preliminary product records among more than 900 URLs,
+      reviewed duplicates and checked the price list, then delivered a cleaned
+      XLSX. The final unique-row count is not known.
+  - type: text
+    title: Implementation and scope
+    body: "Migration prep required manual decisions: identical names were not
+      automatically treated as new products, and price discrepancies and missing
+      photos were flagged rather than hidden. I proposed grouping and attributes
+      for future filters. The client accepted the XLSX. The 253 figure is the
+      initial selection before cleanup; CMS import, redesign and image matching
+      are not part of the confirmed result."
