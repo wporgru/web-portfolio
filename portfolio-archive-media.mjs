@@ -4,6 +4,24 @@ import {createHash} from 'node:crypto';
 
 // Only named originals from the author's public portfolio, not order attachments.
 const archive = {
+  'anta-yml-size-variant-import': [
+    '34382083','historical-portfolio-9349165.webp','9349165',
+    '0266e310ec8a7d83bfe7f9adb5dd571b42bc25e0b68e2ae2ea5bb7fa7a622189',
+    ['Карточки баскетбольных кроссовок ANTA с фильтром и сортировкой',
+      'Оригинальный архивный фрагмент 1400 × 680. Показаны карточки каталога, цены и элементы фильтрации. Один экран не показывает полноту импорта и работу всех размерных вариаций.'],
+    ['ANTA basketball shoe listings with filter and sort controls',
+      'Original archived excerpt, 1400 × 680. It shows listings, prices and filter controls, not the full import or verification of every size variation.'],
+    'archive-storefront.webp',
+  ],
+  'porogov-woodmart-contact-redesign': [
+    '40231935','historical-portfolio-11549314.webp','11549314',
+    '2f9ec8191686a41ce2f14628e9e1a7c1315fcae1ed5a0ff8669e2936f42efef9',
+    ['Шапка Porogov.by с телефонами и каталог кузовных запчастей',
+      'Оригинальный архивный фрагмент 1400 × 515: шапка, навигация и карточки ремонтных арок. Это верхняя часть витрины, не полная страница.'],
+    ['Porogov.by header with phone numbers and auto body parts',
+      'Original archived excerpt, 1400 × 515: header, navigation and repair panel listings. This shows the upper part of the storefront, not the full page.'],
+    'archive-storefront.webp',
+  ],
   'sovo-sova': [
     '56411105','historical-homepage-portfolio-19774603.webp','19774603',
     'f73dfaab0856ee1c35d28a3f825063a23e530a752a1a38e6143b36d54ee534ea',
@@ -40,18 +58,21 @@ const archive = {
 
 export function archiveMedia(root, slug, lang) {
   if (!Object.hasOwn(archive, slug)) return;
-  const [order,file,id,hash,ruCopy,enCopy]=archive[slug];
+  const [order,file,id,hash,ruCopy,enCopy,output='archive-homepage.webp']=archive[slug];
   const bytes=fs.readFileSync(path.join(root,'orders',order,file));
   if (createHash('sha256').update(bytes).digest('hex')!==hash) throw Error('Archive image hash mismatch: '+slug);
   const dir=path.join('public','media','projects',slug);
   fs.mkdirSync(dir,{recursive:true});
-  fs.writeFileSync(path.join(dir,'archive-homepage.webp'),bytes);
+  fs.writeFileSync(path.join(dir,output),bytes);
   const ru=lang==='ru';
   const [alt,caption]=ru?ruCopy:enCopy;
-  const src='/media/projects/'+slug+'/archive-homepage.webp';
+  const src='/media/projects/'+slug+'/'+output;
+  const title=output==='archive-homepage.webp'
+    ? (ru?'Главная из архива проекта':'Archived project homepage')
+    : (ru?'Фрагмент витрины из архива проекта':'Archived storefront excerpt');
   return {
     blocks:[
-      {type:'text',title:ru?'Главная из архива проекта':'Archived project homepage',
+      {type:'text',title,
         links:[{label:ru?'Оригинал в портфолио Kwork':'Original Kwork portfolio entry',url:'https://kwork.ru/portfolio/'+id}]},
       {type:'image',src,alt,caption},
     ],

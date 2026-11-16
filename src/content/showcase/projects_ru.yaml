@@ -6102,3 +6102,49 @@ projects:
       - label: Читать кейс
         url: /showcase/svl-avto-woocommerce-catalog/
         type: product
+  - slug: anta-yml-size-variant-import
+    name: "ANTA: импорт каталога YML с размерами"
+    year: "03.2023"
+    role: Веб-разработка и автоматизация
+    description: Для спортивного каталога недостаточно вывести по одной карточке на
+      каждую строку выгрузки. Нужно было загрузить категории, сохранить связь с
+      товарами и представить доступные размеры как вариации одной модели.
+    stack:
+      - WooCommerce
+      - WP All Import
+      - YML
+      - Product variants
+    order: 336
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/anta-yml-size-variant-import/archive-storefront.webp
+        alt: Карточки баскетбольных кроссовок ANTA с фильтром и сортировкой
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/anta-yml-size-variant-import/
+        type: product
+  - slug: porogov-woodmart-contact-redesign
+    name: "Porogov.by: смена темы магазина и новая шапка"
+    year: "12.2023"
+    role: Веб-разработка и автоматизация
+    description: Магазин кузовных деталей уже работал, но заказчик хотел сменить
+      оформление и сделать телефон заметным в верхней части сайта. Задача
+      касалась витрины действующего магазина, а не разработки нового каталога.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Storefront design
+    order: 337
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/porogov-woodmart-contact-redesign/archive-storefront.webp
+        alt: Шапка Porogov.by с телефонами и каталог кузовных запчастей
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/porogov-woodmart-contact-redesign/
+        type: product

@@ -1,0 +1,40 @@
+title: "Porogov.by: storefront theme and header redesign"
+tagline: The auto body parts store was already running, but its owner wanted a
+  new storefront design and a more visible phone number at the top of the site.
+  The brief covered the existing shop, not a new catalog build.
+year: "12.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - Storefront design
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The auto body parts store was already running, but its owner wanted a new
+      storefront design and a more visible phone number at the top of the site.
+      The brief covered the existing shop, not a new catalog build.
+  - type: text
+    title: How it works
+    body: "Chose WoodMart after reviewing the agreed references, replaced the theme
+      and configured the approved changes, including header phone numbers. The
+      archived view shows the brand, catalog navigation and repair panel
+      listings: contacts are part of the storefront header rather than available
+      only on a separate page."
+  - type: text
+    title: Result and verification
+    body: The client accepted the delivery. The archive shows the storefront header
+      and prominent contact details. It does not verify every page, mobile state
+      or successful form submission.
+  - type: text
+    title: Archived storefront excerpt
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/11549314
+  - type: image
+    src: /media/projects/porogov-woodmart-contact-redesign/archive-storefront.webp
+    alt: Porogov.by header with phone numbers and auto body parts
+    caption: "Original archived excerpt, 1400 × 515: header, navigation and repair
+      panel listings. This shows the upper part of the storefront, not the full
+      page."

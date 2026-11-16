@@ -34,6 +34,8 @@ const caseImages = {
   'marketplace-photo-batch': ['processed-sample.webp', 'Пример обработанных товарных фотографий', 'Sample of processed product photographs', 'Выборка из публичной карточки Kwork, ноябрь 2024. Не весь архив и не сравнение до/после.', 'Sample from the public Kwork entry, November 2024. Not the entire archive or a before-and-after comparison.'],
 };
 const projectStages = {
+  'anta-yml-size-variant-import': ['anta-preorder-variant-import', 'Следующий этап: импорт предзаказа из трёх таблиц', 'Follow-up: importing preorder variants from three spreadsheets'],
+  'anta-preorder-variant-import': ['anta-yml-size-variant-import', 'Предыдущий этап: загрузка из YML', 'Earlier stage: importing the YML feed'],
   'seo-dashboard': ['trends-search-demand-history', 'Связанный модуль: история спроса и Google Trends', 'Related module: search demand and Google Trends history'],
   'trends-search-demand-history': ['admitad-order-click-reconciliation', 'Связанный модуль: сверка партнёрских кликов и заказов', 'Related module: matching affiliate clicks to orders'],
   'admitad-order-click-reconciliation': ['seo-dashboard', 'Связанная работа: основной SEO-дашборд', 'Related work: the core SEO dashboard'],

@@ -6040,3 +6040,49 @@ projects:
       - label: Read case study
         url: /showcase/svl-avto-woocommerce-catalog/en/
         type: product
+  - slug: anta-yml-size-variant-import
+    name: "ANTA: importing a YML catalog with size variations"
+    year: "03.2023"
+    role: Web development and automation
+    description: A sports storefront needed more than one listing per feed row. It
+      had to load categories, preserve their product relationships and represent
+      available sizes as variations of the same model.
+    stack:
+      - WooCommerce
+      - WP All Import
+      - YML
+      - Product variants
+    order: 336
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/anta-yml-size-variant-import/archive-storefront.webp
+        alt: ANTA basketball shoe listings with filter and sort controls
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/anta-yml-size-variant-import/en/
+        type: product
+  - slug: porogov-woodmart-contact-redesign
+    name: "Porogov.by: storefront theme and header redesign"
+    year: "12.2023"
+    role: Web development and automation
+    description: The auto body parts store was already running, but its owner wanted
+      a new storefront design and a more visible phone number at the top of the
+      site. The brief covered the existing shop, not a new catalog build.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Storefront design
+    order: 337
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/porogov-woodmart-contact-redesign/archive-storefront.webp
+        alt: Porogov.by header with phone numbers and auto body parts
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/porogov-woodmart-contact-redesign/en/
+        type: product

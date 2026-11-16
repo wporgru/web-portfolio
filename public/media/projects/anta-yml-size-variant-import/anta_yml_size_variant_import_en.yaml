@@ -1,0 +1,46 @@
+title: "ANTA: importing a YML catalog with size variations"
+tagline: A sports storefront needed more than one listing per feed row. It had
+  to load categories, preserve their product relationships and represent
+  available sizes as variations of the same model.
+year: "03.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - WP All Import
+  - YML
+  - Product variants
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A sports storefront needed more than one listing per feed row. It had to
+      load categories, preserve their product relationships and represent
+      available sizes as variations of the same model.
+  - type: text
+    title: How it works
+    body: "Split WP All Import into two passes: category records first, then
+      products linked by ID. The import mapping covered sizes, images and
+      attributes. After loading, explained to the client how IDs connect rows to
+      categories and flagged remaining questions about category slugs and the
+      source feed."
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage and confirmed the import worked. The
+      archived screen shows products, prices, filtering and sorting, not the
+      imported product count, correctness of every size or a scheduled feed
+      refresh. Preorder imports from spreadsheets were a separate follow-up.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Follow-up: importing preorder variants from three spreadsheets"
+        url: /showcase/anta-preorder-variant-import/en/
+  - type: text
+    title: Archived storefront excerpt
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/9349165
+  - type: image
+    src: /media/projects/anta-yml-size-variant-import/archive-storefront.webp
+    alt: ANTA basketball shoe listings with filter and sort controls
+    caption: Original archived excerpt, 1400 × 680. It shows listings, prices and
+      filter controls, not the full import or verification of every size
+      variation.

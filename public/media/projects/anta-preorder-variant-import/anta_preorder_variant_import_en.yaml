@@ -25,3 +25,8 @@ blocks:
     body: The client accepted the stage on the test site. Expected batch sizes were
       not treated as verified listing counts, and the client handled image
       refinements.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Earlier stage: importing the YML feed"
+        url: /showcase/anta-yml-size-variant-import/en/
