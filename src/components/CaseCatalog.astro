@@ -53,7 +53,7 @@ const dateKey=(value:unknown)=>{
   </form>
   <p class="card" data-case-empty hidden>{ru?'Ничего не найдено. Попробуйте другое слово или сбросьте фильтры.':'No cases found. Try a different keyword or reset the filters.'}</p>
   <div class="grid" data-case-grid>
-    {projects.map((p:any,i:number)=><div data-case={p.slug} data-date={dateKey(p.year)} data-search={[p.name,p.description,p.year,...(p.stack??[])].join(' ').toLocaleLowerCase(lang)} data-tech={JSON.stringify(p.stack??[])} data-tasks={projectTasks.get(p.slug)?.join(' ')}>
+    {projects.map((p:any,i:number)=><div data-case={p.slug} data-date={dateKey(p.year)} data-tasks={projectTasks.get(p.slug)?.join(' ')}>
       <ProjectCard project={p} eager={i===eagerIdx} t={t}/>
     </div>)}
   </div>
@@ -72,7 +72,20 @@ class CaseCatalog extends HTMLElement {
     if(!form||!query||!tech||!task||!order||!output||!grid||!empty)return;
     const lang=document.documentElement.lang;
     const normalize=(value:string)=>value.toLocaleLowerCase(lang).replace(/ё/g,'е');
-    const cards=[...grid.querySelectorAll<HTMLElement>('[data-case]')].map(el=>({el,tags:JSON.parse(el.dataset.tech??'[]') as string[],tasks:(el.dataset.tasks??'').split(' '),text:normalize(el.dataset.search??''),date:Number(el.dataset.date)}));
+    // Search the existing HTML; do not ship a second copy of descriptions or stack tags.
+    const cards=[...grid.querySelectorAll<HTMLElement>('[data-case]')].map(el=>({
+      el,tasks:(el.dataset.tasks??'').split(' '),date:Number(el.dataset.date),
+      tags:undefined as string[]|undefined,text:undefined as string|undefined,
+    }));
+    const tagsFor=(card:typeof cards[number])=>card.tags??=Array.from(
+      card.el.querySelectorAll('[data-project-stack] > li'),item=>item.textContent??'',
+    );
+    const textFor=(card:typeof cards[number])=>card.text??=normalize([
+      card.el.querySelector('.card__title')?.textContent,
+      card.el.querySelector('.card__desc')?.textContent,
+      card.el.querySelector('[data-project-year]')?.textContent?.replace(/^\s*·\s*/,''),
+      ...tagsFor(card),
+    ].join(' '));
     const restoreTask=()=>{
       const value=new URL(location.href).searchParams.get('task')??'';
       task.value=[...task.options].some(option=>option.value===value)?value:'';
@@ -95,9 +108,11 @@ class CaseCatalog extends HTMLElement {
       }
       const words=normalize(query.value.trim()).split(/\s+/).filter(Boolean);
       let visible=0;
-      for(const {el,tags,tasks,text} of cards){
-        const matches=words.every(word=>text.includes(word)) && (!tech.value||tags.includes(tech.value)) && (!task.value||tasks.includes(task.value));
-        el.hidden=!matches;
+      for(const card of cards){
+        const matches=(!task.value||card.tasks.includes(task.value)) &&
+          (!tech.value||tagsFor(card).includes(tech.value)) &&
+          (!words.length||words.every(word=>textFor(card).includes(word)));
+        if(card.el.hidden===matches) card.el.hidden=!matches;
         if(matches)visible++;
       }
       empty.hidden=visible>0;

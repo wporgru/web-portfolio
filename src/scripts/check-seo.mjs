@@ -192,6 +192,10 @@ let imageEntries = 0;
 const distinctSitemapImages = new Set();
 for (const suffix of ['', 'en/']) {
   const catalog = read(path.join(root,'showcase',suffix,'index.html'));
+  if (/\bdata-(?:search|tech)="/.test(catalog) ||
+      !catalog.includes('data-project-stack') || !catalog.includes('data-project-year')) {
+    fail('showcase/'+suffix,'catalog search should reuse the rendered descriptions, dates and stack tags');
+  }
   const tasks = new Map(services.map(service=>[service.slug,new Set()]));
   for (const [tag,slug] of catalog.matchAll(/<div\b[^>]*\bdata-case="([^"]+)"[^>]*>/g)) {
     for (const task of (tag.match(/\bdata-tasks="([^"]+)"/)?.[1] ?? '').split(' ').filter(Boolean)) {
