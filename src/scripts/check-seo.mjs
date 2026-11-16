@@ -209,6 +209,11 @@ let imageEntries = 0;
 const distinctSitemapImages = new Set();
 for (const suffix of ['', 'en/']) {
   const catalog = read(path.join(root,'showcase',suffix,'index.html'));
+  const searchForm=catalog.match(/<form\b[^>]*class="card case-search"[^>]*>/)?.[0];
+  if (!searchForm || /\bhidden\b/.test(searchForm) ||
+      !/<fieldset\b[^>]*disabled/.test(catalog)) {
+    fail('showcase/'+suffix,'catalog filters must reserve their layout before JavaScript runs');
+  }
   if (/\bdata-(?:search|tech)="/.test(catalog) ||
       !catalog.includes('data-project-stack') || !catalog.includes('data-project-year')) {
     fail('showcase/'+suffix,'catalog search should reuse the rendered descriptions, dates and stack tags');
