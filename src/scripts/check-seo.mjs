@@ -5,12 +5,14 @@ import { serviceDetails } from '../content/service-details.mjs';
 import { caseHighlights } from '../content/case-highlights.mjs';
 import { serviceGroups } from '../content/service-groups.mjs';
 import { enquiryPrompts } from '../content/enquiry.mjs';
+import { latestCaseRevision, readCaseRevisions } from './case-revisions.mjs';
 
 const root = 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
 const fail = (file, why) => { throw Error(file + ': ' + why); };
 const htmlFiles = fs.readdirSync(root, {recursive:true}).filter(file => path.basename(file)==='index.html');
 const sitemapEntries = new Map();
+const sitemapRevisions = new Map();
 for (const file of fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.test(file))) {
   const xml = read(path.join(root,file));
   if (xml.includes('<image:image>') && !xml.includes('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"')) {
@@ -20,6 +22,9 @@ for (const file of fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.test(f
     const url = entry.match(/<loc>([^<]+)<\/loc>/)?.[1];
     if (!url || sitemapEntries.has(url)) fail(file,'missing or repeated sitemap URL');
     sitemapEntries.set(url,[...entry.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(m=>m[1]));
+    const revisions=[...entry.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)];
+    if (revisions.length>1) fail(url,'multiple sitemap revision dates');
+    if (revisions.length) sitemapRevisions.set(url,revisions[0][1]);
   }
 }
 const sitemap = new Set(sitemapEntries.keys());
@@ -105,6 +110,23 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+const caseRevisions=readCaseRevisions({required:process.env.GITHUB_ACTIONS==='true'});
+let verifiedRevisions=0;
+for (const [url,images] of sitemapEntries){
+  const route=new URL(url).pathname.slice(base.length);
+  const match=/^showcase\/([a-z0-9-]+)(\/en)?\/$/.exec(route);
+  const lastmod=sitemapRevisions.get(url);
+  if (!match || ['ru','en'].includes(match[1])) {
+    if (lastmod) fail(url,'non-case route has a synthesized lastmod');
+    continue;
+  }
+  const [,slug,en]=match;
+  const file=`public/media/projects/${slug}/${slug.replaceAll('-','_')}_${en?'en':'ru'}.yaml`;
+  const expected=latestCaseRevision(caseRevisions,[file,...images.map(src=>'public/'+new URL(src).pathname.slice(base.length))]);
+  if (process.env.GITHUB_ACTIONS==='true' && !expected) fail(url,'missing case content history in release checkout');
+  if (lastmod!==expected || (lastmod && Date.parse(lastmod)>Date.now())) fail(url,'sitemap revision does not match the case content history');
+  if (lastmod) verifiedRevisions++;
+}
 const googleVerification = process.env.GOOGLE_SITE_VERIFICATION?.trim();
 if (googleVerification) {
   const homeHtml=read(path.join(root,'index.html'));
@@ -266,3 +288,4 @@ console.log('SEO checks passed for '+pages.size+' HTML pages and '+breadcrumbTar
 console.log('Verified '+canonicalInternalLinks+' canonical internal page links.');
 console.log('Verified '+distinctSitemapImages.size+' original images across '+imageEntries+' localized image sitemap entries.');
 console.log('Verified contextual enquiry templates for '+enquiryPages+' localized case and service pages.');
+console.log('Verified versioned sitemap revision dates for '+verifiedRevisions+' localized case pages.');
