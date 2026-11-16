@@ -6091,3 +6091,50 @@ projects:
       - label: Read case study
         url: /showcase/porogov-woodmart-contact-redesign/en/
         type: product
+  - slug: llp-pigment-woocommerce-shipping
+    name: "LLP Pigment: two shipping carriers in WooCommerce"
+    year: "10.2023"
+    role: Web development and automation
+    description: A cosmetics store needed more shipping choices in the existing
+      checkout. Carrier names, delivery methods and rates needed to fit into one
+      readable list.
+    stack:
+      - WooCommerce
+      - Boxberry
+      - Russian Post
+      - CSS
+      - Checkout
+    order: 338
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/llp-pigment-woocommerce-shipping/archive-storefront.webp
+        alt: LLP Pigment checkout showing Boxberry and Russian Post
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/llp-pigment-woocommerce-shipping/en/
+        type: product
+  - slug: taro-praktik-editorial-wordpress
+    name: "Taro Praktik: a WordPress blog with article categories"
+    year: "01.2024"
+    role: Web development and automation
+    description: "The client needed a website foundation for publishing their own
+      articles: a main feed, category pages and a simple way to edit metadata.
+      Writing and publishing content remained the client’s responsibility."
+    stack:
+      - WordPress
+      - Editorial workflow
+      - Categories
+      - On-page SEO
+    order: 339
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/taro-praktik-editorial-wordpress/archive-storefront.webp
+        alt: Taro Praktik article grid and category sidebar
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/taro-praktik-editorial-wordpress/en/
+        type: product

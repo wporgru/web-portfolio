@@ -6153,3 +6153,50 @@ projects:
       - label: Читать кейс
         url: /showcase/porogov-woodmart-contact-redesign/
         type: product
+  - slug: llp-pigment-woocommerce-shipping
+    name: "LLP Pigment: две службы доставки в WooCommerce"
+    year: "10.2023"
+    role: Веб-разработка и автоматизация
+    description: Магазину косметики нужно было добавить новые варианты доставки в
+      существующее оформление. В одном списке должны были помещаться названия
+      служб, способы получения и тарифы, не сливаясь в сплошной текст.
+    stack:
+      - WooCommerce
+      - Boxberry
+      - Russian Post
+      - CSS
+      - Checkout
+    order: 338
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/llp-pigment-woocommerce-shipping/archive-storefront.webp
+        alt: Экран оформления заказа LLP Pigment с Boxberry и Почтой России
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/llp-pigment-woocommerce-shipping/
+        type: product
+  - slug: taro-praktik-editorial-wordpress
+    name: "«Таро Практик»: шаблон блога с рубриками"
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: "Заказчику нужна была основа для самостоятельной публикации статей:
+      общая лента на главной, страницы рубрик и понятное редактирование
+      метаданных. Тексты и наполнение оставались на стороне клиента."
+    stack:
+      - WordPress
+      - Editorial workflow
+      - Categories
+      - On-page SEO
+    order: 339
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/taro-praktik-editorial-wordpress/archive-storefront.webp
+        alt: Сетка статей «Таро Практик» и боковая колонка с рубриками
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/taro-praktik-editorial-wordpress/
+        type: product

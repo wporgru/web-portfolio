@@ -1,0 +1,42 @@
+title: "LLP Pigment: two shipping carriers in WooCommerce"
+tagline: A cosmetics store needed more shipping choices in the existing
+  checkout. Carrier names, delivery methods and rates needed to fit into one
+  readable list.
+year: "10.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Boxberry
+  - Russian Post
+  - CSS
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A cosmetics store needed more shipping choices in the existing checkout.
+      Carrier names, delivery methods and rates needed to fit into one readable
+      list.
+  - type: text
+    title: How it works
+    body: "Configured Boxberry and Russian Post, demonstrated the options in
+      checkout and proposed test order scenarios. Based on feedback, increased
+      spacing between shipping rows so the choices were easier to compare. Kept
+      Yandex Delivery outside acceptance: work on its extension and onboarding
+      needed a separate follow-up."
+  - type: text
+    title: Result and verification
+    body: The client accepted the two carriers and the revised interface. The
+      archived screen shows both Boxberry options and Russian Post. The client
+      chose to place the test order themselves; live charges, shipment and a
+      completed Yandex Delivery integration are outside this case.
+  - type: text
+    title: Archived storefront excerpt
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/10894541
+  - type: image
+    src: /media/projects/llp-pigment-woocommerce-shipping/archive-storefront.webp
+    alt: LLP Pigment checkout showing Boxberry and Russian Post
+    caption: Archived 1400 × 661 viewport showing shipping options and empty
+      checkout fields. Prices and timings are historical; the image does not
+      verify payment, shipment or implementation of other listed carriers.

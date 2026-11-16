@@ -4,6 +4,24 @@ import {createHash} from 'node:crypto';
 
 // Only named originals from the author's public portfolio, not order attachments.
 const archive = {
+  'llp-pigment-woocommerce-shipping': [
+    '38802345','historical-portfolio-10894541.webp','10894541',
+    'beaa93ea78d880f07ce52f2475930e602adae5bd18ea18232a168f355a0c3d80',
+    ['Экран оформления заказа LLP Pigment с Boxberry и Почтой России',
+      'Архивный экран 1400 × 661. Видны варианты доставки и пустые поля оформления. Суммы и сроки исторические; снимок не подтверждает оплату, отправление или настройку других показанных служб.'],
+    ['LLP Pigment checkout showing Boxberry and Russian Post',
+      'Archived 1400 × 661 viewport showing shipping options and empty checkout fields. Prices and timings are historical; the image does not verify payment, shipment or implementation of other listed carriers.'],
+    'archive-storefront.webp',
+  ],
+  'taro-praktik-editorial-wordpress': [
+    '40882732','historical-fragment-portfolio-11843733.webp','11843733',
+    '22d2cf2c78711a96111a7aa637b1b5b8fee5f53bfa3fd348bf594d4a0d761c0d',
+    ['Сетка статей «Таро Практик» и боковая колонка с рубриками',
+      'Архивный фрагмент 1400 × 1076 из карточки от 21 января 2024 года. Снимок показывает шаблон с тестовыми публикациями и зарезервированными местами под рекламу, а не наполнение или запуск монетизации.'],
+    ['Taro Praktik article grid and category sidebar',
+      'Archived 1400 × 1076 excerpt from the January 21, 2024 portfolio entry. It shows the template with sample posts and ad placeholders, not completed content or a monetization launch.'],
+    'archive-storefront.webp',
+  ],
   'anta-yml-size-variant-import': [
     '34382083','historical-portfolio-9349165.webp','9349165',
     '0266e310ec8a7d83bfe7f9adb5dd571b42bc25e0b68e2ae2ea5bb7fa7a622189',

@@ -1,0 +1,42 @@
+title: "Taro Praktik: a WordPress blog with article categories"
+tagline: "The client needed a website foundation for publishing their own
+  articles: a main feed, category pages and a simple way to edit metadata.
+  Writing and publishing content remained the client’s responsibility."
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Editorial workflow
+  - Categories
+  - On-page SEO
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The client needed a website foundation for publishing their own articles:
+      a main feed, category pages and a simple way to edit metadata. Writing and
+      publishing content remained the client’s responsibility."
+  - type: text
+    title: How it works
+    body: Built the editorial site on an existing theme. Explained categories versus
+      tags and how articles appear in the main feed and category pages.
+      Demonstrated editing each post’s title tag and description, recommended a
+      consistent cover format and shared a screen recording. Kept indexing
+      disabled while sample content remained and explained how to open the site
+      later.
+  - type: text
+    title: Result and verification
+    body: The client accepted the template and could begin adding content
+      independently. The archived screen shows the article grid, categories and
+      ad placeholders. Writing content, running ads and actual indexing were not
+      part of the verified delivery.
+  - type: text
+    title: Archived storefront excerpt
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/11843733
+  - type: image
+    src: /media/projects/taro-praktik-editorial-wordpress/archive-storefront.webp
+    alt: Taro Praktik article grid and category sidebar
+    caption: Archived 1400 × 1076 excerpt from the January 21, 2024 portfolio entry.
+      It shows the template with sample posts and ad placeholders, not completed
+      content or a monetization launch.
