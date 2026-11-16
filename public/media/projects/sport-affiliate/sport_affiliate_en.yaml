@@ -1,7 +1,8 @@
 title: "Sport-man: handling expired affiliate offers"
-tagline: An affiliate campaign no longer had a confirmed replacement. The task
-  was to remove stale click-outs without substituting a similar but different
-  product.
+tagline: A sports catalog had 1,892 listings tied to a Mad Wave affiliate
+  campaign with no verified replacement. Shoppers should not be redirected to
+  similar products in a different size or configuration. Pages, prices and
+  source links needed to remain intact for later reactivation.
 year: "10.2026"
 role: Web development and automation
 stack:
@@ -11,16 +12,23 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: An affiliate campaign no longer had a confirmed replacement. The task was
-      to remove stale click-outs without substituting a similar but different
-      product.
+    body: A sports catalog had 1,892 listings tied to a Mad Wave affiliate campaign
+      with no verified replacement. Shoppers should not be redirected to similar
+      products in a different size or configuration. Pages, prices and source
+      links needed to remain intact for later reactivation.
   - type: text
     title: How it works
-    body: Checked variants, models and identifiers and found no verified
-      replacement. Added a reversible MU-plugin rule that disables click-outs
-      and purchasing for the affected group without rewriting product records.
+    body: "Before replacing links, compared barcodes and complete manufacturer
+      codes, then checked the variant, size and color. Similar names were not
+      enough. Instead of bulk-editing products, built a reversible must-use
+      plugin: it recognized the campaign from the stored link, replaced the
+      action with a “Temporarily unavailable” message, suppressed outbound links
+      and blocked add-to-cart server-side. Unaffected products kept their
+      standard flow and product records were left intact."
   - type: text
     title: Result and verification
-    body: Verification counted 1,892 affected listings and confirmed the control
-      product retained its action. Other suspicious clicks were investigated
-      separately without assuming an unverified referrer.
+    body: Verification confirmed 1,892 listings under the rule and zero changes to
+      product data. The control product kept its “View in store” action. To
+      restore the original behavior, remove the isolated rule file and clear the
+      cache if needed. The audit did not rule out valid replacements from every
+      possible seller; only the verified rule was changed.

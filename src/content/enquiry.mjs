@@ -1,5 +1,9 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'wordpress-plugin-development': [
+    ['Какое правило или функцию нужно добавить и где она работает', 'Пример, на котором правило не должно сработать'],
+    ['The feature or rule you need and where it should run', 'An example that the rule must leave unaffected'],
+  ],
   'website-ux-audit': [
     ['Страницы и устройства, где видна проблема', 'Какое действие посетитель не может завершить'],
     ['Affected pages and devices', 'What action the visitor cannot complete'],

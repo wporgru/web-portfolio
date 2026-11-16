@@ -392,9 +392,10 @@ projects:
     name: "Sport-man: handling expired affiliate offers"
     year: "10.2026"
     role: Web development and automation
-    description: An affiliate campaign no longer had a confirmed replacement. The
-      task was to remove stale click-outs without substituting a similar but
-      different product.
+    description: A sports catalog had 1,892 listings tied to a Mad Wave affiliate
+      campaign with no verified replacement. Shoppers should not be redirected
+      to similar products in a different size or configuration. Pages, prices
+      and source links needed to remain intact for later reactivation.
     stack:
       - PHP
       - WooCommerce

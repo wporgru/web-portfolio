@@ -3,7 +3,7 @@ export const serviceGroups = [
     id: 'build',
     ru: ['Разработка и редизайн', 'Новый сайт, обновление существующего или отдельный веб-сервис под правила вашего бизнеса.'],
     en: ['Build or redesign a site', 'A new website, a redesign, or a custom web application built around your business rules.'],
-    slugs: ['website-redesign', 'website-ux-audit', 'laravel-catalog-development'],
+    slugs: ['website-redesign', 'wordpress-plugin-development', 'website-ux-audit', 'laravel-catalog-development'],
   },
   {
     id: 'commerce',

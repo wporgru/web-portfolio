@@ -1,4 +1,20 @@
 export const serviceDetails = {
+  'wordpress-plugin-development': {
+    ru: ['Нужно выключить покупку у одного поставщика, а не переписывать весь каталог', 'В проекте Sport-man отделил правило витрины от данных карточек: MU-плагин отключал переходы и покупку у 1 892 затронутых позиций. Проверил контрольный товар, чтобы убедиться, что покупка у других поставщиков осталась доступной. Если задачу можно решить такой изолированной правкой, нет смысла переделывать тему или массово менять товары.', 'Вы получите код, инструкцию установки, список затронутых условий и проверок. Будет понятно, как включить и отключить функцию, что происходит с уже записанными данными и какие сценарии повторять после обновлений.'],
+    en: ['Pause purchases for one supplier without rewriting the whole catalog', 'For Sport-man, the storefront rule was separate from product records: a must-use plugin disabled clicks and purchases for 1,892 affected listings. A control product verified that unaffected offers still worked. An isolated rule can avoid a theme rebuild or a bulk product rewrite.', 'Get the implementation, installation notes and a record of conditions and checks. Know how to turn the feature on and off, what happens to existing data and what to retest after updates.'],
+    questions: {
+      ru: [
+        ['Всегда ли нужен новый плагин?', 'Нет. Сначала проверю, можно ли получить нужное поведение штатной настройкой. Шаблон подходит для отображения, а правила бизнеса, которые должны жить независимо от темы, обычно удобнее держать отдельно.'],
+        ['Будет ли доработка работать в блочном оформлении заказа?', 'Сначала определю тип оформления: классический, блочный или кастомный. Для блоков часть обычных PHP-хуков не подходит. Сценарий тестирую именно на том варианте, которым пользуются покупатели.'],
+        ['Что останется после отключения?', 'До запуска разделю правила, которые меняют только поведение, и операции, которые записывают данные. Отключение функции не отменяет внесённые данные автоматически: если запись нужна, заранее согласуем резервную копию и способ восстановления.'],
+      ],
+      en: [
+        ['Do I always need a new plugin?', 'No. First check whether built-in configuration is enough. Templates are useful for presentation; business rules that must survive a theme switch are usually better kept separate.'],
+        ['Will this work with block checkout?', 'Identify the live checkout first: classic, block-based or custom. Some traditional PHP hooks are not suitable for blocks. Test the implementation with the checkout your customers actually use.'],
+        ['What stays after disabling it?', 'Separate behavior-only rules from operations that write data. Disabling a feature does not unwind stored changes, so if writes are needed, agree on backup and recovery before deployment.'],
+      ],
+    },
+  },
   'website-ux-audit': {
     ru: ['Кнопка есть на странице, но клиент не может завершить действие', 'Вердикта по одному скриншоту недостаточно: одинаково выглядящие кнопки могут вести к разным формам, а на телефоне меню и модальное окно меняют поведение. Проверка начинается с реальных действий и заканчивается точным условием, по которому можно принять исправление.', 'Карта проверенных сценариев, список проблем с приоритетами и доказательствами, а также критерии повторной проверки после правок. Сайт при аудите не меняю.'],
     en: ['The button is visible, but the customer cannot finish the task', 'A screenshot alone is not enough: identical buttons can open different forms, and menus and dialogs may behave differently on phones. Start with real actions and finish with acceptance criteria for the repair.', 'Get a record of checked flows, prioritized findings with evidence and a retest checklist. No site changes are made during the audit.'],
