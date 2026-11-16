@@ -6162,3 +6162,29 @@ projects:
       - label: Read case study
         url: /showcase/ecopol-woodmart-flooring-store/en/
         type: product
+  - slug: potoc-heater-selection-prototype
+    name: "POTOK factory: heater catalog and model selector"
+    description: "Built an interactive industrial storefront prototype: 25 listings, fuel and
+      voltage filters, part-number and cross-reference search, guided model selection and a
+      prefilled enquiry."
+    year: "11.2026"
+    role: Prototyping and frontend development
+    stack:
+      - HTML
+      - CSS
+      - JavaScript
+      - Product configurator
+      - Browser testing
+    order: 341
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/potoc-heater-selection-prototype/prototype-full.webp
+        alt: Full-page POTOK prototype showing the heater range, engineering diagram, catalog,
+          selector and enquiry
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/potoc-heater-selection-prototype/en/
+        type: product

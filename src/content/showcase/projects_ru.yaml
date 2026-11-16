@@ -6223,3 +6223,29 @@ projects:
       - label: Читать кейс
         url: /showcase/ecopol-woodmart-flooring-store/
         type: product
+  - slug: potoc-heater-selection-prototype
+    name: "Завод «ПОТОК»: каталог и подбор отопителей по параметрам"
+    description: "Разработал интерактивный прототип промышленной витрины: 25 позиций, фильтры
+      по топливу и напряжению, поиск по артикулу и кросс-коду, подбор модели и заявка с
+      выбранным оборудованием."
+    year: "11.2026"
+    role: Прототипирование и фронтенд-разработка
+    stack:
+      - HTML
+      - CSS
+      - JavaScript
+      - Product configurator
+      - Browser testing
+    order: 341
+    featured: false
+    theme: blue
+    media:
+      - type: image
+        src: /media/projects/potoc-heater-selection-prototype/prototype-full.webp
+        alt: "Полностраничный снимок прототипа ПОТОК: витрина отопителей, инженерная схема,
+          каталог, подбор и форма"
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/potoc-heater-selection-prototype/
+        type: product

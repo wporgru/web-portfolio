@@ -1,0 +1,61 @@
+title: "POTOK factory: heater catalog and model selector"
+tagline: An industrial storefront that lets engineers look up a known part number and
+  helps buyers without one choose a heater for their vehicle and use case.
+year: "11.2026"
+role: Prototyping and frontend development
+stack:
+  - HTML
+  - CSS
+  - JavaScript
+  - Product configurator
+  - Browser testing
+blocks:
+  - type: text
+    title: Two buyers, two routes into the catalog
+    body: "A mechanic may arrive with a part number or a compatible product code. A vehicle
+      owner usually needs to establish whether they need a coolant heater for the engine
+      or an air heater for the cabin. I designed two routes for POTOK: direct catalog
+      search and guided selection without a known part number."
+  - type: text
+    title: A catalog searchable by the codes buyers already have
+    body: "I organized 25 demo listings into three groups: 13 coolant heaters, five air
+      heaters and seven control and GSM products. Buyers can combine product type, fuel
+      and voltage filters, and search by model name, SKU, cross-reference or equivalent
+      product name. The empty state offers to reset the filters instead of leaving a blank
+      grid."
+  - type: text
+    title: Model selection that carries through to the enquiry
+    body: The configurator asks for the vehicle type, heating task and fuel. For example, a
+      truck needing cabin heat returned a 24 V diesel heater, SKU PV224VD. The enquiry
+      button prefilled the model and SKU so the buyer did not need to retype them,
+      demonstrating what a sales representative could receive once integrated.
+  - type: text
+    title: An engineering diagram that responds to the buyer
+    body: I added five interactive points to a heater diagram. Selecting a point or its
+      companion button opens the same panel with an explanation and the relevant
+      specifications. Buyers can explore the unit without opening a PDF or leaving the
+      page.
+  - type: image
+    title: POTOK storefront prototype — full page
+    alt: Full-page POTOK prototype showing the heater range, engineering diagram, catalog,
+      selector and enquiry
+    caption: Local prototype captured at 1440 px. The page is not cropped, and the draft phone
+      number is hidden. This is not a screenshot of the live site.
+    src: /media/projects/potoc-heater-selection-prototype/prototype-full.webp
+  - type: text
+    title: What I tested and what remains before launch
+    body: "On the local prototype at 1440 and 390 px, I checked the complete catalog, the
+      five-model air heater category, SKU lookup, empty-result reset, engineering diagram
+      controls and SKU handoff to the enquiry form. Submission is simulated: no email or
+      CRM is connected. The 390 px layout still has horizontal overflow. Production work
+      would also need to verify the live price and product source and test enquiry
+      delivery end to end."
+  - type: text
+    title: Need a catalog that helps buyers choose?
+    body: Send a price sheet, three to five representative products and a few questions
+      customers ask sales staff before buying. I can use them to decide which attributes
+      belong in filters, when to offer guided selection and which details to carry into an
+      enquiry.
+    links:
+      - label: What a website redesign includes
+        url: /services/website-redesign/en/
