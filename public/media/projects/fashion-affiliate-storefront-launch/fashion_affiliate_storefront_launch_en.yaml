@@ -1,0 +1,30 @@
+title: "Fashion affiliate storefront: WordPress and product feeds"
+tagline: Build a WordPress and WooCommerce fashion affiliate catalog with a
+  domain, storefront and affiliate-network setup.
+role: Web development
+year: "06.2018"
+stack:
+  - WordPress
+  - WooCommerce
+  - Affiliate feeds
+  - YML
+blocks:
+  - type: text
+    title: Brief
+    body: Build a WordPress and WooCommerce fashion affiliate catalog with a domain,
+      storefront and affiliate-network setup.
+  - type: text
+    title: Work delivered
+    body: Prepared the storefront, moved it to another host after import limits,
+      refined the design and created a YML feed; the client accepted the stage.
+  - type: text
+    title: Implementation and scope
+    body: I first prepared the catalog on a temporary environment. After bulk import
+      limits arose, I moved it to another host, refined the logo, navigation and
+      presentation, then reported connecting the domain after the client
+      registered it. I connected webmaster tools and Jetpack with the client’s
+      confirmations, reported infinite scrolling and prepared a YML feed for
+      Regmarkets. For domain and security warnings, I contacted Yandex support
+      and proposed next steps. Regmarkets moderation was still pending at
+      handoff, and removal of the restrictions was not confirmed. Purchases or
+      affiliate revenue are not claimed.

@@ -6315,3 +6315,41 @@ projects:
       - label: Read case study
         url: /showcase/fisher-fish-catalog-import/en/
         type: product
+  - slug: glamur-dog-product-import
+    name: "Glamur Dog: bulk product and image import"
+    description: Ran and repeated product and image imports and addressed
+      incomplete-data feedback; the client accepted the work.
+    year: "07.2018"
+    role: Web development
+    stack:
+      - WooCommerce
+      - Product import
+      - Images
+    order: 348
+    featured: false
+    theme: emerald
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/glamur-dog-product-import/en/
+        type: product
+  - slug: fashion-affiliate-storefront-launch
+    name: "Fashion affiliate storefront: WordPress and product feeds"
+    description: Prepared the storefront, moved it to another host after import
+      limits, refined the design and created a YML feed; the client accepted the
+      stage.
+    year: "06.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - Affiliate feeds
+      - YML
+    order: 349
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/fashion-affiliate-storefront-launch/en/
+        type: product

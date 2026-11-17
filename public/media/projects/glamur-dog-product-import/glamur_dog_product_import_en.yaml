@@ -1,0 +1,27 @@
+title: "Glamur Dog: bulk product and image import"
+tagline: Import a WooCommerce catalog so editors could continue working on
+  product listings.
+role: Web development
+year: "07.2018"
+stack:
+  - WooCommerce
+  - Product import
+  - Images
+blocks:
+  - type: text
+    title: Brief
+    body: Import a WooCommerce catalog so editors could continue working on product
+      listings.
+  - type: text
+    title: Work delivered
+    body: Ran and repeated product and image imports and addressed incomplete-data
+      feedback; the client accepted the work.
+  - type: text
+    title: Implementation and scope
+    body: The large image batch and renaming slowed processing. An intermediate log
+      showed 14,986 records, not a verified final count of successful imports.
+      When resource limits became an issue, the client increased the available
+      limits and disk space. After feedback about missing images and SKUs, I
+      continued processing and requested another check. The client accepted the
+      stage and praised the turnaround and responsiveness. There is no final
+      quantitative report establishing complete image or SKU coverage.

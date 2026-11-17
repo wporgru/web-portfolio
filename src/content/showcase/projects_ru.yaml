@@ -6374,3 +6374,40 @@ projects:
       - label: Читать кейс
         url: /showcase/fisher-fish-catalog-import/
         type: product
+  - slug: glamur-dog-product-import
+    name: "Glamur Dog: массовая загрузка товаров с изображениями"
+    description: Выполнил и повторял загрузку товаров и изображений, устранял
+      замечания по неполным данным; заказчик принял работу.
+    year: "07.2018"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - Product import
+      - Images
+    order: 348
+    featured: false
+    theme: emerald
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/glamur-dog-product-import/
+        type: product
+  - slug: fashion-affiliate-storefront-launch
+    name: "Партнёрская витрина одежды: WordPress и товарные фиды"
+    description: Подготовил витрину, перенёс её на другой хостинг после ограничений
+      импорта, доработал оформление и создал YML; заказчик принял этап.
+    year: "06.2018"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - Affiliate feeds
+      - YML
+    order: 349
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/fashion-affiliate-storefront-launch/
+        type: product
