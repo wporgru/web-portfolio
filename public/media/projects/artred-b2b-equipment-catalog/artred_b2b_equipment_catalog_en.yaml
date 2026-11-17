@@ -37,6 +37,25 @@ blocks:
     caption: "Desktop QA capture from August 28, 2026: 1440 × 1100 browser viewport.
       It does not verify form delivery or the current site."
   - type: text
+    title: Why equipment buyers need a consultation path
+    body: Choosing professional equipment calls for careful comparison and a discussion
+      before committing to an order. On the tested product page, consultation replaced
+      the standard purchase action; catalog specifications retained text labels alongside
+      icons. This keeps a route to the sales team close to the product information instead
+      of making visitors search separately for contact details.
+  - type: image
+    src: /media/projects/artred-b2b-equipment-catalog/homepage-20261117.webp
+    alt: Full-page capture of the ARTRED equipment website homepage
+    caption: Public homepage captured on November 17, 2026, at a 1440 px viewport width,
+      uncropped. It shows the current storefront, not proof of form delivery or of the
+      product pages as they appeared when the work was completed.
+  - type: text
+    title: When a similar approach is useful
+    body: This pattern suits B2B catalogs and suppliers of equipment that requires advice
+      before ordering. We can discuss which specifications belong in the listing, what
+      action a product page should offer and how to connect an enquiry with the chosen
+      model without rebuilding the entire store unnecessarily.
+  - type: text
     title: Another stage of this project
     links:
       - label: "Related work: preparing the site cutover"
