@@ -1,26 +1,31 @@
 title: AI-assisted upscaling for bridge railing images
-tagline: Prepared larger bridge railing images for a manufacturer’s website. The
-  client wanted clearer construction details, not just files with more pixels.
-year: "07.2023"
+tagline: Prepared larger bridge railing images for a manufacturer’s website. The client wanted
+  clearer construction details, not just files with more pixels.
+year: '07.2023'
 role: Web development and automation
 stack:
-  - AI-assisted image processing
-  - Upscaling
-  - Asset delivery
+- AI-assisted image processing
+- Upscaling
+- Asset delivery
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: Prepared larger bridge railing images for a manufacturer’s website. The
-      client wanted clearer construction details, not just files with more
-      pixels.
-  - type: text
-    title: How it works
-    body: Delivered a ZIP of enlarged images for review on the website. After the
-      client asked about definition, prepared a separate set using fourfold AI
-      upscaling so the two outputs could be compared without replacing the first
-      batch.
-  - type: text
-    title: Result and verification
-    body: The client accepted the work after the second batch was delivered. The
-      upscaled images were intended for display, not for recovering exact
-      dimensions or engineering drawings.
+- type: text
+  title: The industrial catalog task
+  body: The manufacturer needed larger images of pedestrian bridge railings from a section of
+    its website. The aim was to display the structure at a size where visitors could inspect its
+    elements.
+- type: text
+  title: Two versions for review
+  body: I first prepared a ZIP of enlarged images; the client found their appearance on the site
+    acceptable. After a further question about detail clarity, I delivered a second archive with
+    fourfold AI-assisted upscaling and invited a comparison with the first version.
+- type: text
+  title: Result and limitations
+  body: The client accepted the order after the second delivery. The surviving record supports
+    the delivery of the archives and the stated upscaling method, not an independent file-by-file
+    count or objective quality comparison. AI upscaling prepares images for display; it does not
+    replace accurate drawings or physical measurements.
+- type: text
+  title: When this approach can help
+  body: 'A similar workflow can prepare small source images for a catalog: agree on size and intended
+    use first, then review sharpness, artifacts and fidelity to the actual product. This order
+    concerned images, not development of the manufacturer’s entire website.'

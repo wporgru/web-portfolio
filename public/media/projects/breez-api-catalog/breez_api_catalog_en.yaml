@@ -1,30 +1,36 @@
 title: Importing 2,744 Breez products via API into WooCommerce
-tagline: The store needed to import the Breez assortment and give the owner a
-  practical way to refresh it after the initial load. Routine product updates
-  needed to stay separate from rebuilding the category structure.
-year: "09.2025"
+tagline: The store needed to import the Breez assortment and give the owner a practical way to
+  refresh it after the initial load. Routine product updates needed to stay separate from rebuilding
+  the category structure.
+year: '09.2025'
 role: Web development and automation
 stack:
-  - WooCommerce
-  - REST API
-  - Cron
-  - CyrLitera
+- WooCommerce
+- REST API
+- Cron
+- CyrLitera
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: The store needed to import the Breez assortment and give the owner a
-      practical way to refresh it after the initial load. Routine product
-      updates needed to stay separate from rebuilding the category structure.
-  - type: text
-    title: How it works
-    body: Configured the API import and separated the one-time category load from
-      product updates. Replaced Rustolat with CyrLitera because the former did
-      not transliterate URLs during import, and aligned product thumbnails.
-      Documented the manual update flow and why the page should remain open
-      until completion, then supplied two cron commands with instructions.
-  - type: text
-    title: Result and verification
-    body: The delivery report records 2,744 imported products. The client received a
-      manual refresh workflow and commands for automation. Installation and
-      successful execution of the server schedule were not independently
-      confirmed.
+- type: text
+  title: Brief and data source
+  body: An existing climate-equipment store needed the Breez range imported through the official
+    API and a usable process for later updates. After clarification, the scope was the supplier’s
+    full available range rather than only household air conditioners and ventilators; marketplace
+    scraping was not selected.
+- type: text
+  title: Products and catalog structure
+  body: I configured the product import with images and separated category loading into a one-time
+    process. This kept category rebuilding separate from routine product refreshes. I also aligned
+    catalog thumbnails and provided a shortcode for displaying brands.
+- type: text
+  title: URLs and owner handover
+  body: The previous transliteration tool left product URLs in Cyrillic during import, so I replaced
+    Rustolat with CyrLitera. I demonstrated a manual refresh and explained that the page must
+    remain open until it finishes. I supplied two cron commands and instructions for possible
+    automation without publishing access keys.
+- type: text
+  title: Result and verification boundaries
+  body: The handover report records 2,744 imported products; the client accepted the work and
+    reported that the product section opened and products appeared in the sitemap. These are historical
+    observations, not a current independent count or proof of indexing. Installation and successful
+    server execution of the cron schedule were not separately confirmed; another supplier was
+    a separate stage.
