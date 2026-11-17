@@ -653,6 +653,11 @@ projects:
       - label: Read case study
         url: /showcase/blog-rebuild-astra/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/blog-rebuild-astra/later-homepage.webp
+        alt: Public Eurosantehnik blog homepage
+        featured: true
   - slug: checkout-tax-breakdown
     name: Separating product and shipping VAT in WooCommerce
     year: "01.2026"
@@ -2997,6 +3002,11 @@ projects:
       - label: Read case study
         url: /showcase/hanyi-facade-panel-catalog/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/hanyi-facade-panel-catalog/later-homepage.webp
+        alt: Public SilBet Trade catalog homepage
+        featured: true
   - slug: yandex-crawl-parameter-cleanup
     name: Cleaning up redundant URLs in Yandex Webmaster
     year: "04.2024"

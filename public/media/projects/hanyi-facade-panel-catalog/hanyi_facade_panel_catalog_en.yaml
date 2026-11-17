@@ -22,3 +22,10 @@ blocks:
     title: Result and verification
     body: The client accepted the work. This was catalog preparation from multiple
       inputs, not automated price synchronization or a new website build.
+  - type: image
+    title: Public site view
+    src: /media/projects/hanyi-facade-panel-catalog/later-homepage.webp
+    alt: Public SilBet Trade catalog homepage
+    caption: Public version from October 25, 2026, uncropped. The cookie notice
+      covers some products; the screenshot does not verify the historical panel
+      assortment.

@@ -24,3 +24,9 @@ blocks:
     body: The handoff records 636 transferred articles with images. The client
       confirmed the launch and SSL. Bulk repairs to old images and redirects
       were a separate engagement; ad revenue was not measured.
+  - type: image
+    title: Public site view
+    src: /media/projects/blog-rebuild-astra/later-homepage.webp
+    alt: Public Eurosantehnik blog homepage
+    caption: Public version from November 4, 2026, uncropped. This later view does
+      not verify every article at migration handoff.

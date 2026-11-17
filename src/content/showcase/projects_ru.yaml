@@ -656,6 +656,11 @@ projects:
       - label: Читать кейс
         url: /showcase/blog-rebuild-astra/
         type: product
+    media:
+      - type: image
+        src: /media/projects/blog-rebuild-astra/later-homepage.webp
+        alt: Публичная главная блога «Евросантехник»
+        featured: true
   - slug: checkout-tax-breakdown
     name: Разные ставки НДС для товаров и доставки WooCommerce
     year: "01.2026"
@@ -3032,6 +3037,11 @@ projects:
       - label: Читать кейс
         url: /showcase/hanyi-facade-panel-catalog/
         type: product
+    media:
+      - type: image
+        src: /media/projects/hanyi-facade-panel-catalog/later-homepage.webp
+        alt: Публичная главная каталога «СилБет-Трейд»
+        featured: true
   - slug: yandex-crawl-parameter-cleanup
     name: Устранение лишних URL в Яндекс Вебмастере
     year: "04.2024"
