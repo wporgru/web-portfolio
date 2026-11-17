@@ -1,24 +1,34 @@
 title: Electrical equipment scraping and catalog restructuring
-tagline: Migrate supplier products with inconsistent specifications and
-  identifiers, then organize them into the store’s sales categories.
-year: "02.2026"
+tagline: Migrate supplier products with inconsistent specifications and identifiers, then organize
+  them into the store’s sales categories.
+year: '02.2026'
 role: Web development and automation
 stack:
-  - WooCommerce
-  - Web scraping
-  - Data import
+- WooCommerce
+- Web scraping
+- Data import
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: Migrate supplier products with inconsistent specifications and
-      identifiers, then organize them into the store’s sales categories.
-  - type: text
-    title: How it works
-    body: Delivered the export, agreed SKU rules and resumed the import after server
-      errors. Organized categories under 11 main sections, configured category
-      image selection and fixed a reported mobile issue.
-  - type: text
-    title: Result and verification
-    body: The report records 768 categories, and the client separately confirmed the
-      mobile fix. The technical availability status was not presented as live 1C
-      stock.
+- type: text
+  title: Supplier data and catalog structure
+  body: The assignment was to continue scraping and importing an electrical-equipment catalog
+    with inconsistent supplier specifications and SKUs, then organize categories according to
+    the store’s agreed commercial structure. Future 1C matching also had to be considered when
+    handling identifiers.
+- type: text
+  title: Data and repeated imports
+  body: I delivered the extracted data and agreed to generate temporary SKUs on the site, with
+    the client’s manager later replacing them with the client’s own identifiers for 1C matching.
+    Server errors extended the import over several days; work on attributes and categories continued
+    after the product load was reported complete.
+- type: text
+  title: Categories and storefront
+  body: I organized categories into the 11 principal sections specified by the client; the historical
+    report records 768 categories. I configured selection of the first product image for a category.
+    With agreement, secondary categories were temporarily moved to a miscellaneous section; a
+    reported mobile issue was corrected and separately confirmed by the client.
+- type: text
+  title: Accepted work and remaining scope
+  body: The client accepted the order. The temporary technical stock status was used before actual
+    1C linkage and does not establish real warehouse availability. Complete 1C mapping, the final
+    published-product count and processing of every image were not established by this stage;
+    768 is a historical reported category count, not a fresh audit.

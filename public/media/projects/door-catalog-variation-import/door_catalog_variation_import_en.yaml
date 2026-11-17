@@ -1,27 +1,31 @@
 title: Importing a door catalog with color and size options
-tagline: Moved door categories and products into WooCommerce so shoppers could
-  choose a model’s finish without hunting through duplicate listings.
-year: "12.2023"
+tagline: Moved door categories and products into WooCommerce so shoppers could choose a model’s
+  finish without hunting through duplicate listings.
+year: '12.2023'
 role: Web development and automation
 stack:
-  - WooCommerce
-  - YML
-  - Product variations
-  - Taxonomy
+- WooCommerce
+- YML
+- Product variations
+- Taxonomy
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: Moved door categories and products into WooCommerce so shoppers could
-      choose a model’s finish without hunting through duplicate listings.
-  - type: text
-    title: How it works
-    body: After the first import, checked color selection and got approval for a
-      grouped sample. Reran the import with revised image handling after size
-      photos were flagged. Investigated missing specifications and agreed to
-      restore them on the next pass. For arches and portals, displayed
-      variations as individual listings.
-  - type: text
-    title: Result and verification
-    body: The client accepted the work. The source contained 3,320 variations
-      according to the project record, not 3,320 parent listings or
-      independently verified live products.
+- type: text
+  title: A catalog with product variants
+  body: The client wanted selected supplier doors, arches and portals imported into WooCommerce,
+    retaining choices such as color, size and opening direction within models. The entire supplier
+    range was not required; feed formats and product attributes also needed attention.
+- type: text
+  title: Grouping and a test product
+  body: I imported categories and subcategories and started the product load. After the first
+    import, we checked color selection and agreed on a grouped test product so variants of a model
+    could be found together.
+- type: text
+  title: Images and specifications
+  body: After feedback about size-related images, I reran the import with different image handling.
+    I investigated missing attributes and agreed their return in a subsequent pass. For arches
+    and portals, I separately enabled display of variations as individual listings.
+- type: text
+  title: Result and boundaries
+  body: The order was accepted. The correspondence mentions 3,320 source variations; this is not
+    a count of parent products or an independent count of all published listings. The historical
+    result does not establish the catalog’s exact current contents.

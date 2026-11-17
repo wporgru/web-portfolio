@@ -1,27 +1,31 @@
 title: Importing products from 1C-Bitrix into WooCommerce staging
-tagline: A catalog migration must not expose products hidden in the source
-  system. The client supplied a CSV and a separate staging WordPress
-  installation for review.
-year: "05.2025"
+tagline: A catalog migration must not expose products hidden in the source system. The client
+  supplied a CSV and a separate staging WordPress installation for review.
+year: '05.2025'
 role: Web development and automation
 stack:
-  - 1C-Bitrix
-  - WooCommerce
-  - CSV
+- 1C-Bitrix
+- WooCommerce
+- CSV
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: A catalog migration must not expose products hidden in the source system.
-      The client supplied a CSV and a separate staging WordPress installation
-      for review.
-  - type: text
-    title: How it works
-    body: "Reviewed the fields in the roughly 13 MB export and imported products
-      after staging was ready. Mapped activity flags so N became draft and Y
-      became published. Explained why draft status does not mean zero stock:
-      visibility and inventory are separate rules."
-  - type: text
-    title: Result and verification
-    body: The client received the staging link and accepted the import. This was a
-      staging data transfer, not a production cutover, URL migration or redirect
-      setup.
+- type: text
+  title: The starting brief
+  body: The client supplied a 1C-Bitrix catalog CSV and a test WordPress/WooCommerce environment.
+    Products needed to be imported for review without automatically publishing items disabled
+    in the source. Site design and the primary domain cutover remained with the client.
+- type: text
+  title: Preparation and import
+  body: I clarified the fields in the approximately 13 MB export, waited for the test site to
+    be ready, imported the products and supplied a review link. The source Activity field was
+    mapped so N became draft and Y became published.
+- type: text
+  title: Why the distinction matters
+  body: A draft controls whether a product page is published; it does not by itself mean zero
+    stock. I explained the distinction so visibility would not be confused with inventory and
+    disabled source products would not automatically appear on the storefront.
+- type: text
+  title: Result and boundaries
+  body: The client accepted the work and left a positive review. This was an import into a prepared
+    staging environment, not a complete site migration. Product counts and field completeness
+    were not independently recounted, and URL-by-URL mapping and redirects were not verified.
+    Search traffic impact was not measured.
