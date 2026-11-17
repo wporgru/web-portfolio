@@ -1,30 +1,36 @@
 title: Restoring order items in WooCommerce admin emails
-tagline: Restored order details in the admin notification so the store manager
-  could see what the customer had purchased.
-year: "01.2024"
+tagline: Restored order details in the admin notification so the store manager could see what
+  the customer had purchased.
+year: '01.2024'
 role: Web development and automation
 stack:
-  - WooCommerce
-  - Transactional email
-  - Order management
+- WooCommerce
+- Transactional email
+- Order management
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: Restored order details in the admin notification so the store manager
-      could see what the customer had purchased.
-  - type: text
-    title: How it works
-    body: Demonstrated the revised notification and asked the client to check the
-      admin inbox. When another message was reported missing details, used a
-      separate test recipient on a new order and showed the complete email. This
-      distinguished the verified notification from other messages sent by the
-      store.
-  - type: text
-    title: Result and verification
-    body: The client accepted the work. SMTP setup and verification of every email
-      type were outside this stage.
-  - type: text
-    title: Another stage of this project
-    links:
-      - label: "Next stage: restoring native order statuses"
-        url: /showcase/woocommerce-native-order-statuses/en/
+- type: text
+  title: The store’s problem
+  body: An administrative order email did not show staff the product names, quantities and prices.
+    Without the order contents, employees needed an additional way to find out what the customer
+    had bought.
+- type: text
+  title: Change and verification
+  body: I restored the details in the notification, showed the result and asked the client to
+    check the administrator inbox. When another email was reported without details, I ran an
+    additional check on a new order using a separate test recipient and showed the complete
+    message.
+- type: text
+  title: Result and limitations
+  body: The client accepted the work and left positive feedback. The check applies to the specific
+    administrator notification and test order; a full matrix of email types, payment methods
+    and statuses was not established. SMTP setup and store migration were outside this order.
+- type: text
+  title: When this diagnosis is useful
+  body: If notifications arrive without line items or messages disagree, identify the email
+    type, recipient and order scenario first, then repeat the check with a new test order rather
+    than assuming one successful message proves the entire system.
+- type: text
+  title: Another stage of this project
+  links:
+  - label: 'Next stage: restoring native order statuses'
+    url: /showcase/woocommerce-native-order-statuses/en/

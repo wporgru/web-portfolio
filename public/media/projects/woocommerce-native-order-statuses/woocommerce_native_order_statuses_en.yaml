@@ -1,28 +1,34 @@
 title: Restoring native WooCommerce order statuses
-tagline: Simplified order handling for managers by restoring native statuses and
-  separating order state from payment confirmation.
-year: "01.2024"
+tagline: Simplified order handling for managers by restoring native statuses and separating
+  order state from payment confirmation.
+year: '01.2024'
 role: Web development and automation
 stack:
-  - WooCommerce
-  - Order management
-  - Payment workflows
+- WooCommerce
+- Order management
+- Payment workflows
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: Simplified order handling for managers by restoring native statuses and
-      separating order state from payment confirmation.
-  - type: text
-    title: How it works
-    body: "Removed the extra status manager with client approval. Reviewed pickup,
-      bank transfer and online payment separately: the same order label does not
-      establish that funds were received in every workflow."
-  - type: text
-    title: Result and verification
-    body: The client accepted the work. Bank reconciliation, QR invoices and a new
-      payment provider were outside the scope.
-  - type: text
-    title: Another stage of this project
-    links:
-      - label: "Previous stage: order items in admin emails"
-        url: /showcase/woocommerce-admin-email-items/en/
+- type: text
+  title: The order-processing problem
+  body: The auto-parts store needed staff to distinguish a placed order from money actually
+    received. An additional status manager made the workflow harder to follow, while different
+    payment methods required separate explanations.
+- type: text
+  title: What I did
+  body: With the client’s agreement, I removed the additional status manager and restored the
+    standard WooCommerce status workflow. I showed the change notification and explained pickup,
+    bank transfer and online-payment scenarios in the store’s configuration.
+- type: text
+  title: Why this helps
+  body: 'A familiar set of states is easier to use when the team also agrees who confirms receipt
+    of payment and how. No single status is universal proof of payment: its meaning depends
+    on the configuration and payment integration.'
+- type: text
+  title: Result and boundaries
+  body: The client accepted the work and reviewed the repeat engagement. Automated bank reconciliation,
+    QR invoices and a new acquiring integration were not part of the confirmed scope.
+- type: text
+  title: Another stage of this project
+  links:
+  - label: 'Previous stage: order items in admin emails'
+    url: /showcase/woocommerce-admin-email-items/en/

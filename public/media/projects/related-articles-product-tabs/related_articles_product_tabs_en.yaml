@@ -1,23 +1,30 @@
 title: Related articles in WooCommerce product tabs
-tagline: Added a way to show useful editorial content directly on product pages
-  while keeping article selection specific to each item.
-year: "12.2023"
+tagline: Added a way to show useful editorial content directly on product pages while keeping
+  article selection specific to each item.
+year: '12.2023'
 role: Web development and automation
 stack:
-  - WooCommerce
-  - Shortcodes
-  - Editorial workflow
+- WooCommerce
+- Shortcodes
+- Editorial workflow
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: Added a way to show useful editorial content directly on product pages
-      while keeping article selection specific to each item.
-  - type: text
-    title: How it works
-    body: Configured a shortcode-based display in product tabs. Provided annotated
-      examples and a setup video and explained spacing so the embedded block
-      would remain distinct from the text.
-  - type: text
-    title: Result and verification
-    body: The client accepted the result. Automatic article assignment across the
-      entire catalog was outside this stage.
+- type: text
+  title: The product-page task
+  body: The client for Voblachke wanted useful articles alongside products, using another site
+    as a reference. Selection by tags or categories was discussed, but the solution needed to
+    preserve an individual editorial choice for each product.
+- type: text
+  title: A product-tab solution
+  body: I prepared a way to display related articles with a shortcode in a WooCommerce product
+    tab. Materials could be selected for each item instead of replacing editorial choices with
+    a catalog-wide automatic assignment.
+- type: text
+  title: Handover to the owner
+  body: I provided illustrations and a video walkthrough, and explained how to add spacing before
+    the insertion so the block would remain distinct from adjacent text. The client accepted
+    the work and praised the quick turnaround.
+- type: text
+  title: Scope of the result
+  body: The confirmed result is an individual display method and usage guidance. Automatic assignment
+    across the catalog, a separate account portal and other discussed work were not included
+    in this stage.
