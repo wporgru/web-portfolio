@@ -491,6 +491,11 @@ projects:
       - label: Read case study
         url: /showcase/goodwin-php/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/goodwin-php/later-site.webp
+        alt: Public Goodwin Shop homepage
+        featured: true
   - slug: two-catalog-import
     name: Migrating 205 products from two sources
     year: "02.2026"
@@ -6164,9 +6169,9 @@ projects:
         type: product
   - slug: potoc-heater-selection-prototype
     name: "POTOK factory: heater catalog and model selector"
-    description: "Built an interactive industrial storefront prototype: 25 listings, fuel and
-      voltage filters, part-number and cross-reference search, guided model selection and a
-      prefilled enquiry."
+    description: "Built an interactive industrial storefront prototype: 25 listings,
+      fuel and voltage filters, part-number and cross-reference search, guided
+      model selection and a prefilled enquiry."
     year: "11.2026"
     role: Prototyping and frontend development
     stack:
@@ -6181,8 +6186,8 @@ projects:
     media:
       - type: image
         src: /media/projects/potoc-heater-selection-prototype/prototype-full.webp
-        alt: Full-page POTOK prototype showing the heater range, engineering diagram, catalog,
-          selector and enquiry
+        alt: Full-page POTOK prototype showing the heater range, engineering diagram,
+          catalog, selector and enquiry
         featured: true
     links:
       - label: Read case study
@@ -6190,9 +6195,9 @@ projects:
         type: product
   - slug: sport-affiliate-broken-link-audit
     name: "Sport-man: broken affiliate link investigation"
-    description: Two discontinued campaigns still appeared in Admitad. Audited WooCommerce
-      records, import settings and 324 files without changing the storefront, distinguishing
-      failed clicks from an unproven source.
+    description: Two discontinued campaigns still appeared in Admitad. Audited
+      WooCommerce records, import settings and 324 files without changing the
+      storefront, distinguishing failed clicks from an unproven source.
     year: "10.2026"
     role: Technical auditing and analytics
     stack:

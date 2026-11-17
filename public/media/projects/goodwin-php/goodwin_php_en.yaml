@@ -10,17 +10,33 @@ stack:
   - WooCommerce
 blocks:
   - type: text
-    title: Brief and constraints
-    body: A previous PHP upgrade took the store offline and had to be rolled back.
-      The goal was to upgrade the runtime without leaving the storefront
-      inaccessible.
+    title: Starting point
+    body: "The client reported that the store ran on PHP 7.4.33. A previous switch
+      to PHP 8.3 had brought the site down and required a rollback. The job was
+      not just to change a setting: the store needed a separate post-switch
+      check."
   - type: text
-    title: How it works
-    body: Restored working hosting access, upgraded to PHP 8.3 and handed the site
-      back for review. Rather than assuming compatibility with every release, I
-      discussed a separate PHP 8.5 check.
+    title: Access and upgrade
+    body: I checked the supplied hosting credentials, requested corrected access to
+      the hosting panel, then performed the switch. The client reported seeing
+      PHP 8.3 and confirmed that the site worked. Moving to another host was not
+      part of this stage.
   - type: text
-    title: Result and verification
-    body: The client confirmed the runtime change and that the site was working,
-      then accepted delivery. Hosting migration, a final switch to 8.5 and
-      testing every purchase flow were outside the verified result.
+    title: Verified result and remaining checks
+    body: The client accepted the work and reported that the site was working. The
+      saved conversation does not describe a specific compatibility patch.
+      Updates to every plugin, backup verification, checkout and payment testing
+      are not claimed as completed. PHP 8.5 was discussed as a separate test;
+      its final activation was not confirmed.
+  - type: text
+    title: Planning your own store update
+    body: Send the current PHP and WordPress versions, store URL and the error from
+      the earlier switch. No credentials are needed for an initial estimate.
+      Agree separately on backup, staging, a change window and tests for cart,
+      payment and notifications.
+  - type: image
+    src: /media/projects/goodwin-php/later-site.webp
+    title: Archived storefront view
+    alt: Full-page capture of the Goodwin Shop storefront
+    caption: Public homepage captured October 30, 2026, uncropped. The image does
+      not establish the PHP version or payment functionality.
