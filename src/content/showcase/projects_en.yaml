@@ -6278,3 +6278,22 @@ projects:
       - label: Read case study
         url: /showcase/paseka-rodina-wordpress/en/
         type: product
+  - slug: fish-spa-wordpress-site
+    name: "Fish Spa: service website and owner handover"
+    description: Prepared and revised the design based on feedback, installed a
+      testimonials plugin and handed over illustrated instructions; the client
+      accepted the work.
+    year: "02.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - Responsive design
+      - Client handover
+    order: 346
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/fish-spa-wordpress-site/en/
+        type: product

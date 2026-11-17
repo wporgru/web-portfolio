@@ -1,0 +1,29 @@
+title: "Fish Spa: service website and owner handover"
+tagline: Build a WordPress service website for Fish Spa using an agreed
+  reference and help the owner maintain the content.
+role: Web development
+year: "02.2018"
+stack:
+  - WordPress
+  - Responsive design
+  - Client handover
+blocks:
+  - type: text
+    title: Brief
+    body: Build a WordPress service website for Fish Spa using an agreed reference
+      and help the owner maintain the content.
+  - type: text
+    title: Work delivered
+    body: Prepared and revised the design based on feedback, installed a
+      testimonials plugin and handed over illustrated instructions; the client
+      accepted the work.
+  - type: text
+    title: Implementation and scope
+    body: The first version used temporary material because copy and pricing were
+      incomplete. After feedback I revised the design, reported smartphone and
+      tablet adaptations, agreed on the remaining content and installed Easy
+      Testimonials. I handed over illustrated instructions covering video and
+      the mobile screen. The client was satisfied and accepted the stage.
+      Translation of every button, completion of all inner pages and working
+      video on every device are not established. The staging subdomain is not
+      presented as the final project domain.

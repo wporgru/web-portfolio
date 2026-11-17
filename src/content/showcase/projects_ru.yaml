@@ -6338,3 +6338,21 @@ projects:
       - label: Читать кейс
         url: /showcase/paseka-rodina-wordpress/
         type: product
+  - slug: fish-spa-wordpress-site
+    name: "Fish Spa: сайт услуг и инструкция владельцу"
+    description: Подготовил и переработал дизайн по обратной связи, установил модуль
+      отзывов и передал иллюстрированную инструкцию; заказчик принял работу.
+    year: "02.2018"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - Responsive design
+      - Client handover
+    order: 346
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/fish-spa-wordpress-site/
+        type: product
