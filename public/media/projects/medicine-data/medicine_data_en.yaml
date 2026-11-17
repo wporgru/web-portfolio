@@ -1,7 +1,7 @@
 title: Medical reference data and normalization in Directus
-tagline: One medicine may appear under different labels in registries and
-  catalogs. The data model needs to distinguish active ingredients, registered
-  products and retail packs.
+tagline: One medicine may appear under different labels in registries and catalogs. The
+  data model needs to distinguish active ingredients, registered products and retail
+  packs.
 year: "2026"
 role: Web development and automation
 stack:
@@ -11,18 +11,38 @@ stack:
   - ETL
 blocks:
   - type: text
-    title: Brief and constraints
-    body: One medicine may appear under different labels in registries and catalogs.
-      The data model needs to distinguish active ingredients, registered
-      products and retail packs.
+    title: Why the records need separate layers
+    body: The same medicine may appear under different names in registration data, catalogs
+      and price feeds. A product name alone does not establish an identical active
+      ingredient, registration, dosage and retail pack. The task was to prepare a model
+      where these levels can be stored and checked separately.
   - type: text
-    title: How it works
-    body: Designed data layers and relationships, prepared reference imports and
-      implemented matching checks. Separated ingredient, ATC, medicine and SKU
-      records, with room for per-field provenance and separate review of
-      ambiguous matches.
+    title: Data model and provenance
+    body: I prepared a Directus schema and relationships for reference data, ATC, registered
+      medicines and product variants. The structure avoids overwriting ingredient-level
+      information with pack-level details and leaves room to record the source of a field.
+      The schema snapshot is stored separately so it can be applied and inspected
+      independently of the imported content.
   - type: text
-    title: Result and verification
-    body: The workspace contains a Directus schema, import scripts and checks. This
-      is data infrastructure and validation work, not a launched medical service
-      or complete OCR coverage of leaflets.
+    title: Investigating matches
+    body: "Python investigation scripts parse active-ingredient strings, including
+      combinations, and compare components with a reference list; another compares product
+      records with a registry by registration number and separately tracks barcode
+      availability. Unmatched examples are surfaced for review. A registration-number
+      match alone does not establish identical dosage or packaging: the variant still
+      requires verification before merging."
+  - type: text
+    title: What exists and what remains
+    body: The workspace contains a Directus schema snapshot for SQLite, import scripts and
+      exploratory normalization checks. This is infrastructure for further integration,
+      not evidence of a launched medical service, complete OCR of instructions or correct
+      matches across every record. Bulk storefront updates require separate source rules,
+      ambiguity handling and sample-based verification.
+  - type: text
+    title: Discuss a data problem
+    body: If several sources describe the same item differently, send sanitized sample
+      records, available identifiers and the expected output. First agree on the matching
+      unit and exceptions, then build a verifiable pilot without bulk overwrites.
+    links:
+      - label: Data and workflow automation
+        url: /services/data-and-ai/en/
