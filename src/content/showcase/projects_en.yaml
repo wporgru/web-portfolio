@@ -6426,3 +6426,39 @@ projects:
       - label: Read case study
         url: /showcase/evko-sober-furniture-store/en/
         type: product
+  - slug: dvoretskiy-construction-wordpress
+    name: "Dvoretskiy: construction website from a demo reference"
+    description: Configured the domain and revised project and service pages, the
+      form and footer; the client accepted the stage after review.
+    year: "01.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - Corporate website
+      - Responsive design
+    order: 354
+    featured: false
+    theme: emerald
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/dvoretskiy-construction-wordpress/en/
+        type: product
+  - slug: corporate-training-responsive-ui
+    name: "Corporate training site: header, team and enquiry form"
+    description: Enlarged contact details, corrected mobile spacing and form
+      overlap, added team captions and revised the enquiry section.
+    year: "03.2018"
+    role: Web development
+    stack:
+      - Responsive design
+      - Website UI
+      - Forms
+    order: 355
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/corporate-training-responsive-ui/en/
+        type: product

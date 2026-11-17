@@ -1,0 +1,28 @@
+title: "Dvoretskiy: construction website from a demo reference"
+tagline: Build a multipage WordPress website for a construction company using an
+  external demo as a visual reference.
+role: Web development
+year: "01.2018"
+stack:
+  - WordPress
+  - Corporate website
+  - Responsive design
+blocks:
+  - type: text
+    title: Brief
+    body: Build a multipage WordPress website for a construction company using an
+      external demo as a visual reference.
+  - type: text
+    title: Work delivered
+    body: Configured the domain and revised project and service pages, the form and
+      footer; the client accepted the stage after review.
+  - type: text
+    title: Implementation and scope
+    body: The client returned the first draft because parts of pages, the footer,
+      links and form were missing. I revised projects, services, imagery, footer
+      and form, and explained editing by rows, columns and widgets. I then
+      worked on external links, homepage news and responsive presentation; the
+      client confirmed an improved desktop slider and visible news. The stage
+      was accepted with positive feedback. A final mobile cropping request
+      remained unresolved and the client removed a nonworking project selector.
+      This was neither a Bitrix migration nor a claim of an exact copy.

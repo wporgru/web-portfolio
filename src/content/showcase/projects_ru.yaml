@@ -6484,3 +6484,39 @@ projects:
       - label: Читать кейс
         url: /showcase/evko-sober-furniture-store/
         type: product
+  - slug: dvoretskiy-construction-wordpress
+    name: "«Дворецкий»: строительный сайт по демо-референсу"
+    description: Настроил домен, доработал страницы проектов и услуг, форму и
+      подвал; заказчик принял этап после проверки.
+    year: "01.2018"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - Corporate website
+      - Responsive design
+    order: 354
+    featured: false
+    theme: emerald
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/dvoretskiy-construction-wordpress/
+        type: product
+  - slug: corporate-training-responsive-ui
+    name: "Сайт корпоративного обучения: шапка, команда и форма"
+    description: Увеличил контакты, поправил мобильные отступы и наложение формы,
+      добавил подписи команды и переработал блок заявки.
+    year: "03.2018"
+    role: Веб-разработка
+    stack:
+      - Responsive design
+      - Website UI
+      - Forms
+    order: 355
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/corporate-training-responsive-ui/
+        type: product

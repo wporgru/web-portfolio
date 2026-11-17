@@ -1,0 +1,28 @@
+title: "Corporate training site: header, team and enquiry form"
+tagline: "Improve an existing training-center site: contact details, navigation,
+  team section and enquiry form across screen widths."
+role: Web development
+year: "03.2018"
+stack:
+  - Responsive design
+  - Website UI
+  - Forms
+blocks:
+  - type: text
+    title: Brief
+    body: "Improve an existing training-center site: contact details, navigation,
+      team section and enquiry form across screen widths."
+  - type: text
+    title: Work delivered
+    body: Enlarged contact details, corrected mobile spacing and form overlap, added
+      team captions and revised the enquiry section.
+  - type: text
+    title: Implementation and scope
+    body: I adjusted header and footer spacing below 1280 px, made contact details
+      more prominent and added team captions. I shortened the form by removing
+      the subject field and corrected a mobile overlap with text. The first
+      illustration-background treatment failed, so I revised the enquiry
+      section; the client liked the final version. The order closed
+      automatically and later received positive feedback. All devices and actual
+      form delivery were not verified, and the domain is not established in the
+      saved materials.
