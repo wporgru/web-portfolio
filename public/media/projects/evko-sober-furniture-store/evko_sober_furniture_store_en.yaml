@@ -1,0 +1,29 @@
+title: "Evko Store: Sober furniture storefront setup"
+tagline: Configure an existing store using the chosen demo, align categories
+  across navigation and the homepage, and prepare the storefront for
+  owner-managed content.
+role: Web development
+year: "03.2018"
+stack:
+  - WordPress
+  - WooCommerce
+  - Sober theme
+blocks:
+  - type: text
+    title: Brief
+    body: Configure an existing store using the chosen demo, align categories across
+      navigation and the homepage, and prepare the storefront for owner-managed
+      content.
+  - type: text
+    title: Work delivered
+    body: Agreed on Sober 06 and five setup items, handed over the result and
+      received client acceptance and positive feedback.
+  - type: text
+    title: Implementation and scope
+    body: After the reference was clarified, the client selected Sober 06. The
+      agreed brief covered a dropdown with four groups, corresponding homepage
+      categories, separate bestseller and sale sections, and an additional
+      category slider. Section names could remain temporary because the client
+      planned to add the actual inventory. The result was handed over and
+      accepted. The conversation does not give a technical implementation report
+      for every section, so I do not claim custom code or a working carousel.

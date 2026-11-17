@@ -6390,3 +6390,39 @@ projects:
       - label: Read case study
         url: /showcase/crypt-media-widget-import/en/
         type: product
+  - slug: drivejet-woocommerce-homepage
+    name: "DriveJet: homepage and URLs for an existing store"
+    description: Configured a homepage product block, product URL structure and
+      price presentation; explained how future products would appear.
+    year: "07.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - Product URLs
+    order: 352
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/drivejet-woocommerce-homepage/en/
+        type: product
+  - slug: evko-sober-furniture-store
+    name: "Evko Store: Sober furniture storefront setup"
+    description: Agreed on Sober 06 and five setup items, handed over the result and
+      received client acceptance and positive feedback.
+    year: "03.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - Sober theme
+    order: 353
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/evko-sober-furniture-store/en/
+        type: product

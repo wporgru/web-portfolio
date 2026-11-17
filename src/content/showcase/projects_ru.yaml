@@ -6448,3 +6448,39 @@ projects:
       - label: Читать кейс
         url: /showcase/crypt-media-widget-import/
         type: product
+  - slug: drivejet-woocommerce-homepage
+    name: "DriveJet: главная и ссылки действующего магазина"
+    description: Настроил товарный блок главной, структуру ссылок и оформление цены;
+      объяснил, как будущие товары попадут в блок.
+    year: "07.2018"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - Product URLs
+    order: 352
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/drivejet-woocommerce-homepage/
+        type: product
+  - slug: evko-sober-furniture-store
+    name: "Evko Store: настройка мебельной витрины Sober"
+    description: Согласовал Sober 06 и пять пунктов настройки, передал результат на
+      проверку; заказчик принял этап и оставил положительный отзыв.
+    year: "03.2018"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - Sober theme
+    order: 353
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/evko-sober-furniture-store/
+        type: product

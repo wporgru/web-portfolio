@@ -1,0 +1,27 @@
+title: "DriveJet: homepage and URLs for an existing store"
+tagline: Improve an existing dual-control pedal store and display its product on
+  the homepage.
+role: Web development
+year: "07.2018"
+stack:
+  - WordPress
+  - WooCommerce
+  - Product URLs
+blocks:
+  - type: text
+    title: Brief
+    body: Improve an existing dual-control pedal store and display its product on
+      the homepage.
+  - type: text
+    title: Work delivered
+    body: Configured a homepage product block, product URL structure and price
+      presentation; explained how future products would appear.
+  - type: text
+    title: Implementation and scope
+    body: WooCommerce was already installed with one product. I adjusted product URL
+      structure and transliteration, refined price presentation and added a
+      product section to the homepage. I explained how products added by the
+      owner would appear there. After content was added, we discussed further
+      setup and preliminary content and metadata observations; the stage was
+      accepted. A store built from scratch, real payment processing and
+      resolution of every SEO issue are not established.
