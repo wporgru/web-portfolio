@@ -760,6 +760,11 @@ projects:
       - label: Читать кейс
         url: /showcase/dokan-marketplace-recovery/
         type: product
+    media:
+      - type: image
+        src: /media/projects/dokan-marketplace-recovery/later-homepage.webp
+        alt: Публичная витрина HotFood
+        featured: true
   - slug: metform-replacement
     name: Замена MetForm и проверка доставки заявок
     year: "05.2025"
@@ -776,6 +781,11 @@ projects:
       - label: Читать кейс
         url: /showcase/metform-replacement/
         type: product
+    media:
+      - type: image
+        src: /media/projects/metform-replacement/later-homepage.webp
+        alt: Публичная главная ARTRED с формой
+        featured: true
   - slug: wordpress-sheet-to-blog
     name: Перенос материалов из Google Таблиц в блог WordPress
     year: "03.2026"
@@ -1012,6 +1022,11 @@ projects:
       - label: Читать кейс
         url: /showcase/legacy-wordpress-lead-form/
         type: product
+    media:
+      - type: image
+        src: /media/projects/legacy-wordpress-lead-form/later-homepage.webp
+        alt: Публичная главная «Юнипулинг»
+        featured: true
   - slug: woodmart-marketplace-handoff
     name: Настройка WoodMart Marketplace под контент клиента
     year: "04.2025"
@@ -1954,6 +1969,11 @@ projects:
       - label: Читать кейс
         url: /showcase/cleaning-messenger-buttons/
         type: product
+    media:
+      - type: image
+        src: /media/projects/cleaning-messenger-buttons/later-homepage.webp
+        alt: Публичная главная клининговой компании
+        featured: true
   - slug: tub-store-guest-checkout
     name: Оптимизация магазина купелей и гостевого чекаута
     year: "11.2024"

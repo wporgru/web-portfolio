@@ -23,3 +23,9 @@ blocks:
     body: The report records restored product publishing and registration. The
       returns module was not presented as repaired; re-enabling it required a
       separate check of the updated component.
+  - type: image
+    title: Public site view
+    src: /media/projects/dokan-marketplace-recovery/later-homepage.webp
+    alt: Public HotFood storefront
+    caption: Public version from October 24, 2026, uncropped. The screenshot does
+      not verify the seller dashboard or registration; some images did not load.

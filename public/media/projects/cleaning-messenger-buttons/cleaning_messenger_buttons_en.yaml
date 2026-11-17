@@ -21,3 +21,9 @@ blocks:
     title: Result and verification
     body: The client accepted the work and confirmed it was working in a review. CRM
       integration, removal of other widgets and lead growth are not claimed.
+  - type: image
+    title: Public site view
+    src: /media/projects/cleaning-messenger-buttons/later-homepage.webp
+    alt: Public cleaning company homepage
+    caption: Desktop capture from November 4, 2026, uncropped. It does not verify
+      messenger links or mobile button position.

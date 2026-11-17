@@ -22,3 +22,9 @@ blocks:
     body: The client confirmed receipt of the test email and approved the visual
       changes. The work covered inquiry delivery and presentation, not legal
       review.
+  - type: image
+    title: Public site view
+    src: /media/projects/metform-replacement/later-homepage.webp
+    alt: Public ARTRED homepage with enquiry form
+    caption: Public version from October 25, 2026, uncropped. The screenshot does
+      not verify form submission or email delivery.

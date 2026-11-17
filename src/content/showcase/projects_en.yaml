@@ -756,6 +756,11 @@ projects:
       - label: Read case study
         url: /showcase/dokan-marketplace-recovery/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/dokan-marketplace-recovery/later-homepage.webp
+        alt: Public HotFood storefront
+        featured: true
   - slug: metform-replacement
     name: Replacing MetForm and verifying inquiry delivery
     year: "05.2025"
@@ -772,6 +777,11 @@ projects:
       - label: Read case study
         url: /showcase/metform-replacement/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/metform-replacement/later-homepage.webp
+        alt: Public ARTRED homepage with enquiry form
+        featured: true
   - slug: wordpress-sheet-to-blog
     name: Migrating Google Sheets content into a WordPress blog
     year: "03.2026"
@@ -1005,6 +1015,11 @@ projects:
       - label: Read case study
         url: /showcase/legacy-wordpress-lead-form/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/legacy-wordpress-lead-form/later-homepage.webp
+        alt: Public Unipooling homepage
+        featured: true
   - slug: woodmart-marketplace-handoff
     name: Preparing WoodMart Marketplace for client-managed content
     year: "04.2025"
@@ -1932,6 +1947,11 @@ projects:
       - label: Read case study
         url: /showcase/cleaning-messenger-buttons/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/cleaning-messenger-buttons/later-homepage.webp
+        alt: Public cleaning company homepage
+        featured: true
   - slug: tub-store-guest-checkout
     name: Performance work and guest checkout for a soaking tub store
     year: "11.2024"

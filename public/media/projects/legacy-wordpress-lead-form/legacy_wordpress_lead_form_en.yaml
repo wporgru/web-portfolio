@@ -26,3 +26,9 @@ blocks:
     body: The client confirmed the form and accepted the order. A complete
       multilingual restoration, WPBakery update and testing every submission
       channel were outside this stage.
+  - type: image
+    title: Public site view
+    src: /media/projects/legacy-wordpress-lead-form/later-homepage.webp
+    alt: Public Unipooling homepage
+    caption: Public version from October 24, 2026, uncropped. Later design
+      authorship and form delivery are not established by this image.
