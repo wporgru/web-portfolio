@@ -407,6 +407,11 @@ projects:
       - label: Читать кейс
         url: /showcase/sport-affiliate/
         type: product
+    media:
+      - type: image
+        src: /media/projects/sport-affiliate/homepage-20261117.webp
+        alt: Каталог Sport-man
+        featured: true
   - slug: wellland-facets
     name: "Wellland: глобальные атрибуты и фильтры каталога"
     year: "10.2026"

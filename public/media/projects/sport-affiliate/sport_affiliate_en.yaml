@@ -36,6 +36,12 @@ blocks:
       changes. Browser checks covered an affected product page and category, plus a
       control product from another merchant that retained its store button. Rollback
       consists of removing the separate rule file and clearing cache if needed.
+  - type: image
+    src: /media/projects/sport-affiliate/homepage-20261117.webp
+    title: Public Sport-man storefront
+    alt: Full-page Sport-man catalog screenshot
+    caption: Anonymous full-page capture on November 17, 2026, at 1440 px. The homepage does
+      not verify the paused offers or affiliate links.
   - type: text
     title: "A different scenario: a reported link could not be found on the site"
     links:

@@ -407,6 +407,11 @@ projects:
       - label: Read case study
         url: /showcase/sport-affiliate/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/sport-affiliate/homepage-20261117.webp
+        alt: Sport-man catalog
+        featured: true
   - slug: wellland-facets
     name: "Wellland: global attributes and product filters"
     year: "10.2026"
