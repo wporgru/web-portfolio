@@ -1,0 +1,31 @@
+title: "Crypt Media: page import with SEO metadata and widgets"
+tagline: Import cryptocurrency pages from a spreadsheet with agreed titles,
+  URLs, descriptions and widget codes.
+role: Web development
+year: "02.2018"
+stack:
+  - WordPress
+  - CSV
+  - SEO metadata
+  - Widget integration
+blocks:
+  - type: text
+    title: Brief
+    body: Import cryptocurrency pages from a spreadsheet with agreed titles, URLs,
+      descriptions and widget codes.
+  - type: text
+    title: Work delivered
+    body: Tested a batch of 100 pages, obtained client approval and imported the
+      prepared CSV.
+  - type: text
+    title: Implementation and scope
+    body: "The test batch exposed missing widgets because data-currency values did
+      not always match ticker symbols. Another member of the client’s team
+      prepared the correct widget codes, and the client supplied the
+      spreadsheet. I imported 100 test pages and checked initial examples; after
+      approval, I ran the full ready.csv import and supplied the Import Complete
+      confirmation. The client accepted the work. A remark about 750 records
+      halfway through is not a final audit: neither the exact completed count
+      nor every widget was independently verified. I do not claim authorship of
+      the source widget codes, accuracy of market prices or search traffic
+      growth."

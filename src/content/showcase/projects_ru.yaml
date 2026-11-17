@@ -6411,3 +6411,40 @@ projects:
       - label: Читать кейс
         url: /showcase/fashion-affiliate-storefront-launch/
         type: product
+  - slug: motoband-manual-catalog-import
+    name: "Motoband: импорт мототоваров с ручным обновлением"
+    description: Настроил импорт и ручной запуск обновления, согласовал перевод
+      исчезнувших позиций в черновики и передал инструкцию.
+    year: "07.2018"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - WP All Import
+      - Product feeds
+    order: 350
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/motoband-manual-catalog-import/
+        type: product
+  - slug: crypt-media-widget-import
+    name: "Crypt Media: импорт страниц с SEO и виджетами"
+    description: Проверил тестовую партию из 100 страниц, согласовал её с клиентом и
+      выполнил полный импорт подготовленного CSV.
+    year: "02.2018"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - CSV
+      - SEO metadata
+      - Widget integration
+    order: 351
+    featured: false
+    theme: emerald
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/crypt-media-widget-import/
+        type: product

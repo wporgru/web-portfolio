@@ -6353,3 +6353,40 @@ projects:
       - label: Read case study
         url: /showcase/fashion-affiliate-storefront-launch/en/
         type: product
+  - slug: motoband-manual-catalog-import
+    name: "Motoband: motorcycle catalog import and manual refresh"
+    description: Configured the import and manual refresh, agreed to move missing
+      listings to drafts and handed over instructions.
+    year: "07.2018"
+    role: Web development
+    stack:
+      - WooCommerce
+      - WP All Import
+      - Product feeds
+    order: 350
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/motoband-manual-catalog-import/en/
+        type: product
+  - slug: crypt-media-widget-import
+    name: "Crypt Media: page import with SEO metadata and widgets"
+    description: Tested a batch of 100 pages, obtained client approval and imported
+      the prepared CSV.
+    year: "02.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - CSV
+      - SEO metadata
+      - Widget integration
+    order: 351
+    featured: false
+    theme: emerald
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/crypt-media-widget-import/en/
+        type: product

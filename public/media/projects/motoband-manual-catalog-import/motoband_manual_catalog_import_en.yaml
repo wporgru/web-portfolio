@@ -1,0 +1,29 @@
+title: "Motoband: motorcycle catalog import and manual refresh"
+tagline: Import motorcycle products into WooCommerce and give the owner control
+  over price, availability and new-item refreshes.
+role: Web development
+year: "07.2018"
+stack:
+  - WooCommerce
+  - WP All Import
+  - Product feeds
+blocks:
+  - type: text
+    title: Brief
+    body: Import motorcycle products into WooCommerce and give the owner control
+      over price, availability and new-item refreshes.
+  - type: text
+    title: Work delivered
+    body: Configured the import and manual refresh, agreed to move missing listings
+      to drafts and handed over instructions.
+  - type: text
+    title: Implementation and scope
+    body: "I configured WP All Import, ran the import and showed the client a sample
+      product. After interrupted runs, I reported completion and agreed the
+      repeat-run rules: update prices and availability, add new items and move
+      missing ones to draft. The client chose a manual run roughly once a week,
+      without cron. I supplied the All Import → Manage Imports → Run Import
+      steps and advised waiting for Import Complete. The order was accepted. The
+      12,000 images discussed were a storage estimate, not a verified final
+      count; complete coverage and subsequent runs were not independently
+      verified."
