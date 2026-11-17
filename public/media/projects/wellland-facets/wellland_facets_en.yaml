@@ -1,7 +1,7 @@
 title: "Wellland: global attributes and product filters"
-tagline: Local attributes appeared on product pages but did not power native
-  filters. Migration had to preserve values, categories and visibility without
-  merging incompatible units.
+tagline: Local attributes appeared on product pages but did not power native filters.
+  Migration had to preserve values, categories and visibility without merging incompatible
+  units.
 year: "10.2026"
 role: Web development and automation
 stack:
@@ -10,18 +10,44 @@ stack:
   - Data migration
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Local attributes appeared on product pages but did not power native
-      filters. Migration had to preserve values, categories and visibility
-      without merging incompatible units.
+    title: Why visible specifications did not power filters
+    body: "Product pages displayed equipment specifications, but many were stored as
+      product-level text. Native WooCommerce filters rely on shared attributes: a
+      well-formatted specification table is not enough if a product is not linked to the
+      relevant term. Buyers could not reliably narrow the catalog by those values."
   - type: text
-    title: How it works
-    body: Reviewed 198 published products across 33 categories, migrated 192 to
-      global attributes and configured 18 filters. Added a compatibility layer
-      for existing templates. Clean and dirty water capacity and different
-      weight measures remain separate.
+    title: Migration without losing meaning or data
+    body: "I reviewed 198 published simple products across 33 categories: 192 required
+      migration and six already used global attributes. I converted 1,244 attribute
+      assignments into 1,343 value assignments, created 29 global attributes and reused
+      three. Clean and dirty water, cleaning throughput and airflow, and weight with and
+      without batteries stayed separate. Long equipment lists remained text, while missing
+      values did not become fictitious filter options."
   - type: text
-    title: Result and verification
-    body: Independently checked 1,583 facet counts and tested selection, reset and
-      combinations in the browser. Compared data with the backup and checked
-      320px and 390px mobile widths.
+    title: Storefront compatibility and backup
+    body: "I saved the original data and files before changes. A compatibility reader handles
+      local and global values so existing product cards, dynamic elements and catalog
+      templates continue to display specifications. The report records no differences
+      against the backup for names, descriptions, URLs, prices, images, SEO metadata or
+      original values. The existing XLSX import was not modified: its attribute mapping
+      requires a separate review before it is run again."
+  - type: image
+    src: /media/projects/wellland-facets/category-verification.webp
+    alt: Wellland catalog with product attribute filters
+    title: Catalog filters
+    caption: Full-page browser verification capture from October 28, 2026, showing category
+      filters and product cards. No order was submitted.
+  - type: text
+    title: Verification beyond a single product
+    body: I checked 33 category pages and independently reconciled 1,583 filter counts against
+      visible products, accounting for catalog exclusions. I configured 18 native widgets.
+      Browser tests covered selection and reset in nine categories and a 100 L tank plus
+      gel battery combination, which returned one product. I checked the order dialog
+      received the right product ID after filtering without submitting the form. No
+      horizontal overflow was observed at 320 and 390 px.
+  - type: text
+    title: Apply this to your catalog
+    body: If a filter returns no products despite visible specifications, send the category
+      URL, two SKUs and the filter value. I can trace where the attribute is stored, how
+      it enters through imports and what must be preserved when moving to shared
+      attributes.

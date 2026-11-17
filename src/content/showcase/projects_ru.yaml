@@ -424,6 +424,11 @@ projects:
       - label: Читать кейс
         url: /showcase/wellland-facets/
         type: product
+    media:
+      - type: image
+        src: /media/projects/wellland-facets/category-verification.webp
+        alt: Фильтры каталога Wellland
+        featured: true
   - slug: autopartner-import
     name: "Автопартнёр: пакет обновления каталога"
     year: "10.2026"

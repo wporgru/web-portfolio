@@ -424,6 +424,11 @@ projects:
       - label: Read case study
         url: /showcase/wellland-facets/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/wellland-facets/category-verification.webp
+        alt: Wellland catalog filters
+        featured: true
   - slug: autopartner-import
     name: "Autopartner: catalog update package"
     year: "10.2026"
