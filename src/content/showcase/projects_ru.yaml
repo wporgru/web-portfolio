@@ -2251,6 +2251,11 @@ projects:
       - label: Читать кейс
         url: /showcase/supplier-price-list-refresh/
         type: product
+    media:
+      - type: image
+        src: /media/projects/supplier-price-list-refresh/later-homepage.webp
+        alt: Публичный каталог рыболовного магазина Kaida
+        featured: true
   - slug: two-store-category-repricing
     name: Переоценка выбранных категорий двух магазинов
     year: "02.2024"
@@ -2304,6 +2309,11 @@ projects:
       - label: Читать кейс
         url: /showcase/gutenberg-store-migration/
         type: product
+    media:
+      - type: image
+        src: /media/projects/gutenberg-store-migration/later-homepage.webp
+        alt: Публичная главная магазина «Русский инструмент»
+        featured: true
   - slug: cdek-address-and-parcel
     name: Расчёт СДЭК и адресные подсказки в чекауте
     year: "04.2026"

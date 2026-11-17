@@ -24,3 +24,10 @@ blocks:
     body: The handoff recorded 1,013 published products and 144 drafts. The client
       accepted the stage; these figures describe the delivery, not current
       catalog totals.
+  - type: image
+    title: Public site view
+    src: /media/projects/supplier-price-list-refresh/later-homepage.webp
+    alt: Public catalog of the Kaida fishing store
+    caption: Public catalog captured November 4, 2026, uncropped. It does not
+      establish historical import prices or stock; one image load remained
+      incomplete.

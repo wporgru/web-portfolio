@@ -2224,6 +2224,11 @@ projects:
       - label: Read case study
         url: /showcase/supplier-price-list-refresh/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/supplier-price-list-refresh/later-homepage.webp
+        alt: Public catalog of the Kaida fishing store
+        featured: true
   - slug: two-store-category-repricing
     name: Repricing selected categories across two online stores
     year: "02.2024"
@@ -2276,6 +2281,11 @@ projects:
       - label: Read case study
         url: /showcase/gutenberg-store-migration/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/gutenberg-store-migration/later-homepage.webp
+        alt: Public Russkiy Instrument store homepage
+        featured: true
   - slug: cdek-address-and-parcel
     name: CDEK shipping quotes and address suggestions in checkout
     year: "04.2026"

@@ -29,3 +29,9 @@ blocks:
       the refreshed version to production and reported visually checking the
       storefront and pickup maps. The final field and plugin inventory was not
       preserved.
+  - type: image
+    title: Public site view
+    src: /media/projects/gutenberg-store-migration/later-homepage.webp
+    alt: Public Russkiy Instrument store homepage
+    caption: Public homepage captured November 2, 2026, uncropped. This later view
+      is not a checkout or pickup-point test.
