@@ -1,9 +1,8 @@
 title: "Apteka & Optika: Node.js price comparison storefront"
-tagline: "Built a standalone public storefront for a pharmacy catalog. Visitors
-  needed one place to compare offers, and search engines needed stable category
-  and product pages. This was more than displaying a feed: each product needed
-  to connect to variants and merchant offers without exposing unreviewed
-  records."
+tagline: "Built a standalone public storefront for a pharmacy catalog. Visitors needed one
+  place to compare offers, and search engines needed stable category and product pages.
+  This was more than displaying a feed: each product needed to connect to variants and
+  merchant offers without exposing unreviewed records."
 year: "2026"
 role: Web development and automation
 stack:
@@ -14,34 +13,44 @@ stack:
   - Technical SEO
 blocks:
   - type: text
-    title: Brief and constraints
-    body: "Built a standalone public storefront for a pharmacy catalog. Visitors
-      needed one place to compare offers, and search engines needed stable
-      category and product pages. This was more than displaying a feed: each
-      product needed to connect to variants and merchant offers without exposing
-      unreviewed records."
+    title: "The brief: compare offers instead of copying a price feed"
+    body: "Pharmacy feeds contain offers from different merchants, but a buyer needs a clear
+      product page with variants and prices together. Search discovery also benefits from
+      stable category and product URLs. Not every raw record is ready for publication:
+      unreviewed or unsuitable products should not simply appear from a feed."
   - type: text
-    title: How it works
-    body: Separated data preparation from public delivery. The Express storefront
-      reads SQLite in read-only mode and renders categories, search and product
-      pages server-side. Publication checks include review status, description
-      availability and prescription exclusions. A product page groups variants
-      and offers, and a separate route handles merchant click-outs. Added 301
-      redirects for legacy URLs and canonical URLs and a sitemap for the new
-      templates.
+    title: Separating data preparation from the public storefront
+    body: I built a server-rendered Node.js and Express storefront backed by SQLite opened
+      read-only. The homepage, categories, search and product pages are generated
+      server-side. This separates public presentation from data preparation and does not
+      require visitors to access the editorial system.
   - type: text
-    title: Result and verification
-    body: Verified the public homepage and the redirect from the old catalog path in
-      a browser. Included an uncropped screenshot of the live storefront. The
-      case documents the interface and data architecture, not price coverage,
-      medical accuracy or organic traffic growth.
+    title: Variants, offers and publication rules
+    body: A product page connects the master product to variants and merchant offers. The code
+      checks approval status, requires descriptive content and excludes items marked as
+      prescription-only. Variants are selected when they have offers, and offers are
+      ordered by availability and price. A separate route handles merchant click-outs.
+      These interface rules do not replace medical-data review or verification that each
+      offer matches the pack.
+  - type: text
+    title: SEO and legacy URLs
+    body: New page templates provide canonical URLs and a sitemap, while legacy paths have
+      redirect handling. I checked the public homepage and the old catalog path’s redirect
+      to the homepage in a browser. The full-page screenshot shows the storefront; it is
+      not a test of every redirect or of search rankings.
   - type: image
     src: /media/projects/apteka-optika-price-comparison/homepage-full.webp
     alt: Full-page screenshot of the Apteka & Optika storefront
-    caption: Uncropped browser capture of the current live homepage at 1440 px
-      width. This is not an archival launch screenshot.
+    caption: Uncropped browser capture of the current live homepage at 1440 px width. This is
+      not an archival launch screenshot.
   - type: text
     title: Live website
     links:
       - label: Open the project page
         url: https://apteka-optika.ru/
+  - type: text
+    title: Applying this to another project
+    body: This demonstrates server-side presentation and data organization, not complete
+      pharmacy price coverage or traffic growth. For a similar aggregator, send sanitized
+      source examples, variants of one product and the intended refresh workflow. Start by
+      agreeing matching rules and which records are eligible for publication.
