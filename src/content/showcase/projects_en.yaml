@@ -6462,3 +6462,39 @@ projects:
       - label: Read case study
         url: /showcase/corporate-training-responsive-ui/en/
         type: product
+  - slug: autoazart-wholesale-request
+    name: "Autoazart: wholesale enquiries instead of a cart"
+    description: Configured catalog and product actions, routed wholesale requests
+      to a form and hid the header cart; the client accepted the stage.
+    year: "02.2018"
+    role: Web development
+    stack:
+      - WooCommerce
+      - B2B enquiries
+      - Website UI
+    order: 356
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/autoazart-wholesale-request/en/
+        type: product
+  - slug: wisespace-optics-affiliate-import
+    name: "WiseSpace: affiliate optics catalog import"
+    description: Agreed on the client-supplied YML and affiliate code, ran the
+      import and reported 1,634 products; the client accepted the stage.
+    year: "02.2018"
+    role: Web development
+    stack:
+      - WordPress
+      - YML
+      - Affiliate catalog
+    order: 357
+    featured: false
+    theme: emerald
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/wisespace-optics-affiliate-import/en/
+        type: product

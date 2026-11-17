@@ -1,0 +1,27 @@
+title: "Autoazart: wholesale enquiries instead of a cart"
+tagline: Replace the standard cart on a store copy with separate wholesale
+  enquiry and main-site purchase actions.
+role: Web development
+year: "02.2018"
+stack:
+  - WooCommerce
+  - B2B enquiries
+  - Website UI
+blocks:
+  - type: text
+    title: Brief
+    body: Replace the standard cart on a store copy with separate wholesale enquiry
+      and main-site purchase actions.
+  - type: text
+    title: Work delivered
+    body: Configured catalog and product actions, routed wholesale requests to a
+      form and hid the header cart; the client accepted the stage.
+  - type: text
+    title: Implementation and scope
+    body: On the temporary copy, I configured site access and changed the listing
+      action to open product details. On the product page I removed the cart
+      purchase and separated wholesale enquiries via a form from purchases on
+      the main site. After clarification I hid the header cart and rounded the
+      buttons. The client confirmed and accepted the work. Actual email delivery
+      and every button state were not independently tested; the main site was a
+      destination link, not an established development target in this stage.

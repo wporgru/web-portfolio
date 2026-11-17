@@ -1,0 +1,28 @@
+title: "WiseSpace: affiliate optics catalog import"
+tagline: Choose a suitable product source and import a telescope and binocular
+  catalog into WordPress.
+role: Web development
+year: "02.2018"
+stack:
+  - WordPress
+  - YML
+  - Affiliate catalog
+blocks:
+  - type: text
+    title: Brief
+    body: Choose a suitable product source and import a telescope and binocular
+      catalog into WordPress.
+  - type: text
+    title: Work delivered
+    body: Agreed on the client-supplied YML and affiliate code, ran the import and
+      reported 1,634 products; the client accepted the stage.
+  - type: text
+    title: Implementation and scope
+    body: The original file of roughly 9,000 products was rejected because it
+      contained unrelated categories, an unsuitable currency and insufficient
+      descriptions. After access difficulties I reported updating PHP from 5.2
+      to 7.0 and preparing import tools. The client supplied a 4glaza.ru YML and
+      confirmed the affiliate code; after importing I reported 1,634 products.
+      That is a historical report, not an independent recount. Weekly cron and
+      subsequent refreshes were only discussed; affiliate commissions and
+      revenue were not verified.

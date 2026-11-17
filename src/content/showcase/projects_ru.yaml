@@ -6520,3 +6520,39 @@ projects:
       - label: Читать кейс
         url: /showcase/corporate-training-responsive-ui/
         type: product
+  - slug: autoazart-wholesale-request
+    name: "Autoazart: вместо корзины — оптовая заявка и переход"
+    description: Настроил кнопки в каталоге и карточке, направил оптовый запрос в
+      форму и скрыл корзину в шапке; заказчик принял этап.
+    year: "02.2018"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - B2B enquiries
+      - Website UI
+    order: 356
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/autoazart-wholesale-request/
+        type: product
+  - slug: wisespace-optics-affiliate-import
+    name: "WiseSpace: импорт партнёрского каталога оптики"
+    description: Согласовал клиентский YML и партнёрский код, запустил импорт и
+      сообщил о 1 634 товарах; заказчик принял этап.
+    year: "02.2018"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - YML
+      - Affiliate catalog
+    order: 357
+    featured: false
+    theme: emerald
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/wisespace-optics-affiliate-import/
+        type: product
