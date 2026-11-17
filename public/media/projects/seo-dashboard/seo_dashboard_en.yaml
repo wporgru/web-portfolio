@@ -1,7 +1,7 @@
 title: SEO dashboard for analytics and indexing history
-tagline: Traffic, search visibility, content revisions and recrawl requests
-  lived in separate services. The goal was a local tool for comparing periods
-  and diagnosing drops without writing to the CMS.
+tagline: Traffic, search visibility, content revisions and recrawl requests lived in
+  separate services. The goal was a local tool for comparing periods and diagnosing drops
+  without writing to the CMS.
 year: "2026"
 role: Web development and automation
 stack:
@@ -10,23 +10,40 @@ stack:
   - REST API
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Traffic, search visibility, content revisions and recrawl requests lived
-      in separate services. The goal was a local tool for comparing periods and
-      diagnosing drops without writing to the CMS.
+    title: "The brief: combine SEO data without modifying the site"
+    body: Impressions, queries, page status and rewrite dates lived in separate dashboards and
+      a spreadsheet. The goal was a local tool for comparing periods and understanding
+      exclusions without writing to WordPress or conflating metrics from different
+      systems.
   - type: text
-    title: How it works
-    body: Integrated Yandex Webmaster, Metrica, Google Search Console and GA4.
-      Stored snapshots and revisions in SQLite, with separate views for queries,
-      URLs and exclusion reasons. Matched rewrite dates from a spreadsheet to
-      before-and-after observation windows.
+    title: Separate sources with retained history
+    body: I connected Yandex Webmaster, Metrica, Google Search Console, GA4 and a rewrite-date
+      spreadsheet. Snapshots are stored in SQLite so previously saved days remain
+      available after leaving an API’s current window. Queries, pages and exclusion
+      reasons have separate views, and Google data is not mixed with Yandex. An incomplete
+      API result is marked partial.
   - type: text
-    title: Result and verification
-    body: Scheduled collection does not modify the site or submit URLs. Submission
-      is explicit and each service response is recorded. Failed refreshes
-      preserve previous values and incomplete exports are flagged.
+    title: Comparing edits without inventing missing data
+    body: For spreadsheet entries, rewrite dates are matched with the available
+      before-and-after observation windows. When a historical snapshot is missing, the
+      interface shows a gap rather than zero. Yandex API average display position is not
+      presented as a separate regional rank tracking run, and total Metrica traffic is not
+      labelled organic search traffic.
+  - type: text
+    title: Recrawl requests are separate from collection
+    body: Ordinary synchronization reads data and does not submit URLs. Recrawl requests
+      require an explicit action for selected addresses, and provider responses are stored
+      separately. An accepted notification is not proof of crawling or indexing. A failed
+      refresh does not erase prior saved data, and incomplete results are not presented as
+      complete.
   - type: text
     title: Another stage of this project
     links:
       - label: "Related module: search demand and Google Trends history"
         url: /showcase/trends-search-demand-history/en/
+  - type: text
+    title: What the owner receives
+    body: The local tool brings measurement history and edit context together, but does not
+      guarantee ranking growth or reconstruct data from before snapshots began. If search
+      and analytics reports disagree, send an example question, date range and source list
+      so comparable metrics and data limitations can be established first.
