@@ -527,6 +527,11 @@ projects:
       - label: Read case study
         url: /showcase/office-catalog/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/office-catalog/later-homepage.webp
+        alt: Public Print Focus homepage and equipment catalog
+        featured: true
   - slug: digital-guide-checkout
     name: Selling a digital guide without a cart step
     year: "02.2026"
@@ -1434,6 +1439,11 @@ projects:
       - label: Read case study
         url: /showcase/mobile-call-button-footer/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/mobile-call-button-footer/later-homepage.webp
+        alt: Public Profi74 homepage
+        featured: true
   - slug: messenger-widget-code-handoff
     name: Delivering an HTML CSS and JavaScript messenger widget
     year: "07.2026"
@@ -1591,6 +1601,11 @@ projects:
       - label: Read case study
         url: /showcase/elementor-editor-recovery/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/elementor-editor-recovery/later-homepage.webp
+        alt: Public Faeton homepage
+        featured: true
   - slug: php8-layout-repair
     name: Upgrading WordPress to PHP 8 and repairing layout
     year: "06.2026"

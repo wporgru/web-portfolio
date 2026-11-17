@@ -528,6 +528,11 @@ projects:
       - label: Читать кейс
         url: /showcase/office-catalog/
         type: product
+    media:
+      - type: image
+        src: /media/projects/office-catalog/later-homepage.webp
+        alt: Публичная главная Print Focus и каталог оборудования
+        featured: true
   - slug: digital-guide-checkout
     name: Продажа цифрового гайда без шага корзины
     year: "02.2026"
@@ -1445,6 +1450,11 @@ projects:
       - label: Читать кейс
         url: /showcase/mobile-call-button-footer/
         type: product
+    media:
+      - type: image
+        src: /media/projects/mobile-call-button-footer/later-homepage.webp
+        alt: Публичная главная сайта «Профи74»
+        featured: true
   - slug: messenger-widget-code-handoff
     name: Готовый виджет мессенджеров на HTML CSS и JS
     year: "07.2026"
@@ -1604,6 +1614,11 @@ projects:
       - label: Читать кейс
         url: /showcase/elementor-editor-recovery/
         type: product
+    media:
+      - type: image
+        src: /media/projects/elementor-editor-recovery/later-homepage.webp
+        alt: Публичная главная сайта «Фаэтон»
+        featured: true
   - slug: php8-layout-repair
     name: Переход на PHP 8 с ремонтом вёрстки сайта
     year: "06.2026"

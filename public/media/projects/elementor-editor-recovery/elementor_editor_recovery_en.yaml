@@ -25,3 +25,9 @@ blocks:
     body: The client thanked me for restoring the editor and accepted the order. The
       exact patch was not preserved; the case documents recovery, not a
       particular plugin replacement or PHP upgrade.
+  - type: image
+    title: Public site view
+    src: /media/projects/elementor-editor-recovery/later-homepage.webp
+    alt: Public Faeton homepage
+    caption: Public version captured October 23, 2026, uncropped. It shows the site
+      appearance, not proof of Elementor editor functionality.

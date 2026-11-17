@@ -23,3 +23,9 @@ blocks:
     body: The client accepted the work and explicitly confirmed both the footer and
       widget in their review. The review covered reported pages rather than
       every template and tablet layout.
+  - type: image
+    title: Public site view
+    src: /media/projects/mobile-call-button-footer/later-homepage.webp
+    alt: Public Profi74 homepage
+    caption: Desktop version captured October 24, 2026, uncropped. It does not
+      establish mobile call-button behavior, call completion or form delivery.
