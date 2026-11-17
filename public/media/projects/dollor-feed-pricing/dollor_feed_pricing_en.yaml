@@ -1,6 +1,6 @@
 title: "DOLLOR: importing equipment and updating prices"
-tagline: Store and feed names differed, and some SKUs were absent. Matching
-  solely by name could update the wrong model’s price.
+tagline: Store and feed names differed, and some SKUs were absent. Matching solely by name
+  could update the wrong model’s price.
 year: "06.2026"
 role: Web development and automation
 stack:
@@ -9,18 +9,36 @@ stack:
   - SKU mapping
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Store and feed names differed, and some SKUs were absent. Matching solely
-      by name could update the wrong model’s price.
+    title: Why product names were not a safe match key
+    body: Some equipment had already been entered manually, but store and supplier XML/YML names
+      differed. Matching similar names could assign a price to the wrong model. After the
+      client supplied supplier SKUs, I configured code-based matching and separated updates
+      to existing listings from new product creation.
   - type: text
-    title: How it works
-    body: After the client supplied SKUs, I configured matching by supplier code. I
-      found one code shared by different models and a record without a code,
-      then agreed temporary behavior for both exceptions. The handoff records a
-      daily 01:00 schedule and distinguishes availability inferred from the feed
-      from actual inventory.
+    title: How code exceptions were handled
+    body: "The feed contained two different models with the same vendorCode and one record
+      without a code. The agreed temporary behavior was explicit: the second conflicting
+      record overwrote the first and the item without a code was not imported. This is a
+      known limitation, not a guarantee against lost records; correcting the source code
+      with the supplier remained a separate task."
   - type: text
-    title: Result and verification
-    body: The report records 32 new products and price updates on 63 products; the
-      client accepted the stage. Supplier correction of the duplicate code and
-      verification of successive nightly runs remained separate matters.
+    title: Price updates are not inventory verification
+    body: "The stage report recorded 32 newly created products and price updates for 63 existing
+      items. When no new listings appeared, the process was configured to update prices.
+      Since the feed did not establish actual stock, availability was inferred from feed
+      presence: present meant available, absent meant unavailable. This is not a live
+      warehouse stock check."
+  - type: text
+    title: Schedule and acceptance
+    body: A daily 01:00 run was reported; neither the server time zone nor a series of
+      subsequent overnight executions is established in the saved evidence. The client
+      accepted the stage on June 15, 2026. Complete product names and correction of the
+      conflicting supplier code required follow-up.
+  - type: text
+    title: Planning a catalog import?
+    body: Send a sanitized feed sample, representative store SKUs and the fields the import may
+      update. Before a bulk run I can check code matches, duplicates, missing products and
+      repeat-import behavior on a small sample.
+    links:
+      - label: Product import and update service
+        url: /services/catalog-automation/en/
