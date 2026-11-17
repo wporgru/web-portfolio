@@ -5522,6 +5522,11 @@ projects:
       - label: Read case study
         url: /showcase/diskprices-comparison-platform/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/diskprices-comparison-platform/homepage-20261117.png
+        alt: DiskPrices storefront homepage
+        featured: true
   - slug: ramprices-memory-offer-normalization
     name: "RamPrices: memory catalog and offer matching"
     year: "2026"

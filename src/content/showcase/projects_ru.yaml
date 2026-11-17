@@ -5578,6 +5578,11 @@ projects:
       - label: Читать кейс
         url: /showcase/diskprices-comparison-platform/
         type: product
+    media:
+      - type: image
+        src: /media/projects/diskprices-comparison-platform/homepage-20261117.png
+        alt: Главная витрины DiskPrices
+        featured: true
   - slug: ramprices-memory-offer-normalization
     name: "RamPrices: каталог и сопоставление модулей памяти"
     year: "2026"

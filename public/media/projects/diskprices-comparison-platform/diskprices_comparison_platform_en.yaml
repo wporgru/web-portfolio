@@ -37,6 +37,18 @@ blocks:
       price history. A dedicated outbound route records a click event before redirecting
       to the merchant. A test checks the affiliate destination, offer identifier and
       traffic source. Admin sections expose import and click information.
+  - type: image
+    src: /media/projects/diskprices-comparison-platform/homepage-20261117.png
+    title: Public DiskPrices homepage
+    alt: Full-page DiskPrices storefront with filters and storage offers
+    caption: Anonymous full-page capture from November 17, 2026, at 1440 px. It shows the
+      public storefront; prices, stock and merchant click-throughs were not independently
+      checked.
+  - type: text
+    title: Visit the project
+    links:
+      - label: Visit DiskPrices
+        url: https://diskprices.ru/
   - type: text
     title: Another stage of this project
     links:
