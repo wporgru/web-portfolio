@@ -1,8 +1,7 @@
 title: "DiskPrices: price comparison and price history"
-tagline: Built a Laravel storefront for storage devices. Shoppers needed
-  comparable offers for the same model rather than isolated merchant listings;
-  the operator needed to see which feeds imported and which products generated
-  outbound clicks.
+tagline: Built a Laravel storefront for storage devices. Shoppers needed comparable offers
+  for the same model rather than isolated merchant listings; the operator needed to see
+  which feeds imported and which products generated outbound clicks.
 year: "2026"
 role: Web development and automation
 stack:
@@ -14,26 +13,38 @@ stack:
   - Affiliate tracking
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Built a Laravel storefront for storage devices. Shoppers needed comparable
-      offers for the same model rather than isolated merchant listings; the
-      operator needed to see which feeds imported and which products generated
-      outbound clicks.
+    title: "The brief: compare offers, not just list feeds"
+    body: A storage-device storefront needs to group offers from different merchants into
+      useful comparisons without merging similar but distinct models and capacities. The
+      owner needs import and click visibility; buyers need specifications, prices and the
+      history of the relevant model.
   - type: text
-    title: How it works
-    body: "Separated XML and YML ingestion, raw offer storage and public catalog
-      generation. Matching uses more than titles and brands: capacity and drive
-      type are extracted separately, and model numbers must not be mistaken for
-      capacity. Built category filters, comparison pages and price history, plus
-      an import admin and an outbound merchant redirect that records the click."
+    title: From feed to listing
+    body: "I separated XML/YML ingestion, storage of raw product records and public catalog
+      generation. The offer retains its source and imports are managed through an admin
+      area. Matching extracts brand, model code, storage type and capacity separately:
+      digits in a model code must not be mistaken for capacity."
   - type: text
-    title: Result and verification
-    body: The project includes checks for repeat imports, matching across merchants,
-      decimal capacities and unrelated feed items. This case describes
-      implemented architecture and scenarios covered in code, not market
-      coverage or affiliate revenue growth.
+    title: Grouping offers and checking variants
+    body: The project includes a test where similar offers from the same merchant must not
+      automatically merge into a single comparison group. Another test covers matching
+      offers across different merchants. Tests also cover repeat imports, fractional
+      capacities and excluding unrelated products. These verify specific scenarios, not
+      the absence of every possible matching error.
+  - type: text
+    title: Buyer journey and analytics
+    body: The public storefront includes a category with filters and a comparison page with
+      price history. A dedicated outbound route records a click event before redirecting
+      to the merchant. A test checks the affiliate destination, offer identifier and
+      traffic source. Admin sections expose import and click information.
   - type: text
     title: Another stage of this project
     links:
       - label: "Follow-up: adapting the catalog to memory products"
         url: /showcase/ramprices-memory-offer-normalization/en/
+  - type: text
+    title: Applying this to another aggregator
+    body: The architecture and tests demonstrate catalog processing, not complete market
+      coverage, affiliate commissions or sales growth. For a similar project, send a
+      category and sanitized feed samples. We can agree on model and variant keys,
+      exceptions and repeat-update rules before validating a small pilot.
