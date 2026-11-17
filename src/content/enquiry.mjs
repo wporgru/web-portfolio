@@ -78,10 +78,10 @@ export const enquiryPrompts = {
   ],
 };
 
-export function createEnquiry({lang, title, url, kind, serviceSlug}) {
+export function createEnquiry({lang, title, url, kind, serviceSlug, customPrompts}) {
   const ru = lang === 'ru';
   const specific = enquiryPrompts[serviceSlug]?.[ru ? 0 : 1];
-  const prompts = specific ?? (ru
+  const prompts = customPrompts ?? specific ?? (ru
     ? ['Что происходит сейчас или какой сайт нужен', 'Как должен выглядеть результат']
     : ['What happens now or what site you need', 'What the result should look like']);
   const labels = ru
@@ -92,6 +92,7 @@ export function createEnquiry({lang, title, url, kind, serviceSlug}) {
     : (ru ? 'Запрос по услуге: ' : 'Service enquiry: ');
   const source = kind === 'case'
     ? (ru ? 'Кейс, на который я ссылаюсь: ' : 'Reference case: ')
+    : kind === 'guide' ? (ru ? 'Руководство: ' : 'Reference guide: ')
     : (ru ? 'Страница услуги: ' : 'Service page: ');
   const subject = prefix + title;
   const body = [

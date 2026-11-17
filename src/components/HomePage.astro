@@ -4,6 +4,7 @@ import { getEntry } from 'astro:content';
 import copy from '../content/portfolio-home.json';
 import { caseHighlights } from '../content/case-highlights.mjs';
 import { services } from '../content/services.mjs';
+import { guides } from '../content/guides.mjs';
 const { lang='ru', profile='', downloadUrls } = Astro.props;
 const ru = lang === 'ru';
 const c = ru ? copy.ru : copy.en;
@@ -149,6 +150,13 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
             <a href={base+'/showcase/'+slug+(ru?'/':'/en/')}>{label}</a>
           </li>)}
         </ol>
+      </section>
+
+      <section class="card cv-extra">
+        <h2 class="h2">{ru?'Практические руководства для владельцев сайтов':'Practical guides for site owners'}</h2>
+        <ul class="list">
+          {guides.map(guide=><li><a href={base+'/guides/'+guide.slug+(ru?'/':'/en/')}>{guide[ru?'ru':'en'].title}</a></li>)}
+        </ul>
       </section>
 
       <section class="card cv-extra" id="project-brief" aria-labelledby="project-brief-title">

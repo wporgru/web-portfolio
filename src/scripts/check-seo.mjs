@@ -7,6 +7,7 @@ import { serviceGroups } from '../content/service-groups.mjs';
 import { enquiryPrompts } from '../content/enquiry.mjs';
 import { servicePaths } from '../content/service-paths.mjs';
 import { migrationGuide } from '../content/migration-guide.mjs';
+import { guides } from '../content/guides.mjs';
 import { latestCaseRevision, readCaseRevisions } from './case-revisions.mjs';
 
 const root = 'dist';
@@ -116,6 +117,17 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+for (const item of guides) for (const suffix of ['', 'en/']) {
+  const route=`guides/${item.slug}/${suffix}`;
+  const html=read(path.join(root,route,'index.html'));
+  if (!sitemap.has(new URL(route,profileUrl).href) ||
+      !html.includes(`href="${base}services/${item.primaryService}/${suffix}"`)) fail(route,'missing sitemap entry or primary service');
+  for (const slug of item.cases) {
+    const casePath=`showcase/${slug}/${suffix}`;
+    if (!html.includes(`href="${base}${casePath}"`) ||
+        !read(path.join(root,casePath,'index.html')).includes(`href="${base}${route}"`)) fail(route,'missing reciprocal case link '+slug);
+  }
+}
 for (const suffix of ['', 'en/']) {
   const route=`guides/${migrationGuide.slug}/${suffix}`;
   const guide=read(path.join(root,route,'index.html'));

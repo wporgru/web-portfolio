@@ -6,7 +6,7 @@ import { services } from '../../content/services.mjs';
 import { serviceDetails } from '../../content/service-details.mjs';
 import { createEnquiry } from '../../content/enquiry.mjs';
 import { servicePaths } from '../../content/service-paths.mjs';
-import { migrationGuide } from '../../content/migration-guide.mjs';
+import { guides } from '../../content/guides.mjs';
 
 export function getStaticPaths() {
   return services.flatMap(service => ['ru','en'].map(lang => ({
@@ -101,10 +101,10 @@ const nextServices=servicePaths[service.slug].map(([slug,ruReason,enReason])=>{
         </li>)}
       </ul>
     </section>
-    {migrationGuide.services.includes(service.slug) && <section class="card">
-      <h2 class="h2">{ru?'Планируете перенос действующего магазина?':'Moving a live store?'}</h2>
-      <p><a href={base+'/guides/'+migrationGuide.slug+localeSuffix}>{ru?migrationGuide.ru.title:migrationGuide.en.title}</a></p>
-    </section>}
+    {guides.filter(guide=>guide.services.includes(service.slug)).map(guide=><section class="card">
+      <h2 class="h2">{guide[ru?'ru':'en'].context}</h2>
+      <p><a href={base+'/guides/'+guide.slug+localeSuffix}>{guide[ru?'ru':'en'].title}</a></p>
+    </section>)}
   </div>
 </Layout>
 <style>
