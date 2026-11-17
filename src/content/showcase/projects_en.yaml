@@ -3358,6 +3358,11 @@ projects:
       - Documentation
     order: 184
     theme: cyan
+    media:
+      - type: image
+        src: /media/projects/car-buyback-site-with-blog/historical-homepage.webp
+        alt: Historical car buyback homepage
+        featured: true
     links:
       - label: Read case study
         url: /showcase/car-buyback-site-with-blog/en/

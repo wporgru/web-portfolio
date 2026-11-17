@@ -1,24 +1,38 @@
-title: "Grandkrovlya: restoring imports and product URLs"
-tagline: Investigated why WooCommerce URL transliteration was not applied when
-  importing products again.
-year: "08.2022"
+title: 'Grandkrovlya: restoring imports and product URLs'
+tagline: Investigated why WooCommerce URL transliteration was not applied when importing products
+  again.
+year: '08.2022'
 role: Web development and automation
 stack:
-  - WordPress
-  - WooCommerce
-  - Import
-  - URL transliteration
+- WordPress
+- WooCommerce
+- Import
+- URL transliteration
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: Investigated why WooCommerce URL transliteration was not applied when
-      importing products again.
-  - type: text
-    title: How it works
-    body: Reviewed transliteration settings and importer compatibility after
-      WordPress and WooCommerce updates. Updated the importer, enabled the
-      required setting and reran the import to check actual listings.
-  - type: text
-    title: Result and verification
-    body: The client confirmed the fix, accepted the work and added a bonus. Search
-      traffic changes were not measured.
+- type: text
+  title: Brief and constraints
+  body: Investigated why WooCommerce URL transliteration was not applied when importing products
+    again.
+- type: text
+  title: How it works
+  body: Reviewed transliteration settings and importer compatibility after WordPress and WooCommerce
+    updates. Updated the importer, enabled the required setting and reran the import to check
+    actual listings.
+- type: text
+  title: Result and verification
+  body: The client confirmed the fix, accepted the work and added a bonus. Search traffic changes
+    were not measured.
+- type: text
+  title: Problem in the live catalog
+  body: After changes to WordPress and WooCommerce, new products appeared in administration
+    but their catalog visibility was in question, while URLs were being generated in Cyrillic.
+    This made repeated imports and predictable link generation harder to check.
+- type: text
+  title: Diagnosis and repeat import
+  body: I reviewed transliteration settings and WP All Import compatibility with the updated
+    components. The importer was updated, the required option enabled and the import repeated.
+    The client confirmed the fix, accepted the order and left a positive review with a bonus.
+- type: text
+  title: Scope of the result
+  body: The client confirmation applies to this import repair. Changes in organic traffic, complete
+    product-page moderation and long-term uninterrupted imports were not separately measured.

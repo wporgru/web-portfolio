@@ -1,29 +1,43 @@
 title: Migrating 205 products from two sources
-tagline: The client needed to add products from two sites to an existing store
-  without creating each listing manually.
-year: "02.2026"
+tagline: The client needed to add products from two sites to an existing store without creating
+  each listing manually.
+year: '02.2026'
 role: Web development and automation
 stack:
-  - WooCommerce
-  - Data import
+- WooCommerce
+- Data import
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: The client needed to add products from two sites to an existing store
-      without creating each listing manually.
-  - type: text
-    title: How it works
-    body: Migrated the products into WooCommerce and provided a direct storefront
-      link for review. The handoff report records 205 listings rather than an
-      estimate of the source catalog size.
-  - type: text
-    title: Result and verification
-    body: The client accepted the migration and praised the quality and speed. This
-      was a one-time catalog transfer, not a recurring sync, payment or shipping
-      setup.
-  - type: image
-    title: Public site view
-    src: /media/projects/elementor-editor-recovery/later-homepage.webp
-    alt: Public Faeton homepage
-    caption: Public version from October 23, 2026, uncropped. This later view does
-      not verify the 205 imported products.
+- type: text
+  title: Brief and constraints
+  body: The client needed to add products from two sites to an existing store without creating
+    each listing manually.
+- type: text
+  title: How it works
+  body: Migrated the products into WooCommerce and provided a direct storefront link for review.
+    The handoff report records 205 listings rather than an estimate of the source catalog size.
+- type: text
+  title: Result and verification
+  body: The client accepted the migration and praised the quality and speed. This was a one-time
+    catalog transfer, not a recurring sync, payment or shipping setup.
+- type: image
+  title: Public site view
+  src: /media/projects/elementor-editor-recovery/later-homepage.webp
+  alt: Public Faeton homepage
+  caption: Public version from October 23, 2026, uncropped. This later view does not verify
+    the 205 imported products.
+- type: text
+  title: Moving products into an existing store
+  body: 'The task concerned an existing store: bring a range from two sources into WooCommerce
+    rather than build a new shop. The handover report states 205 transferred products; that
+    number is the historical reported result, not a fresh count of the database.'
+- type: text
+  title: Acceptance and scope
+  body: I provided the client with a link to the shop section for review. The client accepted
+    the work and praised its speed and quality. The available materials do not reliably identify
+    the source domains or the complete field mapping; completeness of images, descriptions and
+    attributes requires a separate check.
+- type: text
+  title: For similar projects
+  body: A one-time catalog transfer can populate a shop without creating each listing by hand.
+    Recurring price and stock updates, duplicate matching, shipping and payment setup should
+    be specified and verified separately when needed.

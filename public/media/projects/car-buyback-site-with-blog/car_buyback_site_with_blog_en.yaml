@@ -1,24 +1,47 @@
 title: Car buyback website with services and a blog
-tagline: Built a WordPress site for a car buyback business with service pages
-  and a blog the client could maintain independently.
-year: "10.2023"
+tagline: Built a WordPress site for a car buyback business with service pages and a blog the
+  client could maintain independently.
+year: '10.2023'
 role: Web development and automation
 stack:
-  - WordPress
-  - Service pages
-  - Blogging
-  - Documentation
+- WordPress
+- Service pages
+- Blogging
+- Documentation
 blocks:
-  - type: text
-    title: Brief and constraints
-    body: Built a WordPress site for a car buyback business with service pages and a
-      blog the client could maintain independently.
-  - type: text
-    title: How it works
-    body: Demonstrated the site on the project domain, fixed unlinked article titles
-      and aligned the services URL with the agreed structure. Provided two
-      walkthroughs covering the header and footer, and content editing.
-  - type: text
-    title: Result and verification
-    body: The client accepted the site. Enabling indexing and setting up live
-      messenger notifications remained separate launch steps.
+- type: text
+  title: Brief and constraints
+  body: Built a WordPress site for a car buyback business with service pages and a blog the
+    client could maintain independently.
+- type: text
+  title: How it works
+  body: Demonstrated the site on the project domain, fixed unlinked article titles and aligned
+    the services URL with the agreed structure. Provided two walkthroughs covering the header
+    and footer, and content editing.
+- type: text
+  title: Result and verification
+  body: The client accepted the site. Enabling indexing and setting up live messenger notifications
+    remained separate launch steps.
+- type: text
+  title: Context and site structure
+  body: 'The brief was a car-buyback website for one city: a homepage with a vehicle appraisal
+    form, service pages, contacts and a blog. A car-sales catalog, insurance and city selection
+    were outside the agreed scope. Keyauto provided a visual reference rather than a requirement
+    for an exact copy.'
+- type: text
+  title: What the visitor sees
+  body: The preserved historical homepage capture shows vehicle information fields, buyback
+    process sections, car cards, articles and a WhatsApp link. Repeated cards in the capture
+    do not prove a database of real transactions or authorship of the articles.
+- type: text
+  title: Handover and launch
+  body: Besides correcting article title links and the services URL, I provided two video walkthroughs
+    covering the header, footer and content editing. The client accepted the work. WhatsApp
+    number registration and the Telegram token were still for the client to complete; successful
+    message delivery and later indexing were not verified.
+- type: image
+  src: /media/projects/car-buyback-site-with-blog/historical-homepage.webp
+  title: Historical homepage capture
+  alt: Historical car-buyback homepage with an appraisal form and blog
+  caption: Historical full-page capture from the 2023 Kwork portfolio. The WordPress toolbar
+    is visible; the image does not establish current availability or message delivery.
