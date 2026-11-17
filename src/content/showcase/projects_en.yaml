@@ -547,6 +547,11 @@ projects:
       - label: Read case study
         url: /showcase/digital-guide-checkout/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/digital-guide-checkout/later-homepage.webp
+        alt: Public Gdetamo homepage
+        featured: true
   - slug: guest-cdek
     name: Restoring CDEK shipping quotes for guest shoppers
     year: "12.2024"
@@ -949,6 +954,11 @@ projects:
       - label: Read case study
         url: /showcase/two-brand-catalog-merge/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/elementor-editor-recovery/later-homepage.webp
+        alt: Public Faeton homepage and equipment catalog
+        featured: true
   - slug: wordpress-broken-media-repair
     name: Fixing broken blog images and redirect issues
     year: "04.2025"

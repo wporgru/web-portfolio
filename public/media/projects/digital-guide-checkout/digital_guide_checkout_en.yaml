@@ -21,3 +21,9 @@ blocks:
     body: The client confirmed the fix and accepted delivery. Video instructions
       were provided. The client supplied the final file and URL; fiscal
       integration was outside scope.
+  - type: image
+    title: Public site view
+    src: /media/projects/digital-guide-checkout/later-homepage.webp
+    alt: Public Gdetamo homepage
+    caption: Public version captured October 24, 2026, uncropped. The homepage does
+      not verify payment, email delivery or guide access.

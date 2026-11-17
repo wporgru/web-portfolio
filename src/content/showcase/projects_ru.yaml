@@ -548,6 +548,11 @@ projects:
       - label: Читать кейс
         url: /showcase/digital-guide-checkout/
         type: product
+    media:
+      - type: image
+        src: /media/projects/digital-guide-checkout/later-homepage.webp
+        alt: Публичная главная сайта Gdetamo
+        featured: true
   - slug: guest-cdek
     name: Восстановление расчёта СДЭК для гостей магазина
     year: "12.2024"
@@ -956,6 +961,11 @@ projects:
       - label: Читать кейс
         url: /showcase/two-brand-catalog-merge/
         type: product
+    media:
+      - type: image
+        src: /media/projects/elementor-editor-recovery/later-homepage.webp
+        alt: Публичная главная «Фаэтон» с каталогом оборудования
+        featured: true
   - slug: wordpress-broken-media-repair
     name: Исправление битых изображений и редиректов блога
     year: "04.2025"
