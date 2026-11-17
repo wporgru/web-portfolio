@@ -2710,6 +2710,11 @@ projects:
       - label: Читать кейс
         url: /showcase/lighting-store-product-specs/
         type: product
+    media:
+      - type: image
+        src: /media/projects/lighting-store-product-specs/later-homepage.webp
+        alt: Публичная главная магазина освещения
+        featured: true
   - slug: coffee-catalog-price-layout
     name: Карточки кофе с выбором фасовки в WooCommerce
     year: "05.2024"
@@ -2824,6 +2829,11 @@ projects:
       - label: Читать кейс
         url: /showcase/boxberry-cart-recovery/
         type: product
+    media:
+      - type: image
+        src: /media/projects/boxberry-cart-recovery/later-homepage.webp
+        alt: Публичная главная магазина «Мастер Грэм»
+        featured: true
   - slug: roofing-store-seo
     name: SEO-метаданные магазина кровельных материалов
     year: "07.2024"
@@ -2876,6 +2886,11 @@ projects:
       - label: Читать кейс
         url: /showcase/service-page-product-selection/
         type: product
+    media:
+      - type: image
+        src: /media/projects/service-page-product-selection/later-homepage.webp
+        alt: Публичная главная сайта «ДомКлимат»
+        featured: true
   - slug: altr-storefront-adaptation
     name: Адаптация витрины WooCommerce на теме Altr
     year: "04.2024"

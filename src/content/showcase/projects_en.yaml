@@ -2677,6 +2677,11 @@ projects:
       - label: Read case study
         url: /showcase/lighting-store-product-specs/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/lighting-store-product-specs/later-homepage.webp
+        alt: Public lighting store homepage
+        featured: true
   - slug: coffee-catalog-price-layout
     name: WooCommerce coffee cards with pack-size options
     year: "05.2024"
@@ -2791,6 +2796,11 @@ projects:
       - label: Read case study
         url: /showcase/boxberry-cart-recovery/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/boxberry-cart-recovery/later-homepage.webp
+        alt: Public Master Grem store homepage
+        featured: true
   - slug: roofing-store-seo
     name: SEO metadata for a roofing materials store
     year: "07.2024"
@@ -2842,6 +2852,11 @@ projects:
       - label: Read case study
         url: /showcase/service-page-product-selection/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/service-page-product-selection/later-homepage.webp
+        alt: Public DomKlimat homepage
+        featured: true
   - slug: altr-storefront-adaptation
     name: Adapting an existing WooCommerce store to Altr
     year: "04.2024"

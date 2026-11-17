@@ -26,3 +26,9 @@ blocks:
     body: The client accepted the stage. Re-enabling CDEK, processing a real
       shipment and checking every Boxberry route were not part of the verified
       result.
+  - type: image
+    title: Public site view
+    src: /media/projects/boxberry-cart-recovery/later-homepage.webp
+    alt: Public Master Grem store homepage
+    caption: Public version from October 23, 2026, uncropped. It does not test
+      adding to cart or Boxberry shipping.

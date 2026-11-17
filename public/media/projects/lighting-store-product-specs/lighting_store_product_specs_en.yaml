@@ -23,3 +23,9 @@ blocks:
     title: Result and verification
     body: The client approved the specification layout and accepted the work.
       Payment, shipping and CRM integrations were outside this stage.
+  - type: image
+    title: Public site view
+    src: /media/projects/lighting-store-product-specs/later-homepage.webp
+    alt: Public lighting store homepage
+    caption: Public version from October 24, 2026, uncropped. It does not verify an
+      individual product specification or cart behavior.
