@@ -29,3 +29,10 @@ blocks:
     links:
       - label: "Previous stage: collecting and validating product data"
         url: /showcase/fashion-data-preparation/en/
+  - type: image
+    title: Public site view
+    src: /media/projects/circa-outlet-catalog/later-homepage.webp
+    alt: Public Circa Outlet homepage
+    caption: Public version captured October 24, 2026, uncropped. The later design
+      is not attributed to the import stage and does not verify product counts
+      or size setup.

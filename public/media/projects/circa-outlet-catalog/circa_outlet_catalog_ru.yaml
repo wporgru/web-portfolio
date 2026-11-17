@@ -28,3 +28,10 @@ blocks:
     links:
       - label: "Предыдущий этап: сбор и проверка товарных данных"
         url: /showcase/fashion-data-preparation/
+  - type: image
+    title: Публичный вид сайта
+    src: /media/projects/circa-outlet-catalog/later-homepage.webp
+    alt: Публичная главная магазина Circa Outlet
+    caption: Публичная версия от 24 октября 2026 года, без обрезки. Более позднее
+      оформление не приписывается этапу импорта и не подтверждает количество
+      товаров или настройку размеров.

@@ -877,6 +877,11 @@ projects:
       - label: Read case study
         url: /showcase/fishing-catalog-launch/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/supplier-price-list-refresh/later-homepage.webp
+        alt: Public Kaida fishing store catalog
+        featured: true
   - slug: tile-storefront-woodmart
     name: A WoodMart tile storefront with an inquiry form
     year: "03.2026"
@@ -1931,6 +1936,11 @@ projects:
       - label: Read case study
         url: /showcase/circa-outlet-catalog/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/circa-outlet-catalog/later-homepage.webp
+        alt: Public Circa Outlet homepage
+        featured: true
   - slug: torin-fashion-import
     name: "Torin Fashion: migrating a clothing assortment"
     year: "03.2026"

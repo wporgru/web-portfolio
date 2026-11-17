@@ -883,6 +883,11 @@ projects:
       - label: Читать кейс
         url: /showcase/fishing-catalog-launch/
         type: product
+    media:
+      - type: image
+        src: /media/projects/supplier-price-list-refresh/later-homepage.webp
+        alt: Публичный каталог рыболовного магазина Kaida
+        featured: true
   - slug: tile-storefront-woodmart
     name: Витрина плитки на WoodMart и форма заказа
     year: "03.2026"
@@ -1953,6 +1958,11 @@ projects:
       - label: Читать кейс
         url: /showcase/circa-outlet-catalog/
         type: product
+    media:
+      - type: image
+        src: /media/projects/circa-outlet-catalog/later-homepage.webp
+        alt: Публичная главная магазина Circa Outlet
+        featured: true
   - slug: torin-fashion-import
     name: "Torin Fashion: перенос ассортимента одежды"
     year: "03.2026"
