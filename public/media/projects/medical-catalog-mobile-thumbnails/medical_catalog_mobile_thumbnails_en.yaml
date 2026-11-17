@@ -1,0 +1,28 @@
+title: "Medical equipment catalog: import and mobile thumbnails"
+tagline: Import the supplied medical equipment catalog and fix oversized product
+  thumbnails on mobile devices.
+role: Web development
+year: "03.2018"
+stack:
+  - Product import
+  - Responsive CSS
+  - E-commerce
+blocks:
+  - type: text
+    title: Brief
+    body: Import the supplied medical equipment catalog and fix oversized product
+      thumbnails on mobile devices.
+  - type: text
+    title: Work delivered
+    body: Reported importing 3,325 products and corrected mobile thumbnails; the
+      client confirmed the changes and accepted the stage.
+  - type: text
+    title: Implementation and scope
+    body: I imported the provided catalog file and reported 3,325 products. The
+      parent category hierarchy did not restore automatically, and after
+      discussion the client agreed to create and assign categories themselves. I
+      then corrected oversized thumbnails using sizing settings and CSS for
+      screens up to 991 px; the carousel was hidden in that range. The client
+      confirmed the change and mentioned more than 3,000 products in feedback.
+      The 3,325 count was not independently reconciled, and complete field
+      coverage and payment were not separately tested.

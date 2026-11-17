@@ -6556,3 +6556,39 @@ projects:
       - label: Читать кейс
         url: /showcase/wisespace-optics-affiliate-import/
         type: product
+  - slug: fisher-fish-knife-catalog
+    name: "Fisher Fish: импорт ножевого каталога и исправление цен"
+    description: Доработал характеристики и изображения, проверил цены и обработал
+      проблемные позиции; заказчик принял этап.
+    year: "04.2018"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - Product import
+      - Images
+    order: 358
+    featured: false
+    theme: blue
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/fisher-fish-knife-catalog/
+        type: product
+  - slug: medical-catalog-mobile-thumbnails
+    name: "Каталог медоборудования: импорт и мобильные миниатюры"
+    description: Сообщил об импорте 3 325 товаров и исправил мобильные миниатюры;
+      заказчик подтвердил изменения и принял этап.
+    year: "03.2018"
+    role: Веб-разработка
+    stack:
+      - Product import
+      - Responsive CSS
+      - E-commerce
+    order: 359
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/medical-catalog-mobile-thumbnails/
+        type: product

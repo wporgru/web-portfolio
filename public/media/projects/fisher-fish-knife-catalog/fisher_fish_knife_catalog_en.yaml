@@ -1,0 +1,29 @@
+title: "Fisher Fish: knife catalog import and price corrections"
+tagline: Import a knife catalog with categories, specifications, images and
+  correct prices.
+role: Web development
+year: "04.2018"
+stack:
+  - WooCommerce
+  - Product import
+  - Images
+blocks:
+  - type: text
+    title: Brief
+    body: Import a knife catalog with categories, specifications, images and correct
+      prices.
+  - type: text
+    title: Work delivered
+    body: Revised specifications and images, checked prices and handled incomplete
+      listings; the client accepted the stage.
+  - type: text
+    title: Implementation and scope
+    body: After import I addressed missing attributes and stock fields, ran image
+      regeneration and added category images; the client prepared some original
+      photos. The source feed contained wholesale prices, so I gathered and
+      corrected prices. Initially I moved 227 listings missing an image or price
+      to draft, but the client requested further corrections. The final report
+      described manual work on 47 image-less items and 180 drafts still carrying
+      zero prices. These are historical report figures, not an independent audit
+      of the entire catalog; complete categories and absence of duplicates were
+      not verified.
