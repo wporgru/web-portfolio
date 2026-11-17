@@ -1,8 +1,7 @@
 title: "ARTRED: preparing a WooCommerce site replacement"
-tagline: "Prepared a replacement website for a scrubber-dryer manufacturer. The
-  migration had to preserve more than the design: catalog and article access,
-  embedded videos and links, and protection against premature indexing of the
-  staging site."
+tagline: "Prepared a replacement website for a scrubber-dryer manufacturer. The migration
+  had to preserve more than the design: catalog and article access, embedded videos and
+  links, and protection against premature indexing of the staging site."
 year: 08–09.2026
 role: Web development and automation
 stack:
@@ -13,34 +12,50 @@ stack:
   - SEO migration
 blocks:
   - type: text
-    title: Brief and constraints
-    body: "Prepared a replacement website for a scrubber-dryer manufacturer. The
-      migration had to preserve more than the design: catalog and article
-      access, embedded videos and links, and protection against premature
-      indexing of the staging site."
+    title: "The brief: replace the site without losing working URLs"
+    body: A manufacturer’s website migration is more than a visual redesign. Catalog pages,
+      articles, videos and existing links need to remain available after the domain
+      switch, while staging must not be indexed prematurely. I separated staging
+      preparation, URL checks, cutover and production verification.
   - type: text
-    title: How it works
-    body: Compared sitemap paths and internal links, checked legacy product category
-      routes and compared the structure of 43 articles. Scoped WooCommerce
-      script loading to storefront flows rather than the homepage and
-      informational pages. Prepared a cutover procedure with environment checks,
-      explicit confirmation and rollback. In two negative tests the script
-      refused to continue without confirmation or while the domain still pointed
-      to the old directory.
+    title: Comparing the catalog and content
+    body: At the verification milestone I compared 107 sitemap URLs on each version. I
+      separately checked the structure of 43 articles for headings, links and videos, and
+      reviewed product-category routes and internal links. Template issues discovered
+      later were tracked separately rather than being hidden behind an earlier successful
+      run.
   - type: text
-    title: Result and verification
-    body: The August 25 run compared 107 URLs on each version; the 43-article
-      structure check found no lost headings, links or videos. Later template
-      findings were tracked separately from the earlier run. A separate
-      post-release desktop and mobile check covered production. These checks do
-      not establish retention of search rankings.
+    title: Performance without removing store functionality
+    body: "I scoped WooCommerce script loading to the routes that needed it: shop, product,
+      cart and checkout. The scripts were absent from the homepage and informational
+      pages. I separately checked key interface elements and mobile navigation. This
+      change did not mean disabling payment or catalog flows."
+  - type: text
+    title: A cutover with checks and a rollback path
+    body: "I prepared cutover instructions and scripts with environment checks and explicit
+      confirmation. Two negative tests stopped the script: when confirmation was missing
+      and while the domain still pointed to the old directory. The process included a
+      rollback plan and separate production checks; staging indexability was checked
+      before the switch."
+  - type: image
+    src: /media/projects/metform-replacement/later-homepage.webp
+    title: Homepage after launch
+    alt: Full-page ARTRED homepage capture
+    caption: Public version from October 25, 2026, uncropped. This later view does not verify
+      checkout or search rankings.
   - type: image
     src: /media/projects/artred-woocommerce-migration-readiness/archive-viewport.webp
     alt: ARTRED homepage after cutover, archived browser view
-    caption: Archived desktop homepage on the production domain, September 7, 2026.
-      The 1440 × 1000 browser viewport is not a full-page capture.
+    caption: Archived desktop homepage on the production domain, September 7, 2026. The 1440 ×
+      1000 browser viewport is not a full-page capture.
   - type: text
     title: Another stage of this project
     links:
       - label: "Related work: equipment catalog and consultations"
         url: /showcase/artred-b2b-equipment-catalog/en/
+  - type: text
+    title: What the evidence supports
+    body: The milestone compared 107 URLs on each version and found no missing headings, links
+      or videos in 43 checked articles. A separate desktop and mobile check was saved
+      after publication. These results document technical verification, not retention of
+      search rankings or the absence of errors in every order and integration.
