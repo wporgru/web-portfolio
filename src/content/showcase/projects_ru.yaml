@@ -6356,3 +6356,21 @@ projects:
       - label: Читать кейс
         url: /showcase/fish-spa-wordpress-site/
         type: product
+  - slug: fisher-fish-catalog-import
+    name: "Fisher Fish: импорт рыболовного каталога и категорий"
+    description: По отчёту этапа добавлено 1 941 товар, после исправлений обновлены
+      147 подкатегорий. Заказчик принял работу.
+    year: "02.2018"
+    role: Веб-разработка
+    stack:
+      - WooCommerce
+      - CSV
+      - Product data
+    order: 347
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Читать кейс
+        url: /showcase/fisher-fish-catalog-import/
+        type: product

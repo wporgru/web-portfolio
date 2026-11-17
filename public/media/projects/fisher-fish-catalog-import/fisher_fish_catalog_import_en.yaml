@@ -1,0 +1,30 @@
+title: "Fisher Fish: fishing catalog and category import"
+tagline: Import selected products from four brands while preserving a useful
+  model and color browsing structure.
+role: Web development
+year: "02.2018"
+stack:
+  - WooCommerce
+  - CSV
+  - Product data
+blocks:
+  - type: text
+    title: Brief
+    body: Import selected products from four brands while preserving a useful model
+      and color browsing structure.
+  - type: text
+    title: Work delivered
+    body: The stage report records 1,941 imported products and 147 updated
+      subcategories after revisions. The client accepted the work.
+  - type: text
+    title: Implementation and scope
+    body: From 2,105 source rows, entries without a price or image were excluded.
+      The first import exposed hierarchy, attribute-link and color issues. The
+      client agreed to separate color products inside model subcategories
+      instead of variable products, including an example and a cart color check.
+      I revised the structure and descriptions, removed the _x000D_ artifact and
+      moved repeated descriptions from Excel to CSV. The final log reported 147
+      category updates without creating or deleting categories. The client
+      corrected some images and Latin attribute labels personally. Counts come
+      from the historical report, not an independent recount; complete image
+      correctness and a WooCommerce rollback are not established.

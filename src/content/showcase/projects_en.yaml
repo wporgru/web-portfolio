@@ -6297,3 +6297,21 @@ projects:
       - label: Read case study
         url: /showcase/fish-spa-wordpress-site/en/
         type: product
+  - slug: fisher-fish-catalog-import
+    name: "Fisher Fish: fishing catalog and category import"
+    description: The stage report records 1,941 imported products and 147 updated
+      subcategories after revisions. The client accepted the work.
+    year: "02.2018"
+    role: Web development
+    stack:
+      - WooCommerce
+      - CSV
+      - Product data
+    order: 347
+    featured: false
+    theme: cyan
+    media: []
+    links:
+      - label: Read case study
+        url: /showcase/fisher-fish-catalog-import/en/
+        type: product
