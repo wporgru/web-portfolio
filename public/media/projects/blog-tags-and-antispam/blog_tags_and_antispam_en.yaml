@@ -23,3 +23,9 @@ blocks:
     title: Result and verification
     body: The client confirmed the result and accepted delivery. This was not a
       long-term spam-rate study or a test of all notification channels.
+  - type: image
+    title: Public site view
+    src: /media/projects/elementor-editor-recovery/later-homepage.webp
+    alt: Public Faeton homepage
+    caption: Public version from October 23, 2026, uncropped. The screenshot does
+      not verify blog tag or antispam behavior at handoff.

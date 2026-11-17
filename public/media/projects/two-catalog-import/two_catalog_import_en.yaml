@@ -21,3 +21,9 @@ blocks:
     body: The client accepted the migration and praised the quality and speed. This
       was a one-time catalog transfer, not a recurring sync, payment or shipping
       setup.
+  - type: image
+    title: Public site view
+    src: /media/projects/elementor-editor-recovery/later-homepage.webp
+    alt: Public Faeton homepage
+    caption: Public version from October 23, 2026, uncropped. This later view does
+      not verify the 205 imported products.

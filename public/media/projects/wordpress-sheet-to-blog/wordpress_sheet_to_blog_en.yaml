@@ -23,3 +23,9 @@ blocks:
     title: Result and verification
     body: The client confirmed the migration and accepted the work. The handoff does
       not record a final post count, so no total is inferred.
+  - type: image
+    title: Public site view
+    src: /media/projects/elementor-editor-recovery/later-homepage.webp
+    alt: Public Faeton homepage
+    caption: Public version from October 23, 2026, uncropped. The screenshot does
+      not verify completeness of articles from the source spreadsheet.

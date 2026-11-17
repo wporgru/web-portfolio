@@ -511,6 +511,11 @@ projects:
       - label: Читать кейс
         url: /showcase/two-catalog-import/
         type: product
+    media:
+      - type: image
+        src: /media/projects/elementor-editor-recovery/later-homepage.webp
+        alt: Публичная главная «Фаэтон»
+        featured: true
   - slug: office-catalog
     name: Парсинг и импорт каталога офисной техники
     year: 04–05.2026
@@ -788,6 +793,11 @@ projects:
       - label: Читать кейс
         url: /showcase/wordpress-sheet-to-blog/
         type: product
+    media:
+      - type: image
+        src: /media/projects/elementor-editor-recovery/later-homepage.webp
+        alt: Публичная главная «Фаэтон»
+        featured: true
   - slug: woocommerce-bulk-editor
     name: Выгрузка каталога и массовое редактирование товаров
     year: "04.2026"
@@ -1237,6 +1247,11 @@ projects:
       - label: Читать кейс
         url: /showcase/mobile-product-image-sizing/
         type: product
+    media:
+      - type: image
+        src: /media/projects/mobile-product-image-sizing/later-homepage.webp
+        alt: Публичная десктопная главная магазина «Мобилка»
+        featured: true
   - slug: blog-tags-and-antispam
     name: Исправление навигации блога и антиспам для заявок
     year: "04.2026"
@@ -1254,6 +1269,11 @@ projects:
       - label: Читать кейс
         url: /showcase/blog-tags-and-antispam/
         type: product
+    media:
+      - type: image
+        src: /media/projects/elementor-editor-recovery/later-homepage.webp
+        alt: Публичная главная «Фаэтон»
+        featured: true
   - slug: header-logo-and-search
     name: Исправление логотипа и замена поиска в шапке сайта
     year: "05.2026"
