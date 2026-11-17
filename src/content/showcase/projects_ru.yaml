@@ -6722,3 +6722,27 @@ projects:
       - label: Читать кейс
         url: /showcase/medical-catalog-mobile-thumbnails/
         type: product
+
+  - slug: xone-accessories-catalog-update
+    name: 'X-ONE: обновление каталога аксессуаров и вариаций'
+    description: Обновил импорт, атрибуты, вариации и изображения каталога аксессуаров; в отчёте
+      указаны 114 существующих записей.
+    year: '04.2020'
+    role: Веб-разработка и работа с товарными данными
+    stack:
+    - WooCommerce
+    - Product import
+    - Product variations
+    - Images
+    order: 360
+    featured: false
+    theme: cyan
+    media:
+    - type: image
+      src: /media/projects/xone-accessories-catalog-update/homepage-20261104.webp
+      alt: Полностраничный снимок сайта мобильных аксессуаров X-ONE
+      featured: true
+    links:
+    - label: Читать кейс
+      url: /showcase/xone-accessories-catalog-update/
+      type: product

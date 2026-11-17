@@ -6664,3 +6664,27 @@ projects:
       - label: Read case study
         url: /showcase/medical-catalog-mobile-thumbnails/en/
         type: product
+
+  - slug: xone-accessories-catalog-update
+    name: 'X-ONE: updating an accessories catalog and variations'
+    description: Updated catalog imports, attributes, variations and images; the historical
+      report records 114 existing entries.
+    year: '04.2020'
+    role: Web development and product data
+    stack:
+    - WooCommerce
+    - Product import
+    - Product variations
+    - Images
+    order: 360
+    featured: false
+    theme: cyan
+    media:
+    - type: image
+      src: /media/projects/xone-accessories-catalog-update/homepage-20261104.webp
+      alt: Full-page capture of the X-ONE mobile accessories website
+      featured: true
+    links:
+    - label: View case
+      url: /showcase/xone-accessories-catalog-update/en/
+      type: product

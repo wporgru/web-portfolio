@@ -1,0 +1,44 @@
+title: 'X-ONE: updating an accessories catalog and variations'
+tagline: Updated an accessories store’s product data, working with new items, existing attributes
+  and supplied imagery without overwriting established photos.
+year: '04.2020'
+role: Web development and product data
+stack:
+- WooCommerce
+- Product import
+- Product variations
+- Images
+blocks:
+- type: text
+  title: The store’s brief
+  body: The existing WooCommerce catalog needed new accessories, corrections to existing products
+    and attributes, and replacement of some images with client-supplied assets. The initial scope
+    mentioned 49 new items; additional work was agreed separately.
+- type: text
+  title: Preparing and importing data
+  body: I supplied an export for completion and explained how to update existing fields without
+    overwriting photos. After checking a trial item, I continued the import. The historical stage
+    report records changes to 114 existing entries; these numbers are not a fresh database recount.
+- type: text
+  title: Models and variations
+  body: I restored a variable DropGuard PRO listing for Huawei P30 Pro with two colors and suffixes.
+    I corrected model assignments for iPhone, Samsung and Meizu, attribute values and a reported
+    duplicate; I removed an unnecessary Huawei assignment from Honor and replaced a conflicting
+    “+” notation with Plus where needed.
+- type: text
+  title: Images and acceptance
+  body: In a subsequent pass I replaced client-supplied design images and regenerated thumbnails.
+    I investigated mismatches in names, letter case and the -t suffix, reprocessed images, and
+    the client confirmed the result and accepted the order.
+- type: text
+  title: Scope boundaries
+  body: This was a specific catalog-update stage, not creation of the entire website. Personalized
+    recommendations, search synonyms, Turbo-page repairs and store-speed work are not part of
+    the confirmed result. Completeness of every image and catalog-wide absence of duplicates were
+    not separately verified.
+- type: image
+  src: /media/projects/xone-accessories-catalog-update/homepage-20261104.webp
+  title: Public X-ONE homepage
+  alt: Full-page capture of the X-ONE mobile accessories website
+  caption: Public capture dated November 4, 2026, uncropped. The later homepage does not show
+    the catalog as it stood in 2020 or establish authorship of its design or current import operation.
