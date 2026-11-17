@@ -1,7 +1,7 @@
 title: Faster mobile homepage for Arenda-PM
-tagline: Optimized the equipment rental homepage while keeping the desktop
-  carousel, category picker and existing analytics. The mobile PageSpeed lab
-  score rose from 72 to 96.
+tagline: Optimized the equipment rental homepage while keeping the desktop carousel,
+  category picker and existing analytics. The mobile PageSpeed lab score rose from 72 to
+  96.
 year: "10.2026"
 role: Web development and automation
 stack:
@@ -11,33 +11,53 @@ stack:
   - Playwright
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Optimized the equipment rental homepage while keeping the desktop
-      carousel, category picker and existing analytics. The mobile PageSpeed lab
-      score rose from 72 to 96.
+    title: "The brief: speed up the first screen without removing features"
+    body: The equipment-rental homepage needed to show category selection quickly on phones
+      while keeping the desktop slider functional. The goal was not to disable analytics
+      or remove useful functionality merely to improve a lab score.
   - type: text
-    title: How it works
-    body: "Reworked above-the-fold loading: phones no longer build a carousel or
-      fetch hidden slides, while the desktop carousel remains. Inlined critical
-      CSS and deferred the full styles with fallbacks for failed images and
-      disabled JavaScript. Preserved script dependencies without changing
-      Metrica, UIS or Calltouch code. Corrected the category field dimensions
-      and filter overlap on the banner."
+    title: Different loading paths for mobile and desktop
+    body: On phones the carousel is no longer initialized and hidden slide images are not
+      loaded; the existing slider remains active on wide screens. Switching modes is
+      supported without reloading. I inlined first-screen critical CSS and deferred the
+      full stylesheet until the first image was decoded and the initial view rendered.
+      Fallback loading covers image errors, interaction and disabled JavaScript.
   - type: text
-    title: Result and verification
-    body: In October 30 lab runs, LCP fell from 6.8 to 2.7 s and FCP from 2.0 to 0.9
-      s; final CLS was 0.001. Checked 390, 767, 768 and 1440 px, navigation,
-      category selection and desktop slides. The form returned the expected
-      required-field error; no live lead was sent. A repeat crawl of 82 URLs
-      found no canonical, metadata or internal link errors. Lab figures do not
-      represent field data.
+    title: Preserved analytics and fixed layout shifts
+    body: I adjusted the homepage’s own scripts so they do not block HTML parsing while
+      retaining dependency order. Metrica, UIS and Calltouch code was left unchanged. I
+      corrected the category selector’s initial dimensions and removed overlap with the
+      mobile banner to prevent useful controls shifting after styles load.
+  - type: text
+    title: Results and checks
+    body: In October 30 mobile lab runs, PageSpeed changed from 72 to 96, LCP from 6.8 to 2.7
+      s and FCP from 2.0 to 0.9 s; final CLS was 0.001. I checked 390, 767, 768 and 1440
+      px, mobile navigation, category selection and desktop slide changes. The form
+      returned a required-field error; no live lead was sent. A repeat crawl of 82 URLs
+      found no canonical, metadata or internal-link errors.
+    links:
+      - label: PageSpeed report after optimization
+        url: https://pagespeed.web.dev/analysis/https-arenda-pm-ru/l3ptntuhx8?form_factor=mobile
+  - type: image
+    src: /media/projects/arenda-pm-home-performance/homepage-20261117.webp
+    title: Full homepage
+    alt: Full-page Arenda-PM homepage capture
+    caption: Public version captured November 17, 2026, at 1440 px, uncropped. The desktop
+      view does not replace a mobile PageSpeed measurement.
   - type: image
     src: /media/projects/arenda-pm-home-performance/mobile-viewport.png
     alt: Mobile first screen after optimization
-    caption: Browser verification screenshot at 390 px. This is not a PageSpeed
-      report or a full-page capture.
+    caption: Browser verification screenshot at 390 px. This is not a PageSpeed report or a
+      full-page capture.
   - type: text
     title: Another stage of this project
     links:
       - label: "Related stage: technical SEO for the catalog"
         url: /showcase/arenda-pm-catalog-indexability/en/
+  - type: text
+    title: How to read the measurements
+    body: PageSpeed is a lab result from specific runs, not a promise of identical speed for
+      every visitor. The previous complete run after the main changes scored 89; a
+      separate run with a UIS timeout was not used as evidence of a consistently green
+      score. For another site, first record the URL, device and test conditions, then
+      verify functionality after optimization.
