@@ -6710,3 +6710,23 @@ projects:
         url: /showcase/vysota-tepla-prototype/en/
         type: product
     featured: false
+  - slug: education-store-crawl-audit
+    name: Technical SEO audit of an educational materials catalog
+    year: "06.2026"
+    role: Technical SEO audit
+    description: The Antigravity workspace contains an audit report and its source
+      Screaming Frog CSV crawl dated June 28, 2026. The work focuses on separating
+      crawl and indexability issues in a large catalog from template and metadata
+      improvements. The client and domain are anonymized in this portfolio case.
+    stack:
+      - Screaming Frog
+      - CSV analysis
+      - Technical SEO
+      - Indexability
+    order: 362
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/education-store-crawl-audit/en/
+        type: product
+    featured: false

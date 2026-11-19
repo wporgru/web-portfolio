@@ -1,0 +1,36 @@
+title: Technical SEO audit of an educational materials catalog
+tagline: The Antigravity workspace contains an audit report and its source
+  Screaming Frog CSV crawl dated June 28, 2026. The work focuses on separating
+  crawl and indexability issues in a large catalog from template and metadata
+  improvements. The client and domain are anonymized in this portfolio case.
+year: "06.2026"
+role: Technical SEO audit
+stack:
+  - Screaming Frog
+  - CSV analysis
+  - Technical SEO
+  - Indexability
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The Antigravity workspace contains an audit report and its source
+      Screaming Frog CSV crawl dated June 28, 2026. The work focuses on
+      separating crawl and indexability issues in a large catalog from template
+      and metadata improvements. The client and domain are anonymized in this
+      portfolio case.
+  - type: text
+    title: How it works
+    body: "Cross-checked the report against its source CSV and grouped URLs by HTTP
+      status, indexability, a second H1 and missing meta descriptions.
+      Prioritized the work: fix internal 404s and verify destinations, correct
+      template heading markup, then fill missing descriptions. Excluded the
+      duplicate-description figure from the final claims because the report
+      total did not match a recount of the source CSV."
+  - type: text
+    title: Result and verification
+    body: "A CSV recount confirmed 3,508 URLs: 2,995 indexable and 513 excluded. The
+      crawl contained 81 URLs returning 404; 2,868 indexable pages had a second
+      H1 (95.8%), and 617 lacked a meta description (20.6%). These are
+      crawl-snapshot counts from the audit date, not the site current state. The
+      archive does not prove implementation, a follow-up crawl, traffic growth
+      or ranking gains; this is a diagnostic case, not a report of SEO impact."
