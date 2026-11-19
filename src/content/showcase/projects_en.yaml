@@ -2852,8 +2852,7 @@ projects:
     name: Relevant WooCommerce products on service pages
     year: "06.2024"
     role: Web development and automation
-    description: Refined an existing service page so visitors would see products
-      relevant to the service rather than the entire catalog.
+    description: "Updated WooCommerce product output on an existing Elementor service page: reviewed its custom markup and kept the current design while replacing the full-catalog list with products relevant to that service. The client checked the selection, confirmed the intended items and accepted the work. This was a targeted display change, not a universal recommendation engine."
     stack:
       - WooCommerce
       - Elementor
