@@ -3291,11 +3291,13 @@ projects:
         url: /showcase/tilda-yml-specifications/en/
         type: product
   - slug: yookassa-webhook-recovery
-    name: Restoring YooKassa payment notifications
+    name: "YooKassa + WooCommerce: restoring payment status and emails"
     year: "10.2023"
     role: Web development and automation
-    description: Restored an existing YooKassa connection when payment status and
-      email notifications did not behave as expected.
+    description: Traced payments that succeeded while WooCommerce orders stayed
+      pending. Fixed the settings link; provider support identified a missing
+      webhook subscription. The client confirmed the email after a control
+      payment and accepted the work.
     stack:
       - WooCommerce
       - YooKassa

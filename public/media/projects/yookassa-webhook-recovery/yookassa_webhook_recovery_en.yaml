@@ -1,6 +1,6 @@
-title: Restoring YooKassa payment notifications
-tagline: Restored an existing YooKassa connection when payment status and email
-  notifications did not behave as expected.
+title: "YooKassa + WooCommerce: restoring payment statuses and emails"
+tagline: "Traced why a successful payment did not complete the WooCommerce order
+  and restored event delivery in the store's existing YooKassa integration."
 year: "10.2023"
 role: Web development and automation
 stack:
@@ -10,15 +10,47 @@ stack:
   - Transactional email
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Restored an existing YooKassa connection when payment status and email
-      notifications did not behave as expected.
+    title: When payment succeeds but the store does not see it
+    body: "In October 2023, the owner of sushi-panda15.ru faced a gap between the
+      payment provider and the store. YooKassa processed payments, but the order
+      remained pending in WooCommerce and the expected customer email did not
+      arrive. This is a critical ecommerce moment: the buyer has paid but has no
+      confirmation, while the team cannot see the correct order status. The task
+      was to restore the existing integration—not to present it as a brand-new
+      acquiring setup."
   - type: text
-    title: How it works
-    body: Corrected a broken settings link and helped escalate the issue. Support
-      identified a missing webhook subscription. After further setup, ran a test
-      payment and asked the client to confirm the email.
+    title: Diagnosing the event chain
+    body: "I started by checking the available settings and found an incorrect
+      link that made the payment gateway configuration harder to reach. I fixed
+      it and helped the client frame a support request to YooKassa to clarify
+      server-side notification registration. Support reported that a webhook
+      subscription had not been connected for the store. This channel is what
+      sends payment events back to WooCommerce: without it, the provider may
+      complete a transaction while the website leaves the order unchanged.
+      After further configuration, I reported a control payment and asked the
+      client to confirm that the notification email arrived. The archive does
+      not preserve the exact re-authorization steps or plugin configuration
+      changes, so this case stays within what the written correspondence
+      confirms."
   - type: text
-    title: Result and verification
-    body: The client confirmed receipt and accepted the result. The work restored an
-      existing integration rather than installing a new payment system.
+    title: Outcome, confirmation and limitations
+    body: "The client confirmed receipt of the notification; after a control
+      payment, the store sent the email and the order was accepted. The case
+      covers recovery of the key flow—payment, webhook event, order status and
+      email—in an existing integration. The archive contains no independent
+      retest performed today, screenshots of the exact webhook configuration or
+      full regression run across payment methods. I therefore do not claim a
+      fresh gateway integration, flawless operation for every payment method or
+      guaranteed delivery of every email."
+    links:
+      - label: Original Kwork order
+        url: https://kwork.ru/track?id=39057157
+  - type: text
+    title: What to check when payment status gets stuck
+    body: "If a provider reports a successful transaction while WooCommerce stays
+      pending, checking email settings alone is not enough. Trace the callback
+      path: whether the event/endpoint is registered with the payment service,
+      whether the site receives the notification, whether the order status
+      changes and whether the email is triggered. In this project, support
+      identified a missing webhook subscription as the specific cause for this
+      store—not a universal diagnosis for every payment failure."
