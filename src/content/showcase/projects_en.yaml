@@ -4122,8 +4122,7 @@ projects:
     name: Sugarlips supplier catalog import and updates
     year: "12.2021"
     role: Web development and automation
-    description: Set up a supplier CSV import with an agreed markup and scheduled
-      updates for the store.
+    description: "Configured a supplier CSV import for WooCommerce: mapped fields, categories and tags, applied the agreed markup rule and prepared scheduled updates. When the import hit a hosting limit, distinguished server capacity from data-mapping issues; the client upgraded the plan. The handoff reports 5,900 imported products, but no independent recount or complete post-upgrade cron cycle was verified."
     stack:
       - WooCommerce
       - CSV
