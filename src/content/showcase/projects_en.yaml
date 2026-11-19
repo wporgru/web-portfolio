@@ -3772,11 +3772,12 @@ projects:
         url: /showcase/per-product-quantity-discounts/en/
         type: product
   - slug: generatepress-editorial-blog
-    name: GeneratePress blog with article contents
+    name: "GeneratePress blog: structured articles and table of contents"
     year: "01.2023"
     role: Web development and automation
-    description: Set up a GeneratePress blog so editors could publish structured
-      articles with a table of contents generated from headings.
+    description: Configured a blog on free GeneratePress, prepared a sample post
+      with an image and headings, and demonstrated LuckyWP contents navigation.
+      The client accepted the work and recommended the developer.
     stack:
       - WordPress
       - GeneratePress

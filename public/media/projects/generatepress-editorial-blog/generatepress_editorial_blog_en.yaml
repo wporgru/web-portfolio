@@ -1,6 +1,6 @@
-title: GeneratePress blog with article contents
-tagline: Set up a GeneratePress blog so editors could publish structured
-  articles with a table of contents generated from headings.
+title: "GeneratePress blog: article layout and auto contents"
+tagline: "Built an editorial foundation on the free GeneratePress theme, with a
+  sample post demonstrating article structure and LuckyWP heading navigation."
 year: "01.2023"
 role: Web development and automation
 stack:
@@ -10,16 +10,39 @@ stack:
   - Editorial workflow
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Set up a GeneratePress blog so editors could publish structured articles
-      with a table of contents generated from headings.
+    title: A blog that is easy to read and extend
+    body: "In January 2023, the client needed a foundation for a lightweight
+      WordPress blog using the free version of GeneratePress. They shared
+      codingcampus.net as a visual reference, while the implementation had to
+      stay within the free theme's capabilities rather than rely on premium
+      features. Articles needed a clear structure—an illustration, meaningful
+      sections and a table of contents to help readers jump to the part they
+      wanted."
   - type: text
-    title: How it works
-    body: Configured the theme and prepared a sample post with an image and several
-      headings. Included LuckyWP Table of Contents in the agreed setup and
-      demonstrated it on the sample article.
+    title: Theme setup and editorial template demonstration
+    body: "I configured GeneratePress as the blog foundation and prepared a sample
+      post with an image and several headings. I included LuckyWP Table of
+      Contents in the agreed scope and checked on the sample article that the
+      table was generated from the heading structure. The example showed the
+      editor how to structure a post and demonstrated how visitors could navigate
+      a longer text. A key constraint was the free theme version: the solution
+      did not depend on GeneratePress Premium features outside the agreed setup."
   - type: text
-    title: Result and verification
-    body: The client accepted the blog foundation. The sample article did not
-      represent a completed content library, and no comparative speed benchmark
-      was made.
+    title: Outcome and project boundaries
+    body: "The client accepted the setup and left a review: 'Quick and clear, I
+      recommend.' The delivery covered the blog foundation and a representative
+      post template, not a complete library of published articles; full content
+      production is not confirmed. The project domain was not established, so
+      codingcampus.net is presented only as the reference, not the client's site.
+      No before-and-after speed measurements were taken—'lightweight blog'
+      describes the original brief, not a measured performance result."
+    links:
+      - label: Original Kwork order and review
+        url: https://kwork.ru/track?id=33142763
+  - type: text
+    title: How a heading-based table of contents helps
+    body: "For a long article, a table of contents turns section headings into
+      quick in-page navigation. Editors maintain a clear heading hierarchy, while
+      readers can preview the structure and jump to a relevant topic. This project
+      demonstrated the behavior on a sample post; a complete content library and
+      its production are outside the documented scope."

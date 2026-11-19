@@ -3812,11 +3812,12 @@ projects:
         url: /showcase/per-product-quantity-discounts/
         type: product
   - slug: generatepress-editorial-blog
-    name: Блог на GeneratePress с оглавлением статей
+    name: "Блог на GeneratePress: структура статей и оглавление"
     year: "01.2023"
     role: Веб-разработка и автоматизация
-    description: Настроил основу блога на GeneratePress, чтобы редактор мог
-      публиковать структурированные статьи и получать оглавление из заголовков.
+    description: Настроил блог на бесплатной GeneratePress, подготовил статью с
+      изображением и заголовками, показал LuckyWP Contents иерархию разделов;
+      клиент принял работу и рекомендовал исполнителя.
     stack:
       - WordPress
       - GeneratePress
