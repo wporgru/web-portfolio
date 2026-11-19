@@ -1807,11 +1807,12 @@ projects:
         url: /showcase/woocommerce-cart-recovery/en/
         type: product
   - slug: dpd-woocommerce-setup
-    name: Configuring DPD delivery for a WooCommerce store
+    name: "r-ferra.ru: DPD setup in WooCommerce"
     year: "02.2024"
     role: Web development and automation
-    description: An existing store needed DPD delivery configured. The job concerned
-      an existing module, not building a custom carrier API.
+    description: Connected the existing DPD module in WooCommerce, checked the
+      supplied connection data and handed it over. The order was accepted with
+      positive feedback; shipment and label printing are not confirmed.
     stack:
       - WooCommerce
       - DPD

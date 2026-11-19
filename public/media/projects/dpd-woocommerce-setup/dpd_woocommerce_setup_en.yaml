@@ -1,6 +1,7 @@
-title: Configuring DPD delivery for a WooCommerce store
-tagline: An existing store needed DPD delivery configured. The job concerned an
-  existing module, not building a custom carrier API.
+title: "r-ferra.ru: DPD shipping setup in WooCommerce"
+tagline: Connected the existing DPD module to the r-ferra.ru WooCommerce store
+  and checked the supplied connection details, without building a custom carrier
+  plugin.
 year: "02.2024"
 role: Web development and automation
 stack:
@@ -10,15 +11,23 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: An existing store needed DPD delivery configured. The job concerned an
-      existing module, not building a custom carrier API.
+    body: A Kwork buyer assigned DPD shipping setup for their client's
+      r-ferra.ru store. The scope was to connect an existing WooCommerce module,
+      not build an online store or a custom DPD API.
   - type: text
     title: How it works
-    body: Checked the connection details, configured the module and showed the
-      intermediate result before the order was placed. After agreement, handed
-      the work back for review and acceptance.
+    body: Received the required access and checked the DPD connection details.
+      Configured the existing module and showed an interim result before the
+      order was placed; the buyer responded positively and approved payment. The
+      conversation does not identify the plugin version, enabled rates or exact
+      configuration, so those are not presented as known details.
   - type: text
     title: Result and verification
-    body: The buyer accepted delivery and praised the work in a review. Actual
-      shipment, label printing and verification of every tariff were not
-      established by this handoff.
+    body: "The buyer accepted the order and left a positive review: “Thank you,
+      the task was completed quickly and professionally; I recommend this
+      seller.” This confirms acceptance of the setup, not a real shipment. Label
+      printing, all delivery addresses and full rate validation are not
+      established by the archive."
+    links:
+      - label: View the original Kwork order
+        url: https://kwork.ru/track?id=41429270

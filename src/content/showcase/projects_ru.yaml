@@ -1823,12 +1823,12 @@ projects:
         url: /showcase/woocommerce-cart-recovery/
         type: product
   - slug: dpd-woocommerce-setup
-    name: Настройка модуля доставки DPD для WooCommerce
+    name: "r-ferra.ru: настройка DPD в WooCommerce"
     year: "02.2024"
     role: Веб-разработка и автоматизация
-    description: Действующему магазину требовалось подключить DPD. Задача была в
-      настройке существующего модуля, а не в разработке собственного API
-      перевозчика.
+    description: Подключил существующий модуль DPD в WooCommerce, проверил данные
+      и передал настройку покупателю. Заказ принят, есть положительный отзыв;
+      отгрузка и печать накладной не подтверждены.
     stack:
       - WooCommerce
       - DPD
