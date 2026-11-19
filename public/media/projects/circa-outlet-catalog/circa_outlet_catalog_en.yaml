@@ -13,17 +13,32 @@ blocks:
     body: The clothing store needed a usable catalog where shoppers could see sizes,
       not just a model name and photo.
   - type: text
-    title: How it works
-    body: Prepared the store environment and theme, ran the catalog import and
-      configured size display as a separate step. After the import, I asked the
-      client to check this product-page detail rather than relying on the
-      appearance of new admin records.
+    title: Catalog preparation and import
+    body: "A separate preparation stage produced a 9,645-URL selection from a
+      full source collection of 28,664 non-empty rows. The import-ready sheet
+      had 22 columns instead of nine in the original format. I prepared the
+      store environment and theme, then ran the import on circaoutlet.com. The
+      handoff report recorded 9,645 products. Data preparation and store import
+      were distinct stages of the project."
   - type: text
-    title: Result and verification
-    body: The handoff records 9,645 imported products. The client explicitly
-      approved the size display and accepted the work. Separate men’s and
-      women’s sections, navigation and the homepage were discussed as the next
-      stage.
+    title: Size display and client acceptance
+    body: After the import, I separately configured size display on product
+      pages so shoppers could identify available options. I asked the client to
+      check that specific detail; they replied that the sizes looked excellent
+      and accepted the order on February 24, 2026. Redesigning the men's and
+      women's sections, navigation and homepage was discussed separately and is
+      outside this stage.
+  - type: text
+    title: What the evidence confirms
+    body: The 9,645 figure is both the planned unique-URL selection and the
+      historical product count in the handoff report, not an independent count
+      of published products and variations. The final export was not preserved;
+      the source and completeness of all product fields are also unknown. The
+      full-page image below was captured later and shows the public homepage,
+      not the imported product catalogue.
+    links:
+      - label: View the original Kwork order
+        url: https://kwork.ru/track?id=59908880
   - type: text
     title: Another stage of this project
     links:

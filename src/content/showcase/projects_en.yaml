@@ -1989,8 +1989,10 @@ projects:
     name: "Circa Outlet: importing 9,645 products and displaying sizes"
     year: "02.2026"
     role: Web development and automation
-    description: The clothing store needed a usable catalog where shoppers could see
-      sizes, not just a model name and photo.
+    description: Prepared the WooCommerce environment, imported the catalogue on
+      circaoutlet.com and configured size display on product pages. The client
+      confirmed the sizes and accepted the stage; 9,645 is the handoff report,
+      not a current independent count.
     stack:
       - WordPress
       - WooCommerce
