@@ -41,7 +41,9 @@ function loadProjectYaml(slug: string, lang: string, defaultLang: string) {
   try {
     if (fs.existsSync(primary))  return parse(fs.readFileSync(primary, 'utf8'));
     if (fs.existsSync(fallback)) return parse(fs.readFileSync(fallback, 'utf8'));
-  } catch {}
+  } catch (error) {
+    throw new Error(`Invalid case YAML for ${slug} (${lang}): ${String(error)}`);
+  }
   return null;
 }
 
@@ -73,7 +75,9 @@ export async function getStaticPaths() {
     try {
       if (fs.existsSync(primary))  return parse(fs.readFileSync(primary, 'utf8'));
       if (fs.existsSync(fallback)) return parse(fs.readFileSync(fallback, 'utf8'));
-    } catch {}
+    } catch (error) {
+      throw new Error(`Invalid case YAML for ${slug}: ${String(error)}`);
+    }
     return null;
   }
   function _getSlugs(): string[] {
