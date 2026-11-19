@@ -456,11 +456,13 @@ projects:
         url: /showcase/autopartner-import/en/
         type: product
   - slug: wp-studio
-    name: "WP.ORG.RU: independent web studio site"
+    name: "WP.ORG.RU: web developer website and services hub"
     year: "2026"
     role: Web development and automation
-    description: Shorten the path from service information to work samples and
-      contact, without making every landing page identical.
+    description: Brought services, portfolio, shop and knowledge base together
+      as a clear path from visitor need to service, work samples and direct
+      contact. The site presents WordPress, WooCommerce, integrations, React,
+      SEO, performance and AI work as distinct capabilities.
     stack:
       - WordPress
       - PHP

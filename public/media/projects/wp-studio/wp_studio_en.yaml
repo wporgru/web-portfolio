@@ -1,6 +1,6 @@
-title: "WP.ORG.RU: independent web studio site"
-tagline: Shorten the path from service information to work samples and contact,
-  without making every landing page identical.
+title: "WP.ORG.RU: web developer website and services hub"
+tagline: A solo web engineering practice bringing services, projects, digital
+  products and expertise together with a clear route to discuss a project.
 year: "2026"
 role: Web development and automation
 stack:
@@ -9,15 +9,43 @@ stack:
   - CSS
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Shorten the path from service information to work samples and contact,
-      without making every landing page identical.
+    title: "The brief: turn a personal site into a useful starting point"
+    body: A freelance developer's website should do more than list skills. It
+      should help different clients find the right service, review relevant work
+      and make direct contact. The goal was to present a broad profile—from
+      WordPress and WooCommerce to audits, SEO, performance and AI content—without
+      multiplying identical pages that only swap the headline.
   - type: text
-    title: How it works
-    body: The public site separates services, portfolio, knowledge base and contact.
-      Antigravity working artifacts cover service and portfolio templates,
-      alignment of hero sections and navigation between them.
+    title: Architecture and visitor journey
+    body: "The public structure separates key journeys: services, portfolio, a
+      digital-products shop, knowledge base and contact. The homepage brings
+      together service areas, technology profile, developer introduction,
+      testimonials, FAQs and an enquiry route. Visitors can move from a problem
+      area to a dedicated service page, explore related projects or start a
+      conversation without hunting for contact details in the footer."
   - type: text
-    title: Result and verification
-    body: The public site lets visitors browse services and contact the developer.
-      Internal plans are not presented as deployed work and are not published.
+    title: Dedicated services, not a stack of cloned pages
+    body: The site presents corporate websites, WooCommerce stores, landing pages,
+      ongoing support, SEO, audits, redesign, malware cleanup, content and
+      product entry, performance work, catalog parsing and AI-assisted content.
+      Each direction has its own service description and route to discuss the
+      work. The portfolio and knowledge base add examples and explanations, while
+      the shop remains a distinct destination for ready-made digital products.
+  - type: text
+    title: Result and scope
+    body: "The current public version lets visitors explore services, browse case
+      studies and articles, read testimonials and contact the developer. Its
+      structure positions the author as a broad web engineer rather than a
+      WordPress-only implementer: integrations, React, PHP, custom logic and an
+      AI direction are presented separately. This describes published sections;
+      it does not claim specific sales, search rankings or conversion results.
+      Internal plans that are not visible on the live site are not presented as
+      shipped functionality."
+    links:
+      - label: Visit WP.ORG.RU
+        url: https://wp.org.ru/
+  - type: image
+    title: The complete current WP.ORG.RU homepage
+    src: /media/projects/wp-studio/wporg-home-current.webp
+    alt: Full-length homepage of the WP.ORG.RU web practice with services, technologies, testimonials and contact section
+    caption: Full-page capture of the public version made on 19 Nov 2026. It illustrates the current structure, not the historical appearance at launch.
