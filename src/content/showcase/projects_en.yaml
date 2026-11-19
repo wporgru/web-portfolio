@@ -5297,9 +5297,10 @@ projects:
     name: Goa Tours search and empty cart copy
     year: "07.2022"
     role: Web development and automation
-    description: Adapted storefront copy for excursions. Default WooCommerce strings
-      referred to products, and a generic category control distracted from tour
-      search.
+    description: Replaced the WooCommerce search placeholder with “Search Goa Tours...”,
+      removed “All Categories” and a redundant search row, and rewrote the empty-cart
+      message for tours. The client accepted the copy; booking or conversion impact
+      was not measured.
     stack:
       - WordPress
       - WooCommerce

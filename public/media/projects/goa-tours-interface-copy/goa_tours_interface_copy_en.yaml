@@ -1,29 +1,43 @@
 title: Goa Tours search and empty cart copy
-tagline: Adapted storefront copy for excursions. Default WooCommerce strings
-  referred to products, and a generic category control distracted from tour
-  search.
+tagline: Adapted the storefront language for excursions, so the interface talked
+  about tours rather than default WooCommerce products.
 year: "07.2022"
-role: Web development and automation
+role: Web development and UX writing
 stack:
   - WordPress
   - WooCommerce
   - UX writing
-  - Localization
+  - Interface localization
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Adapted storefront copy for excursions. Default WooCommerce strings
-      referred to products, and a generic category control distracted from tour
-      search.
+    title: Aligned the store interface with the service
+    body: >-
+      The site sold excursions, but default WooCommerce labels referred to products
+      and exposed a generic category list. That mismatch made the search intent less
+      clear. The brief named concrete updates for goa.tours: change the search
+      placeholder to “Search Goa Tours...”, remove “All Categories” and delete a
+      redundant first search row.
   - type: text
-    title: How it works
-    body: Replaced the search placeholder with Goa Tours copy and removed the
-      redundant generic category row. Rewrote the empty-cart message to refer to
-      tours and supplied verification images at handoff.
+    title: Rewrote search and the empty-cart state
+    body: >-
+      I adapted storefront copy to the travel context: “No products in the cart.”
+      became “No tours in the cart.” The generic catalog control was removed in favor
+      of a more direct tour-search path. It was a focused interface task, but it
+      removed product-centric wording from the excursion purchase journey.
   - type: text
-    title: Result and verification
-    body: The client accepted the copy changes. This was a separate interface task,
-      not a booking system or payment implementation.
+    title: Handover and verification limits
+    body: >-
+      I reported completion and attached images for review; the attachment links later
+      expired, so the original result images could not be rechecked. The client
+      accepted the stage. The archived brief confirms the requested copy, but does
+      not support claims about conversion, booking growth or an independent review
+      of every screen.
+  - type: text
+    title: Scope boundaries
+    body: >-
+      This was a targeted update to interface labels and search elements in an
+      existing store, not a tourism website build, booking system or payment
+      integration. Stripe configuration is covered in a separate related case.
   - type: text
     title: Another stage of this project
     links:
