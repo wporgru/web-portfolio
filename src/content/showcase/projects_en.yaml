@@ -926,8 +926,7 @@ projects:
     name: A WoodMart tile storefront with an inquiry form
     year: "03.2026"
     role: Web development and automation
-    description: The tile business needed a working first-stage storefront with
-      clear categories, product pages and a way to contact a sales manager.
+    description: "Built phase one of a WooCommerce tile storefront on WoodMart: homepage, header and footer, categories and a product-page template. Added a separate manager enquiry form without enabling online purchases, integrated Yandex Metrica using the agreed direct code and identified names and descriptions to fix in the 1C source. The client accepted the phase; commercial pages and full source-catalog correction were outside scope."
     stack:
       - WordPress
       - WooCommerce
