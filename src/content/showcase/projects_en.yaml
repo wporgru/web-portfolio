@@ -3000,8 +3000,7 @@ projects:
     name: Restoring a WordPress homepage backed by ACF
     year: "04.2024"
     role: Web development and automation
-    description: Restored homepage content after an update and helped recover admin
-      access without rebuilding the page from scratch.
+    description: Restored the content of an ACF-backed WordPress homepage after update issues, then helped recover admin access. Checked for version mismatches and showed where the hosting backups were located; the client confirmed the recovery and accepted the work. The archive does not establish the exact root cause or a complete cross-browser regression.
     stack:
       - WordPress
       - ACF
