@@ -1,30 +1,44 @@
 title: Relevant WooCommerce products on service pages
-tagline: Refined an existing service page so visitors would see products
-  relevant to the service rather than the entire catalog.
+tagline: 'Matched a service page with a relevant product selection: visitors should see the category related to the service instead of an unrelated carousel.'
 year: "06.2024"
 role: Web development and automation
 stack:
   - WooCommerce
   - Elementor
-  - Contextual merchandising
+  - Contextual product display
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Refined an existing service page so visitors would see products relevant
-      to the service rather than the entire catalog.
+    title: The carousel did not match the service
+    body: >-
+      On a ventilation service page, the client found air conditioners in a product
+      carousel that should have shown relevant equipment. The requested example was
+      fresh-air valves: the selection needed to support the page content rather than
+      lead visitors to a different product type.
   - type: text
-    title: How it works
-    body: Reviewed the custom Elementor layout and changed the product output within
-      the existing design. Handed the page over so the client could verify both
-      presentation and the actual product selection.
+    title: Worked within the existing Elementor layout
+    body: >-
+      The page used a non-standard Elementor layout. I reviewed its structure and
+      adjusted catalog output within the existing design instead of turning a
+      focused request into a full site rebuild. The available records do not reveal
+      the exact code or service-to-category mapping, so I do not claim a separate,
+      universal recommendation engine.
   - type: text
-    title: Result and verification
-    body: The client confirmed the intended products were displayed and accepted the
-      work. This was a targeted display change, not a general recommendation
-      engine.
+    title: Verified relevance and the live block
+    body: >-
+      I handed the page over for the client to check two things: the carousel showed
+      the relevant product type, and the selection worked in the real template. The
+      client confirmed that the intended products appeared and the block worked,
+      then accepted the order. This verifies one specific page, not every service
+      page on the site.
+  - type: text
+    title: Practical value and scope
+    body: >-
+      A contextual selection creates a clearer path from a service description to
+      relevant equipment and removes obviously unrelated cards from that block.
+      Conversion or sales impact was not measured; the work is not represented as
+      automatic matching across the entire catalog.
   - type: image
     title: Public site view
     src: /media/projects/service-page-product-selection/later-homepage.webp
     alt: Public DomKlimat homepage
-    caption: Public version from October 24, 2026, uncropped. Empty areas are
-      retained; the screenshot does not test product selection on service pages.
+    caption: Public version from October 24, 2026, uncropped. Empty areas are retained; the screenshot does not test product selection on service pages.
