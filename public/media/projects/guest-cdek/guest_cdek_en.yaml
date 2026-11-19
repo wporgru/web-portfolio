@@ -1,22 +1,49 @@
-title: Restoring CDEK shipping quotes for guest shoppers
-tagline: Shipping quotes were still failing for regular shoppers even though an
-  admin-side check had not exposed the issue at first.
+title: "Boom Shop: fixing CDEK delivery quotes for shoppers"
+tagline: "Restored the WooCommerce guest checkout flow where shoppers were stuck
+  waiting for a CDEK quote and could not continue to checkout."
 year: "12.2024"
 role: Web development and automation
 stack:
   - WooCommerce
   - CDEK
+  - Checkout debugging
+  - Guest-flow testing
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Shipping quotes were still failing for regular shoppers even though an
-      admin-side check had not exposed the issue at first.
+    title: "The brief: delivery must work for shoppers, not just admins"
+    body: "In December 2024, the cosmetics store Boom Shop needed CDEK shipping
+      quotes restored on boomshopcosmetics.com. The error affected a critical
+      part of the purchase journey: a visitor needed to choose a delivery option,
+      see the quote and continue checkout. The initial check appeared successful,
+      but the client could not see the result on their end—so an admin-side view
+      was not enough to close the issue."
   - type: text
-    title: How it works
-    body: "Used client screenshots to isolate the anonymous checkout scenario:
-      without an admin session, the shopper encountered a stall. I continued the
-      fix and handed back the guest flow for another check."
+    title: Diagnosing the guest checkout flow
+    body: "After the client's follow-up, I compared their screenshots with the
+      checkout behavior and isolated a separate condition: a shopper without an
+      admin session. In that flow, the quote still stalled. I continued the fix
+      with regular visitors in mind, clarified the shipping method and dispatch
+      origin settings, and handed the checkout path back for another review. The
+      saved report does not preserve the exact technical cause or patch, so I do
+      not attribute the issue to caching, JavaScript or a specific plugin
+      conflict."
   - type: text
-    title: Result and verification
-    body: The client confirmed the fix and accepted the order. This does not claim a
-      settled payment, an actual shipment or coverage of every destination.
+    title: Outcome and client review
+    body: "After the follow-up work, the client confirmed, 'Now yes, it works,'
+      and accepted the order. This confirms the quote flow was restored and could
+      proceed to payment in the scenario reviewed by the client. It does not
+      establish a settled payment, a created shipment, every tariff/destination
+      combination or the current state of the former WooCommerce store. A later
+      public check showed a Tilda version of the homepage, so it is not used as
+      evidence of the historical shipping integration."
+    links:
+      - label: Original Kwork order and review
+        url: https://kwork.ru/track?id=48296130
+  - type: text
+    title: How to test a shipping quote in checkout
+    body: "When shipping works in an admin session but stalls for a shopper, test
+      the public purchase flow itself: open the cart without signing in, enter
+      the delivery address, choose the shipping method, confirm a quote appears
+      and check that the user can continue to payment. In this order, reproducing
+      the guest stall separated an admin-side success from the customer's real
+      journey—and kept the work moving until the client confirmed the fix."

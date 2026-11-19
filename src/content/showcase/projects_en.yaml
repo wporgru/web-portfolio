@@ -574,11 +574,12 @@ projects:
         alt: Public Gdetamo homepage
         featured: true
   - slug: guest-cdek
-    name: Restoring CDEK shipping quotes for guest shoppers
+    name: "Boom Shop: fixing CDEK delivery quotes for shoppers"
     year: "12.2024"
     role: Web development and automation
-    description: Shipping quotes were still failing for regular shoppers even though
-      an admin-side check had not exposed the issue at first.
+    description: Reproduced a stalled quote in WooCommerce guest checkout and
+      continued the fix after the first check failed for the client. They
+      confirmed, 'Now yes, it works,' and accepted the order.
     stack:
       - WooCommerce
       - CDEK
