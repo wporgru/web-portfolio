@@ -11,16 +11,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: The tile business needed a working first-stage storefront with clear
-      categories, product pages and a way to contact a sales manager.
+    body: A tile retailer needed the first stage of a WooCommerce storefront on the WoodMart Megamarket theme. The catalog was supplied from 1C, and the business wanted enquiries routed to a sales manager without launching ordinary online purchases in this phase. The client also preferred standard Gutenberg editing over an additional heavy visual builder.
   - type: text
     title: How it works
-    body: Prepared the homepage, header, footer, categories and product-page
-      template. Configured the inquiry flow separately from online purchasing.
-      Replaced the problematic Metrica integration with the agreed direct code
-      and identified naming and description fixes that belonged in the 1C source
-      data.
+    body: Prepared the homepage, header and footer, category structure and product-page template. Set up a manager enquiry flow separate from an unrequested checkout or online-payment launch. After clarifying which counter was needed, replaced the problematic prior Yandex Metrica integration with the agreed direct code; recovery of historical analytics data and goal setup are not established. During catalog review, identified incomplete descriptions and awkward product names in the 1C feed and explained what needed correction at source. The client, not the developer, edited the 1C records.
   - type: text
     title: Result and verification
-    body: The client accepted phase one. Some commercial pages and full correction
-      of source product records were outside this handoff.
+    body: On 14 March 2026 the client explicitly accepted phase one and praised the theme as a good solution for a WordPress shop. The handoff provided the storefront foundation and manager enquiry path. Payment, delivery and promotion pages, a full audit of product records, and end-to-end completion of the 1C exchange were outside this phase. The client had raised a mobile-slider concern; no independent final regression across all devices is preserved. Later improvements are treated as separate stages rather than folded into this acceptance.
