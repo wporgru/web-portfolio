@@ -4561,11 +4561,12 @@ projects:
         url: /showcase/avada-furniture-store-foundation/en/
         type: product
   - slug: woocommerce-draft-products-visibility
-    name: Restoring WooCommerce products hidden as drafts
+    name: Restoring the WooCommerce gallery shop in Romanovo
     year: "02.2020"
     role: Web development and automation
-    description: Restored products that editors could see in the admin area but
-      shoppers could not find on the public storefront.
+    description: Traced missing artdom-romanovo.ru gallery products to draft
+      status, restored their publication and explained product visibility versus
+      storefront styling. The client accepted the work and praised the quick fix.
     stack:
       - WooCommerce
       - Product visibility

@@ -4609,11 +4609,12 @@ projects:
         url: /showcase/avada-furniture-store-foundation/
         type: product
   - slug: woocommerce-draft-products-visibility
-    name: Возврат скрытых товаров на витрину WooCommerce
+    name: Восстановление галереи-магазина WooCommerce в Романово
     year: "02.2020"
     role: Веб-разработка и автоматизация
-    description: Восстановил показ товаров, которые были доступны редактору в
-      админке, но отсутствовали на публичной витрине.
+    description: Разобрался, почему товары галереи artdom-romanovo.ru оставались
+      черновиками, вернул публикацию и помог владельцу различать статус товара и
+      оформление витрины. Клиент принял работу и отметил быстрое решение.
     stack:
       - WooCommerce
       - Product visibility

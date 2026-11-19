@@ -1,6 +1,6 @@
-title: Restoring WooCommerce products hidden as drafts
-tagline: Restored products that editors could see in the admin area but shoppers
-  could not find on the public storefront.
+title: Restoring the WooCommerce gallery shop in Romanovo
+tagline: Made products visible again by finding why cards appeared in the admin
+  but not on the customer-facing storefront.
 year: "02.2020"
 role: Web development and automation
 stack:
@@ -9,16 +9,38 @@ stack:
   - WordPress
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Restored products that editors could see in the admin area but shoppers
-      could not find on the public storefront.
+    title: "The brief: bring gallery products back to shoppers"
+    body: In February 2020, the owner of artdom-romanovo.ru reported that products
+      in the site's gallery shop had disappeared. The product cards were still
+      available in the administration area, but visitors could not see them on
+      the public storefront. The task was to restore existing products to the
+      catalog quickly, without expanding the scope into a new store build or a
+      full website redesign.
   - type: text
-    title: How it works
-    body: Checked the listing status, found the products were drafts and restored
-      visibility by publishing them. Explained how product status differs from
-      ordinary post settings and theme layout.
+    title: Diagnosis and recovery
+    body: "I checked the WooCommerce product records as well as the storefront
+      design. The cause was the publication status: products had remained drafts,
+      so editors could see them in the dashboard while regular visitors could
+      not. I published the required items and explained the difference between
+      product publication, regular post settings and the card presentation
+      controlled by the theme. This addressed the source of the issue instead of
+      changing the page template blindly."
   - type: text
-    title: Result and verification
-    body: The client confirmed the fix and accepted the work. The number of
-      published listings was not preserved; this was a visibility repair, not a
-      store rebuild.
+    title: Result and scope
+    body: "The client confirmed the issue was resolved, thanked me and accepted
+      the order. Their review said: 'done quickly and just what was needed.' The
+      exact number of published items was not recorded, so I do not add an
+      invented volume. This was a WooCommerce visibility recovery and owner
+      guidance—not a store built from scratch or a full website restoration. The
+      current homepage has since changed and is not presented as a historical
+      view of the gallery at the time of the order."
+    links:
+      - label: Original Kwork order and review
+        url: https://kwork.ru/track?id=9004583
+  - type: text
+    title: Why products can disappear
+    body: WooCommerce products have their own publication status. Seeing a
+      product in the admin list does not mean it is published and available to
+      shoppers. Before redesigning a theme or rebuilding the storefront, check
+      product statuses, catalog visibility and storefront settings first. This
+      can restore missing content before any separate design work is considered.
