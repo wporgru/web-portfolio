@@ -1,6 +1,5 @@
 title: Avada foundation for a furniture store
-tagline: Set up a furniture store foundation with a visual editor, WooCommerce
-  and HTTPS on its own domain.
+tagline: Prepared the launch foundation for a WordPress furniture shop on WooCommerce with a ready-made theme, connected domain and reported HTTPS.
 year: "02.2020"
 role: Web development and automation
 stack:
@@ -11,16 +10,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Set up a furniture store foundation with a visual editor, WooCommerce and
-      HTTPS on its own domain.
+    body: The client wanted to launch a WordPress and WooCommerce furniture-store foundation using the ready-made Avada Architecture theme and visual editor. The brief included a templated storefront, catalog, cart, news and search, plus hosting and a custom domain. The client explicitly excluded product import, so this was not a promise of a fully populated shop with its complete assortment.
   - type: text
     title: How it works
-    body: Used Avada Architecture, connected the domain and prepared the
-      installation. After hosting support confirmed an outage, waited for
-      recovery before continuing. Reported installing a Let’s Encrypt
-      certificate and shared the site for review.
+    body: Chose the ready-made Avada Architecture theme rather than a bespoke build and prepared the WordPress/WooCommerce foundation. Connected the mebelindesign.dp.ua domain to hosting. When the provider confirmed a server outage, waited for infrastructure recovery before continuing setup and handing the address to the client. At handoff, reported installing a Let’s Encrypt SSL certificate. vito-palazzo.com appears only as a visual reference in the archive, not as a delivered project.
   - type: text
     title: Result and verification
-    body: The client reviewed and accepted the store foundation. A bespoke theme,
-      full catalog population and payment integration were outside the verified
-      scope.
+    body: The client reviewed the result, explicitly accepted the order and wrote that the work matched the brief and deadline. The evidenced outcome is an accepted starter build on a ready-made theme with a connected domain and reported SSL. A custom theme, import from three donor sites, complete product catalog, acquiring integration and actual sales were outside scope. Current domain availability and the detailed operation of every section are not independently confirmed; historical acceptance is not a substitute for a fresh test.
