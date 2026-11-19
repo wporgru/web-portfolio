@@ -1,6 +1,5 @@
 title: 'Grandkrovlya: restoring imports and product URLs'
-tagline: Investigated why WooCommerce URL transliteration was not applied when importing products
-  again.
+tagline: Restored product URL transliteration on WooCommerce re-import and checked WP All Import compatibility after platform updates.
 year: '08.2022'
 role: Web development and automation
 stack:

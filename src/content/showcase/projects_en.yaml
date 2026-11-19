@@ -3965,8 +3965,7 @@ projects:
     name: "Grandkrovlya: restoring imports and product URLs"
     year: "08.2022"
     role: Web development and automation
-    description: Investigated why WooCommerce URL transliteration was not applied
-      when importing products again.
+    description: Fixed a WooCommerce product re-import that left product URLs in Cyrillic. Checked WP All Import compatibility after WordPress and WooCommerce updates, enabled the required transliteration option, then reran the import and checked the resulting product pages. The client confirmed the fix, accepted the order and added a bonus; no search-traffic uplift is claimed.
     stack:
       - WordPress
       - WooCommerce
