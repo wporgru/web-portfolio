@@ -607,11 +607,12 @@ projects:
         url: /showcase/electrical-catalog/en/
         type: product
   - slug: site-cleanup-recovery
-    name: WordPress cleanup and recovery of site sections
+    name: "RumbaStock: WordPress cleanup and blog/promotions recovery"
     year: "04.2026"
     role: Web development and automation
-    description: After malicious files were discovered, the work needed to go beyond
-      cleanup and restore the sections the client used.
+    description: After cleanup, restored the rumbastock.ru blog and promotions
+      listing, which had shown only the latest item. The client confirmed each
+      section worked; the entry vector and legacy plan editor are not claimed.
     stack:
       - WordPress
       - PHP

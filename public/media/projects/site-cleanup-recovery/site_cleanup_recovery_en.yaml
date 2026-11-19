@@ -1,6 +1,6 @@
-title: WordPress cleanup and recovery of site sections
-tagline: After malicious files were discovered, the work needed to go beyond
-  cleanup and restore the sections the client used.
+title: "RumbaStock: WordPress cleanup and blog/promotions recovery"
+tagline: "After cleaning the infected site, restored two key sections that had
+  been showing only the latest item instead of their full listings."
 year: "04.2026"
 role: Web development and automation
 stack:
@@ -9,16 +9,41 @@ stack:
   - Incident recovery
 blocks:
   - type: text
-    title: Brief and constraints
-    body: After malicious files were discovered, the work needed to go beyond
-      cleanup and restore the sections the client used.
+    title: Site sections were still broken after malware cleanup
+    body: "In April 2026, rumbastock.ru needed WordPress incident recovery and the
+      return of important working sections. The historical work report records
+      ten infected files found and a cleanup. After that step, the client reported
+      problems with the blog and promotions page: instead of a list of entries
+      with images and text, only the latest item appeared. The task was therefore
+      not just to clean the site, but to restore specific features the owner used
+      to manage content."
   - type: text
-    title: How it works
-    body: The work report records ten infected files. I cleaned and rechecked the
-      site, then restored the blog and promotions separately so the client could
-      verify each section.
+    title: Cleanup followed by staged section recovery
+    body: "The report records ten infected files, cleanup and a follow-up check.
+      After the client's feedback, I did not treat the initial cleanup as the
+      finish line: I restored the blog page first and then the promotions list.
+      The sections were handled separately so the client could confirm each
+      scenario—reading posts and browsing current offers—rather than only review
+      the homepage. The client also raised an issue with a legacy plan editor; its
+      final repair and separate acceptance are not confirmed in the readable
+      correspondence, so it is not included as a completed result."
   - type: text
-    title: Result and verification
-    body: The client confirmed the blog and promotions were working. This is a
-      specific recovery engagement, not a guarantee against future incidents or
-      confirmation of the legacy editor.
+    title: Outcome and client confirmation
+    body: The client confirmed that the blog and promotions page were working
+      again. This is a specific result for rumbastock.ru; the review mentions
+      broader work across several websites, but other domains are not attributed
+      to this order. The figure of ten comes from the historical work report, not
+      a new independent scan. I do not claim the entry vector, a complete list of
+      malicious changes, a guarantee against reinfection or a confirmed fix for
+      the legacy plan editor.
+    links:
+      - label: Original Kwork order and review
+        url: https://kwork.ru/track?id=61061072
+  - type: text
+    title: Why content recovery matters after cleanup
+    body: "Removing malicious files alone does not guarantee that editors can use
+      the website as before. After cleanup, both visitor and editorial journeys
+      need their own checks: can the blog open, does its archive list entries,
+      does the promotions page show its items? Here, recovery of two sections was
+      a separate stage after malware cleanup, and the client confirmed each
+      result individually."
