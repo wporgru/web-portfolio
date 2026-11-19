@@ -4158,8 +4158,11 @@ projects:
     name: SALT SWITCH order and email recovery
     year: "11.2021"
     role: Web development and automation
-    description: "Investigated two separate store failures: missing notifications
-      and incomplete orders. Added a direct contact channel for the manager."
+    description: Separated email failure from unpaid-order expiration; corrected the
+      sender domain, received a test email through a cash-on-delivery flow, applied the
+      client-provided provider ID to salt-switch.com and added WhatsApp. The client
+      reported new orders and confirmed the widget; no real charge was independently
+      verified.
     stack:
       - WooCommerce
       - Checkout
