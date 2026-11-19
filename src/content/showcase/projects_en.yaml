@@ -780,8 +780,7 @@ projects:
     name: Replacing MetForm and verifying inquiry delivery
     year: "05.2025"
     role: Web development and automation
-    description: The inquiry form was failing at its core job. The client needed a
-      working lead channel, not just a redesigned button.
+    description: "Replaced the failing MetForm setup with Contact Form 7 and verified a test inquiry; the client confirmed the email arrived. Reused a shared form where requirements matched, then refined button styling and alignment after review. Verification covered the test submission and presentation, not legal review of the forms."
     stack:
       - WordPress
       - Contact Form 7
