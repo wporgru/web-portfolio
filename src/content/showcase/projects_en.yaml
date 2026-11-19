@@ -6592,8 +6592,7 @@ projects:
         type: product
   - slug: autoazart-wholesale-request
     name: "Autoazart: wholesale enquiries instead of a cart"
-    description: Configured catalog and product actions, routed wholesale requests
-      to a form and hid the header cart; the client accepted the stage.
+    description: "Turned a WooCommerce test copy into a B2B storefront: visitors could open a product and choose between requesting wholesale terms through a form or continuing to the main site to purchase. Removed the cart from the header and refined button styling; the client accepted the stage. Form email delivery was not independently verified."
     year: "02.2018"
     role: Web development
     stack:
