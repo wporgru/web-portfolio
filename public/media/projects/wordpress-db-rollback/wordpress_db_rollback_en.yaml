@@ -1,6 +1,6 @@
-title: Recovering WordPress pages from a database backup
-tagline: Pages still displayed incorrectly after site changes and an attempted
-  rollback. The task was to separate database state from cached output.
+title: "WordPress: restoring pages from backup and clearing cache"
+tagline: "Restored key sections after an unsuccessful self-service rollback by
+  recovering an earlier database and clearing RabbitLoader cache."
 year: "01.2026"
 role: Web development and automation
 stack:
@@ -9,16 +9,40 @@ stack:
   - RabbitLoader
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Pages still displayed incorrectly after site changes and an attempted
-      rollback. The task was to separate database state from cached output.
+    title: The rollback was done, but pages still looked wrong
+    body: In January 2026, the owner of бассейн-химия.рф reported display problems
+      affecting the homepage, catalog, contacts and delivery information. Before
+      contacting me, the client had removed around 8,000 spam records and tried
+      to roll the site back through the hosting panel, but key pages remained in
+      an incorrect state. The number refers to the client's cleanup—not the
+      amount of work in this engagement. The task was to restore page display
+      while distinguishing the database state from cached HTML.
   - type: text
-    title: How it works
-    body: Reviewed the previous rollback and proposed restoring an earlier database
-      snapshot. After restoration I cleared RabbitLoader cache in admin so the
-      check would not show stale output.
+    title: Recovery sequence
+    body: "I first clarified how the earlier rollback had been performed so I
+      would not repeat the same incomplete path. I proposed restoring the
+      database from an earlier backup matching the state before the faulty
+      changes. After the restore, I separately cleared RabbitLoader cache in the
+      WordPress admin. This matters during verification: otherwise, the site may
+      continue serving previously cached markup even when the database has been
+      restored. The work targeted page recovery, not a complete file restoration
+      or an investigation into why the records were removed."
   - type: text
-    title: Result and verification
-    body: The client confirmed pages displayed correctly and accepted the work. This
-      does not claim full file recovery or a conclusive diagnosis of the initial
-      trigger.
+    title: Outcome and client confirmation
+    body: "The client confirmed that the pages displayed correctly after the
+      database recovery and cache clear, thanked me and explicitly accepted the
+      order. Their review noted the issue was resolved quickly. This documents a
+      specific recovery step: it does not claim all files were restored, the
+      original root cause was fully determined, a future incident was prevented
+      or the client's cleanup of around 8,000 records was performed by me."
+    links:
+      - label: Original Kwork order and review
+        url: https://kwork.ru/track?id=58572476
+  - type: text
+    title: Why cache clearing matters after a rollback
+    body: "Restoring a backup and checking the public page are separate steps. If
+      an external cache keeps an earlier version, the website may still show old
+      content after the database has changed. A recovery workflow must account
+      for both layers: bring the data back to the intended state, clear the
+      cache, and then revisit the affected pages. Clearing RabbitLoader was part
+      of the confirmed sequence in this order."

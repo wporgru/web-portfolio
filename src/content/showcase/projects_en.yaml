@@ -1157,12 +1157,12 @@ projects:
         url: /showcase/ramayoga-storefront/en/
         type: product
   - slug: wordpress-db-rollback
-    name: Recovering WordPress pages from a database backup
+    name: "WordPress: restoring pages and clearing cache"
     year: "01.2026"
     role: Web development and automation
-    description: Pages still displayed incorrectly after site changes and an
-      attempted rollback. The task was to separate database state from cached
-      output.
+    description: After an unsuccessful rollback, restored an earlier database
+      backup for бассейн-химия.рф and cleared RabbitLoader; the client confirmed
+      page display was fixed. Full file recovery and root cause are not claimed.
     stack:
       - WordPress
       - Database recovery
