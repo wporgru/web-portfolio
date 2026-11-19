@@ -10,15 +10,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Configured quantity discounts per product so unrelated items would not
-      combine to reach a cart-wide threshold.
+    body: "A WooCommerce orthotics store needed quantity-based wholesale tiers for each product: 2.5% at 15 pairs, 5% at 50 and 10% at 100. Different models could not be combined to reach a threshold; in a mixed cart, each line item needed its own applicable tier."
   - type: text
     title: How it works
-    body: The first setup used the overall cart count and did not work for mixed
-      orders. Clarified that percentages do not stack and that discounts are
-      calculated per line item. Revised the rules and sent the result for client
-      review.
+    body: "The initial CART COUNT logic used the total cart quantity. The client pointed out that this would produce the wrong result for a mix of models. Clarified the rule: count each product separately and apply only its highest reached tier rather than stacking percentages. Reconfigured the rules around that calculation and sent the result to the client for review. The exact extension name and a full test log were not preserved."
   - type: text
     title: Result and verification
-    body: The client accepted the setup. The full set of test carts and extension
-      settings was not preserved.
+    body: The client thanked the developer for correcting the logic and accepted the setup with a positive review. The archived record supports replacing the cart-wide interpretation with the requested per-product rule. It does not preserve a complete set of boundary and mixed-cart tests; current anonymous visitors cannot see prices, so the historic thresholds were not retested on the live store. This was configuration on an existing shop, not development of a custom plugin.

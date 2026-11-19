@@ -3765,8 +3765,9 @@ projects:
     name: Per-product quantity discounts in WooCommerce
     year: "03.2023"
     role: Web development and automation
-    description: Configured quantity discounts per product so unrelated items would
-      not combine to reach a cart-wide threshold.
+    description: Reconfigured WooCommerce wholesale tiers to count each orthotic
+      product separately instead of combining different items toward a cart-wide
+      threshold. The client confirmed the corrected logic.
     stack:
       - WooCommerce
       - Quantity discounts
