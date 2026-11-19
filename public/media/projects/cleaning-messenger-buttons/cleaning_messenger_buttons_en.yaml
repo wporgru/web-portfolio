@@ -1,29 +1,43 @@
 title: WhatsApp and Telegram contact buttons for a cleaning website
-tagline: The cleaning company wanted visitors to contact it directly through
-  messaging apps for services including event cleaning.
+tagline: Added direct contact channels to the event-cleaning service page on the
+  existing company website without changing the rest of the site.
 year: "06.2025"
-role: Web development and automation
+role: Web development and communication integration
 stack:
   - WordPress
   - WhatsApp
   - Telegram
 blocks:
   - type: text
-    title: Brief and constraints
-    body: The cleaning company wanted visitors to contact it directly through
-      messaging apps for services including event cleaning.
+    title: A contact route for event cleaning
+    body: >-
+      The client asked for WhatsApp and Telegram buttons on the event-cleaning
+      service page at klining-profi.ru. For visitors, this adds a direct way to
+      contact the company in the context of the service they are considering,
+      instead of making them search for contact details separately.
   - type: text
-    title: How it works
-    body: Installed WhatsApp and Telegram contact buttons on the existing WordPress
-      site and handed them over. The channels were added to the existing
-      storefront without a platform migration or page rebuild.
+    title: Added channels to the existing website
+    body: >-
+      I installed WhatsApp and Telegram buttons on the existing WordPress site and
+      handed over the result. This was a focused update to a live website, not a
+      platform migration or a full page rebuild. The available correspondence does
+      not identify the plugin, implementation method or exact button placement.
   - type: text
-    title: Result and verification
-    body: The client accepted the work and confirmed it was working in a review. CRM
-      integration, removal of other widgets and lead growth are not claimed.
+    title: Client acceptance and review
+    body: >-
+      The client accepted the order and left a review saying, in translation,
+      “Thank you for your help! The order was completed promptly. Everything works!”
+      This records the client's acceptance and assessment. JivoSite removal, CRM
+      integration and an increase in enquiries are not established.
+  - type: text
+    title: What would need separate verification
+    body: >-
+      The current screenshot shows a later version of the site, not historical proof
+      of this installation. A follow-up stage should test the actual WhatsApp and
+      Telegram destinations on desktop and mobile. Clicks, enquiries and conversion
+      were not measured in this order.
   - type: image
     title: Public site view
     src: /media/projects/cleaning-messenger-buttons/later-homepage.webp
     alt: Public cleaning company homepage
-    caption: Desktop capture from November 4, 2026, uncropped. It does not verify
-      messenger links or mobile button position.
+    caption: Desktop capture from November 4, 2026, uncropped. It does not verify messenger links or mobile button position.

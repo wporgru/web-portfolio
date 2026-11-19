@@ -1959,8 +1959,9 @@ projects:
     name: WhatsApp and Telegram contact buttons for a cleaning website
     year: "06.2025"
     role: Web development and automation
-    description: The cleaning company wanted visitors to contact it directly through
-      messaging apps for services including event cleaning.
+    description: Added WhatsApp and Telegram to the event-cleaning page on the existing
+      WordPress site klining-profi.ru. The client accepted the work and said in a review
+      that everything worked; CRM, JivoSite removal and lead growth are not established.
     stack:
       - WordPress
       - WhatsApp
