@@ -10,15 +10,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Collected sports organization data for Moscow and available cities in the
-      surrounding region for the client’s directory workflow.
+    body: The client needed sports organization records from sportschools.ru for a separate directory, split between Moscow and requested cities in the Moscow region. The order history shows source limitations under frequent requests and an incomplete available list of regional cities. The scope therefore had to be reported as a source-bounded extract, not passed off as a complete regional register.
   - type: text
     title: How it works
-    body: Collected URLs, configured extraction and delivered a sample for review.
-      Supplied the Moscow data separately. For the region, used the available
-      source list rather than substituting unrelated data for missing cities.
-      Delivered the combined archive afterward.
+    body: First collected URLs for available records, configured extraction and delivered a sample for review. After feedback, prepared the Moscow set separately so it could be obtained independently of the regional data. For the Moscow region, used only cities present in the source instead of filling gaps from unrelated directories. When frequent requests began to limit access, communicated the restriction and kept the work within the available set. The final handoff was an archive named “Новая папка.zip”, recorded at about 3 MB in the order history.
   - type: text
     title: Result and verification
-    body: The client accepted the archive and left a positive review. Coverage of
-      every requested city and the exact organization count were not verified.
+    body: The client downloaded the separate Moscow extract, responded positively, then explicitly accepted the final archive and left a review saying “Very grateful, thank you!” The ZIP itself was not extracted or recounted in the archived evidence, so the exact organization count, field schema and completeness by city remain unknown. This is not presented as coverage of all 75 regional cities or all of Russia, development of the source site or the client’s portal. The source’s access limitation was not independently diagnosed.

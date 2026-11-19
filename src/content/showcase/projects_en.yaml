@@ -4405,8 +4405,9 @@ projects:
     name: Extracting a regional sports organization directory
     year: "11.2018"
     role: Web development and automation
-    description: Collected sports organization data for Moscow and available cities
-      in the surrounding region for the client’s directory workflow.
+    description: Prepared separate sports organization extracts for Moscow and
+      available regional cities, reviewed a sample with the client and delivered
+      an archive. Scope followed the source; the exact record count is unverified.
     stack:
       - Web scraping
       - Data extraction
