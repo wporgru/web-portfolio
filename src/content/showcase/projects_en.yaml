@@ -4155,11 +4155,12 @@ projects:
         url: /showcase/salt-switch-order-recovery/en/
         type: product
   - slug: salt-switch-editorial-blog
-    name: SALT SWITCH blog and article layouts
+    name: "SALT SWITCH: English blog and article publishing"
     year: "12.2021"
     role: Web development and automation
-    description: Refined the existing site’s blog for English content so readers
-      could find both individual articles and the publication listing.
+    description: Prepared the live store's blog for English publishing with an
+      article template, publication listing and menu entry. The client accepted
+      the work and left a positive review.
     stack:
       - WordPress
       - Editorial workflow

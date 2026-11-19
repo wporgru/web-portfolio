@@ -1,6 +1,6 @@
-title: SALT SWITCH blog and article layouts
-tagline: Refined the existing site’s blog for English content so readers could
-  find both individual articles and the publication listing.
+title: "SALT SWITCH: English blog and article publishing"
+tagline: "Prepared the live store's blog for English editorial content with an
+  article template, publication listing and a menu entry to the new section."
 year: "12.2021"
 role: Web development and automation
 stack:
@@ -10,15 +10,33 @@ stack:
   - Metadata
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Refined the existing site’s blog for English content so readers could find
-      both individual articles and the publication listing.
+    title: "The brief: add an editorial section to a live store"
+    body: "In December 2021, SALT SWITCH needed English editorial materials
+      published on an existing website. A text page alone would not be enough:
+      readers needed a dedicated article URL, a clear listing of publications
+      and a visible way to reach the blog from the main navigation. The brief
+      specified ten articles, photographs, Title and Description metadata, and
+      search phrases supplied by the client."
   - type: text
-    title: How it works
-    body: Configured individual and listing layouts, created the blog and added it
-      to the menu. The editorial scope used supplied English copy, images and
-      metadata. Shared the article and blog URLs for review.
+    title: Article template, archive and navigation
+    body: "I configured the individual post layout and the publication listing,
+      prepared the blog section and added a menu link to it. This supports two
+      distinct reading journeys: opening an article from a direct link, or
+      browsing the archive and selecting a post from the list. The content scope
+      used the client's English copy, photos, Title/Description metadata and
+      search phrases. After the work, I shared the blog and article URLs with
+      the client for review."
   - type: text
-    title: Result and verification
-    body: The client accepted the work. Ten articles was the agreed scope, not an
-      independently verified count with complete metadata.
+    title: Delivery and evidence
+    body: "The client accepted the order and left a positive review: 'Everything
+      is great!' The archive confirms the blog section, post layout, menu entry
+      and delivery of URLs for review. Ten articles was the stated brief, but an
+      independent check of every post, photograph and complete metadata set was
+      not preserved. This case therefore describes the editorial section and
+      stated publishing scope, rather than claiming all ten URLs were separately
+      audited or that traffic and sales increased. GTranslate, fifteen languages
+      and building the entire SALT SWITCH store from scratch were outside this
+      stage."
+    links:
+      - label: Original Kwork order and review
+        url: https://kwork.ru/track?id=25105921
