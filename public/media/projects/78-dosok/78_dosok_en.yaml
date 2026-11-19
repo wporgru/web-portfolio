@@ -1,6 +1,5 @@
-title: "78 Dosok: new theme, redesign and faster storefront"
-tagline: "Overhaul an existing timber store: replace the theme, redesign the
-  storefront and remove technical debt accumulated through previous updates."
+title: "78 Dosok: theme replacement, redesign and store update"
+tagline: "Completely updated a timber store: replaced its theme and design, cleaned up plugins, and worked on performance and mobile navigation."
 role: Web development
 year: "08.2026"
 stack:
@@ -11,14 +10,10 @@ stack:
 blocks:
   - type: text
     title: Brief
-    body: "Overhaul an existing timber store: replace the theme, redesign the
-      storefront and remove technical debt accumulated through previous
-      updates."
+    body: "Comprehensively update a live timber storefront: replace the theme and design, review accumulated technical dependencies, update the site, and preserve a familiar visual foundation for shoppers."
   - type: text
     title: Work delivered
-    body: Replaced the theme, redesigned and updated the site. Removed outdated and
-      redundant plugins, worked on performance, and improved mobile navigation
-      and access to the cart.
+    body: Replaced the theme and redesigned the WooCommerce storefront—from the opening section to catalog structure and navigation. Updated the site, removed outdated and duplicate plugins, carried out performance work, improved mobile navigation, and added a floating route back to the cart.
   - type: text
     title: Implementation and scope
     body: "The old storefront had overlapping presentation layers: Elementor
