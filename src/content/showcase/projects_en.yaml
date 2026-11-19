@@ -4221,12 +4221,12 @@ projects:
         url: /showcase/randewoo-perfume-data-extract/en/
         type: product
   - slug: metakredits-wordpress-domain-recovery
-    name: Metakredits domain setup and WordPress recovery
+    name: Metakredits WordPress recovery on a new domain
     year: "12.2021"
     role: Web development and automation
-    description: "Recovered an existing WordPress site while connecting a new
-      domain: it used the wrong database and redirected visitors to an older
-      address."
+    description: Connected metakredits.lv to hosting and recovered WordPress pages
+      that redirected to the old address because of a wrong database association.
+      Publishing the blog and articles was outside this stage.
     stack:
       - WordPress
       - Domain binding

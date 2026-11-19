@@ -4261,12 +4261,12 @@ projects:
         url: /showcase/randewoo-perfume-data-extract/
         type: product
   - slug: metakredits-wordpress-domain-recovery
-    name: "Metakredits: привязка домена и восстановление сайта"
+    name: "Metakredits: подключение домена и восстановление WordPress"
     year: "12.2021"
     role: Веб-разработка и автоматизация
-    description: "Восстановил существующий WordPress при подключении нового домена:
-      сайт обращался не к той базе и перенаправлял посетителей на прежний
-      адрес."
+    description: Подключил metakredits.lv к хостингу и восстановил страницы WordPress,
+      которые перенаправлялись на прежний адрес из-за неправильного подключения
+      базы данных. Публикация блога и статей в этот этап не входила.
     stack:
       - WordPress
       - Domain binding

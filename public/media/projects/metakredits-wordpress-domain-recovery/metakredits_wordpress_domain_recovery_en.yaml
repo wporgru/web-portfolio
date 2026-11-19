@@ -1,6 +1,5 @@
-title: Metakredits domain setup and WordPress recovery
-tagline: "Recovered an existing WordPress site while connecting a new domain: it
-  used the wrong database and redirected visitors to an older address."
+title: Metakredits WordPress recovery on a new domain
+tagline: Connected metakredits.lv to the existing site's hosting and corrected the database association that sent visitors to the previous address.
 year: "12.2021"
 role: Web development and automation
 stack:
@@ -11,15 +10,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: "Recovered an existing WordPress site while connecting a new domain: it
-      used the wrong database and redirected visitors to an older address."
+    body: "The client wanted an existing WordPress site to open on the new metakredits.lv domain. This order covered domain-to-hosting setup and recovery after the switch, not a ground-up build. Once the domain was activated, visitors were redirected to finlat.lv because the site was using the wrong database. A planned blog and 30 future articles were not part of this order."
   - type: text
     title: How it works
-    body: Connected the domain to hosting after registration, investigated the
-      redirect and identified the correct database. Located the existing
-      WordPress database and restored page access. Flagged image URLs that still
-      needed attention.
+    body: "After registration and activation, connected metakredits.lv to hosting. Checked the behavior and traced the redirect to finlat.lv. Compared the site's database connection, located the existing WordPress database and restored page access on the target address. Separately flagged remaining image URLs that still needed updating."
   - type: text
     title: Result and verification
-    body: The client accepted the stage. Rewriting every image URL, publishing new
-      articles and indexing were not verified.
+    body: The client accepted the domain setup and recovery stage. The confirmed outcome is that the existing WordPress pages opened at the new address instead of redirecting to the previous domain. Updating every image URL is not confirmed; creating the blog, publishing 30 articles and actual indexing are also outside the evidenced result. In 2026 the domain did not resolve in the checked network, so current availability is unknown; this does not negate the historical handoff.
