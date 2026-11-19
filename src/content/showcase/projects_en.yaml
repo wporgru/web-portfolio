@@ -6661,8 +6661,7 @@ projects:
         type: product
   - slug: medical-catalog-mobile-thumbnails
     name: "Medical equipment catalog: import and mobile thumbnails"
-    description: Reported importing 3,325 products and corrected mobile thumbnails;
-      the client confirmed the changes and accepted the stage.
+    description: "Imported the supplied medical equipment catalog and reported 3,325 products. Then corrected oversized thumbnails with sizing settings and CSS for screens up to 991 px; the carousel was hidden in that range. The client chose to build the category hierarchy separately. They confirmed the mobile fix and accepted the stage; the product count comes from the handoff and was not independently reconciled."
     year: "03.2018"
     role: Web development
     stack:
