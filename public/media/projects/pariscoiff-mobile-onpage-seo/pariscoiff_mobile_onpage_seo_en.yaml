@@ -1,6 +1,5 @@
 title: Pariscoiff on-page SEO and mobile refinements
-tagline: Refined storefront page structure and search settings and corrected
-  heading layout on mobile screens.
+tagline: Refined WooCommerce URLs, metadata and sitemap, added missing alt text, then adjusted mobile H1 and Chrome navigation after client review.
 year: "07.2022"
 role: Web development and automation
 stack:
@@ -11,8 +10,7 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Refined storefront page structure and search settings and corrected
-      heading layout on mobile screens.
+    body: Close gaps in the WooCommerce store's on-page SEO setup and refine mobile headings and navigation based on client review.
   - type: text
     title: How it works
     body: Refined WooCommerce URLs, metadata templates and exclusions from the

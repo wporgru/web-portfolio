@@ -4017,8 +4017,11 @@ projects:
     name: Pariscoiff on-page SEO and mobile refinements
     year: "07.2022"
     role: Web development and automation
-    description: Refined storefront page structure and search settings and corrected
-      heading layout on mobile screens.
+    description: "Refined the WooCommerce store's SEO foundations: updated URL
+      structure and metadata templates, excluded unnecessary page types from
+      the sitemap, added missing alt text and submitted the sitemap to Google
+      Search Console. Follow-up feedback led to mobile H1 and Chrome anchor
+      menu fixes; the client reviewed and accepted the changes."
     stack:
       - WordPress
       - WooCommerce
