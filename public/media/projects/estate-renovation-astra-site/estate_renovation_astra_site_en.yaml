@@ -1,25 +1,59 @@
 title: Astra website for the Pomestye renovation company
-tagline: Built responsive renovation-company layouts with service details, contacts and an enquiry form for describing the property and estimated work scope.
+tagline: Adapted the selected Astra Daycare-02 theme for a renovation business,
+  presenting services, contacts and a detailed enquiry form in desktop and mobile layouts.
 year: "10.2023"
-role: Web development and automation
+role: Web development and theme adaptation
 stack:
   - WordPress
-  - Astra
-  - Responsive design
-  - Lead forms
+  - Astra Daycare-02
+  - Responsive layouts
+  - Enquiry forms
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Prepared a renovation company website on Astra with services, contacts and
-      a form for describing the project.
+    title: Theme choice and project brief
+    body: >-
+      The client selected the Astra Daycare-02 starter theme and allowed a version
+      without photography. I adapted it for Pomestye, a renovation and finishing
+      business. This was a tailored implementation of a chosen theme, not an
+      original design system built from scratch.
   - type: text
-    title: How it works
-    body: Built desktop and mobile layouts and presented the company identity and
-      list of renovation services. Designed the enquiry form around name, phone,
-      approximate scope and a description, then submitted both layouts for
-      approval.
+    title: Services and business identity
+    body: >-
+      The layout brought together the Pomestye logo, a list covering room renovation,
+      individual finishing work and major or cosmetic repairs, plus contact details.
+      Visitors could understand the company's focus and move to the enquiry form
+      instead of seeing generic starter-theme content.
   - type: text
-    title: Result and verification
-    body: The client approved the layout and accepted the order. The archive
-      documents the form design, not a separate delivery test or the final
-      background tweaks.
+    title: An enquiry form for project context
+    body: >-
+      I prepared fields for a name, phone number, approximate project scope and a
+      description of the work. This lets a prospective customer share both contact
+      details and basic context about the property and planned job. The screenshots
+      show the form fields and submit button; email or CRM delivery was not tested
+      separately.
+  - type: text
+    title: Desktop and mobile composition
+    body: >-
+      I presented both layouts for approval. On desktop, services and contacts sit
+      alongside the form; on mobile, the logo, service list and contact section come
+      before the form fields. The client approved the direction with “Yes, let's do
+      it” and accepted the order. The saved materials do not separately confirm the
+      final request to change the background to grey and enlarge the logo and text.
+  - type: image
+    title: Historical desktop preview
+    src: /media/projects/estate-renovation-astra-site/pomesste-historical-desktop.webp
+    alt: Desktop Astra website layout for Pomestye; contact details redacted in public copy
+    caption: Historical image from the Kwork conversation. Phone and email are hidden in this public copy; the original remains in the order archive; the screenshot date is unknown. It shows form design, not delivery testing.
+  - type: image
+    title: Mobile site composition
+    src: /media/projects/estate-renovation-astra-site/pomesste-historical-mobile.webp
+    alt: Mobile Pomestye website layout with services and enquiry form; contact details redacted
+    caption: Historical order attachment showing the pomesste.ru domain. Phone and email are hidden in the public copy; the site's URL and contact details are not the subject of this case.
+  - type: text
+    title: Evidence and scope limits
+    body: >-
+      The order supports adaptation of the selected theme, desktop and mobile layouts
+      and client approval. Current availability of pomesste.ru is unconfirmed; the
+      historical previews do not prove that the site was published in exactly this
+      form. Separate form-delivery testing and completion of the final background
+      and logo-size revisions are also not documented.

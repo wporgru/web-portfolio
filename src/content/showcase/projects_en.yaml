@@ -3349,7 +3349,10 @@ projects:
     name: Astra website for the Pomestye renovation company
     year: "10.2023"
     role: Web development and automation
-    description: Built desktop and mobile layouts for a renovation company site on WordPress and Astra. Presented repair and finishing services, surfaced contact details, and designed an enquiry form for a phone number, estimated project scope and work description. The client approved the layout and accepted the order; a separate form-delivery test is not documented.
+    description: Prepared desktop and mobile layouts for a renovation company using
+      the selected Astra Daycare-02 theme, logo, services, contacts and a form for name,
+      phone, estimated scope and work description. The client approved the direction and
+      accepted the order; site publication and form delivery are not independently confirmed.
     stack:
       - WordPress
       - Astra
