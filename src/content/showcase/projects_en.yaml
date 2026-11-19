@@ -6527,8 +6527,7 @@ projects:
         type: product
   - slug: drivejet-woocommerce-homepage
     name: "DriveJet: homepage and URLs for an existing store"
-    description: Configured a homepage product block, product URL structure and
-      price presentation; explained how future products would appear.
+    description: Improved an existing WooCommerce store by refining product URL structure and transliteration, price presentation and a homepage product section. Explained how owner-added listings would appear in the selection. The store had one product at the start; this was an extension of an existing site, not a ground-up build. The stage was accepted.
     year: "07.2018"
     role: Web development
     stack:
