@@ -1,10 +1,8 @@
 title: "Wellland: blog, case studies and AI illustrations"
-tagline: Launched an editorial section for a cleaning-equipment supplier. Staff
-  needed standard publishing tools for news and articles, plus structured case
-  studies and industry filters. The first releases also needed consistent covers
-  without passing synthetic illustrations off as customer-site photography.
+tagline: >-
+  Built an editorial section for a cleaning-equipment supplier with structured case studies, industry filters and six launch publications. Created six AI-assisted covers, labeled as illustrations, and reduced their combined weight from 13.0 MB to 0.81 MB.
 year: "10.2026"
-role: Web development and automation
+role: WordPress content architecture and AI-assisted visual production
 stack:
   - WordPress
   - Editorial workflows
@@ -13,30 +11,52 @@ stack:
   - Technical SEO
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Launched an editorial section for a cleaning-equipment supplier. Staff
-      needed standard publishing tools for news and articles, plus structured
-      case studies and industry filters. The first releases also needed
-      consistent covers without passing synthetic illustrations off as
-      customer-site photography.
+    title: "Brief: prepare an editorial section for launch"
+    body: >-
+      A cleaning-equipment supplier needed to separate news, articles and customer case studies so the team could publish without rebuilding the same page structure each time. Case studies required dedicated challenge, solution and result fields; industry filters were needed to browse the stories. The new section also needed consistent covers, but synthetic images could not be presented as photographs of customer work or actual sites.
   - type: text
-    title: How it works
-    body: Separated the blog from a dedicated case-study content type with
-      challenge, solution and result fields. Set up industry categories,
-      templates, menu links and a generated HTML sitemap. Prepared the launch
-      content, reviewed source facts and preserved links to original materials.
-      Generated six covers using equipment references, labeled them as
-      illustrations and exported them as WebP. Resolved a routing conflict
-      between industry filters and attachment URLs.
+    title: Separated content types and editorial workflows
+    body: >-
+      Split the blog from a dedicated case-study content type with fields for the original challenge, delivered solution and outcome. Configured an industry taxonomy and three filters, prepared display templates and added the sections to the navigation. I also set up a generated HTML sitemap for published content. Editors received distinct publishing structures for news and customer stories instead of one generic template.
   - type: text
-    title: Result and verification
-    body: "The release included six publications: two news items, one article and
-      three case studies. All six URLs loaded and appeared in the HTML sitemap;
-      covers, disclosures and three industry filters were checked. Cover files
-      went from 13.0 MB to 0.81 MB, a 93.8% reduction. Existing noindex settings
-      for posts and cases were left unchanged, so indexing is not claimed."
+    title: Prepared the first editorial batch
+    body: >-
+      The release contained six publications: two news items, one article and three case studies. I rechecked source facts before publication and retained links to original references. The industry filters were checked against these materials; I also resolved a route conflict between filter URLs and attachment URLs so navigation and media would not claim the same path.
+  - type: text
+    title: Created and labeled six AI-assisted covers
+    body: >-
+      Generated six illustrations from cleaning-equipment references and prepared them as WebP files. Captions identify them as editorial illustrations, not photographs of customer work, equipment at a client site or real locations. This provides a consistent visual system across content types without implying documentary accuracy for synthetic images.
+  - type: text
+    title: Outcome, checks and SEO boundaries
+    body: >-
+      All six URLs loaded and appeared in the HTML sitemap; covers, disclosures and three industry filters were checked. The combined cover-file weight dropped from 13.0 MB to 0.81 MB, a 93.8% reduction. Existing noindex settings for posts and case studies were preserved: launching the editorial section and listing URLs in an HTML sitemap are not presented as proof of indexation or search-traffic growth.
   - type: image
+    title: Article cover about choosing equipment
     src: /media/projects/wellland-editorial-ai-production/editorial-illustration.webp
-    alt: AI-generated illustration of a scrubber dryer for the Wellland article
-    caption: One of six editorial covers. Generated from equipment references; not a
-      photograph of a client or site.
+    alt: AI-assisted scrubber-dryer illustration for a Wellland editorial article
+    caption: One of six covers, created from equipment references and labeled as an illustration rather than a client or site photograph.
+  - type: image
+    title: Case-study cover for a museum interior
+    src: /media/projects/wellland-editorial-ai-production/wellland-editorial-20261007-case-museum.webp
+    alt: AI-assisted floor scrubber illustration in a bright museum interior
+    caption: Editorial illustration for a case study; not documentary photography of the location.
+  - type: image
+    title: Case-study cover for a kitchen and production space
+    src: /media/projects/wellland-editorial-ai-production/wellland-editorial-20261007-case-s3.webp
+    alt: AI-assisted compact scrubber-dryer illustration in a professional kitchen
+    caption: Editorial case-study illustration created from cleaning-equipment references.
+  - type: image
+    title: Case-study cover for a sports venue
+    src: /media/projects/wellland-editorial-ai-production/wellland-editorial-20261007-case-sport.webp
+    alt: AI-assisted floor scrubber illustration at an indoor sports arena
+    caption: Editorial illustration for a sports-venue story, not a photograph of completed cleaning work.
+  - type: image
+    title: CEMAT news cover
+    src: /media/projects/wellland-editorial-ai-production/wellland-editorial-20261007-news-cemat.webp
+    alt: AI-assisted cleaning-equipment illustration at an exhibition booth
+    caption: Synthetic editorial cover; it does not establish the client's attendance at a specific event.
+  - type: image
+    title: News cover about equipment availability
+    src: /media/projects/wellland-editorial-ai-production/wellland-editorial-20261007-news-stock.webp
+    alt: AI-assisted illustration of several scrubber dryers in a warehouse
+    caption: Editorial illustration for a news item; it does not verify actual inventory or stock levels.

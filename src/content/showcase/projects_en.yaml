@@ -5746,11 +5746,10 @@ projects:
     name: "Wellland: blog, case studies and AI illustrations"
     year: "10.2026"
     role: Web development and automation
-    description: Launched an editorial section for a cleaning-equipment supplier.
-      Staff needed standard publishing tools for news and articles, plus
-      structured case studies and industry filters. The first releases also
-      needed consistent covers without passing synthetic illustrations off as
-      customer-site photography.
+    description: Separated the blog and customer case studies into editable
+      content types, added industry filters and an HTML sitemap. Prepared six
+      launch publications with clearly labeled AI-assisted covers and reduced
+      their combined weight by 93.8%; preserved existing noindex settings.
     stack:
       - WordPress
       - Editorial workflows
