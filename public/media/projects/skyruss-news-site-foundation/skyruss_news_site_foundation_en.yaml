@@ -1,6 +1,6 @@
-title: Skyruss news site foundation on Cream Magazine
-tagline: Installed a WordPress news site foundation so the owner could continue
-  publishing in a magazine-oriented theme.
+title: "Skyruss: moving a news site from Bitrix24 to WordPress"
+tagline: Replaced the former Bitrix24 site foundation on skyruss.ru with WordPress
+  and Cream Magazine, preparing the CMS for future news publishing.
 year: "12.2022"
 role: Web development and automation
 stack:
@@ -10,14 +10,23 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Installed a WordPress news site foundation so the owner could continue
-      publishing in a magazine-oriented theme.
+    body: The skyruss.ru domain needed WordPress and the free Cream Magazine theme
+      instead of its previous Bitrix24 site. The aim was to install a foundation
+      suited to news publishing; migrating the archive and building a complete
+      editorial workflow were outside this order.
   - type: text
     title: How it works
-    body: Confirmed the CMS and theme, deployed WordPress with Cream Magazine and
-      handed over the result. Installation was a standalone stage, separate from
-      moving existing content or designing an entire editorial workflow.
+    body: Confirmed the CMS and theme, installed WordPress with Cream Magazine and
+      handed over the result. The saved archive does not preserve a safe,
+      complete list of installation settings, so the case stays within the
+      documented CMS and theme deployment.
   - type: text
     title: Result and verification
-    body: The owner accepted the installation and left a positive review. Full
-      migration of material from the previous system was not verified.
+    body: "The client accepted the order and left a positive review: “The order was
+      completed very quickly!” Migration of Bitrix24 content and a fully
+      configured editorial portal are not verified. On October 25, 2026, DNS for
+      the domain did not resolve from the checking network; this does not prove
+      permanent closure and is unrelated to the historical installation result."
+    links:
+      - label: View the original Kwork order
+        url: https://kwork.ru/track?id=32272747

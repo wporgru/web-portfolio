@@ -4704,11 +4704,12 @@ projects:
         url: /showcase/furniture-product-options-and-media/en/
         type: product
   - slug: skyruss-news-site-foundation
-    name: Skyruss news site foundation on Cream Magazine
+    name: "Skyruss: moving from Bitrix24 to WordPress"
     year: "12.2022"
     role: Web development and automation
-    description: Installed a WordPress news site foundation so the owner could
-      continue publishing in a magazine-oriented theme.
+    description: Replaced the previous Bitrix24 site foundation with WordPress and
+      Cream Magazine. The client accepted the installation and praised the fast
+      delivery; archive migration is not claimed.
     stack:
       - WordPress
       - Cream Magazine
