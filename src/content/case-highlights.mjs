@@ -34,8 +34,8 @@ export const caseHighlights = {
     en: 'Adapted and validated three local Codex skills for positioning, brainstorming and Telegram planning. Removed hidden promotional instructions.',
   },
   'tara-bergman': {
-    ru: 'Восстановил сайт фотографа с Firebase по публичным страницам на стенде WordPress. Для воркшопа подготовил адреса EN, RU и ES.',
-    en: 'Reconstructed a Firebase photography site from public pages on WordPress staging, with English, Russian and Spanish workshop URLs.',
+    ru: 'Реконструировал сайт фотографа с Firebase/Webpack на WordPress-стенде по опубликованной версии; согласовал адаптивные награды и URL воркшопов EN/RU/ES. Архивный мобильный PageSpeed — 92, без замера до.',
+    en: 'Reconstructed a photographer’s Firebase/Webpack site on WordPress staging; reviewed responsive award placement and EN/RU/ES workshop URLs. An archived mobile PageSpeed run scored 92; no pre-work baseline.',
   },
   'seo-dashboard': {
     ru: 'Объединил Метрику, Вебмастер, GA4 и Search Console в локальном SEO-дашборде. История в SQLite сохраняется, если источник временно недоступен.',

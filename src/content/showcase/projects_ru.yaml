@@ -70,16 +70,19 @@ projects:
         url: /showcase/stalex-feed/
         type: product
   - slug: tara-bergman
-    name: Перенос сайта фотографа на WordPress
-    description: Восстановил страницы по опубликованной версии на отдельном стенде,
-      согласовал размещение наград на разных экранах и подготовил отдельные
-      адреса воркшопа для трёх языков.
+    name: "Реконструкция сайта фотографа: Firebase/Webpack → WordPress"
+    description: Собрал WordPress-стенд по опубликованным страницам, когда полного
+      архива исходников не было. Согласовал адаптивное размещение наград и подготовил
+      отдельные URL воркшопов EN/RU/ES; полный перевод и запуск на основном домене
+      отдельно не подтверждены.
     year: "05.2026"
-    role: Веб-разработка
+    role: Реконструкция и миграция сайта на WordPress
     stack:
       - WordPress
       - Firebase
       - Webpack
+      - Адаптивная вёрстка
+      - PageSpeed Insights
     order: 4
     featured: false
     theme: blue

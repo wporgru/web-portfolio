@@ -70,16 +70,19 @@ projects:
         url: /showcase/stalex-feed/en/
         type: product
   - slug: tara-bergman
-    name: Photography website migration to WordPress
-    description: Reconstructed pages from the published site on staging, reviewed
-      desktop and mobile placement of awards, and prepared separate workshop
-      URLs for three languages.
+    name: "Reconstructing a photographer's site: Firebase/Webpack → WordPress"
+    description: Rebuilt a WordPress staging site from published pages when a
+      complete source archive was unavailable. Reviewed responsive award placement
+      and prepared workshop URLs in EN/RU/ES; a full translation and primary-domain
+      launch are not independently confirmed.
     year: "05.2026"
-    role: Web development
+    role: Website reconstruction and WordPress migration
     stack:
       - WordPress
       - Firebase
       - Webpack
+      - Responsive design
+      - PageSpeed Insights
     order: 4
     featured: false
     theme: blue

@@ -1,54 +1,59 @@
-title: Photography website migration to WordPress
-tagline: Move a Firebase/Webpack site to a CMS without a complete source archive.
-role: Web development
+title: "Reconstructing a photographer's site: Firebase/Webpack → WordPress"
+tagline: Rebuilt pages on a WordPress staging site from the published version when a complete source archive was unavailable; reviewed responsive award placement and prepared workshop URLs in English, Russian and Spanish.
+role: Website reconstruction and WordPress migration
 year: "05.2026"
 stack:
   - WordPress
   - Firebase
   - Webpack
+  - Responsive design
+  - PageSpeed Insights
+links:
+  - label: Historical homepage in the Kwork portfolio
+    url: https://kwork.ru/portfolio/22781455
+  - label: Archived mobile PageSpeed report
+    url: https://kwork.ru/portfolio/22781382
+  - label: Public Kwork profile and reviews
+    url: https://kwork.ru/user/wporgru
 blocks:
   - type: text
-    title: Brief
-    body: Move a Firebase/Webpack site to a CMS without a complete source archive.
+    title: "Brief: rebuild the site without a complete source project"
+    body: >-
+      The request was to move a photographer's Firebase/Webpack website to an editable WordPress CMS while preserving its visual style. A complete source archive from before the Webpack build was unavailable, so the reconstruction relied on published pages. The original brief mentioned English and Russian versions, six gallery categories, 15 workshops, editable copy and SEO redirects. These were requirements, not proof that every item was implemented.
   - type: text
-    title: Work delivered
-    body: Reconstructed pages from the published site on staging, reviewed desktop
-      and mobile placement of awards, and prepared separate workshop URLs for
-      three languages.
+    title: Rebuilt the foundation from the available public version
+    body: >-
+      Rather than attempting to recover a missing source project, I reconstructed pages from what could be inspected on the published website and presented the homepage on temporary staging first. This made it possible to review the direction before continuing, but it does not establish a one-to-one transfer of the original Firebase/Webpack architecture.
   - type: text
-    title: Implementation and scope
-    body: Rather than attempting to recover a missing Webpack project, I
-      reconstructed the site from available public pages. I showed the homepage
-      on staging first and then reviewed how to integrate the photographer's
-      awards without crowding mobile layouts. I prepared separate EN, RU and ES
-      workshop URLs; this does not mean the entire site was translated.
+    title: Reviewed responsive presentation and language URLs
+    body: >-
+      We separately reviewed how the photographer's awards should appear on wide and mobile screens, keeping the site's character without overcrowding the phone layout. I prepared separate EN, RU and ES workshop URLs. This supports language-specific workshop routes, not a complete translation of the entire website or finished versions of every page in all three languages.
   - type: text
-    title: After migration
-    body: Galleries and language markup required their own checks after migration.
-      Both follow-up projects are documented separately.
+    title: Checked one historical mobile lab run
+    body: >-
+      A saved PageSpeed report dated June 9, 2026 scored the homepage 92 for performance: FCP 2.6 s, LCP 2.9 s, TBT 0 ms, CLS 0 and Speed Index 2.6 s. It was a single Lighthouse 13.3.0 lab run emulating a Moto G Power; there is no field data. No comparable pre-work baseline is available, so this cannot be presented as a speed improvement or a guarantee for every gallery page.
+    links:
+      - label: Open the archived report entry
+        url: https://kwork.ru/portfolio/22781382
+  - type: text
+    title: Acceptance and the limits of the verified outcome
+    body: >-
+      The client accepted the stage on June 8, 2026; their review praised adherence to the brief, communication and response time. A move to WP Engine and work on the primary domain were discussed after staging, but the saved readable history does not independently confirm a completed switch or SSL setup. This case therefore documents the reconstruction and staging reviews, not a guaranteed full launch, all 15 workshops, working forms, complete metadata or redirects.
+  - type: text
+    title: Related gallery and language-routing work
+    body: Gallery batch loading and language URL mapping were checked in separate follow-up tasks. These are later projects, not part of the verified scope of the original migration stage.
     links:
       - label: Batch loading for galleries
         url: /showcase/tara-bergman-gallery-batches/en/
-      - label: Fixing hreflang
+      - label: hreflang URL mapping
         url: /showcase/tara-bergman-hreflang-page-mapping/en/
-  - type: text
-    title: Archived project homepage
-    links:
-      - label: Original Kwork portfolio entry
-        url: https://kwork.ru/portfolio/22781455
   - type: image
+    title: Project homepage from the portfolio archive
     src: /media/projects/tara-bergman/archive-homepage.webp
-    alt: Tara Bergman photography homepage with galleries, pricing and a booking
-      form
-    caption: Full homepage, 1400 × 5219. Published in the portfolio after acceptance
-      on June 9, 2026. The client supplied the photographs; the screenshot shows
-      the layout, not form delivery.
-  - type: text
-    title: How I checked homepage performance
-    body: In the archived mobile PageSpeed report dated June 9, 2026, the homepage
-      scored 92 for performance, with a 2.9 s LCP. This was a single lab test
-      emulating a Moto G Power. It does not measure gains over the original site
-      or cover every gallery.
-    links:
-      - label: View the archived report
-        url: https://kwork.ru/portfolio/22781382
+    alt: Full-page Tara Bergman photography website with gallery, pricing and booking form
+    caption: Full-page capture at 1400 × 5219, published in the portfolio after acceptance on June 9, 2026. The client supplied the photographs; the capture shows page composition, not form delivery or every language version.
+  - type: image
+    title: Historical mobile PageSpeed report
+    src: /media/projects/tara-bergman/pagespeed-mobile-20260609.webp
+    alt: June 9, 2026 PageSpeed report with a mobile performance score of 92 and LCP of 2.9 seconds
+    caption: Single Lighthouse 13.3.0 lab report on a Moto G Power emulation; no field data or pre-migration baseline is available.
