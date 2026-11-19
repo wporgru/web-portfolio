@@ -12,16 +12,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Prepared the design for an existing WordPress installation ahead of a
-      planned move from Joomla. The new version was built separately from the
-      main site.
+    body: "The company was preparing to move from Joomla to WordPress, while the existing main site remained separate during the work. The client asked to design the already-installed WordPress version under medcors.ru/wp/: structure the section, refine the homepage, header and footer, and iterate on visual details. This was a preparation environment, not the complete site migration."
   - type: text
     title: How it works
-    body: Used Astra and Elementor to build the homepage, header, footer and section
-      structure. Kept the ambulance image on the homepage after feedback and
-      agreed on another background for internal pages. Refined the lower block
-      and header hover states.
+    body: "Designed the WordPress section with Astra and Elementor: information structure, homepage, header and footer. Following the client’s visual direction, retained the ambulance image on the homepage and used the agreed blue-cloud background on internal pages. Then refined the lower blue block and the orange hover accent in the header based on feedback. perevozkibolnyh.ru was a client-supplied reference, not a site built as part of this project."
   - type: text
     title: Result and verification
-    body: The client accepted the design. A complete Joomla migration, keyword
-      research and publication at the domain root were not verified.
+    body: The client accepted the updated design and left a positive review noting that the final result depended on clearly specified preferences. The evidenced work is the WordPress /wp/ section design and setup, with iterations on the homepage, internal-page background, lower block and header states. A full content migration from Joomla, SEO keyword research and publication of WordPress at the domain root are not established by this order.

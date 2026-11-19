@@ -4812,9 +4812,9 @@ projects:
     name: Medcors website design ahead of a CMS migration
     year: "12.2022"
     role: Web development and automation
-    description: Prepared the design for an existing WordPress installation ahead of
-      a planned move from Joomla. The new version was built separately from the
-      main site.
+    description: "Designed a preparation WordPress version under /wp/ with Astra and
+      Elementor: homepage, section structure, header and footer. Iterated on page
+      backgrounds and UI accents; a full Joomla migration was outside this order."
     stack:
       - WordPress
       - Astra
