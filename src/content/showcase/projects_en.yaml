@@ -6437,8 +6437,7 @@ projects:
         type: product
   - slug: fisher-fish-catalog-import
     name: "Fisher Fish: fishing catalog and category import"
-    description: The stage report records 1,941 imported products and 147 updated
-      subcategories after revisions. The client accepted the work.
+    description: "Prepared a CSV import of selected products from four brands, filtering 2,105 source rows to exclude entries without a price or image. Agreed on separate color listings within model subcategories instead of variable products. The stage report records 1,941 imported products and 147 updated subcategories; the client accepted the work. Counts are from the historical log, not an independent recount."
     year: "02.2018"
     role: Web development
     stack:
