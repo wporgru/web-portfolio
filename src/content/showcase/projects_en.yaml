@@ -2222,11 +2222,12 @@ projects:
         url: /showcase/mega-electronics-setup/en/
         type: product
   - slug: store-theme-reset
-    name: Recovering a store after conflicting page-builder edits
+    name: Resetting a WordPress store after failed page edits
     year: "02.2024"
     role: Web development and automation
-    description: Failed edits left the store needing a workable foundation. The
-      theme was built for WPBakery, but editing had been attempted in Elementor.
+    description: Checked hosting rollback, confirmed no usable backup, then agreed
+      with the owner to reinstall the WPBakery-based theme while the store was
+      still mostly empty. A controlled reset, not backup data recovery.
     stack:
       - WordPress
       - WooCommerce
