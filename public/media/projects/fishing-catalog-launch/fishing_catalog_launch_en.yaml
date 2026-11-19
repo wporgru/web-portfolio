@@ -10,19 +10,40 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: "The client needed more than a price-list import: shoppers had to be able
-      to reach the relevant categories from the storefront."
+    body: Prepared a supplier price list and imported selected row ranges into the
+      existing WooCommerce store, kaida-mos.ru. The client agreed on categories and
+      retail prices; nets, torpedoes and netting had to remain separate product
+      groups. The work included presenting the catalog clearly to shoppers, not
+      only loading data.
   - type: text
     title: How it works
-    body: Prepared the data and resumed the import after 504 errors once the client
-      arranged a temporary hosting upgrade. Adjusted available PHP settings,
-      corrected product image sizing, assigned category images and made the
-      catalog the store homepage.
+    body: Prepared the data for the agreed structure. When the import hit 504 errors
+      and HandyHost limits, I did not treat an incomplete run as finished. The
+      client arranged a temporary plan upgrade; I adjusted the PHP settings
+      available to me and resumed the import. This helped bring the stage to
+      acceptance but does not establish a permanent server configuration change.
+  - type: text
+    title: Making the catalog the storefront
+    body: After loading the data, I refined how shoppers enter the catalog, adjusting
+      product image dimensions, assigned images to categories and set the actual
+      /shop/ page as the store homepage. Visitors therefore landed on the catalog
+      instead of a technical or empty start page. The client separately praised
+      the presentation.
   - type: text
     title: Result and verification
-    body: The client approved the presentation and accepted the work. About 90
-      items, mainly landing nets, were imported without photos because of
-      image-server issues; the catalog was not presented as fully illustrated.
+    body: The client accepted the order on February 20, 2026. About 90 items, mainly
+      landing nets, were imported without photos because image retrieval from the
+      source server failed. I keep that limitation explicit instead of claiming a
+      fully illustrated catalog. The final item count for this specific stage is
+      not recorded. A last request to replace an incorrect category image with a
+      reel is not confirmed as completed.
+  - type: text
+    title: What this approach delivers
+    body: Shoppers get a storefront that leads into the assortment, while the store
+      owner gets imported data and a clear record of unfinished items. For similar
+      work, missing images, re-imports, price and stock synchronization and full
+      catalog verification should be scoped separately; they are not claimed as
+      outcomes of this one-time order.
   - type: image
     title: Public site view
     src: /media/projects/supplier-price-list-refresh/later-homepage.webp

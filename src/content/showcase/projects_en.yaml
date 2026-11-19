@@ -913,8 +913,10 @@ projects:
     name: Launching a fishing catalog from a supplier price list
     year: "02.2026"
     role: Web development and automation
-    description: "The client needed more than a price-list import: shoppers had to
-      be able to reach the relevant categories from the storefront."
+    description: Imported selected supplier-list ranges into WooCommerce; after 504
+      errors, resumed on a temporarily upgraded hosting plan, refined category imagery
+      and made /shop/ the homepage. Around 90 items lacked photos, a limitation stated
+      explicitly rather than hidden.
     stack:
       - WooCommerce
       - Data import
