@@ -1,5 +1,5 @@
-title: Individual WooCommerce product page templates
-tagline: Set up custom WooCommerce templates for selected products and trained the owner to add visual and shortcode-based content without rebuilding the whole catalog.
+title: "WooCommerce product templates: setup and handover"
+tagline: Showed the owner how to customize selected product pages separately from the main catalog, assign templates and add content blocks visually or with shortcodes.
 year: "01.2024"
 role: Web development and automation
 stack:
@@ -10,15 +10,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Showed how to give selected products custom content blocks without
-      changing the default template across the catalog.
+    body: The store owner planned to commission landing pages for selected products over time while keeping standard product pages for the rest of the catalog. The need was not a catalog-wide redesign, but a manageable way to assign a custom template and compose content sections. Information panels and a future review section were also discussed, but a completed series of pages was not part of this consultation.
   - type: text
     title: How it works
-    body: Used a 1C:ERP listing to demonstrate visual editing, shortcode blocks and
-      template assignment to an individual product. Disabled the editor when it
-      disrupted the existing workflow and documented how to re-enable it.
-      Separated template setup from building future landing pages.
+    body: "Used a 1C:ERP product to demonstrate the workflow: open a product, add sections with the visual editor or shortcodes, and assign the template only to that listing. This kept the catalog-wide default separate and avoided a broad redesign. When the unfamiliar editor disrupted the existing workflow, disabled it and explained how the owner could re-enable it when needed. Distinguished the setup and walkthrough from building future product landing pages one by one."
   - type: text
     title: Result and verification
-    body: The client accepted the consultation. A series of finished landing pages
-      and CRM implementation were not part of this delivery.
+    body: The client accepted the consultation and left a review. The delivered result was a demonstrated and handed-over method for managing individual templates; a completed landing-page series is not established. A reviews section, CRM setup, removal of company details and full restoration from a web archive are not claimed. The subjective comment about speed is not a benchmark, and the current website screenshot does not establish the historical state of individual product pages.

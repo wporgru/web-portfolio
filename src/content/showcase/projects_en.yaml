@@ -3179,10 +3179,13 @@ projects:
         url: /showcase/edible-bouquet-catalog-data/en/
         type: product
   - slug: woocommerce-product-template-training
-    name: Individual WooCommerce product page templates
+    name: "WooCommerce product templates: setup and handover"
     year: "01.2024"
     role: Web development and automation
-    description: "Set up custom content blocks for selected WooCommerce products and showed the owner how to edit them visually, insert shortcode-based sections and assign a template to an individual listing without replacing the catalog-wide default. Used a 1C:ERP product as the example, disabled a disruptive editor and explained how to re-enable it. The client accepted the consultation; a series of landing pages and CRM implementation were outside scope."
+    description: Showed a WooCommerce owner how to assign custom templates to
+      selected products and add sections visually or with shortcodes without
+      changing the catalog default. Landing-page production and CRM setup were
+      outside this consultation.
     stack:
       - WordPress
       - WooCommerce
