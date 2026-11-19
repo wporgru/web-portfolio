@@ -4551,8 +4551,7 @@ projects:
     name: Avada foundation for a furniture store
     year: "02.2020"
     role: Web development and automation
-    description: Set up a furniture store foundation with a visual editor,
-      WooCommerce and HTTPS on its own domain.
+    description: "Set up the WordPress foundation for a furniture shop with Avada's visual builder and WooCommerce, connected the domain to hosting and configured HTTPS with a Let's Encrypt certificate. Resumed work after a hosting outage confirmed by support; the client reviewed and accepted the foundation. A custom theme, full catalog population and payment setup were outside scope."
     stack:
       - WordPress
       - WooCommerce
