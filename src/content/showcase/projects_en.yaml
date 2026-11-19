@@ -3813,8 +3813,9 @@ projects:
     name: Titanfox catalog navigation and hosting migration
     year: "03.2023"
     role: Web development and automation
-    description: Refined a knife store and helped move it to another host. The owner
-      wanted better catalog navigation as well as a solution to slow loading.
+    description: Updated a knife store’s homepage and WooCommerce catalog navigation,
+      refined categories and filters, raised PHP, and coordinated a move to Hostiman.
+      The client reported faster loading; no before-and-after benchmark is available.
     stack:
       - WooCommerce
       - Hosting migration
