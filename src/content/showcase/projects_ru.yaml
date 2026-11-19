@@ -6809,3 +6809,28 @@ projects:
         url: /showcase/whois-domain-availability-tool/
         type: product
     featured: false
+  - slug: goodwin-shop-php83-recovery
+    name: "Goodwin Shop: восстановление перехода на PHP 8.3"
+    description: После получения корректного доступа к хостингу перевёл PHP на 8.3.
+      Владелец проверил сайт, подтвердил, что версия изменилась и магазин
+      работает, затем принял заказ. В переписке не зафиксированы конкретные правки
+      PHP-кода или версии плагинов, поэтому не приписываю их этому этапу.
+    year: "10.2026"
+    role: Веб-разработка
+    stack:
+      - WordPress
+      - WooCommerce
+      - PHP
+      - Hosting
+    order: 364
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/goodwin-shop-php83-recovery/site.png
+        alt: Публичная версия сайта проекта
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/goodwin-shop-php83-recovery/
+        type: product

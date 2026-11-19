@@ -6750,3 +6750,29 @@ projects:
         url: /showcase/whois-domain-availability-tool/en/
         type: product
     featured: false
+  - slug: goodwin-shop-php83-recovery
+    name: "Goodwin Shop: recovering a failed PHP 8.3 upgrade"
+    description: After receiving working hosting access, switched PHP to 8.3. The
+      owner checked the site, confirmed the version change and that the store
+      worked, then accepted the order. The conversation does not establish
+      specific PHP code patches or plugin versions, so this case does not claim
+      them.
+    year: "10.2026"
+    role: Web development
+    stack:
+      - WordPress
+      - WooCommerce
+      - PHP
+      - Hosting
+    order: 364
+    featured: false
+    theme: emerald
+    media:
+      - type: image
+        src: /media/projects/goodwin-shop-php83-recovery/site.png
+        alt: Public website snapshot
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/goodwin-shop-php83-recovery/en/
+        type: product

@@ -1,0 +1,42 @@
+title: "Goodwin Shop: recovering a failed PHP 8.3 upgrade"
+tagline: Move the store from PHP 7.4.33 to PHP 8.3 after an earlier attempt took
+  the site offline and had to be rolled back.
+role: Web development
+year: "10.2026"
+stack:
+  - WordPress
+  - WooCommerce
+  - PHP
+  - Hosting
+blocks:
+  - type: text
+    title: Brief
+    body: Move the store from PHP 7.4.33 to PHP 8.3 after an earlier attempt took
+      the site offline and had to be rolled back.
+  - type: text
+    title: Work delivered
+    body: After receiving working hosting access, switched PHP to 8.3. The owner
+      checked the site, confirmed the version change and that the store worked,
+      then accepted the order. The conversation does not establish specific PHP
+      code patches or plugin versions, so this case does not claim them.
+  - type: text
+    title: Implementation and scope
+    body: The client said an earlier move from PHP 7.4.33 to 8.3 had taken the site
+      offline, so hosting was rolled back. After clarifying access to the
+      hosting panel, I switched the runtime to PHP 8.3 again and reported
+      completion. The client independently checked the store, confirmed it
+      worked on the target version and accepted the order. The archive does not
+      list PHP code patches, exact theme or plugin versions, a backup, or a full
+      cart and payment test, so this case does not claim them. A later
+      discussion of PHP 8.5 does not establish that version 8.5 was installed.
+      The saved image shows the public site on October 30, 2026; it is not proof
+      of the server's PHP version or a before-and-after comparison.
+    links:
+      - label: View the original Kwork order
+        url: https://kwork.ru/track?id=65632861
+  - type: image
+    title: Public website snapshot
+    src: /media/projects/goodwin-shop-php83-recovery/site.png
+    alt: Goodwin Shop homepage and its kindergarten equipment catalogue
+    caption: Homepage capture saved on October 30, 2026. It shows the public site
+      on the check date, not a before-and-after comparison or PHP-version proof.
