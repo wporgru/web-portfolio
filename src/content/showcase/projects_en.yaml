@@ -3229,8 +3229,8 @@ projects:
     name: Restoring email from website booking forms
     year: "01.2024"
     role: Web development and automation
-    description: Restored booking enquiries and verified delivery with several
-      distinguishable submissions rather than one test message.
+    description: Restored booking-form notifications and verified three distinct
+      requests with client confirmation; separately repaired the footer’s VK link.
     stack:
       - WordPress
       - Booking forms

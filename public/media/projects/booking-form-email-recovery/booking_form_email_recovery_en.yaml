@@ -11,16 +11,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Restored booking enquiries and verified delivery with several
-      distinguishable submissions rather than one test message.
+    body: After one successful submission, later excursion-booking requests stopped arriving reliably. The task was to inspect the notification path rather than rely on a single test email, and separately repair a VK link in the site footer. The available history does not identify the domain or exact form plugin.
   - type: text
     title: How it works
-    body: Reviewed notification and sender settings, restored the administrative
-      recipient and sent three control submissions. Asked the client to confirm
-      each in the inbox. Also repaired the footer’s VK link and shared a
-      verification video.
+    body: Checked notification and sender configuration, restored the administrative recipient, and sent three distinguishable control submissions. Rather than treating the act of sending as proof, asked the client to confirm each message in their own inbox. During the exchange, the client also switched PHP to 7.4 based on advice current at the time; the preserved evidence does not establish that version change as the root cause or sole fix. Separately repaired the footer’s VK link and recorded a short verification video.
   - type: text
     title: Result and verification
-    body: The client confirmed all three messages and the repaired link. Domain
-      email authentication and long-term deliverability were not independently
-      assessed.
+    body: The client confirmed all three control emails, checked the VK footer link and explicitly accepted the order with the review “Fast and competent. Thank you for the work.” This supports several successful submissions at handoff, not long-term delivery monitoring. SMTP, SPF/DKIM/DMARC, a mail-service integration or a booking-logic rewrite are not claimed. A second VK button was not separately confirmed, and the project domain could not be established from the archived material.
