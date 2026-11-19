@@ -1139,8 +1139,7 @@ projects:
     name: Restoring theme settings and navigation in RamaYoga
     year: "01.2024"
     role: Web development and automation
-    description: The store needed a usable collection and category structure, but
-      parts of the theme configuration were not taking effect.
+    description: Restored WooCommerce Storefront settings that were blocked by conflicting plugins. Imported the demo storefront, adapted navigation for collections, mats and accessories, and showed the owner how to manage banners and product groups, hide empty categories and change their order. The client confirmed that theme settings worked again.
     stack:
       - WooCommerce
       - Storefront
