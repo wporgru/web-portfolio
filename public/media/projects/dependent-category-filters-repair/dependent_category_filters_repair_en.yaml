@@ -11,16 +11,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Repaired dependent filters where identical subcategory names in separate
-      branches led to incorrect options and counts.
+    body: In an existing WooCommerce catalog, dependent filters returned incorrect options and counts when identically named subcategories appeared under different branches. The order also included a separate mobile-footer repair. The archived history does not identify the domain or exact plugin, so this case describes the observed behavior and work without assigning an unverified site or extension.
   - type: text
     title: How it works
-    body: Compared choosing a child category alone with choosing it under its
-      parent. Updated the extension, restored automatic filter application and
-      refined the option lists using client examples. Restored the mobile footer
-      separately.
+    body: Compared two scenarios—selecting a child category alone and selecting the same category in its parent context—to isolate ambiguity between branches. Updated the extension, restored automatic filter application that had been disabled, and iteratively refined the returned options from client examples. After the client confirmed the initial subset and then all cases they had checked, handled the separate mobile issue by restoring the footer on phones.
   - type: text
     title: Result and verification
-    body: The client confirmed the selections they tested and the footer on a phone,
-      accepted the work and added a bonus. The review did not cover every
-      catalog combination.
+    body: The client confirmed the filter selections they tested and the footer on a phone, accepted the order, added a bonus and left a positive review praising the fast, professional collaboration. This supports acceptance of those tested scenarios, not an exhaustive check across every category, combination or device. Product count, site domain, exact filter extension and any new product import are not established by the archive.

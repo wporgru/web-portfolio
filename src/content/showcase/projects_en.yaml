@@ -4455,8 +4455,9 @@ projects:
     name: Repairing dependent WooCommerce catalog filters
     year: "04.2021"
     role: Web development and automation
-    description: Repaired dependent filters where identical subcategory names in
-      separate branches led to incorrect options and counts.
+    description: Fixed dependent-filter ambiguity when subcategories shared names
+      across catalog branches, restored automatic application and the mobile footer;
+      the client confirmed the scenarios they tested.
     stack:
       - WooCommerce
       - Taxonomy
