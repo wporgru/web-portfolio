@@ -4263,8 +4263,7 @@ projects:
     name: "Vyvoz24: technical SEO for a service website"
     year: "03.2020"
     role: Web development and automation
-    description: Implemented a technical SEO brief covering headings and metadata,
-      navigation, sitemaps and resource loading on a service website.
+    description: "Implemented a technical SEO brief for a service website: corrected H1s and redundant sitewide subheadings, configured Yoast metadata templates, and prepared robots.txt plus XML and HTML sitemaps. Documented structured data for services, offers and breadcrumbs, enabled review moderation and browser caching, and refined the footer, logo and favicon. The client accepted the work; no speed or ranking uplift was measured."
     stack:
       - WordPress
       - Yoast SEO
