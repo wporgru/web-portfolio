@@ -1,7 +1,5 @@
-title: Auto repair website package for self-hosted setup
-tagline: The client needed a ready-to-use auto repair site package and
-  instructions for setting it up on their own hosting without hiring the
-  developer to install it.
+title: Auto repair website package and setup guide
+tagline: Handed over a ready-made package and installation guide for self-hosting; deploying it on the client's server was not part of the order.
 year: "07.2026"
 role: Web development and automation
 stack:
@@ -10,17 +8,10 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: The client needed a ready-to-use auto repair site package and instructions
-      for setting it up on their own hosting without hiring the developer to
-      install it.
+    body: The client purchased a ready-made auto repair solution with instructions for installing it on their own hosting. They named autopartner52.ru when placing the order, but this does not establish that development, migration or publication of the existing site on that domain was requested or performed.
   - type: text
     title: How it works
-    body: "Delivered the website package through a download link along with
-      installation instructions. Kept the handoff separate from deployment: the
-      files and instructions were included, server access and publication by the
-      developer were not."
+    body: "Shared a link to the package through Yandex Disk and supplied hosting installation instructions. The handoff was intended for self-deployment: the developer did not receive server access or publish the site. The delivered archive is not retained in the local evidence, so its CMS, theme, plugins and internal contents cannot be listed or claimed as inspected."
   - type: text
     title: Result and verification
-    body: The client explicitly accepted the package. The record confirms delivery
-      but does not establish the archive contents or a launch on a specific
-      domain.
+    body: The client explicitly accepted the handoff. The conversation confirms delivery of the link and guide, not installation by the buyer or a launch on autopartner52.ru. The named domain was checked separately and was not reachable at that check; its current appearance is not used as evidence of this order's result or site authorship.

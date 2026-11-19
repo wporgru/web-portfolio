@@ -2644,15 +2644,16 @@ projects:
         url: /showcase/woocommerce-layout-bulk-edit-advice/
         type: product
   - slug: auto-service-site-handoff
-    name: Передача сайта автосервиса для самостоятельного запуска
+    name: Пакет сайта автосервиса и инструкция по установке
     year: "07.2026"
     role: Веб-разработка и автоматизация
-    description: Клиенту был нужен готовый комплект сайта автосервиса и понятный
-      способ разместить его на своём хостинге, без заказа установки у
-      исполнителя.
+    description: Передал готовый пакет сайта автосервиса и инструкцию для
+      самостоятельной установки через Яндекс Диск. Приёмка подтверждена;
+      публикация на сервере клиента и состав архива не проверены.
     stack:
-      - Web Deployment
-      - Documentation
+      - Website package
+      - Installation guide
+      - Yandex Disk
     order: 143
     theme: cyan
     links:

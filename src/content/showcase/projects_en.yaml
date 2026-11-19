@@ -2612,15 +2612,16 @@ projects:
         url: /showcase/woocommerce-layout-bulk-edit-advice/en/
         type: product
   - slug: auto-service-site-handoff
-    name: Auto repair website package for self-hosted setup
+    name: Auto repair website package and setup guide
     year: "07.2026"
     role: Web development and automation
-    description: The client needed a ready-to-use auto repair site package and
-      instructions for setting it up on their own hosting without hiring the
-      developer to install it.
+    description: Delivered a ready-made auto repair website package and guide for
+      self-installation via Yandex Disk. Acceptance is documented; deployment on
+      the client's server and archive contents were not verified.
     stack:
-      - Web Deployment
-      - Documentation
+      - Website package
+      - Installation guide
+      - Yandex Disk
     order: 143
     theme: cyan
     links:
