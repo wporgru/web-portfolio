@@ -1,0 +1,38 @@
+title: VysotaTepla service website prototype with a price estimator
+tagline: The local Antigravity workspace contains source code for a landing page
+  covering facade work and industrial climbing services. The interface presents
+  service categories, provides an indicative price and guides visitors toward an
+  enquiry; deployment and client acceptance were not verified.
+year: "2026"
+role: Web development and automation
+stack:
+  - React
+  - TypeScript
+  - Vite
+  - React Router
+  - Tailwind CSS
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The local Antigravity workspace contains source code for a landing page
+      covering facade work and industrial climbing services. The interface
+      presents service categories, provides an indicative price and guides
+      visitors toward an enquiry; deployment and client acceptance were not
+      verified.
+  - type: text
+    title: How it works
+    body: Built a React and TypeScript SPA with separate service pages. Implemented
+      a two-region selector persisted in localStorage and a client-side
+      estimator based on service, area, material, access method, crew size,
+      urgency and a regional price factor. The codebase also contains a service
+      catalog, project galleries, FAQs, testimonials, an articles section and an
+      enquiry form; form delivery was not tested.
+  - type: text
+    title: Result and verification
+    body: The local Vite production build succeeded and a browser check of the
+      homepage reported zero JavaScript errors. ESLint did not run because the
+      workspace has no ESLint 9 configuration. The build warns about a 915 kB
+      JavaScript chunk before gzip. Prices, marketing figures and testimonials
+      in the mockup are unverified; mobile QA, client acceptance, domain and
+      deployment are also unverified. This case therefore describes a local
+      prototype, not a launched website or verified business results.

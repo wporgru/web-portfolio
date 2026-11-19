@@ -6688,3 +6688,25 @@ projects:
     - label: View case
       url: /showcase/xone-accessories-catalog-update/en/
       type: product
+  - slug: vysota-tepla-prototype
+    name: VysotaTepla service website prototype with a price estimator
+    year: "2026"
+    role: Web development and automation
+    description: The local Antigravity workspace contains source code for a landing
+      page covering facade work and industrial climbing services. The interface
+      presents service categories, provides an indicative price and guides
+      visitors toward an enquiry; deployment and client acceptance were not
+      verified.
+    stack:
+      - React
+      - TypeScript
+      - Vite
+      - React Router
+      - Tailwind CSS
+    order: 361
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/vysota-tepla-prototype/en/
+        type: product
+    featured: false

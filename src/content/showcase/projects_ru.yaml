@@ -6746,3 +6746,24 @@ projects:
     - label: Читать кейс
       url: /showcase/xone-accessories-catalog-update/
       type: product
+  - slug: vysota-tepla-prototype
+    name: Прототип сайта услуг «ВысотаТепла» с калькулятором стоимости
+    year: "2026"
+    role: Веб-разработка и автоматизация
+    description: В локальном Antigravity workspace найден исходный код лендинга для
+      услуг фасадных работ и промышленного альпинизма. Интерфейс показывает
+      направления услуг, даёт предварительный ориентир по стоимости и ведёт
+      посетителя к заявке; подтверждений публикации и приёмки нет.
+    stack:
+      - React
+      - TypeScript
+      - Vite
+      - React Router
+      - Tailwind CSS
+    order: 361
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/vysota-tepla-prototype/
+        type: product
+    featured: false
