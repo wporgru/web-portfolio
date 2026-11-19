@@ -4912,12 +4912,12 @@ projects:
         url: /showcase/keytering-domain-cutover/en/
         type: product
   - slug: outlook-interactive-signature-redesign
-    name: Interactive Outlook signature replacing a static image
+    name: "Outlook HTML signature: a two-stage design project"
     year: 08–09.2023
     role: Web development and automation
-    description: Replaced a static business-card image with an editable HTML
-      signature so recipients could open the website, send an email or use a
-      messenger directly.
+    description: Prepared HTML signature options to replace a static card,
+      corrected the file after an installation issue, then refined its
+      proportions, fonts, icon colours and contact-link layout in a follow-up.
     stack:
       - HTML
       - Outlook

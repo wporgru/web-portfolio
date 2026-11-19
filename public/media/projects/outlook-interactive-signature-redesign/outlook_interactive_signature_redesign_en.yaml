@@ -1,7 +1,7 @@
-title: Interactive Outlook signature replacing a static image
-tagline: Replaced a static business-card image with an editable HTML signature
-  so recipients could open the website, send an email or use a messenger
-  directly.
+title: Interactive Outlook HTML signature replacing a static business card
+tagline: Replaced a static business-card image with an editable Outlook HTML
+  signature, corrected the file after an installation issue, then refined its
+  proportions, fonts, colours and icons in a separate follow-up stage.
 year: 08–09.2023
 role: Web development and automation
 stack:
@@ -12,16 +12,32 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Replaced a static business-card image with an editable HTML signature so
-      recipients could open the website, send an email or use a messenger
-      directly.
+    body: The brief was to replace a static business-card image with an editable
+      HTML signature for Outlook. It had to use the company's supplied assets
+      and reference, with separate contact elements linking to its website,
+      email, WhatsApp and social channels. The scope was the signature, not the
+      company website or a new brand identity.
   - type: text
-    title: How it works
-    body: Prepared several layouts using the company’s assets, including its logo
-      and a divider. Corrected the file after an installation issue. In a
-      follow-up stage, agreed on a rectangular layout, refined its proportions
-      and handed over the new version.
+    title: "First stage: HTML layouts and installation"
+    body: Prepared several versions using the company logo and a visual divider.
+      After the client reported an installation issue, corrected the file and
+      handed over an updated version. The client accepted this stage and
+      described the result as almost perfect.
   - type: text
-    title: Result and verification
-    body: The client accepted both stages. The work covered signature design, not
-      brand identity development or testing every Outlook version.
+    title: "Second stage: proportions and brand details"
+    body: Refined the same signature under a separate order. Agreed on a
+      rectangular composition; adjusted proportions and the placement of the
+      website, channel and dividers, and revised icons, colours and fonts. This
+      was a continuation of the signature project, not a new website or brand
+      identity engagement.
+  - type: text
+    title: Outcome and verification limits
+    body: The client accepted both stages; a positive review is preserved for the
+      first. The archive does not contain a confirmed final file for independent
+      testing, so this case does not claim link testing, a team-wide rollout or
+      compatibility with every Outlook version.
+    links:
+      - label: View the first Kwork order
+        url: https://kwork.ru/track?id=38095535
+      - label: View the follow-up Kwork order
+        url: https://kwork.ru/track?id=38180926
