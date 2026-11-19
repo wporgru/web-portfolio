@@ -4778,8 +4778,10 @@ projects:
     name: Simplifying checkout for the Evrosumka store
     year: "10.2022"
     role: Web development and automation
-    description: Reduced checkout to the information staff needed and refined the
-      storefront and footer of an existing shop.
+    description: Simplified WooCommerce checkout to contact details and comments
+      after finding the one-click purchase plugin incompatible. Also refined
+      product quick view, storefront copy and footer, and requested the complete
+      Flamp widget code before installation.
     stack:
       - WooCommerce
       - Checkout
