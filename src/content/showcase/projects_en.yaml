@@ -6730,3 +6730,23 @@ projects:
         url: /showcase/education-store-crawl-audit/en/
         type: product
     featured: false
+  - slug: whois-domain-availability-tool
+    name: Local WHOIS domain status checker
+    year: "07.2026"
+    role: Web development and automation
+    description: A small Windows utility in the Antigravity workspace checks a batch
+      of domain names. It distinguishes WHOIS registry responses, missing records
+      and network errors, then stores results locally for later review. The domain
+      list and logs are private and are not published in this case.
+    stack:
+      - Python
+      - WHOIS
+      - TCP sockets
+      - Windows automation
+    order: 363
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/whois-domain-availability-tool/en/
+        type: product
+    featured: false

@@ -6788,3 +6788,24 @@ projects:
         url: /showcase/education-store-crawl-audit/
         type: product
     featured: false
+  - slug: whois-domain-availability-tool
+    name: Локальная утилита проверки статуса доменов по WHOIS
+    year: "07.2026"
+    role: Веб-разработка и автоматизация
+    description: В Antigravity workspace обнаружен небольшой Windows-инструмент для
+      пакетной проверки списка доменов. Нужно различать ответ регистра WHOIS,
+      отсутствие записи и сетевую ошибку, а результаты сохранять локально для
+      следующего просмотра. Список доменов и журналы остаются приватными и в
+      портфолио не публикуются.
+    stack:
+      - Python
+      - WHOIS
+      - TCP sockets
+      - Windows automation
+    order: 363
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/whois-domain-availability-tool/
+        type: product
+    featured: false
