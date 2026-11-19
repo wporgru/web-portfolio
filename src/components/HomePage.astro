@@ -91,7 +91,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
       </article>
 
       <article class="card card--achievements">
-        <h2 class="h2">{ru ? 'Достижения' : 'Achievements'}</h2>
+        <h2 class="h2">{ru ? 'Достижения и результаты проектов' : 'Project achievements and measurable results'}</h2>
         <ul class="list">
           <li><a href={catalog}><strong>{projects.length} {ru?'кейсов в портфолио':'portfolio case studies'}</strong></a> — {ru?'с задачами, решениями и результатами на русском и английском.':'with briefs, solutions and outcomes in Russian and English.'}</li>
           <li>{ru ? '582 выполненных заказа в собранном архиве Kwork; 371 отзыв сохранён со скриншотом.' : '582 completed orders in the collected Kwork archive; 371 reviews archived with screenshots.'}</li>
@@ -107,7 +107,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
       </article>
 
       <section class="section section--experience">
-        <h2 class="h2">{ru ? 'Опыт' : 'Experience'}</h2>
+        <h2 class="h2">{ru ? 'Профессиональный опыт в веб-разработке' : 'Professional web development experience'}</h2>
         <div class="stack">
           {c.experience.map(([title,body])=>{
             const [name,period]=title.split(' · ');
@@ -140,7 +140,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
       </section>
 
       <section class="section cv-extra">
-        <h2 class="h2">{ru?'Как я работаю':'How I work'}</h2>
+        <h2 class="h2">{ru?'Как я веду проекты и проверяю результат':'How I plan projects and verify outcomes'}</h2>
         <ol class="list work-steps">
           {workSteps.map(([title,body,slug,label])=><li class="card item">
             <h3 class="h2">{title}</h3>
@@ -175,7 +175,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
 
     <aside class="sidebar cv-sidebar">
       <article class="card card--downloads" id="resume" tabindex="-1" aria-labelledby="resume-heading">
-        <h2 class="h2" id="resume-heading">{ru ? 'Скачать' : 'Download'}</h2>
+        <h2 class="h2" id="resume-heading">{ru ? 'Скачать резюме и портфолио' : 'Download résumé and portfolio'}</h2>
         <div class="skillsgroup__title">{ru ? 'Людям' : 'For people'}</div>
         <div class="btnrow">
           <a class="btn" href={downloadUrls.pdf} download aria-label={ru ? 'Скачать резюме PDF' : 'Download resume PDF'}>PDF</a>
@@ -188,7 +188,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
         </div>
       </article>
       <article class="card card--skills">
-        <h2 class="h2">{ru ? 'Навыки' : 'Skills'}</h2>
+        <h2 class="h2">{ru ? 'Навыки и технологии веб-разработки' : 'Web development skills and technologies'}</h2>
         <div class="skillsgrid">{c.skills.map(([group],i)=><div class="skillsgroup">
           <div class="skillsgroup__title">{group}</div>
           <ul class="tags">{skillTags[i].map(tag=><li class="tag">{tag}</li>)}</ul>
