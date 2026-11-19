@@ -1,32 +1,39 @@
 title: "STALEX: automated import of 719 products"
-tagline: Import a nonstandard product feed without losing specifications or
-  stock status.
-role: Web development
+tagline: Configured a nonstandard supplier feed and daily price and stock updates. The initial import report recorded 719 products.
+role: WooCommerce integration and catalog automation
 year: "06.2026"
 stack:
+  - WordPress
   - WooCommerce
   - XML
-  - Data import
+  - Cron
+  - Catalog import
+links:
+  - label: Public Kwork profile and reviews
+    url: https://kwork.ru/user/wporgru
 blocks:
   - type: text
-    title: Brief
-    body: Import a nonstandard product feed without losing specifications or stock
-      status.
+    title: "Brief: import the catalog and automate updates"
+    body: >-
+      The client needed equipment imported from a STALEX supplier feed into an existing store, followed by scheduled price and stock updates. Manual product edits had to remain intact, new items had to be added, and products missing from the source needed a defined status. The feed used a nonstandard representation of specifications and availability.
   - type: text
-    title: Work delivered
-    body: Configured product and category imports, separated structured attributes
-      from free-text specifications and corrected stock mapping. The initial
-      import report recorded 719 items.
+    title: Mapped the feed fields to the right product data
+    body: >-
+      Configured category and product imports. Structured specifications were mapped to WooCommerce attributes, while a separate free-text specifications block remained in product descriptions so information without dedicated feed fields was not lost. Discount prices and package details absent from the source were not invented. The initial import report dated June 16 recorded 719 products.
   - type: text
-    title: Implementation and scope
-    body: The feed included structured fields and separate specification text. I
-      mapped the former to WooCommerce attributes and kept the latter in product
-      descriptions so useful data was not lost. After the first run, I corrected
-      the availability rule and reran the import. The client confirmed the fix
-      and acknowledged more than 700 imported items.
+    title: Made repeat imports preserve manual work
+    body: >-
+      Existing products receive price and availability updates while protected manual edits are preserved. New items are added; items that disappear from the feed are marked out of stock. After the first import, I corrected the stock-mapping rule and reran the import; the client separately confirmed the fix. The archive contains an unresolved discrepancy: two missing items were mentioned first, then a later message after reviewing logs reported zero skipped items. I do not present the discrepancy as conclusively resolved.
+  - type: text
+    title: Prepared and checked the scheduled run
+    body: >-
+      Wrote instructions for two cron jobs. The agreed schedule was daily at 05:00 Moscow time; the hosting provider installed the jobs on the server. The client confirmed the automated update ran the following morning. This verifies the first scheduled run, not months of uninterrupted monitoring.
+  - type: text
+    title: Outcome and project boundaries
+    body: >-
+      The store received an initial catalog load and an agreed process for updating prices and stock without overwriting protected manual fields. The client accepted the order on June 17, 2026; their review mentions importing more than 700 products and setting up scheduled updates. This stage covered import and synchronization for an existing store—not the full website build, a CMS migration, publication of the storefront or search indexing. The figure 719 comes from the historical import report, not a current catalog recount.
   - type: image
-    title: Public website snapshot
+    title: Public storefront
     src: /media/projects/stalex-feed/site.png
-    alt: Public website snapshot
-    caption: Captured during a later availability check; it may differ from the site
-      at handoff.
+    alt: Full-page capture of the public STALEX equipment storefront
+    caption: Capture of the current public site. It shows the storefront but does not prove the historical 719-item import or long-term operation of the schedule.

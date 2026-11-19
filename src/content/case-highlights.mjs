@@ -14,8 +14,8 @@ export const caseHighlights = {
     en: 'Full WooCommerce store redesign: theme replacement, updates, performance work and plugin cleanup, with archival before-and-after screenshots.',
   },
   'stalex-feed': {
-    ru: 'Импорт STALEX: 719 позиций в первой загрузке. Настроил категории, атрибуты и сопоставление остатков из нестандартной выгрузки.',
-    en: 'STALEX feed import: 719 listings in the first run, with category and attribute mapping and corrected availability from a nonstandard feed.',
+    ru: 'Импорт STALEX: 719 позиций в первичном отчёте. Сохранил ручные правки товаров, исправил остатки и проверил первый запуск автообновления.',
+    en: 'STALEX import: 719 products in the initial report. Preserved manual edits, corrected stock mapping and verified the first scheduled update.',
   },
   'wellland-facets': {
     ru: 'Перенёс характеристики в глобальные атрибуты WooCommerce. Проверил фильтры и видимость 198 товаров в 33 категориях Wellland.',

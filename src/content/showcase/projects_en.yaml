@@ -47,15 +47,16 @@ projects:
         type: product
   - slug: stalex-feed
     name: "STALEX: automated import of 719 products"
-    description: Configured product and category imports, separated structured
-      attributes from free-text specifications and corrected stock mapping. The
-      initial import report recorded 719 items.
+    description: Imported 719 STALEX products from a nonstandard feed, mapped
+      structured and free-text specifications, and corrected stock handling.
+      Preserved manual edits and verified the first scheduled update.
     year: "06.2026"
-    role: Web development
+    role: WooCommerce integration and catalog automation
     stack:
       - WooCommerce
       - XML
-      - Data import
+      - Cron
+      - Catalog import
     order: 3
     featured: true
     theme: emerald
