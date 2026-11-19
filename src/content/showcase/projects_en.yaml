@@ -6483,8 +6483,7 @@ projects:
         type: product
   - slug: motoband-manual-catalog-import
     name: "Motoband: motorcycle catalog import and manual refresh"
-    description: Configured the import and manual refresh, agreed to move missing
-      listings to drafts and handed over instructions.
+    description: "Configured a motorcycle catalog import into WooCommerce with WP All Import and agreed on repeat-run rules: refresh prices and stock, add new listings and move supplier-discontinued products to drafts. The owner chose a manual run about once a week; I handed over the run steps and Import Complete check. Cron and subsequent updates were not verified."
     year: "07.2018"
     role: Web development
     stack:
