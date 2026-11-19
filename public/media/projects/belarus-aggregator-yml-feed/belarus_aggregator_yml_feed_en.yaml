@@ -1,6 +1,7 @@
-title: WooCommerce YML feed for Belarusian aggregators
-tagline: Configured a recurring WooCommerce export for product aggregators so
-  the owner would not need to regenerate a file after every product edit.
+title: "telek.by: WooCommerce YML feeds for Shop.by and Onliner.by"
+tagline: Prepared telek.by's catalogue for Shop.by and Onliner.by by setting up a
+  YML/XML feed endpoint and explaining its scheduled and product-change refresh
+  options.
 year: "09.2022"
 role: Web development and automation
 stack:
@@ -11,14 +12,23 @@ stack:
 blocks:
   - type: text
     title: Brief and constraints
-    body: Configured a recurring WooCommerce export for product aggregators so the
-      owner would not need to regenerate a file after every product edit.
+    body: The telek.by product catalogue needed to be supplied to Belarusian
+      aggregators Shop.by and Onliner.by. Instead of manually rebuilding a file
+      after product edits, the client needed an export URL the receiving
+      platforms could validate.
   - type: text
     title: How it works
-    body: "Created the YML file and shared its URL for validation. Explained two
-      refresh paths: a daily run and updates triggered by product changes. The
-      client checked that the format suited the receiving system."
+    body: "Created the WooCommerce YML/XML feed and shared the
+      `/wp-content/uploads/feed-yml-0.xml` endpoint for validation. Explained two
+      catalogue refresh options: once a day or after a product changes. The
+      client checked the format and confirmed that it suited the aggregators."
   - type: text
     title: Result and verification
-    body: The client accepted the order. Approval of every listing and the freshness
-      of each price on external platforms were not independently verified.
+    body: The client accepted the order and left a positive review, “Fast and
+      high-quality work.” This confirms acceptance and client feedback, not that
+      every product was published on both platforms. The item count, listing
+      moderation, freshness of all prices and any effect on sales were not
+      independently verified.
+    links:
+      - label: View the original Kwork order
+        url: https://kwork.ru/track?id=30681905

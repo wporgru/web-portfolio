@@ -3891,11 +3891,12 @@ projects:
         url: /showcase/marketlace-woodmart-transition/en/
         type: product
   - slug: belarus-aggregator-yml-feed
-    name: WooCommerce YML feed for Belarusian aggregators
+    name: "telek.by: WooCommerce feeds for Shop.by and Onliner.by"
     year: "09.2022"
     role: Web development and automation
-    description: Configured a recurring WooCommerce export for product aggregators
-      so the owner would not need to regenerate a file after every product edit.
+    description: Prepared a YML/XML feed for telek.by with format validation and
+      daily or product-change refresh options. The client accepted the order and
+      left positive feedback; the number of published listings was not verified.
     stack:
       - WooCommerce
       - YML

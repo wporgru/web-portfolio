@@ -3934,12 +3934,12 @@ projects:
         url: /showcase/marketlace-woodmart-transition/
         type: product
   - slug: belarus-aggregator-yml-feed
-    name: YML-фид для белорусских товарных агрегаторов
+    name: "telek.by: фид WooCommerce для Shop.by и Onliner.by"
     year: "09.2022"
     role: Веб-разработка и автоматизация
-    description: Настроил регулярную выгрузку WooCommerce для товарных агрегаторов,
-      чтобы владельцу не приходилось формировать новый файл после каждой правки
-      карточки.
+    description: "Подготовил YML/XML-фид для каталога telek.by: проверка формата,
+      обновление раз в сутки или после изменения товара. Клиент принял заказ и
+      оставил положительный отзыв; число опубликованных карточек не подтверждено."
     stack:
       - WooCommerce
       - YML
