@@ -3242,11 +3242,13 @@ projects:
         url: /showcase/booking-form-email-recovery/en/
         type: product
   - slug: cart-gift-thresholds
-    name: Updating gift thresholds in a delivery store cart
+    name: "WooCommerce: changing gift thresholds in a cart"
     year: "01.2024"
     role: Web development and automation
-    description: Updated an existing delivery-store promotion so gifts followed the
-      new rules without rebuilding the entire cart.
+    description: "Changed two values in sushi-panda15.ru's live promotion: the
+      general threshold from 1799 to 1499 and an eight-piece Harumaki auto-add
+      condition from 1199 to 999. The client confirmed the change; exact boundary
+      tests were not preserved."
     stack:
       - WooCommerce
       - Cart rules

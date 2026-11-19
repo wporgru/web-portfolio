@@ -1,6 +1,6 @@
-title: Updating gift thresholds in a delivery store cart
-tagline: Updated an existing delivery-store promotion so gifts followed the new
-  rules without rebuilding the entire cart.
+title: "WooCommerce: changing gift thresholds in a delivery store cart"
+tagline: "Updated two amounts in sushi-panda15.ru's existing promotion while
+  preserving its established automatic gift-addition logic."
 year: "01.2024"
 role: Web development and automation
 stack:
@@ -9,17 +9,40 @@ stack:
   - Promotions
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Updated an existing delivery-store promotion so gifts followed the new
-      rules without rebuilding the entire cart.
+    title: New terms for a sushi gift promotion
+    body: In January 2024, sushi-panda15.ru needed an adjustment to an active
+      cart promotion that included a gift. The client asked to change amounts
+      connected with the gift threshold and automatic addition of a specific sushi
+      set. The goal was a limited update to existing WooCommerce logic—not a
+      rewrite of checkout, the promotion system or discount rules as a whole.
   - type: text
-    title: How it works
-    body: Located two separate conditions in the existing logic. Updated the general
-      promotion threshold and the automatic addition rule for a specific
-      eight-piece set. Kept the established mechanism intact and limited the
-      changes to the agreed rules.
+    title: Two focused changes instead of a cart rebuild
+    body: "I located two independent conditions in the existing code. I updated
+      the general threshold value from 1799 to 1499 and changed the value used by
+      the automatic-add rule for the eight-piece Harumaki promotion set from
+      1199 to 999, following the client's request for a gift from 1000 rubles.
+      The changes stayed within those conditions; the existing automatic-add
+      mechanism remained in place. The archive does not preserve the original
+      comparison operator, so I do not reconstruct exact behavior at the boundary
+      amounts or generalize the numeric edit into a full description of the
+      promotion algorithm."
   - type: text
-    title: Result and verification
-    body: The client confirmed it worked. The archive does not contain tests for
-      every boundary amount, so the work is not presented as exhaustive
-      validation of the gift system.
+    title: Outcome and verification boundaries
+    body: The client confirmed that the change worked. The record supports two
+      updates to existing numeric conditions, not a gift system built from
+      scratch. It does not document a full set of cart test values, checks at
+      every adjacent amount, repeated gift removal/re-addition after order
+      changes or all combinations of promotions. I therefore do not claim an
+      exhaustive regression test or any measured effect on average order value
+      or sales.
+    links:
+      - label: Original Kwork order
+        url: https://kwork.ru/track?id=40722476
+  - type: text
+    title: Why gift rules need separate checks
+    body: A cart may combine a general promotion threshold with a separate rule
+      that auto-adds a specific product. Changing only one amount can leave the
+      gift appearing at the wrong time or prevent automatic addition. Before a
+      focused change, identify independent conditions, modify only the agreed
+      values and test an ordinary cart journey; exact comparison boundaries
+      should be confirmed from the source logic and tests.
