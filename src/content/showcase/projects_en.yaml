@@ -6563,9 +6563,12 @@ projects:
         url: /showcase/evko-sober-furniture-store/en/
         type: product
   - slug: dvoretskiy-construction-wordpress
-    name: "Dvoretskiy: construction website from a demo reference"
-    description: Configured the domain and revised project and service pages, the
-      form and footer; the client accepted the stage after review.
+    name: "Dvoretskiy: multipage construction company website"
+    description: "Built the WordPress foundation for a multipage construction
+      company site from a visual reference: configured the domain and revised
+      project and service pages, imagery, form and footer. After feedback, I
+      completed missing sections and links; the client accepted the stage and
+      left positive feedback. A final mobile cropping request remained open."
     year: "01.2018"
     role: Web development
     stack:
