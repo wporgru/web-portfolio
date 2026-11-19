@@ -5260,11 +5260,13 @@ projects:
         url: /showcase/aravia-mobile-catalog-bulk-editor/en/
         type: product
   - slug: yookassa-merchant-checkout-handoff
-    name: Connecting YooKassa and checking the payment handoff
+    name: "YooKassa + WooCommerce: gateway setup and checkout test"
     year: "06.2023"
     role: Web development and automation
-    description: Connected payment to an existing WooCommerce store while the owner
-      handled approval with the payment provider.
+    description: Configured YooKassa for neftegazshop.ru and reviewed the checkout
+      handoff with the client, who confirmed 'Everything works.' Automatic
+      receipts, a refund and the control payment amount are not separately
+      confirmed in the archive.
     stack:
       - WooCommerce
       - YooKassa

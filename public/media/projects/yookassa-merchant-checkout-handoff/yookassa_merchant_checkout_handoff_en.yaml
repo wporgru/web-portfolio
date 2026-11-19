@@ -1,6 +1,6 @@
-title: Connecting YooKassa and checking the payment handoff
-tagline: Connected payment to an existing WooCommerce store while the owner
-  handled approval with the payment provider.
+title: "YooKassa + WooCommerce: gateway setup and checkout test"
+tagline: "Connected the payment module to neftegazshop.ru and reviewed the
+  handoff from the store checkout to the payment service with the client."
 year: "06.2023"
 role: Web development and automation
 stack:
@@ -10,17 +10,41 @@ stack:
   - Payment QA
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Connected payment to an existing WooCommerce store while the owner handled
-      approval with the payment provider.
+    title: Connecting payments to an existing store
+    body: "In June 2023, the owner of neftegazshop.ru was completing registration
+      and approval with YooKassa and needed payment acceptance connected to an
+      existing WooCommerce store. The task included more than installing the
+      module: the shopper journey had to be checked from WooCommerce checkout
+      through to the handoff to the payment provider. We also needed to discuss
+      which buyer details were required for an order and how receipts would be
+      configured."
   - type: text
-    title: How it works
-    body: Configured the extension and demonstrated the handoff from WooCommerce
-      checkout to payment. Reviewed buyer information and receipt settings with
-      the owner, keeping automatic receipt delivery outside scope until the
-      client chose it.
+    title: Module setup and joint checkout review
+    body: "I configured the payment extension in the existing store and
+      demonstrated the handoff from WooCommerce checkout to YooKassa. I reviewed
+      a control test with the client; their testimonial confirmed: 'The payment
+      terminal is connected, we tested it. Everything works.' We also discussed
+      the customer fields needed for an order, email notifications and receipt
+      options. I did not enable automatic fiscal receipt delivery without the
+      client's decision—that required separate agreement."
   - type: text
-    title: Result and verification
-    body: The client accepted the work and confirmed the joint payment setup review
-      in a testimonial. The test amount, completed refund and automatic fiscal
-      receipt flow were not verified separately.
+    title: Outcome and client confirmation
+    body: "The client accepted the order and publicly recommended the developer,
+      confirming the joint test: 'Everything works.' This supports the gateway
+      setup and the checkout handoff reviewed in the engagement. The archive does
+      not preserve a separate receipt with the control transaction amount, a
+      completed refund or an independent test of automatic fiscal receipt
+      delivery. The case therefore does not claim automatic receipt processing,
+      legal validation of tax scenarios or a store built from scratch."
+    links:
+      - label: Original Kwork order and review
+        url: https://kwork.ru/track?id=36772232
+  - type: text
+    title: What to verify when connecting online payments
+    body: "A payment extension is only one part of the flow. Before launch, review
+      the checkout-to-provider handoff, agree which buyer details are required
+      and determine separately how receipts will be generated and delivered.
+      These processes are related but not interchangeable: reaching a payment
+      page alone does not prove a successful charge, refund or automatic fiscal
+      receipt. In this project, the client testimonial confirms the joint
+      payment-terminal test; other financial steps are not attributed to the work."

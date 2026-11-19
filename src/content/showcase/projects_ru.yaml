@@ -5311,11 +5311,12 @@ projects:
         url: /showcase/aravia-mobile-catalog-bulk-editor/
         type: product
   - slug: yookassa-merchant-checkout-handoff
-    name: Подключение ЮKassa и проверка перехода к оплате
+    name: "ЮKassa + WooCommerce: подключение кассы и тест checkout"
     year: "06.2023"
     role: Веб-разработка и автоматизация
-    description: Подключил модуль оплаты к существующему WooCommerce, когда владелец
-      завершал согласование со стороны платёжного сервиса.
+    description: Настроил ЮKassa на neftegazshop.ru и вместе с клиентом проверил
+      переход к оплате; заказчик подтвердил «Всё работает». Автоматические чеки,
+      возврат и сумму тестовой операции архив отдельно не подтверждает.
     stack:
       - WooCommerce
       - YooKassa
