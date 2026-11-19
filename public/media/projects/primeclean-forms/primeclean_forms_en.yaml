@@ -1,23 +1,54 @@
-title: Spam protection for WordPress forms
-tagline: Reduce unwanted submissions through the company’s forms.
-role: Web development
+title: "PrimeClean: Contact Form 7 anti-spam protection"
+tagline: "Reduced unwanted WordPress form submissions and worked through
+  protection for the company's sites without turning the task into a redesign."
 year: "05.2026"
+role: Web development and automation
 stack:
   - WordPress
   - Contact Form 7
+  - Form anti-spam
+  - Website maintenance
 blocks:
   - type: text
-    title: Brief
-    body: Reduce unwanted submissions through the company’s forms.
+    title: "The issue: spam is getting into the enquiry channel"
+    body: "In May 2026, a company reported unwanted messages arriving through
+      Contact Form 7 forms on its WordPress sites. For a business, this is more
+      than inbox clutter: spam can bury real enquiries, add manual cleanup and
+      undermine confidence in the form as a contact channel. The client asked
+      first to review examples and configure anti-spam—not to redesign the forms
+      or rebuild the websites."
   - type: text
-    title: Work delivered
-    body: Reviewed spam examples and configured protection. After the initial
-      change, the client reported no spam over the weekend; this was a short
-      observation, not long-term monitoring.
+    title: Reviewing examples and configuring protection
+    body: "I started by reviewing sample spam submissions and clarifying which
+      forms and sites were affected. The work concerned the company's existing
+      projects, so an important constraint was to preserve the normal submission
+      path for genuine visitors and avoid unnecessary site changes. After an
+      initial adjustment, the client reported no new spam enquiries over the
+      weekend. The main order history later discussed protection for primeclean.ru
+      and permission to remove an unnamed component. I reported the configuration
+      as complete and invited the client to follow up if spam returned. The
+      readable correspondence does not preserve the anti-spam plugin name or
+      exact filtering mechanism, so I do not claim CAPTCHA, reCAPTCHA or another
+      unverified tool."
   - type: text
-    title: Implementation and scope
-    body: I began by reviewing unwanted submissions and identifying the affected
-      forms. These were existing sites, so the work was not a form rebuild or a
-      site redesign. The archived conversation does not reliably identify the
-      specific anti-spam mechanism, so the case does not claim CAPTCHA or
-      another unverified tool.
+    title: Outcome and client confirmation
+    body: "The client accepted the order on 12 May 2026 and left a review: 'Thanks
+      for your help setting up the protection.' The weekend without new spam was
+      a client observation after the initial change, not long-term statistics or
+      a guarantee that spam would never return. The order referred to three sites,
+      but the readable history reliably confirms primeclean.ru and discussion of
+      welllandrussia.ru; the complete target-domain list and an independent test
+      of every form were not preserved. This case therefore describes the agreed
+      scope and confirmed actions without claiming full verified coverage of all
+      three sites or permanent spam prevention."
+    links:
+      - label: Original Kwork order and review
+        url: https://kwork.ru/track?id=62217318
+  - type: text
+    title: What to check when protecting contact forms
+    body: "A protection change should reduce automated unwanted submissions while
+      keeping the form usable for real customers. A practical sequence is to
+      collect spam examples, identify the affected forms and domains, make a
+      limited change, test a genuine submission and observe the result. This
+      history contains a short client observation after the weekend, but no
+      extended monitoring—an important boundary when assessing the outcome."

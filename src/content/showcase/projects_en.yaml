@@ -97,10 +97,11 @@ projects:
         url: /showcase/tara-bergman/en/
         type: product
   - slug: primeclean-forms
-    name: Spam protection for WordPress forms
-    description: Reviewed spam examples and configured protection. After the initial
-      change, the client reported no spam over the weekend; this was a short
-      observation, not long-term monitoring.
+    name: "PrimeClean: Contact Form 7 anti-spam protection"
+    description: Reviewed spam samples, configured protection for existing forms
+      and clarified site scope from the correspondence. The client accepted the
+      work and thanked me; the exact mechanism and complete domain list were not
+      preserved.
     year: "05.2026"
     role: Web development
     stack:
