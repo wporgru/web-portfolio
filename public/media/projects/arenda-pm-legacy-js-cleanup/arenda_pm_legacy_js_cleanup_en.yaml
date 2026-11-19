@@ -12,23 +12,40 @@ stack:
   - Playwright
 blocks:
   - type: text
-    title: Brief and constraints
-    body: A script referenced a missing legacy builder API and failed in the
-      browser. The job was to remove only the broken fragment, preserving
-      analytics, call tracking and existing forms.
+    title: Context and brief
+    body: "After users interacted with the site, a JavaScript error appeared:
+      custom code called an API from a legacy page builder that was no longer
+      present on the current pages. The error cluttered the console and could
+      interfere with subsequent scripts, but disabling all custom code was not
+      an option. That code also contained important integrations for analytics,
+      call tracking and enquiry forms. The task was to isolate the obsolete call
+      and make sure the fix did not affect adjacent functionality."
   - type: text
-    title: How it works
-    body: Located the obsolete call in Clearfy custom code. Removed one fragment,
-      saved the original setting for rollback and compared all other fields
-      before and after. Verified three analytics blocks in the saved HTML by
-      checksum. Retested category selection, the mobile menu and the booking
-      dialog with M20 prefilled.
+    title: Diagnosis and targeted fix
+    body: "I inspected the custom settings and traced the source to a Clearfy code
+      block that still called the old builder API. Before changing it, I saved
+      the original setting for rollback and checked the other fields. I removed
+      only the obsolete fragment, without disabling the shared scripts block or
+      rewriting working integrations. This keeps the change surface small: fix
+      the cause rather than hide the symptom by removing related functionality."
   - type: text
-    title: Result and verification
-    body: On eight URLs at 1440 and 390 px, the interaction and scroll checks found
-      no runtime errors or console.error messages. All three analytics blocks
-      stayed unchanged. Form delivery and receipt of data in external reports
-      were not tested.
+    title: Verification and limitations
+    body: After the change, I checked eight URLs at desktop and mobile widths
+      (1440 and 390 px), including states after scrolling and user interaction.
+      The tested sessions produced no runtime errors or console.error messages.
+      I also compared three analytics blocks in the saved HTML by checksum; their
+      contents were unchanged. I repeated the category selection, mobile menu
+      and booking flow with model M20 prefilled. This confirms the checked UI
+      scenarios did not regress; actual form delivery and event receipt in
+      external analytics systems were not tested, so I do not claim those
+      outcomes.
+  - type: text
+    title: Why a targeted fix matters
+    body: On a site with several scripts and external integrations, it is safer
+      to locate the obsolete call, preserve a rollback path and retest key
+      interactions than to disable all custom code just to clean up the console.
+      Here, the analytics fragments remained byte-for-byte unchanged, while the
+      selected interface flows were checked at both mobile and desktop widths.
   - type: text
     title: Another stage of this project
     links:
