@@ -6642,8 +6642,12 @@ projects:
         type: product
   - slug: fisher-fish-knife-catalog
     name: "Fisher Fish: knife catalog import and price corrections"
-    description: Revised specifications and images, checked prices and handled
-      incomplete listings; the client accepted the stage.
+    description: After importing the WooCommerce knife catalog, corrected
+      attributes and stock fields, regenerated images, added category photos
+      and reviewed prices against the wholesale source feed. Worked through
+      incomplete listings and documented remaining zero-price drafts in the
+      handoff. The client accepted the stage; counts come from that report,
+      not an independent catalog audit.
     year: "04.2018"
     role: Web development
     stack:
