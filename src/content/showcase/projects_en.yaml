@@ -3346,8 +3346,7 @@ projects:
     name: Car buyback website with services and a blog
     year: "10.2023"
     role: Web development and automation
-    description: Built a WordPress site for a car buyback business with service
-      pages and a blog the client could maintain independently.
+    description: "Built a WordPress site for a single-city car buyback business with a valuation form, service pages, contacts and an editable blog. Fixed article links and the services URL, then provided two video guides for editing the header, footer and content so the client could maintain the site. The project was accepted; form delivery and WhatsApp/Telegram notifications were not verified."
     stack:
       - WordPress
       - Service pages
