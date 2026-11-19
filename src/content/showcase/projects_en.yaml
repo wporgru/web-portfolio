@@ -6451,8 +6451,7 @@ projects:
         type: product
   - slug: glamur-dog-product-import
     name: "Glamur Dog: bulk product and image import"
-    description: Ran and repeated product and image imports and addressed
-      incomplete-data feedback; the client accepted the work.
+    description: Ran bulk WooCommerce catalog imports with large batches of renamed images, then reprocessed data in response to missing-photo and SKU feedback. When resource and disk limits were reached, the client increased available capacity; after further checks, they accepted the stage and praised the turnaround and responsiveness. The archive contains no final count proving complete import coverage.
     year: "07.2018"
     role: Web development
     stack:
