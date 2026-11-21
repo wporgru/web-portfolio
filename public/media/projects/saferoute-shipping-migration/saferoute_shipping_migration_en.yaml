@@ -10,17 +10,18 @@ stack:
   - Shipping
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Moved an existing store’s shipping workflow to SafeRoute so shoppers could
-      select delivery in the checkout widget.
+    title: Why Shiptor was replaced
+    body: >-
+      The client considered separate carrier plugins but chose SafeRoute for its single account and aggregator agreement. The brief was to integrate the new widget with an existing WooCommerce checkout, not rebuild the store.
   - type: text
-    title: How it works
-    body: Restored site operation after an issue and checked that the shipping
-      widget appeared. Removed an unwanted row and refined the block after
-      feedback. Worked separately on free shipping rules based on order value
-      and a fixed zero-cost option.
+    title: Restored the site and refined the widget
+    body: >-
+      I restored the site after a disruption and checked that the new shipping widget appeared. After client feedback, I adjusted the display and removed an unwanted row. The client accepted the work and noted that the plugin had been configured around their requests.
   - type: text
-    title: Result and verification
-    body: The client accepted the widget setup. A final successful free-shipping
-      test, contract completion and a live shipment are not confirmed in the
-      archive.
+    title: Configured free shipping separately
+    body: >-
+      I configured an order-value condition for purchases from RUB 5,000 and set the shipping cost to zero. When the client reported that the rule did not trigger, I adjusted it again. No successful final test of the rule is documented.
+  - type: text
+    title: What the client accepted
+    body: >-
+      Acceptance covered the widget and its checkout presentation. It did not establish that carrier rates or the threshold passed end-to-end testing, that the agreement was signed, or that a real shipment was made.

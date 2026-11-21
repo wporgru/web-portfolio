@@ -3807,8 +3807,8 @@ projects:
     name: Replacing Shiptor with SafeRoute in WooCommerce
     year: "01.2023"
     role: Web development and automation
-    description: Moved an existing store’s shipping workflow to SafeRoute so
-      shoppers could select delivery in the checkout widget.
+    description: >-
+      Migrated the Kuvyrcom store from Shiptor to SafeRoute, refined the checkout widget and configured a free-shipping rule from RUB 5,000. The client accepted the widget setup.
     stack:
       - WooCommerce
       - Shiptor
@@ -5337,8 +5337,8 @@ projects:
     name: Exporting selected categories to Yandex Market
     year: "11.2018"
     role: Web development and automation
-    description: Configured an existing store export for Yandex Market. The owner
-      needed to control included categories without editing XML by hand.
+    description: >-
+      Configured the existing Blaskos YML export, handed over the feed URL and showed the owner how to change included categories. The client reported that a product appeared on Yandex Market.
     stack:
       - WooCommerce
       - YML

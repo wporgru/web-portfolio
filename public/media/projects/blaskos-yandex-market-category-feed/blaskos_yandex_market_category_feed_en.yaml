@@ -10,16 +10,18 @@ stack:
   - Product feeds
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Configured an existing store export for Yandex Market. The owner needed to
-      control included categories without editing XML by hand.
+    title: Selected categories instead of the entire catalog
+    body: >-
+      Blaskos needed a product export for Yandex Market. Rather than building a custom exporter, I configured the installed plugin. The owner needed to select categories without editing YML manually.
   - type: text
-    title: How it works
-    body: Configured the existing plugin, shared the YML URL and showed where to
-      change category selection. Kept store-side export management separate from
-      offer processing by the destination platform.
+    title: Handed over the feed and its controls
+    body: >-
+      I shared the ym-export.yml URL, showed the client the plugin and explained where to change category selection. The owner received both a URL for the marketplace and a way to manage the export from the store.
   - type: text
-    title: Result and verification
-    body: The client accepted the work and reported in a historical review that a
-      product appeared in Market. Current moderation, offer counts and sales
-      were not verified.
+    title: Separated feed generation from marketplace processing
+    body: >-
+      Generating a feed and having offers appear on the marketplace are separate steps. The client accepted the work and reported in a review that a product had appeared on Yandex Market. That is a historical client report about one product, not an audit of the entire catalog.
+  - type: text
+    title: Scope of the result
+    body: >-
+      This was a configuration job for an existing plugin, not a store build or custom exporter. Feed field completeness, processed offer counts, later sales and the current availability of the feed were not verified.
