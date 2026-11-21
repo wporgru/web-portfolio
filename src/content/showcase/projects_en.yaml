@@ -6939,3 +6939,37 @@ projects:
       - label: Read case study
         url: /showcase/prikhodko-content-metadata-export/en/
         type: product
+  - slug: smartworld-xls-repeat-import
+    name: "Smartworld: repeat WooCommerce imports from XLS"
+    description: Configured XLS imports, corrected retail price mapping and
+      investigated duplicates after the client ran a refresh.
+    year: "11.2018"
+    role: Catalog integration
+    stack:
+      - WooCommerce
+      - XLS
+      - Product import
+    order: 372
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/smartworld-xls-repeat-import/en/
+        type: product
+  - slug: videonadzor-import-theme-diagnosis
+    name: WooCommerce catalog import and theme diagnosis
+    description: Imported the catalog into an existing video surveillance store and
+      investigated why prices and the cart were missing in the original theme.
+    year: "11.2018"
+    role: Catalog integration
+    stack:
+      - WooCommerce
+      - WordPress
+      - Theme diagnostics
+    order: 373
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/videonadzor-import-theme-diagnosis/en/
+        type: product

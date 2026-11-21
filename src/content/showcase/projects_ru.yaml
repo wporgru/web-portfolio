@@ -6983,3 +6983,37 @@ projects:
       - label: Читать кейс
         url: /showcase/prikhodko-content-metadata-export/
         type: product
+  - slug: smartworld-xls-repeat-import
+    name: "Smartworld: повторный импорт товаров и цен из XLS"
+    description: Настроил импорт из XLS, исправил выбор розничной цены и разобрал
+      дубли после самостоятельной загрузки клиента.
+    year: "11.2018"
+    role: Интеграция каталога
+    stack:
+      - WooCommerce
+      - XLS
+      - Product import
+    order: 372
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/smartworld-xls-repeat-import/
+        type: product
+  - slug: videonadzor-import-theme-diagnosis
+    name: Импорт товаров и диагностика темы WooCommerce
+    description: Загрузил каталог на существующий сайт видеонаблюдения и проверил,
+      почему после импорта в исходной теме не отображались цены и корзина.
+    year: "11.2018"
+    role: Интеграция каталога
+    stack:
+      - WooCommerce
+      - WordPress
+      - Theme diagnostics
+    order: 373
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/videonadzor-import-theme-diagnosis/
+        type: product

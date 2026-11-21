@@ -1,0 +1,25 @@
+title: WooCommerce catalog import and theme diagnosis
+tagline: Imported the catalog into an existing video surveillance store and
+  investigated why prices and the cart were missing in the original theme.
+year: "11.2018"
+role: Catalog integration
+stack:
+  - WooCommerce
+  - WordPress
+  - Theme diagnostics
+blocks:
+  - type: text
+    title: Prepared and imported the catalog
+    body: I prepared a product file for review, ran the longer import into the
+      existing WooCommerce store and reported completion.
+  - type: text
+    title: Separated import from display
+    body: The original theme did not show prices or the cart, while they appeared
+      under another theme. The comparison showed that uploading data alone would
+      not fix the storefront. I explained that the original theme needed
+      replacement or substantial changes.
+  - type: text
+    title: What the client accepted
+    body: The client accepted the import. A redesign, a production theme fix and
+      end-to-end sales readiness were not established by this order. The final
+      product count is not documented.

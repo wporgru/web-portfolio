@@ -1,0 +1,27 @@
+title: "Smartworld: repeat WooCommerce imports from XLS"
+tagline: Configured XLS imports, corrected retail price mapping and investigated
+  duplicates after the client ran a refresh.
+year: "11.2018"
+role: Catalog integration
+stack:
+  - WooCommerce
+  - XLS
+  - Product import
+blocks:
+  - type: text
+    title: First import and price mapping
+    body: "I mapped the supplier columns, then corrected the price mapping after
+      review: the store needed retail prices rather than wholesale prices. I
+      also clarified how to handle products missing from the new file."
+  - type: text
+    title: Repeat runs and duplicates
+    body: I handed over instructions using the next price list. The client’s run
+      created duplicates and image issues. I explained why a stable unique
+      identifier and consistent field mapping matter, restarted the import and
+      reported that images had loaded.
+  - type: text
+    title: Acceptance
+    body: The client confirmed the work and left a review. The roughly 1,000
+      products refer to the first price list, not a final total. Discount
+      pricing was a separate stage, and future runs were not independently
+      verified.
