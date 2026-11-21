@@ -1,5 +1,6 @@
 title: "78 Dosok: theme replacement, redesign and store update"
-tagline: "Completely updated a timber store: replaced its theme and design, cleaned up plugins, and worked on performance and mobile navigation."
+tagline: "Completely updated a timber store: replaced its theme and design, cleaned up
+  plugins, and worked on performance and mobile navigation."
 role: Web development
 year: "08.2026"
 stack:
@@ -10,39 +11,38 @@ stack:
 blocks:
   - type: text
     title: Brief
-    body: "Comprehensively update a live timber storefront: replace the theme and design, review accumulated technical dependencies, update the site, and preserve a familiar visual foundation for shoppers."
+    body: "Comprehensively update a live timber storefront: replace the theme and design, review
+      accumulated technical dependencies, update the site, and preserve a familiar visual
+      foundation for shoppers."
   - type: text
     title: Work delivered
-    body: Replaced the theme and redesigned the WooCommerce storefront—from the opening section to catalog structure and navigation. Updated the site, removed outdated and duplicate plugins, carried out performance work, improved mobile navigation, and added a floating route back to the cart.
+    body: Replaced the theme and redesigned the WooCommerce storefront—from the opening section to
+      catalog structure and navigation. Updated the site, removed outdated and duplicate
+      plugins, carried out performance work, improved mobile navigation, and added a floating
+      route back to the cart.
   - type: text
-    title: Implementation and scope
-    body: "The old storefront had overlapping presentation layers: Elementor
-      overrode the theme header, while mobile features depended on a child
-      theme. I mapped those dependencies before moving to a new design so the
-      old conflicts would not carry over. I kept the green visual identity,
-      reworked the hero and catalog presentation, rebuilt navigation, and added
-      a floating cart. The technical overhaul included a full site update,
-      removal of obsolete and redundant plugins, and performance work. The
-      client accepted the order and highlighted the complete redesign.
-      Historical before-and-after images show the homepage change; the full-page
-      image below was captured later. The scope does not include measured
-      PageSpeed gains, sales growth or a rebuild of product filters."
+    title: First, traced what controlled the storefront
+    body: Elementor overrode the theme header, while the mobile header and some behavior depended
+      on the old child theme. I started by tracing those dependencies so the new header would
+      not inherit the same conflicts. WoodMart was discussed as an option, not documented as
+      the installed replacement.
   - type: text
-    title: What the overhaul covered
-    bullets:
-      - "Theme replacement and a full redesign: kept the recognizable green
-        palette while changing the hero, catalog structure and navigation."
-      - "Updates and cleanup: removed obsolete and redundant extensions rather
-        than carrying the entire legacy plugin stack into the new storefront."
-      - "Mobile shopping: revised navigation and added a floating cart so
-        shoppers could return to their order while scrolling."
-      - Performance work was part of the technical overhaul. Comparable
-        before-and-after measurements are not available.
+    title: Then agreed on a new design and replaced the theme
+    body: I showed an initial homepage, agreed on the direction and continued the redesign. I kept
+      the recognizable green palette but rebuilt the opening section and catalog presentation,
+      giving product groups more space and adding room for reviews and FAQs. The archival
+      comparison below shows the difference. This was more than a header patch.
+  - type: text
+    title: Updated the site, cleaned up plugins and improved mobile shopping
+    body: The technical phase included site updates, removal of outdated and duplicate plugins,
+      and performance work. I revised the menu and added a floating shortcut to the cart so
+      shoppers could return to it after scrolling. There are no comparable before-and-after
+      speed measurements for this order, and the filters were left for a separate brief.
   - type: text
     title: Homepage before and after
-    body: The original homepage emphasized a slider and a dense category list. The
-      redesign uses a larger opening section, clearer catalog groupings and
-      trust-building sections such as reviews and FAQs.
+    body: The original homepage emphasized a slider and a dense category list. The redesign uses a
+      larger opening section, clearer catalog groupings and trust-building sections such as
+      reviews and FAQs.
     links:
       - label: Before screenshot
         url: "#before-redesign"
@@ -57,44 +57,46 @@ blocks:
     anchor: before-redesign
     title: Original homepage
     alt: Original 78 Dosok homepage with slider and category list
-    caption: Historical capture before the theme replacement. Uncropped original
-      from Kwork.
+    caption: Historical capture before the theme replacement. Uncropped original from Kwork.
   - type: image
     src: /media/projects/78-dosok/after-redesign.webp
     anchor: after-redesign
     title: Homepage after the theme replacement
     alt: Redesigned 78 Dosok homepage with a larger hero, catalog, reviews and FAQ
-    caption: Historical capture after the redesign. The WordPress toolbar is
-      retained as in the original.
+    caption: Historical capture after the redesign. The WordPress toolbar is retained as in the
+      original.
   - type: text
     title: What the store gained
     bullets:
-      - A new theme and a redesigned storefront instead of isolated patches to
-        the old template.
+      - A new theme and a redesigned storefront instead of isolated patches to the old
+        template.
       - Fewer overlapping extensions to maintain and check after updates.
-      - A more prominent homepage catalog and easier access to the cart on
-        mobile.
+      - A more prominent homepage catalog and easier access to the cart on mobile.
   - type: text
     title: How the client rated the work
-    body: The client approved the direction after seeing the initial homepage,
-      accepted the completed stage and highlighted the “full redesign” in a
-      Kwork review (translated).
+    body: The client approved the direction after seeing the initial homepage, accepted the
+      completed stage and highlighted the “full redesign” in a Kwork review (translated).
     links:
       - label: Public Kwork profile and reviews
         url: https://kwork.ru/user/wporgru
   - type: text
     title: How to scope your own store redesign
-    body: If updates keep breaking the header, menu or cart, start by mapping the
-      templates and extensions behind them. For an estimate, send the store URL,
-      two or three problem pages and a list of features that must be retained.
-      This helps define what to redesign, what to test on mobile and what
-      performance measurements to capture before and after.
+    body: If updates keep breaking the header, menu or cart, start by mapping the templates and
+      extensions behind them. For an estimate, send the store URL, two or three problem pages
+      and a list of features that must be retained. This helps define what to redesign, what
+      to test on mobile and what performance measurements to capture before and after.
     links:
       - label: What a store redesign covers
         url: /services/website-redesign/en/
+  - type: text
+    title: A separate project with measured performance gains
+    body: Arenda-PM includes before-and-after measurements of its mobile homepage. Those figures
+      belong to a separate project and do not describe 78 Dosok.
+    links:
+      - label: "Arenda-PM: PageSpeed and LCP measurements"
+        url: /showcase/arenda-pm-home-performance/en/
   - type: image
     title: Public website snapshot
     src: /media/projects/78-dosok/site.png
     alt: Homepage of the 78 Dosok timber store
-    caption: Captured during a later availability check; it may differ from the site
-      at handoff.
+    caption: Captured during a later availability check; it may differ from the site at handoff.
