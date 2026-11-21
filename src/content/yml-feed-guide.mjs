@@ -1,0 +1,52 @@
+const cases = ['halisprof-selective-yml','xone-market-feed-attributes','blaskos-yandex-market-category-feed'];
+
+export const ymlFeedGuide = {
+  slug:'yml-feed-troubleshooting',
+  primaryService:'catalog-automation',
+  services:['catalog-automation','woocommerce-store-development'],
+  cases,
+  sourceUrls:[
+    'https://yandex.ru/support/marketplace/ru/assortment/auto/url.html',
+    'https://www.yandex.ru/support/marketplace/ru/assortment/auto/yml.html',
+  ],
+  ru:{
+    title:'Яндекс Маркет не принимает YML-фид: что проверить',
+    summary:'Проверка YML-выгрузки WooCommerce: пустой файл, отбор по цене и наличию, ошибки формата и статусы товаров в Яндекс Маркете.',
+    intro:'У фида есть адрес, но в Маркете нет товаров. Причина может быть в URL, правилах выгрузки, данных карточек или обработке на площадке. Начните с одного ожидаемого артикула и проследите его от магазина до кабинета.',
+    context:'Если товары пропали из фида или не появились на Маркете',
+    action:'Обсудить настройку фида',
+    email:'Прислать пример ошибки',
+    serviceLabel:'Что входит в автоматизацию каталога',
+    enquiry:['Адрес фида без токенов или обезличенный фрагмент XML','Ожидаемый артикул и строка из отчёта об ошибке'],
+    steps:[
+      ['Откройте тот URL, который читает площадка','Проверьте ссылку без входа в админку. Ответ 200 может оказаться страницей входа, HTML-заглушкой, вчерашним файлом или корректным XML без предложений. Проверьте содержимое и дату обновления.'],
+      ['Выясните, почему исключён конкретный товар','Сверьте категорию, опубликованность, цену, наличие и настройки вариации с правилами выгрузки. Если цена обязательна, пустой фид может быть ожидаемым. Возьмите и второй товар, который должен остаться за пределами файла.'],
+      ['Сопоставьте XML с карточкой магазина','Сверьте идентификатор, категорию, цену, наличие и характеристики. Для вариаций проверьте точную модель и вариант. Уточните требования для вашего типа файла: ассортимент, цены или остатки.'],
+      ['Проверьте результат в кабинете Маркета','Запустите техническую проверку и разберите ошибки по артикулам. После загрузки посмотрите статус контрольной карточки. Успешная проверка файла не подтверждает появление всех товаров или продажи.'],
+      ['Повторите сверку после обновления','Сравните тот же URL и контрольные артикулы. Если количество предложений резко упало, выясните причины исключения, прежде чем менять правила отбора.'],
+    ],
+    examples:[['«Халис»: пустой фид при незаполненных ценах',cases[0]],['X-ONE: характеристики и правки после модерации',cases[1]],['Blaskos: выбор категорий без правок XML',cases[2]]],
+    sources:['Яндекс Маркет: обновление по ссылке и техническая проверка','Яндекс Маркет: структура YML'],
+    call:'Пришлите адрес фида без секретных параметров, один артикул и текст ошибки. Для первичной диагностики не нужны логин, пароль или доступ к кабинету.',
+  },
+  en:{
+    title:'Yandex Market YML feed errors: what to check',
+    summary:'Troubleshoot WooCommerce YML exports: empty files, price and stock filters, format errors and product status in Yandex Market.',
+    intro:'The feed URL opens, but products do not appear in Yandex Market. The cause may be the URL, export rules, product data or marketplace processing. Start with one expected SKU and follow it from the store to the dashboard.',
+    context:'When offers disappear from the feed or marketplace',
+    action:'Discuss your product feed',
+    email:'Send an error example',
+    serviceLabel:'Explore catalog automation services',
+    enquiry:['Feed URL without tokens or a sanitized XML excerpt','Expected SKU and the relevant error report line'],
+    steps:[
+      ['Open the exact URL used by the marketplace','Check the address without admin access. An HTTP 200 can contain a login page, an HTML placeholder, a stale file or valid XML with no offers. Check the response body and update date.'],
+      ['Find why one product was excluded','Compare its category, publication status, price, stock and variation settings against the export rules. If price is mandatory, an empty feed can be expected. Also check a second product that should remain excluded.'],
+      ['Compare the XML with the storefront record','Compare the identifier, category, price, availability and attributes. For variations, verify the exact model and option. Consult the specification for the intended file type: catalog, prices or stock.'],
+      ['Check the marketplace dashboard','Run file validation and investigate errors by SKU. After upload, check the status of the selected product. Successful file validation does not prove every product appeared or that any orders were placed.'],
+      ['Repeat the check after the next refresh','Check the same URL and compare the control SKUs. If the offer count drops unexpectedly, identify the exclusions before changing the selection rules.'],
+    ],
+    examples:[['Halisprof: missing prices left the feed empty',cases[0]],['X-ONE: product attributes and moderation revisions',cases[1]],['Blaskos: selecting categories without editing XML',cases[2]]],
+    sources:['Yandex Market: URL updates and technical validation','Yandex Market: YML structure'],
+    call:'Send a feed URL with any secrets removed, one SKU and the error text. No account credentials are needed for an initial assessment.',
+  },
+};

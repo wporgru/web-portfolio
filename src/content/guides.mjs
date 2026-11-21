@@ -1,5 +1,6 @@
 import { migrationGuide } from './migration-guide.mjs';
 import { filtersGuide } from './woocommerce-filters-guide.mjs';
+import { ymlFeedGuide } from './yml-feed-guide.mjs';
 
 export const guides = [
   {
@@ -13,4 +14,5 @@ export const guides = [
     en:{...migrationGuide.en,context:'Planning a store migration',action:'Discuss your migration',serviceLabel:'Explore migration services'},
   },
   filtersGuide,
+  ymlFeedGuide,
 ];
