@@ -986,9 +986,8 @@ projects:
     name: Merging two brand catalogs for WooCommerce
     year: "02.2026"
     role: Web development and automation
-    description: Two brands provided data in different spreadsheets. Importing them
-      independently without agreeing a structure could lead to inconsistent
-      product records.
+    description: >-
+      Combined differently structured CWZ and Artred spreadsheets into one dataset and configured a one-time WooCommerce import for Faeton. The client accepted the transfer.
     stack:
       - WooCommerce
       - Spreadsheet mapping
