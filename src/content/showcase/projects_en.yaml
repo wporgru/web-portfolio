@@ -6876,3 +6876,39 @@ projects:
       - label: Read case study
         url: /showcase/corporate-email-signatures-47/en/
         type: product
+  - slug: halisprof-selective-yml
+    name: Halisprof selective YML feed by price and stock
+    description: Configured selective export rules and handed over a stable feed
+      URL. At handover the file contained no products because prices were missing.
+    year: "08.2022"
+    role: Catalog data and feed integration
+    stack:
+      - YML
+      - XML
+      - Product feeds
+    order: 369
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/halisprof-selective-yml/en/
+        type: product
+  - slug: xone-market-feed-attributes
+    name: X-ONE product attributes and YML feed for Yandex Market
+    description: Prepared separate accessory attributes for Yandex Market while
+      keeping the store filters. Configured the YML fields and revised data after
+      moderation feedback.
+    year: "03.2020"
+    role: Catalog data and feed integration
+    stack:
+      - WooCommerce
+      - YML
+      - Yandex Market
+      - Product attributes
+    order: 370
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/xone-market-feed-attributes/en/
+        type: product

@@ -6920,3 +6920,39 @@ projects:
       - label: Читать кейс
         url: /showcase/corporate-email-signatures-47/
         type: product
+  - slug: halisprof-selective-yml
+    name: "Халис: выборочный YML-фид по цене и наличию"
+    description: Настроил правила выборочной выгрузки и передал постоянный адрес
+      фида. На момент сдачи в файле не было товаров из-за отсутствующих цен.
+    year: "08.2022"
+    role: Товарные данные и интеграция фидов
+    stack:
+      - YML
+      - XML
+      - Product feeds
+    order: 369
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/halisprof-selective-yml/
+        type: product
+  - slug: xone-market-feed-attributes
+    name: "X-ONE: товарные характеристики и YML для Маркета"
+    description: Подготовил отдельные характеристики аксессуаров для Яндекс Маркета,
+      сохранив фильтры магазина. Настроил состав YML и доработал данные после
+      замечаний модерации.
+    year: "03.2020"
+    role: Товарные данные и интеграция фидов
+    stack:
+      - WooCommerce
+      - YML
+      - Yandex Market
+      - Product attributes
+    order: 370
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/xone-market-feed-attributes/
+        type: product
