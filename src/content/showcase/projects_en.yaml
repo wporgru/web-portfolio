@@ -6987,3 +6987,22 @@ projects:
       - label: Read case study
         url: /showcase/docx-to-html-email-signature/en/
         type: product
+  - slug: don-roof-wordpress-blog-migration
+    name: "Don Roof: WordPress migration of 22 articles"
+    description: Moved 22 WordPress pages to posts, assigned categories and
+      configured eight permanent redirects. A later check showed that the original
+      URL map no longer behaved as recorded at handover.
+    year: "06.2026"
+    role: Content migration and technical SEO
+    stack:
+      - WordPress
+      - PHP
+      - 301 redirects
+      - Antigravity
+    order: 375
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/don-roof-wordpress-blog-migration/en/
+        type: product

@@ -7031,3 +7031,22 @@ projects:
       - label: Читать кейс
         url: /showcase/docx-to-html-email-signature/
         type: product
+  - slug: don-roof-wordpress-blog-migration
+    name: "«Кровельщик Дона»: перенос 22 статей WordPress"
+    description: Перевёл 22 материала из страниц в записи WordPress, распределил их
+      по рубрикам и настроил 8 постоянных редиректов. Поздняя проверка показала,
+      что прежняя карта адресов больше не работает как при сдаче.
+    year: "06.2026"
+    role: Миграция контента и техническое SEO
+    stack:
+      - WordPress
+      - PHP
+      - 301 redirects
+      - Antigravity
+    order: 375
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/don-roof-wordpress-blog-migration/
+        type: product

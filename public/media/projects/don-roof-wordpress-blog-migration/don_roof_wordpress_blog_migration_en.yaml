@@ -1,0 +1,35 @@
+title: "Don Roof: WordPress migration of 22 articles"
+tagline: Moved 22 WordPress pages to posts, assigned categories and configured
+  eight permanent redirects. A later check showed that the original URL map no
+  longer behaved as recorded at handover.
+year: "06.2026"
+role: Content migration and technical SEO
+stack:
+  - WordPress
+  - PHP
+  - 301 redirects
+  - Antigravity
+blocks:
+  - type: text
+    title: Organized articles as editable blog posts
+    body: The articles existed as static WordPress pages. The job was to move 22
+      articles into posts across three categories while accounting for pages
+      whose URLs included a parent path.
+  - type: text
+    title: Mapped URLs before changing post types
+    body: I recorded the starting state and mapped old and new URLs. Fourteen paths
+      stayed the same in the map; eight changed and received permanent
+      redirects. I also resolved a slug collision between one article and a
+      media attachment.
+  - type: text
+    title: Handover checks for 22 destinations and eight redirects
+    body: The June 2026 Antigravity report records 22 HTTP 200 responses at the
+      target URLs and eight 301 responses at the old paths. These are the
+      results documented at handover, not a guarantee that subsequent releases
+      retained them.
+  - type: text
+    title: Follow-up on November 21, 2026
+    body: Of the 22 target URLs, 21 returned 404 and one returned 301. All eight old
+      paths returned 404, while the blog index loaded. The cause of the
+      discrepancy is unknown; this check does not establish content loss, a
+      traffic change or later work.
