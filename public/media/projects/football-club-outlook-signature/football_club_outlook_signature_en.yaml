@@ -1,0 +1,24 @@
+title: Outlook HTML signature for a football club
+tagline: Built an HTML email signature from the client’s logo and sketch,
+  prepared icons from supplied artwork and delivered an Outlook version.
+year: "11.2023"
+role: Email interface development
+stack:
+  - HTML
+  - CSS
+  - Outlook
+blocks:
+  - type: text
+    title: Brief
+    body: The club needed a signature with name, job title, email, website and
+      social links. The client provided the logo and sketch.
+  - type: text
+    title: Implementation
+    body: I prepared icons from the supplied artwork and built the signature using
+      the agreed dark-blue styling and Open Sans Condensed. I handed over the
+      completed version.
+  - type: text
+    title: Acceptance
+    body: The client accepted before completing their own full testing. Outlook on
+      macOS and iOS was not tested; consistent rendering across all email
+      clients was not established.

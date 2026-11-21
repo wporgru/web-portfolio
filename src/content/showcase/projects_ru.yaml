@@ -6851,3 +6851,55 @@ projects:
       - label: Читать кейс
         url: /showcase/goodwin-shop-php83-recovery/
         type: product
+  - slug: football-club-outlook-signature
+    name: HTML-подпись Outlook для футбольного клуба
+    description: Собрал фирменную HTML-подпись по логотипу и эскизу заказчика,
+      подготовил иконки из переданных изображений и передал вариант для Outlook.
+    year: "11.2023"
+    role: Вёрстка почтовых интерфейсов
+    stack:
+      - HTML
+      - CSS
+      - Outlook
+    order: 365
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/football-club-outlook-signature/
+        type: product
+  - slug: prolog-outlook-signature-template
+    name: "ProLog: редактируемая подпись для Outlook"
+    description: Передал корпоративный HTML-шаблон с заменяемыми данными
+      сотрудников, PNG-иконками и инструкциями по установке и редактированию.
+    year: "09.2023"
+    role: Вёрстка почтовых интерфейсов
+    stack:
+      - HTML
+      - CSS
+      - Outlook
+    order: 366
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/prolog-outlook-signature-template/
+        type: product
+  - slug: outlook-2010-signature-installation
+    name: HTML-подпись и помощь с установкой в Outlook 2010
+    description: Сверстал редактируемую подпись по образцу и помог клиенту
+      установить её в Outlook 2010, когда скрытая папка AppData мешала найти
+      каталог подписей.
+    year: "11.2021"
+    role: Вёрстка почтовых интерфейсов
+    stack:
+      - HTML
+      - CSS
+      - Outlook
+    order: 367
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/outlook-2010-signature-installation/
+        type: product

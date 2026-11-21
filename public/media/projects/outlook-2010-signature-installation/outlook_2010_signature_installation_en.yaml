@@ -1,0 +1,26 @@
+title: HTML signature and Outlook 2010 installation support
+tagline: Built an editable signature from a reference and helped the client
+  install it in Outlook 2010 when the hidden AppData folder made the signature
+  directory hard to find.
+year: "11.2021"
+role: Email interface development
+stack:
+  - HTML
+  - CSS
+  - Outlook
+blocks:
+  - type: text
+    title: Refined the layout
+    body: I built an editable signature using the supplied logo and reference. I
+      removed the frame and refined the divider color and length, line spacing
+      and margins.
+  - type: text
+    title: Helped with installation
+    body: I delivered the archive and Microsoft Signatures instructions. When
+      installation stalled in Outlook 2010, I explained how to locate the hidden
+      AppData folder and use the current Windows account name in the path.
+  - type: text
+    title: Acceptance
+    body: The client confirmed the result and accepted the order. A second logo was
+      a separate stage; no company-wide rollout or compatibility with other
+      email clients was verified.

@@ -6807,3 +6807,55 @@ projects:
       - label: Read case study
         url: /showcase/goodwin-shop-php83-recovery/en/
         type: product
+  - slug: football-club-outlook-signature
+    name: Outlook HTML signature for a football club
+    description: Built an HTML email signature from the client’s logo and sketch,
+      prepared icons from supplied artwork and delivered an Outlook version.
+    year: "11.2023"
+    role: Email interface development
+    stack:
+      - HTML
+      - CSS
+      - Outlook
+    order: 365
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/football-club-outlook-signature/en/
+        type: product
+  - slug: prolog-outlook-signature-template
+    name: ProLog editable Outlook signature template
+    description: Delivered a reusable corporate HTML signature with editable staff
+      details, PNG icons and installation and editing instructions.
+    year: "09.2023"
+    role: Email interface development
+    stack:
+      - HTML
+      - CSS
+      - Outlook
+    order: 366
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/prolog-outlook-signature-template/en/
+        type: product
+  - slug: outlook-2010-signature-installation
+    name: HTML signature and Outlook 2010 installation support
+    description: Built an editable signature from a reference and helped the client
+      install it in Outlook 2010 when the hidden AppData folder made the signature
+      directory hard to find.
+    year: "11.2021"
+    role: Email interface development
+    stack:
+      - HTML
+      - CSS
+      - Outlook
+    order: 367
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/outlook-2010-signature-installation/en/
+        type: product

@@ -1,0 +1,26 @@
+title: ProLog editable Outlook signature template
+tagline: Delivered a reusable corporate HTML signature with editable staff
+  details, PNG icons and installation and editing instructions.
+year: "09.2023"
+role: Email interface development
+stack:
+  - HTML
+  - CSS
+  - Outlook
+blocks:
+  - type: text
+    title: A reusable staff template
+    body: The client provided brand assets. The signature needed to retain the
+      approved styling while allowing staff details to be edited without
+      rebuilding the layout.
+  - type: text
+    title: Icons, installation and editing
+    body: I used PNG icons rather than icon fonts. I supplied the HTML file and
+      explained how to place it in Microsoft Signatures, choose it in Outlook
+      and edit it with Notepad++.
+  - type: text
+    title: What acceptance covers
+    body: The client accepted the order and left positive feedback. Explaining how
+      to choose among signatures does not establish delivery of separate Russian
+      and English files. Final color adjustments and compatibility with every
+      Outlook version were not independently verified.
