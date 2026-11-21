@@ -6966,3 +6966,20 @@ projects:
         src: /media/projects/xone-accessories-catalog-update/homepage-20261104.webp
         alt: Полностраничный снимок магазина аксессуаров X-ONE
         featured: true
+  - slug: prikhodko-content-metadata-export
+    name: Выгрузка текстов, Title и Description сайта Prikhodko
+    description: Собрал тексты и метаданные страниц Prikhodko в передаваемый файл.
+      Клиент принял выгрузку как отдельную работу без импорта на новый сайт.
+    year: "02.2023"
+    role: Подготовка веб-данных
+    stack:
+      - Title
+      - Meta description
+      - Выгрузка контента
+    order: 371
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/prikhodko-content-metadata-export/
+        type: product

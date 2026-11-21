@@ -1,0 +1,25 @@
+title: Prikhodko website text and metadata export
+tagline: Collected Prikhodko page text and metadata in a file. The client
+  accepted the export as a separate task without a new-site import.
+year: "02.2023"
+role: Web data preparation
+stack:
+  - Title
+  - Meta description
+  - Content export
+blocks:
+  - type: text
+    title: Brief
+    body: "The client needed page text and two distinct search metadata fields:
+      Title and Description. Prikhodko was the data source, not a website I
+      built."
+  - type: text
+    title: Handover
+    body: I gathered the requested material and delivered it as an attachment for
+      further work. This separated page copy and search metadata from the source
+      website.
+  - type: text
+    title: Scope of verification
+    body: The client accepted the delivery. The attachment later expired, so the
+      file format, page count and metadata coverage could not be rechecked.
+      Copywriting, publishing and import were not part of the delivery.
