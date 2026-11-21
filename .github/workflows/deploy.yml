@@ -25,6 +25,8 @@ jobs:
       - run: npm run build:release
         env:
           GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+      - name: Record deployed revision
+        run: printf '%s\n' "$GITHUB_SHA" > dist/release-revision.txt
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
@@ -37,3 +39,15 @@ jobs:
     steps:
       - id: pages
         uses: actions/deploy-pages@v4
+  verify-live:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Verify published sitemap and canonical pages
+        run: node src/scripts/check-live-discovery.mjs
