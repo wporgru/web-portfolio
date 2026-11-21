@@ -1,6 +1,14 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'saferoute-shipping-migration': {
+    ru: 'Заменил Shiptor на SafeRoute и адаптировал виджет доставки в WooCommerce. Клиент принял настройку виджета.',
+    en: 'Replaced Shiptor with SafeRoute and adjusted the WooCommerce delivery widget. The client accepted the widget setup.',
+  },
+  'blaskos-yandex-market-category-feed': {
+    ru: 'Настроил YML для Яндекс Маркета и показал, как менять категории без правки XML. По отзыву клиента, товар появился на площадке.',
+    en: 'Configured a Yandex Market YML feed with category controls. The client reported that a product appeared on the marketplace.',
+  },
   'medimarket-ci-recrawl-resilience': {
     ru: 'Разделил публикацию и переобход в GitHub Actions. Каталог обновляется, а временная недоступность API Яндекса отмечается в журнале.',
     en: 'Separated publishing and recrawl status in GitHub Actions. The catalog can still deploy while a temporary Yandex API outage is recorded.',
