@@ -1,5 +1,6 @@
 // Alternatives explain how to scope a job, not just which pages to visit next.
 export const servicePaths = {
+  'corporate-email-signatures': [["data-and-ai","Если данные команды сначала надо привести к единой структуре.","If staff data needs to be normalized first."],["wordpress-business-website","Если вместо подписи нужен сайт компании.","If you need a company website instead."]],
   'affiliate-link-audit': [
     ['affiliate-catalog-development','Если вместо ремонта отдельных ссылок нужно заново выстроить витрину и обновление предложений.','If individual link repairs cannot solve the problem and the storefront and refresh pipeline need to be rebuilt.'],
     ['web-analytics','Если переходы работают, но их нельзя связать с карточками или заказами в отчёте.','If links work but clicks cannot be tied to listings or orders in the report.'],

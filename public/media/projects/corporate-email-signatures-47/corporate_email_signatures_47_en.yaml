@@ -1,0 +1,32 @@
+title: Corporate HTML signatures for 47 employees
+tagline: Prepared personalized signatures from the client’s design and delivered
+  a revised set of 47 HTML files after feedback on the Outlook version.
+year: "02.2026"
+role: Email interface development
+stack:
+  - HTML
+  - CSS
+  - Outlook
+blocks:
+  - type: text
+    title: Brief
+    body: The client supplied the design, logos and employee details. They needed
+      personalized signatures, a lighter Outlook layout and installation
+      materials.
+  - type: text
+    title: Preparation and handover
+    body: I delivered an initial set with 47 HTML and 47 HTM versions plus
+      supporting files. I asked about the operating system and Outlook version,
+      requested the original black logo and refined the layout and contact links
+      after feedback. The final archive contained 47 HTML files.
+  - type: text
+    title: What was verified
+    body: Table markup and telephone links were confirmed in every final file. The
+      logo and icon used external URLs and loaded in one browser-rendered
+      example. This did not test every file in Outlook or verify every
+      employee’s details.
+  - type: text
+    title: Outcome and scope
+    body: Archive delivery is documented. The order closed automatically, without
+      separate client confirmation of the final revision. Files containing work
+      contact details and the original screenshot were not published.

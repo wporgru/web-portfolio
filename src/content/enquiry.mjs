@@ -1,5 +1,6 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'corporate-email-signatures': [["Макет или пример и список полей","Число подписей и версии почтовых клиентов"],["Reference layout and fields","Signature count and target email client versions"]],
   'affiliate-link-audit': [
     ['Адрес витрины, период и тип ошибки в отчёте', 'Примеры страниц или товаров без трекинговых ключей и данных покупателей'],
     ['Storefront URL, relevant dates and the network error', 'Example pages or products without tracking keys or customer data'],

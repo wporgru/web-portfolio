@@ -6859,3 +6859,21 @@ projects:
       - label: Read case study
         url: /showcase/outlook-2010-signature-installation/en/
         type: product
+  - slug: corporate-email-signatures-47
+    name: Corporate HTML signatures for 47 employees
+    description: Prepared personalized signatures from the client’s design and
+      delivered a revised set of 47 HTML files after feedback on the Outlook
+      version.
+    year: "02.2026"
+    role: Email interface development
+    stack:
+      - HTML
+      - CSS
+      - Outlook
+    order: 368
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/corporate-email-signatures-47/en/
+        type: product

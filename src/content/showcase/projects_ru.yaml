@@ -6903,3 +6903,21 @@ projects:
       - label: Читать кейс
         url: /showcase/outlook-2010-signature-installation/
         type: product
+  - slug: corporate-email-signatures-47
+    name: Комплект HTML-подписей для 47 сотрудников
+    description: Подготовил персональные подписи на основе макета клиента и передал
+      обновлённый комплект из 47 HTML-файлов после замечаний по версии для
+      Outlook.
+    year: "02.2026"
+    role: Вёрстка почтовых интерфейсов
+    stack:
+      - HTML
+      - CSS
+      - Outlook
+    order: 368
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/corporate-email-signatures-47/
+        type: product
