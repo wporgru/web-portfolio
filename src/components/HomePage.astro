@@ -193,6 +193,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
           <div class="skillsgroup__title">{group}</div>
           <ul class="tags">{skillTags[i].map(tag=><li class="tag">{tag}</li>)}</ul>
           <p class="skill-example">{ru?'Кейс:':'Case study:'} <a data-skill-example href={projectHref(skillExamples[i][0])}>{skillExamples[i][ru?1:2]}</a></p>
+          {i===0 && <p class="skill-example">{ru?'Виджет без CMS:':'CMS-independent widget:'} <a href={projectHref('messenger-widget-code-handoff')}>{ru?'HTML/CSS/JS и проверка на двух экранах':'HTML, CSS and JS tested at two viewport sizes'}</a></p>}
           {i===0 && <p class="skill-example">{ru?'Почтовая вёрстка:':'Email development:'} <a href={projectHref('corporate-email-signatures-47')}>{ru?'47 персональных HTML-подписей':'47 personalized HTML signatures'}</a></p>}
           {i===3 && <p class="skill-example">{ru?'ИИ в редакционном процессе:':'AI in editorial production:'} <a href={projectHref('wellland-editorial-ai-production')}>{ru?'Шесть обложек по референсам, маркировка и оптимизация WebP':'Six reference-based covers, AI labeling and WebP optimization'}</a></p>}
         </div>)}<div class="skillsgroup">

@@ -30,3 +30,15 @@ blocks:
     title: Result and verification
     body: The client received the variants and a specific option to install. Code delivery is
       documented; deployment on the client’s website was not verified.
+  - type: image
+    src: /media/projects/messenger-widget-code-handoff/widget-desktop-render.png
+    title: Desktop rendering · 1200×900
+    alt: Open widget menu with six contact options at 1200×900
+    caption: The delivered HTML rendered on October 30, 2026, uncropped. The widget was tested
+      on a blank page, not the client site. Contact links were not activated.
+  - type: image
+    src: /media/projects/messenger-widget-code-handoff/widget-mobile-render.png
+    title: Mobile rendering · 390×844
+    alt: Open widget menu with six contact options at 390×844
+    caption: The delivered HTML rendered on October 30, 2026, uncropped. The widget was tested
+      on a blank page, not the client site. Contact links were not activated.
