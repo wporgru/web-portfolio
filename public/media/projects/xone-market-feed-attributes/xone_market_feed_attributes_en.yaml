@@ -1,7 +1,6 @@
 title: X-ONE product attributes and YML feed for Yandex Market
-tagline: Prepared separate accessory attributes for Yandex Market while keeping
-  the store filters. Configured the YML fields and revised data after moderation
-  feedback.
+tagline: Prepared separate accessory attributes for Yandex Market while keeping the store
+  filters. Configured the YML fields and revised data after moderation feedback.
 year: "03.2020"
 role: Catalog data and feed integration
 stack:
@@ -12,23 +11,33 @@ stack:
 blocks:
   - type: text
     title: Separated storefront and marketplace requirements
-    body: Films, glass protectors, cases and watch accessories needed marketplace
-      attributes without losing existing storefront filters. I supplied a
-      spreadsheet and explained multiple values and Boolean flags.
+    body: Films, glass protectors, cases and watch accessories needed marketplace attributes
+      without losing existing storefront filters. I supplied a spreadsheet and explained
+      multiple values and Boolean flags.
   - type: text
     title: Refined models and product properties
     body: I separated Huawei from Honor and added model, material and compatibility
-      attributes. I revised coating, matte and gloss values after feedback and
-      configured which attributes the YML plugin exported.
+      attributes. I revised coating, matte and gloss values after feedback and configured
+      which attributes the YML plugin exported.
   - type: text
     title: Revised the feed after moderation
-    body: The first submission was returned with errors. I worked on attribute
-      export and the separation of iPhone X and XS, which the client confirmed.
-      We agreed to use Plus where the plus sign in Samsung models was lost and
-      refreshed the feed.
+    body: The first submission was returned with errors. I worked on attribute export and the
+      separation of iPhone X and XS, which the client confirmed. We agreed to use Plus
+      where the plus sign in Samsung models was lost and refreshed the feed.
   - type: text
     title: What was verified
-    body: The client accepted the work. The appearance of offers was recorded in my
-      handover report, but no independent audit of every offer and filter
-      survives. Checkout, payment processing and shipping calculations are not
-      claimed as results of this phase.
+    body: The client accepted the work. The appearance of offers was recorded in my handover
+      report, but no independent audit of every offer and filter survives. Checkout,
+      payment processing and shipping calculations are not claimed as results of this
+      phase.
+  - type: image
+    title: Public website, later capture
+    src: /media/projects/xone-accessories-catalog-update/homepage-20261104.webp
+    alt: Full-page capture of the X-ONE accessories storefront
+    caption: Uncropped public homepage, November 4, 2026. This later view does not verify the
+      historical feed or marketplace offer status.
+  - type: text
+    title: A separate X-ONE delivery stage
+    links:
+      - label: "April: accessory catalog, variations and images"
+        url: /showcase/xone-accessories-catalog-update/en/

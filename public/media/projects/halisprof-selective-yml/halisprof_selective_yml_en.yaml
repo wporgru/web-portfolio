@@ -1,6 +1,6 @@
 title: Halisprof selective YML feed by price and stock
-tagline: Configured selective export rules and handed over a stable feed URL. At
-  handover the file contained no products because prices were missing.
+tagline: Configured selective export rules and handed over a stable feed URL. At handover
+  the file contained no products because prices were missing.
 year: "08.2022"
 role: Catalog data and feed integration
 stack:
@@ -10,16 +10,21 @@ stack:
 blocks:
   - type: text
     title: Why the export was selective
-    body: The client wanted to export its own products separately from resold
-      building materials with outdated prices. Selection rules were agreed based
-      on pricing and availability.
+    body: The client wanted to export its own products separately from resold building
+      materials with outdated prices. Selection rules were agreed based on pricing and
+      availability.
   - type: text
     title: Prepared the feed URL and refresh process
-    body: I handed over a stable XML URL and explained how to add prices to eligible
-      products, trigger a refresh and wait for the export to generate.
+    body: I handed over a stable XML URL and explained how to add prices to eligible products,
+      trigger a refresh and wait for the export to generate.
   - type: text
     title: What the client accepted
-    body: The client accepted the setup and refresh process. Prices were to be
-      filled after the sites were separated. The file was empty at handover; a
-      populated feed, published offers and automatic price updates were not
-      confirmed.
+    body: The client accepted the setup and refresh process. Prices were to be filled after
+      the sites were separated. The file was empty at handover; a populated feed,
+      published offers and automatic price updates were not confirmed.
+  - type: image
+    title: Public website, later capture
+    src: /media/projects/halisprof-selective-yml/homepage-20261025.webp
+    alt: Full-page capture of the Halis manufacturer website
+    caption: Uncropped public homepage, October 25, 2026. This later view does not verify the
+      historical feed or marketplace offer status.

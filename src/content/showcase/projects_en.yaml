@@ -6893,6 +6893,11 @@ projects:
       - label: Read case study
         url: /showcase/halisprof-selective-yml/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/halisprof-selective-yml/homepage-20261025.webp
+        alt: Full-page capture of the Halis manufacturer website
+        featured: true
   - slug: xone-market-feed-attributes
     name: X-ONE product attributes and YML feed for Yandex Market
     description: Prepared separate accessory attributes for Yandex Market while
@@ -6912,3 +6917,8 @@ projects:
       - label: Read case study
         url: /showcase/xone-market-feed-attributes/en/
         type: product
+    media:
+      - type: image
+        src: /media/projects/xone-accessories-catalog-update/homepage-20261104.webp
+        alt: Full-page capture of the X-ONE accessories storefront
+        featured: true

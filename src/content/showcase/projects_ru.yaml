@@ -6937,6 +6937,11 @@ projects:
       - label: Читать кейс
         url: /showcase/halisprof-selective-yml/
         type: product
+    media:
+      - type: image
+        src: /media/projects/halisprof-selective-yml/homepage-20261025.webp
+        alt: Полностраничный снимок сайта завода «Халис»
+        featured: true
   - slug: xone-market-feed-attributes
     name: "X-ONE: товарные характеристики и YML для Маркета"
     description: Подготовил отдельные характеристики аксессуаров для Яндекс Маркета,
@@ -6956,3 +6961,8 @@ projects:
       - label: Читать кейс
         url: /showcase/xone-market-feed-attributes/
         type: product
+    media:
+      - type: image
+        src: /media/projects/xone-accessories-catalog-update/homepage-20261104.webp
+        alt: Полностраничный снимок магазина аксессуаров X-ONE
+        featured: true
