@@ -1,33 +1,35 @@
-title: An English-language service website for DME
-tagline: The service company needed an English-language website where visitors
-  could browse services and find contact information without reading through a
-  long presentation.
+title: "DME Repair Service: English website at dme.kz"
+tagline: Built an English-language WordPress showcase for DME Repair Service, with 17 service
+  cards, a separate news grid and two visual treatments.
 year: "03.2021"
-role: Web development and automation
+role: English-language web showcase
 stack:
-  - Web design
-  - Service website
-  - English content
+  - WordPress
+  - Service architecture
+  - English-language interface
 blocks:
   - type: text
-    title: Brief and constraints
-    body: The service company needed an English-language website where visitors
-      could browse services and find contact information without reading through
-      a long presentation.
+    title: What the published work shows
+    body: The dme.kz homepage introduces the repair service and makes contact information and
+      individual services easy to find. The navigation separates company information, blog,
+      privacy and contact links from the service catalog.
   - type: text
-    title: How it works
-    body: The published work uses a service grid, with company information, the
-      blog, privacy and contact sections in navigation. The homepage has
-      separate partner and news sections. The archived light and dark
-      presentations show the same site structure in two visual variants.
+    title: Service and news structure
+    body: The archival view shows 17 illustrated service cards and a separate six-item news grid,
+      with an Our Partners section between them. Those are visible interface elements, not
+      verified partnerships or a count of all site pages.
   - type: text
-    title: Result and verification
-    body: The portfolio entry documents the displayed interface. The light and dark
-      views are variants, not a before-and-after comparison. Forms, payments and
-      current site availability are not assessed here.
+    title: Two treatments of the same layout
+    body: The light and dark versions retain the order of navigation, services and news. They are
+      alternative visual treatments rather than before-and-after evidence. A visitor-facing
+      theme switch was not verified.
   - type: text
-    title: Original Kwork portfolio entry
-    body: March 2021 is the publication date; the exact delivery date is unknown.
+    title: Source and scope
+    body: The owner confirmed the card refers to dme.kz. March 2021 is the Kwork publication month,
+      not a delivery date. No specific order is established, and this work is not merged with
+      smd.kz. The card shows the interface, not verified form, payment or SEO outcomes.
+  - type: text
+    title: Historical variants on Kwork
     links:
-      - label: View the original entry
+      - label: View the light and dark variants
         url: https://kwork.ru/portfolio/4093977

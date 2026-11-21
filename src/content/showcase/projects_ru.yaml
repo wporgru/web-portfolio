@@ -2266,16 +2266,15 @@ projects:
         url: /showcase/store-theme-reset/
         type: product
   - slug: dme-english-service-site
-    name: Англоязычный сайт сервисной компании DME
+    name: "DME Repair Service: англоязычный сайт dme.kz"
     year: "03.2021"
     role: Веб-разработка и автоматизация
-    description: Сервисной компании нужен был англоязычный сайт, на котором
-      посетитель может разобраться в услугах и найти контакты, не перелистывая
-      длинную презентацию.
+    description: >-
+      Разработал англоязычную витрину DME Repair Service на WordPress: 17 карточек услуг, отдельные новости и два варианта оформления.
     stack:
-      - Web design
-      - Service website
-      - English content
+      - WordPress
+      - Архитектура услуг
+      - Англоязычный интерфейс
     order: 122
     theme: cyan
     links:
