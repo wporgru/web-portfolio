@@ -1,28 +1,43 @@
 title: One-page website for Neftekhimik-N
-tagline: Built and published a compact manufacturing company website with a
-  company heading, industrial photograph and text block, without a complex CMS.
+tagline: Published a compact manufacturing company profile in REG Website Builder,
+  keeping the solution editable without WordPress or an additional CMS.
 year: "12.2022"
-role: Web development and automation
+role: Page development and website-builder setup
 stack:
   - REG Website Builder
-  - Landing page
+  - One-page website
   - Content editing
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Built and published a compact manufacturing company website with a company
-      heading, industrial photograph and text block, without a complex CMS.
+    title: A minimal site for a defined brief
+    body: >-
+      The client needed a compact, one-page profile for a manufacturing company,
+      with a background illustration and an information block. They confirmed there
+      were no plans to expand the site at that stage, so I did not introduce a
+      complex CMS or functionality outside the brief.
   - type: text
-    title: How it works
-    body: Used REG Website Builder rather than WordPress. Moved the text to the
-      upper left after feedback and updated the heading to the company’s full
-      name. Showed the owner how to edit the page independently.
+    title: REG Website Builder instead of WordPress
+    body: >-
+      I prepared and published the page at nh-n.ru using REG Website Builder.
+      Although the service listing concerned WordPress, an archived Kwork portfolio
+      card shows the REG Website Builder mark. This is an example of choosing a tool
+      for a simple agreed scope rather than forcing WordPress into every project.
   - type: text
-    title: Result and verification
-    body: The client accepted the site. The archived portfolio card shows the agreed
-      layout and builder mark, not the domain’s current appearance.
+    title: Refined from client feedback
+    body: >-
+      After the client's feedback, I moved the information block to the upper-left
+      corner and changed the heading to the company's full legal name. I then showed
+      the owner how to edit the page independently. The client approved the direction
+      and accepted the order.
   - type: image
     src: /media/projects/industrial-builder-landing/historical-landing.webp
-    alt: Industrial photograph and heading on the Neftekhimik-N website
-    caption: Historical Kwork portfolio image showing the approved layout and the
-      REG Website Builder mark.
+    alt: Historical Neftekhimik-N profile with industrial background; contacts and company details redacted
+    caption: The historical Kwork portfolio card shows the layout, company name and REG Website Builder mark. Phone, email, address and registration details are hidden in this public copy; the original remains in the local order archive.
+  - type: text
+    title: What the case proves
+    body: >-
+      The archive confirms that the page was published in 2022 and the order was
+      accepted. On the last recorded check, nh-n.ru did not resolve in DNS; permanent
+      closure has not been established. The historical portfolio card does not prove
+      current site availability, the current accuracy of its information or testing
+      across browsers.

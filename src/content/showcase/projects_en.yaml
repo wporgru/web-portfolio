@@ -3680,9 +3680,8 @@ projects:
     name: One-page website for Neftekhimik-N
     year: "12.2022"
     role: Web development and automation
-    description: Built and published a compact manufacturing company website with a
-      company heading, industrial photograph and text block, without a complex
-      CMS.
+    description: >-
+      Published a one-page manufacturing company site in REG Website Builder without WordPress. Moved the information block and updated the company heading after feedback, then showed the owner how to edit the page.
     stack:
       - REG Website Builder
       - Landing page
@@ -3692,7 +3691,7 @@ projects:
     media:
       - type: image
         src: /media/projects/industrial-builder-landing/historical-landing.webp
-        alt: Industrial photograph and heading on the Neftekhimik-N website
+        alt: Historical Neftekhimik-N company site with contact and registration details redacted
         featured: true
     links:
       - label: Read case study
