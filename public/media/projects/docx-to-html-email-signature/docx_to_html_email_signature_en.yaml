@@ -1,0 +1,23 @@
+title: Converting a DOCX email signature to HTML
+tagline: Converted one DOCX signature to HTML. After the first file failed on
+  the client side, I sent a revision that the client accepted.
+year: "07.2023"
+role: Email interface development
+stack:
+  - HTML
+  - DOCX
+blocks:
+  - type: text
+    title: One signature, not a full set
+    body: The client had a document with seven examples. We agreed on one HTML
+      version; the client planned to prepare the others independently.
+  - type: text
+    title: Client-side retest
+    body: The first file did not work for the client. I handed over a revised
+      version, after which the client confirmed it worked and accepted the
+      order.
+  - type: text
+    title: Scope of verification
+    body: The order covers one signature, not a set. The original attachments
+      expired, so the email client version and broader compatibility could not
+      be rechecked.

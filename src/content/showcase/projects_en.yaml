@@ -6972,3 +6972,19 @@ projects:
       - label: Read case study
         url: /showcase/videonadzor-import-theme-diagnosis/en/
         type: product
+  - slug: docx-to-html-email-signature
+    name: Converting a DOCX email signature to HTML
+    description: Converted one DOCX signature to HTML. After the first file failed
+      on the client side, I sent a revision that the client accepted.
+    year: "07.2023"
+    role: Email interface development
+    stack:
+      - HTML
+      - DOCX
+    order: 374
+    featured: false
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/docx-to-html-email-signature/en/
+        type: product

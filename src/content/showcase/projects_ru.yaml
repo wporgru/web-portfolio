@@ -7016,3 +7016,19 @@ projects:
       - label: Читать кейс
         url: /showcase/videonadzor-import-theme-diagnosis/
         type: product
+  - slug: docx-to-html-email-signature
+    name: Вёрстка почтовой подписи из DOCX в HTML
+    description: Перевёл одну подпись из DOCX в HTML. После неудачной первой
+      проверки передал исправленный файл, который клиент принял.
+    year: "07.2023"
+    role: Вёрстка почтовых интерфейсов
+    stack:
+      - HTML
+      - DOCX
+    order: 374
+    featured: false
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/docx-to-html-email-signature/
+        type: product
