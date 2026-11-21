@@ -1,5 +1,6 @@
 title: "Sovo Sova: WooCommerce redesign on WoodMart"
-tagline: Refresh the storefront while retaining existing URLs.
+tagline: Prepared a WooCommerce redesign on staging with a WoodMart homepage, article section
+  and interface translation. The client accepted phase one without a production cutover.
 role: Web development
 year: "10.2025"
 stack:
@@ -8,23 +9,25 @@ stack:
   - WoodMart
 blocks:
   - type: text
-    title: Brief
-    body: Refresh the storefront while retaining existing URLs.
+    title: Started without switching the live store
+    body: I prepared the first redesign phase on the staging copy at covocova.webtm.ru. Instead of
+      a clean install, I worked with the existing products, articles and URLs under WoodMart.
+      The live domain was not switched during this phase.
   - type: text
-    title: Work delivered
-    body: Built a new homepage on staging, added articles and translated visible
-      interface strings. The handoff reported that URLs were retained; the final
-      domain switch was outside the confirmed stage.
+    title: Connected the catalog and editorial content
+    body: I presented a new homepage, added the article section and agreed on the post order
+      because the latest article lacked a cover. I replaced the icon with the Sovo Sova
+      wordmark and translated visible English interface strings.
   - type: text
-    title: Implementation and scope
-    body: Used a staging copy instead of a clean install so the new theme could be
-      tested with existing products, articles and URLs. Added news to the
-      homepage, reviewed the order of posts when the newest one lacked a cover
-      and replaced the icon with a wordmark. Translated visible English strings
-      and left the SEO plugin in place pending a separate decision about its
-      settings. Showed the client where to edit the pages they planned to
-      maintain. The client accepted phase one; production cutover and full SEO
-      settings migration are outside this result.
+    title: Kept the redesign separate from SEO migration
+    body: The handover reported that unnecessary plugins were disabled and existing URLs retained.
+      I intentionally kept the SEO plugin until its settings migration was agreed. No complete
+      before-and-after URL crawl was performed, so unchanged rankings are not claimed.
+  - type: text
+    title: Handed over phase one and showed how to edit pages
+    body: I showed the client where to edit the pages they planned to manage. The client accepted
+      the first phase and left a review. That acceptance does not establish a production
+      cutover, a full SEO migration or database optimization.
   - type: text
     title: Archived project homepage
     links:
@@ -32,14 +35,17 @@ blocks:
         url: https://kwork.ru/portfolio/19774603
   - type: image
     src: /media/projects/sovo-sova/archive-homepage.webp
-    alt: Sovo Sova WoodMart homepage with product categories, listings, news and
-      footer
-    caption: Full archived homepage, 1400 × 3744, published on November 25, 2025. It
-      shows the storefront layout; the address used for the screenshot is
-      unknown, so it does not verify a production cutover.
+    alt: Sovo Sova WoodMart homepage with product categories, listings, news and footer
+    caption: Full archived homepage, 1400 × 3744, published on November 25, 2025. It shows the
+      storefront layout; the address used for the screenshot is unknown, so it does not verify
+      a production cutover.
   - type: image
     title: Public website snapshot
     src: /media/projects/sovo-sova/site.png
     alt: Public website snapshot
-    caption: Captured during a later availability check; it may differ from the site
-      at handoff.
+    caption: Captured during a later availability check; it may differ from the site at handoff.
+  - type: text
+    title: Compare a broader live-store redesign
+    links:
+      - label: "78 Dosok: theme replacement, updates and performance work"
+        url: /showcase/78-dosok/en/

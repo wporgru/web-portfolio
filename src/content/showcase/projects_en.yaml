@@ -252,9 +252,8 @@ projects:
         type: product
   - slug: sovo-sova
     name: "Sovo Sova: WooCommerce redesign on WoodMart"
-    description: Built a new homepage on staging, added articles and translated
-      visible interface strings. The handoff reported that URLs were retained;
-      the final domain switch was outside the confirmed stage.
+    description: >-
+      Prepared a WooCommerce redesign on staging with a WoodMart homepage, article section and interface translation. The client accepted phase one without a production cutover.
     year: "10.2025"
     role: Web development
     stack:
