@@ -37,6 +37,7 @@ if (textSitemap.pop()!=='' || textSitemap.length!==sitemap.size ||
     textSitemap.some(url=>!sitemap.has(url))) fail('sitemap.txt','expected exactly the same canonical URLs as XML');
 const pages = new Map();
 const internalTargets = new Map();
+const navigationTargets = new Map();
 const breadcrumbTargets = new Map();
 const sharingCards = new Map();
 const originalImages = new Map();
@@ -111,12 +112,45 @@ for(const file of htmlFiles){
     .map(([,url])=>url.replaceAll('&amp;','&'))
     .filter(url=>url.startsWith('/')&&!url.startsWith('//'));
   internalTargets.set(canonical,links);
+  navigationTargets.set(canonical,{
+    lang,
+    links:[...html.matchAll(/<a\b([^>]+)>/gi)].flatMap(([,attrs])=>{
+      const raw=attrs.match(/\shref="([^"]+)"/i)?.[1];
+      if (!raw || /\srel="[^"]*\bnofollow\b/i.test(attrs)) return [];
+      const target=URL.parse(raw.replaceAll('&amp;','&'),canonical);
+      if (!target || target.search) return [];
+      target.hash='';
+      return [target.href];
+    }),
+  });
 }
 if(!pages.size||sitemap.size!==pages.size) fail(root,'sitemap and HTML counts differ');
 const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcase/'));
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+// Count direct HTML navigation, not sitemap submissions, scripts or language switches.
+let checkedNavigationPages=0;
+for (const lang of ['ru','en']) {
+  const start=new URL(lang==='ru'?'':'en/',profileUrl).href;
+  if (navigationTargets.get(start)?.lang!==lang) fail(start,'localized homepage missing');
+  const depth=new Map([[start,0]]);
+  const queue=[start];
+  for (const source of queue) {
+    for (const target of navigationTargets.get(source).links) {
+      if (navigationTargets.get(target)?.lang!==lang || depth.has(target)) continue;
+      depth.set(target,depth.get(source)+1);
+      queue.push(target);
+    }
+  }
+  for (const [url,page] of navigationTargets) {
+    if (page.lang!==lang) continue;
+    if (!depth.has(url)) fail(url,'no same-language HTML navigation path from homepage');
+    if (depth.get(url)>3) fail(url,'more than three HTML links from the localized homepage');
+    checkedNavigationPages++;
+  }
+  console.log(lang+': '+depth.size+' pages reachable by HTML links; maximum depth '+Math.max(...depth.values())+'.');
+}
 for (const item of guides) for (const suffix of ['', 'en/']) {
   const route=`guides/${item.slug}/${suffix}`;
   const html=read(path.join(root,route,'index.html'));
@@ -343,3 +377,4 @@ console.log('Verified '+canonicalInternalLinks+' canonical internal page links.'
 console.log('Verified '+distinctSitemapImages.size+' original images across '+imageEntries+' localized image sitemap entries.');
 console.log('Verified contextual enquiry templates for '+enquiryPages+' localized case and service pages.');
 console.log('Verified versioned sitemap revision dates for '+verifiedRevisions+' localized case pages.');
+console.log('Verified homepage navigation for '+checkedNavigationPages+' localized pages without JavaScript.');
