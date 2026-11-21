@@ -1,6 +1,18 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'bite-news-wordpress-launch': {
+    ru: 'Запустил тёмный новостной сайт на Astra и Spectra, настроил домен и передал редакции инструкции по публикации и оформлению.',
+    en: 'Launched a dark news site with Astra and Spectra, configured the domain and handed over publishing and styling instructions.',
+  },
+  'creatium-to-elementor-header': {
+    ru: 'Перенёс шапку и первый экран из Creatium в Elementor. Сохранил выпадающее меню и адаптировал компоновку на тестовой копии.',
+    en: 'Moved the header and hero from Creatium to Elementor, preserving dropdown navigation and adapting the layout on staging.',
+  },
+  'metform-replacement': {
+    ru: 'Заменил неработавшую форму ARTRED на Contact Form 7. Заказчик подтвердил получение тестовой заявки и принял оформление.',
+    en: 'Replaced the broken ARTRED form with Contact Form 7. The client confirmed receipt of a test enquiry and approved the layout.',
+  },
   'saferoute-shipping-migration': {
     ru: 'Заменил Shiptor на SafeRoute и адаптировал виджет доставки в WooCommerce. Клиент принял настройку виджета.',
     en: 'Replaced Shiptor with SafeRoute and adjusted the WooCommerce delivery widget. The client accepted the widget setup.',
