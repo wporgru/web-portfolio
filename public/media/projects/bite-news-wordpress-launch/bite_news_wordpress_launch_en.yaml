@@ -1,6 +1,6 @@
 title: "Bite News: launching a dark news website"
-tagline: Deployed the foundations of a news site after WordPress.com so editors
-  could publish and manage the design on their own hosting.
+tagline: >-
+  Launched a dark news site with Astra, Gutenberg and Spectra, updated domain delegation and handed over publishing and styling instructions.
 year: "05.2023"
 role: Web development and automation
 stack:
@@ -11,20 +11,21 @@ stack:
   - DNS
 blocks:
   - type: text
-    title: Brief and constraints
-    body: Deployed the foundations of a news site after WordPress.com so editors
-      could publish and manage the design on their own hosting.
+    title: From WordPress.com to self-hosting
+    body: >-
+      The editorial team needed a dark news site where it could publish independently. Newspaper and TagDiv were considered, but Astra, Gutenberg and Spectra were agreed for implementation.
   - type: text
-    title: How it works
-    body: Agreed to use Astra, Gutenberg and Spectra instead of Newspaper and
-      TagDiv. Updated domain delegation, set up a dark theme and prepared posts
-      and sample content. Delivered instructions for publishing and editing the
-      header, blog, footer and styles.
+    title: Domain, styling and demo posts
+    body: >-
+      I changed the nameservers to ps.kz and reported that the site had opened. I configured dark styling and posts and added demo material for the editors to replace.
   - type: text
-    title: Result and verification
-    body: The client accepted the site foundation. Sample posts are not a full
-      editorial archive migration; indexing was deferred until content was
-      ready.
+    title: Handover for editors
+    body: >-
+      I explained how to publish posts and update the header, blog, footer and styles. The client accepted the work and left positive feedback.
+  - type: text
+    title: Scope of the handover
+    body: >-
+      The handover covered a working publishing foundation, not a complete migration or translation of the old archive. Indexing was left until content preparation. The historical image shows the first screen, not the current domain.
   - type: image
     src: /media/projects/bite-news-wordpress-launch/historical-first-screen.webp
     alt: Dark Bite News homepage hero

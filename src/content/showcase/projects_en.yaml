@@ -789,7 +789,8 @@ projects:
     name: Replacing MetForm and verifying inquiry delivery
     year: "05.2025"
     role: Web development and automation
-    description: "Replaced the failing MetForm setup with Contact Form 7 and verified a test inquiry; the client confirmed the email arrived. Reused a shared form where requirements matched, then refined button styling and alignment after review. Verification covered the test submission and presentation, not legal review of the forms."
+    description: >-
+      Replaced a broken ARTRED enquiry form with Contact Form 7. The client confirmed receipt of a test email and approved the updated layout.
     stack:
       - WordPress
       - Contact Form 7
@@ -3585,8 +3586,8 @@ projects:
     name: "Bite News: launching a dark news website"
     year: "05.2023"
     role: Web development and automation
-    description: Deployed the foundations of a news site after WordPress.com so
-      editors could publish and manage the design on their own hosting.
+    description: >-
+      Launched a dark news site with Astra, Gutenberg and Spectra, updated domain delegation and handed over publishing and styling instructions.
     stack:
       - WordPress
       - Astra
@@ -3736,9 +3737,8 @@ projects:
     name: Rebuilding a Creatium header in WordPress
     year: "12.2022"
     role: Web development and automation
-    description: Rebuilt a Creatium first-screen prototype in WordPress so the
-      interface could be maintained in Elementor without migrating the entire
-      catalog at once.
+    description: >-
+      Moved a blinds store header, navigation and hero from a Creatium prototype to a WordPress staging copy, keeping dropdown navigation and adapting the layout for smaller screens.
     stack:
       - Creatium
       - WordPress

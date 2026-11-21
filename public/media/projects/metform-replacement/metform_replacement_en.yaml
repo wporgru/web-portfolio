@@ -1,6 +1,6 @@
 title: Replacing MetForm and verifying inquiry delivery
-tagline: The inquiry form was failing at its core job. The client needed a
-  working lead channel, not just a redesigned button.
+tagline: >-
+  Replaced a broken ARTRED enquiry form with Contact Form 7. The client confirmed receipt of a test email and approved the updated layout.
 year: "05.2025"
 role: Web development and automation
 stack:
@@ -9,19 +9,21 @@ stack:
   - CSS
 blocks:
   - type: text
-    title: Brief and constraints
-    body: The inquiry form was failing at its core job. The client needed a working
-      lead channel, not just a redesigned button.
+    title: Restored the enquiry flow
+    body: >-
+      The ARTRED MetForm popup returned an error on submission. I agreed the switch to Contact Form 7 and reused the configured form wherever the requirements matched.
   - type: text
-    title: How it works
-    body: Replaced the failing MetForm setup with Contact Form 7 and reused the same
-      form where requirements matched. I sent a test inquiry, then adjusted the
-      button color, alignment and corner radius after the initial review.
+    title: Updated copy and presentation
+    body: >-
+      I added consent text and a link to the privacy page. After the first handover, I changed the button from green to red, centered it and its supporting text, and adjusted the rounded corners.
   - type: text
-    title: Result and verification
-    body: The client confirmed receipt of the test email and approved the visual
-      changes. The work covered inquiry delivery and presentation, not legal
-      review.
+    title: Verified delivery, not just the button
+    body: >-
+      I sent a test enquiry and the client confirmed that the email arrived. The client also approved the layout and accepted the work.
+  - type: text
+    title: Scope of verification
+    body: >-
+      The result establishes receipt of one test email, not delivery of all future enquiries. A separate SMTP audit and legal review were outside the scope.
   - type: image
     title: Public site view
     src: /media/projects/metform-replacement/later-homepage.webp
