@@ -6,6 +6,7 @@ import { priceListGuide } from './woocommerce-price-list-guide.mjs';
 import { migrationIndexingGuide } from './migration-indexing-guide.mjs';
 import { importTimeoutGuide } from './import-timeout-guide.mjs';
 import { b2bQuoteGuide } from './b2b-catalog-quote-guide.mjs';
+import { orderEmailGuide } from './woocommerce-order-email-guide.mjs';
 
 export const guides = [
   {
@@ -25,4 +26,5 @@ export const guides = [
   migrationIndexingGuide,
   importTimeoutGuide,
   b2bQuoteGuide,
+  orderEmailGuide,
 ];

@@ -1,0 +1,63 @@
+const cases = ['werdum-woocommerce-order-email-recovery', 'bragutsa-woocommerce-order-email-recovery', 'woocommerce-admin-email-items'];
+
+export const orderEmailGuide = {
+  slug:'woocommerce-order-emails-not-sending',
+  primaryService:'checkout-payments',
+  services:['checkout-payments','woocommerce-store-improvements'],
+  cases,
+  sourceUrls:[
+    'https://woocommerce.com/document/email-faq/',
+    'https://woocommerce.com/document/configuring-woocommerce-settings/emails/',
+    'https://developer.woocommerce.com/2026/06/03/transactional-email-logging/',
+  ],
+  ru:{
+    title:'Не приходят письма о заказах WooCommerce: что проверить',
+    summary:'Как восстановить уведомления покупателя и менеджера в WooCommerce: проверяем статус заказа, тип письма, журнал отправки и получение.',
+    intro:'Оплата прошла, но покупатель не получил подтверждение. Или магазин принимает заказы, а менеджер узнаёт о них только из админки. Сначала нужно понять, не создал ли WooCommerce письмо вообще или оно потерялось после отправки. Для этих случаев нужны разные проверки.',
+    context:'Покупатель или менеджер не получил письмо о заказе?',
+    action:'Найти причину пропавших писем о заказах',
+    email:'Описать сбой уведомлений',
+    serviceLabel:'Доработка оформления и уведомлений о заказах',
+    enquiry:['Кто не получил письмо: покупатель, менеджер или оба; на каком способе оплаты повторяется сбой','Ожидаемый и фактический статус контрольного заказа, время с часовым поясом и обезличенная запись журнала, если есть'],
+    steps:[
+      ['Зафиксируйте, какого письма не хватает','Уведомление «Новый заказ» для менеджера и письмо покупателю об обработке заказа — разные события. Начните с одного контрольного заказа и его времени. Отметьте, кто получил письмо, кому оно не дошло и повторяется ли это с другим способом оплаты. Если письмо пришло, но без списка товаров, отправка уже сработала: отдельно проверьте тип письма и шаблон.'],
+      ['Сверьте статус заказа с фактом оплаты','Откройте заказ и посмотрите примечания и историю статусов. Для оплаченного заказа, который остался в статусе ожидания оплаты, сначала сверяйте подтверждение в платёжной системе и обработку её уведомления магазином. Не меняйте статус оплаченных заказов массово ради теста: это может запустить письма и другие действия, а причину не прояснит.'],
+      ['Проверьте настройки нужного уведомления','В WooCommerce → Настройки → Письма найдите нужный тип письма. Проверьте, включён ли он, кому адресовано уведомление магазина и какой адрес записан в самом контрольном заказе для покупателя. Тестовая отправка из настроек полезна, но не заменяет прохождение заказа через витрину: она не проверяет, сработало ли событие автоматически.'],
+      ['Разделите отсутствие попытки и ошибку отправки','В WooCommerce 10.9 и новее ищите источник transactional-emails в WooCommerce → Статус → Журналы. Disabled и Skipped показывают, что попытки отправки не было; Failed — что она завершилась ошибкой; Sent — что письмо передали почтовому механизму сайта. Если записей нет, проверьте версию, настройки и уровень журнала. Для более старой версии используйте доступный журнал почтового провайдера и при необходимости кратковременное логирование на стенде.'],
+      ['Проследите путь до почтового ящика','Если магазин передал письмо, сверяйте время с событиями в журнале почтового сервиса: принятие, задержка, отказ или доставка. Проверьте, авторизован ли домен отправителя, и посмотрите папку спама или карантин у получателя. Ни запись Sent, ни успешная отправка общего тестового письма не подтверждают появление письма о заказе во входящих.'],
+      ['Примите исправление на новом заказе','С согласованным способом оплаты и тестовыми адресами оформите новый заказ через витрину. Зафиксируйте статус и время, подтвердите получение письма отдельно у покупателя и менеджера, сверьте номер и состав заказа. Если проверяли только один платёжный сценарий или один тип уведомления, перечислите непроверенные варианты отдельно.'],
+    ],
+    examples:[
+      ['Werdum: клиент подтвердил восстановление писем покупателю и магазину',cases[0]],
+      ['Bragutsa: менеджер получил письмо по контрольному заказу; настройка расчёта доставки осталась за рамками ремонта',cases[1]],
+      ['Письмо без товаров: состав заказа подтвердили на новом заказе с тестовым получателем',cases[2]],
+    ],
+    sources:['WooCommerce: диагностика отправки писем','WooCommerce: настройки и типы писем','WooCommerce Developer Blog: журнал уведомлений с версии 10.9'],
+    call:'Пришлите адрес сайта, ожидаемое письмо, статус и время одного тестового заказа. Если есть журнал, хватит обезличенной строки. Пароли, платёжные данные и адрес покупателя для первого разбора не нужны.',
+  },
+  en:{
+    title:'WooCommerce order emails not sending? What to check',
+    summary:'Troubleshoot missing customer and staff order emails in WooCommerce: order status, notification settings, mail logs and inbox checks.',
+    intro:'The payment went through but the buyer got no confirmation. Or new orders only come to the manager’s attention when they open the dashboard. First find out whether WooCommerce triggered the email or it got lost after handoff. Those are two different problems.',
+    context:'Did the customer or store manager miss an order email?',
+    action:'Diagnose missing WooCommerce order emails',
+    email:'Describe the email issue',
+    serviceLabel:'Checkout and order notification services',
+    enquiry:['Who missed the message: customer, manager or both; payment method on which it happens','Expected and actual test order status, time with timezone and a redacted log entry if available'],
+    steps:[
+      ['Identify the missing notification','The store’s New order email is different from the customer’s Processing order email. Start with one test order and its timestamp. Record who received which email and whether the symptom is specific to a payment method. If the email arrives without the product list, sending already works: inspect the email type and template separately.'],
+      ['Compare order status with the payment record','Open the order and check its notes and status history. If payment succeeded but the order still shows Pending payment, reconcile it with the gateway and check how the store handled the gateway notification. Avoid mass-changing order statuses for a test: that can trigger emails and other actions without explaining the failure.'],
+      ['Check settings for that specific email','Open WooCommerce → Settings → Emails and find the right notification. Check whether it is enabled, where the store notification goes and which billing address was recorded on the test order. A preview email is useful but does not prove that placing an order triggers the notification automatically.'],
+      ['Separate a skipped send from a send failure','In WooCommerce 10.9 and later, look for transactional-emails under WooCommerce → Status → Logs. Disabled and Skipped mean no send was attempted, Failed means the attempt returned an error, and Sent means WooCommerce handed the message to the site’s mail system. If entries are missing, check the version, logging settings and threshold. On older releases, use any existing provider logs and, if needed, temporary logging on staging.'],
+      ['Trace the message to the mailbox','After handoff, correlate the timestamp with mail-provider events such as acceptance, deferral, rejection or delivery. Check authentication for the sending domain and ask the recipient to check spam or quarantine. Neither a Sent entry nor a successful generic test email proves the order message appeared in the inbox.'],
+      ['Verify the fix with a fresh order','Use an agreed payment method and test addresses to place a new order through the storefront. Record the status and timestamp, verify the customer and staff messages separately, and check the order number and items. If you tested one payment flow or only one email type, report the untested variants separately.'],
+    ],
+    examples:[
+      ['Werdum: the client confirmed that customer and store notifications worked again',cases[0]],
+      ['Bragutsa: a test order reached the manager; shipping was outside the confirmed fix',cases[1]],
+      ['Missing items in email: a new order with a test recipient verified the product list',cases[2]],
+    ],
+    sources:['WooCommerce: email troubleshooting','WooCommerce: notification settings and types','WooCommerce Developer Blog: transactional email logging from 10.9'],
+    call:'Send the store URL, expected email, status and time of one test order. A redacted log line is enough if you have one. No passwords, payment details or customer address are needed for the initial review.',
+  },
+};
