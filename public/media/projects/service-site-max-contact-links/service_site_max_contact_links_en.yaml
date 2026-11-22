@@ -1,0 +1,30 @@
+title: "Service website: replacing WhatsApp with MAX across contact links"
+tagline: "An existing service website needed to move enquiries from WhatsApp to
+  MAX. Replacing one button was not enough: contact links appeared in the
+  header, footer and contact page."
+year: "04.2026"
+role: Web development and automation
+stack:
+  - Contact links
+  - MAX
+  - Header and footer
+  - Interface QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "An existing service website needed to move enquiries from WhatsApp to
+      MAX. Replacing one button was not enough: contact links appeared in the
+      header, footer and contact page."
+  - type: text
+    title: How it works
+    body: Updated the contact elements and switched the button from its previous
+      green treatment to the agreed blue background and white circle. During
+      acceptance, the client found an old link still in the header. I saved the
+      missed edit, rechecked the other files and handed the change back for
+      review.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the follow-up and accepted the work. The agreed
+      placements were reviewed as part of the job, but a total link count was
+      not recorded. This was a contact-flow change, not a standalone plugin
+      delivery or a measurement of enquiry growth.

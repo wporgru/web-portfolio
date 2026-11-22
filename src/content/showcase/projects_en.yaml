@@ -7226,3 +7226,40 @@ projects:
         url: /showcase/bragutsa-woocommerce-order-email-recovery/en/
         type: product
     featured: false
+  - slug: service-site-max-contact-links
+    name: "Service website: replacing WhatsApp with MAX across contact links"
+    year: "04.2026"
+    role: Web development and automation
+    description: "An existing service website needed to move enquiries from WhatsApp
+      to MAX. Replacing one button was not enough: contact links appeared in the
+      header, footer and contact page."
+    stack:
+      - Contact links
+      - MAX
+      - Header and footer
+      - Interface QA
+    order: 387
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/service-site-max-contact-links/en/
+        type: product
+    featured: false
+  - slug: modx-messenger-widget-handoff
+    name: "MODX messenger widget: code and setup instructions for the client team"
+    year: "03.2026"
+    role: Web development and automation
+    description: The client wanted a contact widget for an existing MODX Revolution
+      website, following a visual reference. Their developer would install it, so
+      the handoff needed both the widget and clear instructions on what to change.
+    stack:
+      - MODX Revolution
+      - Messenger widget
+      - Implementation handoff
+    order: 388
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/modx-messenger-widget-handoff/en/
+        type: product
+    featured: false

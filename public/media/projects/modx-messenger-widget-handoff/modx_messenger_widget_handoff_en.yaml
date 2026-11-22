@@ -1,0 +1,28 @@
+title: "MODX messenger widget: code and setup instructions for the client team"
+tagline: The client wanted a contact widget for an existing MODX Revolution
+  website, following a visual reference. Their developer would install it, so
+  the handoff needed both the widget and clear instructions on what to change.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - MODX Revolution
+  - Messenger widget
+  - Implementation handoff
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The client wanted a contact widget for an existing MODX Revolution
+      website, following a visual reference. Their developer would install it,
+      so the handoff needed both the widget and clear instructions on what to
+      change.
+  - type: text
+    title: How it works
+    body: Prepared and handed over the widget code for the client’s developer to
+      implement. I pointed out where to replace the contact links at the start
+      of the code, explained the labeled and unlabeled layouts, and offered
+      alternatives. I did not edit the production site template myself.
+  - type: text
+    title: Result and verification
+    body: The client accepted the code and instructions. The final button set and
+      installation on the live MODX site were not independently confirmed; this
+      engagement delivered the handoff, not the deployment.

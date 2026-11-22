@@ -7274,3 +7274,41 @@ projects:
         url: /showcase/bragutsa-woocommerce-order-email-recovery/
         type: product
     featured: false
+  - slug: service-site-max-contact-links
+    name: "Сайт услуг: замена WhatsApp на MAX в шапке, подвале и контактах"
+    year: "04.2026"
+    role: Веб-разработка и автоматизация
+    description: "На действующем сайте услуг нужно было перевести обращения из
+      WhatsApp в MAX. Одной новой кнопки было недостаточно: переходы были
+      разбросаны по шапке, подвалу и странице контактов."
+    stack:
+      - Contact links
+      - MAX
+      - Header and footer
+      - Interface QA
+    order: 387
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/service-site-max-contact-links/
+        type: product
+    featured: false
+  - slug: modx-messenger-widget-handoff
+    name: "Виджет мессенджеров для MODX: код и инструкция для команды клиента"
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: На существующем сайте на MODX Revolution клиент хотел добавить блок
+      связи по визуальному примеру. Устанавливать его должен был штатный
+      программист, поэтому нужно было передать готовый виджет и объяснить, что
+      менять при подключении.
+    stack:
+      - MODX Revolution
+      - Messenger widget
+      - Implementation handoff
+    order: 388
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/modx-messenger-widget-handoff/
+        type: product
+    featured: false
