@@ -372,6 +372,10 @@ for (const service of services) {
     if (![index,homepage].every(html => html.includes(`href="${base}${route}"`))) fail(route,'service is not linked from the homepage and services index');
     const questions = serviceDetails[service.slug].questions?.[suffix ? 'en' : 'ru'];
     if (questions?.length && !detail.includes('data-service-questions')) fail(route,'missing service questions');
+    const steps = serviceDetails[service.slug].steps?.[suffix ? 'en' : 'ru'] ?? [];
+    const stepMarkup = detail.match(/<section\b[^>]*\bdata-service-steps[^>]*>([\s\S]*?)<\/section>/)?.[1] ?? '';
+    if ([...stepMarkup.matchAll(/<li\b/g)].length !== steps.length ||
+        steps.some(([heading])=>!stepMarkup.includes(heading+'.'))) fail(route,'missing or unexpected service process steps');
     for (const slug of service.cases) {
       const caseRoute = `showcase/${slug}/${suffix}`;
       const casePage = read(path.join(root,caseRoute,'index.html'));

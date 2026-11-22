@@ -28,8 +28,9 @@ blocks:
       total did not match a recount of the source CSV."
   - type: text
     title: Result and verification
-    body: "A CSV recount confirmed 3,508 URLs: 2,995 indexable and 513 excluded. The
-      crawl contained 81 URLs returning 404; 2,868 indexable pages had a second
+    body: "A CSV recount confirmed 3,508 URLs. The crawler classified 2,995 as
+      indexable and 513 as non-indexable. These were not search-engine index counts.
+      The crawl found 81 URLs returning 404; 2,868 indexable pages had a second
       H1 (95.8%), and 617 lacked a meta description (20.6%). These are
       crawl-snapshot counts from the audit date, not the site current state. The
       archive does not prove implementation, a follow-up crawl, traffic growth

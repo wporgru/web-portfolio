@@ -21,6 +21,7 @@ const providerName = ru?'Олег Тишин':'Oleg Tishin';
 const [title, intro, first, second, outcome] = service[ru ? 'ru' : 'en'];
 const [scenario, approach, deliverables] = serviceDetails[service.slug][ru ? 'ru' : 'en'];
 const questions = serviceDetails[service.slug].questions?.[ru ? 'ru' : 'en'] ?? [];
+const steps = serviceDetails[service.slug].steps?.[ru ? 'ru' : 'en'] ?? [];
 const enquiry = createEnquiry({
   lang, title, kind:'service', serviceSlug:service.slug,
   url:new URL(Astro.url.pathname,Astro.site ?? Astro.url).href,
@@ -68,6 +69,12 @@ const nextServices=servicePaths[service.slug].map(([slug,ruReason,enReason])=>{
       <h2 class="h2">{ru?'Что получите на выходе':'What you will get'}</h2>
       <p>{deliverables}</p>
     </section>
+    {steps.length > 0 && <section class="card" data-service-steps>
+      <h2 class="h2">{ru?'Как проходит работа':'How the work proceeds'}</h2>
+      <ol class="list">
+        {steps.map(([heading,body]) => <li><strong>{heading}.</strong> {body}</li>)}
+      </ol>
+    </section>}
     <section>
       <h2 class="h2">{ru?'Примеры выполненных работ':'Relevant case studies'}</h2>
       <div class="grid">

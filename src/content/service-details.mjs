@@ -211,8 +211,34 @@ export const serviceDetails = {
     },
   },
   'technical-seo': {
-    ru: ['В отчёте много ошибок, но неясно, с чего начать', 'Одна ошибка шаблона может повторяться на сотнях адресов. Разделю такие причины и единичные случаи, чтобы не тратить бюджет на ручную правку каждой похожей страницы.', 'Приоритеты по типам страниц, примеры проблемных URL и способ повторной проверки. Если есть доступ к поисковым панелям, отдельно покажу, что они сообщают об индексации.'],
-    en: ['The crawl report is full of errors, but priorities are unclear', 'A single template defect can affect hundreds of URLs. Separate systemic causes from one-off issues so you do not pay to repair each similar page by hand.', 'Priorities by page type, examples and a verification method. With access to webmaster tools, report what they show about indexing separately.'],
+    ru: ['Товары не появляются в поиске или вместо них показывается другой URL', 'Карта сайта может быть доступна, даже если карточки скрыты настройкой видимости, а canonical ведёт на другую версию. Сначала проверю группу важных страниц и сравню её с группой, которая работает. Так становится видно, где нужна правка общего шаблона, а где проблема только в одной записи.', 'Передам список приоритетов с примерами URL, причиной, затронутыми шаблонами и способом повторной проверки. Можно заказать только аудит или отдельно согласовать внедрение и повторную сверку. В отчёте отмечу охват: все проверенные URL или контрольная выборка.'],
+    en: ['Product pages are missing from search or another URL appears instead', 'A sitemap can be available even when listings are hidden by a visibility setting or canonical points to another version. Compare an important group of affected pages with a working group. This shows where one template fix is needed versus an isolated record.', 'Get a prioritized list with example URLs, causes, affected templates and retest criteria. Choose the audit alone or scope implementation and verification separately. The report states whether each finding covers all checked URLs or a sample.'],
+    steps:{
+      ru:[
+        ['Определяем приоритетные страницы','Согласуем, что приводит клиентов: услуги, категории, карточки или региональные страницы. Фиксируем дату падения и последние изменения, чтобы не смешивать переезд, переработку шаблона и сбой аналитики.'],
+        ['Сверяем сайт и отчёты поисковиков','Сопоставлю карту сайта, ответы сервера, HTML и внутренние ссылки. Если есть доступ к Search Console и Яндекс Вебмастеру, отдельно сравню обход, индексацию и показы. Разница между этими данными — часть диагноза.'],
+        ['Выбираем правки по охвату и риску','Например, один ошибочный canonical в шаблоне может затрагивать целую категорию. Перед правкой определим контрольные адреса, ожидаемый результат и способ возврата. Не буду удалять или перенаправлять полезные страницы только потому, что в отчёте они помечены как дубли.'],
+        ['Проверяем результат после публикации','Повторю исходную проверку на основном сайте без входа в админку. Отдельно зафиксирую, что исправлено в HTML, какие URL переданы на переобход и что поисковик действительно обнаружил или включил в индекс.'],
+      ],
+      en:[
+        ['Identify priority pages','Agree which pages bring customers: services, categories, products or regional pages. Record when the drop began and what changed so a move, template release and analytics problem are not conflated.'],
+        ['Compare the site with search reports','Compare the sitemap, server responses, HTML and internal links. With access to Search Console and Yandex Webmaster, check crawling, indexing and impressions separately. Differences are useful diagnostic evidence.'],
+        ['Prioritize changes by reach and risk','One incorrect canonical in a template can affect a whole category. Agree on control URLs, the expected result and rollback before editing. Do not remove or redirect useful pages just because a report marks them as duplicates.'],
+        ['Retest after deployment','Repeat the original check on the public site without signing in. Record HTML fixes, URLs submitted for recrawling and pages the search engine actually discovered or indexed as separate outcomes.'],
+      ],
+    },
+    questions:{
+      ru:[
+        ['Можно начать без доступа к админке и поисковым панелям?', 'Да. Для первичной проверки хватит адреса сайта и примеров страниц. Проверю публичные ответы и разметку. Выбранный поисковиком canonical, причины исключения и показы требуют данных поисковых панелей; если доступа нет, отмечу это в отчёте.'],
+        ['Можно заказать аудит, а исправления сделать самим?', 'Да. В отчёте будут примеры, затронутые шаблоны и проверяемый ожидаемый результат. После внедрения можно отдельно заказать контрольную сверку.'],
+        ['Можете обещать топ после исправлений?', 'Нет. Техническая правка убирает подтверждённое препятствие, но её нельзя выдавать за рост позиций. Показы и клики проверяем отдельно, по выбранным группам запросов и страниц.'],
+      ],
+      en:[
+        ['Can we start without admin or webmaster access?', 'Yes. Send the site and sample pages for a first public HTTP and markup check. Search-engine-selected canonicals, exclusions and impressions need webmaster data. The report notes any missing access.'],
+        ['Can our team implement the audit recommendations?', 'Yes. The report includes examples, affected templates and acceptance criteria. A follow-up verification can be scoped separately.'],
+        ['Can you guarantee top rankings after repairs?', 'No. Technical fixes remove confirmed barriers, not guarantee rankings. Impressions and clicks are measured separately for the relevant queries and pages.'],
+      ],
+    },
   },
   'data-and-ai': {
     ru: ["Когда нужен файл, а когда — автоматизация","Для миграции или локализации обычно достаточно выгрузки с согласованными полями и списком пропусков. Если цены, остатки или отчёт меняются регулярно, нужен отдельный сценарий запуска с проверкой повторных прогонов.","Разовая задача: файл, описание столбцов и ограничения. Регулярная задача: рабочий пилот, примеры входа и выхода, инструкция запуска и список случаев, требующих ручной проверки."],

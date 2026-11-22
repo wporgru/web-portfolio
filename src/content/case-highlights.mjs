@@ -1,6 +1,10 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'education-store-crawl-audit': {
+    ru:'Сверил SEO-аудит каталога с выгрузкой на 3 508 URL. Нашёл 81 адрес с ответом 404 и массовое повторение второго H1.',
+    en:'Rechecked a technical SEO audit against a 3,508-URL crawl. Found 81 URLs returning 404 and a widespread second-H1 issue.',
+  },
   'smd-wix-wordpress-service-site': {
     ru: 'Собрал сайт услуг SMD на WoodMart: перенёс материалы и блог из Wix, адаптировал шаблон и оставил магазин за рамками.',
     en: 'Built SMD’s WordPress service site with WoodMart: moved service and blog content from Wix, adapted the template and left the shop out of scope.',
