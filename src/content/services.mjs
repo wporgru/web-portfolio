@@ -1,5 +1,23 @@
 export const services = [
   {
+    slug:'wordpress-php-plugin-updates',
+    cases:['tajbazar-store-upgrade','legacy-php-compatibility','legacy-wordpress-lead-form','php8-layout-repair','woodmart-theme-rebuild','klimat-profi-backup-automation'],
+    ru:[
+      'Обновление WordPress, PHP и плагинов на рабочем сайте',
+      'Подготовлю обновление WordPress или WooCommerce: проверю совместимость, разберу устаревшие расширения и проверю сайт после перехода. Тему не меняю, если для обновления достаточно другой правки.',
+      'Сверю версии PHP, ядра, темы и важных плагинов. Отдельно отмечу дочернюю тему, ручной код, платные расширения и плагины без поддержки. Перед выпуском согласуем резервную копию, порядок обновления и откат.',
+      'На тестовой копии проверю страницы, формы и сохранение в редакторе. Для магазина согласуем тест каталога, корзины, расчёта доставки, заказа и уведомлений. После выпуска повторю ключевые проверки.',
+      'Пришлите адрес сайта, сообщение хостинга или WordPress и перечислите функции, которые нельзя прерывать. Сначала скажу, какие компоненты требуют проверки и где лучше выделить отдельный этап.',
+    ],
+    en:[
+      'WordPress, PHP and plugin updates for live sites',
+      'Prepare a WordPress or WooCommerce upgrade: check compatibility, review outdated extensions and verify the site after the switch. Keep the existing theme unless a change is needed.',
+      'Inventory PHP, core, the theme and important plugins. Identify child themes, custom code, paid extensions and unmaintained components separately. Agree on backups, update order and rollback before release.',
+      'Test agreed pages, forms and editor saves on staging. For a store, agree on catalog, cart, shipping quotes, checkout and notifications to test. Repeat key checks after release.',
+      'Send the site URL and any warning from the host or WordPress. List features that cannot be interrupted. I will identify what needs checking and where to split the work into stages.',
+    ],
+  },
+  {
     slug:'woocommerce-digital-downloads',
     cases:['digital-guide-checkout','dme-tech-yandex-checkout-downloads','automotive-firmware-digital-store','dme-tech-download-store-preparation','dme-tech-payment-buttons-mobile','digital-database-stores-checkout'],
     ru:[

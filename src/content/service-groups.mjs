@@ -15,7 +15,7 @@ export const serviceGroups = [
     id: 'reliability',
     ru: ['Ремонт, скорость и переезд', 'Исправлю сбой, проверю узкое место или подготовлю перенос с планом отката.'],
     en: ['Repair, performance and migration', 'Diagnose a failure or bottleneck, or plan a migration with a rollback path.'],
-    slugs: ['wordpress-repair', 'wordpress-performance', 'hosting-migration', 'website-vps-maintenance'],
+    slugs: ['wordpress-php-plugin-updates', 'wordpress-repair', 'wordpress-performance', 'hosting-migration', 'website-vps-maintenance'],
   },
   {
     id: 'growth',

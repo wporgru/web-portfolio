@@ -3,7 +3,7 @@ const cases = ['78-dosok', 'sovo-sova', 'arenda-pm-home-performance'];
 export const woocommerceThemeChangeGuide = {
   slug: 'woocommerce-theme-change',
   primaryService: 'website-redesign',
-  services: ['website-redesign', 'wordpress-performance'],
+  services: ['website-redesign', 'wordpress-performance', 'wordpress-php-plugin-updates'],
   cases,
   sourceUrls: [
     'https://wordpress.org/documentation/article/work-with-themes/',

@@ -1,4 +1,28 @@
 export const serviceDetails = {
+  'wordpress-php-plugin-updates': {
+    ru:[
+      'Хостинг просит обновить PHP, а тема и плагины давно не менялись',
+      'Переход проверяю на конкретной связке версий, а не по одному номеру PHP. Если расширение дублирует доставку, кеш или форму, сначала выясню, какой модуль действительно нужен. Если шаблон зависит от снятого с поддержки кода, предложу выбор между исправлением, заменой компонента и отдельным редизайном.',
+      'Передам список обновлений и исключений, результаты контрольных проверок и способ отката. Для магазина отдельно согласуем, что делать с заказами и остатками, которые изменились во время выпуска.',
+    ],
+    en:[
+      'Your host wants newer PHP, but the theme and plugins are old',
+      'Test the actual combination of versions instead of choosing PHP in isolation. If two extensions handle shipping, caching or a form, identify which one the site actually uses. If a template depends on unmaintained code, compare a compatibility fix, a component replacement and a separate redesign.',
+      'Receive a record of updates and exclusions, acceptance checks and a rollback procedure. For a store, agree separately on how to handle orders and stock changes made during release.',
+    ],
+    questions:{
+      ru:[
+        ['Можно оставить текущую тему и оформление?', 'Часто да. Сначала проверю тему и её пользовательские правки. Если тема совместима, менять внешний вид ради обновления не нужно.'],
+        ['Включать автообновление всех плагинов?', 'Не одной настройкой для всех. Разделю расширения по последствиям сбоя: одно правит текст, другое управляет оплатой или доставкой. Согласуем, что обновляется автоматически, а что проверяется на копии до выпуска.'],
+        ['Можно просто вернуть старую резервную копию?', 'Для действующего магазина сперва проверим, что появилось после снимка базы: заказы, регистрации и остатки. Откат кода и восстановление всей базы — разные операции.'],
+      ],
+      en:[
+        ['Can we keep the current theme and design?', 'Often yes. I check the theme and custom changes first. If they are compatible, there is no need to change the design just to upgrade.'],
+        ['Should we auto-update every plugin?', 'Not with one blanket rule. A copy-editing plugin and a payment or shipping integration have different failure impacts. Agree which plugins can update automatically and which need staging checks.'],
+        ['Can we just restore an old backup?', 'For a live store, check which orders, registrations and stock changes arrived after the snapshot. Rolling back code and restoring an entire database are different operations.'],
+      ],
+    },
+  },
   'woocommerce-digital-downloads': {
     ru:[
       'Покупатель оплатил, но не получил файл',

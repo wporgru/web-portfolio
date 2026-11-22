@@ -1,5 +1,9 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'wordpress-php-plugin-updates': [
+    ['Что просит обновить хостинг или WordPress', 'Что должно работать после обновления и есть ли актуальная копия'],
+    ['Requested hosting or WordPress update', 'What must keep working and whether a recent backup exists'],
+  ],
   'woocommerce-digital-downloads': [
     ['Формат и примерный размер файла, количество товаров', 'Способ оплаты и как покупатель должен получать доступ'],
     ['File format, approximate size and number of products', 'Payment method and how buyers should access their downloads'],

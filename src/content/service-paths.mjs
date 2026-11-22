@@ -1,5 +1,9 @@
 // Alternatives explain how to scope a job, not just which pages to visit next.
 export const servicePaths = {
+  'wordpress-php-plugin-updates': [
+    ['wordpress-repair','Если после прошлого обновления сайт уже сломался и сначала его нужно восстановить.','If a previous update already broke the site and recovery comes first.'],
+    ['website-redesign','Если старую тему выгоднее заменить и одновременно переработать витрину.','If replacing the theme and redesigning the storefront makes more sense.'],
+  ],
   'woocommerce-digital-downloads': [
     ['checkout-payments','Если выдача уже работает, а проблема только на шаге платёжной системы.','If downloads already work and the issue is limited to the payment gateway.'],
     ['woocommerce-store-development','Если нужен полноценный магазин с физическими товарами и доставкой.','If you also need a full storefront for physical products and shipping.'],
@@ -51,7 +55,7 @@ export const servicePaths = {
     ['affiliate-catalog-development','Если сравнение цен строится на партнёрских фидах и оформление происходит у продавцов.','If comparison uses affiliate feeds and checkout happens with merchants.'],
   ],
   'wordpress-repair': [
-    ['wordpress-plugin-development','Если ничего не сломалось, но штатных возможностей больше не хватает.','If nothing broke but built-in features no longer cover your needs.'],
+    ['wordpress-php-plugin-updates','Если сайт ещё работает, но пора обновить PHP, ядро или расширения.','If the site still works but PHP, core or extensions need updating.'],
     ['wordpress-performance','Если страница работает без ошибок, но медленно загружается или реагирует.','If the page works without errors but loads or responds slowly.'],
   ],
   'website-redesign': [
