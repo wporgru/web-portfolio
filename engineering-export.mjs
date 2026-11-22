@@ -42,6 +42,7 @@ const additionalCaseImages = {
   ],
 };
 const projectStages = {
+  'smd-wix-wordpress-service-site': ['dme-english-service-site', 'Отдельный проект: англоязычный сайт DME', 'Separate project: the English-language DME site'],
   'sewing-shop-brand-product-pages': ['promexpert-multi-supplier-catalog', 'Следующий этап: импорт Промэксперта', 'Next stage: importing the Promexpert catalog'],
   'promexpert-multi-supplier-catalog': ['sewing-shop-sku-search-filters', 'Следующий этап: поиск по артикулу и фильтры', 'Next stage: SKU search and catalog filters'],
   'sewing-shop-sku-search-filters': ['sewing-shop-brand-product-pages', 'Первый этап: страницы брендов и карточки', 'First stage: brand pages and product cards'],
@@ -139,7 +140,7 @@ export function addEngineeringCases(projects,root,{catalogSlugs,slugs,verifyNew}
       const stage = projectStages[slug];
       if (stage) {
         blocks.push({
-          type:'text', title:slug.startsWith('bgtgroup-') ? (ru?'Связанный проект':'Related project') : (ru?'Другой этап этого проекта':'Another stage of this project'),
+          type:'text', title:slug.startsWith('bgtgroup-') || slug==='smd-wix-wordpress-service-site' ? (ru?'Связанный проект':'Related project') : (ru?'Другой этап этого проекта':'Another stage of this project'),
           links:[{label:stage[ru?1:2],url:'/showcase/'+stage[0]+(ru?'/':'/en/')}],
         });
       }

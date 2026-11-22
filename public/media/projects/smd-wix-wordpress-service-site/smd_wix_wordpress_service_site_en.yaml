@@ -1,0 +1,36 @@
+title: "SMD: a WordPress service site built from Wix content"
+tagline: The service company needed its own WordPress site. Wix was the source
+  for service and blog content, not a store to migrate wholesale. Services,
+  company information and contact details needed separate sections.
+year: "03.2021"
+role: Web development and automation
+stack:
+  - WordPress
+  - Wix
+  - WoodMart
+  - Content migration
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The service company needed its own WordPress site. Wix was the source for
+      service and blog content, not a store to migrate wholesale. Services,
+      company information and contact details needed separate sections.
+  - type: text
+    title: How it works
+    body: "I mapped which material came from each source: Wix supplied services and
+      blog content, while an agreed client site supplied company and contact
+      information. I built the service catalog, company page, blog and contact
+      page in WoodMart without a shop. I adjusted content and search widths,
+      added borders to dark cards and configured a sticky header."
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. A move to dme.kz was deferred and is not
+      treated as part of this delivery or as the same project as the published
+      English DME site. The 48 pages and posts and 21 products were source
+      inventory, not a count of the new site. A full migrated-content count and
+      SEO audit are not documented.
+  - type: text
+    title: Related project
+    links:
+      - label: "Separate project: the English-language DME site"
+        url: /showcase/dme-english-service-site/en/

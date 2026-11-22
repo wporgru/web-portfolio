@@ -7088,3 +7088,22 @@ projects:
         url: /showcase/sewing-shop-sku-search-filters/en/
         type: product
     featured: false
+  - slug: smd-wix-wordpress-service-site
+    name: "SMD: a WordPress service site built from Wix content"
+    year: "03.2021"
+    role: Web development and automation
+    description: The service company needed its own WordPress site. Wix was the
+      source for service and blog content, not a store to migrate wholesale.
+      Services, company information and contact details needed separate sections.
+    stack:
+      - WordPress
+      - Wix
+      - WoodMart
+      - Content migration
+    order: 380
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/smd-wix-wordpress-service-site/en/
+        type: product
+    featured: false

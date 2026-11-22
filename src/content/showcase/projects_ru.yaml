@@ -7132,3 +7132,23 @@ projects:
         url: /showcase/sewing-shop-sku-search-filters/
         type: product
     featured: false
+  - slug: smd-wix-wordpress-service-site
+    name: "SMD: сайт услуг на WordPress из материалов Wix"
+    year: "03.2021"
+    role: Веб-разработка и автоматизация
+    description: Нужна отдельная витрина сервисной компании на WordPress. Из Wix
+      следовало взять материалы о направлениях работы и блог, но не переносить
+      магазин. Услуги, сведения о компании и контакты должны были быть доступны по
+      отдельным разделам.
+    stack:
+      - WordPress
+      - Wix
+      - WoodMart
+      - Content migration
+    order: 380
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/smd-wix-wordpress-service-site/
+        type: product
+    featured: false

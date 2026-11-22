@@ -62,11 +62,13 @@ export const serviceDetails = {
       ru: [
         ['Что делать, если тексты и фотографии ещё не готовы?', 'Начнём со структуры и одного ключевого шаблона. Согласуем, кто готовит материалы, какие блоки можно собрать сразу и при каких условиях открывать сайт для индексации.'],
         ['Можно ли обновлять содержание самостоятельно?', 'Да. Заранее выберем, что вы меняете сами: услуги, статьи, меню, баннеры или контактные данные. Покажу этот сценарий на готовой странице.'],
+        ['Можно собрать сайт на WordPress, сохранив материалы с Wix?', 'Да, если у вас есть право использовать материалы. Отдельно посчитаем услуги, статьи, изображения и обязательные страницы. Согласуем, что переносить, что собрать заново и какие URL надо сохранить. В проекте SMD перенёс материалы о сервисе и блог, а магазин исключил из объёма.'],
         ['Что входит в проверку перед запуском?', 'Сверю согласованные страницы, навигацию, мобильные состояния и технические настройки поисковой доступности. Отправку тестовой заявки и проверку её доставки согласуем отдельно.'],
       ],
       en: [
         ['What if we do not have copy and photos yet?', 'Start with the page structure and one key template. Agree who provides materials, what can be built now and when the site is ready to open to search engines.'],
         ['Can we update content ourselves?', 'Yes. Decide what you will maintain: services, posts, menus, banners or contact details. I will demonstrate the workflow on a finished page.'],
+        ['Can we move to WordPress and keep our Wix content?', 'Yes, if you have permission to reuse it. Inventory services, posts, images and essential pages separately. Agree on what to transfer, what to rebuild and which URLs must be retained. For SMD I moved service and blog material while leaving the shop out of scope.'],
         ['What do you check before launch?', 'Review the agreed pages, navigation, mobile states and technical search settings. A test submission and verification of its delivery are agreed separately.'],
       ],
     },

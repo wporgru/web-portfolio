@@ -33,3 +33,10 @@ blocks:
     links:
       - label: View the light and dark variants
         url: https://kwork.ru/portfolio/4093977
+  - type: text
+    title: Separate SMD project
+    body: The SMD project used a different site address and scope. It reused service and blog
+      content from Wix; a move to dme.kz was not part of its handover.
+    links:
+      - label: The SMD service site on WordPress
+        url: /showcase/smd-wix-wordpress-service-site/en/

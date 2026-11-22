@@ -1,6 +1,10 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'smd-wix-wordpress-service-site': {
+    ru: 'Собрал сайт услуг SMD на WoodMart: перенёс материалы и блог из Wix, адаптировал шаблон и оставил магазин за рамками.',
+    en: 'Built SMD’s WordPress service site with WoodMart: moved service and blog content from Wix, adapted the template and left the shop out of scope.',
+  },
   'promexpert-multi-supplier-catalog': {
     ru: 'Загрузил каталог Промэксперта с приоритетом над вторым поставщиком. В отчёте — 2 217 новых товаров; согласовал ключи и расписание обновления.',
     en: 'Imported the Promexpert catalog with priority over a second supplier. Handoff reported 2,217 new products; agreed on import keys and scheduling.',

@@ -33,3 +33,10 @@ blocks:
     links:
       - label: Открыть светлый и тёмный варианты
         url: https://kwork.ru/portfolio/4093977
+  - type: text
+    title: Отдельная работа для SMD
+    body: У проекта SMD был другой адрес и другой объём работ. Для него материалы о сервисе
+      и блог перенесли из Wix, а перенос на dme.kz не вошёл в сдачу.
+    links:
+      - label: Сайт услуг SMD на WordPress
+        url: /showcase/smd-wix-wordpress-service-site/
