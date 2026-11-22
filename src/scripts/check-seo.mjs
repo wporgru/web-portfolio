@@ -156,6 +156,10 @@ for (const item of guides) for (const suffix of ['', 'en/']) {
   const html=read(path.join(root,route,'index.html'));
   if (!sitemap.has(new URL(route,profileUrl).href) ||
       !html.includes(`href="${base}services/${item.primaryService}/${suffix}"`)) fail(route,'missing sitemap entry or primary service');
+  for (const slug of item.services) {
+    const servicePath=`services/${slug}/${suffix}`;
+    if (!read(path.join(root,servicePath,'index.html')).includes(`href="${base}${route}"`)) fail(route,'missing contextual link from '+servicePath);
+  }
   for (const slug of item.cases) {
     const casePath=`showcase/${slug}/${suffix}`;
     if (!html.includes(`href="${base}${casePath}"`) ||
