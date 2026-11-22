@@ -1,4 +1,30 @@
 export const serviceDetails = {
+  'woocommerce-store-improvements': {
+    ru: [
+      'Магазин уже продаёт, но штатного поведения не хватает',
+      'Например, покупатель видит размер в карточке, но не может найти его фильтром. Сначала беру пару контрольных товаров и проверяю данные, шаблон и импорт. Если причина в атрибутах, не нужно менять всю витрину. Если нужна новая логика, заранее согласуем правило и исключения: какой товар оно затронет, какие цены и купоны сохранятся.',
+      'Вы получите согласованную доработку, перечень изменённых шаблонов или правил и короткую инструкцию для менеджера. Приёмка — по контрольным товарам и сценариям: что появилось на витрине, что осталось без изменений и что нужно повторно проверить после следующего импорта или обновления.',
+    ],
+    en: [
+      'The store already sells, but its default behavior falls short',
+      'A size may be visible on the product page yet missing from the filter. I pick representative products and check the data, template and import. If the issue is attribute assignment, redesigning the whole store is unnecessary. New behavior starts with a rule and its exceptions: which products it touches and what should happen to existing prices and coupons.',
+      'Get the agreed changes, a list of affected templates or rules and short instructions for store staff. Acceptance uses specific products and workflows: what changed, what stayed intact and what to recheck after the next import or update.',
+    ],
+    questions: {
+      ru: [
+        ['Можно ли заказать только одну доработку?', 'Да. Приведите один пример и опишите ожидаемый результат. Если всё упирается в настройки или одну правку шаблона, нет смысла заказывать пересборку магазина.'],
+        ['Что будет с товарами и заказами при публикации?', 'Доработку собираю отдельно от рабочей базы. На сайт переношу согласованные изменения, а не устаревшую копию с заказами. Окно работ и способ отката обсуждаем до выпуска.'],
+        ['Обязательно ли писать плагин?', 'Нет. Проверю, можно ли решить задачу штатной настройкой или правкой шаблона. Отдельное расширение имеет смысл, когда правило должно жить независимо от темы или работать в нескольких местах.'],
+        ['Как проверить скидку или промокод?', 'Заранее выпишем обычный и исключённый товар, порог количества или суммы и правила совмещения. Затем проверим цены с купоном и без него, включая возврат к обычной цене после удаления купона.'],
+      ],
+      en: [
+        ['Can I commission just one improvement?', 'Yes. Send one example and the expected result. If a setting or one template change is enough, there is no reason to rebuild the store.'],
+        ['What happens to products and orders during release?', 'The change is prepared outside the live database. I deploy the agreed modifications, not an old copy of the orders. We agree on the release window and rollback approach beforehand.'],
+        ['Does every change need a plugin?', 'No. A core setting or a template adjustment may be enough. A separate extension makes sense when a rule must stay independent of the theme or apply in several places.'],
+        ['How do we verify a discount or coupon?', 'Agree on eligible and excluded products, thresholds and stacking rules. Then compare prices with and without the coupon, including whether the regular price returns when it is removed.'],
+      ],
+    },
+  },
   'website-contact-widgets': {"ru":["Есть контакты, но их неудобно искать на телефоне","Для страницы услуги лучше несколько понятных способов связи, чем ещё одна кнопка, закрывающая элементы сайта. Сначала проверим расположение и выберем только те каналы, на которые менеджер отвечает.","Вы получите установленный блок или готовый фрагмент с инструкцией; отдельно укажу проверенные страницы, размеры экрана и сценарии."],"en":["Contact details are hard to find on mobile","Give visitors a few clear choices rather than another button that covers the page. We first check placement and choose channels your team actually monitors.","Receive an installed widget or a ready-to-embed snippet with instructions and a list of tested pages, viewport sizes and behaviors."],"questions":{"ru":[["Нужно ли менять тему или CMS?","Обычно нет. Для WordPress, Creatium и InSales способ размещения согласуем отдельно. Если есть доступ к шаблону, можно передать самостоятельный HTML/CSS/JS-блок."],["Чем проверка кнопки отличается от проверки обращения?","Открытие меню проверяет интерфейс. Чтобы подтвердить поступление заявки или сообщения, отдельно согласуем тест и получателя."]],"en":[["Do I need to change the theme or CMS?","Usually not. We agree on the embed method for WordPress, Creatium or InSales. If the template allows it, I can hand over a standalone HTML/CSS/JS snippet."],["How is a button test different from an enquiry test?","Opening the menu verifies the interface. To confirm that a message actually arrives, agree on a separate test and its recipient."]]}},
   'corporate-email-signatures': {"ru":["Один дизайн, разные данные сотрудников","Проверим образец с длинным именем или должностью и согласуем кликабельные контакты. Для большого комплекта отдельно оговорим проверку исходных данных.","Передам шаблон или комплект файлов, инструкцию и перечень почтовых клиентов, на которых согласован образец."],"en":["One design, different employee details","Check a sample with a long name or title and agree on clickable contact fields. Define field validation separately for a larger team.","Receive a template or personalized files, setup instructions and a list of clients where the sample was tested."],"questions":{"ru":[["Можно ли начать без HTML-исходника?","Да, пришлите эскиз, логотип и список полей."],["Будет ли вид одинаковым во всех версиях Outlook?","Нет. Отображение зависит от версии и настроек изображений; согласуем целевые приложения."]],"en":[["Can we start without HTML source?","Yes. Send a sketch, logo and field list."],["Will it look identical in every Outlook version?","No. Rendering depends on the version and image settings. Agree on target applications first."]]}},
   'affiliate-link-audit': {

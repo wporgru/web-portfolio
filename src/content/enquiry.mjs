@@ -1,5 +1,9 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'woocommerce-store-improvements': [
+    ['Страница или артикул и что происходит сейчас', 'Как должен работать сценарий и что нельзя менять'],
+    ['Page or SKU and what currently happens', 'Expected behavior and what must stay unchanged'],
+  ],
   'website-contact-widgets': [["Каналы связи и страницы, где нужен виджет","Установка на сайт или готовый фрагмент"],["Contact channels and pages that need the widget","Installation or ready-to-embed snippet"]],
   'corporate-email-signatures': [["Макет или пример и список полей","Число подписей и версии почтовых клиентов"],["Reference layout and fields","Signature count and target email client versions"]],
   'affiliate-link-audit': [

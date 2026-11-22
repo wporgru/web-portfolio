@@ -1,7 +1,7 @@
 export const filtersGuide = {
   slug:'woocommerce-product-filters',
   primaryService:'catalog-automation',
-  services:['catalog-automation','woocommerce-store-development'],
+  services:['catalog-automation','woocommerce-store-development','woocommerce-store-improvements'],
   cases:['wellland-facets','anta-yml-size-variant-import','wellland-native-catalog-pagination','sewing-shop-sku-search-filters'],
   sourceUrls:[
     'https://woocommerce.com/document/managing-product-taxonomies/',

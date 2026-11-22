@@ -1,5 +1,9 @@
 // Alternatives explain how to scope a job, not just which pages to visit next.
 export const servicePaths = {
+  'woocommerce-store-improvements': [
+    ['catalog-automation','Если цены, остатки и характеристики нужно регулярно получать от поставщика.','If prices, stock and specifications need regular supplier updates.'],
+    ['checkout-payments','Если нужен новый способ доставки или проблема возникает при оплате заказа.','If you need a new shipping method or the issue occurs during payment.'],
+  ],
   'website-contact-widgets': [["website-ux-audit","Если посетители не могут найти контакты и другие важные действия на сайте.","If visitors cannot find contact options or other key actions."],["wordpress-repair","Если существующая форма или чат перестали работать после обновления.","If a form or chat stopped working after an update."]],
   'corporate-email-signatures': [["data-and-ai","Если данные команды сначала надо привести к единой структуре.","If staff data needs to be normalized first."],["wordpress-business-website","Если вместо подписи нужен сайт компании.","If you need a company website instead."]],
   'affiliate-link-audit': [
@@ -7,7 +11,7 @@ export const servicePaths = {
     ['web-analytics','Если переходы работают, но их нельзя связать с карточками или заказами в отчёте.','If links work but clicks cannot be tied to listings or orders in the report.'],
   ],
   'woocommerce-store-development': [
-    ['website-redesign','Если магазин работает и нужно обновить дизайн, не теряя старые адреса и каталог.','If a live store needs a redesign without losing its URLs or catalog.'],
+    ['woocommerce-store-improvements','Если магазин уже запущен и нужна точечная доработка каталога, карточек или корзины.','If the store already runs and needs a targeted catalog, product page or cart improvement.'],
     ['b2b-catalog-and-enquiries','Если клиент выбирает позиции, но цену и условия согласует менеджер, а не чекаут.','If customers choose products but a sales manager agrees on pricing and terms.'],
   ],
   'wordpress-business-website': [
@@ -51,7 +55,7 @@ export const servicePaths = {
     ['technical-seo','Если вместе с редизайном меняются разделы и требуется сверить адреса и редиректы.','If the redesign changes sections and URLs and redirects need reviewing.'],
   ],
   'catalog-automation': [
-    ['b2b-catalog-and-enquiries','Если данные уже загружаются, но покупателям нужны сравнение, фильтры и запрос счёта.','If imports work but customers need comparison, filters and quote requests.'],
+    ['woocommerce-store-improvements','Если импорт работает, но покупатель не может найти товар, выбрать вариант или применить скидку.','If imports run but shoppers cannot find an item, choose an option or use a discount.'],
     ['data-and-ai','Если на входе не готовый фид, а файлы разных форматов, которые нужно привести к одной схеме.','If the inputs are mixed-format files that must be normalized before import.'],
   ],
   'technical-seo': [
