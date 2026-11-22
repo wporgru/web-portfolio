@@ -7,6 +7,7 @@ import { migrationIndexingGuide } from './migration-indexing-guide.mjs';
 import { importTimeoutGuide } from './import-timeout-guide.mjs';
 import { b2bQuoteGuide } from './b2b-catalog-quote-guide.mjs';
 import { orderEmailGuide } from './woocommerce-order-email-guide.mjs';
+import { wordpressPhpUpdateGuide } from './wordpress-php-update-guide.mjs';
 
 export const guides = [
   {
@@ -27,4 +28,5 @@ export const guides = [
   importTimeoutGuide,
   b2bQuoteGuide,
   orderEmailGuide,
+  wordpressPhpUpdateGuide,
 ];

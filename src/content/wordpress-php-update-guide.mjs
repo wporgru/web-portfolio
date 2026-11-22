@@ -1,0 +1,63 @@
+const cases = ['goodwin-php','legacy-php-compatibility','tajbazar-store-upgrade'];
+
+export const wordpressPhpUpdateGuide = {
+  slug:'wordpress-php-update-checklist',
+  primaryService:'wordpress-php-plugin-updates',
+  services:['wordpress-php-plugin-updates','wordpress-repair'],
+  cases,
+  sourceUrls:[
+    'https://wordpress.org/documentation/update-php/',
+    'https://make.wordpress.org/core/handbook/references/php-compatibility-and-wordpress-versions/',
+    'https://www.php.net/supported-versions.php',
+  ],
+  ru:{
+    title:'Как обновить PHP на WordPress и не сломать сайт',
+    summary:'План обновления PHP для WordPress и WooCommerce: совместимость темы и плагинов, тестовая копия, проверка заказов и откат без потери данных.',
+    intro:'Хостинг выводит старую версию PHP из поддержки, но сайт держится на знакомой теме и нескольких важных плагинах. Не обязательно делать редизайн или обновлять всё разом. Сначала узнайте, что требует правок, и проверьте переход на копии.',
+    context:'Хостинг просит обновить PHP или сайт уже упал после смены версии?',
+    action:'Обсудить обновление PHP на вашем сайте',
+    email:'Описать сайт и ограничения',
+    serviceLabel:'Обновление WordPress, PHP и плагинов',
+    enquiry:['Текущая и целевая версия PHP, сообщение хостинга или обезличенная строка ошибки','Критичные функции: формы, Elementor, магазин, доставка, оплата, импорт или задачи по расписанию'],
+    steps:[
+      ['Составьте карту версий','В WordPress откройте «Инструменты → Здоровье сайта → Информация». Зафиксируйте PHP, ядро, активную и дочернюю темы, плагины и важный ручной код. Если cron или WP-CLI запускают отдельным интерпретатором, проверьте его версию отдельно. Сверьте поддержку целевой версии с таблицей для вашей версии ядра и требованиями расширений: совместимость WordPress не доказывает совместимость старой темы или модуля оплаты.'],
+      ['Проверьте, что сможете восстановиться','Сохраните файлы и базу, разверните копию и проверьте вход в админку и несколько ключевых страниц. Узнайте у хостинга, доступна ли прежняя версия на время работ. Возврат версии PHP обратим отдельно; если обновление плагина изменило базу, переключение интерпретатора этих изменений не отменит.'],
+      ['На копии меняйте по одному слою','Изолируйте стенд от реальных клиентов: отключите боевые письма, оплаты и автоматические выгрузки или переведите их в тестовый режим. Разделите смену PHP, обновление ядра и расширений на отдельные шаги с промежуточной проверкой. Если возникла ошибка, сопоставьте её время и первый относящийся к сбою путь в серверном журнале. Не выводите ошибки PHP посетителям.'],
+      ['Проверяйте действия, а не только главную','Откройте редактор и сохраните тестовый черновик, проверьте страницу с шорткодом или формой. Для магазина пройдите вариативный товар, корзину и согласованный тестовый заказ. Если есть импорт, расчёт доставки или фоновая задача, проверяйте их отдельно. Страница может отдавать HTTP 200, даже если сохранение, заявка или покупка не работают.'],
+      ['Перед выпуском согласуйте критерии отката','Выберите окно работ и перечислите стоп-сигналы: критическая ошибка, недоступная админка, невозможность оформить заказ. Для действующего магазина отдельно решите, что будет с новыми заказами и заявками при восстановлении базы: нельзя просто заменить её старой копией. После выпуска повторите ключевые проверки без авторизации, в админке и в журнале.'],
+      ['Если переключение уже уронило сайт','Зафиксируйте время и ошибку, затем восстановите доступ возвратом версии PHP, если именно её меняли и хостинг ещё позволяет откат. Это временная мера, не итоговое решение. Перенесите диагностику на копию и не перезаписывайте рабочую базу, пока не ясно, были ли после снимка новые заказы и заявки.'],
+    ],
+    examples:[
+      ['Goodwin Shop: переход на PHP 8.3 после неудачной попытки и отката',cases[0]],
+      ['RT-Theme 19: исправил тему и связанное расширение, сохранив дизайн',cases[1]],
+      ['Taj Bazar: обновил PHP и плагины магазина без замены темы',cases[2]],
+    ],
+    sources:['WordPress.org: подготовка к обновлению PHP','WordPress Core: совместимость версий WordPress и PHP','PHP.net: сроки поддержки веток PHP'],
+    call:'Пришлите адрес сайта, версию PHP и список действий, которые должны работать после обновления. По этим данным предложу, что проверить на копии и как принять работу. Пароли и выгрузка базы для первой оценки не нужны.',
+  },
+  en:{
+    title:'How to update PHP on WordPress without breaking the site',
+    summary:'A PHP upgrade checklist for WordPress and WooCommerce: theme and plugin compatibility, staging, checkout tests and a rollback that protects live data.',
+    intro:'Your host is retiring an older PHP release, but the site depends on an established theme and a few essential plugins. A redesign or a one-shot update is not always necessary. Find the parts that need work and test the change on a copy first.',
+    context:'Is your host retiring a PHP version, or did the update already break the site?',
+    action:'Discuss your WordPress PHP upgrade',
+    email:'Describe the site and constraints',
+    serviceLabel:'WordPress, PHP and plugin update services',
+    enquiry:['Current and intended PHP versions, host notice or redacted error line','Essential workflows: forms, Elementor, checkout, shipping, payments, imports or scheduled tasks'],
+    steps:[
+      ['Inventory the versions that matter','Go to Tools → Site Health → Info. Record PHP, WordPress core, the active and child themes, plugins and any essential custom code. If cron or WP-CLI uses another PHP binary, note that version too. Check the core compatibility matrix and extension requirements separately. A supported WordPress release does not guarantee that an old theme or gateway will run.'],
+      ['Prove you can recover','Keep a copy of the files and database, restore them to staging, then verify admin access and representative pages. Ask your host whether the old PHP release can be restored during the change window. Switching PHP back does not undo a database migration performed by a plugin update.'],
+      ['Change one layer at a time on staging','Prevent staging from sending live emails, payments or scheduled exports, or switch those services to sandbox mode. Separate runtime, core and extension changes and check the site between steps. If something breaks, correlate the time with the first relevant file path in server logs rather than exposing PHP errors to visitors.'],
+      ['Test actions, not just the homepage','Save a draft in the editor and test a page with a shortcode or form. On a store, check a variable product, cart and an agreed test order. Treat imports, shipping quotes and background jobs as separate checks. An HTTP 200 response does not prove that a form, editor or checkout works.'],
+      ['Agree on rollback triggers before release','Choose a change window and define what should halt the release: a fatal error, inaccessible admin or broken checkout. Decide how to protect new orders and enquiries if a database restore becomes necessary; do not overwrite a live database with an old snapshot without reconciling changes. Repeat key public and admin checks after release and review the logs.'],
+      ['Recover first if the switch already broke the site','Record the time and error. If only PHP changed and the host still offers the old version, switching back can restore access temporarily. Diagnose on a copy before trying again, and do not replace the live database until new orders and enquiries since the snapshot have been accounted for.'],
+    ],
+    examples:[
+      ['Goodwin Shop: moved to PHP 8.3 after a failed attempt and rollback',cases[0]],
+      ['RT-Theme 19: repaired the theme and its extension without a redesign',cases[1]],
+      ['Taj Bazar: upgraded PHP and plugins without changing the storefront theme',cases[2]],
+    ],
+    sources:['WordPress.org: prepare for a PHP update','WordPress Core: PHP compatibility by WordPress version','PHP.net: supported release branches'],
+    call:'Send the site URL, PHP version and the actions that must work after the update. I can propose a staging and acceptance plan without passwords or a database export upfront.',
+  },
+};

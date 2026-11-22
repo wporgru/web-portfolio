@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {setTimeout as delay} from 'node:timers/promises';
 
 const site = new URL('https://wporgru.github.io/web-portfolio/');
-const samples = ['', 'en/', 'showcase/', 'showcase/en/', 'services/', 'services/en/'];
+const samples = ['', 'en/', 'showcase/', 'showcase/en/', 'services/', 'services/en/', 'guides/', 'guides/en/'];
 const args = process.argv.slice(2);
 assert.ok(!args.length || (args.length === 1 && args[0] === '--all'), 'Usage: node src/scripts/check-live-discovery.mjs [--all]');
 const fullCrawl = args.length === 1;

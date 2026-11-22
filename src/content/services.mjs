@@ -1,7 +1,7 @@
 export const services = [
   {
     slug:'wordpress-php-plugin-updates',
-    cases:['tajbazar-store-upgrade','legacy-php-compatibility','legacy-wordpress-lead-form','php8-layout-repair','woodmart-theme-rebuild','klimat-profi-backup-automation'],
+    cases:['tajbazar-store-upgrade','goodwin-php','legacy-php-compatibility','legacy-wordpress-lead-form','php8-layout-repair','woodmart-theme-rebuild','klimat-profi-backup-automation'],
     ru:[
       'Обновление WordPress, PHP и плагинов на рабочем сайте',
       'Подготовлю обновление WordPress или WooCommerce: проверю совместимость, разберу устаревшие расширения и проверю сайт после перехода. Тему не меняю, если для обновления достаточно другой правки.',
