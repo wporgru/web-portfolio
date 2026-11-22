@@ -7211,3 +7211,28 @@ projects:
         url: /showcase/dme-tech-payment-buttons-mobile/
         type: product
     featured: false
+  - slug: wavesnwind-woodmart-product-recovery
+    name: "Waves & Wind: восстановление карточек товаров WoodMart"
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Категория фонарей открывалась, но при переходе в отдельные карточки
+      загрузка зависала. Покупатель мог увидеть ассортимент, но не всегда мог
+      открыть характеристики выбранной модели. Нужно было вернуть переходы, а не
+      пересобирать магазин.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Product templates
+    order: 384
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/wavesnwind-woodmart-product-recovery/product-viewport-20261122.png
+        alt: Карточка фонаря Annsna AS-101 на сайте Waves & Wind
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/wavesnwind-woodmart-product-recovery/
+        type: product
+    featured: false

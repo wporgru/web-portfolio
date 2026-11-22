@@ -181,11 +181,13 @@ export const serviceDetails = {
         ['Можно восстановить сайт без полного отката?', 'Иногда достаточно исправить один конфликт, вернуть настройки компонента или восстановить отдельные данные. Полный откат рассматриваю, когда точечное восстановление ненадёжно или занимает больше времени.'],
         ['Что делать, если не открывается wp-admin?', 'Для диагностики может понадобиться доступ к панели хостинга, файлам или базе. По тексту ошибки и журналам определю, какой доступ нужен и можно ли сначала проверить копию сайта.'],
         ['Потеряются ли заказы WooCommerce при восстановлении?', 'При откате всей базы новые заказы действительно могут пропасть. До отката сверю дату копии с заказами и согласую способ их сохранения. Если можно восстановить только проблемную часть, сначала оценю этот вариант.'],
+        ['Каталог WooCommerce открывается, а отдельные товары зависают. Что прислать?', 'Дайте ссылки на одну рабочую и одну проблемную карточку из той же категории. Сравню тип товара, шаблон и ответ сервера. Затем повторю переход без входа в админку: открывающаяся категория сама по себе не подтверждает работу карточек.'],
       ],
       en: [
         ['Can you recover the site without a full rollback?', 'A single conflict fix, settings repair or partial data restore may be enough. I consider a full rollback when targeted recovery is unreliable or would take longer.'],
         ['What if wp-admin does not open?', 'Diagnosis may require hosting panel, filesystem or database access. The error and logs help determine which access is needed and whether testing on a copy is possible first.'],
         ['Will recovery remove recent WooCommerce orders?', 'A full database rollback can remove recent orders. Before rolling back, I compare the backup timestamp with order history and agree on how to preserve newer orders. If only the affected data can be restored, I assess that option first.'],
+        ['The WooCommerce catalog loads, but some products hang. What should I send?', 'Send one working product and one failing product from the same category. I will compare product types, templates and server responses, then retry while signed out. A working category does not prove its product pages work.'],
       ],
     },
   },

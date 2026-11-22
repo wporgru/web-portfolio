@@ -7164,3 +7164,28 @@ projects:
         url: /showcase/dme-tech-payment-buttons-mobile/en/
         type: product
     featured: false
+  - slug: wavesnwind-woodmart-product-recovery
+    name: "Waves & Wind: restoring WoodMart product pages"
+    year: "02.2026"
+    role: Web development and automation
+    description: The flashlight category loaded, but some product pages hung when
+      opened. Shoppers could see the assortment but could not always reach the
+      selected model's details. The goal was to restore those pages without
+      rebuilding the store.
+    stack:
+      - WordPress
+      - WooCommerce
+      - WoodMart
+      - Product templates
+    order: 384
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/wavesnwind-woodmart-product-recovery/product-viewport-20261122.png
+        alt: Annsna AS-101 flashlight product page on Waves & Wind
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/wavesnwind-woodmart-product-recovery/en/
+        type: product
+    featured: false

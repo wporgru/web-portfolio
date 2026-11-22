@@ -1,0 +1,39 @@
+title: "Waves & Wind: restoring WoodMart product pages"
+tagline: The flashlight category loaded, but some product pages hung when
+  opened. Shoppers could see the assortment but could not always reach the
+  selected model's details. The goal was to restore those pages without
+  rebuilding the store.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - WoodMart
+  - Product templates
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The flashlight category loaded, but some product pages hung when opened.
+      Shoppers could see the assortment but could not always reach the selected
+      model's details. The goal was to restore those pages without rebuilding
+      the store.
+  - type: text
+    title: How it works
+    body: I reviewed the update state and reported the fix. For acceptance, the
+      client retried the product links and confirmed that the pages opened. The
+      archive does not identify the precise patch, so it does not support claims
+      of a theme replacement, database cleanup or removal of a particular
+      plugin.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and reported faster page loading; no
+      comparable timings remain. A separate check on November 22, 2026 found
+      HTTP 200 without redirects for the category and three linked products,
+      with their own headings and canonicals. That is a current sample, not a
+      retest of the original SKUs or verification of cart and checkout.
+  - type: image
+    src: /media/projects/wavesnwind-woodmart-product-recovery/product-viewport-20261122.png
+    alt: Annsna AS-101 flashlight product page on Waves & Wind
+    caption: Browser viewport captured November 22, 2026 at 1280 × 900. This is a
+      sample product in the current storefront, not a handover screenshot or
+      purchase test.
