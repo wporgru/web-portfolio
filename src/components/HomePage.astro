@@ -37,6 +37,23 @@ const skillExamples = [
   ['artred-woocommerce-migration-readiness', 'Подготовка переноса магазина с проверками и планом отката', 'Store cutover preparation with checks and rollback'],
 ] as const;
 const projectHref = (slug: string) => `${base}/showcase/${slug}${ru?'/':'/en/'}`;
+const customerNotes = [
+  {
+    slug:'78-dosok',
+    project:ru?'«78 Досок» · комплексный редизайн магазина':'78 Dosok · full store redesign',
+    quote:ru?'Полный редизайн, исправление всего что можно и нельзя.':'A complete redesign and fixes for just about everything.',
+  },
+  {
+    slug:'stalex-feed',
+    project:ru?'STALEX · импорт и обновление каталога':'STALEX · catalog import and updates',
+    quote:ru?'Помог с загрузкой 700+ товаров на WordPress через сложный нестандартный фид поставщика':'Helped upload 700+ products to WordPress from a complex, nonstandard supplier feed.',
+  },
+  {
+    slug:'tara-bergman',
+    project:ru?'Tara Bergman · перенос сайта фотографа':'Tara Bergman · photography site migration',
+    quote:ru?'Исполнитель внимателен и пунктуален. Постоянно на связи, быстро реагирует на просьбы.':'The developer is attentive and punctual. Always in touch and quick to respond to requests.',
+  },
+];
 const commerceTags = ['YooKassa','CDEK','SafeRoute','Shiptor',ru?'YML для Яндекс Маркета':'Yandex Market YML feeds',ru?'Платёжные сценарии':'Payment flows',ru?'Фильтры каталога':'Catalog filters',ru?'Поиск по артикулу':'SKU search',ru?'Приоритеты фидов поставщиков':'Supplier feed precedence',ru?'Глобальные атрибуты':'Global product attributes',ru?'Вариативные товары':'Product variations',ru?'Проверка остатков из 1С':'1C stock validation',ru?'Товарные фиды':'Product feeds',ru?'Партнёрские витрины':'Affiliate storefronts'];
 const seoTags = ['Rank Math','Yoast SEO','Screaming Frog','GA4','Google Trends',ru?'Аудит метаданных':'Metadata audits',ru?'Региональные поддомены':'Regional subdomains','WordPress Multisite',ru?'Сверка URL при миграции':'URL verification during migrations',ru?'Цели покупки в Яндекс Метрике':'Yandex Metrica purchase goals',ru?'Атрибуция партнёрских переходов':'Affiliate click attribution',ru?'Сопоставление заказов по SubID':'SubID order reconciliation'];
 const performanceTags = ['PageSpeed Insights','LCP','Critical CSS',ru?'Оптимизация первого экрана':'Above-the-fold optimization',ru?'Проверка кэша без авторизации':'Logged-out cache testing'];
@@ -105,6 +122,17 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
           <li><a href={base+'/showcase/megawatt-service-template-migration/'+(ru?'':'en/')}><strong>{ru?'«Мегаватт»: 136 страниц услуг на новом шаблоне':'Megawatt: 136 service pages on a new template'}</strong></a> — {ru?'на тестовой копии проверил все страницы; у 135 из 136 сохранились адреса.':'verified every page on staging; 135 of 136 kept their URLs.'}</li>
         </ul>
       </article>
+
+      <section class="card" aria-labelledby="client-feedback-title">
+        <h2 class="h2" id="client-feedback-title">{ru?'Что заказчики отметили после сдачи':'What clients said after delivery'}</h2>
+        <p class="muted">{ru?'Короткие фрагменты отзывов на Kwork. В кейсах — задачи, ход работ и подтверждённые результаты.':'Short excerpts from Kwork reviews, translated from Russian. The case studies describe the briefs, work and verified outcomes.'}</p>
+        <ul class="list">
+          {customerNotes.map(({slug,project,quote})=><li data-client-note={slug}>
+            <a href={projectHref(slug)}><strong>{project}</strong></a> — <q>{quote}</q>
+          </li>)}
+        </ul>
+        <p><a href="https://kwork.ru/user/wporgru">{ru?'Открыть профиль и отзывы на Kwork':'View the Kwork profile and reviews'}</a></p>
+      </section>
 
       <section class="section section--experience">
         <h2 class="h2">{ru ? 'Профессиональный опыт в веб-разработке' : 'Professional web development experience'}</h2>
