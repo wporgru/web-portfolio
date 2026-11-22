@@ -166,6 +166,21 @@ for (const lang of ['ru','en']) {
   }
   console.log(lang+': '+depth.size+' pages reachable by HTML links; maximum depth '+Math.max(...depth.values())+'.');
 }
+for (const suffix of ['', 'en/']) {
+  const directory=`guides/${suffix}`;
+  const html=read(path.join(root,directory,'index.html'));
+  const entries=[...html.matchAll(/<a\s+data-guide-entry\s+href="([^"]+)"/g)].map(match=>match[1]);
+  if (!sitemap.has(new URL(directory,profileUrl).href) ||
+      entries.length!==guides.length || new Set(entries).size!==guides.length ||
+      guides.some(item=>!entries.includes(`${base}guides/${item.slug}/${suffix}`))) {
+    fail(directory,'guide directory must list every localized guide exactly once');
+  }
+  for (const source of [suffix,`services/${suffix}`]) {
+    if (!read(path.join(root,source,'index.html')).includes(`href="${base}${directory}"`)) {
+      fail(directory,'missing navigation from '+(source||'homepage'));
+    }
+  }
+}
 for (const item of guides) for (const suffix of ['', 'en/']) {
   const route=`guides/${item.slug}/${suffix}`;
   const html=read(path.join(root,route,'index.html'));
@@ -174,6 +189,7 @@ for (const item of guides) for (const suffix of ['', 'en/']) {
     kind:'guide',serviceSlug:item.primaryService,customPrompts:item[lang].enquiry});
   telegramDrafts(html,enquiry.telegramHref,1,route);
   if (!sitemap.has(new URL(route,profileUrl).href) ||
+      !html.includes(`href="${base}guides/${suffix}"`) ||
       !html.includes(`href="${base}services/${item.primaryService}/${suffix}"`)) fail(route,'missing sitemap entry or primary service');
   for (const slug of item.services) {
     const servicePath=`services/${slug}/${suffix}`;

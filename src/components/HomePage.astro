@@ -183,6 +183,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
         <ul class="list">
           {guides.map(guide=><li><a href={base+'/guides/'+guide.slug+(ru?'/':'/en/')}>{guide[ru?'ru':'en'].title}</a></li>)}
         </ul>
+        <a class="btn btn--ghost" href={base+'/guides'+(ru?'/':'/en/')}>{ru?'Все руководства по темам':'Browse guides by topic'}</a>
       </section>
 
       <section class="card cv-extra" id="project-brief" aria-labelledby="project-brief-title">

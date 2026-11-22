@@ -1,0 +1,87 @@
+---
+import Layout from './Layout.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import { guides } from '../content/guides.mjs';
+
+const {lang} = Astro.props;
+const ru = lang === 'ru';
+const locale = ru ? 'ru' : 'en';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const suffix = ru ? '/' : '/en/';
+const title = ru ? 'Практические руководства по WordPress и WooCommerce' : 'Practical WordPress and WooCommerce guides';
+const description = ru
+  ? 'Что проверить при переезде, смене темы и сбоях каталога WooCommerce. Пошаговые инструкции, примеры проектов и признаки, по которым можно принять работу.'
+  : 'What to check when moving a site, changing themes or fixing a WooCommerce catalog. Step-by-step checks, project examples and ways to verify the work.';
+const groups = [
+  {
+    id: 'site-changes',
+    ru: ['Переезд, редизайн и видимость в поиске', 'Что сохранить при изменениях и как проверить сайт после запуска.'],
+    en: ['Migration, redesign and search visibility', 'What to preserve during a change and what to verify after launch.'],
+    slugs: ['woocommerce-migration', 'woocommerce-theme-change', 'seo-after-site-migration'],
+  },
+  {
+    id: 'catalog',
+    ru: ['Товары, цены, фильтры и фиды', 'Как определить, где произошёл сбой: в исходных данных, настройках каталога или обработке импорта.'],
+    en: ['Products, prices, filters and feeds', 'How to narrow down a failure to source data, catalog settings or import processing.'],
+    slugs: ['woocommerce-product-filters', 'woocommerce-price-list-update', 'woocommerce-import-timeout', 'yml-feed-troubleshooting'],
+  },
+  {
+    id: 'b2b',
+    ru: ['Заказы и заявки в B2B-каталоге', 'Как выбрать сценарий заказа, если конечную цену или наличие нужно согласовать с менеджером.'],
+    en: ['Orders and quotes in B2B catalogs', 'How to choose the ordering flow when a manager needs to confirm prices or stock.'],
+    slugs: ['b2b-catalog-quote-or-checkout'],
+  },
+];
+const bySlug = new Map(guides.map(guide=>[guide.slug,guide]));
+const assigned = groups.flatMap(group=>group.slugs);
+if (assigned.length !== guides.length || new Set(assigned).size !== guides.length ||
+    assigned.some(slug=>!bySlug.has(slug))) throw Error('Guide groups must cover every guide exactly once');
+const breadcrumbs = [{name:ru?'Главная':'Home',href:base+suffix},{name:ru?'Руководства':'Guides'}];
+const alternates = ['ru','en'].map(id=>({id,label:id.toUpperCase(),href:base+'/guides'+(id==='ru'?'/':'/en/'),active:id===locale}));
+---
+<Layout title={title} description={description} lang={lang} section="guides" customLangLinks={alternates} breadcrumbs={breadcrumbs}>
+  <div class="container stack guide-index">
+    <Breadcrumbs items={breadcrumbs} lang={lang}/>
+    <header class="card hero">
+      <h1 class="hero__name">{title}</h1>
+      <p class="hero__summary">{ru
+        ? 'Выберите задачу. В каждом руководстве — с чего начать проверку, как понять, что проблема решена, и примеры похожих работ.'
+        : 'Choose a task. Each guide covers where to start, how to tell whether the issue is fixed, and what similar projects looked like.'}</p>
+      <nav aria-label={ru?'Темы руководств':'Guide topics'}>
+        <ul class="tags">{groups.map(group=><li><a class="pill" href={'#'+group.id}>{group[locale][0]}</a></li>)}</ul>
+      </nav>
+    </header>
+    {groups.map(group=><section class="stack guide-group" id={group.id} aria-labelledby={group.id+'-heading'}>
+      <div>
+        <h2 class="h2" id={group.id+'-heading'}>{group[locale][0]}</h2>
+        <p class="muted">{group[locale][1]}</p>
+      </div>
+      <div class="grid">
+        {group.slugs.map(slug=>{
+          const copy = bySlug.get(slug)![locale];
+          return <article class="card">
+            <h3 class="h2"><a data-guide-entry href={base+'/guides/'+slug+suffix}>{copy.title}</a></h3>
+            <p>{copy.summary}</p>
+          </article>;
+        })}
+      </div>
+    </section>)}
+    <section class="card">
+      <h2 class="h2">{ru?'Нужна помощь с вашим сайтом?':'Need help with your site?'}</h2>
+      <p>{ru
+        ? 'Пришлите адрес сайта и опишите, что не работает или что нужно сохранить при обновлении. Предложу, с какой проверки начать и какой результат можно согласовать заранее.'
+        : 'Send the site URL and describe what is broken or what needs to stay intact during the update. I will suggest the first check and an outcome we can agree on upfront.'}</p>
+      <div class="btnrow">
+        <a class="btn" href={base+suffix+'#project-brief'}>{ru?'Подготовить заявку':'Prepare a project brief'}</a>
+        <a class="btn btn--ghost" href={base+'/services'+suffix}>{ru?'Посмотреть услуги':'Browse services'}</a>
+      </div>
+    </section>
+  </div>
+</Layout>
+<style>
+.guide-index{padding-block:1rem 2rem}
+.guide-index .tags{margin-block:.9rem 0}
+.guide-group{scroll-margin-top:8rem}
+.guide-group p{margin:.35rem 0 0}
+.guide-group h3 a{text-decoration:underline;text-underline-offset:.18em}
+</style>
