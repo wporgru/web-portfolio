@@ -49,7 +49,7 @@ const roleLinks = c.roles.map(([label],i)=>({label,href:'#role-'+(i+1)}));
 const roleServices = ['website-redesign','catalog-automation','data-and-ai','technical-seo'].map(slug=>services.find(service=>service.slug===slug)!);
 const roleServiceSlugs = new Set(roleServices.map(service=>service.slug));
 const extraServices = services.filter(service=>!roleServiceSlugs.has(service.slug));
-const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:c.h1,email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
+const person = {name:ru?'Олег Тишин':'Oleg Tishin',jobTitle:ru?'Разработчик WordPress и WooCommerce':'WordPress and WooCommerce developer',email:'zakaz@wp.org.ru',sameAs:contacts.filter(x=>x.url.startsWith('https')).map(x=>x.url)};
 const workSteps = ru ? [
   ['Сначала выясняю, где ломается сценарий', 'Проверяю сайт глазами посетителя: находит ли он товар, открывается ли форма, читается ли страница на телефоне. Отделяю ошибки, которые мешают заявке, от правок оформления.', 'solomon-responsive-conversion-audit', 'Как проверял кнопки и мобильную вёрстку'],
   ['Согласую, что меняем и что сохраняем', 'Для редизайна это могут быть адреса, данные каталога и оформление заказа. Для импорта — ключи товаров, поля, которые нельзя перезаписывать, и правила для отсутствующих позиций. Если есть риск потерять данные, выделяю тестовую копию и план отката.', 'artred-woocommerce-migration-readiness', 'Как готовил перенос каталога и статей'],
@@ -74,12 +74,12 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
       <article class="card hero">
         <div class="hero__top">
           <div>
-            <h1 class="hero__name">{person.name} — {ru ? 'веб-разработчик' : 'web developer'}</h1>
-            <p class="hero__title">{ru ? 'Full-stack · E-commerce · Автоматизация и ИИ' : 'Full-stack · E-commerce · Automation and AI'}</p>
-            <p class="hero__summary">{c.description} {ru ? 'Более 15 лет в веб-разработке.' : 'Over 15 years in web development.'}</p>
+            <h1 class="hero__name">{c.h1}</h1>
+            <p class="hero__title">{ru ? '15+ лет в веб-разработке · Техническое SEO · Автоматизация' : '15+ years in web development · Technical SEO · Automation'}</p>
+            <p class="hero__summary">{c.lead}</p>
             <div class="btnrow">
               <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить проект':'Discuss a project'}</a>
-              <a class="btn btn--ghost" href={base+'/services'+(ru?'/':'/en/')}>{ru?'Выбрать услугу':'Explore services'}</a>
+              <a class="btn btn--ghost" href={base+'/services'+(ru?'/':'/en/')}>{ru?'Услуги и примеры работ':'Services and case studies'}</a>
               <a class="btn btn--ghost" href="#project-brief">{ru?'Что прислать для оценки':'What to send for an estimate'}</a>
             </div>
           </div>
@@ -95,7 +95,7 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
         <ul class="list">
           <li><a href={catalog}><strong>{projects.length} {ru?'кейсов в портфолио':'portfolio case studies'}</strong></a> — {ru?'с задачами, решениями и результатами на русском и английском.':'with briefs, solutions and outcomes in Russian and English.'}</li>
           <li>{ru ? '582 выполненных заказа в собранном архиве Kwork; 371 отзыв сохранён со скриншотом.' : '582 completed orders in the collected Kwork archive; 371 reviews archived with screenshots.'}</li>
-          {c.results.map(([title,body])=><li><strong>{title}.</strong> {body}</li>)}
+          {c.results.map(([title,body,slug])=><li><a href={projectHref(slug)}><strong>{title}</strong></a> — {body}</li>)}
           <li><a href={base+'/showcase/arenda-pm-home-performance/'+(ru?'':'en/')}><strong>PageSpeed 72 → 96</strong></a> — {ru?'мобильная главная Аренда-ПМ: LCP 6,8 → 2,7 с в лабораторных замерах.':'Arenda-PM mobile homepage: LCP 6.8 → 2.7 s in lab measurements.'}</li>
           <li><a href={base+'/showcase/arenda-pm-catalog-indexability/'+(ru?'':'en/')}><strong>{ru?'Аренда-ПМ: 14 карточек открыты для индексации':'Arenda-PM: 14 listings made indexable'}</strong></a> — {ru?'сверил 83 адреса карты сайта и убрал подмены метаданных в теме.':'verified 83 sitemap URLs and removed theme metadata overrides.'}</li>
           <li><a href={base+'/showcase/bgtgroup-technical-seo-performance/'+(ru?'':'en/')}><strong>BGT Group: PageSpeed 37 → 86</strong></a> — {ru?'мобильный лабораторный замер; на компьютере 63 → 92.':'mobile lab measurement; desktop 63 → 92.'}</li>
