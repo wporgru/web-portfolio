@@ -286,6 +286,16 @@ export const serviceDetails = {
   'hosting-migration': {
     ru: ['Нужно сменить хостинг, не потеряв работающие функции', 'Переезд — не только копирование файлов. Отдельно проверю базу, сертификат, настройки домена и почты. Для магазина согласуем окно переключения, чтобы понимать, что делать с заказами, пришедшими в этот период.', 'Порядок переключения, контрольные страницы и сценарии, план отката. После переезда будет ясно, что проверено на новом хостинге и какие настройки остаются у регистратора или почтового провайдера.'],
     en: ['The site needs a new host without losing working features', 'A move is more than copying files. Check the database, certificate, domain and email settings separately. Agree on a cutover window for stores and how to handle orders placed during it.', 'A cutover sequence, verification checklist and rollback plan. Know what was tested on the new host and which settings remain with the registrar or email provider.'],
+    questions:{
+      ru:[
+        ['Хостинг уже скопировал файлы. Можно подключиться только после переноса?', 'Да. Уточним, что именно перенесено. Проверю адрес WordPress, вход в админку, страницы и медиа. Если вместе с хостингом менялся домен, отдельно отмечу старые ссылки и проверю, куда ведут важные адреса.'],
+        ['Можно восстановить сайт только из архива?', 'Начну с проверки комплекта: файлы, база и сведения о прежней среде. Если чего-то не хватает, перечислю ограничения до выпуска. Возможность открыть главную не доказывает, что сохранены формы, оплаты и последние заказы.'],
+      ],
+      en:[
+        ['The host already copied the files. Can you help after the move?', 'Yes. I will confirm what was copied and check the WordPress address, admin access, pages and media. If the domain changed too, I will flag old links and verify where key URLs lead.'],
+        ['Can the site be restored from an archive alone?', 'Start by checking the files, database and information about the old environment. I will document missing pieces before release. A working homepage does not prove that forms, payments or recent orders survived.'],
+      ],
+    },
   },
   'checkout-payments': {
     ru: ['Покупатель оплатил, а магазин не видит заказ', 'Проверю, где расходится сценарий: в форме, на стороне платёжного сервиса, при обновлении статуса или при отправке письма. Ошибка на одном шаге не означает, что нужно менять весь чекаут.', 'Воспроизводимый контрольный сценарий и результат по каждому шагу. Отдельно отмечу, что проверено в тестовой среде, а что — в согласованном рабочем сценарии.'],

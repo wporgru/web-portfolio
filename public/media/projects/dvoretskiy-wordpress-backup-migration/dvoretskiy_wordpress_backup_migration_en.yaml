@@ -1,0 +1,34 @@
+title: "Dvoretskiy: moving a construction site from a WordPress backup"
+tagline: "The construction site needed a backup restored and WooCommerce set up.
+  This was a separate stage from the original build: the deliverable was a
+  working address on the new host, not another design."
+year: "01.2018"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Database restore
+  - Hosting migration
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The construction site needed a backup restored and WooCommerce set up.
+      This was a separate stage from the original build: the deliverable was a
+      working address on the new host, not another design."
+  - type: text
+    title: How it works
+    body: Restored the site files, imported the dump into the prepared destination
+      database and connected WordPress to it. The handoff recorded the
+      WooCommerce setup stage and gave the customer the destination URL to
+      check.
+  - type: text
+    title: Result and verification
+    body: The client accepted delivery after receiving the destination URL. The
+      record confirms the move and acceptance, not a full test of the catalog,
+      forms or payments. The current design and calculator are not part of this
+      engagement.
+  - type: text
+    title: Related project
+    links:
+      - label: "Related engagement: building the Dvoretskiy construction site"
+        url: /showcase/dvoretskiy-construction-wordpress/en/

@@ -7263,3 +7263,41 @@ projects:
         url: /showcase/modx-messenger-widget-handoff/en/
         type: product
     featured: false
+  - slug: dvoretskiy-wordpress-backup-migration
+    name: "Dvoretskiy: moving a construction site from a WordPress backup"
+    year: "01.2018"
+    role: Web development and automation
+    description: "The construction site needed a backup restored and WooCommerce set
+      up. This was a separate stage from the original build: the deliverable was a
+      working address on the new host, not another design."
+    stack:
+      - WordPress
+      - WooCommerce
+      - Database restore
+      - Hosting migration
+    order: 389
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dvoretskiy-wordpress-backup-migration/en/
+        type: product
+    featured: false
+  - slug: forsage-wordpress-domain-handoff
+    name: "Forsage: moving a ready-made WordPress site to a new domain"
+    year: "08.2023"
+    role: Web development and automation
+    description: The auto repair business needed a ready-made site it could host and
+      edit itself. After migration, the old address remained in the database. The
+      client needed access to the installed copy rather than a redesign.
+    stack:
+      - WordPress
+      - Elementor
+      - Hosting handoff
+      - Site URLs
+    order: 390
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/forsage-wordpress-domain-handoff/en/
+        type: product
+    featured: false

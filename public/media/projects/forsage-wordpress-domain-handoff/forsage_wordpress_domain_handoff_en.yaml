@@ -1,0 +1,28 @@
+title: "Forsage: moving a ready-made WordPress site to a new domain"
+tagline: The auto repair business needed a ready-made site it could host and
+  edit itself. After migration, the old address remained in the database. The
+  client needed access to the installed copy rather than a redesign.
+year: "08.2023"
+role: Web development and automation
+stack:
+  - WordPress
+  - Elementor
+  - Hosting handoff
+  - Site URLs
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The auto repair business needed a ready-made site it could host and edit
+      itself. After migration, the old address remained in the database. The
+      client needed access to the installed copy rather than a redesign.
+  - type: text
+    title: How it works
+    body: Handed over the archive, database and installation instructions. The host
+      handled the file migration; afterward I helped correct the WordPress
+      address and restore login access. I explained where to edit Elementor
+      pages, footer widgets and header settings.
+  - type: text
+    title: Result and verification
+    body: The client accepted the handoff and migration assistance. The work
+      delivered the package and post-migration support, not a custom design or
+      verified enquiry delivery from the new domain.

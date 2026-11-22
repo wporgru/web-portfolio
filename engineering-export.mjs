@@ -43,6 +43,7 @@ const additionalCaseImages = {
   ],
 };
 const projectStages = {
+  'dvoretskiy-wordpress-backup-migration': ['dvoretskiy-construction-wordpress', 'Связанный заказ: разработка строительного сайта «Дворецкий»', 'Related engagement: building the Dvoretskiy construction site'],
   'dme-tech-download-store-preparation': ['dme-tech-yandex-checkout-downloads', 'Следующий этап: оплата и письмо со скачиванием', 'Next stage: payments and the download email'],
   'dme-tech-yandex-checkout-downloads': ['dme-tech-payment-buttons-mobile', 'Следующий этап: платёжные кнопки и мобильная витрина', 'Next stage: payment buttons and mobile storefront'],
   'dme-tech-payment-buttons-mobile': ['dme-tech-download-store-preparation', 'Первый этап: HTTPS и подготовка оформления заказа', 'First stage: HTTPS and checkout preparation'],
@@ -144,7 +145,7 @@ export function addEngineeringCases(projects,root,{catalogSlugs,slugs,verifyNew}
       const stage = projectStages[slug];
       if (stage) {
         blocks.push({
-          type:'text', title:slug.startsWith('bgtgroup-') || slug==='smd-wix-wordpress-service-site' ? (ru?'Связанный проект':'Related project') : (ru?'Другой этап этого проекта':'Another stage of this project'),
+          type:'text', title:slug.startsWith('bgtgroup-') || ['dvoretskiy-wordpress-backup-migration','smd-wix-wordpress-service-site'].includes(slug) ? (ru?'Связанный проект':'Related project') : (ru?'Другой этап этого проекта':'Another stage of this project'),
           links:[{label:stage[ru?1:2],url:'/showcase/'+stage[0]+(ru?'/':'/en/')}],
         });
       }

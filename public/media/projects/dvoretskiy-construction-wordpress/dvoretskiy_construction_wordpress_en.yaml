@@ -25,3 +25,10 @@ blocks:
       was accepted with positive feedback. A final mobile cropping request
       remained unresolved and the client removed a nonworking project selector.
       This was neither a Bitrix migration nor a claim of an exact copy.
+  - type: text
+    title: Related migration engagement
+    body: I restored a construction site from backup in a separate engagement.
+      The recovery and WooCommerce setup are documented separately from the build.
+    links:
+      - label: "Dvoretskiy: restoring WordPress files and database from backup"
+        url: /showcase/dvoretskiy-wordpress-backup-migration/en/

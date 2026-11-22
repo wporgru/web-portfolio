@@ -7312,3 +7312,42 @@ projects:
         url: /showcase/modx-messenger-widget-handoff/
         type: product
     featured: false
+  - slug: dvoretskiy-wordpress-backup-migration
+    name: "«Дворецкий»: перенос строительного сайта из резервной копии"
+    year: "01.2018"
+    role: Веб-разработка и автоматизация
+    description: "Для строительного сайта нужно было развернуть резервную копию и
+      настроить WooCommerce. Это отдельный этап после разработки: важен рабочий
+      адрес на новом хостинге, а не очередной макет сайта."
+    stack:
+      - WordPress
+      - WooCommerce
+      - Database restore
+      - Hosting migration
+    order: 389
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dvoretskiy-wordpress-backup-migration/
+        type: product
+    featured: false
+  - slug: forsage-wordpress-domain-handoff
+    name: "«Форсаж»: запуск готового WordPress-сайта на домене клиента"
+    year: "08.2023"
+    role: Веб-разработка и автоматизация
+    description: "Автосервису требовался готовый сайт, который можно забрать на свой
+      хостинг и редактировать самостоятельно. После переноса мешал прежний адрес в
+      базе: клиенту нужно было получить доступ к установленной копии, а не делать
+      новый дизайн."
+    stack:
+      - WordPress
+      - Elementor
+      - Hosting handoff
+      - Site URLs
+    order: 390
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/forsage-wordpress-domain-handoff/
+        type: product
+    featured: false
