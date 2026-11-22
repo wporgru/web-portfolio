@@ -1,4 +1,28 @@
 export const serviceDetails = {
+  'woocommerce-digital-downloads': {
+    ru:[
+      'Покупатель оплатил, но не получил файл',
+      'Проверю по отдельности уведомление от платёжной системы, статус заказа, разрешение на скачивание и доставку письма. Письмо может не прийти даже при выданном доступе, а красивая страница «Спасибо» не заменяет подтверждение оплаты.',
+      'На выходе — настроенный сценарий на контрольном товаре, правила доступа, инструкция по добавлению и замене файлов и список проверенных состояний. Если покупателю надо вернуть доступ после сбоя, покажу этот сценарий менеджеру.',
+    ],
+    en:[
+      'The buyer paid but did not receive the file',
+      'Check the gateway confirmation, order status, download permission and email delivery independently. An email can fail even when access was granted, and a working thank-you page is not payment confirmation.',
+      'Get a verified flow for an agreed product, access rules, instructions for adding and replacing files and a list of tested states. I can show store staff how to reissue download access after a failure.',
+    ],
+    questions:{
+      ru:[
+        ['Можно продавать файл без регистрации?', 'Да. Сначала согласуем покупку как гость и отдельно проверим, как покупатель получит ссылку и сможет вернуться к скачиванию.'],
+        ['Подойдёт обычная ссылка из медиатеки?', 'Не всегда. Публичный адрес может открываться без покупки. Способ выдачи выбираю с учётом размера файла, хостинга и требуемых ограничений; доступ без заказа проверяем отдельно.'],
+        ['Можно проверить до запуска?', 'Да. Используем тестовый файл и согласованный способ оплаты. Проверяем успешную покупку, отказ или отмену и попытку получить файл без оплаченного заказа.'],
+      ],
+      en:[
+        ['Can I sell files without a customer account?', 'Yes. Agree on guest checkout and test how guests receive their link and return to the download.'],
+        ['Can I use a regular media library URL?', 'Not always. A public URL may work without purchase. File size, hosting and access requirements determine the delivery method. We test access without an order separately.'],
+        ['Can we test before launch?', 'Yes. Use a test file and an agreed payment method. Check success, failure or cancellation, and an attempt to access a file without a paid order.'],
+      ],
+    },
+  },
   'woocommerce-store-improvements': {
     ru: [
       'Магазин уже продаёт, но штатного поведения не хватает',

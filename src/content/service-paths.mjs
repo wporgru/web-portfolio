@@ -1,5 +1,9 @@
 // Alternatives explain how to scope a job, not just which pages to visit next.
 export const servicePaths = {
+  'woocommerce-digital-downloads': [
+    ['checkout-payments','Если выдача уже работает, а проблема только на шаге платёжной системы.','If downloads already work and the issue is limited to the payment gateway.'],
+    ['woocommerce-store-development','Если нужен полноценный магазин с физическими товарами и доставкой.','If you also need a full storefront for physical products and shipping.'],
+  ],
   'woocommerce-store-improvements': [
     ['catalog-automation','Если цены, остатки и характеристики нужно регулярно получать от поставщика.','If prices, stock and specifications need regular supplier updates.'],
     ['checkout-payments','Если нужен новый способ доставки или проблема возникает при оплате заказа.','If you need a new shipping method or the issue occurs during payment.'],

@@ -7107,3 +7107,60 @@ projects:
         url: /showcase/smd-wix-wordpress-service-site/en/
         type: product
     featured: false
+  - slug: dme-tech-download-store-preparation
+    name: "DME Tech: preparing a digital download store"
+    year: "08.2020"
+    role: Web development and automation
+    description: Prepare an existing download store for online payments. The first
+      stage covered HTTPS, navigation and an order flow, leaving the payment
+      gateway and actual file delivery for the next stage.
+    stack:
+      - WooCommerce
+      - HTTPS
+      - Checkout
+      - Digital downloads
+    order: 381
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dme-tech-download-store-preparation/en/
+        type: product
+    featured: false
+  - slug: dme-tech-yandex-checkout-downloads
+    name: "DME Tech: WooCommerce payments and file downloads"
+    year: "08.2020"
+    role: Web development and automation
+    description: Customers needed to order a digital file without creating an
+      account, pay and receive a download link. Previous work prepared the
+      interface and HTTPS; this stage tested the purchase itself.
+    stack:
+      - WooCommerce
+      - Yandex Checkout
+      - Digital downloads
+      - Checkout
+    order: 382
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dme-tech-yandex-checkout-downloads/en/
+        type: product
+    featured: false
+  - slug: dme-tech-payment-buttons-mobile
+    name: "DME Tech: mobile storefront and payment buttons"
+    year: "09.2020"
+    role: Web development and automation
+    description: After the main checkout work, the store needed to remove a PayPal
+      card option that did not work and improve mobile usability. This was an
+      adjustment of the existing storefront, not a fresh payment integration.
+    stack:
+      - WooCommerce
+      - PayPal
+      - Responsive storefront
+      - Search UX
+    order: 383
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dme-tech-payment-buttons-mobile/en/
+        type: product
+    featured: false

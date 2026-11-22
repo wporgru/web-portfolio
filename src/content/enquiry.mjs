@@ -1,5 +1,9 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'woocommerce-digital-downloads': [
+    ['Формат и примерный размер файла, количество товаров', 'Способ оплаты и как покупатель должен получать доступ'],
+    ['File format, approximate size and number of products', 'Payment method and how buyers should access their downloads'],
+  ],
   'woocommerce-store-improvements': [
     ['Страница или артикул и что происходит сейчас', 'Как должен работать сценарий и что нельзя менять'],
     ['Page or SKU and what currently happens', 'Expected behavior and what must stay unchanged'],

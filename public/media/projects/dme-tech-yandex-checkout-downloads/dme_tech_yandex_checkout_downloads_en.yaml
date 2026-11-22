@@ -1,0 +1,34 @@
+title: "DME Tech: WooCommerce payments and file downloads"
+tagline: Customers needed to order a digital file without creating an account,
+  pay and receive a download link. Previous work prepared the interface and
+  HTTPS; this stage tested the purchase itself.
+year: "08.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Yandex Checkout
+  - Digital downloads
+  - Checkout
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Customers needed to order a digital file without creating an account, pay
+      and receive a download link. Previous work prepared the interface and
+      HTTPS; this stage tested the purchase itself.
+  - type: text
+    title: How it works
+    body: I connected Yandex Checkout, disabled conflicting caching components and
+      replaced three test files with client-supplied content. I reduced checkout
+      fields to email and skipped the separate cart step. A trial purchase
+      revealed that the amount was passed without currency conversion. We agreed
+      on a ruble-only flow instead of unreliable multi-currency behavior.
+  - type: text
+    title: Result and verification
+    body: The client confirmed a purchase check and receiving the email link, then
+      accepted the work. This historical check covers one scenario, not every
+      file, protected storage or automatic downloads after a PayPal payment.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: payment buttons and mobile storefront"
+        url: /showcase/dme-tech-payment-buttons-mobile/en/

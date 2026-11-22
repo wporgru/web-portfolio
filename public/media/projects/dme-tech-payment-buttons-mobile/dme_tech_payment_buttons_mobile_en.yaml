@@ -1,0 +1,33 @@
+title: "DME Tech: mobile storefront and payment buttons"
+tagline: After the main checkout work, the store needed to remove a PayPal card
+  option that did not work and improve mobile usability. This was an adjustment
+  of the existing storefront, not a fresh payment integration.
+year: "09.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - PayPal
+  - Responsive storefront
+  - Search UX
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After the main checkout work, the store needed to remove a PayPal card
+      option that did not work and improve mobile usability. This was an
+      adjustment of the existing storefront, not a fresh payment integration.
+  - type: text
+    title: How it works
+    body: I adjusted the additional PayPal buttons on product pages and in the cart.
+      I reduced the search-results type size, adapted the mobile page and
+      removed breadcrumbs in the agreed version.
+  - type: text
+    title: Result and verification
+    body: The client confirmed checking the changes and accepted the work. The
+      mobile version was accepted as an interim layout; no separate successful
+      card transaction was recorded. The case does not establish current PayPal
+      availability or acceptance of all international cards.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "First stage: HTTPS and checkout preparation"
+        url: /showcase/dme-tech-download-store-preparation/en/

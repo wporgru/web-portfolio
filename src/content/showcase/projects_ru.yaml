@@ -7152,3 +7152,62 @@ projects:
         url: /showcase/smd-wix-wordpress-service-site/
         type: product
     featured: false
+  - slug: dme-tech-download-store-preparation
+    name: "DME Tech: подготовка магазина цифровых файлов"
+    year: "08.2020"
+    role: Веб-разработка и автоматизация
+    description: Подготовить существующий магазин файлов к подключению
+      онлайн-оплаты. На первом этапе нужно было привести страницы к HTTPS,
+      улучшить навигацию и собрать оформляемый заказ. Онлайн-кассу и реальную
+      выдачу файла отложили на следующий этап.
+    stack:
+      - WooCommerce
+      - HTTPS
+      - Checkout
+      - Digital downloads
+    order: 381
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dme-tech-download-store-preparation/
+        type: product
+    featured: false
+  - slug: dme-tech-yandex-checkout-downloads
+    name: "DME Tech: оплата и выдача файлов через WooCommerce"
+    year: "08.2020"
+    role: Веб-разработка и автоматизация
+    description: Покупателю цифрового файла нужно было оформить заказ без
+      обязательной регистрации, оплатить его и получить ссылку на скачивание. До
+      этого готовили интерфейс и HTTPS; на этом этапе проверяли саму покупку.
+    stack:
+      - WooCommerce
+      - Yandex Checkout
+      - Digital downloads
+      - Checkout
+    order: 382
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dme-tech-yandex-checkout-downloads/
+        type: product
+    featured: false
+  - slug: dme-tech-payment-buttons-mobile
+    name: "DME Tech: мобильная витрина и кнопки оплаты"
+    year: "09.2020"
+    role: Веб-разработка и автоматизация
+    description: После настройки основной оплаты нужно было убрать неработающий
+      карточный вариант PayPal и сделать магазин удобнее на телефоне. Заказ
+      относился к действующей витрине, а не к повторной настройке всей платёжной
+      системы.
+    stack:
+      - WooCommerce
+      - PayPal
+      - Responsive storefront
+      - Search UX
+    order: 383
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dme-tech-payment-buttons-mobile/
+        type: product
+    featured: false

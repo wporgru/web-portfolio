@@ -1,5 +1,23 @@
 export const services = [
   {
+    slug:'woocommerce-digital-downloads',
+    cases:['digital-guide-checkout','dme-tech-yandex-checkout-downloads','automotive-firmware-digital-store','dme-tech-download-store-preparation','dme-tech-payment-buttons-mobile','digital-database-stores-checkout'],
+    ru:[
+      'Продажа цифровых товаров и файлов на WooCommerce',
+      'Настрою продажу PDF, архивов и других скачиваемых материалов: от карточки товара и оплаты до письма со ссылкой. Можно начать с одного файла или добавить цифровые товары в действующий магазин.',
+      'Согласуем путь покупателя: покупка как гость или через аккаунт, необходимые поля, оплата, письмо и повторное скачивание. Для смешанного магазина отдельно проверим корзину с цифровым и физическим товаром.',
+      'Определим, где хранить файлы, как выдавать доступ и что делать после отмены или возврата. На контрольном товаре проверю покупку, статус заказа, получение письма и доступ к правильной версии файла.',
+      'Пришлите ссылку на магазин или пример карточки, вид и примерный размер файла. Скажите, нужен ли личный кабинет и какая система оплаты уже подключена. Сам файл для первой оценки не нужен.',
+    ],
+    en:[
+      'WooCommerce digital product and download setup',
+      'Sell PDFs, archives and other downloads with a purchase flow from product page and payment to the email link. Start with one file or add digital products to an existing store.',
+      'Agree on guest or account checkout, required fields, payment, email and repeat downloads. For a mixed store, also test a cart that contains both downloadable and physical products.',
+      'Decide on storage, access and what happens after cancellation or refund. Use a test product to verify the order, its status, email delivery and access to the right file version.',
+      'Send a store URL or sample product page, file format and approximate size. Say whether buyers need an account and which gateway, if any, is already connected. No actual file is needed for the initial estimate.',
+    ],
+  },
+  {
     slug: 'woocommerce-store-improvements',
     cases: ['sewing-shop-sku-search-filters', 'sewing-shop-brand-product-pages', 'wellland-facets', 'wellland-native-catalog-pagination', 'aravia-mobile-catalog-bulk-editor', 'per-product-quantity-discounts', 'woocommerce-native-order-statuses'],
     ru: [

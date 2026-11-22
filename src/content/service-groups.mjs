@@ -9,7 +9,7 @@ export const serviceGroups = [
     id: 'commerce',
     ru: ['Каталоги и продажи', 'Ассортимент из фидов, фильтры, заявки, счета и оформление заказа.'],
     en: ['Catalogs and sales', 'Product feeds, filters, enquiries, invoicing and checkout.'],
-    slugs: ['woocommerce-store-development', 'woocommerce-store-improvements', 'catalog-automation', 'b2b-catalog-and-enquiries', 'checkout-payments', 'affiliate-catalog-development', 'affiliate-link-audit'],
+    slugs: ['woocommerce-store-development', 'woocommerce-store-improvements', 'woocommerce-digital-downloads', 'catalog-automation', 'b2b-catalog-and-enquiries', 'checkout-payments', 'affiliate-catalog-development', 'affiliate-link-audit'],
   },
   {
     id: 'reliability',

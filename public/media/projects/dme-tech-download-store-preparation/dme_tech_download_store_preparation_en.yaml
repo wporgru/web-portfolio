@@ -1,0 +1,33 @@
+title: "DME Tech: preparing a digital download store"
+tagline: Prepare an existing download store for online payments. The first stage
+  covered HTTPS, navigation and an order flow, leaving the payment gateway and
+  actual file delivery for the next stage.
+year: "08.2020"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - HTTPS
+  - Checkout
+  - Digital downloads
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Prepare an existing download store for online payments. The first stage
+      covered HTTPS, navigation and an order flow, leaving the payment gateway
+      and actual file delivery for the next stage.
+  - type: text
+    title: How it works
+    body: I addressed mixed HTTP content after SSL setup, reviewed the
+      original-files section and removed extra space on the file service page. I
+      updated contacts, news and search. I configured the cart and checkout for
+      direct transfer and added empty test files for an initial check.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the file service page adjustment and accepted the
+      first stage. This was interface preparation, not evidence of a live
+      payment, gateway approval or protected file delivery.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: payments and the download email"
+        url: /showcase/dme-tech-yandex-checkout-downloads/en/
