@@ -1,7 +1,11 @@
 import assert from 'node:assert/strict';
+import {setTimeout as delay} from 'node:timers/promises';
 
 const site = new URL('https://wporgru.github.io/web-portfolio/');
 const samples = ['', 'en/', 'showcase/', 'showcase/en/', 'services/', 'services/en/'];
+const args = process.argv.slice(2);
+assert.ok(!args.length || (args.length === 1 && args[0] === '--all'), 'Usage: node src/scripts/check-live-discovery.mjs [--all]');
+const fullCrawl = args.length === 1;
 
 async function get(route, mime) {
   const url = new URL(route, site);
@@ -27,11 +31,12 @@ if (expected) {
       if (attempt === 4) throw error;
     }
     if (observed === expected) break;
-    if (attempt < 4) await new Promise(resolve => setTimeout(resolve, 3000));
+    if (attempt < 4) await delay(3000);
   }
   assert.equal(observed, expected, 'The expected revision did not reach GitHub Pages');
 }
 
+const startRevision = fullCrawl ? (await get('release-revision.txt', ['text/plain'])).trim() : undefined;
 const xmlTypes = ['application/xml', 'text/xml'];
 const locations = source => [...source.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, url]) => url.trim());
 const index = await get('sitemap-index.xml', xmlTypes);
@@ -60,9 +65,60 @@ assert.ok(plain.length === urls.length && plain.every(url => known.has(url)), 'T
 for (const route of samples) {
   const canonical = new URL(route, site).href;
   assert.ok(known.has(canonical), 'Sample missing from sitemap: ' + canonical);
-  const html = await get(route, ['text/html']);
-  assert.ok(html.includes('<link rel="canonical" href="' + canonical + '"'), 'Wrong canonical on ' + canonical);
-  assert.doesNotMatch(html, /<meta name="robots" content="[^"]*\bnoindex\b/i, 'Sample has noindex: ' + canonical);
 }
-console.log('Live discovery: ' + children.length + ' XML sitemap(s), ' + known.size + ' URLs in matching XML and TXT, ' + samples.length + ' canonical HTML samples.');
+
+const targets = fullCrawl ? urls : samples.map(route => new URL(route, site).href);
+const byPage = new Map();
+const errors = [];
+async function checkPage(url) {
+  const html = await get(url, ['text/html']);
+  const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1] ?? '';
+  const canonicals = [...head.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map(([,href]) => href);
+  assert.deepEqual(canonicals, [url], 'Expected one self-referencing canonical');
+  assert.doesNotMatch(head, /<meta name="(?:robots|googlebot|bingbot|yandex)" content="[^"]*\b(?:noindex|none)\b/i, 'HTML robots directive blocks indexing');
+  const lang = html.match(/<html lang="([^"]+)"/)?.[1];
+  assert.ok(lang === 'ru' || lang === 'en', 'Missing or unexpected HTML language');
+  const links = [...head.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)];
+  const alternates = Object.fromEntries(links.map(([,label,href]) => [label,href]));
+  assert.equal(links.length, 3, 'Expected RU, EN and x-default declarations');
+  assert.ok(known.has(alternates.ru) && known.has(alternates.en) && alternates.ru !== alternates.en, 'Language counterparts must be distinct sitemap URLs');
+  assert.equal(alternates[lang], url, 'Missing self-reference for HTML language');
+  assert.equal(alternates['x-default'], alternates.ru, 'Unexpected x-default');
+  byPage.set(url, {lang, alternates});
+}
+
+let next = 0;
+async function crawl() {
+  while (next < targets.length) {
+    const url = targets[next++];
+    try {
+      await checkPage(url);
+    } catch (error) {
+      errors.push(url + ': ' + error.message);
+    }
+    if (fullCrawl && next < targets.length) await delay(200);
+  }
+}
+await Promise.all(Array.from({length:fullCrawl ? 4 : 1}, crawl));
+
+for (const [url, {alternates}] of byPage) {
+  for (const lang of ['ru', 'en']) {
+    const counterpart = byPage.get(alternates[lang]);
+    if (!counterpart && !fullCrawl) continue;
+    if (counterpart?.lang !== lang ||
+        ['ru','en','x-default'].some(key => counterpart.alternates[key] !== alternates[key])) {
+      errors.push(url + ': inconsistent ' + lang + ' language counterpart ' + alternates[lang]);
+    }
+  }
+}
+const confirmedRevision = (await get('release-revision.txt', ['text/plain'])).trim();
+// A full crawl must describe one published release, not pages mixed across deployments.
+if (fullCrawl) assert.equal(confirmedRevision, startRevision, 'Published revision changed during crawl; rerun the audit');
+if (expected) assert.equal(confirmedRevision, expected, 'Published revision changed during the release check');
+if (errors.length) {
+  console.error(errors.sort().join('\n'));
+  process.exitCode = 1;
+}
+console.log('Live discovery: ' + children.length + ' XML sitemap(s), ' + known.size + ' URLs in matching XML and TXT.');
+console.log(byPage.size + '/' + targets.length + ' HTML responses passed status, canonical, robots and localized metadata checks (' + errors.length + ' total issues). Revision: ' + confirmedRevision);
 console.log('This checks live delivery, not search engine processing or indexing.');
