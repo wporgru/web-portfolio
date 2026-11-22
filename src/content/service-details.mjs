@@ -316,7 +316,41 @@ export const serviceDetails = {
     en: ['The mobile page stays blank while the admin session feels fast', 'Compare representative pages as a logged-out visitor. For stores, check not only when the first screen appears, but also whether cart, forms and analytics still behave correctly.', 'Repeatable measurements on agreed pages, a change list and checks for essential workflows. Document measurement limits and remaining opportunities.'],
   },
   'web-analytics': {
-    ru: ['Цели настроены, но цифры не сходятся с заказами', 'Начну с одного контрольного заказа или заявки. Отделю повторную отправку цели от повторной покупки, а загрузку страницы благодарности — от подтверждения оплаты.', 'Карта событий, шаги для проверки и примеры данных, которые удалось увидеть в аналитике. Отдельно отмечу, какие сценарии не тестировались и где источником факта остаётся магазин или платёжный сервис.'],
-    en: ['Goals are set up, but the numbers do not match the orders', 'Start with one controlled order or enquiry. Distinguish duplicate event firing from a second purchase, and a thank-you page view from confirmed payment.', 'An event map, verification steps and examples of what reached analytics. Document untested flows and where the store or payment provider remains the source of truth.'],
+    ru: [
+      'В аналитике больше покупок, чем оплаченных заказов',
+      'Начну с контрольного заказа или заявки. Разберу, где цель срабатывает лишний раз, какой счётчик получает событие и не принимаем ли мы открытие страницы благодарности за подтверждение оплаты. Источником факта остаётся магазин, платёжная система или CRM — в зависимости от действия.',
+      'Передам карту событий с условиями срабатывания, полями и назначением каждого события. Для контрольных действий покажу, что увидел в браузере, что принято системой аналитики и что совпало с данными заказа или заявки. Отдельно перечислю непроверенные сценарии.',
+    ],
+    en: [
+      'Analytics shows more purchases than paid orders',
+      'Start with a controlled order or enquiry. Identify where a goal fires twice, which tag receives it, and whether a thank-you page visit has been mistaken for payment confirmation. The store, gateway or CRM remains the source of record, depending on the action.',
+      'Receive an event map with triggers, fields and business purpose. For agreed test actions, see what fired in the browser, what the analytics system received and what matched the order or lead record. Untested flows are listed separately.',
+    ],
+    steps:{
+      ru:[
+        ['Определяю, что считать результатом','Разделяю клик по телефону или Telegram, успешную отправку формы, получение заявки менеджером и оплаченную покупку. Если покупатель уходит на внешний платёжный сервис, сам переход не считаю покупкой.'],
+        ['Нахожу, откуда уже отправляются события','Сверяю, где подключены счётчики: тема, плагин, менеджер тегов или ручной код. Проверяю идентификатор счётчика, условия срабатывания и повтор на обновлении страницы. Нужные интеграции не отключаю вслепую.'],
+        ['Провожу положительные и отрицательные тесты','Например, валидная форма должна создать событие заявки, а пустая форма — нет. Для магазина сверяю согласованные сумму, валюту и идентификатор заказа; отдельно смотрю повторное открытие страницы и неуспешный платёж.'],
+        ['Сверяю аналитику с источником факта','Проверяю отправку события и его появление в доступном отчёте отдельно. Если отчёт ещё не обновился, так и отмечаю. Сопоставляю контрольный заказ с магазином или платёжной системой, не передавая контакты клиентов в аналитику.'],
+      ],
+      en:[
+        ['Define the outcome to count','Separate a phone or Telegram click, successful form submission, staff receipt of a lead and paid purchase. A handoff to an external payment provider is not itself a purchase.'],
+        ['Trace where existing events originate','Inventory tags in the theme, plugins, tag manager and custom code. Verify the tag ID, trigger conditions and whether refresh repeats the event. Do not switch off integrations without checking their purpose.'],
+        ['Run positive and negative test cases','For example, a valid form should create a lead event, while an empty submission should not. For purchases, verify the agreed amount, currency and order ID, then test revisiting the confirmation page and the failed-payment flow separately.'],
+        ['Reconcile analytics with the source of record','Verify transmission and appearance in an available report as separate checks. If the report has not refreshed, record that explicitly. Match a test order to the store or gateway without passing customer contact details to analytics.'],
+      ],
+    },
+    questions:{
+      ru:[
+        ['Можно считать клик по кнопке полноценной заявкой?', 'Клик показывает намерение обратиться. Для формы отдельно проверяю успешную обработку, для канала связи — подтверждение получения, если оно доступно. Если подтвердить можно только переход, так и называю событие в отчёте.'],
+        ['Что делать, если GA4 считает один и тот же заказ повторно?', 'Проверю, откуда приходит событие покупки и не срабатывает ли оно при повторном открытии страницы. Для веб-покупок GA4 нужно передавать постоянный непустой transaction_id, уникальный для заказа, а не новый идентификатор при каждой загрузке.'],
+        ['Зачем проверять сайт, если в Метрике уже есть цель?', 'Созданная цель ещё не означает, что сайт отправляет событие на нужный счётчик. Сначала проверю контрольное действие в отладке Метрики, затем результат в отчёте и исходной системе.'],
+      ],
+      en:[
+        ['Can I count a button click as a lead?', 'A click shows intent to contact. Verify successful form processing or receipt through the agreed channel separately when possible. If only the outbound click is observable, label the event accordingly.'],
+        ['What if GA4 counts the same order twice?', 'Check which integration sends the purchase and whether reopening the page fires it again. GA4 web purchases should send a stable, nonempty transaction_id unique to the order, not a fresh identifier on every page load.'],
+        ['Why test the site if the goal already exists in Metrica?', 'A configured goal does not prove the website sends the event to the intended tag. Test the action in Metrica debugging first, then compare the report and source record.'],
+      ],
+    },
   },
 };
