@@ -1,0 +1,63 @@
+const cases = ['arenda-pm-legacy-js-cleanup','legacy-php-compatibility','78-dosok'];
+
+export const repairOrRedesignGuide = {
+  slug:'wordpress-repair-or-redesign',
+  primaryService:'website-redesign',
+  services:['website-redesign','wordpress-repair','wordpress-php-plugin-updates'],
+  cases,
+  sourceUrls:[
+    'https://woocommerce.com/document/how-to-test-for-conflicts/',
+    'https://developer.wordpress.org/themes/advanced-topics/child-themes/',
+    'https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes',
+  ],
+  ru:{
+    title:'Починить или переделать сайт на WordPress?',
+    summary:'Как выбрать между точечным ремонтом, техническим обновлением и редизайном WordPress: признаки, что сохранить и как сравнить объём работ.',
+    intro:'Сайт ломается после обновлений, а на телефоне неудобно пользоваться каталогом. Это не обязательно одна проблема. Точечная правка может вернуть кнопки и формы; смена темы имеет смысл, когда нужно менять не только код, но и то, как покупатель находит товар и оформляет заказ.',
+    context:'Ремонтировать текущую тему или менять витрину?',
+    action:'Сравнить ремонт и редизайн вашего сайта',
+    email:'Описать, что работает и что мешает',
+    serviceLabel:'Что входит в редизайн сайта или магазина',
+    enquiry:['Две-три проблемные страницы и что посетитель не может сделать','Что нужно сохранить: дизайн, адреса, каталог, формы, оплату, доставку или аналитику'],
+    steps:[
+      ['Начните с поведения, а не с возраста сайта','Выпишите проверяемые симптомы. «Сайт старый» не говорит, что менять. «Меню перекрывает корзину на телефоне», «после обновления нельзя сохранить товар» и «покупатель не находит нужную категорию» дают разные задачи. Отдельно отметьте сбои, которые уже мешают продажам.'],
+      ['Выбирайте ремонт, если сбой воспроизводится отдельно','Если одну ошибку можно изолировать, а остальная часть сайта устраивает, сравните правку компонента и его замену. На копии установите, что отвечает за результат: тема, дочерняя тема, плагин или пользовательский код. В «Аренда-ПМ» оказалось достаточно удалить один устаревший вызов, сохранив аналитику и текущий интерфейс.'],
+      ['Обновляйте техническую основу, если интерфейс нужен прежний','Когда задача — совместимость с PHP или обновлениями, не обязательно менять дизайн. Сначала проверьте, какие шаблоны и расширения можно сохранить, что следует обновить или заменить и сколько ручного кода нужно адаптировать. В кейсе RT-Theme 19 правки потребовались в теме и связанном расширении, а не в оформлении всего сайта.'],
+      ['Выбирайте редизайн, если меняются несколько покупательских сценариев','Если нужно по-новому организовать первый экран, каталог, меню и доступ к корзине, сравнивайте объём нового шаблона с поддержкой старых правок. У «78 Досок» шапка и мобильная навигация зависели от разных слоёв. Проект включал смену темы, переработку витрины, обновление, очистку плагинов и работы по ускорению.'],
+      ['Сравните два варианта по тому, что нужно сохранить','Запросите для каждого подхода перечень затронутых страниц, функций и данных. Для магазина это адреса категорий и карточек, статусы и остатки, оплата, доставка и аналитика. Если URL меняются, согласуйте соответствие старых и новых страниц и редиректы до выпуска. Если адреса можно сохранить — не меняйте их только ради новой темы.'],
+      ['Определите, что означает «готово»','У ремонта это воспроизведение исходной ошибки и повторный тест соседних функций. У редизайна — проверка нескольких типовых страниц на телефоне и компьютере, прохождение заказа или заявки и способ отката. Если в смету входит ускорение, согласуйте одинаковые условия замеров до и после. Новый внешний вид сам по себе не подтверждает рост скорости или продаж.'],
+    ],
+    examples:[
+      ['«Аренда-ПМ»: точечная правка JavaScript без отключения аналитики',cases[0]],
+      ['RT-Theme 19: совместимость с PHP без замены оформления',cases[1]],
+      ['«78 Досок»: полная смена темы и редизайн магазина, снимки до и после',cases[2]],
+    ],
+    sources:['WooCommerce: тестирование конфликтов темы и плагинов','WordPress: что может менять дочерняя тема','Google Search Central: смена адресов и редиректы'],
+    call:'Пришлите несколько страниц и список функций, которые нельзя потерять. Предложу, что исправить сразу, а что выделить в обновление или редизайн. Если варианты оба разумны, сравню, что придётся менять и как проверить результат.',
+  },
+  en:{
+    title:'Repair or redesign your WordPress site?',
+    summary:'Decide between a targeted WordPress fix, a technical upgrade and a redesign: what to preserve, how to compare scope and what to test.',
+    intro:'The site breaks after updates and the catalog is difficult to use on mobile. Those may be separate problems. A targeted fix can restore a button or form; replacing the theme makes sense when you also need to change how shoppers find products and place orders.',
+    context:'Repair the current theme or redesign the storefront?',
+    action:'Compare a repair and redesign for your site',
+    email:'Describe what works and what gets in the way',
+    serviceLabel:'What a website or store redesign includes',
+    enquiry:['Two or three affected pages and what visitors cannot do','What must stay: design, URLs, catalog, forms, payments, shipping or analytics'],
+    steps:[
+      ['Start with behavior, not site age','Write down testable symptoms. “The site is old” does not define the job. “The menu covers the cart on mobile”, “updates prevent product saves” and “customers cannot find a category” point to different work. Flag the issues that already block sales.'],
+      ['Choose a repair when the failure can be isolated','If the rest of the site is satisfactory, compare repairing the affected component with replacing it. On staging, find out whether the theme, child theme, plugin or custom code drives the behavior. For Arenda-PM, removing one obsolete call preserved the existing interface and analytics code.'],
+      ['Upgrade the technical foundation when the design still works','PHP or plugin compatibility does not necessarily mean a redesign. Check which templates and extensions can stay, which need updating or replacement, and how much custom code needs adaptation. The RT-Theme 19 case required compatibility fixes in the theme and its extension, not a new look.'],
+      ['Choose a redesign when several shopping flows need to change','If the homepage, catalog, navigation and cart access all need rethinking, compare a new theme with the cost of maintaining the old customizations. At 78 Dosok the header and mobile navigation depended on different layers. The project replaced the theme, redesigned the storefront, updated the site, removed redundant plugins and addressed performance.'],
+      ['Compare proposals by what they preserve','Request a list of affected pages, functions and data. For stores, list category and product URLs, stock, order statuses, payments, shipping and analytics. If URLs change, prepare the old-to-new mapping and redirects before launch. Do not change working addresses merely to fit a new theme.'],
+      ['Define what acceptance looks like','For repairs, reproduce the original problem and retest adjacent features. For redesigns, test representative pages on phones and desktop, place an agreed test order or enquiry and define rollback. For performance work, agree on comparable before-and-after conditions. A new look does not prove faster loading or higher sales.'],
+    ],
+    examples:[
+      ['Arenda-PM: a targeted JavaScript fix without removing analytics',cases[0]],
+      ['RT-Theme 19: PHP compatibility without changing the design',cases[1]],
+      ['78 Dosok: full store redesign and theme replacement, with before and after images',cases[2]],
+    ],
+    sources:['WooCommerce: test theme and plugin conflicts','WordPress: what a child theme can change','Google Search Central: URL changes and redirects'],
+    call:'Send a few pages and the features that must stay intact. I can suggest what to fix now and what belongs in an upgrade or redesign. If both approaches are viable, I will compare the changes and the acceptance checks.',
+  },
+};

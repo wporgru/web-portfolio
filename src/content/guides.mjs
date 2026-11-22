@@ -8,6 +8,7 @@ import { importTimeoutGuide } from './import-timeout-guide.mjs';
 import { b2bQuoteGuide } from './b2b-catalog-quote-guide.mjs';
 import { orderEmailGuide } from './woocommerce-order-email-guide.mjs';
 import { wordpressPhpUpdateGuide } from './wordpress-php-update-guide.mjs';
+import { repairOrRedesignGuide } from './wordpress-repair-or-redesign-guide.mjs';
 
 export const guides = [
   {
@@ -29,4 +30,5 @@ export const guides = [
   b2bQuoteGuide,
   orderEmailGuide,
   wordpressPhpUpdateGuide,
+  repairOrRedesignGuide,
 ];
