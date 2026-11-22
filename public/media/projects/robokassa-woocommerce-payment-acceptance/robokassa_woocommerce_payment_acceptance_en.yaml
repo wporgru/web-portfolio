@@ -1,0 +1,29 @@
+title: "Robokassa for WooCommerce: test payment and refund request"
+tagline: "The store needed to accept payments through Robokassa and send order
+  notifications. Acceptance called for more than opening the payment screen:
+  test payment, customer emails and a refund request."
+year: "12.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Robokassa
+  - Checkout
+  - Payment QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The store needed to accept payments through Robokassa and send order
+      notifications. Acceptance called for more than opening the payment screen:
+      test payment, customer emails and a refund request."
+  - type: text
+    title: How it works
+    body: Saved the integration settings, ran a test payment, demonstrated the
+      customer emails and submitted a refund request. Removed cash on delivery
+      at the client’s request. One attempt with an expired card failed; the
+      client confirmed payment with another card.
+  - type: text
+    title: Result and verification
+    body: The client tested payment and accepted the work. Submitting the refund
+      request was verified separately, but the funds reaching the card was not
+      confirmed. This was not a test of every payment method, fiscal receipt
+      data or the current storefront.

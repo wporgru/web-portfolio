@@ -7301,3 +7301,22 @@ projects:
         url: /showcase/forsage-wordpress-domain-handoff/en/
         type: product
     featured: false
+  - slug: robokassa-woocommerce-payment-acceptance
+    name: "Robokassa for WooCommerce: test payment and refund request"
+    year: "12.2025"
+    role: Web development and automation
+    description: "The store needed to accept payments through Robokassa and send
+      order notifications. Acceptance called for more than opening the payment
+      screen: test payment, customer emails and a refund request."
+    stack:
+      - WooCommerce
+      - Robokassa
+      - Checkout
+      - Payment QA
+    order: 391
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/robokassa-woocommerce-payment-acceptance/en/
+        type: product
+    featured: false

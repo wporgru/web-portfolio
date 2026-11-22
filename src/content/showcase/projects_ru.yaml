@@ -7351,3 +7351,22 @@ projects:
         url: /showcase/forsage-wordpress-domain-handoff/
         type: product
     featured: false
+  - slug: robokassa-woocommerce-payment-acceptance
+    name: "Робокасса в WooCommerce: контрольная оплата и заявка на возврат"
+    year: "12.2025"
+    role: Веб-разработка и автоматизация
+    description: Магазину требовалось принимать оплату через Робокассу и
+      подтверждать заказ покупателю. Нужно было проверить не только открытие
+      платёжной страницы, но и сам платёж, письма и возможность запросить возврат.
+    stack:
+      - WooCommerce
+      - Robokassa
+      - Checkout
+      - Payment QA
+    order: 391
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/robokassa-woocommerce-payment-acceptance/
+        type: product
+    featured: false

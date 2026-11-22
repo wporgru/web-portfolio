@@ -300,6 +300,18 @@ export const serviceDetails = {
   'checkout-payments': {
     ru: ['Покупатель оплатил, а магазин не видит заказ', 'Проверю, где расходится сценарий: в форме, на стороне платёжного сервиса, при обновлении статуса или при отправке письма. Ошибка на одном шаге не означает, что нужно менять весь чекаут.', 'Воспроизводимый контрольный сценарий и результат по каждому шагу. Отдельно отмечу, что проверено в тестовой среде, а что — в согласованном рабочем сценарии.'],
     en: ['The customer paid but the store did not register it', 'Isolate whether the problem is in the form, payment provider, order status update or email. A failure at one step does not mean the whole checkout needs replacing.', 'A repeatable test flow and a result for each step, with sandbox checks clearly distinguished from agreed live verification.'],
+    steps:{
+      ru:[
+        ['Согласую, где покупатель начинает оплату','Проверю путь из карточки или корзины. Для услуги без доставки отдельно согласуем, нужны ли корзина, адрес и дополнительные поля. Для физического товара проверю, попадает ли согласованная стоимость доставки в сумму заказа.'],
+        ['Сверю сумму и состояние заказа','На контрольном заказе сопоставлю итог в WooCommerce с суммой на платёжной странице и результатом операции в кабинете. Проверю, меняется ли статус заказа после подтверждения оплаты. Сам переход на платёжный экран ещё не означает, что деньги получены.'],
+        ['Проверю письма и исключения','По согласованию проведу успешный и неуспешный сценарии. Письмо покупателю, уведомление менеджеру и чек фиксирую отдельно. Если нужен возврат, отмечаю, что проверено: подача заявки, статус у провайдера или зачисление.'],
+      ],
+      en:[
+        ['Agree where payment starts','Follow the path from the product page or cart. For a service without delivery, agree whether cart, address and extra fields are needed. For physical goods, verify that the agreed shipping charge is included in the order total.'],
+        ['Reconcile the amount and order status','On a test order, match the WooCommerce total with the payment screen and the gateway’s result. Check whether the order status changes after confirmation. Reaching a payment screen does not establish payment.'],
+        ['Verify notifications and exception flows','Run agreed successful and unsuccessful scenarios. Record the customer email, staff notification and receipt separately. For refunds, document whether testing covered the request, provider status or funds reaching the customer.'],
+      ],
+    },
     questions:{
       ru:[
         ['Заказ виден в WooCommerce, но письмо не пришло. Что проверить?', 'Сначала выясню, должен ли этот статус заказа запускать нужное уведомление, включено ли оно и какой указан получатель. Затем проверю отдельно формирование письма, ответ почтового сервиса и поступление на контрольный адрес.'],
