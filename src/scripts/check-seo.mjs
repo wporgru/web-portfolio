@@ -4,7 +4,7 @@ import { services } from '../content/services.mjs';
 import { serviceDetails } from '../content/service-details.mjs';
 import { caseHighlights } from '../content/case-highlights.mjs';
 import { serviceGroups } from '../content/service-groups.mjs';
-import { enquiryPrompts } from '../content/enquiry.mjs';
+import { createEnquiry, enquiryPrompts } from '../content/enquiry.mjs';
 import { servicePaths } from '../content/service-paths.mjs';
 import { migrationGuide } from '../content/migration-guide.mjs';
 import { guides } from '../content/guides.mjs';
@@ -43,7 +43,18 @@ const sharingCards = new Map();
 const originalImages = new Map();
 const titles = new Set(), descriptions = new Set();
 let enquiryPages = 0;
+let telegramPages = 0;
 const enquiryKinds = new Map(services.map(service=>[service.slug,service]));
+function telegramDrafts(html, expected, count, label) {
+  const links=[...html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*\bdata-enquiry-telegram\b[^>]*>/g)];
+  const template=new URL(expected).searchParams.get('text');
+  if (links.length!==count || links.some(([,raw]) => {
+    const url=URL.parse(raw.replaceAll('&amp;','&'));
+    return url?.origin!=='https://t.me' || url.pathname!=='/wporgru' || url.hash ||
+      url.searchParams.size!==1 || url.searchParams.get('text')!==template;
+  })) fail(label,'missing or mismatched contextual Telegram draft');
+  telegramPages++;
+}
 if (Object.keys(enquiryPrompts).length!==services.length || services.some(service=>!enquiryPrompts[service.slug])) {
   fail('enquiry','expected bilingual prompts for every service');
 }
@@ -66,6 +77,10 @@ for(const file of htmlFiles){
     const group=isService?enquiryKinds.get(slug):services.find(service=>service.cases.includes(slug));
     const templates=[...html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*\bdata-enquiry-email\b[^>]*>/g)];
     if(templates.length!==(isService?2:1)||(!isService&&!html.includes('href="#enquiry"'))) fail(file,'missing enquiry action');
+    const mail=new URL(templates[0][1].replaceAll('&amp;','&'));
+    const expectedTelegram='https://t.me/wporgru?text='+encodeURIComponent(
+      mail.searchParams.get('subject')+'\n\n'+(mail.searchParams.get('body')??'').replaceAll('\r\n','\n'));
+    telegramDrafts(html,expectedTelegram,isService?2:1,file);
     for(const [,raw] of templates){
       const draft=new URL(raw.replaceAll('&amp;','&'));
       const body=draft.searchParams.get('body')??'';
@@ -154,6 +169,10 @@ for (const lang of ['ru','en']) {
 for (const item of guides) for (const suffix of ['', 'en/']) {
   const route=`guides/${item.slug}/${suffix}`;
   const html=read(path.join(root,route,'index.html'));
+  const lang=suffix?'en':'ru';
+  const enquiry=createEnquiry({lang,title:item[lang].action,url:new URL(route,profileUrl).href,
+    kind:'guide',serviceSlug:item.primaryService,customPrompts:item[lang].enquiry});
+  telegramDrafts(html,enquiry.telegramHref,1,route);
   if (!sitemap.has(new URL(route,profileUrl).href) ||
       !html.includes(`href="${base}services/${item.primaryService}/${suffix}"`)) fail(route,'missing sitemap entry or primary service');
   for (const slug of item.services) {
@@ -410,6 +429,7 @@ console.log('SEO checks passed for '+pages.size+' HTML pages and '+breadcrumbTar
 console.log('Verified '+canonicalInternalLinks+' canonical internal page links.');
 console.log('Verified '+distinctSitemapImages.size+' original images across '+imageEntries+' localized image sitemap entries.');
 console.log('Verified contextual enquiry templates for '+enquiryPages+' localized case and service pages.');
+console.log('Verified Telegram drafts on '+telegramPages+' localized case, service and guide pages.');
 console.log('Verified versioned sitemap revision dates for '+verifiedRevisions+' localized case pages.');
 console.log('Verified homepage navigation for '+checkedNavigationPages+' localized pages without JavaScript.');
 console.log('Verified '+verifiedArticles+' localized articles with visible bylines and canonical author linkage.');

@@ -26,10 +26,10 @@ const breadcrumbs=[
   {name:ru?'Главная':'Home',href:base+suffix},
   {name:copy.title},
 ];
-const enquiry=copy.enquiry ? createEnquiry({
+const enquiry=createEnquiry({
   lang,title:copy.action,url:new URL(Astro.url.pathname,Astro.site ?? Astro.url).href,
   kind:'guide',serviceSlug:guide.primaryService,customPrompts:copy.enquiry,
-}) : null;
+});
 ---
 <Layout title={copy.title+(ru?' — Олег Тишин':' — Oleg Tishin')} description={copy.summary} lang={lang}
   section="guides" customLangLinks={alternates} breadcrumbs={breadcrumbs}
@@ -56,9 +56,9 @@ const enquiry=copy.enquiry ? createEnquiry({
       <h2 class="h2">{copy.action}</h2>
       <p>{copy.call}</p>
       <div class="btnrow">
-        {enquiry && <a class="btn" href={enquiry.href} data-guide-enquiry>{copy.email}</a>}
-        <a class:list={['btn',{'btn--ghost':enquiry}]} href={service}>{copy.serviceLabel}</a>
-        <a class="btn btn--ghost" href="https://t.me/wporgru">{ru?'Обсудить в Telegram':'Discuss on Telegram'}</a>
+        {copy.enquiry && <a class="btn" href={enquiry.href} data-guide-enquiry>{copy.email}</a>}
+        <a class:list={['btn',{'btn--ghost':copy.enquiry}]} href={service}>{copy.serviceLabel}</a>
+        <a class="btn btn--ghost" href={enquiry.telegramHref} data-enquiry-telegram>{ru?'Заявка в Telegram':'Enquire on Telegram'}</a>
       </div>
     </section>
   </article>

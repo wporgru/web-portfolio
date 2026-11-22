@@ -103,6 +103,8 @@ export function createEnquiry({lang, title, url, kind, serviceSlug, customPrompt
     : ['Website or reference URL', ...prompts, 'Preferred timeline'];
   const prefix = kind === 'case'
     ? (ru ? 'Задача по примеру: ' : 'Project enquiry: ')
+    : kind === 'guide'
+    ? (ru ? 'Вопрос по руководству: ' : 'Guide enquiry: ')
     : (ru ? 'Запрос по услуге: ' : 'Service enquiry: ');
   const source = kind === 'case'
     ? (ru ? 'Кейс, на который я ссылаюсь: ' : 'Reference case: ')
@@ -113,5 +115,10 @@ export function createEnquiry({lang, title, url, kind, serviceSlug, customPrompt
     ...labels.map(label => label + ':'),
     source + url,
   ].join('\r\n\r\n');
-  return {prompts, href: 'mailto:zakaz@wp.org.ru?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body)};
+  const telegramText = subject+'\n\n'+body.replaceAll('\r\n','\n');
+  return {
+    prompts,
+    href:'mailto:zakaz@wp.org.ru?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body),
+    telegramHref:'https://t.me/wporgru?text='+encodeURIComponent(telegramText),
+  };
 }

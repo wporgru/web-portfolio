@@ -52,7 +52,7 @@ const nextServices=servicePaths[service.slug].map(([slug,ruReason,enReason])=>{
       <p class="hero__summary">{intro}</p>
       <p class="muted">{ru?'Исполнитель:':'Provided by:'} <a href={base+localeSuffix}>{providerName}</a></p>
       <div class="btnrow">
-        <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить задачу':'Discuss your project'}</a>
+        <a class="btn" href={enquiry.telegramHref} data-enquiry-telegram>{ru?'Обсудить задачу в Telegram':'Discuss on Telegram'}</a>
         <a class="btn btn--ghost" href={enquiry.href} data-enquiry-email>{ru?'Открыть шаблон письма':'Open enquiry email template'}</a>
       </div>
     </article>
@@ -89,7 +89,7 @@ const nextServices=servicePaths[service.slug].map(([slug,ruReason,enReason])=>{
       <p>{outcome}</p>
       <div class="btnrow">
         <a class="btn" href={enquiry.href} data-enquiry-email>{ru?'Открыть шаблон письма':'Open enquiry email template'}</a>
-        <a class="btn btn--ghost" href="https://t.me/wporgru">{ru?'Прислать задачу в Telegram':'Send your brief on Telegram'}</a>
+        <a class="btn btn--ghost" href={enquiry.telegramHref} data-enquiry-telegram>{ru?'Заявка в Telegram':'Enquire on Telegram'}</a>
       </div>
     </section>
     <section class="card" data-service-paths>

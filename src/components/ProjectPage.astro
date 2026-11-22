@@ -152,7 +152,7 @@ const pageTitle = projectTitle === 'CV Hub' ? 'CV Hub' : `${projectTitle} — WP
     <ul class="list">{enquiry.prompts.map(prompt => <li>{prompt}</li>)}</ul>
     <div class="btnrow">
       <a class="btn" href={enquiry.href} data-enquiry-email>{ru?'Открыть шаблон письма':'Open enquiry email template'}</a>
-      <a class="btn btn--ghost" href="https://t.me/wporgru">{ru ? 'Обсудить в Telegram' : 'Discuss on Telegram'}</a>
+      <a class="btn btn--ghost" href={enquiry.telegramHref} data-enquiry-telegram>{ru ? 'Заявка в Telegram' : 'Enquire on Telegram'}</a>
     </div>
     {linkedServices.length > 0 && <ul class="list">
       {linkedServices.map(service => <li><a href={base+'/services/'+service.slug+(lang==='ru'?'/':'/en/')}>{service[lang==='ru'?'ru':'en'][0]}</a></li>)}
