@@ -199,6 +199,16 @@ export const serviceDetails = {
   'catalog-automation': {
     ru: ['После обновления дублируются товары или сбиваются цены', 'Новый прайс не должен перезаписывать вручную отредактированные карточки. Сначала определим, по какому идентификатору обновлять товары и что делать с позициями, исчезнувшими из файла.', 'Таблица сопоставления полей, тестовая выборка и правила повторной загрузки. При приёмке проверим примеры новых, изменённых и отсутствующих позиций.'],
     en: ['Updates create duplicate products or incorrect prices', 'A new price list should not overwrite manually edited listings. Agree on the update key and what happens when a product disappears from the source.', 'Field mapping, a sample run and rules for repeat imports. Review new, changed and missing items during acceptance.'],
+    questions:{
+      ru:[
+        ['Можно продолжить импорт, если часть товаров уже загрузилась?', 'Да, если сначала установить, какие записи изменились и по какому ключу их сопоставляет импортёр. Проверю повторный запуск на выборке. Если ошибка в файле или ключе, простая перезагрузка всего прайса может создать дубли.'],
+        ['Надо ли сразу менять тариф хостинга при ошибке 504?', 'Нет. Сначала сравним журнал, время сбоя и последний товар. Если процесс упирается в ограничение сервера, проверим меньший пакет или раздельную загрузку изображений; повышение тарифа имеет смысл, когда узкое место подтверждено.'],
+      ],
+      en:[
+        ['Can an import resume after some products already loaded?', 'Yes, once we identify what changed and which key matches existing products. I test a retry on a sample first. Rerunning the whole file can create duplicates if the source or match key is wrong.'],
+        ['Does a 504 mean we need to upgrade hosting?', 'Not by itself. First compare the error log, failure time and last product. If a server limit is confirmed, test smaller batches or a separate image import before changing the hosting plan.'],
+      ],
+    },
   },
   'technical-seo': {
     ru: ['В отчёте много ошибок, но неясно, с чего начать', 'Одна ошибка шаблона может повторяться на сотнях адресов. Разделю такие причины и единичные случаи, чтобы не тратить бюджет на ручную правку каждой похожей страницы.', 'Приоритеты по типам страниц, примеры проблемных URL и способ повторной проверки. Если есть доступ к поисковым панелям, отдельно покажу, что они сообщают об индексации.'],

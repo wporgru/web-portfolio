@@ -1,0 +1,61 @@
+const cases = ['fishing-catalog-launch', 'sugarlips-supplier-csv-import', 'real-estate-photo-import-repair'];
+
+export const importTimeoutGuide = {
+  slug:'woocommerce-import-timeout',
+  primaryService:'catalog-automation',
+  services:['catalog-automation','website-vps-maintenance'],
+  cases,
+  sourceUrls:[
+    'https://www.wpallimport.com/documentation/terminated-imports-exports/',
+    'https://www.wpallimport.com/documentation/import-processing/',
+    'https://woocommerce.com/document/product-csv-importer-exporter/',
+  ],
+  ru:{
+    title:'Импорт товаров WooCommerce завис или вернул 504',
+    summary:'Что проверить при обрыве импорта WooCommerce: журналы PHP и прокси, проблемные строки, изображения, размер пакета и повторную загрузку без дублей.',
+    intro:'Обновление каталога оборвалось на середине, браузер вернул 504, а часть товаров уже появилась на сайте. Не запускайте тот же файл вслепую. Сначала выясните, на чём прервался процесс и какие записи он успел изменить.',
+    context:'Импорт каталога останавливается на середине?',
+    action:'Разобрать зависший импорт',
+    email:'Прислать строку из журнала',
+    serviceLabel:'Настройка и ремонт импорта',
+    enquiry:['Время сбоя, текст ошибки и последняя обработанная строка или SKU','Импортёр, размер файла и есть ли в каждой строке ссылки на фотографии'],
+    steps:[
+      ['Проверьте, что успело записаться','Сохраните файл, настройки импорта, время ошибки и последние строки журнала. Проверьте несколько известных SKU в базе или админке, включая один после точки остановки. Сбой ответа браузеру ещё не говорит, что все записи из текущего пакета не сохранились.'],
+      ['Отличите плохую строку от ограничения сервера','Загрузка каждый раз падает на одном товаре? Проверьте кодировку, число столбцов, ID родителя вариации и доступность фото именно этой строки. Если обрыв наступает примерно через одно и то же время, сопоставьте метку с журналами PHP и прокси. 504 сам по себе не показывает, какой таймаут или компонент сработал.'],
+      ['Проверьте стоимость одной порции','На стенде повторите импорт небольшой выборки с фотографиями и без них. В WP All Import при таймауте уменьшите число записей за итерацию и сравните журнал. Не увеличивайте одновременно размер пакета и лимиты: тогда не будет ясно, что помогло. Для тяжёлых фотографий рассмотрите отдельную загрузку.'],
+      ['Подготовьте повторный запуск без дублей','Определите, как импортёр отличает существующую карточку от новой: во встроенном CSV WooCommerce это ID или SKU при обновлении, а другие импортёры могут использовать собственный ключ. Проверьте дубли и пустые коды, оставьте вне импорта поля, которые нельзя менять. Повторите маленькую выборку на копии до загрузки всего файла.'],
+      ['Принимайте по результату, а не по надписи «Готово»','Сверьте созданные, обновлённые, пропущенные и ошибочные записи. Откройте на витрине пример простого и вариативного товара, проверьте цены, категории и изображения. Если импорт работает по расписанию, отдельно проверьте следующий запуск и отметьте, какие позиции требуют ручной сверки.'],
+    ],
+    examples:[
+      ['Kaida: импорт продолжили после 504, позиции без фото учли отдельно',cases[0]],
+      ['Sugarlips: проблемы хостинга отделили от правил сопоставления',cases[1]],
+      ['Недвижимость: исправили карточки и фото, но стабильность всего импорта не подтвердили',cases[2]],
+    ],
+    sources:['WP All Import: разбор остановившихся импортов','WP All Import: обработка по итерациям','WooCommerce: встроенный импорт и экспорт CSV'],
+    call:'Пришлите время сбоя, обезличенную строку лога и заголовки файла. Для первого разбора не нужны пароль, полный прайс и данные покупателей.',
+  },
+  en:{
+    title:'WooCommerce import stuck or returning HTTP 504?',
+    summary:'Troubleshoot interrupted WooCommerce imports: PHP and proxy logs, invalid rows, image downloads, batch size and safe retries.',
+    intro:'The catalog refresh stopped halfway, the browser showed 504 and some listings already exist. Before running the same file again, find where the process stopped and what it actually wrote.',
+    context:'Does your catalog import stop halfway?',
+    action:'Investigate an interrupted import',
+    email:'Send an import log excerpt',
+    serviceLabel:'Explore catalog import services',
+    enquiry:['Failure time, error and the last processed row or SKU','Importer, file size and whether rows contain photo URLs'],
+    steps:[
+      ['Identify records already written','Keep the file, import settings, failure time and final log entries. Check known SKUs in the admin area or database, including one after the apparent stop. A failed browser response does not prove the current batch saved nothing.'],
+      ['Separate malformed records from server limits','If every attempt fails on the same item, check encoding, column count, parent variation mapping and that row’s image URLs. If it fails around the same elapsed time, correlate the timestamp with PHP and proxy logs. A 504 alone does not tell you which limit or component triggered it.'],
+      ['Measure the cost of a small batch','Run a small staging sample with and without images. For WP All Import timeouts, reduce records per iteration and compare logs. Do not change batch size and execution limits simultaneously. Consider importing heavy media separately.'],
+      ['Prepare a retry that will not create duplicates','Confirm how the importer identifies an existing listing. The built-in WooCommerce CSV update uses ID or SKU; other importers may use a configured key. Check duplicates and empty codes, leave fields you need to keep unmapped, and repeat the small sample before retrying the full file.'],
+      ['Verify listings, not just a completion banner','Review created, updated, skipped and failed items. Open simple and variable products on the storefront and check pricing, categories and images. If import runs on a schedule, verify the next scheduled run separately and flag any records that still require human review.'],
+    ],
+    examples:[
+      ['Kaida: continued after 504 errors and identified products without photos',cases[0]],
+      ['Sugarlips: separated hosting limits from mapping rules',cases[1]],
+      ['Property listings: repaired cards and images without claiming full import stability',cases[2]],
+    ],
+    sources:['WP All Import: troubleshooting interrupted imports','WP All Import: processing iterations','WooCommerce: built-in product CSV importer and exporter'],
+    call:'Send the failure time, a sanitized log line and the file headers. No passwords, full price list or customer data are needed for the first review.',
+  },
+};
