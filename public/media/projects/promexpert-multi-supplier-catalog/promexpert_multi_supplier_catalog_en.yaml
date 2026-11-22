@@ -1,0 +1,35 @@
+title: "Promexpert: importing 2,217 products into WooCommerce"
+tagline: The sewing-equipment store needed a new Promexpert catalog. Some models
+  already came from Transmetall, so the store had to decide which supplier data
+  took priority and distinguish import keys from customer-facing codes.
+year: "11.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Supplier feeds
+  - SKU mapping
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The sewing-equipment store needed a new Promexpert catalog. Some models
+      already came from Transmetall, so the store had to decide which supplier
+      data took priority and distinguish import keys from customer-facing codes.
+  - type: text
+    title: How it works
+    body: I applied the agreed Promexpert priority to overlaps. Before import I
+      excluded and removed five agreed Aurora models. After import I removed
+      links from attribute values based on client feedback. We agreed to retain
+      the original SKU for matching, use separate supplier prefixes and run the
+      update in the morning.
+  - type: text
+    title: Result and verification
+    body: The client accepted the stage, and handoff reported 2,217 new products.
+      This is the historical import total, not a fresh catalog count. The
+      archive records agreements on supplier codes and scheduling, but does not
+      establish complete code coverage, deduplication or a series of successful
+      later runs.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: SKU search and catalog filters"
+        url: /showcase/sewing-shop-sku-search-filters/en/

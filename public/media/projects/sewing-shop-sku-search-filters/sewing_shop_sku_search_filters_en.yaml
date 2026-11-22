@@ -1,0 +1,35 @@
+title: SKU search and filters for a sewing-equipment store
+tagline: After catalog import, shoppers needed to find a model by SKU, filter by
+  stock or promotions, and use a coupon in the cart. Product pages also needed
+  to show dealer information based on the product brand.
+year: "12.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - SKU search
+  - Catalog filters
+  - Coupons
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: After catalog import, shoppers needed to find a model by SKU, filter by
+      stock or promotions, and use a coupon in the cart. Product pages also
+      needed to show dealer information based on the product brand.
+  - type: text
+    title: How it works
+    body: I enabled SKU search and configured how catalog updates assign statuses
+      used by the filter. I added coupon entry to the cart and showed the client
+      how to create codes. I populated the dealer section from the brand
+      attribute and fixed the layout when a product had no short description.
+      Supplier exclusions were agreed separately.
+  - type: text
+    title: Result and verification
+    body: The client accepted the changes. I separately delivered an XLSX file for
+      an additional supplier, but its import is not confirmed. KIT and Yandex
+      Delivery errors in eShopLogistic still needed investigation; catalog
+      acceptance does not prove that those services worked.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "First stage: brand pages and product cards"
+        url: /showcase/sewing-shop-brand-product-pages/en/

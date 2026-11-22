@@ -42,6 +42,9 @@ const additionalCaseImages = {
   ],
 };
 const projectStages = {
+  'sewing-shop-brand-product-pages': ['promexpert-multi-supplier-catalog', 'Следующий этап: импорт Промэксперта', 'Next stage: importing the Promexpert catalog'],
+  'promexpert-multi-supplier-catalog': ['sewing-shop-sku-search-filters', 'Следующий этап: поиск по артикулу и фильтры', 'Next stage: SKU search and catalog filters'],
+  'sewing-shop-sku-search-filters': ['sewing-shop-brand-product-pages', 'Первый этап: страницы брендов и карточки', 'First stage: brand pages and product cards'],
   'anta-yml-size-variant-import': ['anta-preorder-variant-import', 'Следующий этап: импорт предзаказа из трёх таблиц', 'Follow-up: importing preorder variants from three spreadsheets'],
   'anta-preorder-variant-import': ['anta-yml-size-variant-import', 'Предыдущий этап: загрузка из YML', 'Earlier stage: importing the YML feed'],
   'seo-dashboard': ['trends-search-demand-history', 'Связанный модуль: история спроса и Google Trends', 'Related module: search demand and Google Trends history'],

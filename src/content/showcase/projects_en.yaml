@@ -7031,3 +7031,60 @@ projects:
         url: /showcase/kaida-catalog-replacement/en/
         type: product
     featured: false
+  - slug: sewing-shop-brand-product-pages
+    name: "Sewing store: WooCommerce brands, comparison and wishlists"
+    year: "11.2025"
+    role: Web development and automation
+    description: The sewing-equipment store needed brand pages, product comparison
+      and wishlists. Incorrect statuses from the supplier feed also needed to stop
+      overwriting selected listings.
+    stack:
+      - WooCommerce
+      - Yoast SEO
+      - XML feeds
+      - Catalog UX
+    order: 377
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/sewing-shop-brand-product-pages/en/
+        type: product
+    featured: false
+  - slug: promexpert-multi-supplier-catalog
+    name: "Promexpert: importing 2,217 products into WooCommerce"
+    year: "11.2025"
+    role: Web development and automation
+    description: The sewing-equipment store needed a new Promexpert catalog. Some
+      models already came from Transmetall, so the store had to decide which
+      supplier data took priority and distinguish import keys from customer-facing
+      codes.
+    stack:
+      - WooCommerce
+      - Supplier feeds
+      - SKU mapping
+    order: 378
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/promexpert-multi-supplier-catalog/en/
+        type: product
+    featured: false
+  - slug: sewing-shop-sku-search-filters
+    name: SKU search and filters for a sewing-equipment store
+    year: "12.2025"
+    role: Web development and automation
+    description: After catalog import, shoppers needed to find a model by SKU,
+      filter by stock or promotions, and use a coupon in the cart. Product pages
+      also needed to show dealer information based on the product brand.
+    stack:
+      - WooCommerce
+      - SKU search
+      - Catalog filters
+      - Coupons
+    order: 379
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/sewing-shop-sku-search-filters/en/
+        type: product
+    featured: false

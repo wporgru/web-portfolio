@@ -7074,3 +7074,61 @@ projects:
         url: /showcase/kaida-catalog-replacement/
         type: product
     featured: false
+  - slug: sewing-shop-brand-product-pages
+    name: "Магазин швейной техники: бренды, сравнение и избранное"
+    year: "11.2025"
+    role: Веб-разработка и автоматизация
+    description: "В каталоге швейных машин нужно было упростить выбор модели:
+      вывести страницы брендов, дать покупателю сравнение и избранное и не
+      позволить ошибочным статусам из фида перезаписывать выбранные карточки."
+    stack:
+      - WooCommerce
+      - Yoast SEO
+      - XML feeds
+      - Catalog UX
+    order: 377
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/sewing-shop-brand-product-pages/
+        type: product
+    featured: false
+  - slug: promexpert-multi-supplier-catalog
+    name: "Промэксперт: импорт 2 217 товаров в WooCommerce"
+    year: "11.2025"
+    role: Веб-разработка и автоматизация
+    description: "Добавить ассортимент Промэксперта в действующий магазин швейной
+      техники. Часть моделей уже приходила из Трансметалла: требовалось выбрать
+      приоритет источника и не смешивать код для обновления с кодом, который видит
+      покупатель."
+    stack:
+      - WooCommerce
+      - Supplier feeds
+      - SKU mapping
+    order: 378
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/promexpert-multi-supplier-catalog/
+        type: product
+    featured: false
+  - slug: sewing-shop-sku-search-filters
+    name: Поиск по артикулу и фильтры магазина швейной техники
+    year: "12.2025"
+    role: Веб-разработка и автоматизация
+    description: После загрузки ассортимента покупателю нужно было находить нужную
+      модель по артикулу, отбирать товары по наличию и акциям и применять промокод
+      в корзине. В карточке требовалось показывать сведения о дилере по бренду
+      товара.
+    stack:
+      - WooCommerce
+      - SKU search
+      - Catalog filters
+      - Coupons
+    order: 379
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/sewing-shop-sku-search-filters/
+        type: product
+    featured: false

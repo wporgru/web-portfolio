@@ -1,6 +1,18 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'promexpert-multi-supplier-catalog': {
+    ru: 'Загрузил каталог Промэксперта с приоритетом над вторым поставщиком. В отчёте — 2 217 новых товаров; согласовал ключи и расписание обновления.',
+    en: 'Imported the Promexpert catalog with priority over a second supplier. Handoff reported 2,217 new products; agreed on import keys and scheduling.',
+  },
+  'sewing-shop-brand-product-pages': {
+    ru: 'Добавил страницы брендов, сравнение и избранное. Исключил две модели из ошибочных обновлений и нашёл 170 совпадений названий в двух фидах.',
+    en: 'Added brand pages, comparison and wishlists. Excluded two models from incorrect updates and found 170 matching names across two supplier feeds.',
+  },
+  'sewing-shop-sku-search-filters': {
+    ru: 'Настроил поиск по артикулу, статусы для фильтра и промокоды в корзине. Сведения о дилере выводятся из атрибута бренда.',
+    en: 'Configured SKU search, filter statuses and cart coupons. Dealer information uses the brand attribute.',
+  },
   'bite-news-wordpress-launch': {
     ru: 'Запустил тёмный новостной сайт на Astra и Spectra, настроил домен и передал редакции инструкции по публикации и оформлению.',
     en: 'Launched a dark news site with Astra and Spectra, configured the domain and handed over publishing and styling instructions.',

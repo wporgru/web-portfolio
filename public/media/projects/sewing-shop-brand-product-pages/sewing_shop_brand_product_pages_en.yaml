@@ -1,0 +1,36 @@
+title: "Sewing store: WooCommerce brands, comparison and wishlists"
+tagline: The sewing-equipment store needed brand pages, product comparison and
+  wishlists. Incorrect statuses from the supplier feed also needed to stop
+  overwriting selected listings.
+year: "11.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Yoast SEO
+  - XML feeds
+  - Catalog UX
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The sewing-equipment store needed brand pages, product comparison and
+      wishlists. Incorrect statuses from the supplier feed also needed to stop
+      overwriting selected listings.
+  - type: text
+    title: How it works
+    body: I added brand pages and configured their Yoast settings. I added
+      comparison and wishlists, then adjusted icons and English labels. XPath
+      rules kept Aurora 5000D and Aurora 600D out of the relevant update. Before
+      the next import I compared product names across two feeds and delivered
+      the comparison files.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the brand pages and accepted the stage. The
+      comparison reported 170 name matches across feeds with more than 2,200
+      entries each. That is a review list, not proof that names uniquely
+      identify models or that no other duplicates exist. No measured speed gain
+      or separate form acceptance is documented for this stage.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Next stage: importing the Promexpert catalog"
+        url: /showcase/promexpert-multi-supplier-catalog/en/
