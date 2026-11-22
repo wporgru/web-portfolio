@@ -33,3 +33,10 @@ blocks:
       paths returned 404, while the blog index loaded. The cause of the
       discrepancy is unknown; this check does not establish content loss, a
       traffic change or later work.
+  - type: text
+    title: What the post sitemap comparison showed
+    body: On November 22 I compared the 22 target addresses in the June report with
+      the public post sitemap. None of its 87 URLs matched a complete path or its
+      final segment, so the sitemap did not reveal any prefix-only replacements.
+      The articles may still exist at different addresses. A recovery plan would
+      match articles by title and content before redirecting any additional URLs.

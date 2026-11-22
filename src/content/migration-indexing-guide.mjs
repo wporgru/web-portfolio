@@ -1,0 +1,63 @@
+const cases = ['don-roof-wordpress-blog-migration', 'faeton-blog-tag-archive-recovery', 'megawatt-service-template-migration'];
+
+export const migrationIndexingGuide = {
+  slug: 'seo-after-site-migration',
+  primaryService: 'technical-seo',
+  services: ['technical-seo', 'hosting-migration', 'website-redesign'],
+  cases,
+  sourceUrls: [
+    'https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes',
+    'https://support.google.com/webmasters/answer/9012289',
+    'https://yandex.ru/support/webmaster/ru/yandex-indexing/moving',
+  ],
+  ru: {
+    title: 'Сайт пропал из поиска после переезда: что проверить',
+    summary: 'Как найти причину падения после миграции сайта: сверить старые URL, редиректы, canonical, noindex, Sitemap и данные Google и Яндекса.',
+    intro: 'После переезда главная открывается, а статьи, категории или услуги теряют показы. Не начинайте с массовой отправки на переобход: сначала проверьте, может ли поисковик дойти от старого адреса до равноценной новой страницы и какой URL видит в качестве основного.',
+    context: 'После редизайна или переноса упали показы?',
+    action: 'Разобрать потерю видимости после переезда',
+    email: 'Прислать примеры потерянных страниц',
+    serviceLabel: 'Заказать технический SEO-аудит',
+    enquiry: ['Дата переезда и 3–5 пар старых и новых адресов', 'Какие страницы или группы запросов потеряли показы в Google или Яндексе'],
+    steps: [
+      ['Отделите потери страниц от сбоя счётчика', 'Запишите дату выпуска и что менялось: хостинг, домен, путь, структура рубрик или только шаблон. Сравните клики и показы по группам страниц в поисковых панелях и посещения в аналитике. Если показы сохранились, а визиты в счётчике исчезли, сначала проверьте сбор аналитики.'],
+      ['Возьмите старые адреса, которые приносили трафик', 'Соберите URL из старой карты, отчёта поисковика, журналов и внутренних ссылок. Для каждой строки запишите старый адрес, его HTTP-ответ, ожидаемую и фактическую цель, статус цели и canonical. Начните с одной статьи, категории, товара и услуги — ошибка шаблона обычно затрагивает целую группу.'],
+      ['Проверьте назначение каждого редиректа', 'Если страница переехала насовсем, старый адрес должен перенаправлять на соответствующий новый, а не просто на главную. Проверьте цепочки, петли и 404 на конечном URL. Если равноценной страницы нет, корректный 404 или 410 лучше, чем отправка на нерелевантный раздел.'],
+      ['Сверьте сигналы на новой странице', 'Откройте конечный URL без входа. Проверьте, что это нужный контент с HTTP 200, а не заглушка или страница ошибки. Сравните robots.txt, meta robots, заголовок X-Robots-Tag и canonical. Если canonical указывает на стенд, прежний домен или не тот раздел, исправляйте причину, а не только карту сайта.'],
+      ['Замените старые ссылки и проверьте Sitemap', 'В меню, карточках и списках статей ссылайтесь сразу на конечные адреса. В карту включите канонические URL, которые хотите видеть в поиске, а не редиректы и страницы с noindex. Для многоязычного сайта отдельно проверьте, что языковые ссылки ведут на соответствующие новые страницы.'],
+      ['Проверяйте отдельно доступность и результат в поиске', 'Сначала повторите HTTP-проверку и живой тест URL, затем наблюдайте за статусом обхода, выбранным canonical и показами. Успешный живой тест не означает, что страница уже в индексе. При смене домена проверяйте старый и новый ресурсы; при смене только шаблона заявка на смену адреса не нужна.'],
+    ],
+    examples: [
+      ['«Кровельщик Дона»: перенос 22 материалов и поздняя перепроверка редиректов', cases[0]],
+      ['«Фаэтон»: восстановление адресов архивов, редиректов и пагинации', cases[1]],
+      ['«Мегаватт»: проверка 136 страниц услуг на стенде перед запуском', cases[2]],
+    ],
+    sources: ['Google: перенос сайта с изменением URL', 'Google Search Console: проверка URL', 'Яндекс Вебмастер: переезд сайта'],
+    call: 'Пришлите дату запуска, несколько старых и новых адресов и, если есть, обезличенную выгрузку показов. Начну с контрольной выборки и разделю ошибки, которые можно исправить на сайте, и изменения, которые пока видны только в отчёте поисковика.',
+  },
+  en: {
+    title: 'Lost search visibility after a site migration? What to check',
+    summary: 'Diagnose search losses after a site move: old URLs, redirects, canonical tags, noindex, sitemaps and Google or Yandex reports.',
+    intro: 'The homepage opens after migration, but articles, categories or service pages lose impressions. Before requesting recrawls, check whether search engines can follow an old address to its equivalent and which URL they see as canonical.',
+    context: 'Did impressions drop after a redesign or migration?',
+    action: 'Investigate a post-migration visibility drop',
+    email: 'Send examples of affected pages',
+    serviceLabel: 'Explore technical SEO audits',
+    enquiry: ['Migration date and three to five old and new URL pairs', 'Pages or query groups that lost impressions in Google or Yandex'],
+    steps: [
+      ['Distinguish search losses from tracking failures', 'Record the release date and whether hosting, domain, paths, taxonomy or only the template changed. Compare page-group clicks and impressions in search reports with visits in analytics. If impressions held but tracked visits vanished, check analytics collection first.'],
+      ['Start with old URLs that actually brought traffic', 'Collect URLs from the old sitemap, search reports, logs and internal links. For each row record the old address, HTTP response, expected and actual destination, final status and canonical. Sample an article, category, product and service page, since a shared template issue can affect an entire group.'],
+      ['Check the destination of each redirect', 'A permanently moved page should redirect to its equivalent, not simply the homepage. Check for chains, loops and 404 responses at the destination. If there is no equivalent, a proper 404 or 410 is better than sending users to an unrelated section.'],
+      ['Check the signals on the new page', 'Open the final URL while signed out. Verify that HTTP 200 contains the expected page rather than a placeholder or error. Check robots.txt, meta robots, X-Robots-Tag and canonical. If canonical points to staging, an old host or the wrong section, fix that signal rather than just editing the sitemap.'],
+      ['Update links and review the sitemap', 'Point menus, product cards and article lists straight to the final URLs. List the canonical pages you want in search, not redirects or noindex pages. On multilingual sites, make sure language links point to the corresponding new page.'],
+      ['Track accessibility and search outcomes separately', 'Run the HTTP checks and live URL inspection again, then track crawl status, selected canonical and impressions. A successful live test does not establish indexing. For domain moves, monitor the old and new properties; a template-only change does not require a change-of-address request.'],
+    ],
+    examples: [
+      ['Don Roof: moving 22 articles and rechecking redirects later', cases[0]],
+      ['Faeton: restoring archive URLs, redirects and pagination', cases[1]],
+      ['Megawatt: verifying 136 migrated service pages on staging', cases[2]],
+    ],
+    sources: ['Google: site moves with URL changes', 'Google Search Console: URL Inspection', 'Yandex Webmaster: site migration'],
+    call: 'Send the launch date, several old and new addresses, and a sanitized impressions export if available. I will start with a sample and separate issues we can fix on the site from changes only visible in search reports.',
+  },
+};
