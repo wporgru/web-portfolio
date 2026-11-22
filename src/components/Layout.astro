@@ -28,6 +28,7 @@ const {
   customLangLinks,
   roleLinks,
   personJsonLd,
+  articleJsonLd,
   serviceJsonLd,
   serviceCatalogJsonLd,
   breadcrumbs = [],
@@ -152,6 +153,18 @@ const jsonLd = personJsonLd ? {
 // the tag early. < is invisible to JSON parsers but not to an HTML tokenizer.
 const safeJsonLd = (value: object) => JSON.stringify(value).replace(/</g, '\\u003c');
 const jsonLdSafe = jsonLd && !noindex ? safeJsonLd(jsonLd) : null;
+const articleGraph = articleJsonLd && !noindex ? safeJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': canonicalUrl+'#article',
+  url: canonicalUrl,
+  mainEntityOfPage: {'@type':'WebPage','@id':canonicalUrl},
+  headline: articleJsonLd.headline,
+  description: metaDescription,
+  inLanguage: lang,
+  author: {'@type':'Person','@id':personId,name:articleJsonLd.authorName,url:profileUrl},
+  ...(articleJsonLd.image ? {image:[new URL(base+articleJsonLd.image,siteUrl).href]} : {}),
+}) : null;
 const serviceGraph = serviceJsonLd && !noindex ? safeJsonLd({
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -212,11 +225,12 @@ const breadcrumbJsonLd = breadcrumbs.length > 1 && !noindex ? JSON.stringify({
       <script type="application/ld+json" set:html={jsonLdSafe} />
     )}
     {breadcrumbJsonLd && <script type="application/ld+json" set:html={breadcrumbJsonLd} />}
+    {articleGraph && <script type="application/ld+json" set:html={articleGraph} />}
     {serviceGraph && <script type="application/ld+json" set:html={serviceGraph} />}
     {serviceCatalogGraph && <script type="application/ld+json" set:html={serviceCatalogGraph} />}
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={articleGraph ? 'article' : 'website'} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={metaDescription} />

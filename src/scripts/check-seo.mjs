@@ -216,6 +216,36 @@ for (const suffix of ['', 'en/']) {
 const personId = profileUrl+'#oleg-tishin';
 const jsonLdOf = (html,type) => [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
   .map(([,value])=>JSON.parse(value)).filter(node=>node['@type']===type);
+const decode = value => value?.replace(/&(?:#(\d+)|#x([\da-f]+)|(amp|lt|gt|quot|apos));/gi, (_, decimal, hex, named) =>
+  decimal ? String.fromCodePoint(Number(decimal)) : hex ? String.fromCodePoint(parseInt(hex,16)) :
+    ({amp:'&',lt:'<',gt:'>',quot:'"',apos:"'"})[named.toLowerCase()]);
+let verifiedArticles = 0;
+for (const [url,alternates] of pages) {
+  const route = new URL(url).pathname.slice(base.length);
+  if (!/^(?:showcase|guides)\/(?!en\/)[a-z0-9-]+\/(?:en\/)?$/.test(route)) continue;
+  const html = read(path.join(root,route,'index.html'));
+  const [article,...extras] = jsonLdOf(html,'Article');
+  const locale = alternates.get('ru') === url ? 'ru' : 'en';
+  const authorName = locale === 'ru' ? 'Олег Тишин' : 'Oleg Tishin';
+  const authorHome = base+(locale === 'en'?'en/':'');
+  const byline = html.match(/<a\b([^>]*\bdata-article-author(?:\s|>)[^>]*)>([^<]+)<\/a>/);
+  if (!article || extras.length || article['@id'] !== url+'#article' || article.url !== url ||
+      article.mainEntityOfPage?.['@type'] !== 'WebPage' || article.mainEntityOfPage?.['@id'] !== url ||
+      article.inLanguage !== locale || article.headline !== decode(html.match(/<h1\b[^>]*>([^<]+)<\/h1>/i)?.[1]) ||
+      article.description !== decode(html.match(/<meta name="description" content="([^"]+)"/)?.[1]) ||
+      article.author?.['@type'] !== 'Person' || article.author?.['@id'] !== personId ||
+      article.author?.url !== profileUrl || article.author?.name !== authorName ||
+      !byline?.[1].includes(`href="${authorHome}"`) || decode(byline?.[2]) !== authorName ||
+      !html.includes('<meta property="og:type" content="article"') ||
+      ['datePublished','dateModified','review','aggregateRating'].some(key=>key in article)) fail(url,'invalid article schema or byline');
+  if (article.image !== undefined) {
+    const image = Array.isArray(article.image) && article.image.length === 1 ? URL.parse(article.image[0]) : null;
+    if (!image || image.origin !== new URL(url).origin || !image.pathname.startsWith(base+'media/projects/') ||
+        !originalImages.get(url)?.includes(image.pathname) ||
+        !fs.existsSync(path.join(root,image.pathname.slice(base.length)))) fail(url,'article image is not a visible case asset');
+  }
+  verifiedArticles++;
+}
 for (const lang of ['ru','en']) {
   const suffix = lang==='en'?'en/':'';
   const providerName = lang==='en'?'Oleg Tishin':'Олег Тишин';
@@ -382,3 +412,4 @@ console.log('Verified '+distinctSitemapImages.size+' original images across '+im
 console.log('Verified contextual enquiry templates for '+enquiryPages+' localized case and service pages.');
 console.log('Verified versioned sitemap revision dates for '+verifiedRevisions+' localized case pages.');
 console.log('Verified homepage navigation for '+checkedNavigationPages+' localized pages without JavaScript.');
+console.log('Verified '+verifiedArticles+' localized articles with visible bylines and canonical author linkage.');
