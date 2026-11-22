@@ -7007,7 +7007,7 @@ projects:
         url: /showcase/don-roof-wordpress-blog-migration/en/
         type: product
   - slug: kaida-catalog-replacement
-    name: "Kaida: replacing a WooCommerce assortment and fixing catalog navigation"
+    name: "Kaida: WooCommerce catalog replacement and menu repair"
     year: "02.2024"
     role: Web development and automation
     description: "A fishing shop needed to replace its assortment from a new price
