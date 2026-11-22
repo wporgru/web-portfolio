@@ -1,4 +1,42 @@
 export const serviceDetails = {
+  'wordpress-contact-form-repair': {
+    ru:[
+      'Посетитель видит «Отправлено», а отдел продаж не получает заявку',
+      'Не начинаю с установки SMTP или CAPTCHA. Сначала воспроизвожу заявку с контрольными данными и смотрю, где заканчивается её путь: в браузере, фильтре формы, почтовой системе или ящике менеджера. Если по форме одновременно идут спам и пропадают обычные заявки, проверяю оба сценария отдельно.',
+      'Передам список исправленных форм, результаты контрольных отправок по согласованным страницам, получателям и устройствам, а также настройки, которые стоит проверить после следующего обновления. Для антиспама отдельно согласуем период наблюдения и признаки ложной блокировки.',
+    ],
+    en:[
+      'Visitors see “Sent”, but the sales team gets no enquiry',
+      'I do not start by installing SMTP or CAPTCHA. I reproduce the enquiry with test data and trace where it stops: browser, spam filter, mail system or recipient inbox. If the form both admits spam and loses genuine enquiries, those are separate test cases.',
+      'Receive a list of fixed forms, results for the agreed pages, recipients and devices, and the settings to recheck after an update. For spam protection, agree on an observation window and how to identify legitimate messages that were blocked.',
+    ],
+    steps:{
+      ru:[
+        ['Воспроизвожу сбой на конкретной странице','Открываю форму без входа в админку. Сверяю обязательные поля, сообщение после отправки и время теста. Если одинаковая форма стоит в подвале, карточке и всплывающем окне, проверяю согласованные места отдельно.'],
+        ['Нахожу, где пропадает заявка','Сопоставляю результат обработки формы с почтовым журналом, если он доступен. Проверяю получателя и контрольный ящик. Ложную блокировку фильтром не исправить сменой SMTP, а подтверждение отправки не равно письму во входящих.'],
+        ['Исправляю причину, не меняя остальное','Правлю нужную форму, шаблон письма или фильтр. Антиспам проверяю на согласованных обезличенных примерах вместе с нормальной заявкой: важно не перекрыть обращения клиентов. Установку нового плагина отделяю от точечной правки.'],
+        ['Проверяю, что получает менеджер','Согласуем тестовые значения, страницу, получателя и время. В письме проверим обязательные поля и обратный контакт. Если CRM или мессенджер не участвовали в тесте, не считаю их проверенными.'],
+      ],
+      en:[
+        ['Reproduce the issue on the affected page','Open the form while logged out and record required fields, the submission response and the test time. If a form appears in the footer, on a listing and in a popup, verify the agreed placements separately.'],
+        ['Find where the enquiry stops','Compare the form result with the mail log when available. Check the recipient and test inbox. Changing SMTP will not resolve a spam false positive, and a successful send is not proof of inbox delivery.'],
+        ['Fix the affected layer','Adjust the specific form, mail template or filter. Test spam controls on agreed, redacted examples as well as a normal enquiry so genuine contacts are not blocked. Keep plugin replacement separate from a targeted fix.'],
+        ['Check what the team actually receives','Agree on test values, page, recipient and time. Verify the required fields and reply contact in the delivered message. Any CRM or messenger that did not participate in the test is reported separately.'],
+      ],
+    },
+    questions:{
+      ru:[
+        ['Нужно менять Contact Form 7 или MetForm?', 'Не обязательно. Если проблема в настройке, адресе получателя или подключении формы, сначала рассматриваю правку на месте. Замену обсуждаем, когда она надёжнее ремонта и понятно, какие поля и оформление нужно перенести.'],
+        ['Можно убрать спам без неудобной проверки для всех?', 'Выберем защиту по примерам нежелательных заявок и проверим обычную отправку с телефона. Долгосрочный эффект определяется наблюдением и числом ложных срабатываний, а не одним тестом.'],
+        ['Если письма всё равно нет после отправки?', 'Проверю, создала ли форма письмо, кому она его адресовала и что видно в почтовых журналах. Если письма уже приняты почтой, проверим правила ящика и папку спама у согласованного получателя.'],
+      ],
+      en:[
+        ['Do we need to replace Contact Form 7 or MetForm?', 'Not necessarily. If the issue is a setting, recipient or page embed, start with a targeted repair. Replace the plugin only when that is the more reliable option and required fields and presentation are clear.'],
+        ['Can we reduce spam without adding friction for every visitor?', 'Choose protection based on examples and check a normal submission on mobile. Judge longer-term impact through observation and false positives, not a single test.'],
+        ['What if there is still no email after submission?', 'Check whether the form generated the message, where it addressed it and what the mail logs show. If the mail system accepted it, check mailbox rules and spam handling with the agreed recipient.'],
+      ],
+    },
+  },
   'wordpress-php-plugin-updates': {
     ru:[
       'Хостинг просит обновить PHP, а тема и плагины давно не менялись',

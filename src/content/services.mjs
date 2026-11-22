@@ -1,5 +1,23 @@
 export const services = [
   {
+    slug:'wordpress-contact-form-repair',
+    cases:['metform-replacement','primeclean-forms','messenger-and-email-leads','blog-tags-and-antispam'],
+    ru:[
+      'Ремонт форм WordPress и защита заявок от спама',
+      'Если Contact Form 7 или MetForm показывает ошибку, пишет «Отправлено» без письма или пропускает спам, найду место сбоя и проверю получение контрольной заявки менеджером.',
+      'Проверю форму на публичной странице с телефона и компьютера. Разделю ошибки полей, блокировку фильтром, сбой отправки и недоставку письма. Если проблемы только на части страниц, сравню экземпляры формы, настройки получателей и окружение.',
+      'Исправлю согласованный участок: поля, конфигурацию письма, подключение формы или антиспам-правила. Если нужна замена плагина, сначала сверю обязательные поля и текущее оформление. Проверим реальное получение заявки, а не только сообщение под кнопкой.',
+      'Пришлите адрес страницы и время последней попытки с часовым поясом. Укажите, что происходит после отправки и куда должна поступать заявка. Пароли, токены и данные клиентов для первой оценки не нужны.',
+    ],
+    en:[
+      'WordPress contact form repair and spam protection',
+      'If Contact Form 7 or MetForm shows an error, reports success without an email or lets spam through, isolate the failure and verify that a test enquiry reaches your team.',
+      'Test the public form on a phone and desktop. Separate field validation, spam filtering, send failures and mail delivery. If only some pages are affected, compare form instances, recipients and the surrounding page setup.',
+      'Fix the agreed layer: fields, mail settings, form placement or spam rules. If a plugin replacement is needed, review required fields and presentation first. Verify the actual receipt of an enquiry rather than relying on the success message.',
+      'Send the page URL and the most recent attempt time with timezone. Describe what happens after submission and where enquiries should go. No passwords, tokens or customer data are needed upfront.',
+    ],
+  },
+  {
     slug:'wordpress-php-plugin-updates',
     cases:['tajbazar-store-upgrade','goodwin-php','legacy-php-compatibility','legacy-wordpress-lead-form','php8-layout-repair','woodmart-theme-rebuild','klimat-profi-backup-automation'],
     ru:[

@@ -1,5 +1,9 @@
 // Prompts ask for enough information to scope a task without asking for access.
 export const enquiryPrompts = {
+  'wordpress-contact-form-repair': [
+    ['Адрес страницы, сообщение формы или пример спама без контактов клиента', 'Время последней попытки и канал, куда должна поступить заявка'],
+    ['Form page, response message or a redacted spam example', 'Time of the last attempt and the intended enquiry destination'],
+  ],
   'wordpress-php-plugin-updates': [
     ['Что просит обновить хостинг или WordPress', 'Что должно работать после обновления и есть ли актуальная копия'],
     ['Requested hosting or WordPress update', 'What must keep working and whether a recent backup exists'],

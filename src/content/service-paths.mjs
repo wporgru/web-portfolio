@@ -1,5 +1,9 @@
 // Alternatives explain how to scope a job, not just which pages to visit next.
 export const servicePaths = {
+  'wordpress-contact-form-repair': [
+    ['website-contact-widgets','Если нужен ещё способ связи через мессенджер, а не только восстановление почтовой формы.','If you also need a messenger contact option rather than just restoring the email form.'],
+    ['checkout-payments','Если пропадает уведомление о заказе WooCommerce, а не сообщение из контактной формы.','If a WooCommerce order notification is missing rather than a contact form message.'],
+  ],
   'wordpress-php-plugin-updates': [
     ['wordpress-repair','Если после прошлого обновления сайт уже сломался и сначала его нужно восстановить.','If a previous update already broke the site and recovery comes first.'],
     ['website-redesign','Если старую тему выгоднее заменить и одновременно переработать витрину.','If replacing the theme and redesigning the storefront makes more sense.'],
@@ -12,7 +16,7 @@ export const servicePaths = {
     ['catalog-automation','Если цены, остатки и характеристики нужно регулярно получать от поставщика.','If prices, stock and specifications need regular supplier updates.'],
     ['checkout-payments','Если нужен новый способ доставки или проблема возникает при оплате заказа.','If you need a new shipping method or the issue occurs during payment.'],
   ],
-  'website-contact-widgets': [["website-ux-audit","Если посетители не могут найти контакты и другие важные действия на сайте.","If visitors cannot find contact options or other key actions."],["wordpress-repair","Если существующая форма или чат перестали работать после обновления.","If a form or chat stopped working after an update."]],
+  'website-contact-widgets': [["website-ux-audit","Если посетители не могут найти контакты и другие важные действия на сайте.","If visitors cannot find contact options or other key actions."],["wordpress-contact-form-repair","Если проблема не в кнопках связи, а в форме, которая перестала доставлять заявки.","If the issue is a contact form that stopped delivering enquiries rather than the contact buttons."]],
   'corporate-email-signatures': [["data-and-ai","Если данные команды сначала надо привести к единой структуре.","If staff data needs to be normalized first."],["wordpress-business-website","Если вместо подписи нужен сайт компании.","If you need a company website instead."]],
   'affiliate-link-audit': [
     ['affiliate-catalog-development','Если вместо ремонта отдельных ссылок нужно заново выстроить витрину и обновление предложений.','If individual link repairs cannot solve the problem and the storefront and refresh pipeline need to be rebuilt.'],
@@ -55,8 +59,8 @@ export const servicePaths = {
     ['affiliate-catalog-development','Если сравнение цен строится на партнёрских фидах и оформление происходит у продавцов.','If comparison uses affiliate feeds and checkout happens with merchants.'],
   ],
   'wordpress-repair': [
+    ['wordpress-contact-form-repair','Если сайт открывается, но форма заявки перестала отправлять или пропускает спам.','If the site loads but its contact form no longer delivers enquiries or lets spam through.'],
     ['wordpress-php-plugin-updates','Если сайт ещё работает, но пора обновить PHP, ядро или расширения.','If the site still works but PHP, core or extensions need updating.'],
-    ['wordpress-performance','Если страница работает без ошибок, но медленно загружается или реагирует.','If the page works without errors but loads or responds slowly.'],
   ],
   'website-redesign': [
     ['website-ux-audit','Если ещё не ясно, нужен ли новый дизайн или достаточно исправить несколько сценариев.','If you are not sure whether to redesign or fix a few specific flows.'],
