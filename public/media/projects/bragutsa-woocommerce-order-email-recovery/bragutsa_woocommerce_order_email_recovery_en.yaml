@@ -1,0 +1,27 @@
+title: "Bragutsa: restoring new-order emails for store staff"
+tagline: Staff had to open WordPress manually to find new orders and review
+  their contents. There was a separate issue with a paid Russian Post extension.
+  Order notifications and shipping quotes required separate checks.
+year: "04.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Order emails
+  - Delivery diagnostics
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Staff had to open WordPress manually to find new orders and review their
+      contents. There was a separate issue with a paid Russian Post extension.
+      Order notifications and shipping quotes required separate checks.
+  - type: text
+    title: How it works
+    body: I fixed notifications and handed the result back for verification. The
+      client placed a test order and confirmed receipt of the email. For the
+      shipping extension I recommended checking the license and version, then
+      contacting vendor support if needed. The client deferred that work.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work after confirming the test order email. The
+      Russian Post outcome was a diagnostic plan, not verified rate calculation,
+      extension repair or a license renewal.

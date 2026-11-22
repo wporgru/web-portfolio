@@ -226,6 +226,16 @@ export const serviceDetails = {
   'checkout-payments': {
     ru: ['Покупатель оплатил, а магазин не видит заказ', 'Проверю, где расходится сценарий: в форме, на стороне платёжного сервиса, при обновлении статуса или при отправке письма. Ошибка на одном шаге не означает, что нужно менять весь чекаут.', 'Воспроизводимый контрольный сценарий и результат по каждому шагу. Отдельно отмечу, что проверено в тестовой среде, а что — в согласованном рабочем сценарии.'],
     en: ['The customer paid but the store did not register it', 'Isolate whether the problem is in the form, payment provider, order status update or email. A failure at one step does not mean the whole checkout needs replacing.', 'A repeatable test flow and a result for each step, with sandbox checks clearly distinguished from agreed live verification.'],
+    questions:{
+      ru:[
+        ['Заказ виден в WooCommerce, но письмо не пришло. Что проверить?', 'Сначала выясню, должен ли этот статус заказа запускать нужное уведомление, включено ли оно и какой указан получатель. Затем проверю отдельно формирование письма, ответ почтового сервиса и поступление на контрольный адрес.'],
+        ['Достаточно ли установить SMTP-плагин?', 'Нет, если магазин вообще не формирует нужное письмо или отправляет его не тому получателю. Успешное тестовое сообщение SMTP тоже не проверяет письмо о реальном заказе. Нужен контрольный сценарий с согласованным статусом и проверкой получения.'],
+      ],
+      en:[
+        ['WooCommerce has the order, but the email did not arrive. What do you check?', 'First check whether that order status should trigger the intended notification, whether it is enabled and who should receive it. Then verify message creation, the mail provider response and receipt at an agreed test address separately.'],
+        ['Is installing an SMTP plugin enough?', 'Not if the store never creates the email or sends it to the wrong recipient. A successful SMTP test message does not verify the actual order email. Use a test order with an agreed status and confirm receipt.'],
+      ],
+    },
   },
   'wordpress-performance': {
     ru: ['На телефоне долго виден пустой экран, а в админке всё быстро', 'Сравню загрузку типовых страниц для обычного посетителя. В магазине особенно важны не только первый экран и изображения, но и отсутствие регрессий в корзине, формах и аналитике.', 'Повторяемые замеры по согласованным страницам, список изменений и проверка ключевых функций. Отдельно покажу ограничения замеров и где ещё остаётся потенциал.'],

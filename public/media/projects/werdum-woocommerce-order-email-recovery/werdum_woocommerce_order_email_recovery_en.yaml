@@ -1,0 +1,27 @@
+title: "Werdum: restoring WooCommerce order emails"
+tagline: Neither the customer nor the store owner received an email after
+  checkout. The client reproduced the issue with different email addresses. The
+  goal was to restore both the buyer confirmation and the staff notification.
+year: "08.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Order notifications
+  - Email troubleshooting
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Neither the customer nor the store owner received an email after checkout.
+      The client reproduced the issue with different email addresses. The goal
+      was to restore both the buyer confirmation and the staff notification.
+  - type: text
+    title: How it works
+    body: I restored notifications and handed the result back to the store owner for
+      verification. The archive retains the symptom report, post-fix
+      confirmation and acceptance. The technical attachment is unavailable, so
+      it does not establish a particular SMTP plugin, provider or root cause.
+  - type: text
+    title: Result and verification
+    body: After testing, the client reported that notifications worked and accepted
+      the order. This is client confirmation of the repair, not an independent
+      test across email providers or a current delivery check.

@@ -7236,3 +7236,41 @@ projects:
         url: /showcase/wavesnwind-woodmart-product-recovery/
         type: product
     featured: false
+  - slug: werdum-woocommerce-order-email-recovery
+    name: "Werdum: восстановление писем о заказах WooCommerce"
+    year: "08.2023"
+    role: Веб-разработка и автоматизация
+    description: "После оформления заказа уведомления не получали ни покупатель, ни
+      владелец магазина. Клиент повторил проверку с разными почтовыми адресами.
+      Нужно было вернуть оба канала: подтверждение покупки для клиента и сигнал о
+      новом заказе для менеджера."
+    stack:
+      - WooCommerce
+      - Order notifications
+      - Email troubleshooting
+    order: 385
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/werdum-woocommerce-order-email-recovery/
+        type: product
+    featured: false
+  - slug: bragutsa-woocommerce-order-email-recovery
+    name: "Bragutsa: письмо о новом заказе снова приходит менеджеру"
+    year: "04.2023"
+    role: Веб-разработка и автоматизация
+    description: Менеджеру приходилось вручную открывать WordPress, чтобы узнать о
+      новом заказе и посмотреть его состав. Отдельно была проблема с платным
+      модулем Почты России. Почтовые уведомления и расчёт доставки требовали
+      разной диагностики.
+    stack:
+      - WooCommerce
+      - Order emails
+      - Delivery diagnostics
+    order: 386
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bragutsa-woocommerce-order-email-recovery/
+        type: product
+    featured: false

@@ -7189,3 +7189,40 @@ projects:
         url: /showcase/wavesnwind-woodmart-product-recovery/en/
         type: product
     featured: false
+  - slug: werdum-woocommerce-order-email-recovery
+    name: "Werdum: restoring WooCommerce order emails"
+    year: "08.2023"
+    role: Web development and automation
+    description: Neither the customer nor the store owner received an email after
+      checkout. The client reproduced the issue with different email addresses.
+      The goal was to restore both the buyer confirmation and the staff
+      notification.
+    stack:
+      - WooCommerce
+      - Order notifications
+      - Email troubleshooting
+    order: 385
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/werdum-woocommerce-order-email-recovery/en/
+        type: product
+    featured: false
+  - slug: bragutsa-woocommerce-order-email-recovery
+    name: "Bragutsa: restoring new-order emails for store staff"
+    year: "04.2023"
+    role: Web development and automation
+    description: Staff had to open WordPress manually to find new orders and review
+      their contents. There was a separate issue with a paid Russian Post
+      extension. Order notifications and shipping quotes required separate checks.
+    stack:
+      - WooCommerce
+      - Order emails
+      - Delivery diagnostics
+    order: 386
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bragutsa-woocommerce-order-email-recovery/en/
+        type: product
+    featured: false
