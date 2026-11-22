@@ -1,0 +1,49 @@
+title: "Kaida: replacing a WooCommerce assortment and fixing catalog navigation"
+tagline: "A fishing shop needed to replace its assortment from a new price list
+  while retaining two categories: fishing nets and netting. The spreadsheet
+  lacked reliable identifiers, images and descriptions for automatic matching."
+year: "02.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product data
+  - Catalog migration
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "A fishing shop needed to replace its assortment from a new price list
+      while retaining two categories: fishing nets and netting. The spreadsheet
+      lacked reliable identifiers, images and descriptions for automatic
+      matching."
+  - type: text
+    title: How it works
+    body: I exported the store's products, provided a reference spreadsheet and
+      recorded a walkthrough on adding rows, categories and photos. The client
+      prepared the data using that template. I confirmed that daily hosting
+      backups were available, imported the agreed assortment and kept the old
+      listings in the trash so they could be restored. When the client flagged a
+      menu item pointing to an empty section, I corrected it.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. An archival capture shows the reels section
+      with products, prices and navigation, including both agreed categories in
+      the sidebar. It does not establish a full reconciliation of their
+      products, the total import count, the markup applied or a completed backup
+      restore test.
+  - type: image
+    src: /media/projects/kaida-catalog-replacement/historical-reels.webp
+    alt: Archived Kaida fishing reels category with products, prices and category
+      navigation
+    caption: Excerpt from the February 2024 Kwork portfolio entry. It shows the
+      reels category, not the total imported count, markup formula or
+      preservation of every listing.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Kaida in 2026: pricing update and drafting discontinued listings"
+        url: /showcase/supplier-price-list-refresh/en/
+  - type: text
+    title: Original Kwork portfolio entry
+    links:
+      - label: View the original entry
+        url: https://kwork.ru/portfolio/12093627

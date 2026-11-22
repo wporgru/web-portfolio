@@ -3,6 +3,7 @@ import {stringify} from 'yaml';
 import {archiveMedia} from './portfolio-archive-media.mjs';
 const read=p=>fs.readFileSync(p,'utf8').replace(/^\uFEFF/,'');
 const publicSources = {
+  'kaida-catalog-replacement': 'https://kwork.ru/portfolio/12093627',
   'faeton-rental-catalog-recovery': 'https://faetonclean.ru/arenda-polomoechnoy-mashiny/',
   'faeton-blog-tag-archive-recovery': 'https://faetonclean.ru/blog/',
   'apteka-optika-price-comparison': 'https://apteka-optika.ru/',
@@ -10,6 +11,7 @@ const publicSources = {
   'svl-avto-woocommerce-catalog': 'https://kwork.ru/portfolio/18438983',
 };
 const caseImages = {
+  'kaida-catalog-replacement': ['historical-reels.webp', 'Архивный раздел «Катушки» магазина Kaida: товары, цены и список категорий', 'Archived Kaida fishing reels category with products, prices and category navigation', 'Фрагмент из карточки Kwork от февраля 2024 года. Показывает раздел «Катушки», но не подтверждает итоговое число загруженных товаров, формулу наценки или сохранность каждой карточки.', 'Excerpt from the February 2024 Kwork portfolio entry. It shows the reels category, not the total imported count, markup formula or preservation of every listing.'],
   'solomon-responsive-conversion-audit': ['audit-passport-desktop.png','Архивный десктопный снимок страницы «Паспорт без проживания»','Archived desktop capture of the passport service page','14 июля 2026 года, окно 1440 px. Из-за выступающего заголовка ширина документа составила 1540 px. Сохранён весь документ, включая область переполнения. Это состояние на момент аудита, не результат редизайна.','July 14, 2026, 1440 px viewport. An overflowing heading expanded the document to 1540 px. The capture includes the entire document and overflow area. This is the audited state, not a redesign result.'],
   'nomad-spain-landing-figma': ['archive-full.webp', 'Полная страница программы Digital Nomad: Испания', 'Full Digital Nomad page for the Spain program', 'Архивный полностраничный снимок проверенной версии без обрезки, 1680 × 12327. Показаны интерфейс и вёрстка, а не актуальные условия программы.', 'Uncropped full-page archive image of the verified version, 1680 × 12327. It documents the interface, not current program terms.'],
   'nomad-english-megamenu-localization': ['archive-menu.webp', 'Английское меню Digital Nomad с пятью колонками', 'English Digital Nomad megamenu with five columns', 'Снимок раскрытого меню из отчёта проверки. Это фрагмент шапки, не снимок всей страницы.', 'Expanded menu from the verification report. This is a header excerpt, not a full-page capture.', false],
@@ -80,6 +82,7 @@ const projectStages = {
   'bgtgroup-pl-multilingual-redirects': ['bgtgroup-technical-seo-performance', 'Другой сайт BGT Group: техническое SEO и скорость', 'Another BGT Group website: technical SEO and performance'],
   'bgtgroup-technical-seo-performance': ['bgtgroup-pl-multilingual-redirects', 'Другой сайт BGT Group: ссылки и языковые редиректы', 'Another BGT Group website: links and language redirects'],
   'sugarlips-supplier-csv-import': ['sugarlips-category-navigation', 'Следующий этап: навигация по категориям', 'Next stage: category navigation'],
+  'kaida-catalog-replacement': ['supplier-price-list-refresh', 'Kaida в 2026 году: обновление цен и перевод отсутствующих позиций в черновики', 'Kaida in 2026: pricing update and drafting discontinued listings'],
   'sugarlips-category-navigation': ['sugarlips-supplier-csv-import', 'Предыдущий этап: импорт CSV поставщика', 'Previous stage: supplier CSV import'],
   'sugarlips-boxberry-city-mapping': ['sugarlips-supplier-csv-import', 'Другой этап Sugarlips: обновление каталога', 'Another Sugarlips stage: catalog updates'],
   'woocommerce-document-pack-product-page': ['metrica-ecommerce-purchase-goals', 'Связанный этап: электронная торговля и цели покупки', 'Related stage: e-commerce tracking and purchase goals'],

@@ -2,6 +2,7 @@ import { migrationGuide } from './migration-guide.mjs';
 import { filtersGuide } from './woocommerce-filters-guide.mjs';
 import { ymlFeedGuide } from './yml-feed-guide.mjs';
 import { woocommerceThemeChangeGuide } from './woocommerce-theme-change-guide.mjs';
+import { priceListGuide } from './woocommerce-price-list-guide.mjs';
 
 export const guides = [
   {
@@ -17,4 +18,5 @@ export const guides = [
   filtersGuide,
   ymlFeedGuide,
   woocommerceThemeChangeGuide,
+  priceListGuide,
 ];

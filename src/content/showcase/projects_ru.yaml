@@ -7050,3 +7050,27 @@ projects:
       - label: Читать кейс
         url: /showcase/don-roof-wordpress-blog-migration/
         type: product
+  - slug: kaida-catalog-replacement
+    name: "Kaida: замена ассортимента WooCommerce и правка меню каталога"
+    year: "02.2024"
+    role: Веб-разработка и автоматизация
+    description: "Рыболовному магазину нужно было заменить ассортимент по новому
+      прайсу, оставив две категории: рыболовные сети и сетеполотна. В исходной
+      таблице не хватало надёжных идентификаторов, фотографий и описаний для
+      автоматического сопоставления."
+    stack:
+      - WooCommerce
+      - Product data
+      - Catalog migration
+    order: 376
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/kaida-catalog-replacement/historical-reels.webp
+        alt: "Архивный раздел «Катушки» магазина Kaida: товары, цены и список категорий"
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/kaida-catalog-replacement/
+        type: product
+    featured: false

@@ -7006,3 +7006,28 @@ projects:
       - label: Read case study
         url: /showcase/don-roof-wordpress-blog-migration/en/
         type: product
+  - slug: kaida-catalog-replacement
+    name: "Kaida: replacing a WooCommerce assortment and fixing catalog navigation"
+    year: "02.2024"
+    role: Web development and automation
+    description: "A fishing shop needed to replace its assortment from a new price
+      list while retaining two categories: fishing nets and netting. The
+      spreadsheet lacked reliable identifiers, images and descriptions for
+      automatic matching."
+    stack:
+      - WooCommerce
+      - Product data
+      - Catalog migration
+    order: 376
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/kaida-catalog-replacement/historical-reels.webp
+        alt: Archived Kaida fishing reels category with products, prices and category
+          navigation
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/kaida-catalog-replacement/en/
+        type: product
+    featured: false

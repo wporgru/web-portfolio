@@ -13,7 +13,9 @@ blocks:
     title: Brief and constraints
     body: "The supplier price list changed: new items needed adding, existing prices
       needed updating, and missing items had to leave the storefront without
-      being permanently deleted."
+      being permanently deleted. The client requested that existing categories
+      stay as they were and that separately managed fishing nets and netting
+      remain outside the update."
   - type: text
     title: How it works
     body: "Prepared the price list and handled three outcomes separately: new
@@ -31,3 +33,12 @@ blocks:
     caption: Public catalog captured November 4, 2026, uncropped. It does not
       establish historical import prices or stock; one image load remained
       incomplete.
+  - type: text
+    title: How this differed from the earlier import
+    body: In 2024, the spreadsheet could not be matched reliably and the prepared
+      assortment was imported as a replacement. Here, selected ranges of the
+      supplier price list updated existing products, while missing listings were
+      moved to draft. These were different approaches for the same storefront.
+    links:
+      - label: Kaida in 2024 — assortment replacement and menu repair
+        url: /showcase/kaida-catalog-replacement/en/
