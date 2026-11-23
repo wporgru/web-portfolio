@@ -29,15 +29,30 @@ blocks:
       corrected the category selector’s initial dimensions and removed overlap with the
       mobile banner to prevent useful controls shifting after styles load.
   - type: text
-    title: Results and checks
-    body: In October 30 mobile lab runs, PageSpeed changed from 72 to 96, LCP from 6.8 to 2.7
-      s and FCP from 2.0 to 0.9 s; final CLS was 0.001. I checked 390, 767, 768 and 1440
-      px, mobile navigation, category selection and desktop slide changes. The form
-      returned a required-field error; no live lead was sent. A repeat crawl of 82 URLs
-      found no canonical, metadata or internal-link errors.
+    title: What changed in two comparable runs
+    body: I compared initial loads of the same homepage at 02:55 and 10:25 Moscow time on
+      October 30, 2026. Both runs used Lighthouse 13.6.0, Moto G Power emulation and slow 4G
+      throttling. The archived reports had no field data.
+    bullets:
+      - PageSpeed increased from 72 to 96, and the main content appeared 4.1 seconds sooner
+        (LCP fell from 6.8 to 2.7 seconds).
+      - First Contentful Paint fell from 2.0 to 0.9 seconds.
+      - Not every metric improved. Total Blocking Time moved from 20 to 30 ms and CLS
+        from 0 to 0.001 in this comparison.
     links:
-      - label: PageSpeed report after optimization
+      - label: Saved measurement summary for both runs (JSON)
+        url: /media/projects/arenda-pm-home-performance/mobile-lab-measurements.json
+      - label: Original PageSpeed report before the additional work
+        url: https://pagespeed.web.dev/analysis/https-arenda-pm-ru/jrg48f7v4c?form_factor=mobile
+      - label: Original PageSpeed report after optimization
         url: https://pagespeed.web.dev/analysis/https-arenda-pm-ru/l3ptntuhx8?form_factor=mobile
+  - type: text
+    title: How I checked that the faster homepage still worked
+    body: At 390 and 767 px the mobile banner rendered and the desktop carousel was absent
+      from the DOM. At 768 and 1440 px I checked the reverse. At these widths I found no
+      horizontal overflow or broken visible images. I also tested mobile navigation, category
+      selection and desktop slide changes. The form returned a required-field error; no real
+      enquiry was sent. A repeat crawl of 82 URLs found no canonical, metadata or internal-link errors.
   - type: image
     src: /media/projects/arenda-pm-home-performance/homepage-20261117.webp
     title: Full homepage
