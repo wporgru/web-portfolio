@@ -2,6 +2,7 @@
 // these HTML redirects with HTTP 200, so also emit a canonical and a link.
 export const caseAliases = [
   {from:'mastergrem-boxberry-cart-recovery', to:'boxberry-cart-recovery'},
+  {from:'woodmart-product-page-recovery', to:'wavesnwind-woodmart-product-recovery'},
 ];
 
 export function localizedCaseAliases(publication) {

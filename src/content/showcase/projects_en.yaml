@@ -1317,23 +1317,6 @@ projects:
       - label: Read case study
         url: /showcase/header-logo-and-search/en/
         type: product
-  - slug: woodmart-product-page-recovery
-    name: Restoring product pages in a WoodMart store
-    year: "02.2026"
-    role: Web development and automation
-    description: "Product pages no longer opened: shoppers could browse the
-      assortment but could not reach the item details. The existing storefront
-      needed this path restored."
-    stack:
-      - WordPress
-      - WooCommerce
-      - WoodMart
-    order: 70
-    theme: cyan
-    links:
-      - label: Read case study
-        url: /showcase/woodmart-product-page-recovery/en/
-        type: product
   - slug: generator-catalog-variants
     name: Generator catalog from multiple supplier exports
     year: "03.2026"

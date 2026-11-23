@@ -1326,23 +1326,6 @@ projects:
       - label: Читать кейс
         url: /showcase/header-logo-and-search/
         type: product
-  - slug: woodmart-product-page-recovery
-    name: Восстановление карточек товаров на WoodMart
-    year: "02.2026"
-    role: Веб-разработка и автоматизация
-    description: "Карточки перестали открываться: каталог мог показывать
-      ассортимент, но посетители не могли перейти к подробностям товара.
-      Требовалось восстановить этот маршрут в действующей витрине."
-    stack:
-      - WordPress
-      - WooCommerce
-      - WoodMart
-    order: 70
-    theme: cyan
-    links:
-      - label: Читать кейс
-        url: /showcase/woodmart-product-page-recovery/
-        type: product
   - slug: generator-catalog-variants
     name: Каталог генераторов из нескольких выгрузок поставщиков
     year: "03.2026"
