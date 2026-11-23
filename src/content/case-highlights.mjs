@@ -126,8 +126,8 @@ export const caseHighlights = {
     en: 'Recovered reference data for 140 of 144 listings. Checked source and packaging, leaving four items without usable data unchanged.',
   },
   '78-dosok': {
-    ru: 'Полный редизайн WooCommerce-магазина: смена темы, обновление, ускорение и очистка плагинов. Исторические снимки до и после.',
-    en: 'Full WooCommerce store redesign: theme replacement, updates, performance work and plugin cleanup, with archival before-and-after screenshots.',
+    ru: 'Полный редизайн магазина WooCommerce: смена темы, обновление, очистка плагинов и работы по ускорению. После редизайна проверены 76 страниц.',
+    en: 'Full WooCommerce store redesign: replaced the theme, updated the site, cleaned up plugins and worked on performance. Checked 76 pages afterward.',
   },
   'stalex-feed': {
     ru: 'Импорт STALEX: 719 позиций в первичном отчёте. Сохранил ручные правки товаров, исправил остатки и проверил первый запуск автообновления.',

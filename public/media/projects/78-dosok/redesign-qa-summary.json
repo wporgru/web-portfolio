@@ -1,0 +1,28 @@
+{
+  "environment": "public storefront",
+  "reportDate": "2026-08-11",
+  "method": "Aggregated from archived HTTP, HTML and viewport checks.",
+  "structuralSample": {
+    "uniquePages": 76,
+    "http200": 76,
+    "oneH1": 76,
+    "sidebarMatchesTemplateRule": 76
+  },
+  "regionalSubset": {
+    "includedInStructuralSample": true,
+    "uniquePages": 44,
+    "detailBlockPresent": 44
+  },
+  "priorityRenderChecks": {
+    "priceTableRowsRendered": 83,
+    "catalogListingsChecked": 4,
+    "catalogListingsWithProducts": 4
+  },
+  "mobileSpotChecks": {
+    "viewportWidthCssPx": 390,
+    "pagesChecked": 2,
+    "noHorizontalOverflow": 2,
+    "floatingCartDetected": 2
+  },
+  "scopeLimit": "Historical storefront checks, not a current crawl, a checkout transaction test or evidence of speed or conversion improvement."
+}

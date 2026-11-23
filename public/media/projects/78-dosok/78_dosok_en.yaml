@@ -39,6 +39,25 @@ blocks:
       shoppers could return to it after scrolling. There are no comparable before-and-after
       speed measurements for this order, and the filters were left for a separate brief.
   - type: text
+    title: The redesign extended to the catalog, price list and regional pages
+    body: "Beyond the homepage, I worked on the timber listings, shipping,
+      contacts, services, certificates and price list. I kept product grids
+      in the catalog and restored the detail sections on regional pages
+      without an unnecessary sidebar. The checked price table rendered
+      83 rows, and all four sampled catalog sections showed products."
+  - type: text
+    title: How I checked the store after replacing the theme
+    body: "The archived structural check covers 76 public pages. Each returned
+      HTTP 200, had one H1 and followed its template's sidebar rules. A separate
+      check of 44 regional pages within that same set confirmed that every page
+      included its detail block. At 390 px, both sampled mobile pages, a regional
+      page and a catalog category, showed the floating cart with no horizontal
+      overflow. These are historical interface checks, not speed or conversion
+      measurements."
+    links:
+      - label: Redesign verification summary (JSON)
+        url: /media/projects/78-dosok/redesign-qa-summary.json
+  - type: text
     title: Homepage before and after
     body: The original homepage emphasized a slider and a dense category list. The redesign uses a
       larger opening section, clearer catalog groupings and trust-building sections such as
