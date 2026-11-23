@@ -1,0 +1,22 @@
+{
+  "environment": "staging",
+  "reportDate": "2026-08-28",
+  "method": "Aggregated from two archived Chromium storefront runs, with selected third-party resources blocked during testing.",
+  "productPages": {
+    "count": 22,
+    "viewportWidthCssPx": 1360,
+    "http200": 22,
+    "priceTextPresent": 22,
+    "consultationActionPresent": 22,
+    "noVisibleAddToCart": 22,
+    "atLeastThreeSpecificationIcons": 22
+  },
+  "catalogPages": {
+    "count": 6,
+    "viewportWidthCssPx": 1440,
+    "http200": 6,
+    "productGridPresent": 6,
+    "pagesWithLinksUsingOldProductOrCategoryPrefixes": 0
+  },
+  "scopeLimit": "This summary does not establish mobile coverage, form delivery, lead growth or production behavior."
+}

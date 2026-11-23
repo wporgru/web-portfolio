@@ -1,7 +1,8 @@
 title: "ARTRED: B2B equipment catalog and product enquiries"
-tagline: Adapted product pages for buyers who discuss requirements and equipment
-  with a sales specialist before ordering. Product cards still needed to support
-  model comparison instead of hiding specifications behind an enquiry form.
+tagline: Reworked WooCommerce into a consultation-led equipment catalog.
+  Buyers can compare specifications and see prices before contacting sales
+  instead of adding equipment to a cart. Verified 22 product and six catalog
+  pages on staging.
 year: "08.2026"
 role: Web development and automation
 stack:
@@ -18,7 +19,7 @@ blocks:
       support model comparison instead of hiding specifications behind an
       enquiry form.
   - type: text
-    title: How it works
+    title: From equipment comparison to consultation
     body: Replaced decorative specification markers with SVG icons while retaining
       readable labels. Removed the default purchase action on the product page
       and kept the consultation action. Styled the existing Contact Form 7
@@ -26,11 +27,17 @@ blocks:
       widget. Also checked informational pages, links and form placement below
       the first viewport.
   - type: text
-    title: Result and verification
-    body: The category browser check found six cards and 18 specification icons. The
-      tested product page showed the consultation button instead of purchase,
-      and the dialog opened without horizontal overflow. This verifies the
-      interface, not email delivery or enquiry growth.
+    title: Verified beyond a single demo product
+    body: All 22 sampled staging products returned HTTP 200, retained a price and
+      offered a consultation button without a visible add-to-cart button.
+      Each product page displayed at least three specification icons. I checked
+      six catalog pages for product grids and links that still used the old
+      product or category prefixes. Separate checks confirmed the consultation
+      dialog opened and one category rendered six products with 18 specification
+      icons. These are interface checks, not email delivery or enquiry growth.
+    links:
+      - label: Verification summary for 22 product and six catalog pages (JSON)
+        url: /media/projects/artred-b2b-equipment-catalog/catalog-enquiry-qa-summary.json
   - type: image
     src: /media/projects/artred-b2b-equipment-catalog/archive-viewport.webp
     alt: ARTRED equipment page with specifications and a consultation button
@@ -55,6 +62,11 @@ blocks:
       before ordering. We can discuss which specifications belong in the listing, what
       action a product page should offer and how to connect an enquiry with the chosen
       model without rebuilding the entire store unnecessarily.
+    links:
+      - label: B2B catalog and enquiry workflows
+        url: /services/b2b-catalog-and-enquiries/en/
+      - label: How to choose between cart checkout and a quote request
+        url: /guides/b2b-catalog-quote-or-checkout/en/
   - type: text
     title: Another stage of this project
     links:
