@@ -268,14 +268,38 @@ export const serviceDetails = {
     },
   },
   'catalog-automation': {
-    ru: ['После обновления дублируются товары или сбиваются цены', 'Новый прайс не должен перезаписывать вручную отредактированные карточки. Сначала определим, по какому идентификатору обновлять товары и что делать с позициями, исчезнувшими из файла.', 'Таблица сопоставления полей, тестовая выборка и правила повторной загрузки. При приёмке проверим примеры новых, изменённых и отсутствующих позиций.'],
-    en: ['Updates create duplicate products or incorrect prices', 'A new price list should not overwrite manually edited listings. Agree on the update key and what happens when a product disappears from the source.', 'Field mapping, a sample run and rules for repeat imports. Review new, changed and missing items during acceptance.'],
+    ru: [
+      'При новом прайсе появляются дубли или теряются ручные правки',
+      'Согласуем, что именно меняет импорт. Например, каждый день можно брать у поставщика цену и остаток, но сохранять заголовок, фотографии и текст, которые уже подготовил менеджер. При двух поставщиках сначала сверим точную модель и вариант; похожего названия для объединения карточек недостаточно.',
+      'Передам таблицу «источник → поле WooCommerce → правило обновления», результаты контрольной выборки и инструкцию запуска. В отчёте отдельно будут новые, обновлённые, пропущенные и ошибочные записи, а также решение по товарам, которые исчезли из прайса. Если согласовано расписание, покажу результат первого автоматического запуска.',
+    ],
+    en: [
+      'A new price list creates duplicates or overwrites manual edits',
+      'Agree exactly what the import may change. For example, update supplier stock and price every day while keeping the title, photos and copy edited by staff. With two suppliers, match the exact model and variant; similar naming is not enough to merge listings.',
+      'Receive a source-to-WooCommerce field map with update rules, sample-run results and run instructions. The report separates new, updated, skipped and failed records, and states what happens to products missing from the source. If scheduling is in scope, I show the first automated run separately.',
+    ],
+    steps:{
+      ru:[
+        ['Разбираю выгрузку и неизвестные значения','Проверяю, где лежат цены, остатки, фотографии и варианты: в одном CSV, фиде или нескольких ответах API. В проекте Daichi перечень и цены приходили отдельно от характеристик и фото. Пустую цену, явный ноль и строку, исчезнувшую из файла, обрабатываем разными правилами.'],
+        ['Согласую ключи товаров и приоритет поставщиков','Уточняю, чем отличается товар от варианта и какой код стабилен между обновлениями. Для пересекающихся источников согласуем приоритет цены, наличия и контента. Не объединяю другую фасовку, размер или комплектацию по одному совпадению в названии.'],
+        ['Проверяю загрузку и повтор на малой выборке','Берём новый товар, существующий, вариацию и позицию с неполными данными. Сначала сравниваю, что реально изменилось на витрине и в админке, затем повторяю загрузку и проверяю, что она не создала дублей и не переписала защищённые поля.'],
+        ['Передаю правила на случай сбоя источника','Уточняем, что делать при исчезновении одной позиции и при пустом либо оборванном файле. Сбой всей выгрузки не должен автоматически скрывать весь каталог. При согласованном расписании проверяем отдельно журнал первого запуска и контрольные карточки; это не долгосрочный мониторинг.'],
+      ],
+      en:[
+        ['Inspect the feed and missing values','Identify where prices, stock, photos and variants live: one CSV, a feed or multiple API responses. Daichi supplied products and prices separately from specifications and images. A missing price, an explicit zero and a row absent from the file need distinct rules.'],
+        ['Agree on product keys and supplier precedence','Identify each product and variant and choose the key that is stable across runs. For overlapping sources, decide which supplier controls price, availability and content. Do not merge a different pack, size or configuration just because names match.'],
+        ['Test an import and a retry on a small sample','Use a new product, an existing product, a variant and an incomplete record. Compare actual storefront and admin changes, then retry to verify that there are no duplicates and protected fields stay unchanged.'],
+        ['Document what happens when the source fails','Agree how to handle one missing item versus an empty or incomplete export. A failed file should not automatically hide the whole catalog. When scheduling is included, check the first run log and sample products separately; that is not long-term monitoring.'],
+      ],
+    },
     questions:{
       ru:[
+        ['Можно обновлять только цену и наличие?','Да, если источник позволяет надёжно сопоставить карточки и варианты. В тестовой выборке проверю, что цена и остаток обновились, а согласованные защищённые поля, например текст или фото, остались прежними.'],
         ['Можно продолжить импорт, если часть товаров уже загрузилась?', 'Да, если сначала установить, какие записи изменились и по какому ключу их сопоставляет импортёр. Проверю повторный запуск на выборке. Если ошибка в файле или ключе, простая перезагрузка всего прайса может создать дубли.'],
         ['Надо ли сразу менять тариф хостинга при ошибке 504?', 'Нет. Сначала сравним журнал, время сбоя и последний товар. Если процесс упирается в ограничение сервера, проверим меньший пакет или раздельную загрузку изображений; повышение тарифа имеет смысл, когда узкое место подтверждено.'],
       ],
       en:[
+        ['Can you update only price and stock?','Yes, if the source reliably identifies listings and variants. I test that price and stock update while the agreed protected fields, such as copy or photos, remain unchanged.'],
         ['Can an import resume after some products already loaded?', 'Yes, once we identify what changed and which key matches existing products. I test a retry on a sample first. Rerunning the whole file can create duplicates if the source or match key is wrong.'],
         ['Does a 504 mean we need to upgrade hosting?', 'Not by itself. First compare the error log, failure time and last product. If a server limit is confirmed, test smaller batches or a separate image import before changing the hosting plan.'],
       ],
