@@ -1,0 +1,61 @@
+const cases=['yookassa-webhook-recovery','checkout-tax-breakdown','congress-ticket-checkout-yookassa'];
+
+export const woocommercePaymentStatusGuide={
+  slug:'yookassa-paid-order-pending',
+  primaryService:'checkout-payments',
+  services:['checkout-payments','woocommerce-store-improvements'],
+  cases,
+  sourceUrls:[
+    'https://yookassa.ru/developers/payment-acceptance/getting-started/payment-process',
+    'https://yookassa.ru/developers/using-api/webhooks',
+    'https://woocommerce.com/document/managing-orders/order-statuses/',
+  ],
+  ru:{
+    title:'ЮKassa приняла оплату, а WooCommerce ждёт платежа',
+    summary:'Как проверить расхождение статусов заказа и оплаты: сопоставить операцию, проверить входящее уведомление и отдельно сверить письмо и выдачу заказа.',
+    intro:'Покупатель видит списание, а в WooCommerce заказ всё ещё ждёт оплаты. Прежде чем просить человека заплатить повторно, сопоставьте конкретный заказ с операцией в ЮKassa. Возврат на страницу «Спасибо», подтверждение платежа и изменение заказа — три разных события.',
+    context:'Оплата прошла, но заказ не обновился?',
+    action:'Найти, почему WooCommerce не увидел оплату',
+    email:'Прислать пример расхождения статусов',
+    serviceLabel:'Настройка оплаты и корзины WooCommerce',
+    enquiry:['Адрес магазина и какой статус виден в WooCommerce и в кабинете оплаты', 'Время с часовым поясом, сумма и обезличенная строка журнала, если она есть'],
+    steps:[
+      ['Сопоставьте один заказ и одну операцию','Внутри своих кабинетов сверяйте номер заказа, время, сумму, валюту и идентификатор платежа. Уточните, что сравниваете один магазин и одно окружение: тестовое или рабочее. Одна запись о списании или скриншот покупателя не заменяет этой сверки.'],
+      ['Разделите подтверждение и окончательный результат','Посмотрите фактический статус в ЮKassa. В двухстадийной схеме ожидание подтверждения списания и успешно завершённый платёж — не одно и то же. Страница возврата может открыться независимо от результата; не используйте её как основание для выдачи товара.'],
+      ['Проследите входящее уведомление','Если платёж завершён, а магазин не обновился, проверьте настройки событий для установленной интеграции и журнал за время операции. Отдельно выясните, дошло ли событие до сайта и обработал ли его модуль. В одном из проектов проблема оказалась в отсутствующей подписке на вебхуки; это пример, а не универсальный диагноз.'],
+      ['Проверьте заказ, письмо и выдачу по отдельности','Сверьте историю заказа с ожидаемым статусом. Оплаченный физический товар может оставаться в обработке до исполнения — статус «Выполнен» нужен не для каждого платежа. После этого смотрите отдельно письмо, чек и доступ к файлу, если товар цифровой.'],
+      ['Принимайте по согласованным контрольным операциям','Сначала прогоните сценарий в тестовой среде, включая незавершённый платёж. В рабочих сценариях заранее согласуйте, кто создаёт контрольный заказ и что с ним делать. В отчёте запишите отдельно статус операции, статус заказа, письма и действия по возврату. Не публикуйте токены, данные карт и полные логи покупателей.'],
+    ],
+    examples:[
+      ['ЮKassa: восстановил входящие уведомления, клиент подтвердил письмо',cases[0]],
+      ['WooCommerce: ставки для товара и доставки, клиент подтвердил чек и возврат',cases[1]],
+      ['Билеты на конгресс: сумма 5 ₽ относилась к контрольной операции, не к цене билета',cases[2]],
+    ],
+    sources:['ЮKassa: процесс и статусы платежа','ЮKassa: входящие уведомления','WooCommerce: статусы заказов'],
+    call:'Пришлите адрес магазина, два статуса и время контрольной операции. Подскажу, с чего начать: с платежа, уведомления или обработки заказа. Для первого разбора доступы и данные покупателя не нужны.',
+  },
+  en:{
+    title:'YooKassa confirms payment but WooCommerce is pending',
+    summary:'Diagnose a paid WooCommerce order stuck at pending: match the transaction, trace its notification and verify emails and fulfillment separately.',
+    intro:'The customer sees a charge, but WooCommerce still shows pending payment. Before asking anyone to pay again, match one order to its YooKassa transaction. A return to the thank-you page, a successful payment and an order update are separate events.',
+    context:'Did payment go through without updating the order?',
+    action:'Find why WooCommerce did not register the payment',
+    email:'Send an example of the status mismatch',
+    serviceLabel:'WooCommerce checkout and payment setup',
+    enquiry:['Store URL and the statuses shown in WooCommerce and the payment dashboard', 'Time with timezone, amount and a redacted log line if available'],
+    steps:[
+      ['Match one order to one transaction','In your own dashboards, compare order number, payment time, amount, currency and transaction identifier. Make sure the shop and environment match, whether live or test. A banking screenshot on its own cannot establish that match.'],
+      ['Distinguish authorization from completion','Check the actual YooKassa status. In a two-stage flow, an authorization awaiting capture and a completed payment are not the same. Returning to the shop does not prove that payment succeeded and should not trigger fulfillment on its own.'],
+      ['Trace the incoming notification','If the payment succeeded but the order did not update, check the configured events and logs for the active integration. Distinguish delivery to the shop from processing by the module. A missing webhook subscription was the issue in one project, not a universal explanation.'],
+      ['Verify the order, email and fulfillment separately','Compare the order history with the expected state. A paid physical order can remain Processing while fulfillment is pending; Completed is not the immediate result of every payment. Verify the order email, receipt and any digital download independently.'],
+      ['Sign off with agreed control transactions','Start in a test environment and include an unsuccessful flow. Agree in advance who may place a live test order and what happens afterwards. Record the payment status, order status, emails and any refund actions separately. Keep credentials, card details and unredacted customer logs out of shared reports.'],
+    ],
+    examples:[
+      ['YooKassa: restored incoming notifications and the client confirmed the email',cases[0]],
+      ['WooCommerce: product and shipping tax rates; the client confirmed a receipt and refund',cases[1]],
+      ['Congress tickets: RUB 5 was the reported test amount, not the ticket price',cases[2]],
+    ],
+    sources:['YooKassa: payment process and states','YooKassa: incoming notifications','WooCommerce: order statuses'],
+    call:'Send the store URL, both statuses and the time of a control transaction. I can suggest where to start: payment, notification or order processing. No credentials or customer data are needed for an initial review.',
+  },
+};
