@@ -7475,3 +7475,22 @@ projects:
         url: /showcase/kubachi-silver-shop-yml-feed/en/
         type: product
     featured: false
+  - slug: alcotester-brand-attribute-recovery
+    name: Adding a brand attribute to an existing WooCommerce catalog
+    year: "07.2018"
+    role: Web development and automation
+    description: A breathalyzer store needed brand and technical specifications on
+      existing product listings. Its usual workflow stopped at an XLS error in WP
+      All Import, and the order-to-CRM extensions needed to stay untouched.
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Catalog data
+      - Product filters
+    order: 400
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/alcotester-brand-attribute-recovery/en/
+        type: product
+    featured: false

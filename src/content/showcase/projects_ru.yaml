@@ -7526,3 +7526,23 @@ projects:
         url: /showcase/kubachi-silver-shop-yml-feed/
         type: product
     featured: false
+  - slug: alcotester-brand-attribute-recovery
+    name: Массовое добавление марок в каталог WooCommerce
+    year: "07.2018"
+    role: Веб-разработка и автоматизация
+    description: Магазину алкотестеров нужны были марки и технические характеристики
+      в уже созданных карточках. Штатный для проекта сценарий остановился на
+      ошибке XLS в WP All Import. Отдельное ограничение — не затрагивать
+      расширения, которые передавали заказы в CRM.
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Catalog data
+      - Product filters
+    order: 400
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/alcotester-brand-attribute-recovery/
+        type: product
+    featured: false

@@ -1,0 +1,30 @@
+title: Adding a brand attribute to an existing WooCommerce catalog
+tagline: A breathalyzer store needed brand and technical specifications on
+  existing product listings. Its usual workflow stopped at an XLS error in WP
+  All Import, and the order-to-CRM extensions needed to stay untouched.
+year: "07.2018"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product attributes
+  - Catalog data
+  - Product filters
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A breathalyzer store needed brand and technical specifications on existing
+      product listings. Its usual workflow stopped at an XLS error in WP All
+      Import, and the order-to-CRM extensions needed to stay untouched.
+  - type: text
+    title: How it works
+    body: Used a different update workflow to add a Brand attribute to existing
+      listings. Prepared a separate worksheet for the remaining specifications
+      so the store owner could supply values missing from the original
+      descriptions. Explained why a product with no value for a specification
+      will not appear when a shopper filters for that value.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and left positive feedback. The store
+      received the populated Brand attribute and a worksheet for enriching the
+      catalog. Completion of all remaining specifications and final filter setup
+      were not verified.
