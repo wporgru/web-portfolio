@@ -359,6 +359,30 @@ export const serviceDetails = {
   'wordpress-performance': {
     ru: ['На телефоне долго виден пустой экран, а в админке всё быстро', 'Сравню загрузку типовых страниц для обычного посетителя. В магазине особенно важны не только первый экран и изображения, но и отсутствие регрессий в корзине, формах и аналитике.', 'Повторяемые замеры по согласованным страницам, список изменений и проверка ключевых функций. Отдельно покажу ограничения замеров и где ещё остаётся потенциал.'],
     en: ['The mobile page stays blank while the admin session feels fast', 'Compare representative pages as a logged-out visitor. For stores, check not only when the first screen appears, but also whether cart, forms and analytics still behave correctly.', 'Repeatable measurements on agreed pages, a change list and checks for essential workflows. Document measurement limits and remaining opportunities.'],
+    steps:{
+      ru:[
+        ['Выбираю страницы, где задержка мешает клиенту','Например, на главной долго не видно подбор категории, в каталоге сдвигаются карточки, а на товаре поздно появляется основное фото. Фиксирую адрес, мобильный или десктопный сценарий и условия замера, чтобы сравнивать одинаковые страницы.'],
+        ['Выясняю, что задерживает первый экран','Сопоставляю время ответа сервера, порядок загрузки стилей, изображения и сторонние скрипты. На «Аренда-ПМ» мобильной версии не нужна была десктопная карусель: перестроил загрузку так, чтобы телефон не загружал её скрытые кадры, а на компьютере слайдер оставался.'],
+        ['Ускоряю без потери функций','Проверяю правки по одной группе: стили первого экрана, загрузка изображений, выполнение скриптов или правила кэша. Сравниваю публичную страницу до входа и нужные авторизованные сценарии. Проверяю, что кэш не смешивает чужую корзину с текущей и не ломает выбор товара, формы или аналитику.'],
+        ['Передаю цифры вместе с условиями и границами','Повторяю замеры на согласованных страницах и отдельно прогоняю функциональные проверки. Показываю исходные и итоговые показатели, список правок и способ отката. Если есть данные реальных посетителей, вывожу их отдельно от лабораторных запусков.'],
+      ],
+      en:[
+        ['Pick the pages where a delay affects customers','For example, the homepage picker appears late, listings shift while loading or the main product photo takes too long. Record the URL, mobile or desktop scenario and test conditions before comparing results.'],
+        ['Find what delays the first screen','Compare server response, stylesheet loading, images and third-party scripts. At Arenda-PM, the desktop carousel was not needed on phones. I changed loading so mobile skipped its hidden slides while the desktop slider still worked.'],
+        ['Improve speed without taking features away','Verify changes in groups: first-screen styles, images, scripting or cache rules. Compare the logged-out experience with relevant signed-in flows. Check that caching does not mix up cart contents or break product selection, forms or tracking.'],
+        ['Deliver the numbers with test conditions and limits','Repeat measurements on the agreed pages and run functional checks separately. Include before-and-after results, changes and a rollback path. Report real-user data separately from lab runs when it is available.'],
+      ],
+    },
+    questions:{
+      ru:[
+        ['Можно обещать 95–100 баллов на всех страницах?','Нет. Сначала измерю страницы, важные для бизнеса, и предложу, что можно улучшить без отказа от необходимых функций. Один удачный прогон не считается результатом по всему сайту.'],
+        ['Как проверить, что сайт ускорился для покупателей?','Сравним одинаковые страницы и условия в лаборатории. Если доступны данные реальных посетителей, сверим их отдельно; лабораторный PageSpeed не заменяет полевые данные. Работу корзины, заявки или аналитики проверим своими сценариями.'],
+      ],
+      en:[
+        ['Can you promise a 95–100 score on every page?','No. Start with the pages that matter and agree what can improve without dropping needed features. One good run is not a site-wide result.'],
+        ['How can I tell whether customers get a faster site?','Compare the same pages and conditions in the lab. Review field data separately when enough samples are available; a lab score does not replace real-user measurements. Check carts, enquiries and analytics in their own test flows.'],
+      ],
+    },
   },
   'web-analytics': {
     ru: [
