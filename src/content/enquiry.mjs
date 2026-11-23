@@ -86,6 +86,10 @@ export const enquiryPrompts = {
     ['Проблемный шаг корзины, доставки или оплаты', 'Способ оплаты или доставки и пример сценария без данных покупателя'],
     ['Affected cart, shipping or payment step', 'Payment or shipping method and an example without buyer data'],
   ],
+  'yml-product-feed': [
+    ['Площадка и назначение файла: каталог, цены, остатки или условия размещения', 'Артикул, ошибка и ссылка без ключа либо обезличенный XML'],
+    ['Recipient and purpose: catalog, price, stock or listing conditions', 'Affected SKU, error and a link without access keys or a redacted XML example'],
+  ],
   'woocommerce-catalog-filters': [
     ['Адрес категории и значение фильтра, при котором выдача неверна', 'Два артикула: какой товар должен остаться и какой должен скрыться'],
     ['Category URL and filter value that gives the wrong result', 'Two SKUs: one product that should remain and one that should disappear'],

@@ -394,6 +394,32 @@ export const serviceDetails = {
       ],
     },
   },
+  'yml-product-feed': {
+    ru: ['Файл открывается, но ожидаемого товара на площадке нет', 'Сравню карточку, строку в XML и состояние в кабинете. Это разные проверки: HTTP 200 не доказывает наличие предложения, а технический приём файла не означает, что товар прошёл модерацию.', 'Адрес выгрузки или исправленный файл, карта полей и отборов, проверка контрольных артикулов и отдельно — статус обработки у получателя, если он доступен.'],
+    en: ['The file opens, but the expected product is missing', 'Compare the store listing, the XML entry and the destination dashboard. HTTP 200 does not prove that the offer is included, and technical file acceptance does not establish moderation approval.', 'An export URL or corrected file, field and selection mappings, verification for sample SKUs and a separate recipient processing status when available.'],
+    steps: {
+      ru: [
+        ['Уточняю, что должен менять файл','Для Маркета обновление каталога и управление размещением — разные задачи с разным набором обязательных полей. Сначала согласуем назначение и что нельзя перезаписывать.'],
+        ['Прослеживаю включение и исключение','Беру товар, который должен попасть в файл, и товар, которого там быть не должно. Сверяю правила по наличию, категории и цене; отдельно смотрю, не осталось ли нужное поле только в атрибуте карточки.'],
+        ['Разделяю разовый запуск и автообновление','Проверю результат генерации и свежесть файла отдельно от приёма на площадке. Если восстановлена только ручная генерация, не выдаю её за штатную работу расписания.'],
+      ],
+      en: [
+        ['Identify what the file should update','Market catalog updates and listing management have different required fields. Agree on the purpose and what must not be overwritten first.'],
+        ['Trace one included and one excluded product','Test a SKU that should be exported and another that should not. Compare stock, category and price rules and check whether a required field exists only as a store attribute.'],
+        ['Separate a manual run from scheduled updates','Check generation and freshness separately from marketplace processing. Restoring one manual run does not establish that automated updates work.'],
+      ],
+    },
+    questions: {
+      ru: [
+        ['Нужно ли создавать фид заново?','Не обязательно. Сначала проверю адрес, назначение и конкретный артикул. Если ошибка только в одном правиле или поле, начну с него.'],
+        ['Можете гарантировать появление товара?','Нет: проверю, что именно передаёт сайт, и разберу доступный отчёт о загрузке. Решение модерации, публикация и продажи фиксируются отдельно.'],
+      ],
+      en: [
+        ['Does the feed have to be rebuilt?','Not necessarily. First check the URL, purpose and one affected SKU. If only one rule or field is wrong, start there.'],
+        ['Can you guarantee a product will appear?','No. I can verify what the site supplies and review the processing report when available. Moderation, publication and sales are separate outcomes.'],
+      ],
+    },
+  },
   'woocommerce-catalog-filters': {
     ru: ['Характеристика есть в карточке, но фильтр не находит товар', 'Разделю проблему данных и проблему выдачи. Сверю источник импорта, глобальный атрибут, привязку значения, категорию, видимость и запрос витрины.', 'Карта изменений атрибутов, набор фильтров по категориям и результаты проверок на контрольных товарах. Если обнаружится риск повторной порчи данных при импорте, отмечу, где исправить его отдельно.'],
     en: ['The specification is visible, but filtering loses the product', 'Separate data problems from storefront problems. Compare the import source, global attribute, term assignment, category, visibility and storefront query.', 'Attribute changes, the filter set for each agreed category and checks on representative products. If a later import can undo the fix, document where to correct it separately.'],

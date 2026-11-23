@@ -2,8 +2,8 @@ const cases = ['halisprof-selective-yml','xone-market-feed-attributes','blaskos-
 
 export const ymlFeedGuide = {
   slug:'yml-feed-troubleshooting',
-  primaryService:'catalog-automation',
-  services:['catalog-automation','woocommerce-store-development'],
+  primaryService:'yml-product-feed',
+  services:['yml-product-feed','catalog-automation','woocommerce-store-development'],
   cases,
   sourceUrls:[
     'https://yandex.ru/support/marketplace/ru/assortment/auto/url.html',
@@ -16,7 +16,7 @@ export const ymlFeedGuide = {
     context:'Если товары пропали из фида или не появились на Маркете',
     action:'Обсудить настройку фида',
     email:'Прислать пример ошибки',
-    serviceLabel:'Что входит в автоматизацию каталога',
+    serviceLabel:'Настройка и ремонт товарного YML-фида',
     enquiry:['Адрес фида без токенов или обезличенный фрагмент XML','Ожидаемый артикул и строка из отчёта об ошибке'],
     steps:[
       ['Откройте тот URL, который читает площадка','Проверьте ссылку без входа в админку. Ответ 200 может оказаться страницей входа, HTML-заглушкой, вчерашним файлом или корректным XML без предложений. Проверьте содержимое и дату обновления.'],
@@ -36,7 +36,7 @@ export const ymlFeedGuide = {
     context:'When offers disappear from the feed or marketplace',
     action:'Discuss your product feed',
     email:'Send an error example',
-    serviceLabel:'Explore catalog automation services',
+    serviceLabel:'Explore YML product feed setup and repair',
     enquiry:['Feed URL without tokens or a sanitized XML excerpt','Expected SKU and the relevant error report line'],
     steps:[
       ['Open the exact URL used by the marketplace','Check the address without admin access. An HTTP 200 can contain a login page, an HTML placeholder, a stale file or valid XML with no offers. Check the response body and update date.'],

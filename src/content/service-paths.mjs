@@ -67,7 +67,7 @@ export const servicePaths = {
     ['technical-seo','Если вместе с редизайном меняются разделы и требуется сверить адреса и редиректы.','If the redesign changes sections and URLs and redirects need reviewing.'],
   ],
   'catalog-automation': [
-    ['woocommerce-store-improvements','Если импорт работает, но покупатель не может найти товар, выбрать вариант или применить скидку.','If imports run but shoppers cannot find an item, choose an option or use a discount.'],
+    ['yml-product-feed','Если товары есть в магазине, но пропадают из файла выгрузки или отчёта площадки.','If products are in the store but missing from the export or the marketplace report.'],
     ['data-and-ai','Если на входе не готовый фид, а файлы разных форматов, которые нужно привести к одной схеме.','If the inputs are mixed-format files that must be normalized before import.'],
   ],
   'technical-seo': [
@@ -85,6 +85,10 @@ export const servicePaths = {
   'checkout-payments': [
     ['b2b-catalog-and-enquiries','Если вместо мгновенной оплаты нужно отправлять корзину менеджеру на согласование.','If customers should send the cart to a manager for approval rather than pay instantly.'],
     ['woocommerce-shipping','Если проблема в расчёте тарифа или выборе пункта выдачи, а не в оплате.','If the problem is a shipping quote or pickup point rather than payment.'],
+  ],
+  'yml-product-feed': [
+    ['catalog-automation','Если неправильные цены или остатки появляются ещё при загрузке прайса в магазин.','If incorrect prices or stock first appear during supplier import.'],
+    ['woocommerce-catalog-filters','Если выгрузка верна, но фильтры на витрине не находят товары.','If the export is correct but storefront filters cannot find products.'],
   ],
   'woocommerce-catalog-filters': [
     ['catalog-automation','Если неверные атрибуты возвращаются после обновления прайса, исправим источник или карту импорта.','If incorrect attributes return after supplier updates, fix the source or import mapping.'],
