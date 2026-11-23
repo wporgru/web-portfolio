@@ -7,6 +7,7 @@ import { serviceDetails } from '../../content/service-details.mjs';
 import { createEnquiry } from '../../content/enquiry.mjs';
 import { servicePaths } from '../../content/service-paths.mjs';
 import { guides } from '../../content/guides.mjs';
+import { caseHighlights } from '../../content/case-highlights.mjs';
 
 export function getStaticPaths() {
   return services.flatMap(service => ['ru','en'].map(lang => ({
@@ -80,7 +81,7 @@ const nextServices=servicePaths[service.slug].map(([slug,ruReason,enReason])=>{
       <div class="grid">
         {examples.map(p => <article class="card">
           <h3 class="h2"><a href={base+'/showcase/'+p.slug+(ru?'/':'/en/')}>{p.name}</a></h3>
-          <p class="muted">{p.description}</p>
+          <p class="muted">{caseHighlights[p.slug]?.[ru?'ru':'en'] ?? p.description}</p>
         </article>)}
       </div>
       <p><a class="btn btn--ghost" href={base+'/showcase'+localeSuffix+'?task='+encodeURIComponent(service.slug)}>{ru?'Открыть подборку в каталоге':'Open this collection in the case catalog'}</a></p>

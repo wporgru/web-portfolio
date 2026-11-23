@@ -58,7 +58,7 @@ const dateKey=(value:unknown)=>{
   <p class="card" data-case-empty hidden>{ru?'Ничего не найдено. Попробуйте другое слово или сбросьте фильтры.':'No cases found. Try a different keyword or reset the filters.'}</p>
   <div class="grid" data-case-grid>
     {projects.map((p:any,i:number)=><div data-case={p.slug} data-date={dateKey(p.year)} data-tasks={projectTasks.get(p.slug)?.join(' ')}>
-      <ProjectCard project={p} eager={i===eagerIdx} t={t}/>
+      <ProjectCard project={p} eager={i===eagerIdx} t={t} lang={locale}/>
     </div>)}
   </div>
 </case-catalog>

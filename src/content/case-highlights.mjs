@@ -1,6 +1,42 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'checkout-tax-breakdown': {
+    ru: 'Развёл НДС для товаров и платной доставки СДЭК в WooCommerce. Клиент подтвердил чек и возврат в проверенном сценарии с ЮKassa.',
+    en: 'Separated VAT for products and paid CDEK shipping in WooCommerce. The client confirmed a receipt and refund in the tested YooKassa flow.',
+  },
+  'dokan-marketplace-recovery': {
+    ru: 'Восстановил публикацию товаров и регистрацию в Dokan. Неисправный модуль возвратов временно отключил, а не выдал за отремонтированный.',
+    en: 'Restored product publishing and registration in Dokan. The faulty returns module was disabled temporarily, not marked as repaired.',
+  },
+  'guest-cdek': {
+    ru: 'Исправил зависание расчёта СДЭК для покупателей без аккаунта. Заказчик повторно проверил гостевой сценарий и подтвердил результат.',
+    en: 'Fixed a stalled CDEK shipping quote for logged-out shoppers. The client retested the guest flow and confirmed the fix.',
+  },
+  'elementor-editor-recovery': {
+    ru: 'Вернул доступ к редактору Elementor после критической ошибки WordPress. Клиент проверил и принял восстановление.',
+    en: 'Restored access to the Elementor editor after a critical WordPress error. The client confirmed the recovery and accepted the work.',
+  },
+  'coffee-machine-yml-model-tag': {
+    ru: 'Добавил отдельный XML-тег model в YML-фид WooCommerce вместо param. В отчёте — 60 товаров; клиент проверил файл и принял работу.',
+    en: 'Added a dedicated XML model element to a WooCommerce YML feed instead of param. The handoff reported 60 products; the client checked the feed.',
+  },
+  'woocommerce-stock-waitlist-localization': {
+    ru: 'Настроил лист ожидания WooCommerce и русские письма о поступлении товара. Проверил сценарии остатков 3, 2 и 0; клиент получил тестовое письмо.',
+    en: 'Set up a WooCommerce waitlist and localized restock emails. Checked stock levels of 3, 2 and 0; the client received a test email.',
+  },
+  'dependent-category-filters-repair': {
+    ru: 'Исправил зависимые фильтры WooCommerce: одинаковые подкатегории в разных ветках больше не смешивались в проверенных выборках клиента.',
+    en: 'Fixed dependent WooCommerce filters: identically named subcategories in different branches no longer mixed in the selections the client tested.',
+  },
+  'spare-parts-enquiry-catalog': {
+    ru: 'Перевёл магазин запчастей в каталог для обращений: скрыл цены и корзину, исправил вход в раздел и выровнял карточки. Клиент принял витрину.',
+    en: 'Converted a parts shop to an enquiry catalog: hid prices and cart, fixed the entry link and aligned the cards. The client approved the storefront.',
+  },
+  'wordpress-webp-image-workflow': {
+    ru: 'Настроил WebP в WordPress и подготовку новых фото до 1 920 px. В архиве — пример готового файла около 29 КБ, не среднее по медиатеке.',
+    en: 'Set up WebP on WordPress and capped new source photos at 1,920 px. The archive shows one converted image at about 29 KB, not a library average.',
+  },
   'education-store-crawl-audit': {
     ru:'Сверил SEO-аудит каталога с выгрузкой на 3 508 URL. Нашёл 81 адрес с ответом 404 и массовое повторение второго H1.',
     en:'Rechecked a technical SEO audit against a 3,508-URL crawl. Found 81 URLs returning 404 and a widespread second-H1 issue.',

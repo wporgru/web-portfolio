@@ -8,7 +8,8 @@
 // @spartan121
 //
 import { projectImage } from '../scripts/project-images';
-const { project, t: tProp = {}, eager = false } = Astro.props;
+import { caseHighlights } from '../content/case-highlights.mjs';
+const { project, t: tProp = {}, eager = false, lang = 'en' } = Astro.props;
 
 const t = {
   platforms: tProp.platforms ?? 'Platforms',
@@ -27,7 +28,7 @@ const isArchived = archivedFlag && !featured;
 const title = project?.name ?? 'Untitled';
 const role = project?.role ?? '';
 const year = project?.year ?? '';
-const desc = project?.description ?? '';
+const desc = caseHighlights[project?.slug]?.[lang === 'ru' ? 'ru' : 'en'] ?? project?.description ?? '';
 
 const theme = project?.theme ?? 'blue';
 const accent = project?.accent ?? null;

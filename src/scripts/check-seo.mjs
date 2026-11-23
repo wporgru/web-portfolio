@@ -330,14 +330,21 @@ for (const lang of ['ru','en']) {
         ['offers','review','aggregateRating'].some(key=>key in node)) fail(url,'invalid service entity or unverified offer and review');
   }
 }
-for (const [slug, localized] of Object.entries(caseHighlights)) {
-  for (const lang of ['ru','en']) {
-    const html = read(path.join(root,'showcase',slug,lang==='en'?'en':'','index.html'));
+for (const lang of ['ru','en']) {
+  const suffix=lang==='en'?'en':'';
+  const catalog=read(path.join(root,'showcase',suffix,'index.html'));
+  const servicePages=new Map(services.map(s=>[s.slug,read(path.join(root,'services',s.slug,suffix,'index.html'))]));
+  for (const [slug, localized] of Object.entries(caseHighlights)) {
+    const html = read(path.join(root,'showcase',slug,suffix,'index.html'));
     const expected = localized[lang];
     const lead = html.match(/<p\b[^>]*\bdata-case-highlight[^>]*>([^<]+)<\/p>/)?.[1];
     const meta = html.match(/<meta name="description" content="([^"]+)"/)?.[1];
     const share = html.match(/<meta property="og:description" content="([^"]+)"/)?.[1];
     if (!expected?.trim() || lead!==expected || meta!==expected || share!==expected) fail(slug+'/'+lang,'case highlight differs from the visible lead or metadata');
+    if (!catalog.includes(expected)) fail(slug+'/'+lang,'catalog card omits the case highlight');
+    for (const service of services.filter(s=>s.cases.includes(slug))) {
+      if (!servicePages.get(service.slug)?.includes(expected)) fail(service.slug+'/'+lang,'service examples omit the highlight for '+slug);
+    }
   }
 }
 let canonicalInternalLinks = 0;
