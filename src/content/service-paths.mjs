@@ -14,7 +14,7 @@ export const servicePaths = {
   ],
   'woocommerce-store-improvements': [
     ['catalog-automation','Если цены, остатки и характеристики нужно регулярно получать от поставщика.','If prices, stock and specifications need regular supplier updates.'],
-    ['checkout-payments','Если нужен новый способ доставки или проблема возникает при оплате заказа.','If you need a new shipping method or the issue occurs during payment.'],
+    ['checkout-payments','Если покупатель не может завершить заказ или статус не обновляется после оплаты.','If a shopper cannot complete checkout or the order status does not update after payment.'],
   ],
   'website-contact-widgets': [["website-ux-audit","Если посетители не могут найти контакты и другие важные действия на сайте.","If visitors cannot find contact options or other key actions."],["wordpress-contact-form-repair","Если проблема не в кнопках связи, а в форме, которая перестала доставлять заявки.","If the issue is a contact form that stopped delivering enquiries rather than the contact buttons."]],
   'corporate-email-signatures': [["data-and-ai","Если данные команды сначала надо привести к единой структуре.","If staff data needs to be normalized first."],["wordpress-business-website","Если вместо подписи нужен сайт компании.","If you need a company website instead."]],
@@ -84,7 +84,11 @@ export const servicePaths = {
   ],
   'checkout-payments': [
     ['b2b-catalog-and-enquiries','Если вместо мгновенной оплаты нужно отправлять корзину менеджеру на согласование.','If customers should send the cart to a manager for approval rather than pay instantly.'],
-    ['web-analytics','Если покупка работает, но аналитика теряет оплаты, дублирует их или неверно считает сумму.','If checkout works but analytics misses purchases, duplicates them or reports the wrong totals.'],
+    ['woocommerce-shipping','Если проблема в расчёте тарифа или выборе пункта выдачи, а не в оплате.','If the problem is a shipping quote or pickup point rather than payment.'],
+  ],
+  'woocommerce-shipping': [
+    ['checkout-payments','Если способ доставки выбран, но заказ не создаётся, не оплачивается или не меняет статус.','If the shipping method is selected but the order cannot be created or paid, or fails to update.'],
+    ['catalog-automation','Если для расчёта не хватает веса и габаритов, которые нужно корректно перенести из прайса.','If rates depend on missing product weights and dimensions that need importing from a supplier file.'],
   ],
   'wordpress-performance': [
     ['website-vps-maintenance','Если медленно отвечает сам сервер и проблема затрагивает не только первый экран.','If the server itself responds slowly and the problem goes beyond the first screen.'],

@@ -86,6 +86,10 @@ export const enquiryPrompts = {
     ['Проблемный шаг корзины, доставки или оплаты', 'Способ оплаты или доставки и пример сценария без данных покупателя'],
     ['Affected cart, shipping or payment step', 'Payment or shipping method and an example without buyer data'],
   ],
+  'woocommerce-shipping': [
+    ['Способ доставки, тестовый город или индекс и ожидаемый тариф', 'Пример корзины: сумма, вес, самовывоз или ПВЗ и что видит гость — без адреса покупателя'],
+    ['Shipping method, example city or postcode and expected rate', 'Sample cart value and weight, pickup or collection point, and what a guest sees; no customer address'],
+  ],
   'wordpress-performance': [
     ['Какие страницы медленные и на каких устройствах', 'Что нельзя отключать или менять при ускорении'],
     ['Which pages are slow and on what devices', 'What must not be disabled or changed during optimization'],

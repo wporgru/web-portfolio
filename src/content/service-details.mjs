@@ -394,6 +394,32 @@ export const serviceDetails = {
       ],
     },
   },
+  'woocommerce-shipping': {
+    ru: ['Тариф не появляется, самовывоз пропал или доставка считается неверно', 'Проверю корзину без входа в админку. Отделю правила магазина от ошибки перевозчика: город, индекс, состав корзины, вес и недостающие поля проверю отдельно.', 'Рабочие способы доставки по согласованным сценариям, таблица проверенных корзин и список ограничений. Отдельно отмечу, где проверили тариф и ПВЗ, а где потребовалось бы тестовое отправление.'],
+    en: ['A rate is missing, pickup disappeared or shipping costs are wrong', 'Test the cart while logged out. Separate storefront rules from carrier errors by checking city, postcode, cart contents, weight and missing fields independently.', 'Shipping methods working in agreed scenarios, a record of tested carts and a list of limits. Rate and pickup checks are recorded separately from any test shipment.'],
+    steps:{
+      ru:[
+        ['Перевожу правила доставки в примеры корзин','Согласуем список городов, способы и условия. Например, в «ЭкоМясе» бесплатная доставка должна была учитывать одновременно сумму от 5 000 ₽ и вес от 10 кг, а не любое из двух условий.'],
+        ['Разбираю конфликт правил и перевозчика','Проверяю, какой метод видит гость, приходит ли ответ с тарифом и сохраняется ли выбранный ПВЗ. При смене модуля отдельно выясняю, какие поля нужны расчёту и какие данные оставить в заказе.'],
+        ['Проверяю границы и передаю результат','Для нового правила проверяю значения ниже, на границе и выше порога; для двух порогов проверяю случай, когда выполнен только один. Самовывоз, оплата и реальная отправка — отдельные сценарии, которые согласуем до теста.'],
+      ],
+      en:[
+        ['Turn delivery rules into sample carts','Agree on cities, methods and conditions. At EcoMeat, free shipping needed both a RUB 5,000 minimum and at least 10 kg, not either condition on its own.'],
+        ['Isolate collisions between store rules and carrier behavior','Check what logged-out shoppers see, whether the carrier returns a quote, and whether the selected collection point is retained. For a module change, identify fields needed for rates and the data that should remain on the order.'],
+        ['Test the boundaries and hand over evidence','Test below, at and above each threshold; with two thresholds, test a basket that meets only one. Agree on separate checks for pickup, payment and any real shipment before testing.'],
+      ],
+    },
+    questions:{
+      ru:[
+        ['Почему в админке тариф есть, а обычный клиент его не видит?','Сравню две одинаковые корзины с входом и без входа. Проверю зону, сохранённый адрес, обязательные поля и ответ перевозчика. В кейсе СДЭК именно повторный гостевой сценарий выявил зависание.'],
+        ['Можно оставить самовывоз и давать бесплатную доставку только при двух условиях?','Да, если согласовать условия отдельно для каждого способа и проверить пограничные корзины. Например, сумма без нужного веса не должна открывать бесплатную доставку, но не обязана скрывать самовывоз.'],
+      ],
+      en:[
+        ['Why can an administrator see a rate that a customer cannot?','Compare two identical carts signed in and signed out. Check the zone, saved address, required fields and carrier response. In the CDEK case the stall only surfaced when retesting the guest flow.'],
+        ['Can pickup stay available while free delivery requires two conditions?','Yes, if rules are agreed independently for each method and boundary carts are tested. Reaching the value threshold without the required weight should not unlock free delivery, but it need not hide pickup.'],
+      ],
+    },
+  },
   'wordpress-performance': {
     ru: ['На телефоне долго виден пустой экран, а в админке всё быстро', 'Сравню загрузку типовых страниц для обычного посетителя. В магазине особенно важны не только первый экран и изображения, но и отсутствие регрессий в корзине, формах и аналитике.', 'Повторяемые замеры по согласованным страницам, список изменений и проверка ключевых функций. Отдельно покажу ограничения замеров и где ещё остаётся потенциал.'],
     en: ['The mobile page stays blank while the admin session feels fast', 'Compare representative pages as a logged-out visitor. For stores, check not only when the first screen appears, but also whether cart, forms and analytics still behave correctly.', 'Repeatable measurements on agreed pages, a change list and checks for essential workflows. Document measurement limits and remaining opportunities.'],
