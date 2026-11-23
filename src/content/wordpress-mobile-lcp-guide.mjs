@@ -1,0 +1,61 @@
+const cases = ['arenda-pm-home-performance', 'astola-guest-cache-layout', '78-dosok'];
+
+export const wordpressMobileLcpGuide = {
+  slug: 'wordpress-mobile-lcp',
+  primaryService: 'wordpress-performance',
+  services: ['wordpress-performance', 'website-redesign'],
+  cases,
+  sourceUrls: [
+    'https://developers.google.com/speed/docs/insights/v5/about',
+    'https://web.dev/articles/optimize-lcp',
+    'https://developer.chrome.com/docs/devtools/performance/reference',
+  ],
+  ru: {
+    title: 'Как ускорить первый экран WordPress на мобильных',
+    summary: 'Почему на телефоне долго появляется первый экран WordPress: как найти причину высокого LCP и проверить результат без поломки меню, форм и корзины.',
+    intro: 'Шапка уже появилась, а вместо баннера или заголовка — пустое место. Не начинайте с установки ещё одного плагина кэширования. Сначала выясните, какой элемент задерживается и на каком этапе, а затем проверьте, что ускорение не мешает посетителю оставить заявку или выбрать товар.',
+    context: 'На телефоне первый экран появляется слишком поздно?',
+    action: 'Разобрать загрузку первого экрана',
+    email: 'Прислать медленную страницу',
+    serviceLabel: 'Ускорение WordPress и WooCommerce',
+    enquiry: ['Адреса одной–трёх медленных страниц и ссылка на мобильный отчёт, если он есть', 'Что на этих страницах нужно сохранить: меню, подбор товара, форму, аналитику или корзину'],
+    steps: [
+      ['Замерьте медленную страницу, а не только главную', 'Если покупатели приходят прямо в категорию или карточку, включите её в проверку. Запишите URL и условия мобильного замера без входа в админку. В PageSpeed Insights не смешивайте лабораторный запуск с данными посетителей: если для URL показана статистика всего сайта или полевых данных нет, укажите это в отчёте.'],
+      ['Найдите конкретный элемент LCP', 'Запишите загрузку в панели Performance Chrome и посмотрите, какой элемент стал LCP на мобильном. Это может быть не баннер, а заголовок или первое крупное фото товара. Если тормозит ответ HTML, начните с сервера и кэша. Если запрос изображения начинается поздно, ищите зависимость от CSS или карусели. Если ресурс уже скачан, но элемент не виден, разберите задержку отрисовки.'],
+      ['Уберите конкурирующие запросы, а не интерфейс', 'Проверьте по сети, не загружаются ли на телефоне скрытые слайды десктопной карусели. Если баннер действительно является LCP, он не должен ждать прокрутки или запуска виджета. В «Аренда-ПМ» мобильная карусель перестала создаваться, а на компьютере слайды сохранились. Это полезнее, чем просто скрыть блок и оставить его запросы.'],
+      ['Проверьте функциональность без входа в WordPress', 'Откройте страницу на узком мобильном и широком экране. Проверьте первый и повторный заходы: из-за кэша они могут отличаться. Для сайта услуг пройдите через меню, подбор категории и контрольную форму; для магазина — от карточки до корзины, включая смену вариации, если она есть. Сверьте ожидаемые события аналитики отдельно. Пустая форма с ошибкой валидации не доказывает доставку письма.'],
+      ['Принимайте по замерам и сценариям', 'Повторите замеры на тех же URL при сопоставимых настройках. При передаче приложите ссылки на прогоны, LCP до и после и список проверенных действий; не выбирайте только лучший прогон. Полевые данные проверяйте отдельно по мере накопления. Диагностика страницы и лабораторный результат не доказывают рост заявок или позиций.'],
+    ],
+    examples: [
+      ['«Аренда-ПМ»: мобильный LCP с 6,8 до 2,7 с в лабораторном замере', cases[0]],
+      ['Astola: исправление вёрстки, которую кэш отдавал гостям', cases[1]],
+      ['«78 Досок»: смена темы, редизайн и работы по ускорению, без сопоставимых замеров', cases[2]],
+    ],
+    sources: ['Google: откуда берутся данные PageSpeed Insights', 'web.dev: как разложить LCP на составляющие', 'Chrome DevTools: запись и анализ загрузки'],
+    call: 'Пришлите медленный URL, укажите, что запаздывает на телефоне, и перечислите функции, которые нельзя потерять. По этим данным предложу точки замера и критерии приёмки. Для первого разбора доступ к админке не нужен.',
+  },
+  en: {
+    title: 'How to speed up the first screen on mobile WordPress',
+    summary: 'Find what delays mobile LCP on WordPress and verify speed improvements without breaking navigation, forms or the shopping cart.',
+    intro: 'The header has loaded but the banner or headline is still missing. Before adding another cache plugin, identify the element that is late and the stage that holds it up. Then make sure the faster page still lets visitors enquire or choose a product.',
+    context: 'Does the first screen take too long on mobile?',
+    action: 'Diagnose the first-screen delay',
+    email: 'Send a slow page',
+    serviceLabel: 'WordPress and WooCommerce performance optimization',
+    enquiry: ['One to three slow page URLs and a link to a mobile report if available', 'What must keep working: navigation, product selection, forms, tracking or cart'],
+    steps: [
+      ['Measure the slow page, not just the homepage', 'Include a category or product page if shoppers land there directly. Record the URL and mobile test conditions while logged out. Keep PageSpeed Insights lab runs separate from real-user data. If the report shows origin-wide data instead of URL-level data, or has no field data, record that distinction.'],
+      ['Find the actual LCP element', 'Record a mobile load in Chrome’s Performance panel to see which element becomes LCP. It could be a heading or the first large product photo, not necessarily a banner. If the HTML response arrives late, investigate the server and cache. If the image request starts late, look for a stylesheet or carousel dependency. If the resource is ready but hidden, investigate render delay.'],
+      ['Remove competing requests, not useful features', 'Check the network trace to see if mobile still fetches hidden desktop slides. If a banner is really the LCP element, it should not wait for scrolling or a widget to initialize. On Arenda-PM, the carousel no longer initializes on mobile while desktop slides still work. That removes work rather than merely hiding it.'],
+      ['Verify functionality while logged out of WordPress', 'Test narrow mobile and wide screens, including first and repeat visits because caching can make them different. For a service site, check navigation, category selection and a controlled form test. For a shop, test the flow from product to cart, including variation changes where applicable. Verify expected tracking events separately. An empty-form validation error does not prove email delivery.'],
+      ['Accept the work against measurements and user flows', 'Rerun the same URLs with comparable settings. Include report links, before-and-after LCP and the actions you tested; do not cherry-pick a single best result. Review field data separately as it accumulates. Diagnostics and lab results do not demonstrate growth in enquiries or rankings.'],
+    ],
+    examples: [
+      ['Arenda-PM: mobile lab LCP fell from 6.8 to 2.7 seconds', cases[0]],
+      ['Astola: fixing the cached layout shown to logged-out visitors', cases[1]],
+      ['78 Dosok: theme replacement, redesign and performance work without comparable timings', cases[2]],
+    ],
+    sources: ['Google: where PageSpeed Insights data comes from', 'web.dev: breaking down LCP', 'Chrome DevTools: record and analyze a page load'],
+    call: 'Send a slow URL, describe what appears late on a phone and tell me which features must stay intact. I can propose what to measure and how to accept the work without needing admin access for the first review.',
+  },
+};

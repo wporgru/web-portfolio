@@ -10,6 +10,7 @@ import { orderEmailGuide } from './woocommerce-order-email-guide.mjs';
 import { wordpressPhpUpdateGuide } from './wordpress-php-update-guide.mjs';
 import { repairOrRedesignGuide } from './wordpress-repair-or-redesign-guide.mjs';
 import { contactForm7MailGuide } from './contact-form-7-mail-guide.mjs';
+import { wordpressMobileLcpGuide } from './wordpress-mobile-lcp-guide.mjs';
 
 const versioned = (contentFile, guide) => ({...guide, contentFile: 'src/content/'+contentFile});
 
@@ -35,4 +36,5 @@ export const guides = [
   versioned('wordpress-php-update-guide.mjs', wordpressPhpUpdateGuide),
   versioned('wordpress-repair-or-redesign-guide.mjs', repairOrRedesignGuide),
   versioned('contact-form-7-mail-guide.mjs', contactForm7MailGuide),
+  versioned('wordpress-mobile-lcp-guide.mjs', wordpressMobileLcpGuide),
 ];
