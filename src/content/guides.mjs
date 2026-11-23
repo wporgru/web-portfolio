@@ -9,6 +9,7 @@ import { b2bQuoteGuide } from './b2b-catalog-quote-guide.mjs';
 import { orderEmailGuide } from './woocommerce-order-email-guide.mjs';
 import { wordpressPhpUpdateGuide } from './wordpress-php-update-guide.mjs';
 import { repairOrRedesignGuide } from './wordpress-repair-or-redesign-guide.mjs';
+import { contactForm7MailGuide } from './contact-form-7-mail-guide.mjs';
 
 export const guides = [
   {
@@ -31,4 +32,5 @@ export const guides = [
   orderEmailGuide,
   wordpressPhpUpdateGuide,
   repairOrRedesignGuide,
+  contactForm7MailGuide,
 ];

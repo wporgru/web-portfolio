@@ -1,0 +1,61 @@
+const cases = ['booking-form-email-recovery','metform-replacement','bgtgroup-wordpress-form-antispam'];
+
+export const contactForm7MailGuide = {
+  slug:'contact-form-7-email-not-received',
+  primaryService:'wordpress-contact-form-repair',
+  services:['wordpress-contact-form-repair','wordpress-repair'],
+  cases,
+  sourceUrls:[
+    'https://contactform7.com/2023/12/17/form-status/',
+    'https://contactform7.com/best-practice-to-set-up-mail/',
+    'https://contactform7.com/faq/i-see-green-border-response-but-i-never-receive-mail/',
+  ],
+  ru:{
+    title:'Contact Form 7 пишет «Отправлено», но письма нет',
+    summary:'Как найти пропавшую заявку WordPress: сверить статус Contact Form 7, настройки From и Reply-To, почтовый журнал и получение письма.',
+    intro:'Посетитель увидел подтверждение, а менеджер не получил заявку. Начните не с переустановки плагина, а с одной контролируемой отправки: выясним, какая форма сработала, кому она адресовала письмо и что произошло после передачи в почтовую систему.',
+    context:'Заявка с сайта не доходит до менеджера?',
+    action:'Найти, на каком шаге пропадает заявка',
+    email:'Прислать страницу и сообщение формы',
+    serviceLabel:'Ремонт форм WordPress и антиспам',
+    enquiry:['Адрес конкретной страницы, место формы и сообщение после отправки','Время контрольной попытки с часовым поясом и куда должна поступить заявка — без данных посетителя'],
+    steps:[
+      ['Зафиксируйте конкретную форму','Откройте публичную страницу без входа в админку. Если кнопки есть в подвале и во всплывающем окне, проверьте их отдельно: одинаковые поля не гарантируют одинаковые настройки. Используйте согласованный тестовый ящик и уникальную пометку вроде TEST-01. Запишите время и точный ответ формы.'],
+      ['Не угадывайте причину по тексту ошибки','В Contact Form 7 статусы invalid, spam, failed и sent означают разные исходы: неверный ввод, блокировку фильтром, сбой отправки и успешную передачу письма. Тема может менять цвет и оформление уведомления, поэтому при разборе смотрите статус, а не только цвет рамки или текст под кнопкой. При spam не отключайте защиту на всех формах: проверьте, какой фильтр заблокировал обычный тест.'],
+      ['Проверьте настройки письма у нужной формы','В настройках почты сверяйте три поля по отдельности: To — кто получит заявку, From — с какого адреса сайт отправляет письмо, Reply-To — кому менеджер ответит. Для From используйте адрес отправителя, который разрешён вашей почтовой системой. Адрес посетителя, если поле есть и заполнено, нужен для ответа, а не для подстановки в From. Проверьте, что при пустом необязательном поле заголовок письма остаётся корректным.'],
+      ['Проследите письмо после передачи','По времени и пометке найдите попытку у почтового провайдера, если журнал доступен. Отказ, задержка и принятие на стороне получателя — разные состояния. При принятии письма проверьте папки, правила пересылки и карантин согласованного ящика. Если виден только ответ формы, так и запишите: приём сообщения почтой пока не подтверждён.'],
+      ['Принимайте по нескольким обычным отправкам','На нужных страницах отправьте несколько различимых тестовых заявок, включая повторную с телефона, если сбой был непостоянным. Убедитесь, что каждая пришла нужному получателю, содержит обязательные поля и позволяет ответить. Отдельно проверьте, что заведомо неверный ввод не выдаёт ложный успех. Не отправляйте в поддержку реальные заявки, пароли или полные почтовые заголовки без редактирования.'],
+    ],
+    examples:[
+      ['Формы бронирования: клиент подтвердил получение трёх различимых заявок',cases[0]],
+      ['Замена MetForm на Contact Form 7 с подтверждённым контрольным письмом',cases[1]],
+      ['BGT Group: антиспам как отдельная работа, не замена проверке доставки',cases[2]],
+    ],
+    sources:['Contact Form 7: статусы формы','Contact Form 7: настройки отправителя и адреса для ответа','Contact Form 7: форма сообщает об успехе, письма нет'],
+    call:'Пришлите страницу, время теста и точное сообщение под формой. По этим данным предложу первую проверку и скажу, как подтвердить доставку заявки. Настройки доступа для первого разбора не нужны.',
+  },
+  en:{
+    title:'Contact Form 7 says sent, but no email arrives',
+    summary:'Trace missing WordPress enquiries: Contact Form 7 status, sender and reply settings, mail logs and receipt in the intended inbox.',
+    intro:'A visitor saw a success message, but nobody received the enquiry. Before replacing a plugin, run a controlled submission. Identify which form handled it, where it addressed the message and what happened after handoff to the mail system.',
+    context:'Does the form report success without delivering a lead?',
+    action:'Find where the WordPress enquiry stops',
+    email:'Send the form page and response',
+    serviceLabel:'WordPress form repair and spam protection',
+    enquiry:['Exact page, form placement and response after submission','Test time with timezone and intended destination, without customer details'],
+    steps:[
+      ['Identify the specific form','Open the public page while logged out. Test the footer and popup separately if both exist: matching fields do not prove matching settings. Use an agreed test inbox and a distinct marker such as TEST-01. Record the time and exact response.'],
+      ['Read the status, not just the message','Contact Form 7 distinguishes invalid input, spam filtering, failure to send and successful handoff with invalid, spam, failed and sent. A theme can change colors or styling, so consult the status rather than relying on the border or label. For a spam result, identify which filter blocked the ordinary test before changing site-wide protection.'],
+      ['Check the mail settings of the affected form','Review To, From and Reply-To separately. To identifies the recipient; From should use an address authorized by your mail setup; Reply-To determines where the manager’s reply goes. If the form collects an email address, use it for replies rather than impersonating the visitor as the sender. Confirm that optional fields do not leave invalid headers when blank.'],
+      ['Trace the message after handoff','Use the timestamp and marker to look up the attempt in your provider’s log if one is available. A rejection, delay and recipient acceptance are different. For accepted messages, check inbox rules, forwarding and quarantine. If all you have is a form response, leave mail-system receipt unconfirmed.'],
+      ['Verify with multiple ordinary submissions','Send distinguishable tests from the relevant pages, including a mobile repeat if the failure was intermittent. Check that each reaches the intended person with required fields and a usable reply address. Confirm that invalid input does not show a false success. Do not share customer submissions, passwords or unredacted mail headers.'],
+    ],
+    examples:[
+      ['Booking forms: the client confirmed receipt of three distinguishable tests',cases[0]],
+      ['MetForm replacement: migrated to Contact Form 7 and verified a test email',cases[1]],
+      ['BGT Group: spam protection was separate from email delivery verification',cases[2]],
+    ],
+    sources:['Contact Form 7: form statuses','Contact Form 7: sender and reply address setup','Contact Form 7: success response but no received email'],
+    call:'Send the page, test time and the exact response below the form. I can suggest the first diagnostic and how to verify delivery. No credentials are needed for an initial review.',
+  },
+};
