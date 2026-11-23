@@ -1,0 +1,219 @@
+{
+  "site": "https://wellland.ru/",
+  "date": "2026-10-29",
+  "source": "Anonymized summary transcribed from the archived migration audit and HTTP category checks. Historical verification, not a live retest.",
+  "method": "Compared reported filter counts with an independent count of matching published products, accounting for catalog visibility.",
+  "migration": {
+    "publishedSimpleProducts": 198,
+    "migratedProducts": 192,
+    "alreadyUsingGlobalAttributes": 6,
+    "resultingValueAssignments": 1343,
+    "originalValueMismatches": 0,
+    "categoriesKeptHidden": 27
+  },
+  "verification": {
+    "categoryPages": 33,
+    "facetCountsCompared": 1583,
+    "errors": 0
+  },
+  "categoryChecks": [
+    {
+      "category": 1,
+      "httpStatus": 200,
+      "facetCountsCompared": 16,
+      "reportedErrors": 0
+    },
+    {
+      "category": 2,
+      "httpStatus": 200,
+      "facetCountsCompared": 26,
+      "reportedErrors": 0
+    },
+    {
+      "category": 3,
+      "httpStatus": 200,
+      "facetCountsCompared": 11,
+      "reportedErrors": 0
+    },
+    {
+      "category": 4,
+      "httpStatus": 200,
+      "facetCountsCompared": 26,
+      "reportedErrors": 0
+    },
+    {
+      "category": 5,
+      "httpStatus": 200,
+      "facetCountsCompared": 22,
+      "reportedErrors": 0
+    },
+    {
+      "category": 6,
+      "httpStatus": 200,
+      "facetCountsCompared": 24,
+      "reportedErrors": 0
+    },
+    {
+      "category": 7,
+      "httpStatus": 200,
+      "facetCountsCompared": 26,
+      "reportedErrors": 0
+    },
+    {
+      "category": 8,
+      "httpStatus": 200,
+      "facetCountsCompared": 24,
+      "reportedErrors": 0
+    },
+    {
+      "category": 9,
+      "httpStatus": 200,
+      "facetCountsCompared": 24,
+      "reportedErrors": 0
+    },
+    {
+      "category": 10,
+      "httpStatus": 200,
+      "facetCountsCompared": 26,
+      "reportedErrors": 0
+    },
+    {
+      "category": 11,
+      "httpStatus": 200,
+      "facetCountsCompared": 38,
+      "reportedErrors": 0
+    },
+    {
+      "category": 12,
+      "httpStatus": 200,
+      "facetCountsCompared": 44,
+      "reportedErrors": 0
+    },
+    {
+      "category": 13,
+      "httpStatus": 200,
+      "facetCountsCompared": 12,
+      "reportedErrors": 0
+    },
+    {
+      "category": 14,
+      "httpStatus": 200,
+      "facetCountsCompared": 4,
+      "reportedErrors": 0
+    },
+    {
+      "category": 15,
+      "httpStatus": 200,
+      "facetCountsCompared": 42,
+      "reportedErrors": 0
+    },
+    {
+      "category": 16,
+      "httpStatus": 200,
+      "facetCountsCompared": 32,
+      "reportedErrors": 0
+    },
+    {
+      "category": 17,
+      "httpStatus": 200,
+      "facetCountsCompared": 38,
+      "reportedErrors": 0
+    },
+    {
+      "category": 18,
+      "httpStatus": 200,
+      "facetCountsCompared": 72,
+      "reportedErrors": 0
+    },
+    {
+      "category": 19,
+      "httpStatus": 200,
+      "facetCountsCompared": 93,
+      "reportedErrors": 0
+    },
+    {
+      "category": 20,
+      "httpStatus": 200,
+      "facetCountsCompared": 78,
+      "reportedErrors": 0
+    },
+    {
+      "category": 21,
+      "httpStatus": 200,
+      "facetCountsCompared": 16,
+      "reportedErrors": 0
+    },
+    {
+      "category": 22,
+      "httpStatus": 200,
+      "facetCountsCompared": 59,
+      "reportedErrors": 0
+    },
+    {
+      "category": 23,
+      "httpStatus": 200,
+      "facetCountsCompared": 24,
+      "reportedErrors": 0
+    },
+    {
+      "category": 24,
+      "httpStatus": 200,
+      "facetCountsCompared": 93,
+      "reportedErrors": 0
+    },
+    {
+      "category": 25,
+      "httpStatus": 200,
+      "facetCountsCompared": 78,
+      "reportedErrors": 0
+    },
+    {
+      "category": 26,
+      "httpStatus": 200,
+      "facetCountsCompared": 87,
+      "reportedErrors": 0
+    },
+    {
+      "category": 27,
+      "httpStatus": 200,
+      "facetCountsCompared": 72,
+      "reportedErrors": 0
+    },
+    {
+      "category": 28,
+      "httpStatus": 200,
+      "facetCountsCompared": 60,
+      "reportedErrors": 0
+    },
+    {
+      "category": 29,
+      "httpStatus": 200,
+      "facetCountsCompared": 93,
+      "reportedErrors": 0
+    },
+    {
+      "category": 30,
+      "httpStatus": 200,
+      "facetCountsCompared": 93,
+      "reportedErrors": 0
+    },
+    {
+      "category": 31,
+      "httpStatus": 200,
+      "facetCountsCompared": 93,
+      "reportedErrors": 0
+    },
+    {
+      "category": 32,
+      "httpStatus": 200,
+      "facetCountsCompared": 78,
+      "reportedErrors": 0
+    },
+    {
+      "category": 33,
+      "httpStatus": 200,
+      "facetCountsCompared": 59,
+      "reportedErrors": 0
+    }
+  ]
+}

@@ -46,8 +46,22 @@ blocks:
       received the right product ID after filtering without submitting the form. No
       horizontal overflow was observed at 320 and 390 px.
   - type: text
+    title: Why I reconciled counts against visible products, not the whole database
+    body: One category had 13 visible products and another deliberately hidden from the
+      catalog. Counting every category relationship would have created a false mismatch.
+      I recalculated counts with catalog visibility applied, then compared them against
+      the numbers shown next to filter values. All 27 previously hidden categories stayed
+      hidden. The public summary contains HTTP status, checks and errors for each of 33
+      pages. It is a historical record, not a new test of the current storefront.
+    links:
+      - label: Summary of 1,583 filter counts checked across 33 categories (JSON)
+        url: /media/projects/wellland-facets/catalog-filter-qa-summary.json
+  - type: text
     title: Apply this to your catalog
     body: If a filter returns no products despite visible specifications, send the category
       URL, two SKUs and the filter value. I can trace where the attribute is stored, how
       it enters through imports and what must be preserved when moving to shared
       attributes.
+    links:
+      - label: WooCommerce catalog filter setup and repair
+        url: /services/woocommerce-catalog-filters/en/
