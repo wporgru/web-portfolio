@@ -57,3 +57,6 @@ blocks:
       Yandex indexed them or improved their rankings. For your site, send example excluded
       URLs, the sitemap and recent changes. I can compare the actual responses, index
       settings and search-console evidence before prioritizing fixes.
+    links:
+      - label: Why products and categories are missing from search
+        url: /guides/woocommerce-products-not-indexed/en/
