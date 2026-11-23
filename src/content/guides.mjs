@@ -11,8 +11,10 @@ import { wordpressPhpUpdateGuide } from './wordpress-php-update-guide.mjs';
 import { repairOrRedesignGuide } from './wordpress-repair-or-redesign-guide.mjs';
 import { contactForm7MailGuide } from './contact-form-7-mail-guide.mjs';
 
+const versioned = (contentFile, guide) => ({...guide, contentFile: 'src/content/'+contentFile});
+
 export const guides = [
-  {
+  versioned('migration-guide.mjs', {
     ...migrationGuide,
     primaryService:'hosting-migration',
     sourceUrls:[
@@ -21,16 +23,16 @@ export const guides = [
     ],
     ru:{...migrationGuide.ru,context:'Если планируете перенос',action:'Обсудить перенос магазина',serviceLabel:'Посмотреть услугу переноса'},
     en:{...migrationGuide.en,context:'Planning a store migration',action:'Discuss your migration',serviceLabel:'Explore migration services'},
-  },
-  filtersGuide,
-  ymlFeedGuide,
-  woocommerceThemeChangeGuide,
-  priceListGuide,
-  migrationIndexingGuide,
-  importTimeoutGuide,
-  b2bQuoteGuide,
-  orderEmailGuide,
-  wordpressPhpUpdateGuide,
-  repairOrRedesignGuide,
-  contactForm7MailGuide,
+  }),
+  versioned('woocommerce-filters-guide.mjs', filtersGuide),
+  versioned('yml-feed-guide.mjs', ymlFeedGuide),
+  versioned('woocommerce-theme-change-guide.mjs', woocommerceThemeChangeGuide),
+  versioned('woocommerce-price-list-guide.mjs', priceListGuide),
+  versioned('migration-indexing-guide.mjs', migrationIndexingGuide),
+  versioned('import-timeout-guide.mjs', importTimeoutGuide),
+  versioned('b2b-catalog-quote-guide.mjs', b2bQuoteGuide),
+  versioned('woocommerce-order-email-guide.mjs', orderEmailGuide),
+  versioned('wordpress-php-update-guide.mjs', wordpressPhpUpdateGuide),
+  versioned('wordpress-repair-or-redesign-guide.mjs', repairOrRedesignGuide),
+  versioned('contact-form-7-mail-guide.mjs', contactForm7MailGuide),
 ];

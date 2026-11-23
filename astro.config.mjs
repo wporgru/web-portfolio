@@ -2,8 +2,9 @@ import { defineConfig } from 'astro/config';
 import { cpSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
-import { latestCaseRevision, readCaseRevisions } from './src/scripts/case-revisions.mjs';
+import { latestContentRevision, readContentRevisions } from './src/scripts/content-revisions.mjs';
 import { rootRobots } from './src/scripts/publication.mjs';
+import { guides } from './src/content/guides.mjs';
 
 import sitemap from '@astrojs/sitemap';
 
@@ -21,12 +22,18 @@ if (customSite) {
 const site = customSite || (owner ? `https://${owner}.github.io` : 'http://localhost:4321');
 const base = process.env.BASE_PATH ?? (customSite ? '/' : name ? `/${name}` : undefined);
 const mount = (base ?? '').replace(/\/$/, '');
-const caseRevisions=readCaseRevisions({required:process.env.GITHUB_ACTIONS==='true'});
+const guideSources=new Map(guides.map(guide=>[guide.slug,guide.contentFile]));
+const revisions=readContentRevisions({required:process.env.GITHUB_ACTIONS==='true', guideFiles:[...guideSources.values()]});
 const sitemapUrls=new Set();
 
-function addCaseMetadata(item) {
+function addContentMetadata(item) {
   const url = new URL(item.url);
   const route = url.pathname.slice(mount.length);
+  const guide = /^\/guides\/([a-z0-9-]+)(?:\/en)?\/$/.exec(route);
+  if (guideSources.has(guide?.[1])) {
+    const lastmod = revisions.get(guideSources.get(guide[1]));
+    return lastmod ? {...item,lastmod} : item;
+  }
   const match = /^\/showcase\/([a-z0-9-]+)(\/en)?\/$/.exec(route);
   if (!match || ['ru','en'].includes(match[1])) return item;
   const [,slug,englishSuffix] = match;
@@ -49,7 +56,7 @@ function addCaseMetadata(item) {
     images.add(new URL(mount+src,url).href);
     sourcePaths.push(path.posix.join(projectDir,basename));
   }
-  const lastmod=latestCaseRevision(caseRevisions,sourcePaths);
+  const lastmod=latestContentRevision(revisions,sourcePaths);
   return {
     ...item,
     ...(images.size ? {img:[...images]} : {}),
@@ -73,7 +80,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       serialize: item=>{
-        const entry=addCaseMetadata(item);
+        const entry=addContentMetadata(item);
         sitemapUrls.add(entry.url);
         return entry;
       },

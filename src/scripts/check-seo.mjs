@@ -8,7 +8,7 @@ import { createEnquiry, enquiryPrompts } from '../content/enquiry.mjs';
 import { servicePaths } from '../content/service-paths.mjs';
 import { migrationGuide } from '../content/migration-guide.mjs';
 import { guides } from '../content/guides.mjs';
-import { latestCaseRevision, readCaseRevisions } from './case-revisions.mjs';
+import { latestContentRevision, readContentRevisions } from './content-revisions.mjs';
 import { rootRobots } from './publication.mjs';
 
 const root = process.env.PORTFOLIO_DIST_DIR || 'dist';
@@ -222,20 +222,35 @@ for (const suffix of ['', 'en/']) {
   }
   if (!guide.includes(`href="${base}services/hosting-migration/${suffix}"`)) fail(route,'missing next step for migration');
 }
-const caseRevisions=readCaseRevisions({required:process.env.GITHUB_ACTIONS==='true'});
-let verifiedRevisions=0;
+const guideSources=new Map(guides.map(guide=>[guide.slug,guide.contentFile]));
+if (guideSources.size!==guides.length || new Set(guideSources.values()).size!==guides.length ||
+    [...guideSources.values()].some(file=>!/^src\/content\/[a-z0-9-]+-guide\.mjs$/.test(file) || !fs.existsSync(file))) {
+  fail('guides','each guide must have its own tracked editorial source');
+}
+const releasesRequireHistory=process.env.GITHUB_ACTIONS==='true';
+const contentRevisions=readContentRevisions({required:releasesRequireHistory,guideFiles:[...guideSources.values()]});
+let verifiedRevisions=0, verifiedGuideRevisions=0;
 for (const [url,images] of sitemapEntries){
   const route=new URL(url).pathname.slice(base.length);
   const match=/^showcase\/([a-z0-9-]+)(\/en)?\/$/.exec(route);
   const lastmod=sitemapRevisions.get(url);
+  const guide=/^guides\/([a-z0-9-]+)(?:\/en)?\/$/.exec(route);
+  if (guideSources.has(guide?.[1])) {
+    const expected=contentRevisions.get(guideSources.get(guide[1]));
+    if ((releasesRequireHistory && !expected) || lastmod!==expected || (lastmod && Date.parse(lastmod)>Date.now())) {
+      fail(url,'sitemap revision does not match guide content history');
+    }
+    if (lastmod) verifiedGuideRevisions++;
+    continue;
+  }
   if (!match || ['ru','en'].includes(match[1])) {
-    if (lastmod) fail(url,'non-case route has a synthesized lastmod');
+    if (lastmod) fail(url,'unexpected lastmod outside versioned content');
     continue;
   }
   const [,slug,en]=match;
   const file=`public/media/projects/${slug}/${slug.replaceAll('-','_')}_${en?'en':'ru'}.yaml`;
-  const expected=latestCaseRevision(caseRevisions,[file,...images.map(src=>'public/'+new URL(src).pathname.slice(base.length))]);
-  if (process.env.GITHUB_ACTIONS==='true' && !expected) fail(url,'missing case content history in release checkout');
+  const expected=latestContentRevision(contentRevisions,[file,...images.map(src=>'public/'+new URL(src).pathname.slice(base.length))]);
+  if (releasesRequireHistory && !expected) fail(url,'missing case content history in release checkout');
   if (lastmod!==expected || (lastmod && Date.parse(lastmod)>Date.now())) fail(url,'sitemap revision does not match the case content history');
   if (lastmod) verifiedRevisions++;
 }
@@ -457,5 +472,6 @@ console.log('Verified '+distinctSitemapImages.size+' original images across '+im
 console.log('Verified contextual enquiry templates for '+enquiryPages+' localized case and service pages.');
 console.log('Verified Telegram drafts on '+telegramPages+' localized case, service and guide pages.');
 console.log('Verified versioned sitemap revision dates for '+verifiedRevisions+' localized case pages.');
+console.log('Verified versioned sitemap revision dates for '+verifiedGuideRevisions+' localized guide pages.');
 console.log('Verified homepage navigation for '+checkedNavigationPages+' localized pages without JavaScript.');
 console.log('Verified '+verifiedArticles+' localized articles with visible bylines and canonical author linkage.');
