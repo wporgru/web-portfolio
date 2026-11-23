@@ -1,0 +1,27 @@
+title: "Trailer YML feed: repairing product sets for Yandex Webmaster"
+tagline: Yandex Webmaster reported issues with product-to-set links and images.
+  The goal was to repair grouping in the existing export, not rebuild the site.
+year: "03.2026"
+role: Web development and automation
+stack:
+  - PHP
+  - YML
+  - Product sets
+  - Yandex Webmaster
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Yandex Webmaster reported issues with product-to-set links and images. The
+      goal was to repair grouping in the existing export, not rebuild the site.
+  - type: text
+    title: How it works
+    body: Corrected set references and image output in the existing PHP feed. Used
+      all relevant categories rather than only the primary one and included
+      brands in set generation. The handoff shows the number of sets rising from
+      10 to 27.
+  - type: text
+    title: Result and verification
+    body: The original technical errors did not recur in the recorded check and the
+      client accepted delivery. Yandex manual review did not pass; the handoff
+      noted limited catalog volume. Publication of offers in search was not
+      verified.

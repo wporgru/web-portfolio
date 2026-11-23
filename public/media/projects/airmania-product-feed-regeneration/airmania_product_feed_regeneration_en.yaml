@@ -1,0 +1,32 @@
+title: "Airmania: regenerating a stalled product feed"
+tagline: An existing export stopped refreshing. The store needed a fresh file
+  and a repeatable way to trigger regeneration without rebuilding its catalog.
+year: "02.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YML
+  - Feed regeneration
+  - Scheduled exports
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: An existing export stopped refreshing. The store needed a fresh file and a
+      repeatable way to trigger regeneration without rebuilding its catalog.
+  - type: text
+    title: How it works
+    body: Regenerated the feed manually and documented how to save the hourly
+      schedule again and check the generated file. Flagged 13 extensions
+      awaiting updates, including WooCommerce and the feed generator. Outdated
+      components were a possible cause; applying those updates was not part of
+      the confirmed work.
+  - type: text
+    title: Result and verification
+    body: The client accepted the refreshed export and instructions. This confirms
+      manual regeneration, not a proven root cause or a series of successful
+      scheduled runs.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Earlier stage: product selection and model data in the feed"
+        url: /showcase/airmania-selective-product-feed/en/

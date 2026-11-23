@@ -7420,3 +7420,58 @@ projects:
         url: /showcase/voblachke-woocommerce-consultation-buttons/en/
         type: product
     featured: false
+  - slug: airmania-product-feed-regeneration
+    name: "Airmania: regenerating a stalled product feed"
+    year: "02.2023"
+    role: Web development and automation
+    description: An existing export stopped refreshing. The store needed a fresh
+      file and a repeatable way to trigger regeneration without rebuilding its
+      catalog.
+    stack:
+      - WooCommerce
+      - YML
+      - Feed regeneration
+      - Scheduled exports
+    order: 397
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/airmania-product-feed-regeneration/en/
+        type: product
+    featured: false
+  - slug: yandex-webmaster-trailer-feed-sets
+    name: "Trailer YML feed: repairing product sets for Yandex Webmaster"
+    year: "03.2026"
+    role: Web development and automation
+    description: Yandex Webmaster reported issues with product-to-set links and
+      images. The goal was to repair grouping in the existing export, not rebuild
+      the site.
+    stack:
+      - PHP
+      - YML
+      - Product sets
+      - Yandex Webmaster
+    order: 398
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/yandex-webmaster-trailer-feed-sets/en/
+        type: product
+    featured: false
+  - slug: kubachi-silver-shop-yml-feed
+    name: "Kubachi Silver Shop: a YML product feed"
+    year: "09.2022"
+    role: Web development and automation
+    description: A new silverware store needed a product export URL for Yandex.
+      Before configuring it, I clarified that product pricing had to be present.
+    stack:
+      - WooCommerce
+      - YML
+      - Product exports
+    order: 399
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/kubachi-silver-shop-yml-feed/en/
+        type: product
+    featured: false

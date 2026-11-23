@@ -7470,3 +7470,59 @@ projects:
         url: /showcase/voblachke-woocommerce-consultation-buttons/
         type: product
     featured: false
+  - slug: airmania-product-feed-regeneration
+    name: "Airmania: восстановление обновления товарного фида"
+    year: "02.2023"
+    role: Веб-разработка и автоматизация
+    description: Ранее настроенная выгрузка перестала обновляться. Нужно было
+      получить свежий файл и оставить владельцу магазина понятный способ повторить
+      запуск, не пересоздавая каталог.
+    stack:
+      - WooCommerce
+      - YML
+      - Feed regeneration
+      - Scheduled exports
+    order: 397
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/airmania-product-feed-regeneration/
+        type: product
+    featured: false
+  - slug: yandex-webmaster-trailer-feed-sets
+    name: "YML для полуприцепов: исправление наборов в Вебмастере"
+    year: "03.2026"
+    role: Веб-разработка и автоматизация
+    description: Вебмастер сообщал об ошибках связей товаров с наборами и
+      изображений. Требовалось исправить действующую выгрузку так, чтобы товары
+      распределялись по подходящим группам, а не переделывать сайт.
+    stack:
+      - PHP
+      - YML
+      - Product sets
+      - Yandex Webmaster
+    order: 398
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/yandex-webmaster-trailer-feed-sets/
+        type: product
+    featured: false
+  - slug: kubachi-silver-shop-yml-feed
+    name: "Kubachi Silver Shop: товарная выгрузка YML"
+    year: "09.2022"
+    role: Веб-разработка и автоматизация
+    description: Новому магазину серебряных изделий нужен был отдельный адрес
+      выгрузки для Яндекса. До настройки уточнил, что товарные цены должны быть
+      заполнены.
+    stack:
+      - WooCommerce
+      - YML
+      - Product exports
+    order: 399
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/kubachi-silver-shop-yml-feed/
+        type: product
+    featured: false

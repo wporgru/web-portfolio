@@ -1,0 +1,24 @@
+title: "Kubachi Silver Shop: a YML product feed"
+tagline: A new silverware store needed a product export URL for Yandex. Before
+  configuring it, I clarified that product pricing had to be present.
+year: "09.2022"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YML
+  - Product exports
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A new silverware store needed a product export URL for Yandex. Before
+      configuring it, I clarified that product pricing had to be present.
+  - type: text
+    title: How it works
+    body: Set up YML generation and handed over the XML feed URL. When the client
+      mentioned a date warning on the first feed, I requested the exact message
+      and a screenshot. The record does not establish that the warning concerned
+      the newly configured file.
+  - type: text
+    title: Result and verification
+    body: The client accepted the setup. The handoff records the export URL, not an
+      offer count, a resolved warning or successful moderation.
