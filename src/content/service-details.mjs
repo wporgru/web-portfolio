@@ -214,6 +214,20 @@ export const serviceDetails = {
   'wordpress-repair': {
     ru: ['После обновления сайт открывается, но часть функций пропала', 'Работающая главная не означает, что всё в порядке: редактор может перестать сохранять правки, а кэш — показывать старые страницы. Проверю, где именно расходится поведение, и предложу точечный ремонт или восстановление из копии. Если ограничение выставил хостинг, отделю работу на сайте от действий, которые может выполнить только провайдер.', 'Вы получите список изменений, результаты повторной проверки по проблемным сценариям и описание оставшихся ограничений. Если для исправления нужен откат, до запуска согласуем, какие данные могут измениться и как сохранить свежие записи.'],
     en: ['The site loads after an update, but some features are gone', 'A working homepage does not mean everything is healthy: the editor may no longer save changes, or the cache may still serve old pages. I isolate where behavior diverges and recommend a targeted fix or recovery from backup. If the host imposed a restriction, I separate the site work from actions only the provider can take.', 'Get a change list, the results of retesting the affected flows, and a record of anything still unresolved. If rollback is necessary, we agree upfront which data may change and how recent records will be preserved.'],
+    steps:{
+      ru:[
+        ['Фиксирую, что пропало и после какого изменения','Прошу адрес, время и точное действие: открыть карточку, войти в админку или сохранить страницу. Сверяю недавнее обновление и журнал, если он доступен. Один работающий адрес не закрывает сбой на другом шаблоне.'],
+        ['Отделяю проблему отображения от потери данных','Если редактор сохранил правку, а посетитель видит старую версию, проверяю слои кэша. Если после обновления пропал текст, сначала выясняю, где он хранится. В одном проекте главная брала содержимое из полей ACF, поэтому её не пришлось пересобирать вручную.'],
+        ['Выбираю минимальное обратимое исправление','Перед изменениями оцениваю наличие копий файлов и базы и сохраняю текущее состояние, если доступ позволяет. Предпочитаю восстановить один компонент или нужные данные. Полный откат согласую отдельно: проверю, что появилось после снимка, включая новые заказы и заявки.'],
+        ['Перепроверяю проблемный сценарий и соседние функции','Если не сохранялся редактор, проверяю сохранение и то, что видит посетитель без входа. Если зависала карточка, сначала открываю её, затем проверяю соседний товар и переход из категории. В сдаче отмечаю, какие проверки прошли, что не проверялось и как отменить правку.'],
+      ],
+      en:[
+        ['Record what broke and what changed beforehand','Get the exact URL, time and action: opening a product, signing in or saving a page. Compare recent updates with the available logs. One working URL does not resolve a failure on a different template.'],
+        ['Separate stale output from missing data','If the editor saves but visitors see an old version, inspect the cache layers. If text disappeared after an update, identify where it is stored first. In one project the homepage content lived in ACF fields, so rebuilding the page by hand was unnecessary.'],
+        ['Choose the smallest reversible fix','Review file and database backups and preserve the current state where access permits. Prefer restoring the affected component or data. Agree on a full rollback separately, accounting for recent orders and enquiries added after the snapshot.'],
+        ['Repeat the failed action and check adjacent flows','For an editor issue, verify saving and what logged-out visitors see. For a product page that hangs, test the affected product, a neighboring product and the route from its category. Record what passed, what was outside the checks and how to revert the edit.'],
+      ],
+    },
     questions: {
       ru: [
         ['Можно восстановить сайт без полного отката?', 'Иногда достаточно исправить один конфликт, вернуть настройки компонента или восстановить отдельные данные. Полный откат рассматриваю, когда точечное восстановление ненадёжно или занимает больше времени.'],
