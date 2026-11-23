@@ -1,7 +1,11 @@
 import assert from 'node:assert/strict';
 import {setTimeout as delay} from 'node:timers/promises';
+import {livePublicationUrl,rootRobots} from './publication.mjs';
 
-const site = new URL('https://wporgru.github.io/web-portfolio/');
+if (process.env.GITHUB_ACTIONS === 'true') {
+  assert.ok(process.env.PORTFOLIO_LIVE_URL?.trim(),'GitHub Pages did not report a deployment URL');
+}
+const site = livePublicationUrl();
 const samples = ['', 'en/', 'showcase/', 'showcase/en/', 'services/', 'services/en/', 'guides/', 'guides/en/'];
 const args = process.argv.slice(2);
 assert.ok(!args.length || (args.length === 1 && args[0] === '--all'), 'Usage: node src/scripts/check-live-discovery.mjs [--all]');
@@ -38,6 +42,8 @@ if (expected) {
 
 const startRevision = fullCrawl ? (await get('release-revision.txt', ['text/plain'])).trim() : undefined;
 const xmlTypes = ['application/xml', 'text/xml'];
+const robots = rootRobots(site);
+if (robots) assert.equal(await get('robots.txt',['text/plain']),robots,'Root robots.txt must point to the published sitemap');
 const locations = source => [...source.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, url]) => url.trim());
 const index = await get('sitemap-index.xml', xmlTypes);
 assert.match(index, /<sitemapindex\b/, 'Sitemap index is not an XML sitemap index');

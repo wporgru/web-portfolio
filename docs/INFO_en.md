@@ -631,20 +631,11 @@ Afterward it prints a checklist of next steps (add a cover image, flesh out the 
 
 ## 15. Custom domain — SITE_URL / BASE_PATH
 
-By default, `site`/`base` in `astro.config.mjs` are derived from `GITHUB_REPOSITORY` (`https://{owner}.github.io`, `/{repo}`) — the address of a standard GitHub Pages project page. Two env overrides sit on top:
+The workflow defaults to `https://{owner}.github.io/{repo}/`. For an agreed cutover, set the Actions variable `SITE_URL` to an HTTPS origin without a path, for example `https://portfolio.example.org`. This selects a root-mounted build by default. For a local rehearsal, `BASE_PATH` can override the mount; the workflow does not set it.
 
-```js
-// astro.config.mjs
-const site = process.env.SITE_URL || (owner ? `https://${owner}.github.io` : 'http://localhost:4321');
-const base = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : (name ? `/${name}` : undefined);
-```
+For Pages published via GitHub Actions, configure the custom domain in Settings → Pages, not through a `public/CNAME` file. Verify domain ownership with GitHub first, then follow the [official Pages and DNS setup instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). Keep the current canonical address until the agreed cutover. Verify HTTPS and redirects from old addresses, including deep case URLs in both languages.
 
-- `SITE_URL` — e.g. `https://cv.example.com`. Unset → falls back to `{owner}.github.io`.
-- `BASE_PATH` — usually an empty string (`""`), since a custom domain is most often served from the root rather than `/cv_hub/`. Unset (the env var is absent entirely) → falls back to `/{repo}`; set to an empty string → used as-is (these are deliberately different cases, hence `!== undefined` rather than a plain truthy check).
-
-Pass it into `deploy.yml` as `env:` in the build job (`SITE_URL: ${{ vars.SITE_URL }}`, `BASE_PATH: ${{ vars.BASE_PATH }}`) — store the actual values under the repository's `Settings → Secrets and variables → Actions → Variables`.
-
-You'll also need a `public/CNAME` file with a single domain inside (`cv.example.com`, no protocol) — a plain file under `public/`, copied into `dist/` like any other asset; GitHub Pages reads it for custom-domain routing. And the domain's DNS must point at GitHub Pages ([GitHub's instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
+A root-mounted HTTPS build emits `robots.txt` with the absolute XML sitemap URL. A project under a subdirectory does not emit a pretend host-level robots file. CI verifies the actual address returned by GitHub Pages against the sitemap, canonical tags and language alternates. For manual runs of `check-live-discovery.mjs` and `notify-indexnow.mjs`, set `PORTFOLIO_LIVE_URL` to the new published URL after cutover. Do not submit notifications for old or unverified addresses.
 
 ### Where the site's absolute URL comes from
 

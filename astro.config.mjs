@@ -3,20 +3,23 @@ import { cpSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
 import { latestCaseRevision, readCaseRevisions } from './src/scripts/case-revisions.mjs';
+import { rootRobots } from './src/scripts/publication.mjs';
 
 import sitemap from '@astrojs/sitemap';
 
 const repo = process.env.GITHUB_REPOSITORY;
 const [owner, name] = repo ? repo.split('/') : [null, null];
 
-// Own domain (not *.github.io/{repo}): set SITE_URL (e.g. https://cv.example.com)
-// and BASE_PATH (usually "/", since a custom domain is normally served from
-// the root, unlike a GitHub Pages project page) as repo/CI secrets or vars —
-// they override the GITHUB_REPOSITORY-derived defaults below. Still need a
-// public/CNAME file with just the domain in it for GitHub Pages itself to
-// route the custom domain — see docs/INFO_en.md §15.
-const site = process.env.SITE_URL || (owner ? `https://${owner}.github.io` : 'http://localhost:4321');
-const base = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : (name ? `/${name}` : undefined);
+// A canonical custom origin is opt-in; the GitHub Pages project path stays the default.
+const customSite = process.env.SITE_URL?.trim();
+if (customSite) {
+  const url = new URL(customSite);
+  if (url.protocol !== 'https:' || url.pathname !== '/' || url.username || url.password || url.search || url.hash) {
+    throw Error('SITE_URL must be an HTTPS origin with no path, credentials, query or fragment');
+  }
+}
+const site = customSite || (owner ? `https://${owner}.github.io` : 'http://localhost:4321');
+const base = process.env.BASE_PATH ?? (customSite ? '/' : name ? `/${name}` : undefined);
 const mount = (base ?? '').replace(/\/$/, '');
 const caseRevisions=readCaseRevisions({required:process.env.GITHUB_ACTIONS==='true'});
 const sitemapUrls=new Set();
@@ -91,6 +94,8 @@ export default defineConfig({
         'astro:build:done':({dir})=>{
           if (!sitemapUrls.size) throw Error('No canonical URLs collected for the text sitemap.');
           writeFileSync(new URL('sitemap.txt',dir),[...sitemapUrls].sort().join('\n')+'\n','utf8');
+          const robots = rootRobots(new URL(mount+'/',site));
+          if (robots) writeFileSync(new URL('robots.txt',dir),robots,'utf8');
         },
       },
     },

@@ -631,20 +631,11 @@ npm run init
 
 ## 15. Свой домен — SITE_URL / BASE_PATH
 
-По умолчанию `site`/`base` в `astro.config.mjs` выводятся из `GITHUB_REPOSITORY` (`https://{owner}.github.io`, `/{repo}`) — это адрес обычной GitHub Pages project-страницы. Два env-оверрайда поверх:
+Сборка GitHub Pages по умолчанию остаётся на `https://{owner}.github.io/{repo}/`. После согласования переезда задайте в Actions Variables `SITE_URL` — HTTPS-источник без пути, например `https://portfolio.example.org`. Workflow передаёт это значение в сборку; если оно задано, Astro по умолчанию собирает сайт для корня. Локально можно переопределить путь через `BASE_PATH` для репетиции другой схемы; workflow этот параметр не меняет.
 
-```js
-// astro.config.mjs
-const site = process.env.SITE_URL || (owner ? `https://${owner}.github.io` : 'http://localhost:4321');
-const base = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : (name ? `/${name}` : undefined);
-```
+В Pages с публикацией через GitHub Actions домен задаётся в Settings → Pages, а не файлом `public/CNAME`. Сначала подтвердите владение доменом в GitHub, затем настройте Pages и DNS по [официальной инструкции](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). Не переключайте канонический адрес до согласованного релиза. Отдельно проверьте HTTPS и перенаправления со старых адресов, включая вложенные кейсы обеих языковых версий.
 
-- `SITE_URL` — например `https://cv.example.com`. Не задан → фоллбэк на `{owner}.github.io`.
-- `BASE_PATH` — обычно пустая строка (`""`), т.к. свой домен чаще всего отдаётся с корня, а не из `/cv_hub/`. Не задан (env вообще отсутствует) → фоллбэк на `/{repo}`; задан пустой строкой — используется как есть (это осознанно разные случаи, `!== undefined`, а не просто truthy-проверка).
-
-Прокинуть в `deploy.yml` как `env:` в build-джобе (`SITE_URL: ${{ vars.SITE_URL }}`, `BASE_PATH: ${{ vars.BASE_PATH }}`) — сами значения хранить в `Settings → Secrets and variables → Actions → Variables` репозитория.
-
-Плюс нужен `public/CNAME` с одним доменом внутри (`cv.example.com`, без протокола) — обычный файл в `public/`, копируется в `dist/` как любой другой ассет, GitHub Pages читает его для роутинга кастомного домена. И DNS домена должен указывать на GitHub Pages ([инструкция GitHub](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
+Для HTTPS-сайта в корне сборка создаёт `robots.txt` с абсолютным адресом XML sitemap. Для проекта в подкаталоге такой файл не создаётся. CI проверяет реальный адрес, возвращённый GitHub Pages, и требует, чтобы canonical, языковые альтернативы и sitemap ему соответствовали. Для ручного запуска `check-live-discovery.mjs` и `notify-indexnow.mjs` после переезда установите `PORTFOLIO_LIVE_URL` на новый опубликованный URL. До проверки нового URL не отправляйте уведомления по старым или неподтверждённым адресам.
 
 ### Откуда берётся абсолютный URL сайта
 

@@ -9,8 +9,9 @@ import { servicePaths } from '../content/service-paths.mjs';
 import { migrationGuide } from '../content/migration-guide.mjs';
 import { guides } from '../content/guides.mjs';
 import { latestCaseRevision, readCaseRevisions } from './case-revisions.mjs';
+import { rootRobots } from './publication.mjs';
 
-const root = 'dist';
+const root = process.env.PORTFOLIO_DIST_DIR || 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
 const fail = (file, why) => { throw Error(file + ': ' + why); };
 const htmlFiles = fs.readdirSync(root, {recursive:true}).filter(file => path.basename(file)==='index.html');
@@ -144,6 +145,11 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+const robots = rootRobots(new URL(profileUrl));
+const robotsFile = path.join(root,'robots.txt');
+if (robots ? !fs.existsSync(robotsFile) || read(robotsFile)!==robots : fs.existsSync(robotsFile)) {
+  fail('robots.txt','only an HTTPS site served at the host root may publish this file');
+}
 // Count direct HTML navigation, not sitemap submissions, scripts or language switches.
 let checkedNavigationPages=0;
 for (const lang of ['ru','en']) {

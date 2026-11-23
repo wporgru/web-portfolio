@@ -1,6 +1,7 @@
 import {readdir,readFile} from 'node:fs/promises';
+import {livePublicationUrl} from './publication.mjs';
 
-const site = new URL('https://wporgru.github.io/web-portfolio/');
+const site = livePublicationUrl();
 const endpoint = 'https://api.indexnow.org/indexnow';
 const input = process.argv.slice(2);
 const send = input.includes('--send');
