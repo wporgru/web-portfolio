@@ -7664,3 +7664,62 @@ projects:
         url: /showcase/corporate-signature-embedded-images/
         type: product
     featured: false
+  - slug: congress-ticket-checkout-yookassa
+    name: Оплата билетов на конгресс через WooCommerce
+    year: "03.2025"
+    role: Веб-разработка и автоматизация
+    description: Организатору конгресса нужен был быстрый путь от страницы
+      мероприятия к покупке одного из трёх пакетов. Покупатель должен был выбрать
+      количество билетов, а промокод — уменьшать цену базового пакета.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Event tickets
+      - Coupons
+    order: 407
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/congress-ticket-checkout-yookassa/
+        type: product
+    featured: false
+  - slug: dme-tech-product-cart-recovery
+    name: "DME Tech: восстановление карточек и корзины"
+    year: "01.2022"
+    role: Веб-разработка и автоматизация
+    description: В действующем магазине цифровых файлов страницы товаров не
+      открывались, а добавить позиции в корзину не получалось. Требовалось
+      восстановить покупательский путь, не пересобирая магазин и не заменяя
+      систему оплаты.
+    stack:
+      - WordPress
+      - WooCommerce
+      - Plugin conflict
+      - Cart
+    order: 408
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/dme-tech-product-cart-recovery/
+        type: product
+    featured: false
+  - slug: mastergrem-boxberry-cart-recovery
+    name: "Mastergrem: резервная доставка и ремонт корзины"
+    year: "05.2024"
+    role: Веб-разработка и автоматизация
+    description: При проблемах с СДЭК магазин хотел подключить Boxberry и не
+      потерять онлайн-оформление. Одновременно товар перестал добавляться в
+      корзину — покупатель не мог добраться даже до выбора доставки.
+    stack:
+      - WooCommerce
+      - Boxberry
+      - CDEK
+      - Shipping
+      - Cart
+    order: 409
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/mastergrem-boxberry-cart-recovery/
+        type: product
+    featured: false

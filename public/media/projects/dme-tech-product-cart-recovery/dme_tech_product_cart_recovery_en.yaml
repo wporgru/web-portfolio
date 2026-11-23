@@ -1,0 +1,33 @@
+title: "DME Tech: restoring product pages and add-to-cart"
+tagline: "An existing digital download store had two broken customer actions:
+  opening product pages and adding items to the cart. The task was to restore
+  those actions without rebuilding the store or replacing payments."
+year: "01.2022"
+role: Web development and automation
+stack:
+  - WordPress
+  - WooCommerce
+  - Plugin conflict
+  - Cart
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "An existing digital download store had two broken customer actions:
+      opening product pages and adding items to the cart. The task was to
+      restore those actions without rebuilding the store or replacing payments."
+  - type: text
+    title: How it works
+    body: Separated the fault from checkout and isolated it to a content and
+      right-click protection component. After disabling it, product pages opened
+      again and items could be added to the cart. A suspected plugin update was
+      not established as the root cause.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the recovery and accepted the work with positive
+      feedback. Verification covered opening products and adding them to the
+      cart, not payment or file access.
+  - type: text
+    title: Another stage of this project
+    links:
+      - label: "Earlier stage: setting up payments and downloads"
+        url: /showcase/dme-tech-yandex-checkout-downloads/en/

@@ -1,6 +1,18 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'congress-ticket-checkout-yookassa': {
+    ru: 'Добавил три кнопки покупки билетов и промокод базового пакета. Клиент принял работу; в отчёте — контрольная оплата на 5 ₽.',
+    en: 'Added three ticket purchase buttons and a basic-package coupon. The client accepted the work; the handoff reported a RUB 5 test payment.',
+  },
+  'dme-tech-product-cart-recovery': {
+    ru: 'Вернул открытие карточек DME Tech и добавление в корзину после отключения конфликтующего расширения. Оплату в этом этапе не менял.',
+    en: 'Restored DME Tech product pages and add-to-cart after disabling a conflicting extension. Payment was not changed in this stage.',
+  },
+  'mastergrem-boxberry-cart-recovery': {
+    ru: 'Подключил Boxberry как альтернативу СДЭК и восстановил добавление товаров в корзину. Клиент принял настройку.',
+    en: 'Set up Boxberry as an alternative to CDEK and restored add-to-cart functionality. The client accepted the setup.',
+  },
   'corporate-signature-embedded-images': {
     ru: 'Сохранил оформление двух компаний и встроил 17 изображений в HTML-подпись. Проверил исходный файл без внешнего хостинга картинок.',
     en: 'Preserved the design for two companies and embedded 17 images in the HTML signature. Verified the original file without remote image hosting.',

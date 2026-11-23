@@ -1,0 +1,29 @@
+title: WooCommerce checkout for congress tickets
+tagline: A congress organizer needed a short path from the event page to one of
+  three ticket packages. Buyers needed to choose their quantity, and a coupon
+  had to reduce the basic package price.
+year: "03.2025"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - YooKassa
+  - Event tickets
+  - Coupons
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A congress organizer needed a short path from the event page to one of
+      three ticket packages. Buyers needed to choose their quantity, and a
+      coupon had to reduce the basic package price.
+  - type: text
+    title: How it works
+    body: Set up the package buttons and handed the page over for review. After an
+      unsuccessful attempt with an invalid card, reported a RUB 5 control
+      payment using a temporary price and test discount. Shared the receipt and
+      asked the client to confirm the email and transaction in YooKassa. Gateway
+      onboarding was a separate stage.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work. The reported RUB 5 was a test amount, not
+      the ticket price. The archive does not independently verify the receipt,
+      restoration of the price or a refund of the test amount.

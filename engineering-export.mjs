@@ -49,6 +49,7 @@ const projectStages = {
   'dme-tech-download-store-preparation': ['dme-tech-yandex-checkout-downloads', 'Следующий этап: оплата и письмо со скачиванием', 'Next stage: payments and the download email'],
   'dme-tech-yandex-checkout-downloads': ['dme-tech-payment-buttons-mobile', 'Следующий этап: платёжные кнопки и мобильная витрина', 'Next stage: payment buttons and mobile storefront'],
   'dme-tech-payment-buttons-mobile': ['dme-tech-download-store-preparation', 'Первый этап: HTTPS и подготовка оформления заказа', 'First stage: HTTPS and checkout preparation'],
+  'dme-tech-product-cart-recovery': ['dme-tech-yandex-checkout-downloads', 'Ранний этап: настройка оплаты и выдачи файлов', 'Earlier stage: setting up payments and downloads'],
   'smd-wix-wordpress-service-site': ['dme-english-service-site', 'Отдельный проект: англоязычный сайт DME', 'Separate project: the English-language DME site'],
   'sewing-shop-brand-product-pages': ['promexpert-multi-supplier-catalog', 'Следующий этап: импорт Промэксперта', 'Next stage: importing the Promexpert catalog'],
   'promexpert-multi-supplier-catalog': ['sewing-shop-sku-search-filters', 'Следующий этап: поиск по артикулу и фильтры', 'Next stage: SKU search and catalog filters'],

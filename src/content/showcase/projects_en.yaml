@@ -7609,3 +7609,61 @@ projects:
         url: /showcase/corporate-signature-embedded-images/en/
         type: product
     featured: false
+  - slug: congress-ticket-checkout-yookassa
+    name: WooCommerce checkout for congress tickets
+    year: "03.2025"
+    role: Web development and automation
+    description: A congress organizer needed a short path from the event page to one
+      of three ticket packages. Buyers needed to choose their quantity, and a
+      coupon had to reduce the basic package price.
+    stack:
+      - WooCommerce
+      - YooKassa
+      - Event tickets
+      - Coupons
+    order: 407
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/congress-ticket-checkout-yookassa/en/
+        type: product
+    featured: false
+  - slug: dme-tech-product-cart-recovery
+    name: "DME Tech: restoring product pages and add-to-cart"
+    year: "01.2022"
+    role: Web development and automation
+    description: "An existing digital download store had two broken customer
+      actions: opening product pages and adding items to the cart. The task was to
+      restore those actions without rebuilding the store or replacing payments."
+    stack:
+      - WordPress
+      - WooCommerce
+      - Plugin conflict
+      - Cart
+    order: 408
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/dme-tech-product-cart-recovery/en/
+        type: product
+    featured: false
+  - slug: mastergrem-boxberry-cart-recovery
+    name: "Mastergrem: alternate delivery and add-to-cart recovery"
+    year: "05.2024"
+    role: Web development and automation
+    description: When CDEK was having problems, the store wanted to add Boxberry
+      without losing online checkout. Products also stopped going into the cart,
+      so customers could not reach shipping selection at all.
+    stack:
+      - WooCommerce
+      - Boxberry
+      - CDEK
+      - Shipping
+      - Cart
+    order: 409
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/mastergrem-boxberry-cart-recovery/en/
+        type: product
+    featured: false
