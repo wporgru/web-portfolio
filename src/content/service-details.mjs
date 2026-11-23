@@ -230,9 +230,42 @@ export const serviceDetails = {
     },
   },
   'website-redesign': {
-    ru: ['Оформление устарело, но каталог и заказы уже работают', 'Договоримся, что сохраняем: адреса страниц, категории, привычный способ заказа и интеграции. Отдельно выделим, где можно менять структуру, а где достаточно переделать шаблон.', 'План обновления, согласованные экраны и список сценариев для приёмки. Сравним старую и новую витрины на одних и тех же страницах, а не только на главной.'],
-    en: ['The design looks dated, but the store already takes orders', 'Agree on what stays: page URLs, categories, ordering flows and integrations. Decide where a structural change is worthwhile and where a template update is enough.', 'A redesign plan, agreed screens and an acceptance checklist. Compare the old and new storefront on the same pages, not just the homepage.'],
-    questions: {"ru":[["Можно сначала согласовать новый дизайн, не переключая магазин?","Да. На копии можно проверить новую тему на существующем каталоге. Так был согласован первый этап «Сово Сова»; запуск на основном домене — отдельный этап."],["Смена темы сохраняет SEO автоматически?","Нет. Отдельно сравниваем URL, метаданные, индексируемость и редиректы до переключения и после. Сохранение одного SEO-плагина не доказывает сохранение всех настроек или позиций."]],"en":[["Can I approve the redesign before switching the live store?","Yes. On staging we can review the new theme with existing products. That was the first Sovo Sova phase; production cutover is a separate step."],["Does changing the theme preserve SEO automatically?","No. Compare URLs, metadata, indexability and redirects before and after cutover. Keeping the SEO plugin does not prove that settings or rankings are unchanged."]]},
+    ru: [
+      'Витрина устарела, но магазин уже принимает заказы',
+      'Сравню два варианта: переработать ключевые шаблоны в текущей теме или сменить тему целиком. Если покупатель не может открыть меню, выбрать вариант или вернуться к корзине на телефоне, сначала зафиксируем сломанный сценарий. Не нужно переделывать весь сайт ради одной кнопки, но поверх старых конфликтов не стоит просто рисовать новую шапку.',
+      'Передам список изменённых шаблонов, согласованные экраны до и после и результаты приёмки по конкретным страницам и действиям. Если в задаче есть техническое обновление или ускорение, отчёт покажет их отдельно от дизайна: что обновлено, какие расширения оставлены, что измерено и что не входило в проверку.',
+    ],
+    en: [
+      'The storefront looks dated but already takes orders',
+      'Compare reworking key templates in the existing theme with replacing it. If a shopper cannot open the menu, select a variant or get back to the cart on mobile, record the broken flow first. One broken button does not justify a rebuild, but a new header should not inherit the same conflicts.',
+      'Receive the list of changed templates, agreed before-and-after views and acceptance results for specific pages and actions. If the scope includes a technical overhaul or performance work, the handoff distinguishes updates, retained extensions, measurements and untested scenarios from the design work.',
+    ],
+    steps:{
+      ru:[
+        ['Фиксирую исходную витрину и зависимости','Проверяю главную, категорию, товар и корзину на телефоне и компьютере. Определяю, кто выводит шапку и мобильное меню, где живут шаблоны, фильтры и логика заказа. Для «78 Досок» это был не косметический этап: шапка Elementor и мобильные функции старой дочерней темы требовали разного подхода.'],
+        ['Согласую новую подачу на реальном каталоге','Показываю не только первый экран, но и как покупатель переходит к категории, выбирает товар и продолжает заказ. На тестовой копии можно сравнить варианты на длинных названиях, товарах с вариациями и пустых состояниях. Фиксируем, что нельзя менять: например, адреса категорий, правила доставки или поля заказа.'],
+        ['Обновляю оформление и по отдельности проверяю плагины','Переношу только нужные части старой темы. Если расширения дублируют друг друга, выясняю, какой модуль используется и какие данные от него зависят. Согласовываем, что обновить, отключить или сохранить. Работы по скорости и замеры — отдельный пункт сметы, а не обещание, что новая тема ускорит сайт сама по себе.'],
+        ['Принимаем новую витрину по сценариям','Проверяем согласованные страницы, меню на телефоне, карточки, корзину и контрольный заказ. Перед переключением сверяем важные адреса и условия отката. После выпуска повторяем ключевые проверки в публичной версии; если менялись URL, проверяем перенаправления на соответствующие страницы.'],
+      ],
+      en:[
+        ['Document the original storefront and dependencies','Review the homepage, category, product and cart on phone and desktop. Identify what renders the header and mobile menu and what powers templates, filters and checkout. At 78 Dosok the Elementor header and mobile features from the old child theme required different treatment.'],
+        ['Review the redesign using the real catalog','Show how shoppers enter a category, choose a product and continue checkout, not just the homepage hero. On staging, compare long names, products with variants and empty states. Record what must stay unchanged, such as category URLs, shipping rules or checkout fields.'],
+        ['Rework templates and review plugins separately','Carry forward only the necessary parts of the old theme. If extensions overlap, identify which one is active and what data depends on it. Agree what to update, remove from use or retain. Performance work and measurements are separate scope items, not assumptions about a new theme.'],
+        ['Accept the redesign against agreed customer flows','Test representative pages, mobile navigation, product pages, the cart and an agreed test order. Before cutover, check key URLs and define rollback. After release, repeat the public checks and verify that any changed URLs redirect to their corresponding pages.'],
+      ],
+    },
+    questions:{
+      ru:[
+        ['Можно сначала согласовать новый дизайн, не переключая магазин?','Да. На копии можно проверить новую тему на существующем каталоге. Так был согласован первый этап «Сово Сова»; запуск на основном домене — отдельный этап.'],
+        ['Смена темы сохраняет SEO автоматически?','Нет. Отдельно сравниваем URL, метаданные, индексируемость и редиректы до переключения и после. Сохранение одного SEO-плагина не доказывает сохранение всех настроек или позиций.'],
+        ['Ускорение и очистка плагинов входят в редизайн?','Их можно включить в один проект, как в кейсе «78 Досок», но объём и приёмку согласуем отдельно. Для измеримого ускорения заранее выбираем страницы, устройство и условия замера. Для очистки — список расширений и функции, которые должны остаться рабочими.'],
+      ],
+      en:[
+        ['Can I approve the redesign before switching the live store?','Yes. On staging we can review the new theme with existing products. That was the first Sovo Sova phase; production cutover is a separate step.'],
+        ['Does changing the theme preserve SEO automatically?','No. Compare URLs, metadata, indexability and redirects before and after cutover. Keeping the SEO plugin does not prove that settings or rankings are unchanged.'],
+        ['Does redesign include speed work and plugin cleanup?','They can be part of one project, as with 78 Dosok, but acceptance is agreed separately. For measurable speed work, choose pages, devices and measurement conditions upfront. For plugin cleanup, list the extensions and functions that must keep working.'],
+      ],
+    },
   },
   'catalog-automation': {
     ru: ['После обновления дублируются товары или сбиваются цены', 'Новый прайс не должен перезаписывать вручную отредактированные карточки. Сначала определим, по какому идентификатору обновлять товары и что делать с позициями, исчезнувшими из файла.', 'Таблица сопоставления полей, тестовая выборка и правила повторной загрузки. При приёмке проверим примеры новых, изменённых и отсутствующих позиций.'],
