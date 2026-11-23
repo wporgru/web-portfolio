@@ -7358,3 +7358,27 @@ projects:
         url: /showcase/wordpress-callback-form-setup/en/
         type: product
     featured: false
+  - slug: haier-woocommerce-catalog-import
+    name: Haier air conditioner catalog import into WooCommerce
+    year: "01.2024"
+    role: Web development and automation
+    description: "The job was to collect air conditioner listings and load them into
+      WooCommerce. Catalog import and storefront styling were separate tasks:
+      seeing listings in the catalog did not mean the entire design matched the
+      reference."
+    stack:
+      - WooCommerce
+      - Product data
+      - Catalog import
+    order: 394
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/haier-woocommerce-catalog-import/archive-storefront.webp
+        alt: Haier air conditioner listings with model names, prices and cart buttons
+        featured: true
+    links:
+      - label: Read case study
+        url: /showcase/haier-woocommerce-catalog-import/en/
+        type: product
+    featured: false

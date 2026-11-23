@@ -1,0 +1,39 @@
+title: Haier air conditioner catalog import into WooCommerce
+tagline: "The job was to collect air conditioner listings and load them into
+  WooCommerce. Catalog import and storefront styling were separate tasks: seeing
+  listings in the catalog did not mean the entire design matched the reference."
+year: "01.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product data
+  - Catalog import
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: "The job was to collect air conditioner listings and load them into
+      WooCommerce. Catalog import and storefront styling were separate tasks:
+      seeing listings in the catalog did not mean the entire design matched the
+      reference."
+  - type: text
+    title: How it works
+    body: Collected and imported products per the brief. The handoff explicitly
+      distinguished completed import from partial styling changes. The archived
+      storefront excerpt shows Haier models, names, prices and cart buttons, not
+      a verified checkout flow.
+  - type: text
+    title: Result and verification
+    body: The client accepted the work and confirmed the import matched the brief.
+      The final item count and complete field list are not documented. A full
+      redesign, current prices and checkout completion were not verified.
+  - type: text
+    title: Archived storefront excerpt
+    links:
+      - label: Original Kwork portfolio entry
+        url: https://kwork.ru/portfolio/11899043
+  - type: image
+    src: /media/projects/haier-woocommerce-catalog-import/archive-storefront.webp
+    alt: Haier air conditioner listings with model names, prices and cart buttons
+    caption: Original 1234 × 1199 excerpt from the January 27, 2024 Kwork entry.
+      Prices are historical. The image does not show the entire catalog or
+      verify checkout.

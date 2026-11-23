@@ -7408,3 +7408,26 @@ projects:
         url: /showcase/wordpress-callback-form-setup/
         type: product
     featured: false
+  - slug: haier-woocommerce-catalog-import
+    name: "Каталог кондиционеров Haier: импорт в WooCommerce"
+    year: "01.2024"
+    role: Веб-разработка и автоматизация
+    description: "Нужно было собрать позиции кондиционеров и загрузить их в
+      WooCommerce. Импорт и оформление витрины разделили: наличие товаров в
+      каталоге не означает, что весь внешний вид приведён к референсу."
+    stack:
+      - WooCommerce
+      - Product data
+      - Catalog import
+    order: 394
+    theme: cyan
+    media:
+      - type: image
+        src: /media/projects/haier-woocommerce-catalog-import/archive-storefront.webp
+        alt: Сетка кондиционеров Haier с названиями моделей, ценами и кнопками корзины
+        featured: true
+    links:
+      - label: Читать кейс
+        url: /showcase/haier-woocommerce-catalog-import/
+        type: product
+    featured: false

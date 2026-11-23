@@ -4,6 +4,15 @@ import {createHash} from 'node:crypto';
 
 // Only named originals from the author's public portfolio, not order attachments.
 const archive = {
+  'haier-woocommerce-catalog-import': [
+    '40905177','historical-fragment-portfolio-11899043.webp','11899043',
+    'd952d41a2c56db62f6ba2c6110824c797cabb907cdaa7c89ad769ddc827c25ec',
+    ['Сетка кондиционеров Haier с названиями моделей, ценами и кнопками корзины',
+      'Оригинальный фрагмент 1234 × 1199 из портфолио Kwork, опубликованного 27 января 2024 года. Цены относятся к архивной витрине; снимок не показывает полный каталог и не подтверждает работу покупки.'],
+    ['Haier air conditioner listings with model names, prices and cart buttons',
+      'Original 1234 × 1199 excerpt from the January 27, 2024 Kwork entry. Prices are historical. The image does not show the entire catalog or verify checkout.'],
+    'archive-storefront.webp',
+  ],
   'ecopol-woodmart-flooring-store': [
     '41070613','historical-fragment-portfolio-11998730.webp','11998730',
     '948f349d70fe8dde8c14ec0e43b988a925eafdfde0a10e0e305e0152cf8abbda',
