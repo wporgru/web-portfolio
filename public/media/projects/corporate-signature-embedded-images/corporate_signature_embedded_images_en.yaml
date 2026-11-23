@@ -1,0 +1,32 @@
+title: Corporate HTML signature without external images
+tagline: Two companies needed to keep their existing signature design and links
+  while removing the logos and icons’ dependence on external hosting. The client
+  also reported failures at certain destinations, but no mail logs were
+  available to establish the cause.
+year: "02.2026"
+role: Web development and automation
+stack:
+  - HTML email
+  - Corporate signatures
+  - Data URI
+  - Browser QA
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Two companies needed to keep their existing signature design and links
+      while removing the logos and icons’ dependence on external hosting. The
+      client also reported failures at certain destinations, but no mail logs
+      were available to establish the cause.
+  - type: text
+    title: How it works
+    body: Embedded the images in the supplied HTML and preserved both company
+      sections. Delivered a 122,360-byte file. Inspection of the archived
+      original found 17 image tags with embedded data; all decoded and none
+      pointed to a remote image URL. Opened the original in a browser to check
+      the logos, icons and both content blocks.
+  - type: text
+    title: Result and verification
+    body: The client accepted the handoff. The HTML no longer requests images from
+      an external host, but this does not establish delivery to the affected
+      recipients or compatibility with all email clients. The office email test
+      result was not preserved.

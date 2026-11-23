@@ -7589,3 +7589,23 @@ projects:
         url: /showcase/woocommerce-contextual-attribute-checkboxes/en/
         type: product
     featured: false
+  - slug: corporate-signature-embedded-images
+    name: Corporate HTML signature without external images
+    year: "02.2026"
+    role: Web development and automation
+    description: Two companies needed to keep their existing signature design and
+      links while removing the logos and icons’ dependence on external hosting.
+      The client also reported failures at certain destinations, but no mail logs
+      were available to establish the cause.
+    stack:
+      - HTML email
+      - Corporate signatures
+      - Data URI
+      - Browser QA
+    order: 406
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/corporate-signature-embedded-images/en/
+        type: product
+    featured: false

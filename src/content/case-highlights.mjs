@@ -1,6 +1,10 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'corporate-signature-embedded-images': {
+    ru: 'Сохранил оформление двух компаний и встроил 17 изображений в HTML-подпись. Проверил исходный файл без внешнего хостинга картинок.',
+    en: 'Preserved the design for two companies and embedded 17 images in the HTML signature. Verified the original file without remote image hosting.',
+  },
   'lightproof-elementor-catalog-filters': {
     ru: 'Для Lightproof настроил фильтр общего каталога и отдельно восстановил его в шаблоне Elementor. Клиент принял оба этапа.',
     en: 'Set up the main catalog filter for Lightproof, then restored filtering inside an Elementor template. The client accepted both stages.',

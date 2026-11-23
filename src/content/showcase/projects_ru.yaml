@@ -7644,3 +7644,23 @@ projects:
         url: /showcase/woocommerce-contextual-attribute-checkboxes/
         type: product
     featured: false
+  - slug: corporate-signature-embedded-images
+    name: Корпоративная HTML-подпись без внешних картинок
+    year: "02.2026"
+    role: Веб-разработка и автоматизация
+    description: Двум компаниям нужно было сохранить действующее оформление подписи
+      и ссылки, но убрать зависимость логотипов и иконок от внешнего хостинга.
+      Клиент также сообщал о недоставке отдельным получателям, но почтовых
+      журналов для доказательства причины не было.
+    stack:
+      - HTML email
+      - Corporate signatures
+      - Data URI
+      - Browser QA
+    order: 406
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/corporate-signature-embedded-images/
+        type: product
+    featured: false
