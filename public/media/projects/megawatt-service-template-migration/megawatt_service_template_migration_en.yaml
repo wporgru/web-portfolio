@@ -1,7 +1,7 @@
-title: "Megawatt: moving 136 service entries to a new template"
-tagline: On staging, commercial services needed to be separated from articles
-  and projects. Service pages had to use structured editing fields without
-  changing mixed categories or losing content and search metadata.
+title: "Megawatt: migrating 136 commercial WordPress pages"
+tagline: I separated services from articles and projects, moved them to a shared
+  template with editable fields, and verified every page on staging. Of the 136
+  migrated pages, 135 kept their original URLs.
 year: "10.2026"
 role: Web development and automation
 stack:
@@ -17,20 +17,37 @@ blocks:
       projects. Service pages had to use structured editing fields without
       changing mixed categories or losing content and search metadata.
   - type: text
-    title: How it works
-    body: Identified entries in clearly commercial categories, backed up the theme
-      and database, and converted 136 posts into pages. Applied a service
-      template with SCF sections, relevant images and FAQs. On 14 main service
-      pages, replaced generic copy with ten service-specific questions per page.
-      Rendered mobile pricing as cards with visible column labels while
-      retaining the desktop table and sorting.
+    title: How I preserved existing URLs
+    body: I selected entries from clearly commercial categories, leaving articles
+      and projects in mixed categories alone. After backing up the theme and
+      database, I converted 136 WordPress posts to pages, including eight technical
+      documentation pages, retaining their content and SEO fields. One address
+      was already in use. The service got a new slug rather than overwriting
+      the existing page or sending visitors to the wrong place.
+  - type: text
+    title: What changed for editors and visitors
+    body: Editors can manage images, sections and FAQs through Secure Custom Fields
+      in a shared service template. I replaced generic FAQs on 14 priority services
+      with ten service-specific questions and answers per page. On mobile, pricing
+      became cards with visible labels. The table and sorting remained on desktop.
   - type: text
     title: Result and verification
-    body: On staging, all 136 URLs returned HTTP 200 with one H1, the service
-      template and visible content. 135 retained their URLs; one received an
-      agreed new slug, and its former address continued to serve another
-      existing page. Production was not changed in this stage, so these results
-      do not establish release or indexing.
+    body: The saved staging HTML report covers 136 unique URLs. Every page returned
+      HTTP 200 and contained one non-empty H1, service template markup, a main
+      content block and ten FAQ items. The project closeout records 135 retained
+      URLs and one new URL. These checks cover staging; they do not establish
+      production release or indexing.
+    links:
+      - label: Verification summary for all 136 pages (JSON)
+        url: /media/projects/megawatt-service-template-migration/service-migration-qa-summary.json
+  - type: text
+    title: Planning a similar migration?
+    body: "Send your sitemap and a few URLs that must stay unchanged. They are
+      enough to start defining which pages to move and what to verify: preserved
+      URLs, exceptions, and the fields and content blocks carried over."
+    links:
+      - label: Technical SEO audit before migration
+        url: /services/technical-seo/en/
   - type: text
     title: Another stage of this project
     links:

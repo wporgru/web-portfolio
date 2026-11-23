@@ -1,0 +1,18 @@
+{
+  "environment": "staging",
+  "reportDate": "2026-10-11",
+  "method": "Counts from the saved HTTP and HTML verification report, not a fresh crawl.",
+  "uniqueUrlsChecked": 136,
+  "checks": {
+    "http200": 136,
+    "oneNonEmptyH1": 136,
+    "serviceTemplateMarker": 136,
+    "mainContentMarker": 136,
+    "exactlyTenFaqItems": 136
+  },
+  "urlHandlingFromProjectCloseout": {
+    "originalUrlRetained": 135,
+    "newSlugToAvoidOverwritingAnExistingPage": 1
+  },
+  "scopeLimit": "This summary does not establish production release, indexing or ranking."
+}
