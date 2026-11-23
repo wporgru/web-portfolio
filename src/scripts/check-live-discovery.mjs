@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {setTimeout as delay} from 'node:timers/promises';
 import {livePublicationUrl,rootRobots} from './publication.mjs';
+import {discoverySitemapXml,discoveryUrls} from './discovery-sitemap.mjs';
 
 if (process.env.GITHUB_ACTIONS === 'true') {
   assert.ok(process.env.PORTFOLIO_LIVE_URL?.trim(),'GitHub Pages did not report a deployment URL');
@@ -67,13 +68,16 @@ for (const url of known) {
 const plain = (await get('sitemap.txt', ['text/plain'])).trim().split(/\r?\n/);
 assert.equal(new Set(plain).size, urls.length, 'TXT/XML URL counts differ');
 assert.ok(plain.length === urls.length && plain.every(url => known.has(url)), 'TXT/XML URL sets differ');
+const discovery=discoveryUrls(site);
+assert.ok(discovery.every(url=>known.has(url)), 'Diagnostic sitemap contains non-canonical URLs');
+assert.equal(await get('sitemap-discovery.xml',xmlTypes),discoverySitemapXml(discovery),'Diagnostic sitemap differs from the expected URL cohort');
 
 for (const route of samples) {
   const canonical = new URL(route, site).href;
   assert.ok(known.has(canonical), 'Sample missing from sitemap: ' + canonical);
 }
 
-const targets = fullCrawl ? urls : samples.map(route => new URL(route, site).href);
+const targets = fullCrawl ? urls : discovery;
 const byPage = new Map();
 const errors = [];
 async function checkPage(url) {

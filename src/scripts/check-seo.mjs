@@ -10,6 +10,7 @@ import { migrationGuide } from '../content/migration-guide.mjs';
 import { guides } from '../content/guides.mjs';
 import { latestContentRevision, readContentRevisions } from './content-revisions.mjs';
 import { rootRobots } from './publication.mjs';
+import { discoverySitemapXml, discoveryUrls } from './discovery-sitemap.mjs';
 
 const root = process.env.PORTFOLIO_DIST_DIR || 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
@@ -145,6 +146,9 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+const discovery=discoveryUrls(profileUrl);
+if (discovery.length!==28 || new Set(discovery).size!==discovery.length || discovery.some(url=>!sitemap.has(url)) ||
+    read(path.join(root,'sitemap-discovery.xml'))!==discoverySitemapXml(discovery)) fail('sitemap-discovery.xml','expected 28 unique canonical URLs in the standalone XML');
 const robots = rootRobots(new URL(profileUrl));
 const robotsFile = path.join(root,'robots.txt');
 if (robots ? !fs.existsSync(robotsFile) || read(robotsFile)!==robots : fs.existsSync(robotsFile)) {

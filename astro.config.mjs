@@ -4,6 +4,7 @@ import path from 'node:path';
 import { parse } from 'yaml';
 import { latestContentRevision, readContentRevisions } from './src/scripts/content-revisions.mjs';
 import { rootRobots } from './src/scripts/publication.mjs';
+import { discoverySitemapXml, discoveryUrls } from './src/scripts/discovery-sitemap.mjs';
 import { guides } from './src/content/guides.mjs';
 
 import sitemap from '@astrojs/sitemap';
@@ -95,13 +96,19 @@ export default defineConfig({
         !page.includes('/get-started'),
     }),
     {
-      name:'portfolio-text-sitemap',
+      name:'portfolio-supplementary-sitemaps',
       hooks:{
         'astro:build:start':()=>sitemapUrls.clear(),
         'astro:build:done':({dir})=>{
           if (!sitemapUrls.size) throw Error('No canonical URLs collected for the text sitemap.');
           writeFileSync(new URL('sitemap.txt',dir),[...sitemapUrls].sort().join('\n')+'\n','utf8');
-          const robots = rootRobots(new URL(mount+'/',site));
+          const publication = new URL(mount+'/',site);
+          const discovery = discoveryUrls(publication);
+          if (new Set(discovery).size !== discovery.length || discovery.some(url => !sitemapUrls.has(url))) {
+            throw Error('The diagnostic sitemap must be a unique subset of the canonical sitemap.');
+          }
+          writeFileSync(new URL('sitemap-discovery.xml',dir),discoverySitemapXml(discovery),'utf8');
+          const robots = rootRobots(publication);
           if (robots) writeFileSync(new URL('robots.txt',dir),robots,'utf8');
         },
       },
