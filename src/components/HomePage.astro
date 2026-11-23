@@ -113,7 +113,6 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
           <li><a href={catalog}><strong>{projects.length} {ru?'кейсов в портфолио':'portfolio case studies'}</strong></a> — {ru?'с задачами, решениями и результатами на русском и английском.':'with briefs, solutions and outcomes in Russian and English.'}</li>
           <li>{ru ? '582 выполненных заказа в собранном архиве Kwork; 371 отзыв сохранён со скриншотом.' : '582 completed orders in the collected Kwork archive; 371 reviews archived with screenshots.'}</li>
           {c.results.map(([title,body,slug])=><li><a href={projectHref(slug)}><strong>{title}</strong></a> — {body}</li>)}
-          <li><a href={base+'/showcase/arenda-pm-home-performance/'+(ru?'':'en/')}><strong>PageSpeed 72 → 96</strong></a> — {ru?'мобильная главная Аренда-ПМ: LCP 6,8 → 2,7 с в лабораторных замерах.':'Arenda-PM mobile homepage: LCP 6.8 → 2.7 s in lab measurements.'}</li>
           <li><a href={base+'/showcase/arenda-pm-catalog-indexability/'+(ru?'':'en/')}><strong>{ru?'Аренда-ПМ: 14 карточек открыты для индексации':'Arenda-PM: 14 listings made indexable'}</strong></a> — {ru?'сверил 83 адреса карты сайта и убрал подмены метаданных в теме.':'verified 83 sitemap URLs and removed theme metadata overrides.'}</li>
           <li><a href={base+'/showcase/bgtgroup-technical-seo-performance/'+(ru?'':'en/')}><strong>BGT Group: PageSpeed 37 → 86</strong></a> — {ru?'мобильный лабораторный замер; на компьютере 63 → 92.':'mobile lab measurement; desktop 63 → 92.'}</li>
           <li><a href={base+'/showcase/klimat-profi-server-storage/'+(ru?'':'en/')}><strong>{ru?'Климат Профи: 8,3 → 83 ГБ свободного места':'Klimat Profi: 8.3 → 83 GB free server space'}</strong></a> — {ru?'по отчёту первого этапа расчистки VPS магазина.':'as recorded in the first-stage store VPS cleanup report.'}</li>
@@ -236,21 +235,27 @@ const briefEmail = 'mailto:'+person.email+'?subject='+encodeURIComponent(ru?'З�
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Скорость загрузки':'Web performance'}</div>
           <ul class="tags">{performanceTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+          <p class="skill-example"><a href={projectHref('arenda-pm-home-performance')}>{ru?'Раздельная загрузка первого экрана для телефона и компьютера':'Separate first-screen loading for mobile and desktop'}</a></p>
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Локализация и региональные сайты':'Localization and regional websites'}</div>
           <ul class="tags">{localizationTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+          <p class="skill-example"><a href={projectHref('nomad-english-megamenu-localization')}>{ru?'Короткие переводы пунктов меню без изменения заголовков страниц':'Short translated menu labels without changing page titles'}</a></p>
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Заказы, уведомления и акции':'Orders, notifications and promotions'}</div>
           <ul class="tags">{orderTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+          <p class="skill-example"><a href={projectHref('woocommerce-invoice-approval')}>{ru?'Автоматический счёт и согласование заказа с менеджером':'Automatic invoicing and manager approval of orders'}</a></p>
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Обработка изображений':'Image processing'}</div>
           <ul class="tags">{mediaTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+          <p class="skill-example"><a href={projectHref('medimarket-image-fallback-recovery')}>{ru?'Восстановление 120 товарных изображений без подмены товаров':'Restoring 120 product images without substituting products'}</a></p>
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Ремонт и восстановление сайтов':'Website repair and recovery'}</div>
           <ul class="tags">{recoveryTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+          <p class="skill-example"><a href={projectHref('legacy-php-compatibility')}>{ru?'Адаптация старой темы к PHP 8.5 без редизайна':'Making a legacy theme compatible with PHP 8.5 without redesign'}</a></p>
         </div><div class="skillsgroup">
           <div class="skillsgroup__title">{ru?'Серверы и эксплуатация':'Servers and operations'}</div>
           <ul class="tags">{opsTags.map(tag=><li class="tag">{tag}</li>)}</ul>
+          <p class="skill-example"><a href={projectHref('klimat-profi-backup-automation')}>{ru?'Автоматические копии, ротация и проверка читаемости дампа':'Automatic backups, retention and dump integrity checks'}</a></p>
         </div></div>
       </article>
     </aside>
