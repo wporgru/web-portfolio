@@ -1,10 +1,11 @@
 import { defineConfig } from 'astro/config';
-import { cpSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
 import { latestContentRevision, readContentRevisions } from './src/scripts/content-revisions.mjs';
 import { rootRobots } from './src/scripts/publication.mjs';
 import { discoverySitemapXml, discoveryUrls } from './src/scripts/discovery-sitemap.mjs';
+import { caseAliasHtml, localizedCaseAliases } from './src/scripts/case-aliases.mjs';
 import { guides } from './src/content/guides.mjs';
 
 import sitemap from '@astrojs/sitemap';
@@ -108,6 +109,12 @@ export default defineConfig({
             throw Error('The diagnostic sitemap must be a unique subset of the canonical sitemap.');
           }
           writeFileSync(new URL('sitemap-discovery.xml',dir),discoverySitemapXml(discovery),'utf8');
+          for (const alias of localizedCaseAliases(publication)) {
+            if (sitemapUrls.has(alias.from) || !sitemapUrls.has(alias.to)) throw Error('Invalid case alias '+alias.route);
+            const targetDir = new URL(alias.route,dir);
+            mkdirSync(targetDir,{recursive:true});
+            writeFileSync(new URL('index.html',targetDir),caseAliasHtml(alias),'utf8');
+          }
           const robots = rootRobots(publication);
           if (robots) writeFileSync(new URL('robots.txt',dir),robots,'utf8');
         },

@@ -9,7 +9,7 @@ export const caseHighlights = {
     ru: 'Вернул открытие карточек DME Tech и добавление в корзину после отключения конфликтующего расширения. Оплату в этом этапе не менял.',
     en: 'Restored DME Tech product pages and add-to-cart after disabling a conflicting extension. Payment was not changed in this stage.',
   },
-  'mastergrem-boxberry-cart-recovery': {
+  'boxberry-cart-recovery': {
     ru: 'Подключил Boxberry как альтернативу СДЭК и восстановил добавление товаров в корзину. Клиент принял настройку.',
     en: 'Set up Boxberry as an alternative to CDEK and restored add-to-cart functionality. The client accepted the setup.',
   },

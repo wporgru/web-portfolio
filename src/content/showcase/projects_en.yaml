@@ -7647,23 +7647,3 @@ projects:
         url: /showcase/dme-tech-product-cart-recovery/en/
         type: product
     featured: false
-  - slug: mastergrem-boxberry-cart-recovery
-    name: "Mastergrem: alternate delivery and add-to-cart recovery"
-    year: "05.2024"
-    role: Web development and automation
-    description: When CDEK was having problems, the store wanted to add Boxberry
-      without losing online checkout. Products also stopped going into the cart,
-      so customers could not reach shipping selection at all.
-    stack:
-      - WooCommerce
-      - Boxberry
-      - CDEK
-      - Shipping
-      - Cart
-    order: 409
-    theme: cyan
-    links:
-      - label: Read case study
-        url: /showcase/mastergrem-boxberry-cart-recovery/en/
-        type: product
-    featured: false

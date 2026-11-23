@@ -11,6 +11,7 @@ import { guides } from '../content/guides.mjs';
 import { latestContentRevision, readContentRevisions } from './content-revisions.mjs';
 import { rootRobots } from './publication.mjs';
 import { discoverySitemapXml, discoveryUrls } from './discovery-sitemap.mjs';
+import { caseAliases, caseAliasHtml, localizedCaseAliases } from './case-aliases.mjs';
 
 const root = process.env.PORTFOLIO_DIST_DIR || 'dist';
 const read = file => fs.readFileSync(file, 'utf8');
@@ -33,6 +34,7 @@ for (const file of fs.readdirSync(root).filter(file=>/^sitemap-\d+\.xml$/.test(f
   }
 }
 const sitemap = new Set(sitemapEntries.keys());
+const aliasFiles=new Set(caseAliases.flatMap(({from})=>['','en/'].map(locale=>path.normalize('showcase/'+from+'/'+locale+'index.html'))));
 const textSitemap=read(path.join(root,'sitemap.txt')).split('\n');
 if (textSitemap.pop()!=='' || textSitemap.length!==sitemap.size ||
     new Set(textSitemap).size!==sitemap.size ||
@@ -61,6 +63,7 @@ if (Object.keys(enquiryPrompts).length!==services.length || services.some(servic
   fail('enquiry','expected bilingual prompts for every service');
 }
 for(const file of htmlFiles){
+  if(aliasFiles.has(file))continue;
   const html=read(path.join(root,file));
   const lang=html.match(/<html lang="([^"]+)"/)?.[1];
   const title=html.match(/<title>([^<]+)<\/title>/)?.[1]?.trim();
@@ -146,6 +149,11 @@ const home = [...pages.values()].find(group=>group.get('ru')?.endsWith('/showcas
 if(!home) fail(root,'Russian catalog missing');
 const base = new URL(home.get('ru')).pathname.slice(0,-'showcase/'.length);
 const profileUrl = new URL(base,home.get('ru')).href;
+for(const alias of localizedCaseAliases(profileUrl)) {
+  if(sitemap.has(alias.from)||!pages.has(alias.to)||read(path.join(root,alias.route,'index.html'))!==caseAliasHtml(alias)) {
+    fail(alias.route,'incorrect canonical HTML redirect or sitemap entry');
+  }
+}
 const discovery=discoveryUrls(profileUrl);
 if (discovery.length!==28 || new Set(discovery).size!==discovery.length || discovery.some(url=>!sitemap.has(url)) ||
     read(path.join(root,'sitemap-discovery.xml'))!==discoverySitemapXml(discovery)) fail('sitemap-discovery.xml','expected 28 unique canonical URLs in the standalone XML');
