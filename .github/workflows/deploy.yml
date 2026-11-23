@@ -28,7 +28,7 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
       - name: Record deployed revision
         run: printf '%s\n' "$GITHUB_SHA" > dist/release-revision.txt
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
   deploy:
