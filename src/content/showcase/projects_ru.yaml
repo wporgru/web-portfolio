@@ -7686,3 +7686,24 @@ projects:
         url: /showcase/dme-tech-product-cart-recovery/
         type: product
     featured: false
+  - slug: portfolio-responsive-image-optimization
+    name: Как я облегчил тяжёлые снимки в портфолио
+    year: "11.2026"
+    role: Веб-разработка и автоматизация
+    description: "В собственном портфолио на Astro компактные версии уже были, но на
+      экране с высокой плотностью браузер всё равно выбирал оригинальный PNG.
+      Самый тяжёлый снимок в выбранной тройке занимал 14,08 МБ. Обрезать
+      изображения нельзя: по ним читатель проверяет результат работ."
+    stack:
+      - Astro
+      - Sharp
+      - WebP
+      - Responsive images
+      - Playwright
+    order: 409
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/portfolio-responsive-image-optimization/
+        type: product
+    featured: false

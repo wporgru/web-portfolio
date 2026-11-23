@@ -1,6 +1,10 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'portfolio-responsive-image-optimization': {
+    ru: 'На своём Astro-портфолио уменьшил сетевой объём трёх тяжёлых снимков на 84% и сохранил оригиналы по клику. Замер в Edge на DPR 2.',
+    en: 'Reduced three large image downloads by 84% on my Astro portfolio and kept originals one click away. Measured in Edge at DPR 2.',
+  },
   'congress-ticket-checkout-yookassa': {
     ru: 'Добавил три кнопки покупки билетов и промокод базового пакета. Клиент принял работу; в отчёте — контрольная оплата на 5 ₽.',
     en: 'Added three ticket purchase buttons and a basic-package coupon. The client accepted the work; the handoff reported a RUB 5 test payment.',

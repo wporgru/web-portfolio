@@ -1,0 +1,15 @@
+{
+  "site": "https://wporgru.github.io/web-portfolio/",
+  "method": "Playwright on Microsoft Edge, viewport 1440 by 900 CSS pixels, devicePixelRatio 2; a fresh browser context per page, followed by scrolling the image into view and reading encodedBodySize for currentSrc after decoding.",
+  "scope": "Three published case image responses; not page loading time, field data or client-site performance.",
+  "beforeRevision": "920bf0014fb0b58dbc35c146c254a1998727d2f4",
+  "afterRevision": "cfcbd73aa3c1e5998992d26be2368c8d19a32356",
+  "images": [
+    {"case": "cvetnik-widget", "original": "site.png", "beforeBytes": 14084147, "afterBytes": 2210248},
+    {"case": "service-checkout", "original": "site.png", "beforeBytes": 7243786, "afterBytes": 986448},
+    {"case": "78-dosok", "original": "site.png", "beforeBytes": 2136275, "afterBytes": 587036}
+  ],
+  "beforeTotalBytes": 23464208,
+  "afterTotalBytes": 3783732,
+  "displayCopiesBuilt": 17
+}

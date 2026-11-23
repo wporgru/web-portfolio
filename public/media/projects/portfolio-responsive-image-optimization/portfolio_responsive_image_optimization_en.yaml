@@ -1,0 +1,45 @@
+title: Reducing heavy portfolio screenshot downloads
+tagline: My Astro portfolio already served smaller variants, but a high-density
+  display still selected the original PNG. The heaviest of three measured
+  screenshots was 14.08 MB. Cropping was not an option because the images
+  document project work.
+year: "11.2026"
+role: Web development and automation
+stack:
+  - Astro
+  - Sharp
+  - WebP
+  - Responsive images
+  - Playwright
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: My Astro portfolio already served smaller variants, but a high-density
+      display still selected the original PNG. The heaviest of three measured
+      screenshots was 14.08 MB. Cropping was not an option because the images
+      document project work.
+  - type: text
+    title: How it works
+    body: Added same-dimension WebP display copies in the Sharp build, only when the
+      output is at most 60% of the original size. Replaced the heavy responsive
+      candidate while retaining the original in the click target and image
+      sitemap. Checked the copy format and dimensions and repeated the browser
+      run in a fresh context for each page.
+  - type: text
+    title: Result and verification
+    body: The build produced 17 full-size display copies. In Microsoft Edge at 1440
+      px and DPR 2, three measured images dropped from 23.46 to 3.78 MB
+      combined, approximately 84%. The measurement covers these image responses,
+      not whole-page load time, Core Web Vitals or rankings.
+    links:
+      - label: Before-and-after measurements in bytes (JSON)
+        url: /media/projects/portfolio-responsive-image-optimization/dense-display-network-measurements.json
+  - type: text
+    title: Keep the original available for inspection
+    body: The compressed copy is for reading the page; the original remains one
+      click away for inspecting details. In the Cvetnik case, the browser switched
+      from a 14.08 MB PNG to a 2.21 MB WebP. These figures describe portfolio assets,
+      not the speed of the client websites shown in the screenshots.
+    links:
+      - label: Cvetnik case with the optimized image
+        url: /showcase/cvetnik-widget/en/

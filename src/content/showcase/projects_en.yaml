@@ -7630,3 +7630,24 @@ projects:
         url: /showcase/dme-tech-product-cart-recovery/en/
         type: product
     featured: false
+  - slug: portfolio-responsive-image-optimization
+    name: Reducing heavy portfolio screenshot downloads
+    year: "11.2026"
+    role: Web development and automation
+    description: My Astro portfolio already served smaller variants, but a
+      high-density display still selected the original PNG. The heaviest of three
+      measured screenshots was 14.08 MB. Cropping was not an option because the
+      images document project work.
+    stack:
+      - Astro
+      - Sharp
+      - WebP
+      - Responsive images
+      - Playwright
+    order: 409
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/portfolio-responsive-image-optimization/en/
+        type: product
+    featured: false
