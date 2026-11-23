@@ -13,7 +13,7 @@ export const servicePaths = {
     ['woocommerce-store-development','Если нужен полноценный магазин с физическими товарами и доставкой.','If you also need a full storefront for physical products and shipping.'],
   ],
   'woocommerce-store-improvements': [
-    ['catalog-automation','Если цены, остатки и характеристики нужно регулярно получать от поставщика.','If prices, stock and specifications need regular supplier updates.'],
+    ['woocommerce-catalog-filters','Если нужно исправить выдачу, счётчики или набор характеристик в фильтре.','If the issue is filter results, counts or available attributes.'],
     ['checkout-payments','Если покупатель не может завершить заказ или статус не обновляется после оплаты.','If a shopper cannot complete checkout or the order status does not update after payment.'],
   ],
   'website-contact-widgets': [["website-ux-audit","Если посетители не могут найти контакты и другие важные действия на сайте.","If visitors cannot find contact options or other key actions."],["wordpress-contact-form-repair","Если проблема не в кнопках связи, а в форме, которая перестала доставлять заявки.","If the issue is a contact form that stopped delivering enquiries rather than the contact buttons."]],
@@ -85,6 +85,10 @@ export const servicePaths = {
   'checkout-payments': [
     ['b2b-catalog-and-enquiries','Если вместо мгновенной оплаты нужно отправлять корзину менеджеру на согласование.','If customers should send the cart to a manager for approval rather than pay instantly.'],
     ['woocommerce-shipping','Если проблема в расчёте тарифа или выборе пункта выдачи, а не в оплате.','If the problem is a shipping quote or pickup point rather than payment.'],
+  ],
+  'woocommerce-catalog-filters': [
+    ['catalog-automation','Если неверные атрибуты возвращаются после обновления прайса, исправим источник или карту импорта.','If incorrect attributes return after supplier updates, fix the source or import mapping.'],
+    ['woocommerce-store-improvements','Если фильтры работают, но нужны изменения карточек, поиска или других функций витрины.','If filtering works but the product pages, search or other storefront features need work.'],
   ],
   'woocommerce-shipping': [
     ['checkout-payments','Если способ доставки выбран, но заказ не создаётся, не оплачивается или не меняет статус.','If the shipping method is selected but the order cannot be created or paid, or fails to update.'],

@@ -86,6 +86,10 @@ export const enquiryPrompts = {
     ['Проблемный шаг корзины, доставки или оплаты', 'Способ оплаты или доставки и пример сценария без данных покупателя'],
     ['Affected cart, shipping or payment step', 'Payment or shipping method and an example without buyer data'],
   ],
+  'woocommerce-catalog-filters': [
+    ['Адрес категории и значение фильтра, при котором выдача неверна', 'Два артикула: какой товар должен остаться и какой должен скрыться'],
+    ['Category URL and filter value that gives the wrong result', 'Two SKUs: one product that should remain and one that should disappear'],
+  ],
   'woocommerce-shipping': [
     ['Способ доставки, тестовый город или индекс и ожидаемый тариф', 'Пример корзины: сумма, вес, самовывоз или ПВЗ и что видит гость — без адреса покупателя'],
     ['Shipping method, example city or postcode and expected rate', 'Sample cart value and weight, pickup or collection point, and what a guest sees; no customer address'],

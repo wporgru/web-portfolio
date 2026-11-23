@@ -394,6 +394,32 @@ export const serviceDetails = {
       ],
     },
   },
+  'woocommerce-catalog-filters': {
+    ru: ['Характеристика есть в карточке, но фильтр не находит товар', 'Разделю проблему данных и проблему выдачи. Сверю источник импорта, глобальный атрибут, привязку значения, категорию, видимость и запрос витрины.', 'Карта изменений атрибутов, набор фильтров по категориям и результаты проверок на контрольных товарах. Если обнаружится риск повторной порчи данных при импорте, отмечу, где исправить его отдельно.'],
+    en: ['The specification is visible, but filtering loses the product', 'Separate data problems from storefront problems. Compare the import source, global attribute, term assignment, category, visibility and storefront query.', 'Attribute changes, the filter set for each agreed category and checks on representative products. If a later import can undo the fix, document where to correct it separately.'],
+    steps: {
+      ru: [
+        ['Разбираю конкретную выдачу', 'Записываю категорию, выбранные значения и ожидаемые товары. Сверяю результат для гостя, включая видимость в каталоге и условие наличия.'],
+        ['Сохраняю смысл характеристик', 'Привожу к общему виду одинаковые значения, но не объединяю разные единицы или разные признаки. В Wellland отдельно сохранил объём чистого и грязного баков, вес с батареями и без них.'],
+        ['Проверяю не только один фильтр', 'Сверяю выбор одного и нескольких значений, сброс, счётчики и следующую страницу. Для шаблонов Elementor отдельно проверяю общий каталог и категории с собственной выдачей.'],
+      ],
+      en: [
+        ['Reproduce a specific catalog result', 'Record the category, selected values and expected products. Compare the logged-out result with catalog visibility and stock rules.'],
+        ['Preserve what each specification means', 'Normalize equivalent values without merging different units or attributes. In Wellland I kept clean and dirty tank capacity separate, as well as weights with and without batteries.'],
+        ['Test more than a single selection', 'Check a single value, combined values, reset, counts and pagination. On Elementor sites, check the main shop and categories with their own templates separately.'],
+      ],
+    },
+    questions: {
+      ru: [
+        ['Нужно ли переписывать импорт?', 'Не всегда. Иногда достаточно настроить фильтр или шаблон. Если после синхронизации поставщик снова записывает характеристики в локальные поля, тогда отдельно согласуем карту импорта.'],
+        ['Можно ли показать в категории только нужные покупателю параметры?', 'Да. Начинаю с реальных товаров раздела и убираю пустые или нерелевантные поля. Для похожих названий подкатегорий проверяю привязку к нужной ветке.'],
+      ],
+      en: [
+        ['Does the import have to be rewritten?', 'Not always. A filter or template adjustment may be enough. If supplier sync writes specifications back into local fields, agree on an import mapping fix separately.'],
+        ['Can a category show only useful filters?', 'Yes. Start with the actual products and hide empty or irrelevant attributes. For similarly named subcategories, verify which branch each choice belongs to.'],
+      ],
+    },
+  },
   'woocommerce-shipping': {
     ru: ['Тариф не появляется, самовывоз пропал или доставка считается неверно', 'Проверю корзину без входа в админку. Отделю правила магазина от ошибки перевозчика: город, индекс, состав корзины, вес и недостающие поля проверю отдельно.', 'Рабочие способы доставки по согласованным сценариям, таблица проверенных корзин и список ограничений. Отдельно отмечу, где проверили тариф и ПВЗ, а где потребовалось бы тестовое отправление.'],
     en: ['A rate is missing, pickup disappeared or shipping costs are wrong', 'Test the cart while logged out. Separate storefront rules from carrier errors by checking city, postcode, cart contents, weight and missing fields independently.', 'Shipping methods working in agreed scenarios, a record of tested carts and a list of limits. Rate and pickup checks are recorded separately from any test shipment.'],

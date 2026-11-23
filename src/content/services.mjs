@@ -55,7 +55,7 @@ export const services = [
   },
   {
     slug: 'woocommerce-store-improvements',
-    cases: ['sewing-shop-sku-search-filters', 'sewing-shop-brand-product-pages', 'wellland-facets', 'wellland-native-catalog-pagination', 'aravia-mobile-catalog-bulk-editor', 'per-product-quantity-discounts', 'woocommerce-native-order-statuses', 'voblachke-woocommerce-consultation-buttons', 'woocommerce-stock-waitlist-localization', 'cart-gift-thresholds', 'dependent-category-filters-repair', 'fastener-catalog-attribute-filters', 'hvac-category-filter-templates', 'lightproof-elementor-catalog-filters', 'woocommerce-contextual-attribute-checkboxes'],
+    cases: ['sewing-shop-sku-search-filters', 'sewing-shop-brand-product-pages', 'wellland-native-catalog-pagination', 'aravia-mobile-catalog-bulk-editor', 'per-product-quantity-discounts', 'woocommerce-native-order-statuses', 'voblachke-woocommerce-consultation-buttons', 'woocommerce-stock-waitlist-localization', 'cart-gift-thresholds'],
     ru: [
       'Доработка интернет-магазина на WooCommerce',
       'Доработаю действующий магазин без пересборки с нуля: настрою фильтры и поиск по артикулу, переделаю карточку товара или добавлю нужное правило в корзину. Начнём с конкретного сценария, который сейчас мешает покупателю или менеджеру.',
@@ -168,6 +168,24 @@ export const services = [
     slug: 'checkout-payments', cases: ['kabanchik-delivery-catalog', 'academy-opt-one-page-checkout', 'service-checkout', 'robokassa-woocommerce-payment-acceptance', 'yookassa-test-order', 'automotive-firmware-digital-store', 'sushi-panda-payment-recovery', 'yookassa-webhook-recovery', 'woocommerce-cart-cdek-pickup-recovery', 'woocommerce-quick-view-cart-refinement', 'evrosumka-checkout-footer', 'aravia-postcode-delivery-checkout', 'delovye-linii-classic-cart', 'b2b-woocommerce-order-request', 'autoazart-wholesale-request', 'woocommerce-invoice-approval', 'woocommerce-pdf-invoice-branding', 'salt-switch-order-recovery', 'werdum-woocommerce-order-email-recovery', 'bragutsa-woocommerce-order-email-recovery', 'woocommerce-admin-email-items', 'goa-tours-stripe-setup', 'yookassa-merchant-checkout-handoff', 'checkout-tax-breakdown'],
     ru: ['Настройка оплаты и корзины WooCommerce', 'Помогу, если покупатель не может завершить заказ, оплата проходит без обновления статуса или менеджер не получает письмо. Подключу или восстановлю оплату и уведомления магазина. Если сбой только в тарифе или выборе ПВЗ, начнём с отдельной проверки доставки.', 'Проверю путь покупателя без входа в админку: товар, корзина, контакты, способ доставки и переход к оплате. Отделю ошибки оформления от ограничений платёжного модуля или перевозчика.', 'В согласованном тестовом сценарии проверю, совпадает ли результат в магазине и у платёжного сервиса: статус заказа, уведомление менеджеру и письмо покупателю. Для цифрового товара отдельно проверю выдачу файла.', 'Пришлите ссылку и опишите, на каком шаге возникает сбой. Начнём с воспроизведения проблемы и согласуем, чем подтвердить исправление.'],
     en: ['WooCommerce checkout and payment setup', 'Fix checkout when customers cannot finish an order, payments fail to update order status or staff miss notifications. Set up or repair payments and order emails. If only the rate or pickup point fails, start with a separate shipping check.', 'Test the customer flow while logged out: product, cart, contact details, shipping and the transition to payment. Distinguish layout issues from payment module or carrier constraints.', 'Use an agreed test scenario to compare the store and payment provider results: order status, staff notification and customer email. For digital goods, check delivery of the download separately.', 'Send a link and tell me where the problem appears. We will start by reproducing it and agreeing on how to verify the fix.'],
+  },
+  {
+    slug: 'woocommerce-catalog-filters',
+    cases: ['wellland-facets', 'woocommerce-contextual-attribute-checkboxes', 'lightproof-elementor-catalog-filters', 'dependent-category-filters-repair', 'fastener-catalog-attribute-filters', 'hvac-category-filter-templates', 'sewing-shop-sku-search-filters'],
+    ru: [
+      'Настройка и ремонт фильтров каталога WooCommerce',
+      'Настрою фильтры по характеристикам, наличию и категориям. Если товары пропадают из выдачи, счётчики не сходятся или одинаковые подкатегории смешиваются, начну с конкретной категории и двух товаров, а не с замены всех плагинов.',
+      'Сверю видимые характеристики с атрибутами товара, условиями шаблона и правилами видимости. Если нужна миграция локальных значений в глобальные, согласуем карту полей и то, что должен сохранить следующий импорт.',
+      'Настрою подходящий набор фильтров по разделам. Проверю выбор, сочетание и сброс фильтров, счётчики, видимость товаров и переход между страницами выдачи. Отдельно проверю мобильный сценарий.',
+      'Пришлите адрес категории, ожидаемый фильтр и два товара: тот, который должен остаться в выдаче, и тот, который должен скрыться. Для первого разбора доступы не нужны.',
+    ],
+    en: [
+      'WooCommerce catalog filter setup and repair',
+      'Set up filters for product specifications, stock and categories. If results drop products, counts disagree or similarly named subcategories mix, start with a specific category and two products rather than replacing every plugin.',
+      'Compare visible specifications against product attributes, template rules and catalog visibility. If local values need migrating to global attributes, agree on field mapping and what the next import must preserve.',
+      'Configure useful filters for each section. Check selection, combined criteria, reset, counts, visibility and pagination. Test the mobile flow separately.',
+      'Send a category URL, the expected filter and two sample products: one that should remain and one that should disappear. No credentials are needed for the initial review.',
+    ],
   },
   {
     slug: 'woocommerce-shipping',

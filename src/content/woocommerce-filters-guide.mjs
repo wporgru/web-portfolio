@@ -1,7 +1,7 @@
 export const filtersGuide = {
   slug:'woocommerce-product-filters',
-  primaryService:'catalog-automation',
-  services:['catalog-automation','woocommerce-store-development','woocommerce-store-improvements'],
+  primaryService:'woocommerce-catalog-filters',
+  services:['woocommerce-catalog-filters','catalog-automation','woocommerce-store-development','woocommerce-store-improvements'],
   cases:['wellland-facets','anta-yml-size-variant-import','wellland-native-catalog-pagination','sewing-shop-sku-search-filters'],
   sourceUrls:[
     'https://woocommerce.com/document/managing-product-taxonomies/',
@@ -14,7 +14,7 @@ export const filtersGuide = {
     context:'Если фильтры теряют товары',
     action:'Обсудить настройку фильтров',
     email:'Прислать пример проблемы',
-    serviceLabel:'Что входит в настройку каталога',
+    serviceLabel:'Что входит в настройку и ремонт фильтров',
     enquiry:['Категория и фильтр, при котором исчезает товар','Артикулы товаров, которые должны остаться в выдаче'],
     steps:[
       ['Возьмите два контрольных товара','Выберите товар, который фильтр находит, и похожий товар, который исчезает. Запишите категорию, значение фильтра, артикулы, видимость и наличие. Повторите сценарий без авторизации. Так вы отделите ошибку конкретных данных от проблемы всей выдачи.'],
@@ -39,7 +39,7 @@ export const filtersGuide = {
     context:'When filters hide products',
     action:'Discuss your product filters',
     email:'Send a failing example',
-    serviceLabel:'What catalog setup includes',
+    serviceLabel:'What catalog filter setup and repair includes',
     enquiry:['Category and filter that make the product disappear','SKUs that should remain in the results'],
     steps:[
       ['Pick two control products','Choose a product the filter finds and a comparable product it misses. Record the category, filter value, SKUs, visibility and stock. Reproduce the problem while signed out to separate a product-data issue from a broken listing.'],
