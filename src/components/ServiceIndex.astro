@@ -3,6 +3,7 @@ import Layout from './Layout.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
 import { services } from '../content/services.mjs';
 import { serviceGroups } from '../content/service-groups.mjs';
+import { createEntryEnquiry } from '../content/enquiry.mjs';
 
 const { lang } = Astro.props;
 const ru = lang === 'ru';
@@ -23,6 +24,7 @@ const serviceCatalog = assigned.map(slug=>({
   name:bySlug.get(slug)![locale][0],
   href:base+'/services/'+slug+localeSuffix,
 }));
+const brief = createEntryEnquiry(lang,new URL(Astro.url.pathname,Astro.site ?? Astro.url).href,'services');
 ---
 <Layout title={title} description={intro} lang={lang} section="services" customLangLinks={alternates} roleLinks={[]} breadcrumbs={breadcrumbs} serviceCatalogJsonLd={serviceCatalog}>
   <div class="container stack service-index">
@@ -31,7 +33,7 @@ const serviceCatalog = assigned.map(slug=>({
       <h1 class="hero__name">{title}</h1>
       <p class="hero__summary">{intro}</p>
       <div class="btnrow">
-        <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить задачу':'Discuss your project'}</a>
+        <a class="btn" href={brief.telegramHref} data-enquiry-telegram>{ru?'Обсудить задачу':'Discuss your project'}</a>
         <a class="btn btn--ghost" href={base+'/showcase'+localeSuffix}>{ru?'Посмотреть выполненные работы':'See completed work'}</a>
         <a class="btn btn--ghost" href={base+'/guides'+localeSuffix}>{ru?'Практические руководства':'Practical guides'}</a>
       </div>
@@ -55,7 +57,10 @@ const serviceCatalog = assigned.map(slug=>({
     <section class="card">
       <h2 class="h2">{ru?'Не знаете, с чего начать?':'Not sure where to start?'}</h2>
       <p>{ru?'Пришлите ссылку, опишите проблему и укажите, что важно сохранить. Предложу первый этап и объясню, по каким признакам можно принять результат.':'Send the site URL, describe the problem and tell me what must stay intact. I will suggest a first stage and explain how we can verify the result.'}</p>
-      <a class="btn" href="https://t.me/wporgru">{ru?'Обсудить задачу':'Discuss your project'}</a>
+      <div class="btnrow">
+        <a class="btn" href={brief.telegramHref} data-enquiry-telegram>{ru?'Обсудить задачу':'Discuss your project'}</a>
+        <a class="btn btn--ghost" href={brief.href} data-enquiry-email>{ru?'Открыть шаблон письма':'Open enquiry email template'}</a>
+      </div>
     </section>
   </div>
 </Layout>

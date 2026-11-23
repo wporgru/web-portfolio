@@ -4,7 +4,7 @@ import { services } from '../content/services.mjs';
 import { serviceDetails } from '../content/service-details.mjs';
 import { caseHighlights } from '../content/case-highlights.mjs';
 import { serviceGroups } from '../content/service-groups.mjs';
-import { createEnquiry, enquiryPrompts } from '../content/enquiry.mjs';
+import { createEnquiry, createEntryEnquiry, enquiryPrompts } from '../content/enquiry.mjs';
 import { servicePaths } from '../content/service-paths.mjs';
 import { migrationGuide } from '../content/migration-guide.mjs';
 import { guides } from '../content/guides.mjs';
@@ -325,6 +325,13 @@ for (const lang of ['ru','en']) {
   const index = read(path.join(root,'services',suffix,'index.html'));
   const [list,...extra] = jsonLdOf(index,'ItemList');
   const catalogUrl = new URL('services/'+suffix,profileUrl).href;
+  for(const [entry,html,url] of [['home',homeHtml,localizedHome],['services',index,catalogUrl]]) {
+    const brief=createEntryEnquiry(lang,url,entry);
+    const email=[...html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*\bdata-enquiry-email\b[^>]*>/g)];
+    if (email.length!==1 || decode(email[0][1])!==brief.href ||
+        !new URL(brief.href).searchParams.get('body')?.endsWith(url)) fail(url,'invalid entry-page enquiry email draft');
+    telegramDrafts(html,brief.telegramHref,2,url);
+  }
   const sorted = serviceGroups.flatMap(group=>group.slugs);
   if (!list || extra.length || list['@id']!==catalogUrl+'#services' || list.numberOfItems!==services.length ||
       list.itemListElement?.length!==sorted.length) fail(catalogUrl,'invalid service list structured data');

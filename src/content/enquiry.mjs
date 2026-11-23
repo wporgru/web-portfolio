@@ -121,10 +121,13 @@ export function createEnquiry({lang, title, url, kind, serviceSlug, customPrompt
     ? (ru ? 'Задача по примеру: ' : 'Project enquiry: ')
     : kind === 'guide'
     ? (ru ? 'Вопрос по руководству: ' : 'Guide enquiry: ')
+    : kind === 'entry'
+    ? ''
     : (ru ? 'Запрос по услуге: ' : 'Service enquiry: ');
   const source = kind === 'case'
     ? (ru ? 'Кейс, на который я ссылаюсь: ' : 'Reference case: ')
     : kind === 'guide' ? (ru ? 'Руководство: ' : 'Reference guide: ')
+    : kind === 'entry' ? (ru ? 'Откуда я пришёл: ' : 'Portfolio page: ')
     : (ru ? 'Страница услуги: ' : 'Service page: ');
   const subject = prefix + title;
   const body = [
@@ -137,4 +140,16 @@ export function createEnquiry({lang, title, url, kind, serviceSlug, customPrompt
     href:'mailto:zakaz@wp.org.ru?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body),
     telegramHref:'https://t.me/wporgru?text='+encodeURIComponent(telegramText),
   };
+}
+
+export function createEntryEnquiry(lang, url, entry) {
+  const ru=lang==='ru';
+  if (entry!=='home' && entry!=='services') throw Error('Unknown enquiry entry page');
+  const title=entry==='home'
+    ? (ru?'Задача по веб-разработке':'Web development enquiry')
+    : (ru?'Помогите выбрать услугу':'Help me choose a service');
+  const customPrompts=ru
+    ? ['Задача и ожидаемый результат', 'Что важно сохранить']
+    : ['Task and expected result', 'What must stay intact'];
+  return createEnquiry({lang,title,url,kind:'entry',customPrompts});
 }
