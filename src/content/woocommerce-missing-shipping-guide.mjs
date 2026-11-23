@@ -1,0 +1,62 @@
+const cases = ['guest-cdek', 'woocommerce-delivery-hidden-fields-conflict', 'ecomyaso-free-shipping-weight-and-value'];
+
+export const woocommerceMissingShippingGuide = {
+  slug: 'woocommerce-shipping-not-showing',
+  primaryService: 'woocommerce-shipping',
+  services: ['woocommerce-shipping', 'checkout-payments'],
+  cases,
+  sourceUrls: [
+    'https://woocommerce.com/document/setting-up-shipping-zones/',
+    'https://woocommerce.com/document/troubleshooting-core-shipping/',
+    'https://woocommerce.com/document/free-shipping/',
+    'https://woocommerce.com/document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block/woocommerce-blocks-local-pickup/',
+  ],
+  ru: {
+    title: 'Почему WooCommerce не показывает способ доставки',
+    summary: 'Что проверить, если WooCommerce не показывает тариф, бесплатную доставку или самовывоз: гостевая корзина, зоны, обязательные поля и пороги.',
+    intro: 'В админке тариф есть, а покупатель видит «Нет доступных способов доставки». Начните с одной гостевой корзины: воспроизведите сбой с тестовым индексом и определите, на каком шаге исчезает способ — при выборе зоны, расчёте перевозчика или проверке условия магазина.',
+    context: 'Пропала доставка при оформлении заказа?',
+    action: 'Найти, почему не виден способ доставки',
+    email: 'Прислать пример проблемной корзины',
+    serviceLabel: 'Настройка доставки и самовывоза WooCommerce',
+    enquiry: ['Страница оформления, способ доставки и тестовый город или индекс без адреса покупателя', 'Товары или вес, сумма, наличие купона и момент, когда исчезает тариф'],
+    steps: [
+      ['Воспроизведите проблему в гостевой корзине', 'В приватном окне добавьте тот же физический товар и введите согласованный тестовый индекс. Запишите, виден ли способ до заполнения адреса и после пересчёта. Если у администратора всё работает, повторите с теми же товарами и адресом: в сохранённой сессии уже могут быть данные, которых нет у гостя.'],
+      ['Найдите первую подходящую зону', 'Для способов, привязанных к зонам, WooCommerce выбирает одну зону — первую, в которую попадает адрес. Узкий список индексов может остаться без нужного тарифа, даже если тариф включён в более общей зоне. Сверьте порядок зон и наличие нужного метода именно в выбранной зоне. Проверьте отдельно адрес внутри и за пределами обслуживания.'],
+      ['Отделите поля чекаута от ответа перевозчика', 'Уточните, используется классическая форма или блок Checkout. Если тариф исчез после упрощения формы, проверьте на стенде, какие данные теперь получает модуль доставки: например, индекс, город или габариты. Не отключайте обязательные поля вслепую. Если способ появляется, но не сохраняется выбранный ПВЗ, проверьте уже данные заказа: это другой сбой.'],
+      ['Проверьте бесплатную доставку и самовывоз раздельно', 'Для штатной бесплатной доставки проверьте минимум и то, считается ли сумма до или после скидки. Вес не входит в стандартный список условий этого метода: для правила «сумма и вес одновременно» нужен дополнительный механизм. Самовывоз в блоке Checkout настраивается отдельно от классического способа в зоне. Не включайте оба варианта только ради того, чтобы кнопка появилась.'],
+      ['Закройте проверку на пограничных корзинах', 'Проверьте сумму и вес ниже порога, ровно на границе и выше. Для правила с двумя условиями добавьте корзины, где выполнено только одно из них. На телефоне проверьте пересчёт при смене адреса, а после выбора ПВЗ или самовывоза — что увидит покупатель в итогах и что сохранится в контрольном заказе. Видимый тариф не доказывает создание отправления.'],
+    ],
+    examples: [
+      ['СДЭК: расчёт зависал только у гостя, клиент подтвердил повторную проверку', cases[0]],
+      ['Доставка пропала после скрытия полей: расчёт и валидацию разбирали отдельно', cases[1]],
+      ['«ЭкоМясо»: бесплатная доставка только при сумме от 5 000 ₽ и весе от 10 кг', cases[2]],
+    ],
+    sources: ['WooCommerce: порядок зон доставки', 'WooCommerce: диагностика способов доставки', 'WooCommerce: штатная бесплатная доставка и скидки', 'WooCommerce: самовывоз в блоке Checkout'],
+    call: 'Пришлите тестовую корзину, индекс и ожидаемый способ. Скажу, с чего начать проверку: с зоны, формы заказа или модуля перевозчика. Доступы и реальные данные покупателей для первого разбора не нужны.',
+  },
+  en: {
+    title: 'Why WooCommerce shipping methods are not showing',
+    summary: 'Fix missing WooCommerce rates, free shipping or pickup by checking the guest cart, matching zone, checkout fields and eligibility rules.',
+    intro: 'The admin sees a rate but the shopper sees no available shipping methods. Start with one guest cart and a test postcode. Find out whether the method disappears at zone selection, carrier rating or the store’s eligibility check.',
+    context: 'Did a delivery option disappear at checkout?',
+    action: 'Find out why the shipping method is missing',
+    email: 'Send a sample cart that reproduces the issue',
+    serviceLabel: 'WooCommerce shipping and pickup setup',
+    enquiry: ['Checkout page, shipping method and a test city or postcode, without a real customer address', 'Products or cart weight, subtotal, any coupon and when the rate disappears'],
+    steps: [
+      ['Reproduce it in a guest cart', 'In a private window, add the same physical item and enter an agreed test postcode. Record which methods appear before and after the address is entered. If the admin sees a rate, compare the same products and address: a stored session can contain details that a guest has not entered.'],
+      ['Find the first matching shipping zone', 'For zone-based methods, WooCommerce selects one zone: the first one that matches the address. A smaller postcode zone can be missing a method even when a broader zone has it enabled. Check the ordering and the methods in the selected zone, then test one address inside and one outside the service area.'],
+      ['Separate checkout fields from carrier responses', 'Identify whether the store uses classic checkout or the Checkout block. If the rate disappeared after simplifying the form, see on staging whether the carrier module still receives data such as postcode, city or dimensions. Do not remove required fields by trial and error on the live store. If a method appears but loses the collection point, inspect order data as a separate problem.'],
+      ['Check free shipping and pickup independently', 'Review the core free-shipping minimum and whether it is calculated before or after coupons. Weight is not a built-in eligibility option for that method; requiring both value and weight needs an additional rule. Checkout block pickup is configured separately from legacy zone-based pickup. Do not enable both just to make a button appear.'],
+      ['Verify boundary baskets before signing off', 'Test below, at and above the value and weight thresholds. If both conditions must be met, also test baskets that meet only one. Use a phone to check recalculation when the address changes, then compare the checkout summary and test order after choosing pickup. Seeing a rate does not establish that a shipment was created.'],
+    ],
+    examples: [
+      ['CDEK: the quote stalled for guests; the client confirmed the retest', cases[0]],
+      ['Shipping disappeared after fields were hidden; rates and validation were checked separately', cases[1]],
+      ['EcoMeat: free shipping required both RUB 5,000 and 10 kg', cases[2]],
+    ],
+    sources: ['WooCommerce: shipping zone order', 'WooCommerce: troubleshoot shipping methods', 'WooCommerce: core free shipping and discounts', 'WooCommerce: Local Pickup in the Checkout block'],
+    call: 'Send a sample cart, test postcode and expected method. I can recommend whether to start with the zone, checkout form or carrier integration without needing credentials or customer addresses.',
+  },
+};
