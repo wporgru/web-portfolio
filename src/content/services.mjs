@@ -55,7 +55,7 @@ export const services = [
   },
   {
     slug: 'woocommerce-store-improvements',
-    cases: ['sewing-shop-sku-search-filters', 'sewing-shop-brand-product-pages', 'wellland-facets', 'wellland-native-catalog-pagination', 'aravia-mobile-catalog-bulk-editor', 'per-product-quantity-discounts', 'woocommerce-native-order-statuses'],
+    cases: ['sewing-shop-sku-search-filters', 'sewing-shop-brand-product-pages', 'wellland-facets', 'wellland-native-catalog-pagination', 'aravia-mobile-catalog-bulk-editor', 'per-product-quantity-discounts', 'woocommerce-native-order-statuses', 'voblachke-woocommerce-consultation-buttons'],
     ru: [
       'Доработка интернет-магазина на WooCommerce',
       'Доработаю действующий магазин без пересборки с нуля: настрою фильтры и поиск по артикулу, переделаю карточку товара или добавлю нужное правило в корзину. Начнём с конкретного сценария, который сейчас мешает покупателю или менеджеру.',
@@ -99,7 +99,7 @@ export const services = [
   },
   {
     slug: 'website-ux-audit',
-    cases: ['solomon-responsive-conversion-audit', 'artred-b2b-equipment-catalog', 'faeton-rental-catalog-recovery', 'nomad-english-megamenu-localization'],
+    cases: ['solomon-responsive-conversion-audit', 'artred-b2b-equipment-catalog', 'faeton-rental-catalog-recovery', 'nomad-english-megamenu-localization', 'wordpress-mobile-video-measurement-form'],
     ru: ['UX-аудит сайта, форм и мобильной версии', 'Проверю путь от первого экрана до заявки или заказа. Покажу, где посетитель теряет контекст, не может нажать нужную кнопку или видит обрезанный контент — и что исправлять в первую очередь.', 'Начну с ваших главных маршрутов: найти услугу, сравнить товары, отправить заявку или оформить заказ. Повторю их в анонимном браузере на телефоне и компьютере. Проверю, что меню, фильтры, карточки и формы работают в связке.', 'Для каждой проблемы укажу адрес, ширину окна, шаги повторения и ожидаемое поведение. Отделю сбои, блокирующие обращение, от замечаний к тексту и оформлению. Отправку контрольной заявки согласуем отдельно.', 'Пришлите ссылку на сайт и два-три действия, которые должен выполнить клиент. Начнём с этих сценариев; по результатам можно заказать отдельные исправления вместо полного редизайна.'],
     en: ['Website UX, forms and mobile usability audit', 'Review the path from landing page to enquiry or order. Identify where visitors lose context, encounter broken controls or see clipped content, then prioritize the fixes.', 'Start with your main flows: finding a service, comparing products, sending an enquiry or placing an order. Repeat them signed out on desktop and mobile. Check how navigation, filters, product pages and forms work together.', 'Record the URL, viewport width, reproduction steps and expected behavior for each issue. Separate blockers from copy and visual polish. Agree separately before submitting a test enquiry.', 'Send your website and two or three actions customers need to complete. Start with those flows and use the findings to scope targeted repairs instead of a full redesign.'],
   },

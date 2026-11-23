@@ -1,0 +1,29 @@
+title: "WordPress: mobile video and a measurement request form"
+tagline: On mobile the video was misaligned, the enquiry link did not open the
+  measurement form, and a popup appeared without being requested. The task was
+  to restore a clear path to an enquiry without a site-wide redesign.
+year: "07.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Mobile layout
+  - On-demand forms
+  - UX repair
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: On mobile the video was misaligned, the enquiry link did not open the
+      measurement form, and a popup appeared without being requested. The task
+      was to restore a clear path to an enquiry without a site-wide redesign.
+  - type: text
+    title: How it works
+    body: Corrected the mobile video to use the available width, connected the
+      measurement form to its link, and removed automatic popup opening at the
+      client’s request. For a separate catalog display issue, a refresh showed
+      the expected layout; the available record does not show a catalog code
+      change.
+  - type: text
+    title: Result and verification
+    body: The client accepted the interface changes. The form was available on
+      demand rather than on page load. Inbox or CRM delivery, playback on every
+      device and search rankings were outside the verified scope.

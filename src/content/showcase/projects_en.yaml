@@ -7382,3 +7382,41 @@ projects:
         url: /showcase/haier-woocommerce-catalog-import/en/
         type: product
     featured: false
+  - slug: wordpress-mobile-video-measurement-form
+    name: "WordPress: mobile video and a measurement request form"
+    year: "07.2024"
+    role: Web development and automation
+    description: On mobile the video was misaligned, the enquiry link did not open
+      the measurement form, and a popup appeared without being requested. The task
+      was to restore a clear path to an enquiry without a site-wide redesign.
+    stack:
+      - WordPress
+      - Mobile layout
+      - On-demand forms
+      - UX repair
+    order: 395
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-mobile-video-measurement-form/en/
+        type: product
+    featured: false
+  - slug: voblachke-woocommerce-consultation-buttons
+    name: "V Oblachke: product enquiries and delivery information"
+    year: "12.2023"
+    role: Web development and automation
+    description: The store wanted a shorter route from product pages to consultation
+      or an order. Shoppers needed delivery information in context, and the owner
+      needed to understand duplicate phone enquiries.
+    stack:
+      - WooCommerce
+      - Product pages
+      - One-click checkout
+      - Consultation forms
+    order: 396
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/voblachke-woocommerce-consultation-buttons/en/
+        type: product
+    featured: false

@@ -7431,3 +7431,42 @@ projects:
         url: /showcase/haier-woocommerce-catalog-import/
         type: product
     featured: false
+  - slug: wordpress-mobile-video-measurement-form
+    name: "WordPress: мобильное видео и форма заявки на замер"
+    year: "07.2024"
+    role: Веб-разработка и автоматизация
+    description: На телефоне видео было смещено, ссылка не открывала форму замера, а
+      всплывающее окно запускалось без запроса посетителя. Нужно было вернуть
+      понятный путь к заявке без смены оформления всего сайта.
+    stack:
+      - WordPress
+      - Mobile layout
+      - On-demand forms
+      - UX repair
+    order: 395
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-mobile-video-measurement-form/
+        type: product
+    featured: false
+  - slug: voblachke-woocommerce-consultation-buttons
+    name: "«В облачке»: консультация и информация о доставке в карточке"
+    year: "12.2023"
+    role: Веб-разработка и автоматизация
+    description: В магазине хотели сократить путь от карточки товара до консультации
+      или заказа. Нужно было разместить информацию о доставке так, чтобы
+      покупателю не приходилось искать её отдельно, и разобраться с повторяющимися
+      телефонными обращениями.
+    stack:
+      - WooCommerce
+      - Product pages
+      - One-click checkout
+      - Consultation forms
+    order: 396
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/voblachke-woocommerce-consultation-buttons/
+        type: product
+    featured: false

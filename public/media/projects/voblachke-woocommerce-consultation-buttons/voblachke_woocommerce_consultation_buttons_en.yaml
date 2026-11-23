@@ -1,0 +1,28 @@
+title: "V Oblachke: product enquiries and delivery information"
+tagline: The store wanted a shorter route from product pages to consultation or
+  an order. Shoppers needed delivery information in context, and the owner
+  needed to understand duplicate phone enquiries.
+year: "12.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product pages
+  - One-click checkout
+  - Consultation forms
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The store wanted a shorter route from product pages to consultation or an
+      order. Shoppers needed delivery information in context, and the owner
+      needed to understand duplicate phone enquiries.
+  - type: text
+    title: How it works
+    body: Presented the updated consultation and delivery elements, added the agreed
+      icon next to the logo, and explained the duplicate phone enquiries. Handed
+      over image removal instructions and proposed retaining only necessary
+      contact fields. The final field list is not recorded.
+  - type: text
+    title: Result and verification
+    body: The client accepted the storefront work. YooKassa was deferred until other
+      parts of the site were ready. Live charges, delivery through every form
+      and a separate location module were not verified.
