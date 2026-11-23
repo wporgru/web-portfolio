@@ -1,6 +1,14 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'lightproof-elementor-catalog-filters': {
+    ru: 'Для Lightproof настроил фильтр общего каталога и отдельно восстановил его в шаблоне Elementor. Клиент принял оба этапа.',
+    en: 'Set up the main catalog filter for Lightproof, then restored filtering inside an Elementor template. The client accepted both stages.',
+  },
+  'woocommerce-contextual-attribute-checkboxes': {
+    ru: 'Настроил чекбоксы WooCommerce по характеристикам товаров конкретной категории. Клиент принял работу; в примере — четыре атрибута.',
+    en: 'Set up WooCommerce attribute checkboxes that reflect products in the selected category. The client accepted the work; one example had four attributes.',
+  },
   'ecomyaso-free-shipping-weight-and-value': {
     ru: 'Настроил бесплатную доставку WooCommerce по двум условиям сразу: от 5 000 ₽ и от 10 кг. Клиент принял настройку.',
     en: 'Set up WooCommerce free shipping with two simultaneous minimums: RUB 5,000 and 10 kg. The client accepted the setup.',

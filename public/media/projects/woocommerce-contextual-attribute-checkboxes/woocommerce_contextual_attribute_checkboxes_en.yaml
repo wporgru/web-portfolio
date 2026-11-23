@@ -1,0 +1,30 @@
+title: WooCommerce category filters with attribute checkboxes
+tagline: Shoppers needed multi-select attributes and product counts. The long
+  sidebar tree did not match the real product categories, and showing all
+  attributes was not helpful in a narrow section.
+year: "06.2024"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Product attributes
+  - Catalog filters
+  - Taxonomies
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Shoppers needed multi-select attributes and product counts. The long
+      sidebar tree did not match the real product categories, and showing all
+      attributes was not helpful in a narrow section.
+  - type: text
+    title: How it works
+    body: "Configured checkboxes for useful attributes and left out empty or
+      irrelevant fields. Distinguished the general catalog from category views:
+      the general page shows a broader set, while a category uses attributes
+      from its products. Demonstrated a section with four available attributes
+      and explained why menu nesting is not the WooCommerce category tree."
+  - type: text
+    title: Result and verification
+    body: The client accepted the setup. Filters no longer repeated the entire
+      attribute list on each page. Restructuring the category tree remained a
+      recommendation; speed, every count and every combination were not
+      independently verified.

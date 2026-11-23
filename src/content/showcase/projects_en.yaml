@@ -7550,3 +7550,42 @@ projects:
         url: /showcase/yml-local-delivery-availability-advice/en/
         type: product
     featured: false
+  - slug: lightproof-elementor-catalog-filters
+    name: "Lightproof: configuring and repairing an Elementor filter"
+    year: "07.2023"
+    role: Web development and automation
+    description: The owner was building an Elementor store, but attribute filtering
+      did not work. The first stage focused on the main shop; once
+      category-specific templates appeared, the filter inside one of those
+      templates also needed attention.
+    stack:
+      - WooCommerce
+      - Elementor
+      - Product attributes
+      - Catalog filters
+    order: 404
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/lightproof-elementor-catalog-filters/en/
+        type: product
+    featured: false
+  - slug: woocommerce-contextual-attribute-checkboxes
+    name: WooCommerce category filters with attribute checkboxes
+    year: "06.2024"
+    role: Web development and automation
+    description: Shoppers needed multi-select attributes and product counts. The
+      long sidebar tree did not match the real product categories, and showing all
+      attributes was not helpful in a narrow section.
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Catalog filters
+      - Taxonomies
+    order: 405
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/woocommerce-contextual-attribute-checkboxes/en/
+        type: product
+    featured: false

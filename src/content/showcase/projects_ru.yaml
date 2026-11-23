@@ -7604,3 +7604,43 @@ projects:
         url: /showcase/yml-local-delivery-availability-advice/
         type: product
     featured: false
+  - slug: lightproof-elementor-catalog-filters
+    name: "Lightproof: настройка и ремонт фильтра Elementor"
+    year: "07.2023"
+    role: Веб-разработка и автоматизация
+    description: Владелец сам собирал магазин на Elementor, но фильтрация по
+      характеристикам не работала. Сначала нужна была рабочая выдача в общем
+      каталоге, а когда появились отдельные шаблоны подкатегорий, требовалось
+      восстановить фильтр внутри шаблона.
+    stack:
+      - WooCommerce
+      - Elementor
+      - Product attributes
+      - Catalog filters
+    order: 404
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/lightproof-elementor-catalog-filters/
+        type: product
+    featured: false
+  - slug: woocommerce-contextual-attribute-checkboxes
+    name: Фильтры WooCommerce с чекбоксами по категориям
+    year: "06.2024"
+    role: Веб-разработка и автоматизация
+    description: Покупателям нужно было выбирать несколько характеристик и видеть
+      количество товаров. При этом длинное дерево в боковом меню не совпадало с
+      реальными товарными категориями, а полный список характеристик не помогал в
+      узком разделе.
+    stack:
+      - WooCommerce
+      - Product attributes
+      - Catalog filters
+      - Taxonomies
+    order: 405
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/woocommerce-contextual-attribute-checkboxes/
+        type: product
+    featured: false

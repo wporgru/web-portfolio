@@ -55,7 +55,7 @@ export const services = [
   },
   {
     slug: 'woocommerce-store-improvements',
-    cases: ['sewing-shop-sku-search-filters', 'sewing-shop-brand-product-pages', 'wellland-facets', 'wellland-native-catalog-pagination', 'aravia-mobile-catalog-bulk-editor', 'per-product-quantity-discounts', 'woocommerce-native-order-statuses', 'voblachke-woocommerce-consultation-buttons', 'woocommerce-stock-waitlist-localization', 'cart-gift-thresholds', 'dependent-category-filters-repair', 'fastener-catalog-attribute-filters', 'hvac-category-filter-templates'],
+    cases: ['sewing-shop-sku-search-filters', 'sewing-shop-brand-product-pages', 'wellland-facets', 'wellland-native-catalog-pagination', 'aravia-mobile-catalog-bulk-editor', 'per-product-quantity-discounts', 'woocommerce-native-order-statuses', 'voblachke-woocommerce-consultation-buttons', 'woocommerce-stock-waitlist-localization', 'cart-gift-thresholds', 'dependent-category-filters-repair', 'fastener-catalog-attribute-filters', 'hvac-category-filter-templates', 'lightproof-elementor-catalog-filters', 'woocommerce-contextual-attribute-checkboxes'],
     ru: [
       'Доработка интернет-магазина на WooCommerce',
       'Доработаю действующий магазин без пересборки с нуля: настрою фильтры и поиск по артикулу, переделаю карточку товара или добавлю нужное правило в корзину. Начнём с конкретного сценария, который сейчас мешает покупателю или менеджеру.',

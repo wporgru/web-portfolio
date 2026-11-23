@@ -1,0 +1,31 @@
+title: "Lightproof: configuring and repairing an Elementor filter"
+tagline: The owner was building an Elementor store, but attribute filtering did
+  not work. The first stage focused on the main shop; once category-specific
+  templates appeared, the filter inside one of those templates also needed
+  attention.
+year: "07.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - Elementor
+  - Product attributes
+  - Catalog filters
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The owner was building an Elementor store, but attribute filtering did not
+      work. The first stage focused on the main shop; once category-specific
+      templates appeared, the filter inside one of those templates also needed
+      attention.
+  - type: text
+    title: How it works
+    body: Configured the first filter, shared the catalog page and recorded guidance
+      on selecting attributes and managing the shared filter. At the next stage,
+      separated the template fault from a broad styling request, restored the
+      affected flow and handed it back to the client.
+  - type: text
+    title: Result and verification
+    body: The client accepted both stages and noted the ongoing collaboration after
+      the second. The archive does not establish a specific plugin replacement
+      or a full check of all four requested subcategories. Building the entire
+      store was outside scope.
