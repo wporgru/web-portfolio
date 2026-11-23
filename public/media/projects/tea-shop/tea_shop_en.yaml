@@ -1,6 +1,7 @@
-title: Tea store rebuild with two product catalogs
-tagline: Bring products from a legacy WooCommerce store and a supplier into a
-  new storefront.
+title: Tea store migration and WooCommerce catalog merge
+tagline: Built a WoodMart storefront on a new domain from two assortments—the
+  legacy store and a supplier. Restored product descriptions and delivered
+  redirect rules for the planned cutover.
 role: Web development
 year: "10.2025"
 stack:
@@ -9,25 +10,40 @@ stack:
   - WoodMart
 blocks:
   - type: text
-    title: Brief
-    body: Bring products from a legacy WooCommerce store and a supplier into a new
-      storefront.
+    title: Exporting products without updating the live store
+    body: The older WooCommerce installation limited export options. I selected
+      compatible tools and exported the existing products without updating the
+      live source for a one-off migration. I loaded the supplier assortment
+      separately, so the new storefront got both sources without a premature
+      change to the old one.
   - type: text
-    title: Work delivered
-    body: Used compatible export tools, imported both catalogs and investigated
-      duplicate categories. Delivered redirect rules for old URLs; activation on
-      the legacy host was not independently confirmed.
+    title: Why the imported descriptions looked empty
+    body: "Categories with the same names held different data: one copy had the
+      products and another the description. I investigated that mismatch during
+      the merge, with some manual sorting left to the client. When descriptions
+      seemed missing on the new store, I traced the issue to the layout rather
+      than the import. The client confirmed the descriptions reappeared after
+      I disabled the layout that hid them."
   - type: text
-    title: Implementation and scope
-    body: The legacy WooCommerce installation limited export options, so I used
-      compatible tools instead of updating the source site. The combined
-      catalogs contained categories with the same names but different data.
-      After importing, I removed the /shop/ path segment and traced
-      missing-looking descriptions to the layout rather than the import. The
-      client retained responsibility for replacing brand assets.
+    title: Preparing URLs and handing over the storefront
+    body: I removed the extra /shop/ segment and supplied separate redirect rules
+      for product URLs and other paths on the old domain. The client accepted
+      the work and retained responsibility for pages and posts, replacement
+      brand assets and opening the new site to indexing. This stage does not
+      verify activation on the legacy host or retention of search rankings.
   - type: image
     title: Public website snapshot
     src: /media/projects/tea-shop/site.png
-    alt: Public website snapshot
+    alt: Public tea storefront after the catalog migration
     caption: Captured during a later availability check; it may differ from the site
       at handoff.
+  - type: text
+    title: Planning to merge two catalogs?
+    body: Send two example products and explain which source should own prices,
+      descriptions and images when SKUs match. For a domain change, include
+      the existing URLs that need to stay available or redirect.
+    links:
+      - label: WooCommerce catalog imports and updates
+        url: /services/catalog-automation/en/
+      - label: WordPress and WooCommerce migration
+        url: /services/hosting-migration/en/

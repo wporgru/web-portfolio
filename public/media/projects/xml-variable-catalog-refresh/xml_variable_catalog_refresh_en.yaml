@@ -1,6 +1,6 @@
 title: XML import of variable products with markup rules
-tagline: A variable-product assortment needed importing, with repeat pricing
-  updates and fewer unnecessary copies of product images.
+tagline: Imported a variable supplier assortment from XML into WooCommerce,
+  reset the markup to 25% and configured a ten-day refresh interval.
 year: "12.2023"
 role: Web development and automation
 stack:
@@ -10,17 +10,30 @@ stack:
   - Product variants
 blocks:
   - type: text
-    title: Brief and constraints
-    body: A variable-product assortment needed importing, with repeat pricing
-      updates and fewer unnecessary copies of product images.
+    title: Keeping variants distinct from parent products
+    body: The supplier sent a variable assortment in XML. The estimate of about
+      15,000 referred to variants, not parent listings, and the final parent
+      total was not verified. I configured and monitored the long import,
+      investigating reports of missing names and repeated SKUs separately.
   - type: text
-    title: How it works
-    body: Configured the XML import and monitored the long run. The handoff records
-      that unnecessary thumbnail sizes were disabled. For the next run I applied
-      the agreed 25% markup, addressed reports of missing names and duplicate
-      SKUs, and checked startup before scheduling a ten-day interval.
+    title: Handling disk usage, pricing and scheduling separately
+    body: The import increased storage usage. I disabled unnecessary thumbnail
+      sizes rather than claiming to have compressed the existing library.
+      For the next refresh I applied the agreed 25% markup, tested startup and
+      set a ten-day schedule.
   - type: text
     title: Result and verification
     body: The client confirmed completion of a specific run and accepted the work. A
       successful automatic run ten days later and compression of the entire
       media library were not established.
+  - type: text
+    title: Scoping a similar supplier import
+    body: Share a redacted XML sample with one parent product and two variants.
+      Say which fields a repeat import may overwrite—price, stock or images—and
+      which fields staff edit manually. For a large catalog, agree on a test
+      sample, markup rules and a storage check before scheduling full runs.
+    links:
+      - label: WooCommerce catalog imports and updates
+        url: /services/catalog-automation/en/
+      - label: What to check when a catalog import stalls
+        url: /guides/woocommerce-import-timeout/en/
