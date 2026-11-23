@@ -1,7 +1,7 @@
 export const services = [
   {
     slug:'wordpress-contact-form-repair',
-    cases:['metform-replacement','primeclean-forms','messenger-and-email-leads','blog-tags-and-antispam'],
+    cases:['metform-replacement','booking-form-email-recovery','primeclean-forms','bgtgroup-wordpress-form-antispam','wordpress-callback-form-setup','messenger-and-email-leads','blog-tags-and-antispam'],
     ru:[
       'Ремонт форм WordPress и защита заявок от спама',
       'Если Contact Form 7 или MetForm показывает ошибку, пишет «Отправлено» без письма или пропускает спам, найду место сбоя и проверю получение контрольной заявки менеджером.',

@@ -1,0 +1,32 @@
+title: "BGT Group: spam protection for WordPress forms"
+tagline: Existing contact forms periodically received spam. The job was to add
+  protection to the existing submission flow rather than rebuild the website.
+year: "03.2024"
+role: Web development and automation
+stack:
+  - WordPress
+  - Contact forms
+  - CAPTCHA
+  - Spam prevention
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: Existing contact forms periodically received spam. The job was to add
+      protection to the existing submission flow rather than rebuild the
+      website.
+  - type: text
+    title: How it works
+    body: Added CAPTCHA to the agreed forms and supplied screenshots for review.
+      International phone formatting and consent checkboxes were handled as a
+      separate scope, not part of this protection stage.
+  - type: text
+    title: Result and verification
+    body: The client reviewed the result and accepted delivery. The archive does not
+      identify every tested form, the CAPTCHA provider or before-and-after spam
+      counts. The case documents adding protection, not permanently eliminating
+      spam.
+  - type: text
+    title: Related project
+    links:
+      - label: "Related stage: consent and policy links in three language versions"
+        url: /showcase/multilingual-consent-forms/en/

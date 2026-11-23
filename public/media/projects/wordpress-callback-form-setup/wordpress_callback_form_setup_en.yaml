@@ -1,0 +1,27 @@
+title: "WordPress callback form: launch button and configuration"
+tagline: The homepage needed a visible button that opened a callback request
+  form. The client also wanted to edit the form and connect it to other buttons
+  independently.
+year: "01.2018"
+role: Web development and automation
+stack:
+  - WordPress
+  - Callback forms
+  - UI integration
+  - Editor handoff
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: The homepage needed a visible button that opened a callback request form.
+      The client also wanted to edit the form and connect it to other buttons
+      independently.
+  - type: text
+    title: How it works
+    body: Placed the form for review, added its launch button and explained how to
+      create and edit forms and attach them to new buttons. I also pointed out
+      that a theme file update could overwrite the customization.
+  - type: text
+    title: Result and verification
+    body: The client confirmed the setup worked and accepted delivery. The form,
+      button and editing handoff are documented; full inbox delivery and update
+      resilience were not independently verified.

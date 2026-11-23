@@ -43,6 +43,7 @@ const additionalCaseImages = {
   ],
 };
 const projectStages = {
+  'bgtgroup-wordpress-form-antispam': ['multilingual-consent-forms','Связанный этап: согласие и ссылки на политику в трёх языковых версиях','Related stage: consent and policy links in three language versions'],
   'dvoretskiy-wordpress-backup-migration': ['dvoretskiy-construction-wordpress', 'Связанный заказ: разработка строительного сайта «Дворецкий»', 'Related engagement: building the Dvoretskiy construction site'],
   'dme-tech-download-store-preparation': ['dme-tech-yandex-checkout-downloads', 'Следующий этап: оплата и письмо со скачиванием', 'Next stage: payments and the download email'],
   'dme-tech-yandex-checkout-downloads': ['dme-tech-payment-buttons-mobile', 'Следующий этап: платёжные кнопки и мобильная витрина', 'Next stage: payment buttons and mobile storefront'],

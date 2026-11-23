@@ -7370,3 +7370,41 @@ projects:
         url: /showcase/robokassa-woocommerce-payment-acceptance/
         type: product
     featured: false
+  - slug: bgtgroup-wordpress-form-antispam
+    name: "BGT Group: защита WordPress-форм от спама"
+    year: "03.2024"
+    role: Веб-разработка и автоматизация
+    description: Через существующие формы обратной связи периодически приходил спам.
+      Нужно было добавить защиту в действующий сценарий отправки, не превращая
+      задачу в переделку сайта.
+    stack:
+      - WordPress
+      - Contact forms
+      - CAPTCHA
+      - Spam prevention
+    order: 392
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/bgtgroup-wordpress-form-antispam/
+        type: product
+    featured: false
+  - slug: wordpress-callback-form-setup
+    name: "Форма обратного звонка на WordPress: кнопка и настройка"
+    year: "01.2018"
+    role: Веб-разработка и автоматизация
+    description: На главной сайта нужна была заметная кнопка, которая открывает
+      форму обратного звонка. Клиент также хотел сам редактировать форму и
+      связывать её с другими кнопками.
+    stack:
+      - WordPress
+      - Callback forms
+      - UI integration
+      - Editor handoff
+    order: 393
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/wordpress-callback-form-setup/
+        type: product
+    featured: false

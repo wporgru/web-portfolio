@@ -7320,3 +7320,41 @@ projects:
         url: /showcase/robokassa-woocommerce-payment-acceptance/en/
         type: product
     featured: false
+  - slug: bgtgroup-wordpress-form-antispam
+    name: "BGT Group: spam protection for WordPress forms"
+    year: "03.2024"
+    role: Web development and automation
+    description: Existing contact forms periodically received spam. The job was to
+      add protection to the existing submission flow rather than rebuild the
+      website.
+    stack:
+      - WordPress
+      - Contact forms
+      - CAPTCHA
+      - Spam prevention
+    order: 392
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/bgtgroup-wordpress-form-antispam/en/
+        type: product
+    featured: false
+  - slug: wordpress-callback-form-setup
+    name: "WordPress callback form: launch button and configuration"
+    year: "01.2018"
+    role: Web development and automation
+    description: The homepage needed a visible button that opened a callback request
+      form. The client also wanted to edit the form and connect it to other
+      buttons independently.
+    stack:
+      - WordPress
+      - Callback forms
+      - UI integration
+      - Editor handoff
+    order: 393
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/wordpress-callback-form-setup/en/
+        type: product
+    featured: false
