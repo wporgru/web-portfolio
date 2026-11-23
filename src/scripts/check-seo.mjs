@@ -305,8 +305,19 @@ for (const [url,alternates] of pages) {
 for (const lang of ['ru','en']) {
   const suffix = lang==='en'?'en/':'';
   const providerName = lang==='en'?'Oleg Tishin':'Олег Тишин';
-  const people = jsonLdOf(read(path.join(root,suffix,'index.html')),'Person');
-  if (people.length!==1 || people[0]['@id']!==personId || people[0].url!==profileUrl || people[0].name!==providerName) fail(lang,'invalid author identity');
+  const homeHtml=read(path.join(root,suffix,'index.html'));
+  const [profile,...extraProfiles]=jsonLdOf(homeHtml,'ProfilePage');
+  const localizedHome=new URL(suffix,profileUrl).href;
+  const person=profile?.mainEntity;
+  const profileRefs=['https://wp.org.ru/about/','https://github.com/wporgru','https://kwork.ru/user/wporgru','https://t.me/wporgru'];
+  if (!profile || extraProfiles.length || profile['@id']!==localizedHome+'#profile' ||
+      profile.url!==localizedHome || profile.inLanguage!==lang ||
+      person?.['@type']!=='Person' || person['@id']!==personId || person.url!==profileUrl ||
+      person.name!==providerName || person.alternateName!=='@wporgru' ||
+      person.description!==decode(homeHtml.match(/<meta name="description" content="([^"]+)"/)?.[1]) ||
+      !Array.isArray(person.sameAs) || person.sameAs.length!==profileRefs.length ||
+      profileRefs.some(ref=>!person.sameAs.includes(ref) || !homeHtml.includes('href="'+ref+'"')) ||
+      ['image','aggregateRating','interactionStatistic'].some(key=>key in person)) fail(lang,'invalid author profile or identity');
   const index = read(path.join(root,'services',suffix,'index.html'));
   const [list,...extra] = jsonLdOf(index,'ItemList');
   const catalogUrl = new URL('services/'+suffix,profileUrl).href;

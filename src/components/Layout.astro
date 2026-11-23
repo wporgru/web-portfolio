@@ -133,26 +133,30 @@ const authorGitHubPage = owner ? `https://github.com/${owner}/` : 'https://githu
 // show the credit once it actually points somewhere else.
 const showFooterCredit = (siteConfig?.data?.footerCredit ?? true) && authorGit !== upstreamGit;
 
-// schema.org/Person — only pages that describe an actual person pass
-// personJsonLd (HomePage.astro); url/image are filled in here from data this
-// component already computed, so callers only supply person-specific fields.
+// Both translations describe the same developer; articles and services use
+// the same Person ID, while the two ProfilePage entities have distinct URLs.
 const profileUrl = new URL(base+'/',siteUrl).href;
 const personId = profileUrl+'#oleg-tishin';
-const jsonLd = personJsonLd ? {
+const profileGraph = personJsonLd ? {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  '@id': personId,
-  url: profileUrl,
-  image: metaImage,
-  ...Object.fromEntries(
-    Object.entries(personJsonLd).filter(([, v]) => v !== undefined && v !== '' && !(Array.isArray(v) && v.length === 0))
-  ),
+  '@type': 'ProfilePage',
+  '@id': canonicalUrl+'#profile',
+  url: canonicalUrl,
+  inLanguage: lang,
+  mainEntity: {
+    ...Object.fromEntries(
+      Object.entries(personJsonLd).filter(([, v]) => v !== undefined && v !== '' && !(Array.isArray(v) && v.length === 0))
+    ),
+    '@type': 'Person',
+    '@id': personId,
+    url: profileUrl,
+  },
 } : null;
 // JSON.stringify output is embedded verbatim in a <script> tag below — a "</"
 // in any string value (e.g. a bio mentioning markup) would otherwise close
 // the tag early. < is invisible to JSON parsers but not to an HTML tokenizer.
 const safeJsonLd = (value: object) => JSON.stringify(value).replace(/</g, '\\u003c');
-const jsonLdSafe = jsonLd && !noindex ? safeJsonLd(jsonLd) : null;
+const jsonLdSafe = profileGraph && !noindex ? safeJsonLd(profileGraph) : null;
 const articleGraph = articleJsonLd && !noindex ? safeJsonLd({
   '@context': 'https://schema.org',
   '@type': 'Article',
