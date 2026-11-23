@@ -44,7 +44,7 @@ const dateKey=(value:unknown)=>{
 <case-catalog>
   <form class="card case-search" role="search">
     <fieldset disabled>
-    <label>{ru?'Поиск по кейсам':'Search case studies'}<input type="search" name="q" placeholder={ru?'Например, импорт или Dokan':'For example, import or Dokan'} /></label>
+    <label>{ru?'Поиск по кейсам':'Search case studies'}<input type="search" name="q" maxlength="120" placeholder={ru?'Например, импорт или Dokan':'For example, import or Dokan'} /></label>
     <label>{ru?'Задача клиента':'Client need'}<select name="task"><option value="">{ru?'Все задачи':'All client needs'}</option>{taskOptions.map(group=><optgroup label={group.label}>
       {group.services.map(service=><option value={service.slug}>{service.label} ({service.count})</option>)}
     </optgroup>)}</select></label>
@@ -91,14 +91,27 @@ class CaseCatalog extends HTMLElement {
       card.el.querySelector('[data-project-year]')?.textContent?.replace(/^\s*·\s*/,''),
       ...tagsFor(card),
     ].join(' '));
-    const restoreTask=()=>{
-      const value=new URL(location.href).searchParams.get('task')??'';
-      task.value=[...task.options].some(option=>option.value===value)?value:'';
+    const selectValue=(select:HTMLSelectElement,value:string|null,fallback:string)=>
+      value!==null && Array.from(select.options).some(option=>option.value===value)?value:fallback;
+    const restoreFilters=()=>{
+      const params=new URL(location.href).searchParams;
+      query.value=(params.get('q')??'').slice(0,120);
+      task.value=selectValue(task,params.get('task'),'');
+      tech.value=selectValue(tech,params.get('tech'),'');
+      order.value=selectValue(order,params.get('order'),'featured');
     };
-    const syncTask=()=>{
+    const syncFilters=()=>{
       const url=new URL(location.href);
-      if(task.value)url.searchParams.set('task',task.value);
-      else url.searchParams.delete('task');
+      const filters = [
+        ['q',query.value.trim().slice(0,120)],
+        ['task',task.value],
+        ['tech',tech.value],
+        ['order',order.value==='featured'?'':order.value],
+      ];
+      for(const [key,value] of filters) {
+        if(value)url.searchParams.set(key,value);
+        else url.searchParams.delete(key);
+      }
       if(url.href!==location.href)history.replaceState(history.state,'',url);
     };
     let currentOrder='featured';
@@ -123,19 +136,18 @@ class CaseCatalog extends HTMLElement {
       empty.hidden=visible>0;
       output.value=lang==='ru'?`Показано: ${visible} из ${cards.length}`:`Showing ${visible} of ${cards.length}`;
     };
-    form.addEventListener('input',update);
-    task.addEventListener('change',syncTask);
-    form.addEventListener('submit',event=>{event.preventDefault();update();});
+    const applyFilters=()=>{update();syncFilters();};
+    form.addEventListener('input',applyFilters);
+    form.addEventListener('submit',event=>{event.preventDefault();applyFilters();});
     form.addEventListener('reset',event=>{
       event.preventDefault();
       query.value=query.defaultValue;
       tech.value='';
       task.value='';
       order.value='featured';
-      syncTask();
-      update();
+      applyFilters();
     });
-    restoreTask();
+    restoreFilters();
     update();
     fields.disabled=false;
   }
