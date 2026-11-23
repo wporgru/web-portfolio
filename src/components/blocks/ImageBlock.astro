@@ -34,8 +34,9 @@ const withBase = (p = '') => {
   const base = String(import.meta.env.BASE_URL || '/');
   return (base.endsWith('/') ? base : base + '/') + clean;
 };
+const displaySrc=image?.display ?? src;
 const srcset = image?.variants.length
-  ? [...image.variants, {url:src,width:image.width}].map(v=>withBase(v.url)+' '+v.width+'w').join(', ')
+  ? [...image.variants, {url:displaySrc,width:image.width}].map(v=>withBase(v.url)+' '+v.width+'w').join(', ')
   : undefined;
 ---
 
@@ -48,7 +49,7 @@ const srcset = image?.variants.length
     <figure class="image-block__figure">
       <a href={withBase(src)} data-original-image target="_blank" rel="noopener" aria-label={lang === "en" ? "Open original image" : "Открыть оригинал снимка"}>
       <img
-        src={withBase(src)}
+        src={withBase(displaySrc)}
         width={image?.width}
         height={image?.height}
         srcset={srcset}

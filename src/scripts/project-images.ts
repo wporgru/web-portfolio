@@ -4,6 +4,7 @@ type ProjectImage = {
   width: number;
   height: number;
   cover: string;
+  display?: string;
   variants: {url: string; width: number}[];
 };
 const manifestPath = '.astro/project-images.json';

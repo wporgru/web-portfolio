@@ -403,6 +403,8 @@ for (const [src, image] of Object.entries(imageManifest)) {
   const original = fs.statSync(path.join(root,src)).size;
   const cover = fs.statSync(path.join(root,image.cover)).size;
   if (cover > 160_000) fail(src,'catalog cover exceeds 160 KB');
+  if (image.display && (!image.display.startsWith('/media/previews/') ||
+      fs.statSync(path.join(root,image.display)).size>original*0.6)) fail(src,'display copy must honor the savings threshold');
   for (const variant of image.variants) {
     if (variant.width>=image.width || fs.statSync(path.join(root,variant.url)).size>=original) fail(src,'responsive variant is not smaller');
   }
@@ -415,6 +417,7 @@ for (const suffix of ['', 'en/']) {
     const src = '/media/projects/78-dosok/'+name;
     const image = imageManifest[src];
     if (!image || !detail.includes(`href="${base.slice(0,-1)}${src}"`) || !detail.includes(`width="${image.width}" height="${image.height}"`)) fail(src,'missing original link or reserved image dimensions');
+    if (image.display && !detail.includes(`src="${base.slice(0,-1)}${image.display}"`)) fail(src,'case should display the optimized copy while linking to the original');
   }
 }
 for (const service of services) {

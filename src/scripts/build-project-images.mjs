@@ -32,7 +32,17 @@ for (const dir of (await fs.readdir(root, {withFileTypes:true})).filter(entry=>e
       await fs.writeFile(path.join(output,version.name),version.data);
       variants.push({url:version.url,width:w});
     }
-    manifest[src] = {width,height,cover:cover.url,variants};
+    // Retain the uncropped original for explicit viewing. On dense screens the
+    // widest responsive candidate should not silently fetch a multi-MB PNG.
+    let display;
+    if (originalSize >= 512 * 1024 && Math.max(width,height) <= 16383) {
+      const full = await save('display',image.clone(),86);
+      if (full.data.length <= originalSize * 0.6) {
+        await fs.writeFile(path.join(output,full.name),full.data);
+        display = full.url;
+      }
+    }
+    manifest[src] = {width,height,cover:cover.url,variants,...(display?{display}:{})};
   }
 }
 await fs.mkdir('.astro', {recursive:true});
