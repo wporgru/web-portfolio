@@ -7546,3 +7546,61 @@ projects:
         url: /showcase/alcotester-brand-attribute-recovery/
         type: product
     featured: false
+  - slug: ecomyaso-free-shipping-weight-and-value
+    name: "ЭкоМясо: бесплатная доставка по сумме и весу"
+    year: "12.2023"
+    role: Веб-разработка и автоматизация
+    description: У магазина уже действовал порог суммы для бесплатной доставки. Но
+      дорогой лёгкий заказ мог пройти этот порог и не покрыть стоимость курьера.
+      Владельцу нужно было учитывать ещё и вес, не поднимая порог для всех
+      клиентов.
+    stack:
+      - WooCommerce
+      - Shipping rules
+      - Cart weight
+      - Checkout
+    order: 401
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/ecomyaso-free-shipping-weight-and-value/
+        type: product
+    featured: false
+  - slug: malinaskin-cdek-russian-post-setup
+    name: "Malinaskin: подключение СДЭК и Почты России"
+    year: "06.2023"
+    role: Веб-разработка и автоматизация
+    description: Магазину косметики требовались две согласованные службы доставки в
+      одном WooCommerce-магазине. В объём входила работа с кабинетами
+      перевозчиков, а не новый дизайн оформления заказа.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Russian Post
+      - Shipping integrations
+    order: 402
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/malinaskin-cdek-russian-post-setup/
+        type: product
+    featured: false
+  - slug: yml-local-delivery-availability-advice
+    name: "YML: как обозначили ограничение доставки по городу"
+    year: "08.2022"
+    role: Веб-разработка и автоматизация
+    description: Магазин доставлял только по Ростову-на-Дону, но получал заявки из
+      неподдерживаемых регионов. Владелец попросил объяснить, как сделать
+      территорию обслуживания заметной в товарной выгрузке и кабинете площадки.
+    stack:
+      - YML
+      - Product feeds
+      - Local delivery
+      - Yandex Webmaster
+    order: 403
+    theme: cyan
+    links:
+      - label: Читать кейс
+        url: /showcase/yml-local-delivery-availability-advice/
+        type: product
+    featured: false

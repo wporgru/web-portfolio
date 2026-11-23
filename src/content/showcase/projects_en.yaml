@@ -7494,3 +7494,59 @@ projects:
         url: /showcase/alcotester-brand-attribute-recovery/en/
         type: product
     featured: false
+  - slug: ecomyaso-free-shipping-weight-and-value
+    name: "EcoMeat: free shipping by order value and weight"
+    year: "12.2023"
+    role: Web development and automation
+    description: The store already used a minimum order value for free shipping, but
+      an expensive lightweight order could qualify without covering courier costs.
+      The owner wanted weight considered without raising the minimum for everyone.
+    stack:
+      - WooCommerce
+      - Shipping rules
+      - Cart weight
+      - Checkout
+    order: 401
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/ecomyaso-free-shipping-weight-and-value/en/
+        type: product
+    featured: false
+  - slug: malinaskin-cdek-russian-post-setup
+    name: "Malinaskin: CDEK and Russian Post integration"
+    year: "06.2023"
+    role: Web development and automation
+    description: A skincare store needed two agreed carriers in one WooCommerce
+      shop. The scope involved the carrier accounts, not a checkout redesign.
+    stack:
+      - WooCommerce
+      - CDEK
+      - Russian Post
+      - Shipping integrations
+    order: 402
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/malinaskin-cdek-russian-post-setup/en/
+        type: product
+    featured: false
+  - slug: yml-local-delivery-availability-advice
+    name: YML advice for communicating a local delivery limit
+    year: "08.2022"
+    role: Web development and automation
+    description: A store delivered only within Rostov-on-Don but received orders
+      from unsupported regions. The owner asked how to make the service area
+      visible in the product feed and the listing account.
+    stack:
+      - YML
+      - Product feeds
+      - Local delivery
+      - Yandex Webmaster
+    order: 403
+    theme: cyan
+    links:
+      - label: Read case study
+        url: /showcase/yml-local-delivery-availability-advice/en/
+        type: product
+    featured: false

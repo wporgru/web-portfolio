@@ -1,0 +1,25 @@
+title: "Malinaskin: CDEK and Russian Post integration"
+tagline: A skincare store needed two agreed carriers in one WooCommerce shop.
+  The scope involved the carrier accounts, not a checkout redesign.
+year: "06.2023"
+role: Web development and automation
+stack:
+  - WooCommerce
+  - CDEK
+  - Russian Post
+  - Shipping integrations
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A skincare store needed two agreed carriers in one WooCommerce shop. The
+      scope involved the carrier accounts, not a checkout redesign.
+  - type: text
+    title: How it works
+    body: Connected CDEK and Russian Post using the carrier accounts supplied by the
+      client and handed over the setup. A shipping discount was scoped
+      separately to keep carrier onboarding distinct from pricing rules.
+  - type: text
+    title: Result and verification
+    body: The client accepted both integrations and confirmed the result in their
+      review. The archive does not verify exact rates, city coverage or
+      completed shipments.

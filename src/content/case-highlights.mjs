@@ -1,6 +1,18 @@
 // Short, case-specific results for the page lead and search/share metadata.
 // Longer briefs and the evidence behind these statements stay in the case.
 export const caseHighlights = {
+  'ecomyaso-free-shipping-weight-and-value': {
+    ru: 'Настроил бесплатную доставку WooCommerce по двум условиям сразу: от 5 000 ₽ и от 10 кг. Клиент принял настройку.',
+    en: 'Set up WooCommerce free shipping with two simultaneous minimums: RUB 5,000 and 10 kg. The client accepted the setup.',
+  },
+  'malinaskin-cdek-russian-post-setup': {
+    ru: 'Подключил СДЭК и Почту России в одном магазине косметики на WooCommerce. Клиент принял настройку обеих служб.',
+    en: 'Connected CDEK and Russian Post in one WooCommerce skincare store. The client accepted both carrier integrations.',
+  },
+  'yml-local-delivery-availability-advice': {
+    ru: 'Показал, как обозначить доставку только по Ростову-на-Дону в YML. Клиент принял консультацию; блокировку заказов не внедрял.',
+    en: 'Showed how to communicate Rostov-on-Don-only delivery in a YML feed. The client accepted the advice; order blocking was not implemented.',
+  },
   'checkout-tax-breakdown': {
     ru: 'Развёл НДС для товаров и платной доставки СДЭК в WooCommerce. Клиент подтвердил чек и возврат в проверенном сценарии с ЮKassa.',
     en: 'Separated VAT for products and paid CDEK shipping in WooCommerce. The client confirmed a receipt and refund in the tested YooKassa flow.',

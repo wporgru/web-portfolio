@@ -1,0 +1,29 @@
+title: YML advice for communicating a local delivery limit
+tagline: A store delivered only within Rostov-on-Don but received orders from
+  unsupported regions. The owner asked how to make the service area visible in
+  the product feed and the listing account.
+year: "08.2022"
+role: Web development and automation
+stack:
+  - YML
+  - Product feeds
+  - Local delivery
+  - Yandex Webmaster
+blocks:
+  - type: text
+    title: Brief and constraints
+    body: A store delivered only within Rostov-on-Don but received orders from
+      unsupported regions. The owner asked how to make the service area visible
+      in the product feed and the listing account.
+  - type: text
+    title: How it works
+    body: "Using the installed feed generator, showed where to set a shared delivery
+      notice and regenerate the YML. Explained a parallel notice in Webmaster at
+      the time. Distinguished explaining the delivery area from technically
+      blocking an order: the consultation covered the former, not the latter."
+  - type: text
+    title: Result and verification
+    body: The client paid for and accepted the consultation. The advice was
+      preserved, but implementation and fewer out-of-area orders were not
+      verified. This is a historical case, not a guide to the current Yandex
+      interface.
